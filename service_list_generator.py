@@ -80,7 +80,9 @@ def main():
             f.write(f"#\n")
             f.write(f"# Compatible with Pi-hole and AdGuard Home\n")
             f.write(f"#\n\n")
-            
+
+
+            service['domains'] = domains
             # Write domains (one per line, Pi-hole/AdGuard format)
             for domain in sorted(domains):
                 f.write(f"{domain}\n")
@@ -133,9 +135,9 @@ def main():
     readme_path.write_text(updated, encoding='utf-8')
 
     print(f"\nTotal services processed: {services_processed}")
-    print(f"README generated at services/README.md")
 
 
 if __name__ == "__main__":
 
     main()
+
