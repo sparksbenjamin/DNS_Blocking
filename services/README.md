@@ -1,6 +1,6 @@
 # Service Blocklists
 
-Generated: 2025-11-03 15:41:49 UTC
+Generated: 2025-11-03 15:42:04 UTC
 
 These blocklists are generated from the [AdGuard Hostlists Registry](https://adguardteam.github.io/HostlistsRegistry/assets/services.json).
 
