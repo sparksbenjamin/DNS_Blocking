@@ -108,14 +108,14 @@ def main():
     
     # Build the new section
     new_section = f"""<!-- START:services -->
-    *(auto-generated section — do not edit manually)*
-    
-    Generated: {timestamp}
-    
-    | Service | Domains | File | Raw URL |
-    |---------|---------|------|----------|
-    {chr(10).join(table_rows)}
-    <!-- END:services -->"""
+*(auto-generated section — do not edit manually)*
+
+Generated: {timestamp}
+
+| Service | Domains | File | Raw URL |
+|---------|---------|------|----------|
+{chr(10).join(table_rows)}
+<!-- END:services -->"""
     
     # Update the README
     readme_path = Path("README.md")
@@ -140,4 +140,5 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
