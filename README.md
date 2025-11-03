@@ -1,8 +1,26 @@
-# DNS_Blocking
-Collection of DNS Blocking filters to be loaded into PI-Hole or AdGuard
+# DNS Filters & Blocking Lists
+
+Welcome to **DNS Filters & Blocking Lists** – your one-stop repository for comprehensive DNS filtering solutions. Our goal is to make DNS filtering **accessible, easy to understand, and ready-to-use** for everyone, whether you're a home user, network admin, or privacy-conscious professional.
+
+---
+
+## 📌 Why Use DNS Filtering?
+
+DNS filtering allows you to block unwanted content at the network level by preventing your devices from resolving certain domains. This approach helps you:
+
+- **Block ads, trackers, and malware** automatically.
+- **Improve network performance** by reducing unwanted traffic.
+- **Enforce safe browsing** for children or employees.
+- **Enhance privacy** by reducing exposure to tracking domains.
+
+---
+
+## 🗂 What’s Included
+
+This repository provides curated DNS blocklists for different categories:
 
 
-## 📂 Services
+### 📂 Services
 <!-- START:services -->
 *(auto-generated section — do not edit manually)*
 
