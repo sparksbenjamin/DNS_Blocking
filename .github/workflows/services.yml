@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
         
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -27,7 +29,7 @@ jobs:
           pip install requests
           
       - name: Generate blocklists
-        run: python service_list_generator.py
+        run: python generate_blocklists.py
           
       - name: Commit and push changes
         run: |
