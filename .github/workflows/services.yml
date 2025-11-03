@@ -15,7 +15,7 @@ jobs:
     
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.PAT_TOKEN }}
         
@@ -29,7 +29,7 @@ jobs:
           pip install requests
           
       - name: Generate blocklists
-        run: python generate_blocklists.py
+        run: python service_list_generator.py
         
       - name: Configure Git for push
         run: |
