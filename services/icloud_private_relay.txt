@@ -1,0 +1,11 @@
+# iCloud Private Relay Blocklist
+# Service ID: icloud_private_relay
+# Generated: 2025-11-03 15:13:07 UTC
+# Total domains: 3
+#
+# Compatible with Pi-hole and AdGuard Home
+#
+
+mask-canary.icloud.com^$dnsrewrite=NXDOMAIN;;
+mask-h2.icloud.com^$dnsrewrite=NXDOMAIN;;
+mask.icloud.com^$dnsrewrite=NXDOMAIN;;
