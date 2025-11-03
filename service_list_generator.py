@@ -8,7 +8,8 @@ import requests
 import json
 import os
 from datetime import datetime
-
+from pathlib import Path
+import re
 
 def main():
     # Fetch the services.json file
@@ -90,33 +91,51 @@ def main():
     # Get repository info from environment
     repo = os.environ.get('GITHUB_REPOSITORY', 'YOUR_USERNAME/YOUR_REPO')
     
-    # Create index/README
-    with open("services/README.md", 'w', encoding='utf-8') as f:
-        f.write(f"# Service Blocklists\n\n")
-        f.write(f"Generated: {timestamp}\n\n")
-        f.write(f"These blocklists are generated from the [AdGuard Hostlists Registry](https://adguardteam.github.io/HostlistsRegistry/assets/services.json).\n\n")
-        f.write(f"## Available Blocklists\n\n")
-        f.write(f"| Service | Domains | File | Raw URL |\n")
-        f.write(f"|---------|---------|------|----------|\n")
+    
+    
+    # Generate the services table
+    table_rows = []
+    for service in sorted(services, key=lambda x: x.get('name', '')):
+        service_id = service.get('id', 'unknown')
+        service_name = service.get('name', 'Unknown')
+        domain_count = len(service.get('domains', []))
         
-        for service in sorted(services, key=lambda x: x.get('name', '')):
-            service_id = service.get('id', 'unknown')
-            service_name = service.get('name', 'Unknown')
-            domain_count = len(service.get('domains', []))
-            
-            if domain_count > 0:
-                raw_url = f"https://raw.githubusercontent.com/{repo}/main/services/{service_id}.txt"
-                f.write(f"| {service_name} | {domain_count} | [{service_id}.txt]({service_id}.txt) | [Raw]({raw_url}) |\n")
-        
-        f.write(f"\n## Usage\n\n")
-        f.write(f"### Pi-hole\n")
-        f.write(f"Add the raw GitHub URL to your blocklists in Pi-hole settings.\n\n")
-        f.write(f"### AdGuard Home\n")
-        f.write(f"Add the raw GitHub URL to your DNS blocklists in AdGuard Home settings.\n")
+        if domain_count > 0:
+            raw_url = f"https://raw.githubusercontent.com/{repo}/main/services/{service_id}.txt"
+            table_rows.append(f"| {service_name} | {domain_count} | [{service_id}.txt]({service_id}.txt) | [Raw]({raw_url}) |")
+    
+    # Build the new section
+    new_section = f"""<!-- START:services -->
+    *(auto-generated section — do not edit manually)*
+    
+    Generated: {timestamp}
+    
+    | Service | Domains | File | Raw URL |
+    |---------|---------|------|----------|
+    {chr(10).join(table_rows)}
+    <!-- END:services -->"""
+    
+    # Update the README
+    readme_path = Path("README.md")
+    content = readme_path.read_text(encoding='utf-8')
+    
+    section_start = "<!-- START:services -->"
+    section_end = "<!-- END:services -->"
+    
+    # Replace only the services section
+    updated = re.sub(
+        f"{re.escape(section_start)}.*?{re.escape(section_end)}",
+        new_section,
+        content,
+        flags=re.DOTALL
+    )
+    
+    readme_path.write_text(updated, encoding='utf-8')
 
     print(f"\nTotal services processed: {services_processed}")
     print(f"README generated at services/README.md")
 
 
 if __name__ == "__main__":
+
     main()
