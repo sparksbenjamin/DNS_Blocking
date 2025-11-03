@@ -4,13 +4,13 @@ Collection of DNS Blocking filters to be loaded into PI-Hole or AdGuard
 
 ## 📂 Services
 <!-- START:services -->
-    *(auto-generated section — do not edit manually)*
-    
-    Generated: 2025-11-03 16:01:04 UTC
-    
-    | Service | Domains | File | Raw URL |
-    |---------|---------|------|----------|
-    | 4chan | 3 | [4chan.txt](4chan.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/4chan.txt) |
+*(auto-generated section — do not edit manually)*
+
+Generated: 2025-11-03 16:01:23 UTC
+
+| Service | Domains | File | Raw URL |
+|---------|---------|------|----------|
+| 4chan | 3 | [4chan.txt](4chan.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/4chan.txt) |
 | 500px | 2 | [500px.txt](500px.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/500px.txt) |
 | 9GAG | 2 | [9gag.txt](9gag.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/9gag.txt) |
 | Activision Blizzard | 6 | [activision_blizzard.txt](activision_blizzard.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/activision_blizzard.txt) |
@@ -134,4 +134,4 @@ Collection of DNS Blocking filters to be loaded into PI-Hole or AdGuard
 | iCloud Private Relay | 3 | [icloud_private_relay.txt](icloud_private_relay.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/icloud_private_relay.txt) |
 | iHeartRadio | 11 | [iheartradio.txt](iheartradio.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/iheartradio.txt) |
 | iQIYI | 8 | [iqiyi.txt](iqiyi.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/iqiyi.txt) |
-    <!-- END:services -->
+<!-- END:services -->
