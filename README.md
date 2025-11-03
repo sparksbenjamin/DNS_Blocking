@@ -6,7 +6,7 @@ Collection of DNS Blocking filters to be loaded into PI-Hole or AdGuard
 <!-- START:services -->
     *(auto-generated section — do not edit manually)*
     
-    Generated: 2025-11-03 15:58:35 UTC
+    Generated: 2025-11-03 15:58:46 UTC
     
     | Service | Domains | File | Raw URL |
     |---------|---------|------|----------|
