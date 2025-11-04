@@ -1,1 +1,2 @@
-python3 
+echo "Running Tunneling Script"
+python3 scripts/tunneling.py
