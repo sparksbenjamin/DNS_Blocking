@@ -18,9 +18,16 @@ from io import StringIO, BytesIO
 import zipfile
 import os
 from datetime import datetime
+
 # === Configuration ===
 TUNNELING_DIR = Path("tunneling")
 TUNNELING_DIR.mkdir(exist_ok=True)
+
+# Create subdirectories for proxy and vpn
+PROXY_DIR = TUNNELING_DIR / "proxy"
+VPN_DIR = TUNNELING_DIR / "vpn"
+PROXY_DIR.mkdir(exist_ok=True)
+VPN_DIR.mkdir(exist_ok=True)
 
 # === Sources ===
 AZ0_VPN = "https://az0-vpnip-public.oooninja.com/hostname.txt"
@@ -91,32 +98,34 @@ with zipfile.ZipFile(BytesIO(resp.content)) as z:
 
 print(f"Umbrella matched {len(umbrella_proxies)} proxy-like domains.")
 print(f"Umbrella matched {len(umbrella_vpns)} vpn-like domains.")
+
 # === Combine sources ===
 all_proxies = proxy_domains | set(umbrella_proxies)
 all_vpns = vpn_domains | set(umbrella_vpns)
 print(f"Total {len(all_proxies)} proxy domains, {len(all_vpns)} VPN domains.")
 
 # === Write output ===
-def write_per_provider(domains: set[str], prefix: str):
+def write_per_provider(domains: set[str], prefix: str, output_dir: Path):
+    """Write per-provider lists to the specified directory"""
     providers = {}
     for domain in domains:
         provider = get_provider(domain)
         providers.setdefault(provider, set()).add(domain)
 
     for provider, items in providers.items():
-        filename = TUNNELING_DIR / prefix / f"{prefix}_{provider}.txt"
+        filename = output_dir / f"{prefix}_{provider}.txt"
         with open(filename, "w", encoding="utf-8") as f:
             for d in sorted(items):
                 f.write(f"{d}\n")
-        print(f"Wrote {len(items):>4} domains to {filename.name}")
+        print(f"Wrote {len(items):>4} domains to {filename.relative_to(TUNNELING_DIR)}")
 
-# Per-provider lists
-write_per_provider(all_proxies, "proxy")
-write_per_provider(all_vpns, "vpn")
+# Per-provider lists in subdirectories
+write_per_provider(all_proxies, "proxy", PROXY_DIR)
+write_per_provider(all_vpns, "vpn", VPN_DIR)
 
 # === Aggregated lists ===
 all_proxy_file = TUNNELING_DIR / "proxies.txt"
-all_vpn_file = TUNNELING_DIR / "vpns.txt"   # <-- renamed from vpns.txt
+all_vpn_file = TUNNELING_DIR / "vpns.txt"
 
 with open(all_proxy_file, "w", encoding="utf-8") as f:
     for d in sorted(all_proxies):
@@ -135,7 +144,7 @@ print("✅ Completed tunneling list generation.")
 repo = os.environ.get('GITHUB_REPOSITORY', 'YOUR_USERNAME/YOUR_REPO')
 timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
 
-# Build table rows for tunneling files
+# Build table rows for tunneling files (aggregated files only)
 table_rows = []
 for f in sorted(TUNNELING_DIR.glob("*.txt")):
     name = f.stem
@@ -144,6 +153,18 @@ for f in sorted(TUNNELING_DIR.glob("*.txt")):
     table_rows.append(
         f"| {name} | {entry_count} | [{f.name}]({TUNNELING_DIR}/{f.name}) | [Raw]({raw_url}) |"
     )
+
+# Add per-provider files from subdirectories
+for subdir in [PROXY_DIR, VPN_DIR]:
+    for f in sorted(subdir.glob("*.txt")):
+        name = f.stem
+        entry_count = sum(1 for _ in open(f, encoding="utf-8"))
+        rel_path = f.relative_to(TUNNELING_DIR)
+        raw_url = f"https://raw.githubusercontent.com/{repo}/main/{TUNNELING_DIR}/{rel_path}"
+        table_rows.append(
+            f"| {name} | {entry_count} | [{f.name}]({TUNNELING_DIR}/{rel_path}) | [Raw]({raw_url}) |"
+        )
+
 # Build the new README section
 new_section = f"""<!-- START:tunneling -->
 *(auto-generated section — do not edit manually)*
@@ -157,18 +178,42 @@ Generated: {timestamp}
 
 # Update README.md
 readme_path = Path("tunneling/README.md")
+section_start = "<!-- START:tunneling -->"
+section_end = "<!-- END:tunneling -->"
+
 if readme_path.exists():
     content = readme_path.read_text(encoding="utf-8")
-    section_start = "<!-- START:tunneling -->"
-    section_end = "<!-- END:tunneling -->"
-
-    updated = re.sub(
-        f"{re.escape(section_start)}.*?{re.escape(section_end)}",
-        new_section,
-        content,
-        flags=re.DOTALL
-    )
+    
+    # Check if the section markers exist
+    if section_start in content and section_end in content:
+        updated = re.sub(
+            f"{re.escape(section_start)}.*?{re.escape(section_end)}",
+            new_section,
+            content,
+            flags=re.DOTALL
+        )
+    else:
+        # Section markers don't exist, append to end
+        updated = content.rstrip() + "\n\n" + new_section + "\n"
+    
     readme_path.write_text(updated, encoding="utf-8")
     print("✅ Updated tunneling section in README.md")
 else:
-    print("⚠️ No README.md found — skipping update.")
+    # Create new README.md with header and section
+    initial_content = f"""# Tunneling Lists
+
+This directory contains curated lists of VPN and proxy provider domains.
+
+## Structure
+
+- `proxies.txt` - Aggregated list of all proxy domains
+- `vpns.txt` - Aggregated list of all VPN domains
+- `proxy/` - Per-provider proxy domain lists
+- `vpn/` - Per-provider VPN domain lists
+
+## Lists
+
+{new_section}
+"""
+    readme_path.write_text(initial_content, encoding="utf-8")
+    print("✅ Created new README.md with tunneling section")
