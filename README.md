@@ -1,4 +1,8 @@
 # DNS Filters & Blocking Lists
+![Auto Update](https://img.shields.io/badge/Update-Automated-success)
+![License](https://img.shields.io/github/license/sparksbenjamin/DNS_Blocking)
+![Lists](https://img.shields.io/badge/Lists-120+-blue)
+![Last Updated](https://img.shields.io/github/last-commit/sparksbenjamin/DNS_Blocking)
 
 Welcome to **DNS Filters & Blocking Lists** – your one-stop repository for comprehensive DNS filtering solutions. Our goal is to make DNS filtering **accessible, easy to understand, and ready-to-use** for everyone, whether you're a home user, network admin, or privacy-conscious professional.
 
@@ -2794,7 +2798,4 @@ Generated: 2025-11-04 15:41 UTC
 | vpn_zwyr157wwiu6eior | 8 | [vpn_zwyr157wwiu6eior.txt](tunneling/vpn_zwyr157wwiu6eior.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn_zwyr157wwiu6eior.txt) |
 | vpns | 27546 | [vpns.txt](tunneling/vpns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpns.txt) |
 <!-- END:tunneling -->
-![Auto Update](https://img.shields.io/badge/Update-Automated-success)
-![License](https://img.shields.io/github/license/sparksbenjamin/DNS_Blocking)
-![Lists](https://img.shields.io/badge/Lists-120+-blue)
-![Last Updated](https://img.shields.io/github/last-commit/sparksbenjamin/DNS_Blocking)
+
