@@ -71,14 +71,22 @@ jobs:
           echo "$HOME/go/bin" >> $GITHUB_PATH
 
       - name: Run subfinder on this batch
+        shell: bash
         run: |
+          echo "Processing batch: ${{ toJson(matrix.batch) }}"
           for file in ${{ join(matrix.batch, ' ') }}; do
             echo "🔍 Processing $file ..."
-            > temp_subs.txt
+            tmpfile=$(mktemp)
 
+            # Run subfinder on each valid domain in the file
             while IFS= read -r domain; do
-              [ -z "$domain" ] && continue
-              subfinder -d "$domain" -silent >> temp_subs.txt || echo "Subfinder failed for $domain" >&2
+              # Skip comments, empty lines, or pipe-prefixed metadata
+              [[ -z "$domain" || "$domain" =~ ^[#|] ]] && continue
+              
+              echo "  -> Enumerating $domain"
+              subfinder -d "$domain" -silent >> "$tmpfile" || echo "Subfinder failed for $domain" >&2
             done < "$file"
 
-            sort -u temp_subs.txt "$file" >_
+            # Merge and deduplicate into the same file
+            sort -u "$tmpfile" "$file" -o "$file"
+          done
