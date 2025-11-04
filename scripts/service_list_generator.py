@@ -108,8 +108,6 @@ def main():
     
     # Build the new section
     new_section = f"""<!-- START:services -->
-*(auto-generated section — do not edit manually)*
-
 Generated: {timestamp}
 
 | Service | Domains | File | Raw URL |
@@ -118,7 +116,7 @@ Generated: {timestamp}
 <!-- END:services -->"""
     
     # Update the README
-    readme_path = Path("README.md")
+    readme_path = Path("services/README.md")
     content = readme_path.read_text(encoding='utf-8')
     
     section_start = "<!-- START:services -->"
@@ -140,5 +138,6 @@ Generated: {timestamp}
 if __name__ == "__main__":
 
     main()
+
 
 
