@@ -19,30 +19,35 @@ jobs:
 
       - id: set-matrix
         run: |
-          # List all domain files
-          files=(domain_files/*.txt)
+          files=(services/*.txt)
           total=${#files[@]}
           batch_size=25
           batches=$(( (total + batch_size - 1) / batch_size ))
 
-          # Build JSON array of file batches
           echo "Found $total domain files, batching into $batches jobs..."
           matrix_json="["
+
           for ((i=0; i<$batches; i++)); do
             start=$((i * batch_size))
-            end=$((start + batch_size))
             batch=( "${files[@]:start:batch_size}" )
-            json_batch=$(printf '"%s",' "${batch[@]}")
-            json_batch="[${json_batch%,}]"
-            matrix_json+="{\"batch\":$json_batch},"
+
+            # Build JSON safely using jq to avoid quoting issues
+            json_batch=$(printf '%s\n' "${batch[@]}" | jq -R . | jq -s .)
+            matrix_json+=$(jq -nc --argjson batch "$json_batch" '{batch: $batch}')
+            if [ $i -lt $((batches - 1)) ]; then
+              matrix_json+=","
+            fi
           done
-          matrix_json="[${matrix_json%,}]"
+
+          matrix_json+="]"
+          echo "Matrix JSON: $matrix_json"
           echo "matrix=$matrix_json" >> $GITHUB_OUTPUT
 
   scan:
-    name: Run Subfinder on Batch ${{ matrix.batch }}
+    name: Run Subfinder on Batch
     runs-on: ubuntu-latest
     needs: prepare
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
@@ -68,6 +73,7 @@ jobs:
             > temp_subs.txt
 
             while IFS= read -r domain; do
+              [ -z "$domain" ] && continue
               subfinder -d "$domain" -silent >> temp_subs.txt
             done < "$file"
 
