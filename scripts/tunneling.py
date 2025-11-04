@@ -156,7 +156,7 @@ Generated: {timestamp}
 <!-- END:tunneling -->"""
 
 # Update README.md
-readme_path = Path("README.md")
+readme_path = Path("tunneling/README.md")
 if readme_path.exists():
     content = readme_path.read_text(encoding="utf-8")
     section_start = "<!-- START:tunneling -->"
