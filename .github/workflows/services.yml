@@ -26,7 +26,7 @@ jobs:
           pip install requests
           
       - name: Generate blocklists
-        run: python service_list_generator.py
+        run: ./update.sh
         
       - name: Configure Git for push
         run: |
