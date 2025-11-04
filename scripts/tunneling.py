@@ -104,7 +104,7 @@ def write_per_provider(domains: set[str], prefix: str):
         providers.setdefault(provider, set()).add(domain)
 
     for provider, items in providers.items():
-        filename = TUNNELING_DIR / f"{prefix}_{provider}.txt"
+        filename = TUNNELING_DIR / prefix / f"{prefix}_{provider}.txt"
         with open(filename, "w", encoding="utf-8") as f:
             for d in sorted(items):
                 f.write(f"{d}\n")
