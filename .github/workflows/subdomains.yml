@@ -2,13 +2,13 @@ name: Subdomain Enumeration per Domain File (Parallel)
 
 on:
   workflow_run:
-    workflows: ["Generate Service Blocklists"]  # Must match the other workflow's 'name:' value
-    types:
-      - completed
-  workflow_dispatch:      # Allows manual trigger
+    workflows: ["Generate Service Blocklists"]
+    types: [completed]
+  workflow_dispatch:
 
 jobs:
   prepare:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     name: Prepare domain file list
     runs-on: ubuntu-latest
     outputs:
@@ -17,6 +17,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
       - id: set-matrix
         run: |
           files=(services/*.txt)
@@ -24,21 +27,23 @@ jobs:
           batch_size=25
           batches=$(( (total + batch_size - 1) / batch_size ))
 
+          if [ $total -eq 0 ]; then
+            echo "No service files found — skipping."
+            echo "matrix=[]" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
           echo "Found $total domain files, batching into $batches jobs..."
           matrix_json="["
-
           for ((i=0; i<$batches; i++)); do
             start=$((i * batch_size))
             batch=( "${files[@]:start:batch_size}" )
-
-            # Build JSON safely using jq to avoid quoting issues
             json_batch=$(printf '%s\n' "${batch[@]}" | jq -R . | jq -s .)
             matrix_json+=$(jq -nc --argjson batch "$json_batch" '{batch: $batch}')
             if [ $i -lt $((batches - 1)) ]; then
               matrix_json+=","
             fi
           done
-
           matrix_json+="]"
           echo "Matrix JSON: $matrix_json"
           echo "matrix=$matrix_json" >> $GITHUB_OUTPUT
@@ -73,17 +78,7 @@ jobs:
 
             while IFS= read -r domain; do
               [ -z "$domain" ] && continue
-              subfinder -d "$domain" -silent >> temp_subs.txt
+              subfinder -d "$domain" -silent >> temp_subs.txt || echo "Subfinder failed for $domain" >&2
             done < "$file"
 
-            sort -u temp_subs.txt "$file" > merged.txt
-            mv merged.txt "$file"
-          done
-
-      - name: Commit and push updated subdomain files
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "GitHub Actions"
-          git add domain_files/*.txt
-          git diff --quiet && echo "No changes to commit" || git commit -m "Update subdomains (batch run)"
-          git push
+            sort -u temp_subs.txt "$file" >_
