@@ -24,7 +24,7 @@ This repository provides curated DNS blocklists for different categories:
 <!-- START:services -->
 *(auto-generated section — do not edit manually)*
 
-Generated: 2025-11-03 16:51:24 UTC
+Generated: 2025-11-04 03:06:22 UTC
 
 | Service | Domains | File | Raw URL |
 |---------|---------|------|----------|
