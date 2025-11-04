@@ -22,8 +22,6 @@ This repository provides curated DNS blocklists for different categories:
 
 ### 📂 Services
 <!-- START:services -->
-*(auto-generated section — do not edit manually)*
-
 Generated: 2025-11-04 03:06:22 UTC
 
 | Service | Domains | File | Raw URL |
@@ -153,3 +151,9 @@ Generated: 2025-11-04 03:06:22 UTC
 | iHeartRadio | 11 | [iheartradio.txt](iheartradio.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/iheartradio.txt) |
 | iQIYI | 8 | [iqiyi.txt](iqiyi.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/iqiyi.txt) |
 <!-- END:services -->
+### 📂 Tunneling (Proxies / VPNs)
+A single list for each group has been created and you can just add the one list if you would like.  Otherwise please chose the proxies or vpns you wish to disable. 
+[VPNS]{}
+[Proxies]{}
+<!-- START:tunneling -->
+<!-- END:tunneling -->
