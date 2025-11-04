@@ -46,7 +46,7 @@ jobs:
           done
           matrix_json+="]"
           echo "Matrix JSON: $matrix_json"
-          echo "matrix=$matrix_json" >> $GITHUB_OUTPUT
+          echo "matrix={\"include\": $matrix_json}" >> $GITHUB_OUTPUT
 
   scan:
     name: Run Subfinder on Batch
