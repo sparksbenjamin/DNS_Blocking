@@ -25,9 +25,12 @@ jobs:
         run: |
           pip install requests
           
-      - name: Generate blocklists
+      - name: Make update script executable
+        run: chmod +x ./update.sh
+      
+      - name: Run update script
         run: ./update.sh
-        
+
       - name: Configure Git for push
         run: |
           git config user.name "github-actions[bot]"
