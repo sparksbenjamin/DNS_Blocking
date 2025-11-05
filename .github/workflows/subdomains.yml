@@ -108,17 +108,16 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git
 
-          # Fetch latest main branch
+          # Fetch the latest main branch (do NOT reset)
           git fetch origin main
-          git reset --hard origin/main
 
-          # Stage updated files
-          git add services/*.txt
+          # Merge latest changes from main to prevent conflicts
+          git merge --strategy-option ours origin/main || true
 
-          # Commit if there are changes
+          # Stage and commit changes if any exist
+          git add services/
           if ! git diff --cached --quiet; then
             git commit -m "Update blocklists - $(date +'%Y-%m-%d %H:%M:%S UTC')"
-            # Use force-with-lease to safely push in parallel runs
             git push --force-with-lease origin main
           else
             echo "No changes to commit."
