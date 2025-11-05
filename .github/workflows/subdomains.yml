@@ -26,15 +26,15 @@ jobs:
         run: |
           files=(services/*.txt)
           total=${#files[@]}
-          batch_size=25
-          batches=$(( (total + batch_size - 1) / batch_size ))
-
           if [ $total -eq 0 ]; then
             echo "No service files found — skipping."
             echo "matrix=[]" >> $GITHUB_OUTPUT
             exit 0
           fi
-
+          max_parallel=15
+          batch_size=$(( (total + max_parallel - 1) / max_parallel ))
+          batches=$(( (total + batch_size - 1) / batch_size ))
+          
           echo "Found $total domain files, batching into $batches jobs..."
           matrix_json="["
           for ((i=0; i<$batches; i++)); do
@@ -59,6 +59,12 @@ jobs:
       matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
 
     steps:
+      - name: Stagger start with random sleep
+        run: |
+          sleep_time=$(( RANDOM % 31 ))
+          echo "Sleeping for $sleep_time seconds to stagger this batch..."
+          sleep $sleep_time
+          
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
