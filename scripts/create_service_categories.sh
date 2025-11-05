@@ -12,8 +12,8 @@ mkdir $OUTPUT_DIR
 # Define categories and associated service filenames
 declare -A categories
 categories["social_media"]="facebook.txt instagram.txt twitter.txt tiktok.txt snapchat.txt mastodon.txt linkedin.txt vk.txt weibo.txt qq.txt clubhouse.txt kook.txt line.txt kik.txt kakaotalk.txt signal.txt telegram.txt whatsapp.txt viber.txt wizz.txt xiaohongshu.txt tumblr.txt"
-
-categories["streaming_video"]="youtube.txt netflix.txt hulu.txt disney_streaming.txt amazon_streaming.txt apple_streaming.txt hbomax.txt discoveryplus.txt canais_globo.txt globoplay.txt crunchyroll.txt dailymotion.txt lionsgateplus.txt looke.txt nebula.txt paramountplus.txt peacock_tv.txt plex.txt pluto_tv.txt samsung_tv_plus.txt rakuten_viki.txt spotify_video.txt"
+categories["ai"]="chatgpt.txt claude.txt deepseek.txt"
+categories["streaming_video"]="youtube.txt netflix.txt hulu.txt disneyplus.txt disney_streaming.txt amazon_streaming.txt apple_streaming.txt hbomax.txt discoveryplus.txt canais_globo.txt globoplay.txt crunchyroll.txt dailymotion.txt lionsgateplus.txt looke.txt nebula.txt paramountplus.txt peacock_tv.txt plex.txt pluto_tv.txt samsung_tv_plus.txt rakuten_viki.txt spotify_video.txt"
 
 categories["gaming"]="activision_blizzard.txt blizzard_entertainment.txt battle_net.txt epic_games.txt electronic_arts.txt fifa.txt leagueoflegends.txt riot_games.txt roblox.txt rockstar_games.txt steam.txt playstation.txt xboxlive.txt nintendo.txt minecraft.txt nvidia.txt ubisoft.txt valorant.txt wargaming.txt"
 
@@ -25,7 +25,7 @@ categories["adult_dating"]="onlyfans.txt plenty_of_fish.txt tinder.txt"
 
 categories["music_audio"]="spotify.txt deezer.txt soundcloud.txt tidal.txt iheartradio.txt"
 
-categories["news_sports"]="espn.txt zhihu.txt deepseek.txt"
+categories["news_sports"]="espn.txt zhihu.txt"
 
 categories["misc"]="4chan.txt 9gag.txt amino.txt bigo_live.txt douban.txt imgur.txt coolapk.txt odysee.txt olvid.txt"
 
