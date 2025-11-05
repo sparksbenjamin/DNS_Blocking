@@ -1,13 +1,11 @@
 # Canais Globo Blocklist
 # Service ID: canais_globo
-# Generated: 2025-11-05 17:57:52 UTC
+# Generated: 2025-11-05 21:31:28 UTC
 # Total domains: 3
 #
 # Compatible with Pi-hole and AdGuard Home
 #
 
-apps.globosat.globo.com
-canaisglobo.globo.com
-globosat.globo.com
-gsatmulti.globo.com
-www.globosat.globo.com
+||canaisglobo.globo.com^
+||globosat.globo.com^
+||gsatmulti.globo.com^

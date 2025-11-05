@@ -1,12 +1,12 @@
 # Globoplay Blocklist
 # Service ID: globoplay
-# Generated: 2025-11-05 17:57:52 UTC
+# Generated: 2025-11-05 21:31:28 UTC
 # Total domains: 4
 #
 # Compatible with Pi-hole and AdGuard Home
 #
 
-cloud-jarvis.globo.com
-globoplay.com
-globoplay.com.br
-globoplay.globo.com
+||cloud-jarvis.globo.com^
+||globoplay.com.br^
+||globoplay.com^
+||globoplay.globo.com^

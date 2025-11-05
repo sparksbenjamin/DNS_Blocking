@@ -1,52 +1,12 @@
 # Bigo Live Blocklist
 # Service ID: bigo_live
-# Generated: 2025-11-05 17:57:52 UTC
+# Generated: 2025-11-05 21:31:28 UTC
 # Total domains: 4
 #
 # Compatible with Pi-hole and AdGuard Home
 #
 
-activity.bigo.tv
-alicdn01.bigolive.tv
-alicdn03.bigolive.tv
-api-stats.bigo.tv
-bggray-manage-oss.bigo.tv
-bggray-www.bigo.tv
-bgtest-bbs.bigo.tv
-bgtest-manage-oss.bigo.tv
-bigo.sg
-bigo.tv
-bigolive.tv
-bigovideo.tv
-bs2.bigo.sg
-cf01.bigolive.tv
-feedback-common.bigo.tv
-fs.calldev.bigo.sg
-git.sysop.bigo.sg
-go.bigo.tv
-hotroom.live.bigo.sg
-mail.bigo.sg
-mobile.bigo.tv
-mx.bigo.tv
-node-kong.bigo.tv
-pages.sysop.bigo.sg
-pay-notify-gray.bigo.sg
-pay-notify.bigo.sg
-s.bigo.tv
-snapshot.calldev.bigo.sg
-sysop.bigo.sg
-ta.bigo.tv
-test-image.bigolive.tv
-test-video.bigolive.tv
-testgo.bigo.tv
-v-us-all.bigo.tv
-v-us-anycast.bigo.tv
-video.esx.bigo.sg
-video.fs.bigo.sg
-videosnap.esx.bigo.sg
-web.live.bigo.sg
-www.bigo.sg
-www.pay-notify-gray.bigo.sg
-www.pay-notify.bigo.sg
-www.snapshot.calldev.bigo.sg
-www.videosnap.esx.bigo.sg
+||bigo.sg^
+||bigo.tv^
+||bigolive.tv^
+||bigovideo.tv^

@@ -1,10 +1,10 @@
 # FIFA Blocklist
 # Service ID: fifa
-# Generated: 2025-11-05 17:57:52 UTC
+# Generated: 2025-11-05 21:31:28 UTC
 # Total domains: 2
 #
 # Compatible with Pi-hole and AdGuard Home
 #
 
-fifa.com
-fifaplus.com
+||fifa.com^
+||fifaplus.com^

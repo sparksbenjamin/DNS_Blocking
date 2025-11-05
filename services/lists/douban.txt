@@ -1,17 +1,11 @@
 # Douban Blocklist
 # Service ID: douban
-# Generated: 2025-11-05 17:57:52 UTC
+# Generated: 2025-11-05 21:31:28 UTC
 # Total domains: 3
 #
 # Compatible with Pi-hole and AdGuard Home
 #
 
-at1.doubanio.com
-at2.doubanio.com
-at3.doubanio.com
-at4.doubanio.com
-douban.com
-douban.fm
-doubanio.com
-s.doubanio.com
-www.douban.fm
+||douban.com^
+||douban.fm^
+||doubanio.com^

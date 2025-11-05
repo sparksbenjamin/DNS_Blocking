@@ -1,67 +1,10 @@
 # Signal Blocklist
 # Service ID: signal
-# Generated: 2025-11-05 17:57:52 UTC
+# Generated: 2025-11-05 21:31:28 UTC
 # Total domains: 2
 #
 # Compatible with Pi-hole and AdGuard Home
 #
 
-api-staging.backup.signal.org
-api.backup.signal.org
-audit.kt.signal.org
-audit.kt.staging.signal.org
-backend1.svr3.reflector.signal.org
-backend1.svr3.staging.reflector.signal.org
-backend2.svr3.reflector.signal.org
-backend2.svr3.staging.reflector.signal.org
-backend3.svr3.reflector.signal.org
-backend3.svr3.staging.reflector.signal.org
-braintree.api.signal.org
-braintree.api.staging.signal.org
-build-artifacts.signal.org
-cdn-ca.signal.org
-cdn2-staging.signal.org
-cdn2.signal.org
-cdn3-staging.signal.org
-cdn3.signal.org
-cdsi.reflector.signal.org
-cdsi.staging.reflector.signal.org
-chat.reflector.signal.org
-chat.staging.reflector.signal.org
-desktop.build.internal.signal.org
-donations.api.signal.org
-donations.api.staging.signal.org
-ech-chat.staging.signal.org
-gcp.sfu.dev.voip.signal.org
-internal.signal.org
-kt.signal.org
-kt.staging.signal.org
-science.signal.org
-shop.signal.org
-signal.org
-status-staging.signal.org
-status-test.signal.org
-status.signal.org
-storage-manager-staging.signal.org
-storage-manager.signal.org
-stripe.api.signal.org
-stripe.api.staging.signal.org
-support.signal.org
-support.whispersystems.org
-svr2.reflector.signal.org
-svr2.staging.reflector.signal.org
-svrb.reflector.signal.org
-svrb.staging.reflector.signal.org
-textsecure-service-ca.whispersystems.org
-textsecure-service-staging.whispersystems.org
-turn1.whispersystems.org
-turn3.signal.org
-updates.signal.org
-updates2.signal.org
-uploaderdemo.signal.org
-uploaderdemo2.signal.org
-whispersystems.org
-www.signal.org
-www.textsecure-service-ca.whispersystems.org
-www.turn1.whispersystems.org
-www.whispersystems.org
+||signal.org^
+||whispersystems.org^

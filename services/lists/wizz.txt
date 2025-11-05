@@ -1,38 +1,11 @@
 # Wizz Blocklist
 # Service ID: wizz
-# Generated: 2025-11-05 17:57:52 UTC
+# Generated: 2025-11-05 21:31:28 UTC
 # Total domains: 3
 #
 # Compatible with Pi-hole and AdGuard Home
 #
 
-clips-us-central1.wizz.chat
-context-callback.wizz.chat
-dashboard.wizzapp.com
-discussions-us-central1.wizz.chat
-emitters-us-central1.wizz.chat
-engage-us-central1.wizz.chat
-get.wizzapp.com
-getwizz.io
-help.wizzapp.com
-internal.wizz.chat
-moderation-us-central1.wizz.chat
-mongo-datalake-us-central1.wizz.chat
-requests-us-central1.wizz.chat
-s.wizz.chat
-s.wizzapp.com
-segmentation-us-central1.wizz.chat
-share.getwizz.io
-share.wizz.chat
-share.wizzapp.com
-sockets.wizz.chat
-staging.sockets.wizz.chat
-staging.wizz.chat
-swipes-us-central1.wizz.chat
-swipes.wizz.chat
-users-us-central1.wizz.chat
-verify-us-central1.wizz.chat
-wizz.chat
-wizzapp.com
-worker-us-central1.wizz.chat
-www.wizzapp.com
+||getwizz.io^
+||wizz.chat^
+||wizzapp.com^
