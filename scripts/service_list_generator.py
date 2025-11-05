@@ -29,9 +29,32 @@ def main():
         raise ValueError(f"Unexpected JSON structure. Keys: {data.keys() if isinstance(data, dict) else 'not a dict'}")
     
     print(f"Found {len(services)} services")
+    print(f"Loading Local Services")
+    with open("services.json") as f:
+        local_services = json.load(f)
+
+    if isinstance(local_services, dict) and 'blocked_services' in local_services:
+        local_services = local_services['blocked_services']
+    elif not isinstance(local_services, list):
+        raise ValueError(f"Unexpected JSON structure in local file. Keys: {local_services.keys() if isinstance(local_services, dict) else 'not a dict'}")
+
+    # Avoid duplicates based on 'name'
+    existing_names = {service.get("name") for service in services}
+    for service in local_services:
+        if service.get("name") not in existing_names:
+            services.append(service)
+
+    # If the original data was a dict, update its 'blocked_services' key
+    if isinstance(data, dict) and 'blocked_services' in data:
+        data['blocked_services'] = services
+    else:
+        data = services
+    print(f"Found {len(services)} services")
 
     # Create services directory
     os.makedirs("services", exist_ok=True)
+    os.makedirs("services/lists", exist_ok=True)
+    os.makedirs("services/categories", exist_ok=True)
 
     # Generate timestamp
     timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
@@ -43,11 +66,10 @@ def main():
         if not isinstance(service, dict):
             print(f"Warning: Skipping service at index {idx} - not a dictionary: {type(service)}")
             continue
-            
         service_id = service.get('id', 'unknown')
         service_name = service.get('name', 'Unknown Service')
         rules = service.get('rules', [])
-        
+        group = service.get('group', 'unknown')
         if not rules:
             continue
         
@@ -57,10 +79,10 @@ def main():
         for rule in rules:
             # Remove AdGuard syntax: ||domain^ -> domain
             domain = rule.strip()
-            if domain.startswith('||'):
-                domain = domain[2:]
-            if domain.endswith('^'):
-                domain = domain[:-1]
+            #if domain.startswith('||'):
+            #    domain = domain[2:]
+            #if domain.endswith('^'):
+            #    domain = domain[:-1]
             if domain:  # Only add non-empty domains
                 domains.append(domain)
         
@@ -68,8 +90,8 @@ def main():
             continue
         
         # Create filename (sanitize service_id for filename)
-        filename = f"services/{service_id}.txt"
-        
+        filename = f"services/lists/{service_id}.txt"
+        grouping = f"services/categories/{group}.txt"
         # Write blocklist file
         with open(filename, 'w', encoding='utf-8') as f:
             # Header compatible with both Pi-hole and AdGuard
@@ -86,7 +108,9 @@ def main():
             # Write domains (one per line, Pi-hole/AdGuard format)
             for domain in sorted(domains):
                 f.write(f"{domain}\n")
-        
+        with open(grouping, '+a', encoding='utf-8') as f:
+            for domain in sorted(domains):
+                f.write(f"{domain}\n")
         services_processed += 1
         print(f"Generated {filename} with {len(domains)} domains")
 
@@ -104,7 +128,7 @@ def main():
         
         if domain_count > 0:
             raw_url = f"https://raw.githubusercontent.com/{repo}/main/services/{service_id}.txt"
-            table_rows.append(f"| {service_name} | {domain_count} | [{service_id}.txt]({service_id}.txt) | [Raw]({raw_url}) |")
+            table_rows.append(f"| {service_name} | {domain_count} | [{service_id}.txt](lists/{service_id}.txt) | [Raw]({raw_url}) |")
     
     # Build the new section
     new_section = f"""<!-- START:services -->
@@ -138,6 +162,5 @@ Generated: {timestamp}
 if __name__ == "__main__":
 
     main()
-
 
 
