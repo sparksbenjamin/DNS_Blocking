@@ -2,7 +2,7 @@ name: Subdomain Enumeration per Domain File (Parallel)
 
 on:
   workflow_run:
-    workflows: ["Generate Service Blocklists"]
+    workflows: ["Update"]
     types: [completed]
   workflow_dispatch:
 
