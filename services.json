@@ -1,0 +1,11 @@
+{
+  "blocked_services":[
+    {
+      "id": "Grindr",
+      "name": "grindr",
+      "rules": [
+        "||grindr.com"
+      ]
+    }
+  ]
+}
