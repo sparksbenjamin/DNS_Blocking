@@ -14,7 +14,7 @@ declare -A categories
 categories["social_media"]="facebook.txt instagram.txt twitter.txt tiktok.txt snapchat.txt mastodon.txt linkedin.txt vk.txt weibo.txt qq.txt clubhouse.txt kook.txt line.txt kik.txt kakaotalk.txt viber.txt wizz.txt xiaohongshu.txt tumblr.txt"
 categories["ai"]="chatgpt.txt claude.txt deepseek.txt"
 categories["streaming_video"]="youtube.txt netflix.txt hulu.txt disneyplus.txt disney_streaming.txt amazon_streaming.txt apple_streaming.txt hbomax.txt discoveryplus.txt canais_globo.txt globoplay.txt crunchyroll.txt dailymotion.txt lionsgateplus.txt looke.txt nebula.txt paramountplus.txt peacock_tv.txt plex.txt pluto_tv.txt samsung_tv_plus.txt rakuten_viki.txt spotify_video.txt"
-categories["messaging"]= "discord.txt slack.txt wechat.txt signal.txt telegram.txt whatsapp.txt skype.txt" 
+categories["messaging"]="discord.txt slack.txt wechat.txt signal.txt telegram.txt whatsapp.txt skype.txt" 
 categories["gaming"]="origin.txt activision_blizzard.txt blizzard_entertainment.txt battle_net.txt epic_games.txt electronic_arts.txt fifa.txt leagueoflegends.txt riot_games.txt roblox.txt rockstar_games.txt steam.txt playstation.txt xboxlive.txt nintendo.txt minecraft.txt nvidia.txt ubisoft.txt valorant.txt wargaming.txt"
 
 categories["shopping"]="amazon.txt aliexpress.txt shopee.txt lazada.txt shein.txt mercado_libre.txt temu.txt ebay.txt"
