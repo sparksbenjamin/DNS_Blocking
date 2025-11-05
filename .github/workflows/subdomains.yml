@@ -84,29 +84,36 @@ jobs:
         shell: bash
         run: |
           echo "Processing batch: ${{ toJson(matrix.batch) }}"
+
           for file in ${{ join(matrix.batch, ' ') }}; do
             echo "🔍 Processing $file ..."
             tmpfile=$(mktemp)
 
-            # Run subfinder on each valid domain in the file
-            while IFS= read -r domain; do
-              [[ -z "$domain" || "$domain" =~ ^[#|] ]] && continue
-              echo "  -> Enumerating $domain"
-              subfinder -d "$domain" -silent >> "$tmpfile" || echo "Subfinder failed for $domain" >&2
-              # Add the root domain back as a safety net
-              echo "$domain" >> "$tmpfile"
-            done < "$file"
+            # Extract all valid domains (exclude comments, pipes, and blanks)
+            grep -vE '^[#|]|^$' "$file" > domains.tmp
 
-            # Preserve headers (# or | lines)
+            # Skip if no valid domains
+            if [ ! -s domains.tmp ]; then
+              echo "⚠️ No valid domains found in $file, skipping..."
+              continue
+            fi
+
+            # Run subfinder once for all domains in the list
+            echo "  -> Enumerating domains from $file"
+            subfinder -dL domains.tmp -silent > "$tmpfile" || echo "Subfinder failed for $file" >&2
+
+            # Add the root domains back as a safety net
+            cat domains.tmp >> "$tmpfile"
+
+            # Preserve headers (# and | lines)
             grep '^[#|]' "$file" > header.tmp
-            # Preserve existing domains
-            grep -v '^[#|]' "$file" > original_subs.tmp
-            # Merge all subdomains and deduplicate
-            cat original_subs.tmp "$tmpfile" | sort -u > merged_subs.tmp
-            # Combine headers and merged subdomains
-            cat header.tmp merged_subs.tmp > "$file"
 
-            rm -f tmpfile header.tmp original_subs.tmp merged_subs.tmp
+            # Merge, deduplicate, and rebuild the file
+            sort -u "$tmpfile" > merged.tmp
+            cat header.tmp merged.tmp > "$file"
+
+            # Clean up temp files
+            rm -f tmpfile header.tmp merged.tmp domains.tmp
           done
 
       - name: Commit and push safely
