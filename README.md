@@ -19,8 +19,10 @@ DNS filtering allows you to block unwanted content at the network level by preve
 
 ---
 ## Worried about DNS Bypassing?
-There are steps you can take to restrict DNS traffic and enforce that DNS traffic is handled by your DNS Server
+There are steps you can take to restrict DNS traffic and enforce that DNS traffic is handled by your DNS Server.
 [Learn about DNS Bypassing](DNS_Bypass.md)
+---
+## 
 ---
 ## 🗂 What’s Included
 
@@ -29,7 +31,12 @@ This repository provides curated DNS blocklists for different categories:
 
 ### 📂 Services
 
-| Category | Description | Link |
-|-----------|--------------|------|
-| **Services** | Blocks known services. | [View list](services/README.md) |
-| **Tunneling** | Blocks known Proxy and VPN providers. | [View list](tunneling/README.md) |
+#### [Online Services](services/READ.md)
+A list of online services that can be used.  There is a file for each online service so that you can target each one directly.  
+
+#### [Tunneling][tunneling/README.md]
+A list of VPN and Proxy providers.  This list has two direct lists that can be added to include the sum of all the entires. You can also add any one proivder that you wish. 
+
+[VPNS](tunneling/vpns.txt)
+[Proxies](tunneling/proxies.txt)
+
