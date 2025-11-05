@@ -18,7 +18,9 @@ DNS filtering allows you to block unwanted content at the network level by preve
 - **Enhance privacy** by reducing exposure to tracking domains.
 
 ---
-## [Learn about DNS Bypassing](DNS_Bypass.md)
+## Worried about DNS Bypassing?
+There are steps you can take to restrict DNS traffic and enforce that DNS traffic is handled by your DNS Server
+[Learn about DNS Bypassing](DNS_Bypass.md)
 ---
 ## 🗂 What’s Included
 
