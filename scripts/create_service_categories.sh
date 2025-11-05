@@ -2,9 +2,11 @@
 
 # Directory containing individual service files
 SERVICE_DIR="services"
+mkdir $SERVICE_DIR/lists
 
 # Directory to output combined category files
-OUTPUT_DIR="categories"
+OUTPUT_DIR="services/categories"
+mkdir $OUTPUT_DIR
 
 
 # Define categories and associated service filenames
