@@ -1,0 +1,34 @@
+name: Update
+
+on:
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  generate-blocklists:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+          
+      - name: Make update script executable
+        run: chmod +x ./scripts/create_service_categories.sh
+
+      
+      - name: Run update script
+        run: ./scripts/create_service_categories.sh
+
+      - name: Configure Git for push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git 
+          
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add services/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update blocklists - $(date +'%Y-%m-%d %H:%M:%S UTC')" && git push)
