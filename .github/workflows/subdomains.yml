@@ -1,9 +1,6 @@
 name: Subdomain Enumeration per Domain File (Parallel)
 
 on:
-  workflow_run:
-    workflows: ["Update"]
-    types: [completed]
   workflow_dispatch:
 
 jobs:
