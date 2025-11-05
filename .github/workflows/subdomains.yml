@@ -84,9 +84,7 @@ jobs:
 
             # Run subfinder on each valid domain in the file
             while IFS= read -r domain; do
-              # Skip comments, empty lines, or pipe-prefixed metadata
               [[ -z "$domain" || "$domain" =~ ^[#|] ]] && continue
-              
               echo "  -> Enumerating $domain"
               subfinder -d "$domain" -silent >> "$tmpfile" || echo "Subfinder failed for $domain" >&2
             done < "$file"
@@ -103,11 +101,25 @@ jobs:
             rm -f tmpfile header.tmp original_subs.tmp merged_subs.tmp
           done
 
-      - name: Commit and push changes
+      - name: Commit and push safely
+        shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git
+
+          # Fetch latest main branch
+          git fetch origin main
+          git reset --hard origin/main
+
+          # Stage updated files
           git add services/*.txt
-          git diff --quiet && git diff --staged --quiet || \
-            (git commit -m "Update blocklists - $(date +'%Y-%m-%d %H:%M:%S UTC')" && git push)
+
+          # Commit if there are changes
+          if ! git diff --cached --quiet; then
+            git commit -m "Update blocklists - $(date +'%Y-%m-%d %H:%M:%S UTC')"
+            # Use force-with-lease to safely push in parallel runs
+            git push --force-with-lease origin main
+          else
+            echo "No changes to commit."
+          fi
