@@ -1,6 +1,6 @@
 # Service Blocklists
 <!-- START:services -->
-Generated: 2025-11-05 17:40:36 UTC
+Generated: 2025-11-05 17:57:52 UTC
 
 | Service | Domains | File | Raw URL |
 |---------|---------|------|----------|
