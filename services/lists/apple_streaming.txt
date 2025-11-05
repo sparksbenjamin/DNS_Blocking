@@ -1,0 +1,26 @@
+# Apple Streaming Blocklist
+# Service ID: apple_streaming
+# Generated: 2025-11-05 21:32:17 UTC
+# Total domains: 18
+#
+# Compatible with Pi-hole and AdGuard Home
+#
+
+||applemusic.apple^
+||hls-svod-aoc-ve.itunes.g.aaplimg.com^
+||itun.es^
+||itunes.apple.com^
+||itunes.ca^
+||itunes.co.th^
+||itunes.co^
+||itunes.com^
+||itunes.es^
+||itunes.g.aaplimg.com^
+||itunes.hk^
+||itunes.mx^
+||itunes.org^
+||itunes.us^
+||music.apple.com^
+||tv.apple.com^
+||tv.g.apple.com^
+||tv.v.aaplimg.com^
