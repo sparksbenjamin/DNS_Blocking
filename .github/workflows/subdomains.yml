@@ -87,6 +87,8 @@ jobs:
               [[ -z "$domain" || "$domain" =~ ^[#|] ]] && continue
               echo "  -> Enumerating $domain"
               subfinder -d "$domain" -silent >> "$tmpfile" || echo "Subfinder failed for $domain" >&2
+              # Add the root domain back as a safety net
+              echo "$domain" >> "$tmpfile"
             done < "$file"
 
             # Preserve headers (# or | lines)
