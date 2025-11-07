@@ -14,7 +14,7 @@ This directory contains curated lists of VPN and proxy provider domains.
 <!-- START:tunneling -->
 *(auto-generated section — do not edit manually)*
 
-Generated: 2025-11-07 00:15 UTC
+Generated: 2025-11-07 02:31 UTC
 
 | List | Entries | File | Raw URL |
 |------|----------|------|---------|

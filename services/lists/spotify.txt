@@ -1,10 +1,8 @@
 # Spotify Blocklist
 # Service ID: spotify
-# Generated: 2025-11-07 00:15:28 UTC
+# Generated: 2025-11-07 02:31:30 UTC
 # Total domains: 21
-#
 # Compatible with Pi-hole and AdGuard Home
-#
 
 /_spotify-connect._tcp.local/
 |audio-ak-spotify-com.akamaized.net^
