@@ -1,0 +1,14 @@
+# Cobalt Strike Blocklist
+# Service ID: cobalt_strike
+# Generated: 2025-11-07 16:37:50 UTC
+# Total domains: 8
+# Compatible with Pi-hole and AdGuard Home
+
+||backend.datasystemconsulting.com^
+||chat.seodevserver.com^
+||console.seodevserver.com^
+||gdatasoftvare.com^
+||int.datasystemconsulting.com^
+||mrpatate.myddns.me^
+||services.datasystemconsulting.com^
+||support.seodevserver.com^
