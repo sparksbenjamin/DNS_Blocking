@@ -23,14 +23,13 @@ eu-central-1.console.cname-proxy.amazon.com
 eu-north-1.console.cname-proxy.amazon.com
 eu-west-1.console.cname-proxy.amazon.com
 eu-west-2.console.cname-proxy.amazon.com
-eu-west-3.console.cname-proxy.amazon.com
 gdps-proxy.geospatial.amazon.dev
 global.console.cname-proxy.amazon.com
 health.cname-proxy.amazon.com
 iad.proxy.amazon.com
-lightsail.cname-proxy.amazon.com
 maxis-file-service-prod-dub.dub.proxy.amazon.com
 minerva-proxy.devices.amazon.dev
+mmp-proxy.mshop.amazon.dev
 pact-proxy.amazon.com
 pact-proxy.amazon.eu
 pdx.proxy.amazon.com
@@ -49,6 +48,7 @@ support.console.cname-proxy.amazon.com
 target.cname-proxy.amazon.com
 us-east-1.cname-proxy.amazon.com
 us-east-1.console.cname-proxy.amazon.com
+us-east-1.mmp-proxy.mshop.amazon.dev
 us-east-1.prod.gdps-proxy.geospatial.amazon.dev
 us-east-1.prod.proxy.live.amazon.com
 us-east-1.quicksight.cname-proxy.amazon.com
@@ -59,6 +59,7 @@ us-west-2.quicksight.cname-proxy.amazon.com
 vs.cname-proxy.amazon.com
 widget.console.cname-proxy.amazon.com
 wildcard.appstream2.us-east-1.cname-proxy.amazon.com
+wildcard.eu-central-1.console.cname-proxy.amazon.com
 wildcard.eu-north-1.console.cname-proxy.amazon.com
 wildcard.eu-west-1.console.cname-proxy.amazon.com
 wildcard.us-east-1.console.cname-proxy.amazon.com
