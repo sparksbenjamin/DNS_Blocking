@@ -2,8 +2,13 @@
 """
 Generate service blocklists from AdGuard Hostlists Registry
 Compatible with Pi-hole and AdGuard Home
-"""
 
+Notes:
+- Blocklist files are written to services/lists/
+- README links (File / Raw URL columns) point to services/links/ (per request)
+  If you want the generated files to be written to services/links/ instead,
+  change the `lists_dir` variable below or let me know.
+"""
 import requests
 import json
 import os
@@ -44,25 +49,27 @@ def main():
         if service.get("name") not in existing_names:
             services.append(service)
 
-    # If the original data was a dict, update its 'blocked_services' key
+    # If original structure was dict, keep that shape
     if isinstance(data, dict) and 'blocked_services' in data:
         data['blocked_services'] = services
     else:
         data = services
     print(f"Found {len(services)} services")
 
-    # Create services directory
-    os.makedirs("services", exist_ok=True)
-    os.makedirs("services/lists", exist_ok=True)
-    os.makedirs("services/categories", exist_ok=True)
+    # Directories (you can change lists_dir to 'links' if you want files written there)
+    lists_dir = Path("services/lists")
+    categories_dir = Path("services/categories")
+    links_dir = Path("services/links")  # README will reference this path for links/raw
 
-    # Generate timestamp
+    lists_dir.mkdir(parents=True, exist_ok=True)
+    categories_dir.mkdir(parents=True, exist_ok=True)
+    links_dir.mkdir(parents=True, exist_ok=True)  # create so links exist if you want to copy files later
+
     timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
 
     # Process each service
     services_processed = 0
     for idx, service in enumerate(services):
-        # Validate service is a dictionary
         if not isinstance(service, dict):
             print(f"Warning: Skipping service at index {idx} - not a dictionary: {type(service)}")
             continue
@@ -73,53 +80,61 @@ def main():
         if not rules:
             continue
         
-        # Convert AdGuard rules to domain format
-        # Rules like "||example.com^" need to be converted to "example.com"
         domains = []
         for rule in rules:
-            # Remove AdGuard syntax: ||domain^ -> domain
             domain = rule.strip()
-            #if domain.startswith('||'):
-            #    domain = domain[2:]
-            #if domain.endswith('^'):
-            #    domain = domain[:-1]
-            if domain:  # Only add non-empty domains
+            if domain:
                 domains.append(domain)
         
         if not domains:
             continue
         
-        # Create filename (sanitize service_id for filename)
-        filename = f"services/lists/{service_id}.txt"
-        grouping = f"services/categories/{group}.txt"
-        # Write blocklist file
-        with open(filename, 'w', encoding='utf-8') as f:
-            # Header compatible with both Pi-hole and AdGuard
+        filename = lists_dir / f"{service_id}.txt"
+        grouping = categories_dir / f"{group}.txt"
+
+        # Write blocklist file to services/lists/
+        with filename.open('w', encoding='utf-8') as f:
             f.write(f"# {service_name} Blocklist\n")
             f.write(f"# Service ID: {service_id}\n")
             f.write(f"# Generated: {timestamp}\n")
             f.write(f"# Total domains: {len(domains)}\n")
-            f.write(f"#\n")
-            f.write(f"# Compatible with Pi-hole and AdGuard Home\n")
-            f.write(f"#\n\n")
-
-
+            f.write(f"# Compatible with Pi-hole and AdGuard Home\n\n")
             service['domains'] = domains
-            # Write domains (one per line, Pi-hole/AdGuard format)
             for domain in sorted(domains):
                 f.write(f"{domain}\n")
-        with open(grouping, '+a', encoding='utf-8') as f:
+
+        # Append domains to category file
+        with grouping.open('a', encoding='utf-8') as f:
             for domain in sorted(domains):
                 f.write(f"{domain}\n")
+
         services_processed += 1
         print(f"Generated {filename} with {len(domains)} domains")
 
-    # Get repository info from environment
     repo = os.environ.get('GITHUB_REPOSITORY', 'YOUR_USERNAME/YOUR_REPO')
     
-    
-    
-    # Generate the services table
+    ### CATEGORY SECTION (will be placed before Services in README) ###
+    category_files = sorted(categories_dir.glob("*.txt"))
+    category_rows = []
+    for cat_file in category_files:
+        category_name = cat_file.stem
+        # Count non-empty lines (domains)
+        with cat_file.open('r', encoding='utf-8') as fh:
+            count = sum(1 for line in fh if line.strip())
+        # Markdown link points to services/categories/<file>
+        md_link = f"categories/{cat_file.name}"
+        raw_url = f"https://raw.githubusercontent.com/{repo}/main/services/categories/{cat_file.name}"
+        category_rows.append(f"| {category_name} | {count} | [{cat_file.name}]({md_link}) | [Raw]({raw_url}) |")
+
+    new_categories_section = f"""<!-- START:categories -->
+Generated: {timestamp}
+
+| Category | Domains | File | Raw URL |
+|-----------|----------|------|----------|
+{chr(10).join(category_rows)}
+<!-- END:categories -->"""
+
+    ### SERVICE TABLE SECTION ###
     table_rows = []
     for service in sorted(services, key=lambda x: x.get('name', '')):
         service_id = service.get('id', 'unknown')
@@ -127,40 +142,67 @@ def main():
         domain_count = len(service.get('domains', []))
         
         if domain_count > 0:
-            raw_url = f"https://raw.githubusercontent.com/{repo}/main/services/{service_id}.txt"
-            table_rows.append(f"| {service_name} | {domain_count} | [{service_id}.txt](lists/{service_id}.txt) | [Raw]({raw_url}) |")
+            # README "File" column points to services/links/{service_id}.txt per your request
+            md_link = f"links/{service_id}.txt"
+            raw_url = f"https://raw.githubusercontent.com/{repo}/main/services/links/{service_id}.txt"
+            table_rows.append(f"| {service_name} | {domain_count} | [{service_id}.txt]({md_link}) | [Raw]({raw_url}) |")
     
-    # Build the new section
-    new_section = f"""<!-- START:services -->
+    new_services_section = f"""<!-- START:services -->
 Generated: {timestamp}
 
 | Service | Domains | File | Raw URL |
 |---------|---------|------|----------|
 {chr(10).join(table_rows)}
 <!-- END:services -->"""
-    
-    # Update the README
+
+    ### UPDATE README: categories first, then services ###
     readme_path = Path("services/README.md")
-    content = readme_path.read_text(encoding='utf-8')
-    
-    section_start = "<!-- START:services -->"
-    section_end = "<!-- END:services -->"
-    
-    # Replace only the services section
-    updated = re.sub(
-        f"{re.escape(section_start)}.*?{re.escape(section_end)}",
-        new_section,
-        content,
-        flags=re.DOTALL
-    )
-    
-    readme_path.write_text(updated, encoding='utf-8')
+    if not readme_path.exists():
+        # If README doesn't exist yet, create a skeleton with both sections
+        base = f"# Services\n\n{new_categories_section}\n\n{new_services_section}\n"
+        readme_path.write_text(base, encoding='utf-8')
+        print("Created new services/README.md with categories and services sections.")
+    else:
+        content = readme_path.read_text(encoding='utf-8')
+
+        # Replace or insert categories section first
+        if "<!-- START:categories -->" in content and "<!-- END:categories -->" in content:
+            content = re.sub(
+                r"<!-- START:categories -->.*?<!-- END:categories -->",
+                new_categories_section,
+                content,
+                flags=re.DOTALL
+            )
+        else:
+            # Prefer to place categories near top; if services section exists, place categories before it,
+            # otherwise append at top.
+            if "<!-- START:services -->" in content:
+                content = re.sub(
+                    r"<!-- START:services -->",
+                    new_categories_section + "\n\n<!-- START:services -->",
+                    content,
+                    count=1
+                )
+            else:
+                content = new_categories_section + "\n\n" + content
+
+        # Replace or append services section (after categories)
+        if "<!-- START:services -->" in content and "<!-- END:services -->" in content:
+            content = re.sub(
+                r"<!-- START:services -->.*?<!-- END:services -->",
+                new_services_section,
+                content,
+                flags=re.DOTALL
+            )
+        else:
+            # Append services section if missing
+            content = content + "\n\n" + new_services_section
+
+        readme_path.write_text(content, encoding='utf-8')
+        print("Updated services/README.md with categories and services sections.")
 
     print(f"\nTotal services processed: {services_processed}")
 
 
 if __name__ == "__main__":
-
     main()
-
-
