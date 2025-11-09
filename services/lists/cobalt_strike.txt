@@ -1,14 +1,18 @@
 # Cobalt Strike Blocklist
 # Service ID: cobalt_strike
-# Generated: 2025-11-08 02:56:14 UTC
-# Total domains: 8
+# Generated: 2025-11-09 03:06:00 UTC
+# Total domains: 12
 # Compatible with Pi-hole and AdGuard Home
 
+||app.setupcloudos.com^
 ||backend.datasystemconsulting.com^
 ||chat.seodevserver.com^
 ||console.seodevserver.com^
-||gdatasoftvare.com^
 ||int.datasystemconsulting.com^
+||kocs45.916919.xyz^
+||microsharepolnt.store^
 ||mrpatate.myddns.me^
+||prod.setupcloudos.com^
+||searchmtcn.com^
 ||services.datasystemconsulting.com^
 ||support.seodevserver.com^
