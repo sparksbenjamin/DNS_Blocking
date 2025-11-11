@@ -1,11 +1,13 @@
 # Cobalt Strike Blocklist
 # Service ID: cobalt_strike
-# Generated: 2025-11-10 03:11:51 UTC
-# Total domains: 5
+# Generated: 2025-11-11 03:06:51 UTC
+# Total domains: 7
 # Compatible with Pi-hole and AdGuard Home
 
-||app.setupcloudos.com^
-||kocs45.916919.xyz^
-||microsharepolnt.store^
-||prod.setupcloudos.com^
-||searchmtcn.com^
+||api.softwarecommerce.net^
+||back.softwarecommerce.net^
+||backoffice.softwarecommerce.net^
+||csonxwhattest12137.oss-cn-beijing.aliyuncs.com^
+||csstatus.0nlinecc.com^
+||microsoft-schtask.com^
+||www.feft234321.xyz^

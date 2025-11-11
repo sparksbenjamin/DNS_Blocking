@@ -1,10 +1,10 @@
 chc.proxy.k8s.ikarem.io
 fra.proxy.k8s.ikarem.io
-megaproxy-ingress-nginx-controller.ingress-nginx.aps.production.k8s.ikarem.io
 megaproxy-ingress-nginx-controller.ingress-nginx.euc.production.k8s.ikarem.io
 megaproxy-ingress-nginx-controller.ingress-nginx.euw.production.k8s.ikarem.io
 megaproxy-ingress-nginx-controller.ingress-nginx.use.production.k8s.ikarem.io
 megaproxy-ingress-nginx-controller.ingress-nginx.usw.production.k8s.ikarem.io
+mtunnel-node-server-byoip.nextunnel.aps.production.k8s.ikarem.io
 mtunnel-node-server-byoip.nextunnel.euw.production.k8s.ikarem.io
 mtunnel-node-server-byoip.nextunnel.use.production.k8s.ikarem.io
 mun.proxy.k8s.ikarem.io
@@ -17,6 +17,8 @@ nextunnel.euc.production.k8s.ikarem.io
 nextunnel.euw.production.k8s.ikarem.io
 nextunnel.use.production.k8s.ikarem.io
 nextunnel.usw.production.k8s.ikarem.io
+node-server-byoip-dual-2.nextunnel.apa.production.k8s.ikarem.io
+node-server-byoip-dual-2.nextunnel.aps.production.k8s.ikarem.io
 node-server-byoip-dual-2.nextunnel.euc.production.k8s.ikarem.io
 node-server-byoip-dual-2.nextunnel.euw.production.k8s.ikarem.io
 node-server-byoip-dual-2.nextunnel.use.production.k8s.ikarem.io
