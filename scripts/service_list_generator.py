@@ -5,13 +5,17 @@ Compatible with Pi-hole and AdGuard Home
 
 Notes:
 - Blocklist files are written to services/lists/
+- Category files are written to services/categories/
 - README links (File / Raw URL columns) point to services/links/ (per request)
   If you want the generated files to be written to services/links/ instead,
   change the `lists_dir` variable below or let me know.
+- Supports all service groups: social, dating, gaming, shopping, streaming, 
+  phishing, malware, adult, and any custom groups
 
 Changes:
 - Category files are now cleared and regenerated fresh each run (no more duplicates)
 - Added 100MB size check for all output files to prevent GitHub errors
+- Domain extraction strips AdGuard syntax (||, ^, *.) for Pi-hole/AdGuard compatibility
 """
 import requests
 import json
@@ -34,7 +38,7 @@ def check_file_size(filepath, content, max_mb=MAX_FILE_SIZE_MB):
     return size_mb
 
 def main():
-    # Fetch the services.json file
+    # Fetch the services.json file from AdGuard
     url = "https://adguardteam.github.io/HostlistsRegistry/assets/services.json"
     print(f"Fetching services from {url}...")
     
@@ -50,15 +54,28 @@ def main():
     else:
         raise ValueError(f"Unexpected JSON structure. Keys: {data.keys() if isinstance(data, dict) else 'not a dict'}")
     
-    print(f"Found {len(services)} services")
-    print(f"Loading Local Services")
-    with open("services.json") as f:
-        local_services = json.load(f)
-
-    if isinstance(local_services, dict) and 'blocked_services' in local_services:
-        local_services = local_services['blocked_services']
-    elif not isinstance(local_services, list):
-        raise ValueError(f"Unexpected JSON structure in local file. Keys: {local_services.keys() if isinstance(local_services, dict) else 'not a dict'}")
+    print(f"Found {len(services)} services from AdGuard")
+    
+    # Load ALL local services_*.json files
+    print(f"Loading Local Services from services_*.json files...")
+    local_services = []
+    service_files = sorted(Path(".").glob("services_*.json"))
+    
+    if service_files:
+        for service_file in service_files:
+            print(f"  Reading {service_file.name}...")
+            with open(service_file) as f:
+                file_data = json.load(f)
+            
+            if isinstance(file_data, dict) and 'blocked_services' in file_data:
+                local_services.extend(file_data['blocked_services'])
+            elif isinstance(file_data, list):
+                local_services.extend(file_data)
+            else:
+                print(f"  ⚠️  Unexpected structure in {service_file.name}")
+        print(f"  Loaded {len(local_services)} services from {len(service_files)} local files")
+    else:
+        print("  No local services_*.json files found")
 
     # Avoid duplicates based on 'name'
     existing_names = {service.get("name") for service in services}
@@ -66,12 +83,7 @@ def main():
         if service.get("name") not in existing_names:
             services.append(service)
 
-    # If original structure was dict, keep that shape
-    if isinstance(data, dict) and 'blocked_services' in data:
-        data['blocked_services'] = services
-    else:
-        data = services
-    print(f"Found {len(services)} services")
+    print(f"Total services after merge: {len(services)}")
 
     # Directories (you can change lists_dir to 'links' if you want files written there)
     lists_dir = Path("services/lists")
