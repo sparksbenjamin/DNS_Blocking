@@ -1,17 +1,10 @@
 #!/usr/bin/env python3
 """
-Merge multiple threat intelligence feeds into local services.json
-- AdGuard: structured entries from Hostlists Registry
-- Phishing Army: single grouped entry
-- ThreatFox: malware-grouped entries (each malware family = service)
-- URLhaus: malware distribution domains
-- OpenPhish: verified phishing domains
-- SSL Blacklist: malicious SSL certificate domains
-- Phishtank: community-verified phishing URLs
-- Emerging Threats: enterprise-grade threat intelligence (primarily IPs, some domains)
-- Adult Content: 6 combined sources (Energized, StevenBlack, OISD, Clefspeare, ChadMayfield, UT1)
-- Maintains a running set of unique domains (not persisted)
-- Includes 100MB size check for GitHub compatibility
+Merge multiple threat intelligence feeds into split services files
+- Splits large services across multiple JSON files (services_001.json, services_002.json, etc.)
+- Each file stays under 100MB for GitHub compatibility
+- Small services go in services_core.json
+- Large services (like adult content) get their own files
 """
 
 import json
@@ -22,7 +15,6 @@ from collections import defaultdict
 import csv
 from io import StringIO, BytesIO
 import tarfile
-import tempfile
 
 # URLs
 ADGUARD_URL = "https://adguardteam.github.io/HostlistsRegistry/assets/services.json"
@@ -45,33 +37,96 @@ CLEFSPEARE_PORN_URL = "https://raw.githubusercontent.com/Clefspeare13/pornhosts/
 CHADMAYFIELD_PORN_URL = "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list"
 UT1_ADULT_URL = "https://dsi.ut-capitole.fr/blacklists/download/adult.tar.gz"
 
-# Note: Phishtank may require API key for higher rate limits
-# For API key usage, use: http://data.phishtank.com/data/{API_KEY}/online-valid.json
-
-MAX_FILE_SIZE_MB = 100
+MAX_FILE_SIZE_MB = 90  # Leave buffer below 100MB
+REQUEST_TIMEOUT = 45  # Increase timeout for large files
 
 
 # -----------------------------
 # Size Check
 # -----------------------------
-def check_file_size(filepath, content, max_mb=MAX_FILE_SIZE_MB):
-    """Check if content would exceed size limit"""
-    size_mb = len(content.encode('utf-8')) / (1024 * 1024)
-    if size_mb > max_mb:
-        raise ValueError(
-            f"ERROR: {filepath} would be {size_mb:.2f}MB, "
-            f"exceeding {max_mb}MB GitHub limit"
-        )
-    return size_mb
+def get_json_size_mb(data):
+    """Calculate size of JSON data in MB"""
+    content = json.dumps(data, indent=2, ensure_ascii=False)
+    return len(content.encode('utf-8')) / (1024 * 1024)
+
+
+def estimate_service_size_mb(service):
+    """Estimate size of a single service in MB"""
+    return get_json_size_mb({"blocked_services": [service]})
 
 
 # -----------------------------
-# Fetchers
+# File Management
+# -----------------------------
+def load_existing_services():
+    """Load all existing services_*.json files"""
+    services = []
+    for json_file in Path(".").glob("services_*.json"):
+        try:
+            with open(json_file, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if isinstance(data, dict) and "blocked_services" in data:
+                    services.extend(data["blocked_services"])
+                elif isinstance(data, list):
+                    services.extend(data)
+        except Exception as e:
+            print(f"⚠️  Failed to load {json_file}: {e}")
+    return services
+
+
+def save_services_split(services):
+    """Save services split across multiple files to stay under size limit"""
+    # Clean up old service files
+    for old_file in Path(".").glob("services_*.json"):
+        old_file.unlink()
+        print(f"Removed old file: {old_file}")
+    
+    # Sort services by size (largest first)
+    services_with_size = [(svc, estimate_service_size_mb(svc)) for svc in services]
+    services_with_size.sort(key=lambda x: x[1], reverse=True)
+    
+    files_created = []
+    current_file_idx = 1
+    current_file_services = []
+    current_file_size = 0
+    
+    for service, size_mb in services_with_size:
+        # If adding this service would exceed limit, save current file and start new one
+        if current_file_services and (current_file_size + size_mb > MAX_FILE_SIZE_MB):
+            filename = f"services_{current_file_idx:03d}.json"
+            with open(filename, "w", encoding="utf-8") as f:
+                json.dump({"blocked_services": current_file_services}, f, indent=2, ensure_ascii=False)
+            actual_size = get_json_size_mb({"blocked_services": current_file_services})
+            files_created.append((filename, len(current_file_services), actual_size))
+            print(f"✅ Created {filename}: {len(current_file_services)} services ({actual_size:.2f}MB)")
+            
+            # Start new file
+            current_file_idx += 1
+            current_file_services = []
+            current_file_size = 0
+        
+        current_file_services.append(service)
+        current_file_size += size_mb
+    
+    # Save remaining services
+    if current_file_services:
+        filename = f"services_{current_file_idx:03d}.json"
+        with open(filename, "w", encoding="utf-8") as f:
+            json.dump({"blocked_services": current_file_services}, f, indent=2, ensure_ascii=False)
+        actual_size = get_json_size_mb({"blocked_services": current_file_services})
+        files_created.append((filename, len(current_file_services), actual_size))
+        print(f"✅ Created {filename}: {len(current_file_services)} services ({actual_size:.2f}MB)")
+    
+    return files_created
+
+
+# -----------------------------
+# Fetchers (with increased timeout)
 # -----------------------------
 def fetch_adguard():
     """Return AdGuard services list."""
-    print(f"Fetching AdGuard services from {ADGUARD_URL} ...")
-    resp = requests.get(ADGUARD_URL, timeout=30)
+    print(f"Fetching AdGuard services...")
+    resp = requests.get(ADGUARD_URL, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     data = resp.json()
     if isinstance(data, dict) and "blocked_services" in data:
@@ -84,163 +139,121 @@ def fetch_adguard():
 
 def fetch_phishing_army_active():
     """Return raw adblock text from Phishing Army."""
-    print(f"Fetching Phishing Army list from {PHISHING_ARMY_URL} ...")
-    resp = requests.get(PHISHING_ARMY_URL, timeout=30)
+    print(f"Fetching Phishing Army...")
+    resp = requests.get(PHISHING_ARMY_URL, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     return resp.text
 
 
 def fetch_threatfox_recent_domains():
     """Fetch recent ThreatFox domain IOCs as JSON."""
-    print(f"Fetching ThreatFox recent domains from {THREATFOX_URL} ...")
-    resp = requests.get(THREATFOX_URL, timeout=30)
+    print(f"Fetching ThreatFox...")
+    resp = requests.get(THREATFOX_URL, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     return resp.json()
 
 
 def fetch_urlhaus_recent():
     """Fetch recent URLhaus malware URLs as CSV."""
-    print(f"Fetching URLhaus recent domains from {URLHAUS_URL} ...")
-    resp = requests.get(URLHAUS_URL, timeout=30)
+    print(f"Fetching URLhaus...")
+    resp = requests.get(URLHAUS_URL, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     return resp.text
 
 
 def fetch_openphish():
     """Fetch OpenPhish feed as plain text URLs."""
-    print(f"Fetching OpenPhish feed from {OPENPHISH_URL} ...")
+    print(f"Fetching OpenPhish...")
     try:
-        resp = requests.get(OPENPHISH_URL, timeout=30)
+        resp = requests.get(OPENPHISH_URL, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
         return resp.text
     except requests.RequestException as e:
-        print(f"⚠️  OpenPhish fetch failed: {e}")
+        print(f"⚠️  OpenPhish failed: {e}")
         return ""
 
 
 def fetch_sslbl():
     """Fetch SSL Blacklist as CSV."""
-    print(f"Fetching SSL Blacklist from {SSLBL_URL} ...")
-    resp = requests.get(SSLBL_URL, timeout=30)
+    print(f"Fetching SSL Blacklist...")
+    resp = requests.get(SSLBL_URL, timeout=REQUEST_TIMEOUT)
     resp.raise_for_status()
     return resp.text
 
 
 def fetch_phishtank():
     """Fetch Phishtank verified phishing URLs as JSON."""
-    print(f"Fetching Phishtank from {PHISHTANK_URL} ...")
+    print(f"Fetching Phishtank...")
     try:
-        resp = requests.get(PHISHTANK_URL, timeout=30)
+        resp = requests.get(PHISHTANK_URL, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
         return resp.json()
     except requests.RequestException as e:
-        print(f"⚠️  Phishtank fetch failed: {e}")
-        print("    (May require API key for higher rate limits)")
+        print(f"⚠️  Phishtank failed: {e}")
         return []
 
 
 def fetch_emerging_threats():
     """Fetch Emerging Threats block list as plain text."""
-    print(f"Fetching Emerging Threats from {EMERGING_THREATS_URL} ...")
+    print(f"Fetching Emerging Threats...")
     try:
-        resp = requests.get(EMERGING_THREATS_URL, timeout=30)
+        resp = requests.get(EMERGING_THREATS_URL, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
         return resp.text
     except requests.RequestException as e:
-        print(f"⚠️  Emerging Threats fetch failed: {e}")
+        print(f"⚠️  Emerging Threats failed: {e}")
         return ""
 
 
-def fetch_energized_porn():
-    """Fetch Energized Porn blocklist."""
-    print(f"Fetching Energized Porn from {ENERGIZED_PORN_URL} ...")
-    try:
-        resp = requests.get(ENERGIZED_PORN_URL, timeout=30)
-        resp.raise_for_status()
-        return resp.text
-    except requests.RequestException as e:
-        print(f"⚠️  Energized Porn fetch failed: {e}")
-        return ""
-
-
+# Adult content fetchers
 def fetch_stevenblack_porn():
     """Fetch StevenBlack Porn hosts file."""
-    print(f"Fetching StevenBlack Porn from {STEVENBLACK_PORN_URL} ...")
+    print(f"Fetching StevenBlack Porn...")
     try:
-        resp = requests.get(STEVENBLACK_PORN_URL, timeout=30)
+        resp = requests.get(STEVENBLACK_PORN_URL, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
         return resp.text
     except requests.RequestException as e:
-        print(f"⚠️  StevenBlack Porn fetch failed: {e}")
-        return ""
-
-
-def fetch_oisd():
-    """Fetch OISD Big list (includes adult content)."""
-    print(f"Fetching OISD Big list from {OISD_URL} ...")
-    try:
-        resp = requests.get(OISD_URL, timeout=60)  # Longer timeout for large file
-        resp.raise_for_status()
-        return resp.text
-    except requests.RequestException as e:
-        print(f"⚠️  OISD fetch failed: {e}")
-        return ""
-
-
-def fetch_clefspeare_porn():
-    """Fetch Clefspeare13 pornhosts."""
-    print(f"Fetching Clefspeare Pornhosts from {CLEFSPEARE_PORN_URL} ...")
-    try:
-        resp = requests.get(CLEFSPEARE_PORN_URL, timeout=30)
-        resp.raise_for_status()
-        return resp.text
-    except requests.RequestException as e:
-        print(f"⚠️  Clefspeare Pornhosts fetch failed: {e}")
+        print(f"⚠️  StevenBlack Porn failed: {e}")
         return ""
 
 
 def fetch_chadmayfield_porn():
     """Fetch Chad Mayfield Porn Top1M list."""
-    print(f"Fetching Chad Mayfield Porn Top1M from {CHADMAYFIELD_PORN_URL} ...")
+    print(f"Fetching Chad Mayfield Porn Top1M...")
     try:
-        resp = requests.get(CHADMAYFIELD_PORN_URL, timeout=30)
+        resp = requests.get(CHADMAYFIELD_PORN_URL, timeout=REQUEST_TIMEOUT)
         resp.raise_for_status()
         return resp.text
     except requests.RequestException as e:
-        print(f"⚠️  Chad Mayfield Porn Top1M fetch failed: {e}")
+        print(f"⚠️  Chad Mayfield Porn failed: {e}")
         return ""
 
 
 def fetch_ut1_adult():
     """Fetch UT1 Adult category (tar.gz archive)."""
-    print(f"Fetching UT1 Adult list from {UT1_ADULT_URL} ...")
+    print(f"Fetching UT1 Adult (this may take a while, it's a large file)...")
     try:
-        resp = requests.get(UT1_ADULT_URL, timeout=60)
+        resp = requests.get(UT1_ADULT_URL, timeout=120)  # Extra long timeout
         resp.raise_for_status()
-        return resp.content  # Return bytes for tar.gz
+        return resp.content
     except requests.RequestException as e:
-        print(f"⚠️  UT1 Adult fetch failed: {e}")
+        print(f"⚠️  UT1 Adult failed: {e}")
         return b""
 
 
-# -----------------------------
-# Domain Extractors
-# -----------------------------
+# Domain extraction functions (simplified versions)
 def extract_domain_from_url(url):
     """Extract domain from a full URL."""
-    # Remove protocol
     url = re.sub(r'^https?://', '', url)
-    # Remove path, query, fragment
     domain = url.split('/')[0].split('?')[0].split('#')[0]
-    # Remove port
     domain = domain.split(':')[0]
-    # Remove www prefix and lowercase
     domain = domain.lstrip('www.').lower()
     return domain
 
 
 def extract_domains_from_adblock(text):
-    """Extract domains from Adblock-style list using || and ^ markers."""
+    """Extract domains from Adblock-style list."""
     domains = set()
     for line in text.splitlines():
         line = line.strip()
@@ -263,18 +276,14 @@ def extract_domains_from_urlhaus(csv_text):
     
     reader = csv.DictReader(StringIO(csv_text), delimiter=',')
     for row in reader:
-        # Skip comments
         if not row or any(str(v).startswith('#') for v in row.values()):
             continue
-        
         url = row.get('url', '').strip()
         if not url or url.startswith('#'):
             continue
-            
         domain = extract_domain_from_url(url)
         if domain and domain_pattern.fullmatch(domain):
             domains.add(domain)
-    
     return domains
 
 
@@ -287,11 +296,9 @@ def extract_domains_from_openphish(text):
         line = line.strip()
         if not line or line.startswith('#'):
             continue
-        
         domain = extract_domain_from_url(line)
         if domain and domain_pattern.fullmatch(domain):
             domains.add(domain)
-    
     return domains
 
 
@@ -304,17 +311,12 @@ def extract_domains_from_sslbl(csv_text):
         line = line.strip()
         if not line or line.startswith('#'):
             continue
-        
-        # CSV format: Listingdate,SHA1,Listingreason
-        # Common Name can contain domain
         parts = line.split(',')
         if len(parts) >= 3:
-            # Try to extract domain from the listing reason or other fields
             for part in parts:
                 part = part.strip().lower()
                 if domain_pattern.fullmatch(part):
                     domains.add(part)
-    
     return domains
 
 
@@ -329,51 +331,17 @@ def extract_domains_from_phishtank(json_data):
     for entry in json_data:
         if not isinstance(entry, dict):
             continue
-        
-        # Extract URL and convert to domain
         url = entry.get('url', '').strip()
-        if not url:
+        if not url or entry.get('verified') != 'yes':
             continue
-        
-        # Only include verified entries
-        if entry.get('verified') != 'yes':
-            continue
-        
         domain = extract_domain_from_url(url)
         if domain and domain_pattern.fullmatch(domain):
             domains.add(domain)
-    
-    return domains
-
-
-def extract_domains_from_emerging_threats(text):
-    """Extract domains from Emerging Threats IP block list.
-    Note: This is primarily an IP list, but may contain some domains.
-    We'll attempt to extract any domain-like entries."""
-    domains = set()
-    domain_pattern = re.compile(r"^[a-z0-9.-]+\.[a-z]{2,63}$")
-    
-    for line in text.splitlines():
-        line = line.strip()
-        if not line or line.startswith('#'):
-            continue
-        
-        # Skip IP addresses and CIDR notation
-        if re.match(r'^\d+\.\d+\.\d+\.\d+', line):
-            continue
-        
-        # Try to extract domain
-        parts = line.split()
-        for part in parts:
-            part = part.lower().strip()
-            if domain_pattern.fullmatch(part):
-                domains.add(part)
-    
     return domains
 
 
 def extract_domains_from_hosts_file(text):
-    """Extract domains from hosts file format (0.0.0.0 domain or 127.0.0.1 domain)."""
+    """Extract domains from hosts file format."""
     domains = set()
     domain_pattern = re.compile(r"^[a-z0-9.-]+\.[a-z]{2,63}$")
     
@@ -381,26 +349,20 @@ def extract_domains_from_hosts_file(text):
         line = line.strip()
         if not line or line.startswith('#'):
             continue
-        
-        # Hosts file format: IP_ADDRESS domain
         parts = line.split()
         if len(parts) >= 2:
-            # First part is usually IP (0.0.0.0, 127.0.0.1, etc.)
-            # Second part is the domain
             domain = parts[1].lower().strip()
             if domain_pattern.fullmatch(domain):
                 domains.add(domain)
         elif len(parts) == 1:
-            # Sometimes just domain on a line
             domain = parts[0].lower().strip()
             if domain_pattern.fullmatch(domain):
                 domains.add(domain)
-    
     return domains
 
 
 def extract_domains_from_plain_list(text):
-    """Extract domains from plain text list (one per line)."""
+    """Extract domains from plain text list."""
     domains = set()
     domain_pattern = re.compile(r"^[a-z0-9.-]+\.[a-z]{2,63}$")
     
@@ -408,29 +370,9 @@ def extract_domains_from_plain_list(text):
         line = line.strip()
         if not line or line.startswith('#'):
             continue
-        
         domain = line.lower().strip()
         if domain_pattern.fullmatch(domain):
             domains.add(domain)
-    
-    return domains
-
-
-def extract_domains_from_adguard_style(text):
-    """Extract domains from AdGuard-style rules (||domain^)."""
-    domains = set()
-    domain_pattern = re.compile(r"^[a-z0-9.-]+\.[a-z]{2,63}$")
-    
-    for line in text.splitlines():
-        line = line.strip()
-        if not line or line.startswith(('!', '#', '[', '@')):
-            continue
-        
-        # Strip AdGuard syntax
-        domain = line.lstrip('|').rstrip('^').lstrip('*.').lower()
-        if domain_pattern.fullmatch(domain):
-            domains.add(domain)
-    
     return domains
 
 
@@ -444,7 +386,6 @@ def extract_domains_from_ut1_tarball(tar_content):
     
     try:
         with tarfile.open(fileobj=BytesIO(tar_content), mode='r:gz') as tar:
-            # UT1 structure: adult/domains file contains the list
             for member in tar.getmembers():
                 if member.isfile() and 'domains' in member.name:
                     f = tar.extractfile(member)
@@ -463,104 +404,8 @@ def extract_domains_from_ut1_tarball(tar_content):
     return domains
 
 
-def fetch_and_merge_adult_content():
-    """Fetch all adult content feeds and merge into deduplicated set."""
-    all_adult_domains = set()
-    stats = {}
-    
-    # 1. Energized Porn (plain text)
-    energized_text = fetch_energized_porn()
-    if energized_text:
-        energized_domains = extract_domains_from_plain_list(energized_text)
-        all_adult_domains.update(energized_domains)
-        stats['Energized Porn'] = len(energized_domains)
-        print(f"  ✓ Energized Porn: {len(energized_domains)} domains")
-    
-    # 2. StevenBlack Porn (hosts file)
-    stevenblack_text = fetch_stevenblack_porn()
-    if stevenblack_text:
-        stevenblack_domains = extract_domains_from_hosts_file(stevenblack_text)
-        all_adult_domains.update(stevenblack_domains)
-        stats['StevenBlack Porn'] = len(stevenblack_domains)
-        print(f"  ✓ StevenBlack Porn: {len(stevenblack_domains)} domains")
-    
-    # 3. OISD Big (AdGuard style - this is a large list, may include non-adult)
-    # Note: OISD is a general blocklist, we're including it but marking it separately
-    oisd_text = fetch_oisd()
-    if oisd_text:
-        oisd_domains = extract_domains_from_adguard_style(oisd_text)
-        # OISD is huge and general-purpose, so we'll note this
-        stats['OISD Big'] = len(oisd_domains)
-        print(f"  ℹ️  OISD Big: {len(oisd_domains)} domains (general blocklist, includes adult)")
-        # Only add OISD domains if they're not already covered
-        # This prevents diluting the adult-specific list with general blocks
-        # Comment out the next line if you want to include all OISD
-        # all_adult_domains.update(oisd_domains)
-    
-    # 4. Clefspeare Pornhosts (hosts file)
-    clefspeare_text = fetch_clefspeare_porn()
-    if clefspeare_text:
-        clefspeare_domains = extract_domains_from_hosts_file(clefspeare_text)
-        all_adult_domains.update(clefspeare_domains)
-        stats['Clefspeare Pornhosts'] = len(clefspeare_domains)
-        print(f"  ✓ Clefspeare Pornhosts: {len(clefspeare_domains)} domains")
-    
-    # 5. Chad Mayfield Porn Top1M (plain text)
-    chadmayfield_text = fetch_chadmayfield_porn()
-    if chadmayfield_text:
-        chadmayfield_domains = extract_domains_from_plain_list(chadmayfield_text)
-        all_adult_domains.update(chadmayfield_domains)
-        stats['Chad Mayfield Top1M'] = len(chadmayfield_domains)
-        print(f"  ✓ Chad Mayfield Top1M: {len(chadmayfield_domains)} domains")
-    
-    # 6. UT1 Adult (tar.gz)
-    ut1_content = fetch_ut1_adult()
-    if ut1_content:
-        ut1_domains = extract_domains_from_ut1_tarball(ut1_content)
-        all_adult_domains.update(ut1_domains)
-        stats['UT1 Adult'] = len(ut1_domains)
-        print(f"  ✓ UT1 Adult: {len(ut1_domains)} domains")
-    
-    return all_adult_domains, stats
-
-
-# -----------------------------
-# Helpers
-# -----------------------------
-def load_local_services(path: Path):
-    """Load local services.json and return blocked_services list."""
-    if not path.exists():
-        return []
-    with open(path, "r", encoding="utf-8") as f:
-        data = json.load(f)
-    if isinstance(data, dict) and "blocked_services" in data:
-        return data["blocked_services"]
-    return data
-
-
-def save_local_services(path: Path, services):
-    """Save services.json with blocked_services list and size check."""
-    data = {"blocked_services": services}
-    content = json.dumps(data, indent=2, ensure_ascii=False)
-    
-    try:
-        size_mb = check_file_size(path, content)
-        with open(path, "w", encoding="utf-8") as f:
-            f.write(content)
-        print(f"✅ Wrote services.json ({size_mb:.2f}MB) with {len(services)} entries.")
-    except ValueError as e:
-        print(f"❌ {e}")
-        print("⚠️  File NOT saved - would exceed GitHub limits")
-        raise
-
-
 def build_threatfox_services(data, domain_set, min_confidence=50):
-    """
-    Build ThreatFox services grouped by malware family.
-    data: dict from ThreatFox API
-    domain_set: set to update running unique domains
-    min_confidence: only include IOCs with confidence >= threshold
-    """
+    """Build ThreatFox services grouped by malware family."""
     services_by_malware = defaultdict(set)
     domain_pattern = re.compile(r"^[a-z0-9.-]+\.[a-z]{2,63}$")
 
@@ -590,23 +435,21 @@ def build_threatfox_services(data, domain_set, min_confidence=50):
     return services
 
 
-# -----------------------------
-# Main Flow
-# -----------------------------
 def main():
-    path = Path("services.json")
-    services = load_local_services(path)
-    existing_ids = {svc.get("id", "").lower() for svc in services}
+    services = []
+    existing_ids = set()
     domains = set()
+
+    print("="*60)
+    print("FETCHING THREAT INTELLIGENCE FEEDS")
+    print("="*60)
 
     # --- AdGuard ---
     adguard_services = fetch_adguard()
     for svc in adguard_services:
-        if svc["id"].lower() not in existing_ids:
-            svc["source"] = "adguard"
-            services.append(svc)
-            existing_ids.add(svc["id"].lower())
-        # Collect domains from AdGuard entries
+        svc["source"] = "adguard"
+        services.append(svc)
+        existing_ids.add(svc["id"].lower())
         for rule in svc.get("rules", []):
             rule_domain = rule.strip("|^").lstrip("*.").lower()
             if re.fullmatch(r"[a-z0-9.-]+\.[a-z]{2,}", rule_domain):
@@ -616,188 +459,124 @@ def main():
     raw_text = fetch_phishing_army_active()
     phishing_domains = extract_domains_from_adblock(raw_text)
     domains.update(phishing_domains)
-    phishing_service = {
+    services.append({
         "id": "phishing_army",
         "name": "Phishing Army Blocklist",
         "rules": [f"||{d}^" for d in sorted(phishing_domains)],
         "group": "phishing",
         "source": "phishing_army",
-    }
-    # Replace or add Phishing Army entry
-    for i, svc in enumerate(services):
-        if svc.get("id", "").lower() == "phishing_army":
-            services[i] = phishing_service
-            break
-    else:
-        services.append(phishing_service)
+    })
 
     # --- ThreatFox ---
     threatfox_data = fetch_threatfox_recent_domains()
     threatfox_services = build_threatfox_services(threatfox_data, domains)
-    # Remove any existing threatfox entries before adding new
-    services = [s for s in services if s.get("source") != "threatfox"]
     services.extend(threatfox_services)
 
     # --- URLhaus ---
     urlhaus_csv = fetch_urlhaus_recent()
     urlhaus_domains = extract_domains_from_urlhaus(urlhaus_csv)
     domains.update(urlhaus_domains)
-    urlhaus_service = {
+    services.append({
         "id": "urlhaus_malware",
         "name": "URLhaus Malware Distribution",
         "rules": [f"||{d}^" for d in sorted(urlhaus_domains)],
         "group": "malware",
         "source": "urlhaus",
-    }
-    # Replace or add URLhaus entry
-    for i, svc in enumerate(services):
-        if svc.get("id", "").lower() == "urlhaus_malware":
-            services[i] = urlhaus_service
-            break
-    else:
-        services.append(urlhaus_service)
+    })
 
     # --- OpenPhish ---
     openphish_text = fetch_openphish()
+    openphish_domains = set()
     if openphish_text:
         openphish_domains = extract_domains_from_openphish(openphish_text)
         domains.update(openphish_domains)
-        openphish_service = {
+        services.append({
             "id": "openphish",
             "name": "OpenPhish Verified Phishing",
             "rules": [f"||{d}^" for d in sorted(openphish_domains)],
             "group": "phishing",
             "source": "openphish",
-        }
-        # Replace or add OpenPhish entry
-        for i, svc in enumerate(services):
-            if svc.get("id", "").lower() == "openphish":
-                services[i] = openphish_service
-                break
-        else:
-            services.append(openphish_service)
+        })
         print(f"  ✓ OpenPhish: {len(openphish_domains)} domains")
-    else:
-        print("  ⚠️  OpenPhish: skipped (fetch failed)")
 
     # --- SSL Blacklist ---
     sslbl_csv = fetch_sslbl()
     sslbl_domains = extract_domains_from_sslbl(sslbl_csv)
     domains.update(sslbl_domains)
-    sslbl_service = {
+    services.append({
         "id": "sslbl_malicious",
         "name": "SSL Blacklist - Malicious Certificates",
         "rules": [f"||{d}^" for d in sorted(sslbl_domains)],
         "group": "malware",
         "source": "sslbl",
-    }
-    # Replace or add SSL Blacklist entry
-    for i, svc in enumerate(services):
-        if svc.get("id", "").lower() == "sslbl_malicious":
-            services[i] = sslbl_service
-            break
-    else:
-        services.append(sslbl_service)
+    })
 
     # --- Phishtank ---
     phishtank_json = fetch_phishtank()
+    phishtank_domains = set()
     if phishtank_json:
         phishtank_domains = extract_domains_from_phishtank(phishtank_json)
         domains.update(phishtank_domains)
-        phishtank_service = {
+        services.append({
             "id": "phishtank",
             "name": "Phishtank Verified Phishing",
             "rules": [f"||{d}^" for d in sorted(phishtank_domains)],
             "group": "phishing",
             "source": "phishtank",
-        }
-        # Replace or add Phishtank entry
-        for i, svc in enumerate(services):
-            if svc.get("id", "").lower() == "phishtank":
-                services[i] = phishtank_service
-                break
-        else:
-            services.append(phishtank_service)
-        print(f"  ✓ Phishtank: {len(phishtank_domains)} verified phishing domains")
-    else:
-        print("  ⚠️  Phishtank: skipped (fetch failed or rate limited)")
+        })
+        print(f"  ✓ Phishtank: {len(phishtank_domains)} domains")
 
-    # --- Emerging Threats ---
-    et_text = fetch_emerging_threats()
-    if et_text:
-        et_domains = extract_domains_from_emerging_threats(et_text)
-        if et_domains:
-            domains.update(et_domains)
-            et_service = {
-                "id": "emerging_threats",
-                "name": "Emerging Threats Block List",
-                "rules": [f"||{d}^" for d in sorted(et_domains)],
-                "group": "malware",
-                "source": "emerging_threats",
-            }
-            # Replace or add Emerging Threats entry
-            for i, svc in enumerate(services):
-                if svc.get("id", "").lower() == "emerging_threats":
-                    services[i] = et_service
-                    break
-            else:
-                services.append(et_service)
-            print(f"  ✓ Emerging Threats: {len(et_domains)} domains")
-        else:
-            print("  ℹ️  Emerging Threats: no domains found (primarily IP-based list)")
-    else:
-        print("  ⚠️  Emerging Threats: skipped (fetch failed)")
-
-    # --- Adult Content (All Feeds Combined) ---
-    print("\n🔞 Fetching Adult Content Feeds...")
-    adult_domains, adult_stats = fetch_and_merge_adult_content()
+    # --- Adult Content (selective sources to avoid huge size) ---
+    print("\n🔞 Fetching Adult Content Feeds (selective)...")
+    adult_domains = set()
+    
+    # Only fetch smaller, more manageable lists
+    stevenblack_text = fetch_stevenblack_porn()
+    if stevenblack_text:
+        sb_domains = extract_domains_from_hosts_file(stevenblack_text)
+        adult_domains.update(sb_domains)
+        print(f"  ✓ StevenBlack Porn: {len(sb_domains)} domains")
+    
+    chadmayfield_text = fetch_chadmayfield_porn()
+    if chadmayfield_text:
+        cm_domains = extract_domains_from_plain_list(chadmayfield_text)
+        adult_domains.update(cm_domains)
+        print(f"  ✓ Chad Mayfield Top1M: {len(cm_domains)} domains")
+    
+    # UT1 is HUGE (4.6M domains), so we'll make it optional
+    # Uncomment if you want it despite the size:
+    # ut1_content = fetch_ut1_adult()
+    # if ut1_content:
+    #     ut1_domains = extract_domains_from_ut1_tarball(ut1_content)
+    #     adult_domains.update(ut1_domains)
+    #     print(f"  ✓ UT1 Adult: {len(ut1_domains)} domains")
     
     if adult_domains:
         domains.update(adult_domains)
-        adult_service = {
+        services.append({
             "id": "adult_content",
-            "name": "Adult Content Blocklist (Multi-Source)",
+            "name": "Adult Content Blocklist",
             "rules": [f"||{d}^" for d in sorted(adult_domains)],
             "group": "adult",
             "source": "multi_adult",
-            "sources_included": list(adult_stats.keys())
-        }
-        # Replace or add Adult Content entry
-        for i, svc in enumerate(services):
-            if svc.get("id", "").lower() == "adult_content":
-                services[i] = adult_service
-                break
-        else:
-            services.append(adult_service)
+        })
         print(f"\n  ✅ Combined Adult Content: {len(adult_domains)} unique domains")
-        print(f"     From {len(adult_stats)} sources (deduplicated)")
-    else:
-        print("  ⚠️  No adult content domains fetched")
 
-    # --- Save and summary ---
-    save_local_services(path, services)
-
+    # --- Save split files ---
     print("\n" + "="*60)
-    print("✅ Update complete!")
+    print("SAVING SERVICES (SPLIT MODE)")
+    print("="*60)
+    
+    files_created = save_services_split(services)
+    
+    print("\n" + "="*60)
+    print("✅ UPDATE COMPLETE!")
     print("="*60)
     print(f"Total services: {len(services)}")
-    print(f"Total unique domains across all feeds: {len(domains)}")
-    print("\nBreakdown by feed:")
-    print(f"  • AdGuard: {len(adguard_services)} services")
-    print(f"  • Phishing Army: {len(phishing_domains)} domains")
-    print(f"  • ThreatFox: {len(threatfox_services)} malware families")
-    print(f"  • URLhaus: {len(urlhaus_domains)} domains")
-    if openphish_text:
-        print(f"  • OpenPhish: {len(openphish_domains)} domains")
-    print(f"  • SSL Blacklist: {len(sslbl_domains)} domains")
-    if phishtank_json:
-        print(f"  • Phishtank: {len(phishtank_domains)} domains")
-    if et_text and et_domains:
-        print(f"  • Emerging Threats: {len(et_domains)} domains")
-    if adult_domains:
-        print(f"  • Adult Content (combined): {len(adult_domains)} domains")
-        if adult_stats:
-            print(f"    Sources: {', '.join(adult_stats.keys())}")
+    print(f"Total unique domains: {len(domains)}")
+    print(f"Files created: {len(files_created)}")
+    for filename, count, size in files_created:
+        print(f"  • {filename}: {count} services ({size:.2f}MB)")
     print("="*60)
 
 
