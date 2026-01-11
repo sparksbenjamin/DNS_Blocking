@@ -8,6 +8,10 @@ Notes:
 - README links (File / Raw URL columns) point to services/links/ (per request)
   If you want the generated files to be written to services/links/ instead,
   change the `lists_dir` variable below or let me know.
+
+Changes:
+- Category files are now cleared and regenerated fresh each run (no more duplicates)
+- Added 100MB size check for all output files to prevent GitHub errors
 """
 import requests
 import json
@@ -15,6 +19,19 @@ import os
 from datetime import datetime
 from pathlib import Path
 import re
+
+MAX_FILE_SIZE_MB = 100
+
+def check_file_size(filepath, content, max_mb=MAX_FILE_SIZE_MB):
+    """Check if content would exceed size limit"""
+    size_mb = len(content.encode('utf-8')) / (1024 * 1024)
+    if size_mb > max_mb:
+        raise ValueError(
+            f"ERROR: {filepath.name} would be {size_mb:.2f}MB, "
+            f"exceeding {max_mb}MB GitHub limit. "
+            f"Contains {content.count(chr(10))} lines."
+        )
+    return size_mb
 
 def main():
     # Fetch the services.json file
@@ -65,7 +82,16 @@ def main():
     categories_dir.mkdir(parents=True, exist_ok=True)
     links_dir.mkdir(parents=True, exist_ok=True)  # create so links exist if you want to copy files later
 
+    # CLEAR CATEGORY FILES - regenerate fresh each run to avoid duplicates
+    print("Clearing old category files...")
+    for cat_file in categories_dir.glob("*.txt"):
+        cat_file.unlink()
+        print(f"  Removed {cat_file.name}")
+
     timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+
+    # Dictionary to accumulate category domains (for size checking before writing)
+    category_domains = {}
 
     # Process each service
     services_processed = 0
@@ -90,26 +116,54 @@ def main():
             continue
         
         filename = lists_dir / f"{service_id}.txt"
-        grouping = categories_dir / f"{group}.txt"
 
-        # Write blocklist file to services/lists/
-        with filename.open('w', encoding='utf-8') as f:
-            f.write(f"# {service_name} Blocklist\n")
-            f.write(f"# Service ID: {service_id}\n")
-            f.write(f"# Generated: {timestamp}\n")
-            f.write(f"# Total domains: {len(domains)}\n")
-            f.write(f"# Compatible with Pi-hole and AdGuard Home\n\n")
-            service['domains'] = domains
-            for domain in sorted(domains):
-                f.write(f"{domain}\n")
+        # Build service file content
+        service_content = f"# {service_name} Blocklist\n"
+        service_content += f"# Service ID: {service_id}\n"
+        service_content += f"# Generated: {timestamp}\n"
+        service_content += f"# Total domains: {len(domains)}\n"
+        service_content += f"# Compatible with Pi-hole and AdGuard Home\n\n"
+        service['domains'] = domains
+        for domain in sorted(domains):
+            service_content += f"{domain}\n"
 
-        # Append domains to category file
-        with grouping.open('a', encoding='utf-8') as f:
-            for domain in sorted(domains):
-                f.write(f"{domain}\n")
+        # Check size before writing individual service file
+        try:
+            size_mb = check_file_size(filename, service_content)
+            with filename.open('w', encoding='utf-8') as f:
+                f.write(service_content)
+            services_processed += 1
+            print(f"Generated {filename.name} with {len(domains)} domains ({size_mb:.2f}MB)")
+        except ValueError as e:
+            print(f"⚠️  SKIPPED {filename.name}: {e}")
+            continue
 
-        services_processed += 1
-        print(f"Generated {filename} with {len(domains)} domains")
+        # Accumulate domains for category file (deduplicated)
+        if group not in category_domains:
+            category_domains[group] = set()
+        category_domains[group].update(domains)
+
+    # Write category files with size checking
+    print("\nGenerating category files...")
+    for category_name, domain_set in category_domains.items():
+        grouping = categories_dir / f"{category_name}.txt"
+        category_content = "\n".join(sorted(domain_set)) + "\n"
+        
+        try:
+            size_mb = check_file_size(grouping, category_content)
+            with grouping.open('w', encoding='utf-8') as f:
+                f.write(category_content)
+            print(f"Generated {grouping.name} with {len(domain_set)} unique domains ({size_mb:.2f}MB)")
+        except ValueError as e:
+            print(f"⚠️  SKIPPED {grouping.name}: {e}")
+            # Create a warning file instead
+            warning_file = categories_dir / f"{category_name}_TOO_LARGE.txt"
+            with warning_file.open('w', encoding='utf-8') as f:
+                f.write(f"# WARNING: This category exceeds {MAX_FILE_SIZE_MB}MB GitHub limit\n")
+                f.write(f"# Total domains: {len(domain_set)}\n")
+                f.write(f"# Estimated size: {len(category_content.encode('utf-8')) / (1024 * 1024):.2f}MB\n")
+                f.write(f"# Generated: {timestamp}\n")
+            print(f"   Created warning file: {warning_file.name}")
 
     repo = os.environ.get('GITHUB_REPOSITORY', 'YOUR_USERNAME/YOUR_REPO')
     
@@ -118,6 +172,9 @@ def main():
     category_rows = []
     for cat_file in category_files:
         category_name = cat_file.stem
+        # Skip warning files in the table
+        if category_name.endswith("_TOO_LARGE"):
+            continue
         # Count non-empty lines (domains)
         with cat_file.open('r', encoding='utf-8') as fh:
             count = sum(1 for line in fh if line.strip())
@@ -201,7 +258,8 @@ Generated: {timestamp}
         readme_path.write_text(content, encoding='utf-8')
         print("Updated services/README.md with categories and services sections.")
 
-    print(f"\nTotal services processed: {services_processed}")
+    print(f"\n✅ Total services processed: {services_processed}")
+    print(f"✅ Total categories generated: {len(category_domains)}")
 
 
 if __name__ == "__main__":
