@@ -1,11 +1,11 @@
 # Slack Blocklist
 # Service ID: slack
-# Generated: 2026-01-11 03:46:36 UTC
+# Generated: 2026-01-11 04:05:08 UTC
 # Total domains: 5
 # Compatible with Pi-hole and AdGuard Home
 
-||slack-edge.com^
-||slack-files.com ^
-||slack-imgs.com^
-||slack.com^
-||slackb.com^
+slack-edge.com
+slack-files.com 
+slack-imgs.com
+slack.com
+slackb.com

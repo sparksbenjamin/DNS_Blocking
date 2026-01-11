@@ -1,11 +1,11 @@
 # WeChat Blocklist
 # Service ID: wechat
-# Generated: 2026-01-11 03:46:36 UTC
+# Generated: 2026-01-11 04:05:08 UTC
 # Total domains: 5
 # Compatible with Pi-hole and AdGuard Home
 
-||wechat.com^
-||weixin.qq.com.cn^
-||weixin.qq.com^
-||weixinbridge.com^
-||wx.qq.com^
+wechat.com
+weixin.qq.com
+weixin.qq.com.cn
+weixinbridge.com
+wx.qq.com

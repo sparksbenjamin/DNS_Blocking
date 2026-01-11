@@ -1,13 +1,13 @@
 # Epic Games Blocklist
 # Service ID: epic_games
-# Generated: 2026-01-11 03:46:36 UTC
+# Generated: 2026-01-11 04:05:08 UTC
 # Total domains: 7
 # Compatible with Pi-hole and AdGuard Home
 
-|cdn*-epicgames-*.file.myqcloud.com^
-|epicgames-download*-*.file.myqcloud.com^
-|epicgames-download*.akamaized.net^
-||eac-cdn.com^
-||easy.ac^
-||easyanticheat.net^
-||epicgames.com^
+cdn*-epicgames-*.file.myqcloud.com
+eac-cdn.com
+easy.ac
+easyanticheat.net
+epicgames-download*-*.file.myqcloud.com
+epicgames-download*.akamaized.net
+epicgames.com

@@ -1,12 +1,12 @@
 # Snapchat Blocklist
 # Service ID: snapchat
-# Generated: 2026-01-11 03:46:36 UTC
+# Generated: 2026-01-11 04:05:08 UTC
 # Total domains: 6
 # Compatible with Pi-hole and AdGuard Home
 
-||impala-media-production.s3.amazonaws.com^
-||sc-cdn.net^
-||snap-dev.net^
-||snapads.com^
-||snapchat.com^
-||snapkit.co
+impala-media-production.s3.amazonaws.com
+sc-cdn.net
+snap-dev.net
+snapads.com
+snapchat.com
+snapkit.co

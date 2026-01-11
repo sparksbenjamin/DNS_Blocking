@@ -1,17 +1,17 @@
 # Origin Blocklist
 # Service ID: origin
-# Generated: 2026-01-11 03:46:36 UTC
+# Generated: 2026-01-11 04:05:08 UTC
 # Total domains: 11
 # Compatible with Pi-hole and AdGuard Home
 
-|cloudsync-prod.s3.amazonaws.com^
-|origin-a.akamaihd.net^
-|rtm.tnt-ea.com^
-|ssl-lvlt.cdn.ea.com^
-||accounts.ea.com^
-||dawngate.com^
-||eastore.com^
-||lordofultima.com^
-||origin.com^
-||origin.tv^
-||signin.ea.com^
+accounts.ea.com
+cloudsync-prod.s3.amazonaws.com
+dawngate.com
+eastore.com
+lordofultima.com
+origin-a.akamaihd.net
+origin.com
+origin.tv
+rtm.tnt-ea.com
+signin.ea.com
+ssl-lvlt.cdn.ea.com

@@ -1,8 +1,8 @@
 # Olvid Blocklist
 # Service ID: olvid
-# Generated: 2026-01-11 03:46:36 UTC
+# Generated: 2026-01-11 04:05:08 UTC
 # Total domains: 2
 # Compatible with Pi-hole and AdGuard Home
 
-||olvid-attachment-chunks.s3.eu-west-3.amazonaws.com^
-||olvid.io^
+olvid-attachment-chunks.s3.eu-west-3.amazonaws.com
+olvid.io

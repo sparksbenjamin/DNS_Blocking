@@ -1,14 +1,14 @@
 # Skype Blocklist
 # Service ID: skype
-# Generated: 2026-01-11 03:46:36 UTC
+# Generated: 2026-01-11 04:05:08 UTC
 # Total domains: 8
 # Compatible with Pi-hole and AdGuard Home
 
-||edge-skype-com.s-0001.s-msedge.net^
-||skype-edf.akadns.net^
-||skype.com^
-||skype.net^
-||skype^
-||skypeassets.com^
-||skypeassets.net^
-||skypedata.akadns.net^
+edge-skype-com.s-0001.s-msedge.net
+skype
+skype-edf.akadns.net
+skype.com
+skype.net
+skypeassets.com
+skypeassets.net
+skypedata.akadns.net

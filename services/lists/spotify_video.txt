@@ -1,12 +1,12 @@
 # Spotify Video Blocklist
 # Service ID: spotify_video
-# Generated: 2026-01-11 03:46:36 UTC
+# Generated: 2026-01-11 04:05:08 UTC
 # Total domains: 6
 # Compatible with Pi-hole and AdGuard Home
 
-||eip-ntt.video-ak.cdn.spotify.com.akahost.net^
-||video-ak.cdn.spotify.com^
-||video-akpcw-cdn-spotify-com.akamaized.net^
-||video-akpcw.spotifycdn.com.edgesuite.net^
-||video-akpcw.spotifycdn.com^
-||video-fa.scdn.co^
+eip-ntt.video-ak.cdn.spotify.com.akahost.net
+video-ak.cdn.spotify.com
+video-akpcw-cdn-spotify-com.akamaized.net
+video-akpcw.spotifycdn.com
+video-akpcw.spotifycdn.com.edgesuite.net
+video-fa.scdn.co
