@@ -109,6 +109,8 @@ def main():
         domains = []
         for rule in rules:
             domain = rule.strip()
+            # Extract actual domain from AdGuard rule format (||domain^ or *.domain)
+            domain = domain.lstrip('|').rstrip('^').lstrip('*.')
             if domain:
                 domains.append(domain)
         
