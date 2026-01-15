@@ -1,4 +1,5 @@
 a2u-proxy.s3.amazonaws.com
+adsk-pnxproxy-prd-1753980530.us-east-1.elb.amazonaws.com
 agent-tunnel-gw-1-e84063170c5671fd.elb.us-west-2.amazonaws.com
 agent-tunnel-gw-2-a01ece81a5065f81.elb.us-west-2.amazonaws.com
 agent-tunnel-gw-3-cc3562324256e051.elb.us-west-2.amazonaws.com
@@ -94,7 +95,6 @@ apiproxy-prod-nlb-s1-039a55634a1916a2.elb.us-east-1.amazonaws.com
 apiproxy-prod-nlb-s1-23af8ef0075e0796.elb.us-west-2.amazonaws.com
 apiproxy-prod-nlb-s1-8de05bbdc1a4b0b7.elb.eu-west-1.amazonaws.com
 apiproxy-prod-nlb-s1-d483e7998f43a4d2.elb.us-east-2.amazonaws.com
-apiproxy-sharkboot-nlb-05358f81db76a2e0.elb.us-west-2.amazonaws.com
 apiproxy-sharkboot-nlb-858cf48f255baf62.elb.us-east-2.amazonaws.com
 apiproxy-website-nlb-prod-1-5675d5ecda6efdd8.elb.eu-west-1.amazonaws.com
 apiproxy-website-nlb-prod-1-5a4080be4d9bee00.elb.us-east-1.amazonaws.com
@@ -114,12 +114,12 @@ arc-acn-reverseproxy-b9311a6a27b5f523.elb.eu-central-1.amazonaws.com
 arc-preprod-reverseproxy-cbfb82271de77ab8.elb.us-east-1.amazonaws.com
 arc-prod-reverseproxy-a3bb46afcb971fe6.elb.us-east-1.amazonaws.com
 arc-reverseproxy-de-new-7a6fc762c67107d3.elb.eu-central-1.amazonaws.com
-badlion-client-proxy-application-409552374.us-east-1.elb.amazonaws.com
 blog-rt-proxy-prd-9be7b76b0fb012b7.elb.us-west-2.amazonaws.com
 blueimageproxy.s3-sa-east-1.amazonaws.com
 brave-production-proxy-238320562.us-west-2.elb.amazonaws.com
 brazil-proxy-6dd3fa02e902f93c.elb.sa-east-1.amazonaws.com
 cf-proxy-aws-canary-1557a93e4013df58.elb.eu-central-1.amazonaws.com
+cf-proxy-cf-ap10-06b5d40dd8d94686.elb.ap-southeast-2.amazonaws.com
 cf-proxy-cf-ap11-ced8dd039216eee1.elb.ap-southeast-1.amazonaws.com
 cf-proxy-cf-br10-9fde872d4468879a.elb.sa-east-1.amazonaws.com
 cf-proxy-cf-eu10-004-ca8ff5b93d5f2e9b.elb.eu-central-1.amazonaws.com
@@ -141,6 +141,7 @@ consproxy-usw2-prod-nlb-e3e0cd6f96c4a7ad.elb.us-west-2.amazonaws.com
 ct-phoenix-proxy-it-prod-475e2cdbe73ac97c.elb.eu-west-3.amazonaws.com
 data.tunneling.iot.eu-west-1.amazonaws.com
 data.tunneling.iot.us-east-2.amazonaws.com
+dax-proxy.us-east-1.amazonaws.com
 dcp-devicetransproxy-nlb-07ac9a2427eb5ba0.elb.us-east-1.amazonaws.com
 ddos-prod-ecs-proxy-1810540203.us-east-1.elb.amazonaws.com
 ecr-haproxy-prod-network-lb-1866656a79c6f789.elb.us-east-1.amazonaws.com
@@ -157,11 +158,10 @@ external-use1-kproxy-1-1056718813.us-east-1.elb.amazonaws.com
 external-usw1-kproxy-1-1404359753.us-west-1.elb.amazonaws.com
 fapl-sector-100-proxy-api-1930831124.us-east-1.elb.amazonaws.com
 fipsproxy-usw2-prod-nlb-442bf2da15bf2e5a.elb.us-west-2.amazonaws.com
+gamma.proxy.nfw.us-east-1.amazonaws.com
 haproxy-external-ingress-1634369622.us-east-1.elb.amazonaws.com
 haproxy-prod-link-nlb-9484743b55d7f6b1.elb.us-east-1.amazonaws.com
 haproxywildnlb-2e3f6bff22e84a79.elb.us-west-2.amazonaws.com
-hbbtvadproxy-alb-prod-1187412316.eu-west-1.elb.amazonaws.com
-helios-production-proxy-c5424a2e95a6383f.elb.us-east-2.amazonaws.com
 iadr-haproxy-nlb-c1b156aa45cd3866.elb.us-east-1.amazonaws.com
 ingress-sticky-haproxy-mt1-912d8b7308f82d6c.elb.us-east-1.amazonaws.com
 isolate-usw1-kproxy-1-2070789165.us-west-1.elb.amazonaws.com
@@ -182,9 +182,10 @@ kong-proxy-prod-external-1a960a665aaa23be.elb.us-west-2.amazonaws.com
 ldhproxy-aps1-prod-nlb-3e1012397235291b.elb.ap-south-1.amazonaws.com
 ldrelayproxy-1230587618.us-west-2.elb.amazonaws.com
 mav-gyr-dmz-p-ngsiem-proxy-42df12a8eabfece8.elb.us-west-2.amazonaws.com
-merlin-emu-dmz-sensorproxy-716b6342dc1c6b2b.elb.us-gov-west-1.amazonaws.com
 miaproxyservervip-1831489572.us-east-1.elb.amazonaws.com
 nlb-proxy-prod-us-east-2-v2-0775b3e35e2dc05d.elb.us-east-2.amazonaws.com
+ol-savethechildren-prod-proxies-eu.s3.dualstack.eu-west-1.amazonaws.com
+ol-savethechildren-prod-proxies-eu.s3.eu-west-1.amazonaws.com
 outsideproxy-1-5193617dc6a409d9.elb.us-east-1.amazonaws.com
 outsideproxy-2-9f1b1809ba7c1b7a.elb.us-east-1.amazonaws.com
 outsideproxy-3-577978871fbc7864.elb.us-east-1.amazonaws.com
@@ -216,6 +217,7 @@ proxy-nlb-prod-us-gov-east-1-v2-4262db864eb8a3a9.elb.us-gov-east-1.amazonaws.com
 proxy-nlb-prod-us-west-2-v5-ac4e52c97755301b.elb.us-west-2.amazonaws.com
 proxy-uni-login-cigna-prod-1630199742.us-east-1.elb.amazonaws.com
 proxy-universal-login-prod-1779027556.us-east-1.elb.amazonaws.com
+proxy.nfw.us-east-1.amazonaws.com
 proxy.nfw.us-east-2.amazonaws.com
 proxy.nfw.us-east-2.vpce.amazonaws.com
 proxybox-lb-250966913.us-east-1.elb.amazonaws.com
@@ -227,8 +229,8 @@ saas-nginx-proxy-7c9a12a89771caf2.elb.ap-southeast-1.amazonaws.com
 sensorproxy-laggar-g-524628337.us-gov-west-1.elb.amazonaws.com
 sg-proxy-49e811e274252b82.elb.ap-southeast-1.amazonaws.com
 sip-proxy-lb-73f5bd51330d124b.elb.us-east-1.amazonaws.com
-srs-proxy-lb-9b35e4d19af5b0f9.elb.us-east-1.amazonaws.com
 svc-proxy-prod-alb-1761140421.us-east-1.elb.amazonaws.com
+tf-tunnel-servers-lb-1543192835.us-east-1.elb.amazonaws.com
 tunnelbear.s3.amazonaws.com
 tunnelconfig-provisioner-production-us-west-2.s3-accelerate.amazonaws.com
 tunneling.iot.eu-west-1.amazonaws.com

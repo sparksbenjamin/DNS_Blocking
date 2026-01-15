@@ -9,6 +9,7 @@ ap-southeast-2.console.cname-proxy.amazon.com
 api.us-east-1.prod.gdps-proxy.geospatial.amazon.dev
 api.us-east-1.prod.proxy.live.amazon.com
 appstream2.us-east-1.cname-proxy.amazon.com
+auth.cname-proxy.amazon.com
 ca-central-1.console.cname-proxy.amazon.com
 clientproxy.us-east-1.prod.gamehub.amazon.dev
 cname-proxy.amazon.com
@@ -27,7 +28,6 @@ global.console.cname-proxy.amazon.com
 health.cname-proxy.amazon.com
 iad.proxy.amazon.com
 minerva-proxy.devices.amazon.dev
-nrt.proxy.amazon.com
 pact-proxy.amazon.com
 pact-proxy.amazon.eu
 pdx.proxy.amazon.com
@@ -35,6 +35,7 @@ prod.gdps-proxy.geospatial.amazon.dev
 prod.proxy.live.amazon.com
 proxy.amazon.com
 proxy.live.amazon.com
+proxy.search.docs.aws.amazon.com
 quicksight.cname-proxy.amazon.com
 rexp-auth-proxy.amazon.com
 ringffsproxy.amazon.com
