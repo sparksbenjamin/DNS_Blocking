@@ -1,7 +1,7 @@
 name: Update Twisted Services
 on:
   schedule:
-    - cron: '0 0 * * 0' # Runs weekly on Sunday
+    - cron: '0 4 * * *' # Runs weekly on Sunday
   workflow_dispatch:   # Allows manual trigger
 
 jobs:
