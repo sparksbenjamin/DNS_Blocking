@@ -11,7 +11,7 @@ logging.basicConfig(
     datefmt='%H:%M:%S'
 )
 
-SERVICES_JSON = 'services/services.json'
+SERVICES_JSON = 'services.json'
 LISTS_DIR = 'services/lists'
 
 # Groups to ignore (Malware/Phishing/etc.)
