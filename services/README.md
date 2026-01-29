@@ -1,7 +1,7 @@
 
 
 <!-- START:categories -->
-Generated: 2026-01-28 03:26:46 UTC
+Generated: 2026-01-29 03:58:26 UTC
 
 | Category | Domains | File | Raw URL |
 |-----------|----------|------|----------|
@@ -12,9 +12,9 @@ Generated: 2026-01-28 03:26:46 UTC
 | gambling | 33 | [gambling.txt](categories/gambling.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/gambling.txt) |
 | gaming | 155 | [gaming.txt](categories/gaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/gaming.txt) |
 | hosting | 33 | [hosting.txt](categories/hosting.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/hosting.txt) |
-| malware | 103 | [malware.txt](categories/malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/malware.txt) |
+| malware | 110 | [malware.txt](categories/malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/malware.txt) |
 | messenger | 58 | [messenger.txt](categories/messenger.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/messenger.txt) |
-| phishing | 834393 | [phishing.txt](categories/phishing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/phishing.txt) |
+| phishing | 834540 | [phishing.txt](categories/phishing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/phishing.txt) |
 | privacy | 9 | [privacy.txt](categories/privacy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/privacy.txt) |
 | shopping | 588 | [shopping.txt](categories/shopping.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/shopping.txt) |
 | social_network | 841 | [social_network.txt](categories/social_network.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/social_network.txt) |
@@ -23,7 +23,7 @@ Generated: 2026-01-28 03:26:46 UTC
 <!-- END:categories -->
 
 <!-- START:services -->
-Generated: 2026-01-28 03:26:46 UTC
+Generated: 2026-01-29 03:58:26 UTC
 
 | Service | Domains | File | Raw URL |
 |---------|---------|------|----------|
@@ -105,13 +105,13 @@ Generated: 2026-01-28 03:26:46 UTC
 | Odysee | 4 | [odysee.txt](links/odysee.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/odysee.txt) |
 | Olvid | 2 | [olvid.txt](links/olvid.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/olvid.txt) |
 | OnlyFans | 1 | [onlyfans.txt](links/onlyfans.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/onlyfans.txt) |
-| OpenPhish Verified Phishing | 256 | [openphish.txt](links/openphish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/openphish.txt) |
+| OpenPhish Verified Phishing | 274 | [openphish.txt](links/openphish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/openphish.txt) |
 | Origin | 11 | [origin.txt](links/origin.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/origin.txt) |
 | Paramount Plus | 2 | [paramountplus.txt](links/paramountplus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/paramountplus.txt) |
 | Peacock TV | 2 | [peacock_tv.txt](links/peacock_tv.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/peacock_tv.txt) |
 | Perplexity | 1 | [perplexity.txt](links/perplexity.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/perplexity.txt) |
-| Phishing Army Blocklist | 815462 | [phishing_army.txt](links/phishing_army.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/phishing_army.txt) |
-| Phishtank Verified Phishing | 21814 | [phishtank.txt](links/phishtank.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/phishtank.txt) |
+| Phishing Army Blocklist | 815465 | [phishing_army.txt](links/phishing_army.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/phishing_army.txt) |
+| Phishtank Verified Phishing | 21911 | [phishtank.txt](links/phishtank.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/phishtank.txt) |
 | Pinterest | 49 | [pinterest.txt](links/pinterest.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/pinterest.txt) |
 | PlayStation | 8 | [playstation.txt](links/playstation.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/playstation.txt) |
 | Plenty of Fish | 1 | [plenty_of_fish.txt](links/plenty_of_fish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/plenty_of_fish.txt) |
@@ -138,24 +138,27 @@ Generated: 2026-01-28 03:26:46 UTC
 | Steam | 34 | [steam.txt](links/steam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/steam.txt) |
 | Telegram (Web) | 17 | [telegram.txt](links/telegram.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/telegram.txt) |
 | Temu | 3 | [temu.txt](links/temu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/temu.txt) |
-| ThreatFox - AsyncRAT | 19 | [threatfox_asyncrat.txt](links/threatfox_asyncrat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_asyncrat.txt) |
-| ThreatFox - ClearFake | 2 | [threatfox_clearfake.txt](links/threatfox_clearfake.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_clearfake.txt) |
-| ThreatFox - Cobalt Strike | 3 | [threatfox_cobalt_strike.txt](links/threatfox_cobalt_strike.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_cobalt_strike.txt) |
-| ThreatFox - FAKEUPDATES | 1 | [threatfox_fakeupdates.txt](links/threatfox_fakeupdates.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_fakeupdates.txt) |
-| ThreatFox - Havoc | 5 | [threatfox_havoc.txt](links/threatfox_havoc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_havoc.txt) |
-| ThreatFox - KongTuke | 1 | [threatfox_kongtuke.txt](links/threatfox_kongtuke.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_kongtuke.txt) |
-| ThreatFox - Lumma Stealer | 1 | [threatfox_lumma_stealer.txt](links/threatfox_lumma_stealer.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_lumma_stealer.txt) |
-| ThreatFox - Mirai | 1 | [threatfox_mirai.txt](links/threatfox_mirai.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_mirai.txt) |
-| ThreatFox - Nimplant | 1 | [threatfox_nimplant.txt](links/threatfox_nimplant.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_nimplant.txt) |
+| ThreatFox - AsyncRAT | 15 | [threatfox_asyncrat.txt](links/threatfox_asyncrat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_asyncrat.txt) |
+| ThreatFox - Cobalt Strike | 6 | [threatfox_cobalt_strike.txt](links/threatfox_cobalt_strike.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_cobalt_strike.txt) |
+| ThreatFox - FAKEUPDATES | 2 | [threatfox_fakeupdates.txt](links/threatfox_fakeupdates.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_fakeupdates.txt) |
+| ThreatFox - Havoc | 4 | [threatfox_havoc.txt](links/threatfox_havoc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_havoc.txt) |
+| ThreatFox - KongTuke | 2 | [threatfox_kongtuke.txt](links/threatfox_kongtuke.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_kongtuke.txt) |
+| ThreatFox - Lumma Stealer | 5 | [threatfox_lumma_stealer.txt](links/threatfox_lumma_stealer.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_lumma_stealer.txt) |
+| ThreatFox - Nanocore RAT | 3 | [threatfox_nanocore_rat.txt](links/threatfox_nanocore_rat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_nanocore_rat.txt) |
 | ThreatFox - NjRAT | 1 | [threatfox_njrat.txt](links/threatfox_njrat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_njrat.txt) |
-| ThreatFox - Quasar RAT | 17 | [threatfox_quasar_rat.txt](links/threatfox_quasar_rat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_quasar_rat.txt) |
-| ThreatFox - Remcos | 4 | [threatfox_remcos.txt](links/threatfox_remcos.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_remcos.txt) |
+| ThreatFox - Quasar RAT | 15 | [threatfox_quasar_rat.txt](links/threatfox_quasar_rat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_quasar_rat.txt) |
+| ThreatFox - Remcos | 10 | [threatfox_remcos.txt](links/threatfox_remcos.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_remcos.txt) |
+| ThreatFox - SantaStealer | 2 | [threatfox_santastealer.txt](links/threatfox_santastealer.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_santastealer.txt) |
 | ThreatFox - SmartApeSG | 2 | [threatfox_smartapesg.txt](links/threatfox_smartapesg.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_smartapesg.txt) |
-| ThreatFox - Stealc | 1 | [threatfox_stealc.txt](links/threatfox_stealc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_stealc.txt) |
-| ThreatFox - Unknown Stealer | 5 | [threatfox_unknown_stealer.txt](links/threatfox_unknown_stealer.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_unknown_stealer.txt) |
-| ThreatFox - Unknown malware | 6 | [threatfox_unknown_malware.txt](links/threatfox_unknown_malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_unknown_malware.txt) |
-| ThreatFox - Vidar | 18 | [threatfox_vidar.txt](links/threatfox_vidar.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_vidar.txt) |
-| ThreatFox - XWorm | 15 | [threatfox_xworm.txt](links/threatfox_xworm.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_xworm.txt) |
+| ThreatFox - SpyNote | 1 | [threatfox_spynote.txt](links/threatfox_spynote.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_spynote.txt) |
+| ThreatFox - Stealc | 2 | [threatfox_stealc.txt](links/threatfox_stealc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_stealc.txt) |
+| ThreatFox - Unknown RAT | 1 | [threatfox_unknown_rat.txt](links/threatfox_unknown_rat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_unknown_rat.txt) |
+| ThreatFox - Unknown Stealer | 1 | [threatfox_unknown_stealer.txt](links/threatfox_unknown_stealer.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_unknown_stealer.txt) |
+| ThreatFox - Unknown malware | 5 | [threatfox_unknown_malware.txt](links/threatfox_unknown_malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_unknown_malware.txt) |
+| ThreatFox - VShell | 1 | [threatfox_vshell.txt](links/threatfox_vshell.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_vshell.txt) |
+| ThreatFox - ValleyRAT | 2 | [threatfox_valleyrat.txt](links/threatfox_valleyrat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_valleyrat.txt) |
+| ThreatFox - Vidar | 17 | [threatfox_vidar.txt](links/threatfox_vidar.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_vidar.txt) |
+| ThreatFox - XWorm | 13 | [threatfox_xworm.txt](links/threatfox_xworm.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_xworm.txt) |
 | Tidal | 1 | [tidal.txt](links/tidal.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/tidal.txt) |
 | TikTok | 33 | [tiktok.txt](links/tiktok.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/tiktok.txt) |
 | Tinder | 3 | [tinder.txt](links/tinder.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/tinder.txt) |
