@@ -10,6 +10,6 @@
 #./scripts/build_categories.sh
 
 echo "Run Generator"
-pyton scripts/generator.py
+python scripts/generator.py
 echo "Running Tunneling Script"
 python scripts/tunneling.py
