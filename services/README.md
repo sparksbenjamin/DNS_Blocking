@@ -1,190 +1,322 @@
+# Threat Intelligence & Content Blocklists
 
+**Generated:** 2026-02-03 18:42:01 UTC
 
-<!-- START:categories -->
-Generated: 2026-01-30 03:58:23 UTC
+This repository provides curated blocklists for home network protection.
 
-| Category | Domains | File | Raw URL |
-|-----------|----------|------|----------|
-| adult | 158381 | [adult.txt](categories/adult.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/adult.txt) |
-| ai | 20 | [ai.txt](categories/ai.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/ai.txt) |
-| cdn | 30 | [cdn.txt](categories/cdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/cdn.txt) |
-| dating | 7 | [dating.txt](categories/dating.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dating.txt) |
-| gambling | 33 | [gambling.txt](categories/gambling.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/gambling.txt) |
-| gaming | 155 | [gaming.txt](categories/gaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/gaming.txt) |
-| hosting | 33 | [hosting.txt](categories/hosting.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/hosting.txt) |
-| malware | 127 | [malware.txt](categories/malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/malware.txt) |
-| messenger | 58 | [messenger.txt](categories/messenger.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/messenger.txt) |
-| phishing | 815715 | [phishing.txt](categories/phishing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/phishing.txt) |
-| privacy | 9 | [privacy.txt](categories/privacy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/privacy.txt) |
-| shopping | 588 | [shopping.txt](categories/shopping.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/shopping.txt) |
-| social_network | 841 | [social_network.txt](categories/social_network.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/social_network.txt) |
-| software | 13 | [software.txt](categories/software.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/software.txt) |
-| streaming | 487 | [streaming.txt](categories/streaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/streaming.txt) |
-<!-- END:categories -->
+All lists are **Pi-hole and AdGuard Home compatible** - one root domain per line.
 
-<!-- START:services -->
-Generated: 2026-01-30 03:58:23 UTC
+## 🚀 Quick Start (Recommended)
 
-| Service | Domains | File | Raw URL |
-|---------|---------|------|----------|
-| 4chan | 3 | [4chan.txt](links/4chan.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/4chan.txt) |
-| 500px | 2 | [500px.txt](links/500px.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/500px.txt) |
-| 9GAG | 2 | [9gag.txt](links/9gag.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/9gag.txt) |
-| Activision Blizzard | 6 | [activision_blizzard.txt](links/activision_blizzard.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/activision_blizzard.txt) |
-| Adult Content Blocklist | 158381 | [adult_content.txt](links/adult_content.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/adult_content.txt) |
-| AliExpress | 4 | [aliexpress.txt](links/aliexpress.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/aliexpress.txt) |
-| Amazon | 201 | [amazon.txt](links/amazon.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/amazon.txt) |
-| Amazon Streaming | 29 | [amazon_streaming.txt](links/amazon_streaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/amazon_streaming.txt) |
-| Amino | 1 | [amino.txt](links/amino.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/amino.txt) |
-| Apple Streaming | 18 | [apple_streaming.txt](links/apple_streaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/apple_streaming.txt) |
-| Battle.net | 4 | [battle_net.txt](links/battle_net.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/battle_net.txt) |
-| Betano | 7 | [betano.txt](links/betano.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/betano.txt) |
-| Betfair | 6 | [betfair.txt](links/betfair.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/betfair.txt) |
-| Betway | 16 | [betway.txt](links/betway.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/betway.txt) |
-| Bigo Live | 4 | [bigo_live.txt](links/bigo_live.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/bigo_live.txt) |
-| Bilibili | 46 | [bilibili.txt](links/bilibili.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/bilibili.txt) |
-| Blaze | 4 | [blaze.txt](links/blaze.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/blaze.txt) |
-| Blizzard Entertainment | 9 | [blizzard_entertainment.txt](links/blizzard_entertainment.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/blizzard_entertainment.txt) |
-| Bluesky | 2 | [bluesky.txt](links/bluesky.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/bluesky.txt) |
-| Box | 4 | [box.txt](links/box.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/box.txt) |
-| Canais Globo | 3 | [canais_globo.txt](links/canais_globo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/canais_globo.txt) |
-| ChatGPT | 4 | [chatgpt.txt](links/chatgpt.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/chatgpt.txt) |
-| Claro | 22 | [claro.txt](links/claro.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/claro.txt) |
-| Claude | 2 | [claude.txt](links/claude.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/claude.txt) |
-| Cloudflare | 30 | [cloudflare.txt](links/cloudflare.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/cloudflare.txt) |
-| Clubhouse | 2 | [clubhouse.txt](links/clubhouse.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/clubhouse.txt) |
-| CoolApk | 3 | [coolapk.txt](links/coolapk.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/coolapk.txt) |
-| Copilot | 5 | [copilot.txt](links/copilot.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/copilot.txt) |
-| Crunchyroll | 2 | [crunchyroll.txt](links/crunchyroll.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/crunchyroll.txt) |
-| Dailymotion | 3 | [dailymotion.txt](links/dailymotion.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/dailymotion.txt) |
-| DeepSeek | 1 | [deepseek.txt](links/deepseek.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/deepseek.txt) |
-| Deezer | 2 | [deezer.txt](links/deezer.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/deezer.txt) |
-| DirecTV Go | 1 | [directvgo.txt](links/directvgo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/directvgo.txt) |
-| Discord | 27 | [discord.txt](links/discord.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/discord.txt) |
-| Discovery+ | 2 | [discoveryplus.txt](links/discoveryplus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/discoveryplus.txt) |
-| Disney+ | 8 | [disneyplus.txt](links/disneyplus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/disneyplus.txt) |
-| Douban | 3 | [douban.txt](links/douban.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/douban.txt) |
-| Dropbox | 22 | [dropbox.txt](links/dropbox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/dropbox.txt) |
-| ESPN | 17 | [espn.txt](links/espn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/espn.txt) |
-| Electronic Arts | 6 | [electronic_arts.txt](links/electronic_arts.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/electronic_arts.txt) |
-| Epic Games | 7 | [epic_games.txt](links/epic_games.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/epic_games.txt) |
-| FIFA | 2 | [fifa.txt](links/fifa.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/fifa.txt) |
-| Facebook | 443 | [facebook.txt](links/facebook.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/facebook.txt) |
-| Flickr | 6 | [flickr.txt](links/flickr.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/flickr.txt) |
-| GOG | 4 | [gog.txt](links/gog.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/gog.txt) |
-| Gemini | 2 | [gemini.txt](links/gemini.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/gemini.txt) |
-| Globoplay | 4 | [globoplay.txt](links/globoplay.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/globoplay.txt) |
-| Google Play Store | 3 | [playstore.txt](links/playstore.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/playstore.txt) |
-| Grok | 2 | [grok.txt](links/grok.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/grok.txt) |
-| HBO Max | 13 | [hbomax.txt](links/hbomax.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/hbomax.txt) |
-| Hulu | 1 | [hulu.txt](links/hulu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/hulu.txt) |
-| Imgur | 1 | [imgur.txt](links/imgur.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/imgur.txt) |
-| Instagram | 72 | [instagram.txt](links/instagram.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/instagram.txt) |
-| KOOK | 2 | [kook.txt](links/kook.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/kook.txt) |
-| KakaoTalk | 2 | [kakaotalk.txt](links/kakaotalk.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/kakaotalk.txt) |
-| Kik | 1 | [kik.txt](links/kik.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/kik.txt) |
-| LINE | 18 | [line.txt](links/line.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/line.txt) |
-| Lazada | 9 | [lazada.txt](links/lazada.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/lazada.txt) |
-| League of Legends | 5 | [leagueoflegends.txt](links/leagueoflegends.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/leagueoflegends.txt) |
-| LinkedIn | 16 | [linkedin.txt](links/linkedin.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/linkedin.txt) |
-| Lionsgate+ | 2 | [lionsgateplus.txt](links/lionsgateplus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/lionsgateplus.txt) |
-| Looke | 2 | [looke.txt](links/looke.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/looke.txt) |
-| MAX | 1 | [max.txt](links/max.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/max.txt) |
-| Mail.ru | 3 | [mail_ru.txt](links/mail_ru.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/mail_ru.txt) |
-| Manus | 2 | [manus.txt](links/manus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/manus.txt) |
-| Mastodon | 99 | [mastodon.txt](links/mastodon.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/mastodon.txt) |
-| Mercado Libre | 20 | [mercado_libre.txt](links/mercado_libre.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/mercado_libre.txt) |
-| Meta AI | 1 | [meta_ai.txt](links/meta_ai.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/meta_ai.txt) |
-| Microsoft Teams | 3 | [microsoft_teams.txt](links/microsoft_teams.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/microsoft_teams.txt) |
-| Minecraft | 3 | [minecraft.txt](links/minecraft.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/minecraft.txt) |
-| Nebula | 2 | [nebula.txt](links/nebula.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/nebula.txt) |
-| Netflix | 25 | [netflix.txt](links/netflix.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/netflix.txt) |
-| Nintendo | 17 | [nintendo.txt](links/nintendo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/nintendo.txt) |
-| Nvidia | 10 | [nvidia.txt](links/nvidia.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/nvidia.txt) |
-| OK.ru | 6 | [ok.txt](links/ok.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/ok.txt) |
-| Odysee | 4 | [odysee.txt](links/odysee.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/odysee.txt) |
-| Olvid | 2 | [olvid.txt](links/olvid.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/olvid.txt) |
-| OnlyFans | 1 | [onlyfans.txt](links/onlyfans.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/onlyfans.txt) |
-| OpenPhish Verified Phishing | 275 | [openphish.txt](links/openphish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/openphish.txt) |
-| Origin | 11 | [origin.txt](links/origin.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/origin.txt) |
-| Paramount Plus | 2 | [paramountplus.txt](links/paramountplus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/paramountplus.txt) |
-| Peacock TV | 2 | [peacock_tv.txt](links/peacock_tv.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/peacock_tv.txt) |
-| Perplexity | 1 | [perplexity.txt](links/perplexity.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/perplexity.txt) |
-| Phishing Army Blocklist | 815465 | [phishing_army.txt](links/phishing_army.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/phishing_army.txt) |
-| Pinterest | 49 | [pinterest.txt](links/pinterest.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/pinterest.txt) |
-| PlayStation | 8 | [playstation.txt](links/playstation.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/playstation.txt) |
-| Plenty of Fish | 1 | [plenty_of_fish.txt](links/plenty_of_fish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/plenty_of_fish.txt) |
-| Plex | 4 | [plex.txt](links/plex.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/plex.txt) |
-| Pluto TV | 1 | [pluto_tv.txt](links/pluto_tv.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/pluto_tv.txt) |
-| Privacy | 1 | [privacy.txt](links/privacy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/privacy.txt) |
-| Proton | 5 | [proton.txt](links/proton.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/proton.txt) |
-| QQ | 3 | [qq.txt](links/qq.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/qq.txt) |
-| Rakuten Viki | 3 | [rakuten_viki.txt](links/rakuten_viki.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/rakuten_viki.txt) |
-| Reddit | 5 | [reddit.txt](links/reddit.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/reddit.txt) |
-| Riot Games | 6 | [riot_games.txt](links/riot_games.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/riot_games.txt) |
-| Roblox | 13 | [roblox.txt](links/roblox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/roblox.txt) |
-| Rockstar Games | 2 | [rockstar_games.txt](links/rockstar_games.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/rockstar_games.txt) |
-| Samsung TV Plus | 4 | [samsung_tv_plus.txt](links/samsung_tv_plus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/samsung_tv_plus.txt) |
-| Shein | 4 | [shein.txt](links/shein.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/shein.txt) |
-| Shopee | 20 | [shopee.txt](links/shopee.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/shopee.txt) |
-| Signal | 2 | [signal.txt](links/signal.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/signal.txt) |
-| Skype | 8 | [skype.txt](links/skype.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/skype.txt) |
-| Slack | 5 | [slack.txt](links/slack.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/slack.txt) |
-| Snapchat | 6 | [snapchat.txt](links/snapchat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/snapchat.txt) |
-| SoundCloud | 2 | [soundcloud.txt](links/soundcloud.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/soundcloud.txt) |
-| Spotify | 21 | [spotify.txt](links/spotify.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/spotify.txt) |
-| Spotify Video | 6 | [spotify_video.txt](links/spotify_video.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/spotify_video.txt) |
-| Steam | 34 | [steam.txt](links/steam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/steam.txt) |
-| Telegram (Web) | 17 | [telegram.txt](links/telegram.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/telegram.txt) |
-| Temu | 3 | [temu.txt](links/temu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/temu.txt) |
-| ThreatFox - AsyncRAT | 14 | [threatfox_asyncrat.txt](links/threatfox_asyncrat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_asyncrat.txt) |
-| ThreatFox - CastleRAT | 2 | [threatfox_castlerat.txt](links/threatfox_castlerat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_castlerat.txt) |
-| ThreatFox - ClearFake | 6 | [threatfox_clearfake.txt](links/threatfox_clearfake.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_clearfake.txt) |
-| ThreatFox - Cobalt Strike | 5 | [threatfox_cobalt_strike.txt](links/threatfox_cobalt_strike.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_cobalt_strike.txt) |
-| ThreatFox - FAKEUPDATES | 2 | [threatfox_fakeupdates.txt](links/threatfox_fakeupdates.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_fakeupdates.txt) |
-| ThreatFox - Havoc | 1 | [threatfox_havoc.txt](links/threatfox_havoc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_havoc.txt) |
-| ThreatFox - KongTuke | 2 | [threatfox_kongtuke.txt](links/threatfox_kongtuke.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_kongtuke.txt) |
-| ThreatFox - Lumma Stealer | 15 | [threatfox_lumma_stealer.txt](links/threatfox_lumma_stealer.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_lumma_stealer.txt) |
-| ThreatFox - Nanocore RAT | 4 | [threatfox_nanocore_rat.txt](links/threatfox_nanocore_rat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_nanocore_rat.txt) |
-| ThreatFox - Quasar RAT | 15 | [threatfox_quasar_rat.txt](links/threatfox_quasar_rat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_quasar_rat.txt) |
-| ThreatFox - Remcos | 6 | [threatfox_remcos.txt](links/threatfox_remcos.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_remcos.txt) |
-| ThreatFox - SantaStealer | 2 | [threatfox_santastealer.txt](links/threatfox_santastealer.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_santastealer.txt) |
-| ThreatFox - SmartApeSG | 2 | [threatfox_smartapesg.txt](links/threatfox_smartapesg.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_smartapesg.txt) |
-| ThreatFox - SpyNote | 2 | [threatfox_spynote.txt](links/threatfox_spynote.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_spynote.txt) |
-| ThreatFox - Stealc | 1 | [threatfox_stealc.txt](links/threatfox_stealc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_stealc.txt) |
-| ThreatFox - Unknown RAT | 1 | [threatfox_unknown_rat.txt](links/threatfox_unknown_rat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_unknown_rat.txt) |
-| ThreatFox - Unknown Stealer | 12 | [threatfox_unknown_stealer.txt](links/threatfox_unknown_stealer.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_unknown_stealer.txt) |
-| ThreatFox - Unknown malware | 5 | [threatfox_unknown_malware.txt](links/threatfox_unknown_malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_unknown_malware.txt) |
-| ThreatFox - VShell | 1 | [threatfox_vshell.txt](links/threatfox_vshell.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_vshell.txt) |
-| ThreatFox - ValleyRAT | 2 | [threatfox_valleyrat.txt](links/threatfox_valleyrat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_valleyrat.txt) |
-| ThreatFox - Vidar | 15 | [threatfox_vidar.txt](links/threatfox_vidar.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_vidar.txt) |
-| ThreatFox - XWorm | 12 | [threatfox_xworm.txt](links/threatfox_xworm.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/threatfox_xworm.txt) |
-| Tidal | 1 | [tidal.txt](links/tidal.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/tidal.txt) |
-| TikTok | 33 | [tiktok.txt](links/tiktok.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/tiktok.txt) |
-| Tinder | 3 | [tinder.txt](links/tinder.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/tinder.txt) |
-| Tumblr | 1 | [tumblr.txt](links/tumblr.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/tumblr.txt) |
-| Twitch | 6 | [twitch.txt](links/twitch.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/twitch.txt) |
-| Ubisoft | 4 | [ubisoft.txt](links/ubisoft.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/ubisoft.txt) |
-| VK.com | 20 | [vk.txt](links/vk.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/vk.txt) |
-| Valorant | 3 | [valorant.txt](links/valorant.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/valorant.txt) |
-| Viber | 1 | [viber.txt](links/viber.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/viber.txt) |
-| Vimeo | 17 | [vimeo.txt](links/vimeo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/vimeo.txt) |
-| Vivo Play | 3 | [vivo_play.txt](links/vivo_play.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/vivo_play.txt) |
-| Voot | 1 | [voot.txt](links/voot.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/voot.txt) |
-| Wargaming | 8 | [wargaming.txt](links/wargaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/wargaming.txt) |
-| Warner Bros. Games | 1 | [warnerbrosgames.txt](links/warnerbrosgames.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/warnerbrosgames.txt) |
-| WeChat | 5 | [wechat.txt](links/wechat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/wechat.txt) |
-| Weibo | 7 | [weibo.txt](links/weibo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/weibo.txt) |
-| WhatsApp | 11 | [whatsapp.txt](links/whatsapp.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/whatsapp.txt) |
-| Wizz | 3 | [wizz.txt](links/wizz.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/wizz.txt) |
-| X (formerly Twitter) | 23 | [twitter.txt](links/twitter.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/twitter.txt) |
-| Xbox Live | 8 | [xboxlive.txt](links/xboxlive.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/xboxlive.txt) |
-| Xiaohongshu | 5 | [xiaohongshu.txt](links/xiaohongshu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/xiaohongshu.txt) |
-| YY | 1 | [yy.txt](links/yy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/yy.txt) |
-| YouTube | 176 | [youtube.txt](links/youtube.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/youtube.txt) |
-| Zhihu | 2 | [zhihu.txt](links/zhihu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/zhihu.txt) |
-| eBay | 320 | [ebay.txt](links/ebay.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/ebay.txt) |
-| iCloud Private Relay | 3 | [icloud_private_relay.txt](links/icloud_private_relay.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/icloud_private_relay.txt) |
-| iHeartRadio | 11 | [iheartradio.txt](links/iheartradio.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/iheartradio.txt) |
-| iQIYI | 8 | [iqiyi.txt](links/iqiyi.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/links/iqiyi.txt) |
-<!-- END:services -->
+**For most users**: Use the aggregated category lists below. Each combines multiple trusted sources.
+
+## 📋 Aggregated Categories
+
+One-click blocklists combining multiple sources for comprehensive protection.
+
+| Category | Root Domains | Sources | File | Raw URL |
+|----------|--------------|---------|------|---------|
+| 🔞 Adult Content | 83,583 | 2 | [adult.txt](categories/adult.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/adult.txt) |
+| 📁 Ai | 19 | 9 | [ai.txt](categories/ai.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/ai.txt) |
+| 📁 Cdn | 30 | 1 | [cdn.txt](categories/cdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/cdn.txt) |
+| 📁 Dating | 7 | 3 | [dating.txt](categories/dating.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dating.txt) |
+| 📁 Gambling | 33 | 4 | [gambling.txt](categories/gambling.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/gambling.txt) |
+| 🎮 Gaming Platforms | 139 | 21 | [gaming.txt](categories/gaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/gaming.txt) |
+| 📁 Hosting | 33 | 4 | [hosting.txt](categories/hosting.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/hosting.txt) |
+| 🦠 Malware & Threats | 214 | 3 | [malware.txt](categories/malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/malware.txt) |
+| 📁 Messenger | 54 | 12 | [messenger.txt](categories/messenger.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/messenger.txt) |
+| 🎣 Phishing & Scam Sites | 345,324 | 2 | [phishing.txt](categories/phishing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/phishing.txt) |
+| 📁 Privacy | 6 | 2 | [privacy.txt](categories/privacy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/privacy.txt) |
+| 📁 Shopping | 519 | 10 | [shopping.txt](categories/shopping.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/shopping.txt) |
+| 📁 Social_network | 836 | 26 | [social_network.txt](categories/social_network.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/social_network.txt) |
+| 📁 Software | 12 | 2 | [software.txt](categories/software.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/software.txt) |
+| 📁 Streaming | 411 | 41 | [streaming.txt](categories/streaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/streaming.txt) |
+
+## 🔧 Individual Sources (Advanced)
+
+For granular control, each source is available separately. Use these if you:
+
+- Want to exclude a specific source with false positives
+- Need source attribution for security analysis
+- Prefer to test feeds individually before deployment
+
+### Adult
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| Chad Mayfield Porn | 5,821 | [chadmayfield_porn.txt](lists/adult/chadmayfield_porn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/chadmayfield_porn.txt) |
+| StevenBlack Porn | 80,868 | [stevenblack_porn.txt](lists/adult/stevenblack_porn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/stevenblack_porn.txt) |
+
+### Ai
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| ChatGPT | 4 | [chatgpt.txt](lists/ai/chatgpt.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/ai/chatgpt.txt) |
+| Claude | 2 | [claude.txt](lists/ai/claude.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/ai/claude.txt) |
+| Copilot | 4 | [copilot.txt](lists/ai/copilot.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/ai/copilot.txt) |
+| DeepSeek | 1 | [deepseek.txt](lists/ai/deepseek.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/ai/deepseek.txt) |
+| Gemini | 2 | [gemini.txt](lists/ai/gemini.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/ai/gemini.txt) |
+| Grok | 2 | [grok.txt](lists/ai/grok.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/ai/grok.txt) |
+| Manus | 2 | [manus.txt](lists/ai/manus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/ai/manus.txt) |
+| Meta AI | 1 | [meta_ai.txt](lists/ai/meta_ai.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/ai/meta_ai.txt) |
+| Perplexity | 1 | [perplexity.txt](lists/ai/perplexity.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/ai/perplexity.txt) |
+
+### Cdn
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| Cloudflare | 30 | [cloudflare.txt](lists/cdn/cloudflare.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/cdn/cloudflare.txt) |
+
+### Dating
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| Plenty of Fish | 1 | [plenty_of_fish.txt](lists/dating/plenty_of_fish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/plenty_of_fish.txt) |
+| Tinder | 3 | [tinder.txt](lists/dating/tinder.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/tinder.txt) |
+| Wizz | 3 | [wizz.txt](lists/dating/wizz.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/wizz.txt) |
+
+### Gambling
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| Betano | 7 | [betano.txt](lists/gambling/betano.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gambling/betano.txt) |
+| Betfair | 6 | [betfair.txt](lists/gambling/betfair.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gambling/betfair.txt) |
+| Betway | 16 | [betway.txt](lists/gambling/betway.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gambling/betway.txt) |
+| Blaze | 4 | [blaze.txt](lists/gambling/blaze.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gambling/blaze.txt) |
+
+### Gaming
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| Activision Blizzard | 6 | [activision_blizzard.txt](lists/gaming/activision_blizzard.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/activision_blizzard.txt) |
+| Battle.net | 4 | [battle_net.txt](lists/gaming/battle_net.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/battle_net.txt) |
+| Blizzard Entertainment | 9 | [blizzard_entertainment.txt](lists/gaming/blizzard_entertainment.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/blizzard_entertainment.txt) |
+| Electronic Arts | 6 | [electronic_arts.txt](lists/gaming/electronic_arts.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/electronic_arts.txt) |
+| Epic Games | 4 | [epic_games.txt](lists/gaming/epic_games.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/epic_games.txt) |
+| GOG | 4 | [gog.txt](lists/gaming/gog.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/gog.txt) |
+| IO Interactive | 3 | [io_interactive.txt](lists/gaming/io_interactive.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/io_interactive.txt) |
+| League of Legends | 5 | [leagueoflegends.txt](lists/gaming/leagueoflegends.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/leagueoflegends.txt) |
+| Minecraft | 3 | [minecraft.txt](lists/gaming/minecraft.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/minecraft.txt) |
+| Nintendo | 17 | [nintendo.txt](lists/gaming/nintendo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/nintendo.txt) |
+| Origin | 9 | [origin.txt](lists/gaming/origin.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/origin.txt) |
+| PlayStation | 8 | [playstation.txt](lists/gaming/playstation.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/playstation.txt) |
+| Riot Games | 6 | [riot_games.txt](lists/gaming/riot_games.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/riot_games.txt) |
+| Roblox | 13 | [roblox.txt](lists/gaming/roblox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/roblox.txt) |
+| Rockstar Games | 2 | [rockstar_games.txt](lists/gaming/rockstar_games.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/rockstar_games.txt) |
+| Steam | 27 | [steam.txt](lists/gaming/steam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/steam.txt) |
+| Ubisoft | 4 | [ubisoft.txt](lists/gaming/ubisoft.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/ubisoft.txt) |
+| Valorant | 2 | [valorant.txt](lists/gaming/valorant.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/valorant.txt) |
+| Wargaming | 8 | [wargaming.txt](lists/gaming/wargaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/wargaming.txt) |
+| Warner Bros. Games | 1 | [warnerbrosgames.txt](lists/gaming/warnerbrosgames.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/warnerbrosgames.txt) |
+| Xbox Live | 7 | [xboxlive.txt](lists/gaming/xboxlive.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/xboxlive.txt) |
+
+### Hosting
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| Box | 4 | [box.txt](lists/hosting/box.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/hosting/box.txt) |
+| Dropbox | 22 | [dropbox.txt](lists/hosting/dropbox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/hosting/dropbox.txt) |
+| Flickr | 6 | [flickr.txt](lists/hosting/flickr.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/hosting/flickr.txt) |
+| Imgur | 1 | [imgur.txt](lists/hosting/imgur.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/hosting/imgur.txt) |
+
+### Malware
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| ThreatFox | 214 | [threatfox.txt](lists/malware/threatfox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/malware/threatfox.txt) |
+
+### Messenger
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| KakaoTalk | 2 | [kakaotalk.txt](lists/messenger/kakaotalk.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/messenger/kakaotalk.txt) |
+| Kik | 1 | [kik.txt](lists/messenger/kik.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/messenger/kik.txt) |
+| MAX | 1 | [max.txt](lists/messenger/max.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/messenger/max.txt) |
+| Microsoft Teams | 3 | [microsoft_teams.txt](lists/messenger/microsoft_teams.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/messenger/microsoft_teams.txt) |
+| Olvid | 2 | [olvid.txt](lists/messenger/olvid.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/messenger/olvid.txt) |
+| Signal | 2 | [signal.txt](lists/messenger/signal.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/messenger/signal.txt) |
+| Skype | 6 | [skype.txt](lists/messenger/skype.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/messenger/skype.txt) |
+| Slack | 4 | [slack.txt](lists/messenger/slack.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/messenger/slack.txt) |
+| Telegram (Web) | 17 | [telegram.txt](lists/messenger/telegram.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/messenger/telegram.txt) |
+| Viber | 1 | [viber.txt](lists/messenger/viber.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/messenger/viber.txt) |
+| WeChat | 4 | [wechat.txt](lists/messenger/wechat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/messenger/wechat.txt) |
+| WhatsApp | 11 | [whatsapp.txt](lists/messenger/whatsapp.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/messenger/whatsapp.txt) |
+
+### Phishing
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| OpenPhish | 177 | [openphish.txt](lists/phishing/openphish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/openphish.txt) |
+| Phishing Army | 345,196 | [phishing_army.txt](lists/phishing/phishing_army.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/phishing_army.txt) |
+
+### Privacy
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| Privacy | 1 | [privacy.txt](lists/privacy/privacy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/privacy/privacy.txt) |
+| Proton | 5 | [proton.txt](lists/privacy/proton.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/privacy/proton.txt) |
+
+### Shopping
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| AliExpress | 4 | [aliexpress.txt](lists/shopping/aliexpress.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/aliexpress.txt) |
+| Amazon | 163 | [amazon.txt](lists/shopping/amazon.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/amazon.txt) |
+| CoolApk | 3 | [coolapk.txt](lists/shopping/coolapk.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/coolapk.txt) |
+| Lazada | 9 | [lazada.txt](lists/shopping/lazada.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/lazada.txt) |
+| Mercado Libre | 20 | [mercado_libre.txt](lists/shopping/mercado_libre.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/mercado_libre.txt) |
+| Shein | 4 | [shein.txt](lists/shopping/shein.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/shein.txt) |
+| Shopee | 20 | [shopee.txt](lists/shopping/shopee.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/shopee.txt) |
+| Temu | 3 | [temu.txt](lists/shopping/temu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/temu.txt) |
+| Xiaohongshu | 5 | [xiaohongshu.txt](lists/shopping/xiaohongshu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/xiaohongshu.txt) |
+| eBay | 306 | [ebay.txt](lists/shopping/ebay.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/ebay.txt) |
+
+### Social_network
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| 4chan | 3 | [4chan.txt](lists/social_network/4chan.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/4chan.txt) |
+| 500px | 2 | [500px.txt](lists/social_network/500px.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/500px.txt) |
+| 9GAG | 2 | [9gag.txt](lists/social_network/9gag.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/9gag.txt) |
+| Amino | 1 | [amino.txt](lists/social_network/amino.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/amino.txt) |
+| Bluesky | 2 | [bluesky.txt](lists/social_network/bluesky.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/bluesky.txt) |
+| Clubhouse | 2 | [clubhouse.txt](lists/social_network/clubhouse.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/clubhouse.txt) |
+| Discord | 27 | [discord.txt](lists/social_network/discord.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/discord.txt) |
+| Douban | 3 | [douban.txt](lists/social_network/douban.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/douban.txt) |
+| Facebook | 441 | [facebook.txt](lists/social_network/facebook.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/facebook.txt) |
+| Instagram | 72 | [instagram.txt](lists/social_network/instagram.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/instagram.txt) |
+| KOOK | 2 | [kook.txt](lists/social_network/kook.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/kook.txt) |
+| LINE | 18 | [line.txt](lists/social_network/line.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/line.txt) |
+| LinkedIn | 14 | [linkedin.txt](lists/social_network/linkedin.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/linkedin.txt) |
+| Mail.ru | 3 | [mail_ru.txt](lists/social_network/mail_ru.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/mail_ru.txt) |
+| Mastodon | 97 | [mastodon.txt](lists/social_network/mastodon.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/mastodon.txt) |
+| OK.ru | 6 | [ok.txt](lists/social_network/ok.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/ok.txt) |
+| Odysee | 4 | [odysee.txt](lists/social_network/odysee.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/odysee.txt) |
+| OnlyFans | 1 | [onlyfans.txt](lists/social_network/onlyfans.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/onlyfans.txt) |
+| Pinterest | 49 | [pinterest.txt](lists/social_network/pinterest.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/pinterest.txt) |
+| Reddit | 5 | [reddit.txt](lists/social_network/reddit.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/reddit.txt) |
+| Snapchat | 6 | [snapchat.txt](lists/social_network/snapchat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/snapchat.txt) |
+| TikTok | 31 | [tiktok.txt](lists/social_network/tiktok.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/tiktok.txt) |
+| Tumblr | 1 | [tumblr.txt](lists/social_network/tumblr.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/tumblr.txt) |
+| VK.com | 20 | [vk.txt](lists/social_network/vk.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/vk.txt) |
+| X (formerly Twitter) | 23 | [twitter.txt](lists/social_network/twitter.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/twitter.txt) |
+| Zhihu | 2 | [zhihu.txt](lists/social_network/zhihu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/zhihu.txt) |
+
+### Software
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| Google Play Store | 2 | [playstore.txt](lists/software/playstore.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/software/playstore.txt) |
+| Nvidia | 10 | [nvidia.txt](lists/software/nvidia.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/software/nvidia.txt) |
+
+### Streaming
+
+| Source | Root Domains | File | Raw URL |
+|--------|--------------|------|---------|
+| Amazon Streaming | 19 | [amazon_streaming.txt](lists/streaming/amazon_streaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/amazon_streaming.txt) |
+| Apple Streaming | 13 | [apple_streaming.txt](lists/streaming/apple_streaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/apple_streaming.txt) |
+| Bigo Live | 4 | [bigo_live.txt](lists/streaming/bigo_live.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/bigo_live.txt) |
+| Bilibili | 46 | [bilibili.txt](lists/streaming/bilibili.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/bilibili.txt) |
+| Canais Globo | 1 | [canais_globo.txt](lists/streaming/canais_globo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/canais_globo.txt) |
+| Claro | 22 | [claro.txt](lists/streaming/claro.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/claro.txt) |
+| Crunchyroll | 2 | [crunchyroll.txt](lists/streaming/crunchyroll.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/crunchyroll.txt) |
+| Dailymotion | 3 | [dailymotion.txt](lists/streaming/dailymotion.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/dailymotion.txt) |
+| Deezer | 2 | [deezer.txt](lists/streaming/deezer.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/deezer.txt) |
+| DirecTV Go | 1 | [directvgo.txt](lists/streaming/directvgo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/directvgo.txt) |
+| Discovery+ | 2 | [discoveryplus.txt](lists/streaming/discoveryplus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/discoveryplus.txt) |
+| Disney+ | 7 | [disneyplus.txt](lists/streaming/disneyplus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/disneyplus.txt) |
+| ESPN | 17 | [espn.txt](lists/streaming/espn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/espn.txt) |
+| FIFA | 2 | [fifa.txt](lists/streaming/fifa.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/fifa.txt) |
+| Globoplay | 3 | [globoplay.txt](lists/streaming/globoplay.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/globoplay.txt) |
+| HBO Max | 13 | [hbomax.txt](lists/streaming/hbomax.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/hbomax.txt) |
+| Hulu | 1 | [hulu.txt](lists/streaming/hulu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/hulu.txt) |
+| Lionsgate+ | 2 | [lionsgateplus.txt](lists/streaming/lionsgateplus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/lionsgateplus.txt) |
+| Looke | 1 | [looke.txt](lists/streaming/looke.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/looke.txt) |
+| Nebula | 2 | [nebula.txt](lists/streaming/nebula.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/nebula.txt) |
+| Netflix | 23 | [netflix.txt](lists/streaming/netflix.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/netflix.txt) |
+| Paramount Plus | 2 | [paramountplus.txt](lists/streaming/paramountplus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/paramountplus.txt) |
+| Peacock TV | 2 | [peacock_tv.txt](lists/streaming/peacock_tv.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/peacock_tv.txt) |
+| Plex | 4 | [plex.txt](lists/streaming/plex.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/plex.txt) |
+| Pluto TV | 1 | [pluto_tv.txt](lists/streaming/pluto_tv.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/pluto_tv.txt) |
+| QQ | 2 | [qq.txt](lists/streaming/qq.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/qq.txt) |
+| Rakuten Viki | 3 | [rakuten_viki.txt](lists/streaming/rakuten_viki.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/rakuten_viki.txt) |
+| Samsung TV Plus | 4 | [samsung_tv_plus.txt](lists/streaming/samsung_tv_plus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/samsung_tv_plus.txt) |
+| SoundCloud | 2 | [soundcloud.txt](lists/streaming/soundcloud.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/soundcloud.txt) |
+| Spotify | 17 | [spotify.txt](lists/streaming/spotify.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/spotify.txt) |
+| Spotify Video | 6 | [spotify_video.txt](lists/streaming/spotify_video.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/spotify_video.txt) |
+| Tidal | 1 | [tidal.txt](lists/streaming/tidal.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/tidal.txt) |
+| Twitch | 6 | [twitch.txt](lists/streaming/twitch.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/twitch.txt) |
+| Vimeo | 17 | [vimeo.txt](lists/streaming/vimeo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/vimeo.txt) |
+| Vivo Play | 2 | [vivo_play.txt](lists/streaming/vivo_play.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/vivo_play.txt) |
+| Voot | 1 | [voot.txt](lists/streaming/voot.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/voot.txt) |
+| Weibo | 7 | [weibo.txt](lists/streaming/weibo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/weibo.txt) |
+| YY | 1 | [yy.txt](lists/streaming/yy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/yy.txt) |
+| YouTube | 169 | [youtube.txt](lists/streaming/youtube.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/youtube.txt) |
+| iHeartRadio | 11 | [iheartradio.txt](lists/streaming/iheartradio.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/iheartradio.txt) |
+| iQIYI | 8 | [iqiyi.txt](lists/streaming/iqiyi.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/iqiyi.txt) |
+
+## 📖 Usage Guide
+
+### Pi-hole
+1. Navigate to **Settings** → **Blocklists**
+2. Paste the **Raw URL** of your desired list
+3. Click **Save and Update**
+4. Wait for gravity to update
+
+### AdGuard Home
+1. Go to **Filters** → **DNS blocklists**
+2. Click **Add blocklist** → **Add a custom list**
+3. Paste the **Raw URL** and provide a name
+4. Click **Save**
+
+## 📝 Format Details
+
+All lists follow these standards:
+
+- **Root domains only** - blocking `example.com` automatically blocks all `*.example.com`
+- **One domain per line** - clean, simple format
+- **No subdomains** - more efficient and smaller file sizes
+- **No IP addresses or wildcards** - pure domain lists
+- **Commented headers** - each file includes metadata and generation timestamp
+
+## 🔍 Data Sources
+
+This repository aggregates threat intelligence from trusted sources:
+
+### Security Feeds
+- **[Phishing Army](https://phishing.army/)** - Community-driven phishing database
+- **[OpenPhish](https://openphish.com/)** - Automated phishing detection
+- **[PhishTank](https://phishtank.org/)** - Verified phishing URLs
+- **[ThreatFox](https://threatfox.abuse.ch/)** - Malware IOCs from abuse.ch
+- **[URLhaus](https://urlhaus.abuse.ch/)** - Malware distribution sites
+- **[SSL Blacklist](https://sslbl.abuse.ch/)** - Malicious SSL certificates
+
+### Content Filters
+- **[AdGuard](https://adguard.com/)** - Service blocklists (social media, gaming, streaming)
+- **[StevenBlack](https://github.com/StevenBlack/hosts)** - Curated hosts files
+- **[Chad Mayfield](https://github.com/chadmayfield/my-pihole-blocklists)** - Pi-hole blocklists
+
+## ⚡ Updates
+
+Lists are automatically updated on a regular schedule to ensure fresh threat intelligence.
+
+Check the timestamp at the top of this README or in individual list files.
+
+## ⚠️ Important Notes
+
+- **Test before deploying** - Some lists may block legitimate services
+- **Start with categories** - Easier to manage and troubleshoot
+- **Whitelist as needed** - Add exceptions for false positives
+- **Monitor your logs** - Understand what's being blocked
+
+## 📜 License
+
+This repository is provided as-is for informational and protective purposes.
+
+Individual source feeds may have their own licenses and terms of use.
+
+## 🤝 Contributing
+
+Found a false positive? Have a suggestion for a new source?
+
+Please open an issue or submit a pull request!

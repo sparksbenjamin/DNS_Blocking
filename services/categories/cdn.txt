@@ -1,3 +1,8 @@
+# Cdn Blocklist
+# Generated: 2026-02-03 18:42:01 UTC
+# Format: Pi-hole/AdGuard compatible - one domain per line
+# Original domains (before deduplication): 30
+
 argotunnel.com
 cf-ipfs.com
 cloudflare-dns.com
@@ -21,7 +26,7 @@ cloudflarestream.com
 cloudflaretest.com
 cloudflarewarp.com
 every1dns.net
-one.one.one
+one.one
 pacloudflare.com
 pages.dev
 trycloudflare.com

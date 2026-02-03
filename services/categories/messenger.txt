@@ -1,32 +1,36 @@
+# Messenger Blocklist
+# Generated: 2026-02-03 18:42:01 UTC
+# Format: Pi-hole/AdGuard compatible - one domain per line
+# Original domains (before deduplication): 56
+
+akadns.net
+amazonaws.com
+com.cn
 comments.app
 contest.com
-edge-skype-com.s-0001.s-msedge.net
 graph.org
 kakao.com
 kgslb.com
 kik.com
+live.com
 max.ru
-olvid-attachment-chunks.s3.eu-west-3.amazonaws.com
+microsoft.com
+office.net
 olvid.io
+qq.com
 quiz.directory
+s-msedge.net
 signal.org
-skype
-skype-edf.akadns.net
 skype.com
 skype.net
 skypeassets.com
 skypeassets.net
-skypedata.akadns.net
 slack-edge.com
-slack-files.com 
 slack-imgs.com
 slack.com
 slackb.com
 t.me
 tdesktop.com
-teams.cdn.office.net
-teams.live.com
-teams.microsoft.com
 telega.one
 telegra.ph
 telegram-cdn.org
@@ -41,8 +45,6 @@ usercontent.dev
 viber.com
 wa.me
 wechat.com
-weixin.qq.com
-weixin.qq.com.cn
 weixinbridge.com
 whatsapp-plus.info
 whatsapp-plus.me
@@ -55,4 +57,3 @@ whatsapp.org
 whatsapp.tv
 whatsappbrand.com
 whispersystems.org
-wx.qq.com

@@ -1,9 +1,0 @@
-# QQ Blocklist
-# Service ID: qq
-# Generated: 2026-01-30 03:58:23 UTC
-# Total domains: 3
-# Compatible with Pi-hole and AdGuard Home
-
-qq-video.cdn-go.cn
-qq.com^$denyallow=wx.qq.com|weixin.qq.com
-url.cn

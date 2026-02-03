@@ -1,8 +1,10 @@
-mask-canary.icloud.com^$dnsrewrite=NXDOMAIN;;
-mask-h2.icloud.com^$dnsrewrite=NXDOMAIN;;
-mask.icloud.com^$dnsrewrite=NXDOMAIN;;
+# Privacy Blocklist
+# Generated: 2026-02-03 18:42:01 UTC
+# Format: Pi-hole/AdGuard compatible - one domain per line
+# Original domains (before deduplication): 6
+
+com.br
 pm.me
-privacy.com.br
 proton.me
 protonmail.ch
 protonmail.com

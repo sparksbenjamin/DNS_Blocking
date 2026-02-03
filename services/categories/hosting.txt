@@ -1,5 +1,9 @@
+# Hosting Blocklist
+# Generated: 2026-02-03 18:42:01 UTC
+# Format: Pi-hole/AdGuard compatible - one domain per line
+# Original domains (before deduplication): 33
+
 addtodropbox.com
-app.hellosign.com
 box.com
 box.net
 boxcdn.net
@@ -10,7 +14,6 @@ docsend.com
 dropbox-dns.com
 dropbox.com
 dropbox.tech
-dropbox.zendesk.com
 dropboxapi.com
 dropboxbusiness.com
 dropboxcaptcha.com
@@ -29,5 +32,7 @@ flickr.net
 flickrprints.com
 flickrpro.com
 getdropbox.com
+hellosign.com
 imgur.com
 staticflickr.com
+zendesk.com
