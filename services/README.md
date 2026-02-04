@@ -1,6 +1,6 @@
 # Threat Intelligence & Content Blocklists
 
-**Generated:** 2026-02-03 18:42:01 UTC
+**Generated:** 2026-02-04 01:55:54 UTC
 
 This repository provides curated blocklists for home network protection.
 
@@ -16,16 +16,16 @@ One-click blocklists combining multiple sources for comprehensive protection.
 
 | Category | Root Domains | Sources | File | Raw URL |
 |----------|--------------|---------|------|---------|
-| 🔞 Adult Content | 83,583 | 2 | [adult.txt](categories/adult.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/adult.txt) |
+| 🔞 Adult Content | 82,934 | 2 | [adult.txt](categories/adult.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/adult.txt) |
 | 📁 Ai | 19 | 9 | [ai.txt](categories/ai.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/ai.txt) |
 | 📁 Cdn | 30 | 1 | [cdn.txt](categories/cdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/cdn.txt) |
 | 📁 Dating | 7 | 3 | [dating.txt](categories/dating.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dating.txt) |
 | 📁 Gambling | 33 | 4 | [gambling.txt](categories/gambling.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/gambling.txt) |
 | 🎮 Gaming Platforms | 139 | 21 | [gaming.txt](categories/gaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/gaming.txt) |
 | 📁 Hosting | 33 | 4 | [hosting.txt](categories/hosting.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/hosting.txt) |
-| 🦠 Malware & Threats | 214 | 3 | [malware.txt](categories/malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/malware.txt) |
+| 🦠 Malware & Threats | 144 | 3 | [malware.txt](categories/malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/malware.txt) |
 | 📁 Messenger | 54 | 12 | [messenger.txt](categories/messenger.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/messenger.txt) |
-| 🎣 Phishing & Scam Sites | 345,324 | 2 | [phishing.txt](categories/phishing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/phishing.txt) |
+| 🎣 Phishing & Scam Sites | 345,303 | 2 | [phishing.txt](categories/phishing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/phishing.txt) |
 | 📁 Privacy | 6 | 2 | [privacy.txt](categories/privacy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/privacy.txt) |
 | 📁 Shopping | 519 | 10 | [shopping.txt](categories/shopping.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/shopping.txt) |
 | 📁 Social_network | 836 | 26 | [social_network.txt](categories/social_network.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/social_network.txt) |
@@ -44,8 +44,8 @@ For granular control, each source is available separately. Use these if you:
 
 | Source | Root Domains | File | Raw URL |
 |--------|--------------|------|---------|
-| Chad Mayfield Porn | 5,821 | [chadmayfield_porn.txt](lists/adult/chadmayfield_porn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/chadmayfield_porn.txt) |
-| StevenBlack Porn | 80,868 | [stevenblack_porn.txt](lists/adult/stevenblack_porn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/stevenblack_porn.txt) |
+| Chad Mayfield Porn | 5,793 | [chadmayfield_porn.txt](lists/adult/chadmayfield_porn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/chadmayfield_porn.txt) |
+| StevenBlack Porn | 80,225 | [stevenblack_porn.txt](lists/adult/stevenblack_porn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/stevenblack_porn.txt) |
 
 ### Ai
 
@@ -123,7 +123,7 @@ For granular control, each source is available separately. Use these if you:
 
 | Source | Root Domains | File | Raw URL |
 |--------|--------------|------|---------|
-| ThreatFox | 214 | [threatfox.txt](lists/malware/threatfox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/malware/threatfox.txt) |
+| ThreatFox | 144 | [threatfox.txt](lists/malware/threatfox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/malware/threatfox.txt) |
 
 ### Messenger
 
@@ -146,7 +146,7 @@ For granular control, each source is available separately. Use these if you:
 
 | Source | Root Domains | File | Raw URL |
 |--------|--------------|------|---------|
-| OpenPhish | 177 | [openphish.txt](lists/phishing/openphish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/openphish.txt) |
+| OpenPhish | 170 | [openphish.txt](lists/phishing/openphish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/openphish.txt) |
 | Phishing Army | 345,196 | [phishing_army.txt](lists/phishing/phishing_army.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/phishing_army.txt) |
 
 ### Privacy
@@ -273,11 +273,12 @@ For granular control, each source is available separately. Use these if you:
 
 All lists follow these standards:
 
-- **Root domains only** - blocking `example.com` automatically blocks all `*.example.com`
-- **One domain per line** - clean, simple format
-- **No subdomains** - more efficient and smaller file sizes
-- **No IP addresses or wildcards** - pure domain lists
+- **Hosts file format** - `0.0.0.0 domain.com` for maximum compatibility
+- **Blocks all subdomains** - `0.0.0.0 example.com` blocks `www.example.com`, `api.example.com`, etc.
+- **Root domains only** - more efficient and smaller file sizes
+- **One entry per line** - clean, simple format
 - **Commented headers** - each file includes metadata and generation timestamp
+- **Works with Pi-hole, AdGuard Home, hosts file, and most DNS blockers**
 
 ## 🔍 Data Sources
 

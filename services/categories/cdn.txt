@@ -1,0 +1,35 @@
+# Cdn Blocklist
+# Generated: 2026-02-04 01:55:54 UTC
+# Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains
+# Original domains (before deduplication): 30
+
+0.0.0.0 argotunnel.com
+0.0.0.0 cf-ipfs.com
+0.0.0.0 cloudflare-dns.com
+0.0.0.0 cloudflare-ipfs.com
+0.0.0.0 cloudflare-quic.com
+0.0.0.0 cloudflare.com
+0.0.0.0 cloudflare.net
+0.0.0.0 cloudflare.tv
+0.0.0.0 cloudflareaccess.com
+0.0.0.0 cloudflareapps.com
+0.0.0.0 cloudflarebolt.com
+0.0.0.0 cloudflareclient.com
+0.0.0.0 cloudflareinsights.com
+0.0.0.0 cloudflareok.com
+0.0.0.0 cloudflarepreview.com
+0.0.0.0 cloudflareresolve.com
+0.0.0.0 cloudflaressl.com
+0.0.0.0 cloudflarestatus.com
+0.0.0.0 cloudflarestorage.com
+0.0.0.0 cloudflarestream.com
+0.0.0.0 cloudflaretest.com
+0.0.0.0 cloudflarewarp.com
+0.0.0.0 every1dns.net
+0.0.0.0 one.one
+0.0.0.0 pacloudflare.com
+0.0.0.0 pages.dev
+0.0.0.0 trycloudflare.com
+0.0.0.0 videodelivery.net
+0.0.0.0 warp.plus
+0.0.0.0 workers.dev
