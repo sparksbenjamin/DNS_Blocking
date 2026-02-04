@@ -46,6 +46,7 @@ BASE_DIR = Path("services")
 LISTS_DIR = BASE_DIR / "lists"
 CATEGORIES_DIR = BASE_DIR / "categories"
 README_PATH = BASE_DIR / "README.md"
+CUSTOM_DOMAINS_FILE = Path("custom_domains.json")
 
 REPO = "sparksbenjamin/DNS_Blocking"
 BRANCH = "main"
@@ -320,7 +321,169 @@ def ensure_dir(path: Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
 
 
-def get_root_domain(domain: str) -> str:
+def load_custom_domains() -> Dict[str, List[str]]:
+    """
+    Load custom domain additions from JSON file.
+    
+    Returns:
+        Dictionary mapping service_id to list of domains
+    """
+    if not CUSTOM_DOMAINS_FILE.exists():
+        logger.info(f"No custom domains file found at {CUSTOM_DOMAINS_FILE}")
+        return {}
+    
+    try:
+        with open(CUSTOM_DOMAINS_FILE, 'r', encoding='utf-8') as f:
+            custom_domains = json.load(f)
+        
+        logger.info(f"Loaded custom domains from {CUSTOM_DOMAINS_FILE}")
+        return custom_domains
+    except json.JSONDecodeError as e:
+        logger.error(f"Invalid JSON in {CUSTOM_DOMAINS_FILE}: {e}")
+        return {}
+    except Exception as e:
+        logger.error(f"Failed to load {CUSTOM_DOMAINS_FILE}: {e}")
+        return {}
+
+
+def apply_custom_domains(services_by_target: Dict, custom_domains: Dict) -> None:
+    """
+    Apply custom domain additions from custom_domains.json.
+    
+    Supports two formats:
+    1. Simple: "service_id": ["domain1.com", "domain2.com"]
+    2. Detailed: "service_id": {"category": "adult", "name": "Display Name", "domains": ["domain.com"]}
+    
+    Args:
+        services_by_target: Dictionary of services to update
+        custom_domains: Dictionary from JSON file
+    """
+    for service_id, config in custom_domains.items():
+        # Skip comment keys
+        if service_id.startswith("_"):
+            continue
+        
+        # Determine format and extract data
+        if isinstance(config, list):
+            # Simple format: ["domain1.com", "domain2.com"]
+            domain_list = config
+            category = None  # Will auto-categorize
+            display_name = None  # Will auto-generate
+        elif isinstance(config, dict):
+            # Detailed format: {"category": "adult", "name": "Grindr", "domains": [...]}
+            domain_list = config.get("domains", [])
+            category = config.get("category")
+            display_name = config.get("name")
+        else:
+            logger.warning(f"Invalid format for service '{service_id}' - must be list or dict")
+            continue
+        
+        if not domain_list:
+            logger.warning(f"No domains specified for service '{service_id}'")
+            continue
+        
+        # Validate and add domains
+        valid_domains = set()
+        for domain in domain_list:
+            domain = str(domain).lower().strip()
+            if is_valid_domain(domain):
+                valid_domains.add(domain)
+            else:
+                logger.warning(f"Invalid custom domain '{domain}' for service '{service_id}'")
+        
+        if not valid_domains:
+            continue
+        
+        # If service doesn't exist, create it
+        if service_id not in services_by_target or not services_by_target[service_id]["group"]:
+            # Determine category
+            if category:
+                # Use explicitly provided category
+                group = category.lower()
+            else:
+                # Auto-categorize based on service name
+                if any(keyword in service_id.lower() for keyword in ["dating", "tinder", "bumble", "grindr", "hinge", "onlyfans", "match", "pof"]):
+                    group = "adult"
+                else:
+                    group = "misc"
+            
+            # Determine display name
+            if display_name:
+                name = display_name
+            else:
+                name = service_id.replace("_", " ").title()
+            
+            services_by_target[service_id]["group"] = group
+            services_by_target[service_id]["name"] = name
+            services_by_target[service_id]["domains"] = set()
+            logger.info(f"Created new service '{service_id}' in category '{group}' as '{name}'")
+        
+        # Add custom domains
+        services_by_target[service_id]["domains"].update(valid_domains)
+        logger.info(f"Added {len(valid_domains)} custom domain(s) to '{service_id}'")
+
+
+def build_existing_domains_index(services_by_target: Dict) -> Dict[str, str]:
+    """
+    Build an index of all existing domains and which service they belong to.
+    Used for deduplication.
+    
+    Args:
+        services_by_target: Dictionary of all services
+        
+    Returns:
+        Dictionary mapping domain -> service_id
+    """
+    domain_index = {}
+    
+    for service_id, svc_data in services_by_target.items():
+        if not svc_data.get("domains"):
+            continue
+        
+        for domain in svc_data["domains"]:
+            root = get_root_domain(domain)
+            # Only index non-adult services (we want adult lists checked against these)
+            if svc_data["group"] != "adult":
+                domain_index[root] = service_id
+    
+    return domain_index
+
+
+def clean_adult_content(adult_domains: Set[str], existing_domains: Dict[str, str]) -> Set[str]:
+    """
+    Remove domains that already exist in other (non-adult) services.
+    This prevents legitimate services like Netflix/Discord from appearing in adult lists.
+    
+    Args:
+        adult_domains: Set of domains from adult content feeds
+        existing_domains: Index of existing domains -> service_id
+        
+    Returns:
+        Cleaned set with duplicates removed
+    """
+    original_count = len(adult_domains)
+    cleaned = set()
+    removed = []
+    
+    for domain in adult_domains:
+        root = get_root_domain(domain)
+        
+        # Check if this domain exists in a non-adult service
+        if root in existing_domains:
+            removed.append(f"{root} (in {existing_domains[root]})")
+        else:
+            cleaned.add(domain)
+    
+    removed_count = original_count - len(cleaned)
+    if removed_count > 0:
+        logger.info(f"Removed {removed_count} domains already in other services from adult feeds")
+        if removed_count <= 20:  # Only show details if not too many
+            logger.debug(f"Removed: {', '.join(removed[:20])}")
+    
+    return cleaned
+
+
+def apply_custom_domains(services_by_target: Dict, custom_domains: Dict[str, List[str]]) -> None:
     """
     Extract root domain from a domain (remove subdomains).
     
@@ -340,6 +503,7 @@ def get_root_domain(domain: str) -> str:
 def write_domain_file(path: Path, domains: Set[str], header: Optional[str] = None) -> tuple:
     """
     Write domains to file with header in Pi-hole/AdGuard compatible format.
+    Uses wildcard format to ensure ALL subdomains are blocked.
     
     Args:
         path: Output file path
@@ -366,8 +530,11 @@ def write_domain_file(path: Path, domains: Set[str], header: Optional[str] = Non
     if header:
         content += header.rstrip() + "\n\n"
     
-    # Pi-hole/AdGuard compatible format - one domain per line
-    content += "\n".join(sorted_domains) + "\n"
+    # Pi-hole format: Use wildcard to block all subdomains
+    # Format: 0.0.0.0 domain.com
+    # This ensures *.domain.com is blocked
+    for domain in sorted_domains:
+        content += f"0.0.0.0 {domain}\n"
     
     size_mb = len(content.encode("utf-8")) / (1024 * 1024)
     if size_mb > MAX_FILE_SIZE_MB:
@@ -472,6 +639,9 @@ def main():
     # Key: service name (e.g., "facebook", "tiktok", "emotet")
     # Value: {"group": category, "name": display_name, "domains": set()}
     services_by_target = defaultdict(lambda: {"group": "", "name": "", "domains": set()})
+    
+    # Load custom domains from JSON file
+    custom_domains = load_custom_domains()
     
     # -----------------------------
     # ADGUARD SERVICES (social, gaming, streaming, etc.)
@@ -620,6 +790,13 @@ def main():
         logger.error("Failed to fetch SSLBL data")
 
     # -----------------------------
+    # BUILD DOMAIN INDEX FOR DEDUPLICATION
+    # -----------------------------
+    logger.info("Building domain index for deduplication...")
+    existing_domains = build_existing_domains_index(services_by_target)
+    logger.info(f"Indexed {len(existing_domains)} domains from non-adult services")
+    
+    # -----------------------------
     # ADULT CONTENT (per-source + aggregated)
     # -----------------------------
     logger.info("Fetching adult content feeds (selective)...")
@@ -628,10 +805,12 @@ def main():
     sb_text = fetch_text(STEVENBLACK_PORN_URL)
     if sb_text:
         sb_adult = extract_domains_from_hosts_file(sb_text)
+        # Clean out domains already in other services
+        sb_adult = clean_adult_content(sb_adult, existing_domains)
         services_by_target["stevenblack_porn"]["group"] = "adult"
         services_by_target["stevenblack_porn"]["name"] = "StevenBlack Porn"
         services_by_target["stevenblack_porn"]["domains"].update(sb_adult)
-        logger.info(f"StevenBlack: {len(sb_adult)} domains")
+        logger.info(f"StevenBlack: {len(sb_adult)} domains (after deduplication)")
     else:
         logger.error("Failed to fetch StevenBlack data")
 
@@ -639,10 +818,12 @@ def main():
     cm_text = fetch_text(CHADMAYFIELD_PORN_URL)
     if cm_text:
         cm_adult = extract_domains_from_plain_list(cm_text)
+        # Clean out domains already in other services
+        cm_adult = clean_adult_content(cm_adult, existing_domains)
         services_by_target["chadmayfield_porn"]["group"] = "adult"
         services_by_target["chadmayfield_porn"]["name"] = "Chad Mayfield Porn"
         services_by_target["chadmayfield_porn"]["domains"].update(cm_adult)
-        logger.info(f"Chad Mayfield: {len(cm_adult)} domains")
+        logger.info(f"Chad Mayfield: {len(cm_adult)} domains (after deduplication)")
     else:
         logger.error("Failed to fetch Chad Mayfield data")
 
@@ -651,10 +832,17 @@ def main():
     # ut1_content = fetch_binary(UT1_ADULT_URL, timeout=120)
     # if ut1_content:
     #     ut1_domains = extract_domains_from_ut1_tarball(ut1_content)
+    #     ut1_domains = clean_adult_content(ut1_domains, existing_domains)
     #     services_by_target["ut1_adult"]["group"] = "adult"
     #     services_by_target["ut1_adult"]["name"] = "UT1 Adult"
     #     services_by_target["ut1_adult"]["domains"].update(ut1_domains)
-    #     logger.info(f"UT1: {len(ut1_domains)} domains")
+    #     logger.info(f"UT1: {len(ut1_domains)} domains (after deduplication)")
+
+    # -----------------------------
+    # APPLY CUSTOM DOMAINS
+    # -----------------------------
+    logger.info("Applying custom domain additions...")
+    apply_custom_domains(services_by_target, custom_domains)
 
     # -----------------------------
     # WRITE PER-SERVICE FILES
@@ -676,7 +864,7 @@ def main():
             f"# {name}\n"
             f"# Category: {group}\n"
             f"# Generated: {timestamp}\n"
-            f"# Format: Pi-hole/AdGuard compatible - one domain per line\n"
+            f"# Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains\n"
             f"# Original domains (before deduplication): {len(domains)}"
         )
 
@@ -711,7 +899,7 @@ def main():
         header = (
             f"# {group.capitalize()} Blocklist\n"
             f"# Generated: {timestamp}\n"
-            f"# Format: Pi-hole/AdGuard compatible - one domain per line\n"
+            f"# Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains\n"
             f"# Original domains (before deduplication): {len(domains)}"
         )
 
@@ -832,11 +1020,12 @@ def main():
     # Format details
     lines.append("## 📝 Format Details\n")
     lines.append("All lists follow these standards:\n")
-    lines.append("- **Root domains only** - blocking `example.com` automatically blocks all `*.example.com`")
-    lines.append("- **One domain per line** - clean, simple format")
-    lines.append("- **No subdomains** - more efficient and smaller file sizes")
-    lines.append("- **No IP addresses or wildcards** - pure domain lists")
-    lines.append("- **Commented headers** - each file includes metadata and generation timestamp\n")
+    lines.append("- **Hosts file format** - `0.0.0.0 domain.com` for maximum compatibility")
+    lines.append("- **Blocks all subdomains** - `0.0.0.0 example.com` blocks `www.example.com`, `api.example.com`, etc.")
+    lines.append("- **Root domains only** - more efficient and smaller file sizes")
+    lines.append("- **One entry per line** - clean, simple format")
+    lines.append("- **Commented headers** - each file includes metadata and generation timestamp")
+    lines.append("- **Works with Pi-hole, AdGuard Home, hosts file, and most DNS blockers**\n")
     
     # Add sources section
     lines.append("## 🔍 Data Sources\n")
