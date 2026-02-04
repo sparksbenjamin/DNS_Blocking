@@ -483,7 +483,7 @@ def clean_adult_content(adult_domains: Set[str], existing_domains: Dict[str, str
     return cleaned
 
 
-def apply_custom_domains(services_by_target: Dict, custom_domains: Dict[str, List[str]]) -> None:
+def get_root_domain(domain: str) -> str:
     """
     Extract root domain from a domain (remove subdomains).
     
