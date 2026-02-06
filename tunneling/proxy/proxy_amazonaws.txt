@@ -161,8 +161,6 @@ external-usw1-kproxy-1-1404359753.us-west-1.elb.amazonaws.com
 fapl-sector-100-proxy-api-1930831124.us-east-1.elb.amazonaws.com
 fipsproxy-usw2-prod-nlb-442bf2da15bf2e5a.elb.us-west-2.amazonaws.com
 gamma.proxy.nfw.us-east-1.amazonaws.com
-gamma.proxy.nfw.us-east-1.vpce.amazonaws.com
-grcai-dev-proxy-alb-alb-87937429.us-east-1.elb.amazonaws.com
 haproxy-external-ingress-1634369622.us-east-1.elb.amazonaws.com
 haproxy-prod-link-nlb-9484743b55d7f6b1.elb.us-east-1.amazonaws.com
 haproxywildnlb-2e3f6bff22e84a79.elb.us-west-2.amazonaws.com
@@ -175,7 +173,6 @@ k8s-growthbo-gbproxy-9eb4da5a3a-1709938423.us-east-2.elb.amazonaws.com
 k8s-ingressn-megaprox-1bd9654970-dd606567b6da6cf4.elb.eu-central-1.amazonaws.com
 k8s-ingressn-megaprox-27997a5e2b-05019920a6e48c5d.elb.us-east-2.amazonaws.com
 k8s-ingressn-megaprox-67431dcd5c-cb5ed8e80ef2cf87.elb.ap-southeast-1.amazonaws.com
-k8s-ingressn-megaprox-75b0f65556-21d3c395584aa321.elb.eu-west-3.amazonaws.com
 k8s-ingressn-megaprox-f386c8a578-949934b8a3de4cc6.elb.us-west-2.amazonaws.com
 k8s-mvtunnel-tunnelsv-26131b105c-a03c19a9e18e983a.elb.us-west-2.amazonaws.com
 k8s-nextunne-mtunneln-186c7f8fce-c327033d2bc495fe.elb.ap-southeast-1.amazonaws.com
@@ -203,6 +200,7 @@ prd-aux-contentproxy-alb-962713691.us-east-1.elb.amazonaws.com
 prod-avira-proxy-lb-1572026106.us-east-1.elb.amazonaws.com
 prod-cfgsvc-proxy-3c31c1a14fee981c.elb.us-east-1.amazonaws.com
 prod-dap-nginx-proxy-342623738.us-east-1.elb.amazonaws.com
+prod-east-dynamicproxy-lb-1044684265.us-east-1.elb.amazonaws.com
 prod-ec1-nlb-gen-haproxy-5768cb3cd11f188e.elb.eu-central-1.amazonaws.com
 prod-ec1-nlb-lp-haproxy-9d4344ca733bee73.elb.eu-central-1.amazonaws.com
 prod-endpoint-api-proxy-530919549.us-east-1.elb.amazonaws.com
@@ -224,10 +222,10 @@ proxy-nlb-prod-us-west-2-v5-ac4e52c97755301b.elb.us-west-2.amazonaws.com
 proxy-uni-login-cigna-prod-1630199742.us-east-1.elb.amazonaws.com
 proxy-universal-login-prod-1779027556.us-east-1.elb.amazonaws.com
 proxy.nfw.us-east-1.amazonaws.com
-proxy.nfw.us-east-1.vpce.amazonaws.com
 proxy.nfw.us-east-2.amazonaws.com
 proxy.nfw.us-east-2.vpce.amazonaws.com
 proxybox-lb-250966913.us-east-1.elb.amazonaws.com
+registry-proxy-134442355.us-east-1.elb.amazonaws.com
 registry-proxy-alb-1061576568.us-east-1.elb.amazonaws.com
 regproxy-access-alb-1488273342.us-east-1.elb.amazonaws.com
 regproxy-isv-alb-637521420.us-east-1.elb.amazonaws.com
