@@ -7,11 +7,12 @@ aks-feproxy-prod-eastus2-su3.eastus2.cloudapp.azure.com
 aks-feproxy-prod-northcentralus-su1.northcentralus.cloudapp.azure.com
 aks-feproxy-prod-northeurope-su1.northeurope.cloudapp.azure.com
 aks-feproxy-prod-northeurope-su2.northeurope.cloudapp.azure.com
+aks-feproxy-prod-northeurope-su3.northeurope.cloudapp.azure.com
 aks-feproxy-prod-southcentralus-su1.southcentralus.cloudapp.azure.com
 aks-feproxy-prod-westus-su1.westus.cloudapp.azure.com
 blobproxy-prod-productionwe-15-73-18-g2588a78902-30.westeurope.cloudapp.azure.com
 ctxwsp-eastus-release-a-nt-releasescloudproxy.eastus.cloudapp.azure.com
-ctxwsp-westeu-release-a-nt-releasescloudproxy.westeurope.cloudapp.azure.com
+fw-proxy-pip-ds-prod-eastus2.eastus2.cloudapp.azure.com
 gppremiumproxy.northeurope.cloudapp.azure.com
 prd-new-otn-proxy.southcentralus.cloudapp.azure.com
 prdproxy.eastus.cloudapp.azure.com
@@ -20,6 +21,7 @@ prod4-eus-gateway-proxy.eastus.cloudapp.azure.com
 proxy-appproxy-cus-dm2p-4.centralus.cloudapp.azure.com
 proxy-appproxy-cus-dsm01p-5.centralus.cloudapp.azure.com
 proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
+proxy-appproxy-dwc-fra01p-1.germanywestcentral.cloudapp.azure.com
 proxy-appproxy-dwc-fra02p-2.germanywestcentral.cloudapp.azure.com
 proxy-appproxy-dwc-fra03p-3.germanywestcentral.cloudapp.azure.com
 proxy-appproxy-eus-bl02p-2.eastus.cloudapp.azure.com
@@ -74,6 +76,7 @@ vm0.proxy-hisgeneral-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm0.proxy-hisgeneral-ncus-ch1p-4.northcentralus.cloudapp.azure.com
 vm0.proxy-hisgeneral-ncus-chi01p-2.northcentralus.cloudapp.azure.com
 vm0.proxy-hisgeneral-ncus-chi01p-6.northcentralus.cloudapp.azure.com
+vm0.proxy-hisgeneral-weur-am3p-4.westeurope.cloudapp.azure.com
 vm0.proxy-hisgeneral-wus2-mw1p-1.westus2.cloudapp.azure.com
 vm0.proxy-hisgeneral-wus2-mwh01p-3.westus2.cloudapp.azure.com
 vm0.proxy-hisgeneral-wus2-mwh02p-2.westus2.cloudapp.azure.com
@@ -81,6 +84,7 @@ vm0.proxy-pta-eus-bl02p-2.eastus.cloudapp.azure.com
 vm0.proxy-pta-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm0.proxy-pta-ncus-chi01p-2.northcentralus.cloudapp.azure.com
 vm0.proxy-pta-ncus-chi01p-6.northcentralus.cloudapp.azure.com
+vm0.proxy-pta-neur-dub02p-2.northeurope.cloudapp.azure.com
 vm0.proxy-pta-scus-sat02p-6.southcentralus.cloudapp.azure.com
 vm0.proxy-pta-scus-sn3p-2.southcentralus.cloudapp.azure.com
 vm0.proxy-pta-weur-ams02p-5.westeurope.cloudapp.azure.com
@@ -94,6 +98,7 @@ vm1.proxy-hisgeneral-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm1.proxy-hisgeneral-ncus-ch1p-4.northcentralus.cloudapp.azure.com
 vm1.proxy-hisgeneral-ncus-chi01p-2.northcentralus.cloudapp.azure.com
 vm1.proxy-hisgeneral-ncus-chi01p-6.northcentralus.cloudapp.azure.com
+vm1.proxy-hisgeneral-weur-am3p-4.westeurope.cloudapp.azure.com
 vm1.proxy-hisgeneral-wus2-mw1p-1.westus2.cloudapp.azure.com
 vm1.proxy-hisgeneral-wus2-mwh01p-3.westus2.cloudapp.azure.com
 vm1.proxy-hisgeneral-wus2-mwh02p-2.westus2.cloudapp.azure.com
@@ -101,6 +106,7 @@ vm1.proxy-pta-eus-bl02p-2.eastus.cloudapp.azure.com
 vm1.proxy-pta-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm1.proxy-pta-ncus-chi01p-2.northcentralus.cloudapp.azure.com
 vm1.proxy-pta-ncus-chi01p-6.northcentralus.cloudapp.azure.com
+vm1.proxy-pta-neur-dub02p-2.northeurope.cloudapp.azure.com
 vm1.proxy-pta-scus-sat02p-6.southcentralus.cloudapp.azure.com
 vm1.proxy-pta-scus-sn3p-2.southcentralus.cloudapp.azure.com
 vm1.proxy-pta-weur-ams02p-5.westeurope.cloudapp.azure.com
@@ -116,6 +122,7 @@ vm10.proxy-pta-ncus-chi01p-2.northcentralus.cloudapp.azure.com
 vm10.proxy-pta-ncus-chi01p-6.northcentralus.cloudapp.azure.com
 vm10.proxy-pta-scus-sat02p-6.southcentralus.cloudapp.azure.com
 vm10.proxy-pta-scus-sn3p-2.southcentralus.cloudapp.azure.com
+vm10.proxy-pta-weur-ams02p-5.westeurope.cloudapp.azure.com
 vm10.proxy-pta-wus-by3p-2.westus.cloudapp.azure.com
 vm10.proxy-pta-wus-sjc01p-3.westus.cloudapp.azure.com
 vm100.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
@@ -128,10 +135,12 @@ vm106.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm107.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm108.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm109.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
+vm11.proxy-appproxy-cus-dm2p-4.centralus.cloudapp.azure.com
 vm11.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm11.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm11.proxy-hisgeneral-eus-bl02p-2.eastus.cloudapp.azure.com
 vm11.proxy-hisgeneral-ncus-chi01p-2.northcentralus.cloudapp.azure.com
+vm11.proxy-pta-neur-dub02p-2.northeurope.cloudapp.azure.com
 vm11.proxy-pta-weur-ams02p-5.westeurope.cloudapp.azure.com
 vm110.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm111.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
@@ -143,7 +152,6 @@ vm116.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm117.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm118.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm119.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
-vm12.proxy-appproxy-cus-dm2p-4.centralus.cloudapp.azure.com
 vm12.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm12.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm12.proxy-hisgeneral-eus-bl02p-2.eastus.cloudapp.azure.com
@@ -188,6 +196,8 @@ vm154.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm155.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm156.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm157.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
+vm158.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
+vm159.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm16.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm16.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm16.proxy-hisgeneral-eus-bl02p-2.eastus.cloudapp.azure.com
@@ -206,6 +216,7 @@ vm2.proxy-hisgeneral-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm2.proxy-hisgeneral-ncus-ch1p-4.northcentralus.cloudapp.azure.com
 vm2.proxy-hisgeneral-ncus-chi01p-2.northcentralus.cloudapp.azure.com
 vm2.proxy-hisgeneral-ncus-chi01p-6.northcentralus.cloudapp.azure.com
+vm2.proxy-hisgeneral-weur-am3p-4.westeurope.cloudapp.azure.com
 vm2.proxy-hisgeneral-wus2-mw1p-1.westus2.cloudapp.azure.com
 vm2.proxy-hisgeneral-wus2-mwh01p-3.westus2.cloudapp.azure.com
 vm2.proxy-hisgeneral-wus2-mwh02p-2.westus2.cloudapp.azure.com
@@ -245,6 +256,7 @@ vm3.proxy-hisgeneral-eus-bl2p-1.eastus.cloudapp.azure.com
 vm3.proxy-hisgeneral-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm3.proxy-hisgeneral-ncus-chi01p-2.northcentralus.cloudapp.azure.com
 vm3.proxy-hisgeneral-ncus-chi01p-6.northcentralus.cloudapp.azure.com
+vm3.proxy-hisgeneral-weur-am3p-4.westeurope.cloudapp.azure.com
 vm3.proxy-hisgeneral-wus2-mw1p-1.westus2.cloudapp.azure.com
 vm3.proxy-hisgeneral-wus2-mwh01p-3.westus2.cloudapp.azure.com
 vm3.proxy-hisgeneral-wus2-mwh02p-2.westus2.cloudapp.azure.com
@@ -261,6 +273,7 @@ vm30.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm30.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm31.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm31.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
+vm32.proxy-appproxy-cus-dm2p-4.centralus.cloudapp.azure.com
 vm32.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm32.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm33.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
@@ -291,6 +304,7 @@ vm4.proxy-pta-eus-bl02p-2.eastus.cloudapp.azure.com
 vm4.proxy-pta-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm4.proxy-pta-ncus-chi01p-2.northcentralus.cloudapp.azure.com
 vm4.proxy-pta-ncus-chi01p-6.northcentralus.cloudapp.azure.com
+vm4.proxy-pta-neur-dub02p-2.northeurope.cloudapp.azure.com
 vm4.proxy-pta-scus-sat02p-6.southcentralus.cloudapp.azure.com
 vm4.proxy-pta-scus-sn3p-2.southcentralus.cloudapp.azure.com
 vm4.proxy-pta-weur-ams02p-5.westeurope.cloudapp.azure.com
@@ -298,7 +312,6 @@ vm4.proxy-pta-wus-by3p-2.westus.cloudapp.azure.com
 vm4.proxy-pta-wus-sjc01p-3.westus.cloudapp.azure.com
 vm40.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm40.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
-vm41.proxy-appproxy-cus-dm2p-4.centralus.cloudapp.azure.com
 vm41.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm41.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm42.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
@@ -330,6 +343,7 @@ vm5.proxy-pta-eus-bl02p-2.eastus.cloudapp.azure.com
 vm5.proxy-pta-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm5.proxy-pta-ncus-chi01p-2.northcentralus.cloudapp.azure.com
 vm5.proxy-pta-ncus-chi01p-6.northcentralus.cloudapp.azure.com
+vm5.proxy-pta-neur-dub02p-2.northeurope.cloudapp.azure.com
 vm5.proxy-pta-scus-sat02p-6.southcentralus.cloudapp.azure.com
 vm5.proxy-pta-scus-sn3p-2.southcentralus.cloudapp.azure.com
 vm5.proxy-pta-weur-ams02p-5.westeurope.cloudapp.azure.com
@@ -341,6 +355,7 @@ vm51.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm51.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm52.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm52.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
+vm53.proxy-appproxy-cus-dm2p-4.centralus.cloudapp.azure.com
 vm53.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm53.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm54.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
@@ -370,6 +385,7 @@ vm6.proxy-pta-ncus-chi01p-2.northcentralus.cloudapp.azure.com
 vm6.proxy-pta-ncus-chi01p-6.northcentralus.cloudapp.azure.com
 vm6.proxy-pta-scus-sat02p-6.southcentralus.cloudapp.azure.com
 vm6.proxy-pta-scus-sn3p-2.southcentralus.cloudapp.azure.com
+vm6.proxy-pta-weur-ams02p-5.westeurope.cloudapp.azure.com
 vm6.proxy-pta-wus-by3p-2.westus.cloudapp.azure.com
 vm6.proxy-pta-wus-sjc01p-3.westus.cloudapp.azure.com
 vm60.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
@@ -389,7 +405,6 @@ vm66.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm67.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm67.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm68.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
-vm68.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm69.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm69.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm7.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
@@ -405,20 +420,18 @@ vm7.proxy-pta-eus-bl02p-2.eastus.cloudapp.azure.com
 vm7.proxy-pta-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm7.proxy-pta-ncus-chi01p-2.northcentralus.cloudapp.azure.com
 vm7.proxy-pta-ncus-chi01p-6.northcentralus.cloudapp.azure.com
+vm7.proxy-pta-neur-dub02p-2.northeurope.cloudapp.azure.com
 vm7.proxy-pta-scus-sat02p-6.southcentralus.cloudapp.azure.com
 vm7.proxy-pta-scus-sn3p-2.southcentralus.cloudapp.azure.com
 vm7.proxy-pta-weur-ams02p-5.westeurope.cloudapp.azure.com
 vm7.proxy-pta-wus-by3p-2.westus.cloudapp.azure.com
 vm7.proxy-pta-wus-sjc01p-3.westus.cloudapp.azure.com
-vm70.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm70.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
-vm71.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm71.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm72.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm72.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm73.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm74.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
-vm75.proxy-appproxy-cus-dsm02p-6.centralus.cloudapp.azure.com
 vm75.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm76.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
 vm77.proxy-appproxy-eus-mnz01p-3.eastus.cloudapp.azure.com
