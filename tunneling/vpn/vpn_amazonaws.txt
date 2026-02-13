@@ -24,6 +24,7 @@ clientvpn.eu-west-2.amazonaws.com
 clientvpn.eu-west-3.amazonaws.com
 clientvpn.us-east-1.amazonaws.com
 clientvpn.us-east-2.amazonaws.com
+clientvpn.us-gov-west-1.amazonaws.com
 clientvpn.us-west-2.amazonaws.com
 cvpn-endpoint-0089e99363f682d84.prod.clientvpn.us-west-2.amazonaws.com
 cvpn-endpoint-011cad8fc32edb608.prod.clientvpn.us-east-1.amazonaws.com
@@ -37,7 +38,6 @@ cvpn-endpoint-084b604ea91ef2b38.prod.clientvpn.ap-southeast-1.amazonaws.com
 cvpn-endpoint-08690ccaa91aef141.prod.clientvpn.ap-southeast-1.amazonaws.com
 cvpn-endpoint-086ecff6a1fb2db6b.prod.clientvpn.us-east-1.amazonaws.com
 cvpn-endpoint-093708fcda85d2948.prod.clientvpn.ap-southeast-1.amazonaws.com
-cvpn-endpoint-0ab5601e231a11410.prod.clientvpn.us-east-1.amazonaws.com
 cvpn-endpoint-0ae911dd092555f79.prod.clientvpn.eu-west-1.amazonaws.com
 cvpn-endpoint-0bd262eb405aac0cf.prod.clientvpn.eu-west-2.amazonaws.com
 cvpn-endpoint-0c0cb53c76300eaab.prod.clientvpn.ap-southeast-1.amazonaws.com
@@ -59,7 +59,6 @@ k8s-sdkvpnde-sdkvpnde-c633b417a4-2e9163e3b57e1aac.elb.us-east-1.amazonaws.com
 kmserver-prod-alb-vpn2-843203853.us-west-2.elb.amazonaws.com
 lab.cvpn-endpoint-025c5b4b45b92d861.prod.clientvpn.us-east-1.amazonaws.com
 metrics-awsvpnclient.us-east-1.amazonaws.com
-msstore-submissions.s3.amazonaws.com
 ndid.cvpn-endpoint-08690ccaa91aef141.prod.clientvpn.ap-southeast-1.amazonaws.com
 pinpoint.metrics-awsvpnclient.us-east-1.amazonaws.com
 prod-openvpn-router-nlb-4b8ef4e9db6179cf.elb.us-east-1.amazonaws.com
@@ -75,18 +74,17 @@ prod.clientvpn.eu-west-2.amazonaws.com
 prod.clientvpn.eu-west-3.amazonaws.com
 prod.clientvpn.us-east-1.amazonaws.com
 prod.clientvpn.us-east-2.amazonaws.com
+prod.clientvpn.us-gov-west-1.amazonaws.com
 prod.clientvpn.us-west-2.amazonaws.com
 promise-act.cvpn-endpoint-084b604ea91ef2b38.prod.clientvpn.ap-southeast-1.amazonaws.com
 promise-web.cvpn-endpoint-0c0cb53c76300eaab.prod.clientvpn.ap-southeast-1.amazonaws.com
 promisewebndth.cvpn-endpoint-0c0cb53c76300eaab.prod.clientvpn.ap-southeast-1.amazonaws.com
 remote.cvpn-endpoint-0ae911dd092555f79.prod.clientvpn.eu-west-1.amazonaws.com
 remote.cvpn-endpoint-0f4e11ac93e36da06.prod.clientvpn.eu-west-1.amazonaws.com
-sdf.cvpn-endpoint-0ab5601e231a11410.prod.clientvpn.us-east-1.amazonaws.com
 self-service.clientvpn.amazonaws.com
 slvpn-flatfiles.s3.amazonaws.com
 test.cvpn-endpoint-019809d1b091b7f8f.prod.clientvpn.us-east-1.amazonaws.com
 tierbase4.s3.amazonaws.com
 vdkd6nz8qr.s3.amazonaws.com
-vpnprodfactual-1398578734.us-east-1.elb.amazonaws.com
 xv-client-json-configuration.s3.us-east-1.amazonaws.com
 ziggeowebservervpn-983243782.us-east-1.elb.amazonaws.com
