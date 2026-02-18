@@ -3,5 +3,15 @@
     "category": "adult",
     "name": "Grindr",
     "domains": ["grindr.com"]
+  },
+  "googleDNS": {
+    "category": "DNS",
+    "name": "Google DNS",
+    "domains": ["dns.google.com"]
+  },
+  "CFDNS": {
+    "category": "DNS",
+    "name": "Cloud Flare DNS",
+    "domains": ["cloudflare-dns.com"]
   }
 }
