@@ -12,6 +12,7 @@ bootstrap-pta-eus-bl2p-1.his.msappproxy.net
 bootstrap-pta-weur-am3p-1.his.msappproxy.net
 bootstrap.his.msappproxy.net
 bootstrap.msappproxy.net
+certificate-cmvgroup.msappproxy.net
 chartcrl-chartindustries.msappproxy.net
 connector.his.msappproxy.net
 connector.msappproxy.net
@@ -32,20 +33,16 @@ msgraph.msappproxy.net
 ndes-ecobank.msappproxy.net
 ndes-hotelbeds365.msappproxy.net
 ocsp-arrowelectronics.msappproxy.net
+ocsp-dayzim.msappproxy.net
+pkicrl-abcportal.msappproxy.net
 proxy-appproxy-cus-dsm01p-5.msappproxy.net
 proxy-appproxy-eus-bl02p-2.msappproxy.net
-proxy-porto-cus-dsm02p-3.msappproxy.net
-proxy-porto-eus-bl02p-2.msappproxy.net
-proxy-porto-eus-bl6p-1.msappproxy.net
-proxy-porto-eus-mnz01p-3.msappproxy.net
+proxy-porto-brse-rio01p-2.msappproxy.net
+proxy-porto-cus-dsm01p-2.msappproxy.net
+proxy-porto-cus-dsm03p-1.msappproxy.net
 proxy-porto-scus-sat02p-2.msappproxy.net
-proxy-porto-scus-sn3p-1.msappproxy.net
-proxy-porto-scus-snz04p-3.msappproxy.net
 proxy-porto-wus-by01p-1.msappproxy.net
-proxy-porto-wus-by3p-2.msappproxy.net
 proxy-porto-wus-sjc01p-3.msappproxy.net
-proxy-porto-wus2-mwh01p-3.msappproxy.net
-proxy-porto-wus2-mwh02p-2.msappproxy.net
 pshr-nmhealth.msappproxy.net
 pta.bootstrap.his.msappproxy.net
 radsaas-aeliadutyfree.msappproxy.net
@@ -53,6 +50,7 @@ recast-uphealth.msappproxy.net
 renewtrust.msappproxy.net
 routing.msappproxy.net
 runtime.msappproxy.net
+skyseagw01-saijoedu.msappproxy.net
 syncfabric.bootstrap.his.msappproxy.net
 tenant.runtime.msappproxy.net
 update-cus-dm2p-1.msappproxy.net
@@ -106,7 +104,6 @@ vm10-proxy-pta-wus-by3p-2.connector.his.msappproxy.net
 vm10-proxy-pta-wus-sjc01p-3.connector.his.msappproxy.net
 vm11-proxy-hisgeneral-eus-bl02p-2.connector.his.msappproxy.net
 vm11-proxy-hisgeneral-ncus-chi01p-2.connector.his.msappproxy.net
-vm11-proxy-pta-weur-ams02p-5.connector.his.msappproxy.net
 vm12-proxy-hisgeneral-eus-bl02p-2.connector.his.msappproxy.net
 vm13-proxy-hisgeneral-eus-bl02p-2.connector.his.msappproxy.net
 vm14-proxy-hisgeneral-eus-bl02p-2.connector.his.msappproxy.net
@@ -225,7 +222,6 @@ vm9-proxy-pta-ncus-chi01p-2.connector.his.msappproxy.net
 vm9-proxy-pta-ncus-chi01p-6.connector.his.msappproxy.net
 vm9-proxy-pta-scus-sat02p-6.connector.his.msappproxy.net
 vm9-proxy-pta-scus-sn3p-2.connector.his.msappproxy.net
-vm9-proxy-pta-weur-ams02p-5.connector.his.msappproxy.net
 vm9-proxy-pta-wus-by3p-2.connector.his.msappproxy.net
 vm9-proxy-pta-wus-sjc01p-3.connector.his.msappproxy.net
 yoursource-mcdermottwillemery.msappproxy.net
