@@ -1,3 +1,4 @@
+alb-prod-live-proxy-api-201-1100059756.us-east-1.elb.amazonaws.com
 analytics-proxy-production-72829403.us-west-2.elb.amazonaws.com
 apiproxy-api-fast-vpc0-nlb-103017a815808492.elb.us-west-2.amazonaws.com
 apiproxy-api-fast-vpc0-nlb-41a65773b29b9841.elb.us-east-2.amazonaws.com
@@ -27,7 +28,9 @@ apiproxy-ftl-http-nlb-0a6bdb9ef5cdd17e.elb.us-east-2.amazonaws.com
 apiproxy-ftl-http-nlb-38738ca310a7b66b.elb.us-west-2.amazonaws.com
 apiproxy-ftl-http-nlb-9ca76ece395fe934.elb.us-east-1.amazonaws.com
 apiproxy-ftl-http-nlb-cc971c97dfc340e4.elb.eu-west-1.amazonaws.com
+apiproxy-helpcenter-nlb-6cc037a5a8a90429.elb.us-east-2.amazonaws.com
 apiproxy-helpcenter-nlb-8f45ed8b6aa9cee1.elb.us-east-1.amazonaws.com
+apiproxy-island-prod-nlb-d0597974a2822a9e.elb.us-east-1.amazonaws.com
 apiproxy-log-nlb-0dbe90394fe752bf.elb.us-west-2.amazonaws.com
 apiproxy-log-nlb-1f304af4d3ac01a4.elb.us-east-2.amazonaws.com
 apiproxy-log-nlb-72c5f7ae51b322e8.elb.us-east-1.amazonaws.com
@@ -127,6 +130,15 @@ collector-proxy-alb-744229001.ap-southeast-2.elb.amazonaws.com
 connect-prod-rev-proxy-1939600382.us-east-1.elb.amazonaws.com
 consproxy-usw2-prod-nlb-0a749017bdeedff9.elb.us-west-2.amazonaws.com
 consproxy-usw2-prod-nlb-e3e0cd6f96c4a7ad.elb.us-west-2.amazonaws.com
+cortex-artresource-prod-proxies.s3.us-east-2.amazonaws.com
+cortex-fairfax-prod-proxies.s3.amazonaws.com
+cortex-fairfax-prod-proxies.s3.dualstack.us-east-1.amazonaws.com
+cortex-fairfax-prod-proxies.s3.us-east-1.amazonaws.com
+cortex-mcny-prod1-proxies.s3.amazonaws.com
+cortex-mcny-prod1-proxies.s3.dualstack.us-east-1.amazonaws.com
+cortex-mcny-prod1-proxies.s3.us-east-1.amazonaws.com
+cortex-unitednations-prod-proxies.s3.dualstack.us-east-2.amazonaws.com
+cortex-unitednations-prod-proxies.s3.us-east-2.amazonaws.com
 ct-phoenix-proxy-it-prod-v6-44d1f2230a55cb76.elb.eu-west-3.amazonaws.com
 ddos-prod-ecs-proxy-1810540203.us-east-1.elb.amazonaws.com
 eks-proxy.eks.us-east-1.amazonaws.com
@@ -140,6 +152,7 @@ external-euw1-kproxy-1-918085366.eu-west-1.elb.amazonaws.com
 external-use1-kproxy-1-1056718813.us-east-1.elb.amazonaws.com
 external-usw1-kproxy-1-1404359753.us-west-1.elb.amazonaws.com
 fipsproxy-usw2-prod-nlb-442bf2da15bf2e5a.elb.us-west-2.amazonaws.com
+firehose-prod-proxy-nlb-66e7537dd644609a.elb.eu-central-1.amazonaws.com
 gbproxy-lb-666270904.us-west-2.elb.amazonaws.com
 haproxy-external-ingress-1634369622.us-east-1.elb.amazonaws.com
 haproxy-prod-link-nlb-9484743b55d7f6b1.elb.us-east-1.amazonaws.com
@@ -159,6 +172,7 @@ k8s-nextunne-mtunneln-3ced85cbfd-83adc9fc42d1d498.elb.ap-southeast-2.amazonaws.c
 k8s-nextunne-mtunneln-65322b0e4c-f9cc30dda50fac70.elb.eu-west-3.amazonaws.com
 k8s-nextunne-mtunneln-eca84da1e8-db9366da1b96cea2.elb.us-east-2.amazonaws.com
 k8s-prod-proxistore-fr-1068372755.eu-central-1.elb.amazonaws.com
+k8s-protect-proxyd-e8bc0a1b1d-1329983445.us-east-2.elb.amazonaws.com
 k8s-proxy-partners-72bc153cb9-d20aaf6ef79966bb.elb.us-east-1.amazonaws.com
 ldhproxy-aps1-prod-nlb-3e1012397235291b.elb.ap-south-1.amazonaws.com
 ldrelayproxy-1230587618.us-west-2.elb.amazonaws.com
@@ -183,14 +197,13 @@ proxy-alb-traffic-mirror-prod-1026582848.eu-west-1.elb.amazonaws.com
 proxy-express-scripts-prod-957532894.us-east-1.elb.amazonaws.com
 proxy-mycigna-prod-678433465.us-east-1.elb.amazonaws.com
 proxy-nlb-a9ecc2f9566fd74a.elb.eu-central-2.amazonaws.com
-proxy-nlb-prod-ap-northeast-2-v2-fc2c6d800028110a.elb.ap-northeast-2.amazonaws.com
 proxy-nlb-prod-eu-central-1-v3-6af28df56b6dcb14.elb.eu-central-1.amazonaws.com
 proxy-nlb-prod-eu-west-1-v5-8da84ce7881a88cc.elb.eu-west-1.amazonaws.com
 proxy-nlb-prod-us-west-2-v5-ac4e52c97755301b.elb.us-west-2.amazonaws.com
 proxy-uni-login-cigna-prod-1630199742.us-east-1.elb.amazonaws.com
 proxy-universal-login-prod-1779027556.us-east-1.elb.amazonaws.com
-proxy-usmed-mobconf-prod-2091391596.us-east-1.elb.amazonaws.com
 proxybox-lb-250966913.us-east-1.elb.amazonaws.com
+proxys-ecscl-fy0oi8jdxdki-295572098.us-east-2.elb.amazonaws.com
 proxyv3-public-prod-1797398447.us-east-1.elb.amazonaws.com
 proxyv3-public-prod-425379236.us-east-1.elb.amazonaws.com
 registry-proxy-134442355.us-east-1.elb.amazonaws.com
