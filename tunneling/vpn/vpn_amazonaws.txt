@@ -6,11 +6,9 @@ clientvpn.ap-northeast-1.amazonaws.com
 clientvpn.ap-south-1.amazonaws.com
 clientvpn.ap-southeast-1.amazonaws.com
 clientvpn.ap-southeast-7.amazonaws.com
-clientvpn.ca-central-1.amazonaws.com
 clientvpn.eu-central-1.amazonaws.com
 clientvpn.eu-west-1.amazonaws.com
 clientvpn.eu-west-2.amazonaws.com
-clientvpn.eu-west-3.amazonaws.com
 clientvpn.sa-east-1.amazonaws.com
 clientvpn.us-east-1.amazonaws.com
 clientvpn.us-east-2.amazonaws.com
@@ -27,8 +25,6 @@ cvpn-endpoint-0c0cb53c76300eaab.prod.clientvpn.ap-southeast-1.amazonaws.com
 cvpn-endpoint-0e2c3ca246f45b25c.prod.clientvpn.sa-east-1.amazonaws.com
 gridx-de-ds-production-vpnctl.s3.eu-central-1.amazonaws.com
 gvdfgys.cvpn-endpoint-035a85807ded926c0.prod.clientvpn.us-east-1.amazonaws.com
-jr-jsol.cvpn-endpoint-093708fcda85d2948.prod.clientvpn.ap-southeast-1.amazonaws.com
-jr-ndthinf.cvpn-endpoint-093708fcda85d2948.prod.clientvpn.ap-southeast-1.amazonaws.com
 k8s-sdkvpnde-sdkvpnde-c633b417a4-2e9163e3b57e1aac.elb.us-east-1.amazonaws.com
 kmserver-prod-alb-vpn2-843203853.us-west-2.elb.amazonaws.com
 metrics-awsvpnclient.us-east-1.amazonaws.com
@@ -41,7 +37,6 @@ prod.clientvpn.ap-southeast-7.amazonaws.com
 prod.clientvpn.eu-central-1.amazonaws.com
 prod.clientvpn.eu-west-1.amazonaws.com
 prod.clientvpn.eu-west-2.amazonaws.com
-prod.clientvpn.eu-west-3.amazonaws.com
 prod.clientvpn.sa-east-1.amazonaws.com
 prod.clientvpn.us-east-1.amazonaws.com
 prod.clientvpn.us-east-2.amazonaws.com
@@ -54,6 +49,7 @@ self-service.clientvpn.amazonaws.com
 sfjg245.cvpn-endpoint-035a85807ded926c0.prod.clientvpn.us-east-1.amazonaws.com
 slvpn-flatfiles.s3.amazonaws.com
 tally-prod-365rm-us-vpn2-271926693.us-west-2.elb.amazonaws.com
+tierbase4.s3.amazonaws.com
 vdkd6nz8qr.s3.amazonaws.com
 xv-client-json-configuration.s3.us-east-1.amazonaws.com
 ziggeowebservervpn-983243782.us-east-1.elb.amazonaws.com
