@@ -1,4 +1,3 @@
-alb-k8s-app-ingress-haproxy-prd-719193417.sa-east-1.elb.amazonaws.com
 alb-prod-live-proxy-api-201-1100059756.us-east-1.elb.amazonaws.com
 analytics-proxy-production-72829403.us-west-2.elb.amazonaws.com
 apiproxy-api-fast-vpc0-nlb-103017a815808492.elb.us-west-2.amazonaws.com
@@ -95,7 +94,6 @@ apiproxy-prod-nlb-s1-8de05bbdc1a4b0b7.elb.eu-west-1.amazonaws.com
 apiproxy-prod-nlb-s1-d483e7998f43a4d2.elb.us-east-2.amazonaws.com
 apiproxy-sharkboot-nlb-05358f81db76a2e0.elb.us-west-2.amazonaws.com
 apiproxy-sharkboot-nlb-5934ca3ad1ed9264.elb.us-east-1.amazonaws.com
-apiproxy-sharkboot-nlb-798aac1ddb905ab9.elb.eu-west-1.amazonaws.com
 apiproxy-sharkboot-nlb-858cf48f255baf62.elb.us-east-2.amazonaws.com
 apiproxy-website-nlb-prod-1-5675d5ecda6efdd8.elb.eu-west-1.amazonaws.com
 apiproxy-website-nlb-prod-1-5a4080be4d9bee00.elb.us-east-1.amazonaws.com
@@ -134,6 +132,8 @@ collector-proxy-alb-744229001.ap-southeast-2.elb.amazonaws.com
 connect-prod-rev-proxy-1939600382.us-east-1.elb.amazonaws.com
 consproxy-usw2-prod-nlb-0a749017bdeedff9.elb.us-west-2.amazonaws.com
 consproxy-usw2-prod-nlb-e3e0cd6f96c4a7ad.elb.us-west-2.amazonaws.com
+cortex-unitednations-prod-proxies.s3.dualstack.us-east-2.amazonaws.com
+cortex-unitednations-prod-proxies.s3.us-east-2.amazonaws.com
 ct-phoenix-proxy-it-prod-v6-44d1f2230a55cb76.elb.eu-west-3.amazonaws.com
 ddos-prod-ecs-proxy-1810540203.us-east-1.elb.amazonaws.com
 eks-proxy.eks.us-east-1.amazonaws.com
@@ -167,7 +167,6 @@ k8s-nextunne-mtunneln-379ba267e8-2d5d55ebcc4131d9.elb.eu-central-1.amazonaws.com
 k8s-nextunne-mtunneln-3ced85cbfd-83adc9fc42d1d498.elb.ap-southeast-2.amazonaws.com
 k8s-nextunne-mtunneln-65322b0e4c-f9cc30dda50fac70.elb.eu-west-3.amazonaws.com
 k8s-nextunne-mtunneln-eca84da1e8-db9366da1b96cea2.elb.us-east-2.amazonaws.com
-k8s-prod-proxistore-fr-1068372755.eu-central-1.elb.amazonaws.com
 k8s-protect-proxyd-e8bc0a1b1d-1329983445.us-east-2.elb.amazonaws.com
 k8s-proxy-partners-72bc153cb9-d20aaf6ef79966bb.elb.us-east-1.amazonaws.com
 ldhproxy-aps1-prod-nlb-3e1012397235291b.elb.ap-south-1.amazonaws.com
@@ -193,6 +192,8 @@ proxy-alb-traffic-mirror-prod-1026582848.eu-west-1.elb.amazonaws.com
 proxy-express-scripts-prod-957532894.us-east-1.elb.amazonaws.com
 proxy-mycigna-prod-678433465.us-east-1.elb.amazonaws.com
 proxy-nlb-a9ecc2f9566fd74a.elb.eu-central-2.amazonaws.com
+proxy-nlb-prod-ap-northeast-2-v2-fc2c6d800028110a.elb.ap-northeast-2.amazonaws.com
+proxy-nlb-prod-ap-southeast-2-v5-0abb286d509c7491.elb.ap-southeast-2.amazonaws.com
 proxy-nlb-prod-eu-central-1-v3-6af28df56b6dcb14.elb.eu-central-1.amazonaws.com
 proxy-nlb-prod-eu-west-1-v5-8da84ce7881a88cc.elb.eu-west-1.amazonaws.com
 proxy-nlb-prod-us-west-2-v5-ac4e52c97755301b.elb.us-west-2.amazonaws.com
