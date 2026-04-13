@@ -119,6 +119,7 @@ blueimageproxy.s3-sa-east-1.amazonaws.com
 brave-production-proxy-238320562.us-west-2.elb.amazonaws.com
 brazil-proxy-6dd3fa02e902f93c.elb.sa-east-1.amazonaws.com
 bubble-live-message-api-proxy-1852099838.ap-northeast-1.elb.amazonaws.com
+cf-proxy-cf-ap10-06b5d40dd8d94686.elb.ap-southeast-2.amazonaws.com
 cf-proxy-cf-br10-9fde872d4468879a.elb.sa-east-1.amazonaws.com
 cf-proxy-cf-eu10-004-ca8ff5b93d5f2e9b.elb.eu-central-1.amazonaws.com
 cf-proxy-cf-eu11-4382b16c98f5d402.elb.eu-central-1.amazonaws.com
@@ -144,7 +145,6 @@ emailocto-espsecuretrackingproxy-beb33fa4a237ae52.elb.eu-west-1.amazonaws.com
 essaws-p-proxy-nlb01-ab3e806b052740fc.elb.ap-northeast-1.amazonaws.com
 eu-aws-haproxy-api-v1-nlb-b61bf8ca0c954233.elb.eu-central-1.amazonaws.com
 eu-aws-haproxy-public1-nlb-942da47f6082bbc2.elb.eu-central-1.amazonaws.com
-eum-proxy-alb-1408818008.us-west-2.elb.amazonaws.com
 external-apne1-kproxy-1-925389829.ap-northeast-1.elb.amazonaws.com
 external-euw1-kproxy-1-918085366.eu-west-1.elb.amazonaws.com
 external-use1-kproxy-1-1056718813.us-east-1.elb.amazonaws.com
@@ -212,7 +212,6 @@ proxyv3-public-prod-425379236.us-east-1.elb.amazonaws.com
 registry-proxy-134442355.us-east-1.elb.amazonaws.com
 registry-proxy-access-1712650575.us-east-1.elb.amazonaws.com
 registry-proxy-isv-173405807.us-east-1.elb.amazonaws.com
-return-prime-proxy.s3.eu-central-1.amazonaws.com
 rpcloud-media-haproxy-elb-1517361419.us-west-2.elb.amazonaws.com
 saas-nginx-proxy-7c9a12a89771caf2.elb.ap-southeast-1.amazonaws.com
 sensorproxy-laggar-g-524628337.us-gov-west-1.elb.amazonaws.com
