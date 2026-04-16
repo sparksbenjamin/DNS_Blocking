@@ -1,4 +1,3 @@
-alb-k8s-app-ingress-haproxy-prd-719193417.sa-east-1.elb.amazonaws.com
 alb-prod-live-proxy-api-201-1100059756.us-east-1.elb.amazonaws.com
 analytics-proxy-production-72829403.us-west-2.elb.amazonaws.com
 apiproxy-api-fast-vpc0-nlb-103017a815808492.elb.us-west-2.amazonaws.com
@@ -32,6 +31,7 @@ apiproxy-ftl-http-nlb-cc971c97dfc340e4.elb.eu-west-1.amazonaws.com
 apiproxy-helpcenter-nlb-6cc037a5a8a90429.elb.us-east-2.amazonaws.com
 apiproxy-helpcenter-nlb-8f45ed8b6aa9cee1.elb.us-east-1.amazonaws.com
 apiproxy-helpcenter-nlb-c7098e1ee413230a.elb.us-west-2.amazonaws.com
+apiproxy-island-prod-nlb-a35ba0376662b7b4.elb.us-east-2.amazonaws.com
 apiproxy-island-prod-nlb-d0597974a2822a9e.elb.us-east-1.amazonaws.com
 apiproxy-log-nlb-0dbe90394fe752bf.elb.us-west-2.amazonaws.com
 apiproxy-log-nlb-1f304af4d3ac01a4.elb.us-east-2.amazonaws.com
@@ -95,7 +95,6 @@ apiproxy-prod-nlb-s1-8de05bbdc1a4b0b7.elb.eu-west-1.amazonaws.com
 apiproxy-prod-nlb-s1-d483e7998f43a4d2.elb.us-east-2.amazonaws.com
 apiproxy-sharkboot-nlb-05358f81db76a2e0.elb.us-west-2.amazonaws.com
 apiproxy-sharkboot-nlb-5934ca3ad1ed9264.elb.us-east-1.amazonaws.com
-apiproxy-sharkboot-nlb-798aac1ddb905ab9.elb.eu-west-1.amazonaws.com
 apiproxy-sharkboot-nlb-858cf48f255baf62.elb.us-east-2.amazonaws.com
 apiproxy-website-nlb-prod-1-5675d5ecda6efdd8.elb.eu-west-1.amazonaws.com
 apiproxy-website-nlb-prod-1-5a4080be4d9bee00.elb.us-east-1.amazonaws.com
@@ -122,6 +121,7 @@ cf-proxy-cf-br10-9fde872d4468879a.elb.sa-east-1.amazonaws.com
 cf-proxy-cf-ca10-2a3111e5ca61ea5c.elb.ca-central-1.amazonaws.com
 cf-proxy-cf-eu10-004-ca8ff5b93d5f2e9b.elb.eu-central-1.amazonaws.com
 cf-proxy-cf-eu11-4382b16c98f5d402.elb.eu-central-1.amazonaws.com
+cf-proxy-cf-us10-001-f0733425eecec8ce.elb.us-east-1.amazonaws.com
 cf-proxy-hcp-live-eu10-33e33aae450c8486.elb.eu-central-1.amazonaws.com
 cf-proxy-hcp-live-us10-green-d642c0c1ca3871d5.elb.us-east-1.amazonaws.com
 collector-proxy-alb-1167645830.eu-central-1.elb.amazonaws.com
@@ -133,6 +133,9 @@ collector-proxy-alb-744229001.ap-southeast-2.elb.amazonaws.com
 connect-prod-rev-proxy-1939600382.us-east-1.elb.amazonaws.com
 consproxy-usw2-prod-nlb-0a749017bdeedff9.elb.us-west-2.amazonaws.com
 consproxy-usw2-prod-nlb-e3e0cd6f96c4a7ad.elb.us-west-2.amazonaws.com
+cortex-fairfax-prod-proxies.s3.amazonaws.com
+cortex-fairfax-prod-proxies.s3.dualstack.us-east-1.amazonaws.com
+cortex-fairfax-prod-proxies.s3.us-east-1.amazonaws.com
 cortex-unitednations-prod-proxies.s3.dualstack.us-east-2.amazonaws.com
 cortex-unitednations-prod-proxies.s3.us-east-2.amazonaws.com
 ct-phoenix-proxy-it-prod-v6-44d1f2230a55cb76.elb.eu-west-3.amazonaws.com
@@ -165,7 +168,6 @@ k8s-haproxy-haproxyk-cd88a36a54-f5a23c1398be81e8.elb.eu-west-3.amazonaws.com
 k8s-ingressn-megaprox-1bd9654970-dd606567b6da6cf4.elb.eu-central-1.amazonaws.com
 k8s-ingressn-megaprox-27997a5e2b-05019920a6e48c5d.elb.us-east-2.amazonaws.com
 k8s-ingressn-megaprox-67431dcd5c-cb5ed8e80ef2cf87.elb.ap-southeast-1.amazonaws.com
-k8s-ingressn-megaprox-75b0f65556-21d3c395584aa321.elb.eu-west-3.amazonaws.com
 k8s-ingressn-megaprox-f386c8a578-949934b8a3de4cc6.elb.us-west-2.amazonaws.com
 k8s-mvtunnel-tunnelsv-26131b105c-a03c19a9e18e983a.elb.us-west-2.amazonaws.com
 k8s-nextunne-mtunneln-186c7f8fce-c327033d2bc495fe.elb.ap-southeast-1.amazonaws.com
@@ -182,6 +184,7 @@ mav-gyr-dmz-p-ngsiem-proxy-42df12a8eabfece8.elb.us-west-2.amazonaws.com
 miaproxyservervip-1831489572.us-east-1.elb.amazonaws.com
 miaproxyservervip-713031753.us-west-2.elb.amazonaws.com
 nlb-proxy-prod-us-east-2-v2-0775b3e35e2dc05d.elb.us-east-2.amazonaws.com
+ol-savethechildren-prod-proxies-eu.s3.eu-west-1.amazonaws.com
 outsideproxy-1-5193617dc6a409d9.elb.us-east-1.amazonaws.com
 outsideproxy-2-9f1b1809ba7c1b7a.elb.us-east-1.amazonaws.com
 outsideproxy-3-577978871fbc7864.elb.us-east-1.amazonaws.com
