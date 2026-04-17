@@ -1,3 +1,4 @@
+adsk-pnxproxy-prd-1753980530.us-east-1.elb.amazonaws.com
 alb-prod-live-proxy-api-201-1100059756.us-east-1.elb.amazonaws.com
 analytics-proxy-production-72829403.us-west-2.elb.amazonaws.com
 apiproxy-api-fast-vpc0-nlb-103017a815808492.elb.us-west-2.amazonaws.com
@@ -95,6 +96,7 @@ apiproxy-prod-nlb-s1-8de05bbdc1a4b0b7.elb.eu-west-1.amazonaws.com
 apiproxy-prod-nlb-s1-d483e7998f43a4d2.elb.us-east-2.amazonaws.com
 apiproxy-sharkboot-nlb-05358f81db76a2e0.elb.us-west-2.amazonaws.com
 apiproxy-sharkboot-nlb-5934ca3ad1ed9264.elb.us-east-1.amazonaws.com
+apiproxy-sharkboot-nlb-798aac1ddb905ab9.elb.eu-west-1.amazonaws.com
 apiproxy-sharkboot-nlb-858cf48f255baf62.elb.us-east-2.amazonaws.com
 apiproxy-website-nlb-prod-1-5675d5ecda6efdd8.elb.eu-west-1.amazonaws.com
 apiproxy-website-nlb-prod-1-5a4080be4d9bee00.elb.us-east-1.amazonaws.com
@@ -133,11 +135,6 @@ collector-proxy-alb-744229001.ap-southeast-2.elb.amazonaws.com
 connect-prod-rev-proxy-1939600382.us-east-1.elb.amazonaws.com
 consproxy-usw2-prod-nlb-0a749017bdeedff9.elb.us-west-2.amazonaws.com
 consproxy-usw2-prod-nlb-e3e0cd6f96c4a7ad.elb.us-west-2.amazonaws.com
-cortex-fairfax-prod-proxies.s3.amazonaws.com
-cortex-fairfax-prod-proxies.s3.dualstack.us-east-1.amazonaws.com
-cortex-fairfax-prod-proxies.s3.us-east-1.amazonaws.com
-cortex-unitednations-prod-proxies.s3.dualstack.us-east-2.amazonaws.com
-cortex-unitednations-prod-proxies.s3.us-east-2.amazonaws.com
 ct-phoenix-proxy-it-prod-v6-44d1f2230a55cb76.elb.eu-west-3.amazonaws.com
 ddos-prod-ecs-proxy-1810540203.us-east-1.elb.amazonaws.com
 ecr-haproxy-prod-network-lb-1866656a79c6f789.elb.us-east-1.amazonaws.com
@@ -157,7 +154,6 @@ external-usw1-kproxy-1-1404359753.us-west-1.elb.amazonaws.com
 fipsproxy-usw2-prod-nlb-442bf2da15bf2e5a.elb.us-west-2.amazonaws.com
 firehose-prod-proxy-nlb-66e7537dd644609a.elb.eu-central-1.amazonaws.com
 gbproxy-lb-666270904.us-west-2.elb.amazonaws.com
-haproxy-external-b56105ab576edaa2.elb.us-west-2.amazonaws.com
 haproxy-external-ingress-1634369622.us-east-1.elb.amazonaws.com
 haproxy-prod-link-nlb-9484743b55d7f6b1.elb.us-east-1.amazonaws.com
 haproxywildnlb-2e3f6bff22e84a79.elb.us-west-2.amazonaws.com
@@ -184,7 +180,6 @@ mav-gyr-dmz-p-ngsiem-proxy-42df12a8eabfece8.elb.us-west-2.amazonaws.com
 miaproxyservervip-1831489572.us-east-1.elb.amazonaws.com
 miaproxyservervip-713031753.us-west-2.elb.amazonaws.com
 nlb-proxy-prod-us-east-2-v2-0775b3e35e2dc05d.elb.us-east-2.amazonaws.com
-ol-savethechildren-prod-proxies-eu.s3.eu-west-1.amazonaws.com
 outsideproxy-1-5193617dc6a409d9.elb.us-east-1.amazonaws.com
 outsideproxy-2-9f1b1809ba7c1b7a.elb.us-east-1.amazonaws.com
 outsideproxy-3-577978871fbc7864.elb.us-east-1.amazonaws.com
