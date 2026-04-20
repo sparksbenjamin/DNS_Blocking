@@ -1,20 +1,23 @@
 # Spotify
 # Category: streaming
-# Generated: 2026-04-20 05:18:20 UTC
+# Generated: 2026-04-20 22:01:11 UTC
 # Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains
 # Original domains (before deduplication): 20
 
-0.0.0.0 akamaized.net
+0.0.0.0 audio-ak-spotify-com.akamaized.net
+0.0.0.0 audio4-ak-spotify-com.akamaized.net
 0.0.0.0 byspotify.com
-0.0.0.0 edgesuite.net
-0.0.0.0 fastly.net
-0.0.0.0 fastlylb.net
+0.0.0.0 com.edgesuite.net
+0.0.0.0 heads-ak-spotify-com.akamaized.net
+0.0.0.0 heads4-ak-spotify-com.akamaized.net
 0.0.0.0 pscdn.co
 0.0.0.0 scdn.co
 0.0.0.0 spoti.fi
 0.0.0.0 spotify-everywhere.com
 0.0.0.0 spotify.com
 0.0.0.0 spotify.design
+0.0.0.0 spotify.map.fastly.net
+0.0.0.0 spotify.map.fastlylb.net
 0.0.0.0 spotifycdn.com
 0.0.0.0 spotifycdn.net
 0.0.0.0 spotifycharts.com

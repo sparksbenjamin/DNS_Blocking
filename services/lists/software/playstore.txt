@@ -1,8 +1,9 @@
 # Google Play Store
 # Category: software
-# Generated: 2026-04-20 05:18:20 UTC
+# Generated: 2026-04-20 22:01:11 UTC
 # Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains
 # Original domains (before deduplication): 3
 
-0.0.0.0 googleapis.com
 0.0.0.0 googleusercontent.com
+0.0.0.0 play-fe.googleapis.com
+0.0.0.0 prod-lt-playstoregatewayadapter-pa.googleapis.com

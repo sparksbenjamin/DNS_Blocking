@@ -1,15 +1,16 @@
 # Origin
 # Category: gaming
-# Generated: 2026-04-20 05:18:20 UTC
+# Generated: 2026-04-20 22:01:11 UTC
 # Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains
-# Original domains (before deduplication): 11
+# Original domains (before deduplication): 13
 
-0.0.0.0 akamaihd.net
-0.0.0.0 amazonaws.com
+0.0.0.0 cloudsync-prod.s3.amazonaws.com
 0.0.0.0 dawngate.com
 0.0.0.0 ea.com
 0.0.0.0 eastore.com
 0.0.0.0 lordofultima.com
+0.0.0.0 origin-a.akamaihd.net
 0.0.0.0 origin.com
 0.0.0.0 origin.tv
+0.0.0.0 swtor.com
 0.0.0.0 tnt-ea.com

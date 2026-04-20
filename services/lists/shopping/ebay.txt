@@ -1,6 +1,6 @@
 # eBay
 # Category: shopping
-# Generated: 2026-04-20 05:18:20 UTC
+# Generated: 2026-04-20 22:01:11 UTC
 # Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains
 # Original domains (before deduplication): 318
 
@@ -31,23 +31,10 @@
 0.0.0.0 carebay.com
 0.0.0.0 cargigileads.com
 0.0.0.0 cebay.com
-0.0.0.0 co.kr
-0.0.0.0 co.nz
-0.0.0.0 co.uk
-0.0.0.0 co.ve
-0.0.0.0 co.za
 0.0.0.0 collective99.com
-0.0.0.0 com.ar
-0.0.0.0 com.au
-0.0.0.0 com.cn
-0.0.0.0 com.ec
-0.0.0.0 com.hk
-0.0.0.0 com.mt
-0.0.0.0 com.my
-0.0.0.0 com.ph
-0.0.0.0 com.sg
 0.0.0.0 commerceos.com
 0.0.0.0 connectcommerce.cn
+0.0.0.0 connectcommerce.com.cn
 0.0.0.0 connectcommerce.hk
 0.0.0.0 connectcommerce.info
 0.0.0.0 connectcommerce.tv
@@ -57,6 +44,7 @@
 0.0.0.0 crececonebay.com
 0.0.0.0 creditcardsbay.com
 0.0.0.0 cyber-bay.cn
+0.0.0.0 cyber-bay.com.cn
 0.0.0.0 cyber-bay.info
 0.0.0.0 cyber-bay.org
 0.0.0.0 dba.dk
@@ -91,7 +79,20 @@
 0.0.0.0 ebay.ca
 0.0.0.0 ebay.ch
 0.0.0.0 ebay.cn
+0.0.0.0 ebay.co.nz
+0.0.0.0 ebay.co.uk
+0.0.0.0 ebay.co.ve
+0.0.0.0 ebay.co.za
 0.0.0.0 ebay.com
+0.0.0.0 ebay.com.ar
+0.0.0.0 ebay.com.au
+0.0.0.0 ebay.com.cn
+0.0.0.0 ebay.com.ec
+0.0.0.0 ebay.com.hk
+0.0.0.0 ebay.com.mt
+0.0.0.0 ebay.com.my
+0.0.0.0 ebay.com.ph
+0.0.0.0 ebay.com.sg
 0.0.0.0 ebay.de
 0.0.0.0 ebay.es
 0.0.0.0 ebay.fr
@@ -101,14 +102,18 @@
 0.0.0.0 ebay.jp
 0.0.0.0 ebay.lt
 0.0.0.0 ebay.mn
+0.0.0.0 ebay.net.cn
 0.0.0.0 ebay.nl
 0.0.0.0 ebay.org
+0.0.0.0 ebay.org.cn
 0.0.0.0 ebay.ph
 0.0.0.0 ebay.pk
 0.0.0.0 ebay.pl
 0.0.0.0 ebay.sg
 0.0.0.0 ebay.us
 0.0.0.0 ebay.vn
+0.0.0.0 ebay.yn.cn
+0.0.0.0 ebay.zj.cn
 0.0.0.0 ebay25.com
 0.0.0.0 ebay68.com
 0.0.0.0 ebaya.com
@@ -119,6 +124,7 @@
 0.0.0.0 ebayanunsios.net
 0.0.0.0 ebayauction.com
 0.0.0.0 ebayaustralia.com
+0.0.0.0 ebayauthenticate.com.cn
 0.0.0.0 ebaybags.com
 0.0.0.0 ebaybank.com
 0.0.0.0 ebaybenefits.com
@@ -128,10 +134,12 @@
 0.0.0.0 ebaycafe.com
 0.0.0.0 ebaycar.com
 0.0.0.0 ebaycareers.com
+0.0.0.0 ebaycbt.co.kr
 0.0.0.0 ebaycdn.net
 0.0.0.0 ebaychina.net
 0.0.0.0 ebayclassifieds.cn
 0.0.0.0 ebayclassifieds.com
+0.0.0.0 ebayclassifieds.com.cn
 0.0.0.0 ebayclassifieds.info
 0.0.0.0 ebayclassifieds.org
 0.0.0.0 ebayclassifieds.tv
@@ -147,6 +155,7 @@
 0.0.0.0 ebayd.com
 0.0.0.0 ebayde.com
 0.0.0.0 ebaydesc.cn
+0.0.0.0 ebaydesc.com.cn
 0.0.0.0 ebaydlassifieds.com
 0.0.0.0 ebaydns.cn
 0.0.0.0 ebaydts.com
@@ -154,6 +163,7 @@
 0.0.0.0 ebayeletro.com
 0.0.0.0 ebayenterprise.cn
 0.0.0.0 ebayenterprise.com
+0.0.0.0 ebayenterprise.com.cn
 0.0.0.0 ebayenterprise.info
 0.0.0.0 ebayenterprise.net
 0.0.0.0 ebayenterprise.tv
@@ -190,6 +200,7 @@
 0.0.0.0 ebaymotors.ca
 0.0.0.0 ebaymotors.cn
 0.0.0.0 ebaymotors.com
+0.0.0.0 ebaymotors.com.cn
 0.0.0.0 ebaymotors.org
 0.0.0.0 ebaymotorsblog.com
 0.0.0.0 ebaynow.com
@@ -204,6 +215,7 @@
 0.0.0.0 ebaypark.com
 0.0.0.0 ebayparts.com
 0.0.0.0 ebaypedia.cn
+0.0.0.0 ebaypedia.com.cn
 0.0.0.0 ebayprivacycenter.com
 0.0.0.0 ebayqq.com
 0.0.0.0 ebayradio.com
@@ -213,6 +225,7 @@
 0.0.0.0 ebayshop.com
 0.0.0.0 ebayshop111.com
 0.0.0.0 ebayshopping.cn
+0.0.0.0 ebayshopping.com.cn
 0.0.0.0 ebayshopping.org
 0.0.0.0 ebaysocial.com
 0.0.0.0 ebaysocial.ru
@@ -246,6 +259,7 @@
 0.0.0.0 fragrancebay.com
 0.0.0.0 francemail.com
 0.0.0.0 half.com
+0.0.0.0 half.com.cn
 0.0.0.0 half.tv
 0.0.0.0 halfcanada.com
 0.0.0.0 halfjapan.com
@@ -260,8 +274,6 @@
 0.0.0.0 myconstructionworld.net
 0.0.0.0 myebay.com
 0.0.0.0 nebay.net
-0.0.0.0 net.cn
-0.0.0.0 org.cn
 0.0.0.0 paisapay.cc
 0.0.0.0 paisapay.info
 0.0.0.0 paisapay.tv
@@ -270,9 +282,11 @@
 0.0.0.0 privatemarketplaces.us
 0.0.0.0 prostores.cn
 0.0.0.0 prostores.com
+0.0.0.0 prostores.com.cn
 0.0.0.0 rethink.net
 0.0.0.0 shopibay.net
 0.0.0.0 shoping.com
+0.0.0.0 sourcingforebay.com.cn
 0.0.0.0 sourcingforebay.net
 0.0.0.0 sourcingforebay.tv
 0.0.0.0 speybay.com
@@ -308,5 +322,3 @@
 0.0.0.0 xn--yf1at58a.com
 0.0.0.0 xxbay.com
 0.0.0.0 yibei.org
-0.0.0.0 yn.cn
-0.0.0.0 zj.cn

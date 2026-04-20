@@ -1,11 +1,10 @@
 # Software Blocklist
-# Generated: 2026-04-20 05:18:20 UTC
+# Generated: 2026-04-20 22:01:11 UTC
 # Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains
 # Original domains (before deduplication): 13
 
 0.0.0.0 geforce.com
 0.0.0.0 geforcenow.com
-0.0.0.0 googleapis.com
 0.0.0.0 googleusercontent.com
 0.0.0.0 nvidia.cn
 0.0.0.0 nvidia.com
@@ -14,4 +13,6 @@
 0.0.0.0 nvidiagrid.net
 0.0.0.0 nvidianews.com
 0.0.0.0 ogslb.com
+0.0.0.0 play-fe.googleapis.com
+0.0.0.0 prod-lt-playstoregatewayadapter-pa.googleapis.com
 0.0.0.0 tegrazone.com

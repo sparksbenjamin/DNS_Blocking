@@ -1,12 +1,10 @@
 # Steam
 # Category: gaming
-# Generated: 2026-04-20 05:18:20 UTC
+# Generated: 2026-04-20 22:01:11 UTC
 # Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains
-# Original domains (before deduplication): 35
+# Original domains (before deduplication): 36
 
 0.0.0.0 8686c.com
-0.0.0.0 akamaihd.net
-0.0.0.0 akamaized.net
 0.0.0.0 bscstorage.net
 0.0.0.0 clngaa.com
 0.0.0.0 eccdnx.com
@@ -17,15 +15,23 @@
 0.0.0.0 s.team
 0.0.0.0 steam-api.com
 0.0.0.0 steam-chat.com
+0.0.0.0 steambroadcast.akamaized.net
+0.0.0.0 steamcdn-a.akamaihd.net
 0.0.0.0 steamchina.com
+0.0.0.0 steamcommunity-a.akamaihd.net
 0.0.0.0 steamcommunity.com
 0.0.0.0 steamcontent.com
 0.0.0.0 steamdeck.com
 0.0.0.0 steamgames.com
+0.0.0.0 steampipe.akamaized.net
 0.0.0.0 steampowered.com
 0.0.0.0 steamserver.net
 0.0.0.0 steamstatic.com
+0.0.0.0 steamstore-a.akamaihd.net
+0.0.0.0 steamusercontent-a.akamaihd.net
 0.0.0.0 steamusercontent.com
+0.0.0.0 steamuserimages-a.akamaihd.net
+0.0.0.0 steamvideo-a.akamaihd.net
 0.0.0.0 tnkjmec.com
 0.0.0.0 underlords.com
 0.0.0.0 valvesoftware.com

@@ -1,11 +1,8 @@
 # Messenger Blocklist
-# Generated: 2026-04-20 05:18:20 UTC
+# Generated: 2026-04-20 22:01:11 UTC
 # Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains
 # Original domains (before deduplication): 56
 
-0.0.0.0 akadns.net
-0.0.0.0 amazonaws.com
-0.0.0.0 com.cn
 0.0.0.0 comments.app
 0.0.0.0 contest.com
 0.0.0.0 graph.org
@@ -16,15 +13,19 @@
 0.0.0.0 max.ru
 0.0.0.0 microsoft.com
 0.0.0.0 office.net
+0.0.0.0 olvid-attachment-chunks.s3.eu-west-3.amazonaws.com
 0.0.0.0 olvid.io
 0.0.0.0 qq.com
+0.0.0.0 qq.com.cn
 0.0.0.0 quiz.directory
 0.0.0.0 s-msedge.net
 0.0.0.0 signal.org
+0.0.0.0 skype-edf.akadns.net
 0.0.0.0 skype.com
 0.0.0.0 skype.net
 0.0.0.0 skypeassets.com
 0.0.0.0 skypeassets.net
+0.0.0.0 skypedata.akadns.net
 0.0.0.0 slack-edge.com
 0.0.0.0 slack-imgs.com
 0.0.0.0 slack.com

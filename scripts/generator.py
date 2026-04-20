@@ -24,15 +24,18 @@ All lists use Pi-hole/AdGuard compatible format (root domains only, one per line
 import requests
 import re
 import csv
+import gzip
 import json
+import subprocess
 import tarfile
 import logging
+from functools import lru_cache
 from io import StringIO, BytesIO
 from pathlib import Path
 from collections import defaultdict
 from datetime import datetime
 from typing import Set, Dict, List, Optional
-from urllib.parse import urlparse
+from urllib.parse import quote, urlparse
 
 # -----------------------------
 # Configuration
@@ -46,7 +49,12 @@ BASE_DIR = Path("services")
 LISTS_DIR = BASE_DIR / "lists"
 CATEGORIES_DIR = BASE_DIR / "categories"
 README_PATH = BASE_DIR / "README.md"
-CUSTOM_DOMAINS_FILE = Path("custom_domains.json")
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent
+CUSTOM_DOMAINS_FILES = [
+    SCRIPT_DIR / "custom_domains.json",
+    REPO_ROOT / "custom_domains.json",
+]
 
 REPO = "sparksbenjamin/DNS_Blocking"
 BRANCH = "main"
@@ -67,13 +75,64 @@ THREATFOX_URL = "https://threatfox.abuse.ch/export/json/domains/recent/"
 URLHAUS_URL = "https://urlhaus.abuse.ch/downloads/csv_recent/"
 OPENPHISH_URL = "https://openphish.com/feed.txt"
 SSLBL_URL = "https://sslbl.abuse.ch/blacklist/sslblacklist.csv"
-PHISHTANK_URL = "http://data.phishtank.com/data/online-valid.json"
+PHISHTANK_URL = "https://data.phishtank.com/data/online-valid.json"
+PHISHTANK_GZ_URL = "https://data.phishtank.com/data/online-valid.json.gz"
+PHISHTANK_USER_AGENT = "phishtank/sparksbenjamin-dns-blocking"
 EMERGING_THREATS_URL = "https://rules.emergingthreats.net/fwrules/emerging-Block-IPs.txt"
+UKLANS_CACHE_DOMAINS_URL = "https://raw.githubusercontent.com/uklans/cache-domains/master/cache_domains.json"
+UKLANS_RAW_BASE_URL = "https://raw.githubusercontent.com/uklans/cache-domains/master/"
+PUBLIC_SUFFIX_LIST_URL = "https://publicsuffix.org/list/public_suffix_list.dat"
 
 # Adult lists (selective to avoid insane sizes)
 STEVENBLACK_PORN_URL = "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts"
 CHADMAYFIELD_PORN_URL = "https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list"
 UT1_ADULT_URL = "https://dsi.ut-capitole.fr/blacklists/download/adult.tar.gz"
+
+UKLANS_SKIP_SERVICES = {"test", "wsus"}
+COMMON_SECOND_LEVEL_REGISTRIES = {
+    "ac",
+    "co",
+    "com",
+    "edu",
+    "gen",
+    "go",
+    "gov",
+    "id",
+    "lg",
+    "mil",
+    "ne",
+    "net",
+    "nom",
+    "or",
+    "org",
+    "sch",
+}
+UKLANS_SERVICE_OVERRIDES = {
+    "arenanet": {"service_id": "arenanet", "name": "ArenaNet", "group": "gaming"},
+    "blizzard": {"service_id": "blizzard_entertainment", "name": "Blizzard Entertainment", "group": "gaming"},
+    "bsg": {"service_id": "battlestate_games", "name": "Battlestate Games", "group": "gaming"},
+    "cityofheroes": {"service_id": "city_of_heroes", "name": "City of Heroes", "group": "gaming"},
+    "cod": {"service_id": "activision_blizzard", "name": "Activision Blizzard", "group": "gaming"},
+    "daybreak": {"service_id": "daybreak_games", "name": "Daybreak Games", "group": "gaming"},
+    "epicgames": {"service_id": "epic_games", "name": "Epic Games", "group": "gaming"},
+    "frontier": {"service_id": "frontier_games", "name": "Frontier Games", "group": "gaming"},
+    "neverwinter": {"service_id": "neverwinter", "name": "Neverwinter", "group": "gaming"},
+    "nexusmods": {"service_id": "nexusmods", "name": "Nexus Mods", "group": "gaming"},
+    "nintendo": {"service_id": "nintendo", "name": "Nintendo", "group": "gaming"},
+    "origin": {"service_id": "origin", "name": "Origin", "group": "gaming"},
+    "pathofexile": {"service_id": "path_of_exile", "name": "Path of Exile", "group": "gaming"},
+    "renegadex": {"service_id": "renegade_x", "name": "Renegade X", "group": "gaming"},
+    "riot": {"service_id": "riot_games", "name": "Riot Games", "group": "gaming"},
+    "rockstar": {"service_id": "rockstar_games", "name": "Rockstar Games", "group": "gaming"},
+    "sony": {"service_id": "playstation", "name": "PlayStation", "group": "gaming"},
+    "square": {"service_id": "square_enix", "name": "Square Enix", "group": "gaming"},
+    "steam": {"service_id": "steam", "name": "Steam", "group": "gaming"},
+    "teso": {"service_id": "the_elder_scrolls_online", "name": "The Elder Scrolls Online", "group": "gaming"},
+    "uplay": {"service_id": "ubisoft", "name": "Ubisoft", "group": "gaming"},
+    "warframe": {"service_id": "warframe", "name": "Warframe", "group": "gaming"},
+    "wargaming": {"service_id": "wargaming", "name": "Wargaming", "group": "gaming"},
+    "xboxlive": {"service_id": "xboxlive", "name": "Xbox Live", "group": "gaming"},
+}
 
 # -----------------------------
 # Utilities
@@ -186,6 +245,30 @@ def extract_domains_from_plain_list(text: str) -> Set[str]:
         if is_valid_domain(line):
             domains.add(line)
     
+    return domains
+
+
+def extract_domains_from_uklans_file(text: str) -> Set[str]:
+    """
+    Extract domains from UKLANS cache-domains files.
+
+    The upstream format allows comments and leading wildcard entries like
+    `*.example.com`. We normalize those into plain domains so the existing
+    blocklist writer can deduplicate and emit them in hosts-file format.
+    """
+    domains = set()
+    for line in text.splitlines():
+        line = line.strip().lower()
+        if not line or line.startswith("#"):
+            continue
+
+        domain = line.split()[0]
+        if domain.startswith("*."):
+            domain = domain[2:]
+
+        if is_valid_domain(domain):
+            domains.add(domain)
+
     return domains
 
 
@@ -321,28 +404,60 @@ def ensure_dir(path: Path) -> None:
     path.mkdir(parents=True, exist_ok=True)
 
 
+def humanize_service_name(service_id: str) -> str:
+    """Convert a service id into a readable display name."""
+    return service_id.replace("_", " ").replace("-", " ").title()
+
+
+def get_uklans_target(service_name: str, description: str = "") -> Dict[str, str]:
+    """
+    Map a UKLANS source into the local service model.
+
+    Known services are merged into existing gaming targets where possible so
+    the generated README stays tidy and overlapping domains enrich the same
+    per-service blocklist.
+    """
+    if service_name in UKLANS_SERVICE_OVERRIDES:
+        return UKLANS_SERVICE_OVERRIDES[service_name]
+
+    display_name = description.replace("CDN for ", "").strip() or humanize_service_name(service_name)
+    service_id = re.sub(r"[^a-z0-9]+", "_", service_name.lower()).strip("_")
+    return {"service_id": service_id, "name": display_name, "group": "gaming"}
+
+
 def load_custom_domains() -> Dict[str, List[str]]:
     """
-    Load custom domain additions from JSON file.
+    Load custom domain additions from JSON file(s).
     
     Returns:
         Dictionary mapping service_id to list of domains
     """
-    if not CUSTOM_DOMAINS_FILE.exists():
-        logger.info(f"No custom domains file found at {CUSTOM_DOMAINS_FILE}")
+    existing_files = [path for path in CUSTOM_DOMAINS_FILES if path.exists()]
+    if not existing_files:
+        searched = ", ".join(str(path) for path in CUSTOM_DOMAINS_FILES)
+        logger.info(f"No custom domains file found. Checked: {searched}")
         return {}
     
     try:
-        with open(CUSTOM_DOMAINS_FILE, 'r', encoding='utf-8') as f:
-            custom_domains = json.load(f)
-        
-        logger.info(f"Loaded custom domains from {CUSTOM_DOMAINS_FILE}")
+        custom_domains = {}
+        for path in existing_files:
+            with open(path, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            if not isinstance(data, dict):
+                logger.warning(f"Skipping custom domains file with invalid structure: {path}")
+                continue
+            custom_domains.update(data)
+
+        logger.info(
+            "Loaded custom domains from %s",
+            ", ".join(str(path) for path in existing_files),
+        )
         return custom_domains
     except json.JSONDecodeError as e:
-        logger.error(f"Invalid JSON in {CUSTOM_DOMAINS_FILE}: {e}")
+        logger.error(f"Invalid JSON in custom domains file: {e}")
         return {}
     except Exception as e:
-        logger.error(f"Failed to load {CUSTOM_DOMAINS_FILE}: {e}")
+        logger.error(f"Failed to load custom domains: {e}")
         return {}
 
 
@@ -369,11 +484,13 @@ def apply_custom_domains(services_by_target: Dict, custom_domains: Dict) -> None
             domain_list = config
             category = None  # Will auto-categorize
             display_name = None  # Will auto-generate
+            preserve_subdomains = False
         elif isinstance(config, dict):
             # Detailed format: {"category": "adult", "name": "Grindr", "domains": [...]}
             domain_list = config.get("domains", [])
             category = config.get("category")
             display_name = config.get("name")
+            preserve_subdomains = bool(config.get("preserve_subdomains", False))
         else:
             logger.warning(f"Invalid format for service '{service_id}' - must be list or dict")
             continue
@@ -416,7 +533,14 @@ def apply_custom_domains(services_by_target: Dict, custom_domains: Dict) -> None
             services_by_target[service_id]["group"] = group
             services_by_target[service_id]["name"] = name
             services_by_target[service_id]["domains"] = set()
+            services_by_target[service_id]["preserve_subdomains"] = False
             logger.info(f"Created new service '{service_id}' in category '{group}' as '{name}'")
+
+        if category and category.lower() == "dns" and not preserve_subdomains:
+            preserve_subdomains = True
+
+        if preserve_subdomains:
+            services_by_target[service_id]["preserve_subdomains"] = True
         
         # Add custom domains
         services_by_target[service_id]["domains"].update(valid_domains)
@@ -485,22 +609,110 @@ def clean_adult_content(adult_domains: Set[str], existing_domains: Dict[str, str
 
 def get_root_domain(domain: str) -> str:
     """
-    Extract root domain from a domain (remove subdomains).
+    Extract the registrable domain from a hostname.
+
+    Uses the Public Suffix List when available so domains like
+    `store.example.co.uk` are reduced to `example.co.uk` instead of `co.uk`.
+    If the PSL cannot be fetched, falls back to a heuristic for common
+    multi-label country-code suffixes.
     
     Args:
         domain: Full domain name
         
     Returns:
-        Root domain (e.g., example.com from sub.example.com)
+        Registrable domain (e.g., example.com from sub.example.com)
     """
-    parts = domain.split('.')
-    if len(parts) >= 2:
-        # Return last two parts as root domain
-        return '.'.join(parts[-2:])
-    return domain
+    labels = [label for label in domain.lower().strip('.').split('.') if label]
+    if len(labels) < 2:
+        return domain.lower().strip('.')
+
+    public_suffix = get_public_suffix(domain)
+    suffix_labels = public_suffix.split('.') if public_suffix else [labels[-1]]
+
+    if len(labels) <= len(suffix_labels):
+        return '.'.join(labels)
+
+    return '.'.join(labels[-(len(suffix_labels) + 1):])
 
 
-def write_domain_file(path: Path, domains: Set[str], header: Optional[str] = None) -> tuple:
+def get_public_suffix(domain: str) -> str:
+    """Return the public suffix for a domain using PSL rules when possible."""
+    labels = [label for label in domain.lower().strip('.').split('.') if label]
+    if not labels:
+        return ""
+
+    rules = get_public_suffix_rules()
+    if rules is None:
+        return get_fallback_public_suffix(labels)
+
+    exact_rules, wildcard_rules, exception_rules = rules
+    matches = [labels[-1]]
+
+    for idx in range(len(labels)):
+        candidate = ".".join(labels[idx:])
+        if candidate in exception_rules:
+            return ".".join(labels[idx + 1:])
+        if candidate in exact_rules:
+            matches.append(candidate)
+        if idx + 1 < len(labels) and ".".join(labels[idx + 1:]) in wildcard_rules:
+            matches.append(candidate)
+
+    return max(matches, key=lambda item: item.count("."))
+
+
+def get_fallback_public_suffix(labels: List[str]) -> str:
+    """Heuristic fallback for common multi-label public suffixes."""
+    if (
+        len(labels) >= 2
+        and len(labels[-1]) == 2
+        and labels[-2] in COMMON_SECOND_LEVEL_REGISTRIES
+    ):
+        return ".".join(labels[-2:])
+
+    return labels[-1]
+
+
+@lru_cache(maxsize=1)
+def get_public_suffix_rules() -> Optional[tuple]:
+    """
+    Fetch and parse the Public Suffix List.
+
+    Returns a tuple of exact, wildcard, and exception rule sets. Falls back to
+    a heuristic if the list cannot be fetched.
+    """
+    text = fetch_text(PUBLIC_SUFFIX_LIST_URL)
+    if not text:
+        logger.warning("Falling back to heuristic public suffix parsing")
+        return None
+
+    exact_rules = set()
+    wildcard_rules = set()
+    exception_rules = set()
+
+    for line in text.splitlines():
+        line = line.strip().lower()
+        if not line or line.startswith("//"):
+            continue
+        if line.startswith("!"):
+            exception_rules.add(line[1:])
+        elif line.startswith("*."):
+            wildcard_rules.add(line[2:])
+        else:
+            exact_rules.add(line)
+
+    logger.info(
+        "Loaded %d public suffix rules",
+        len(exact_rules) + len(wildcard_rules) + len(exception_rules),
+    )
+    return exact_rules, wildcard_rules, exception_rules
+
+
+def write_domain_file(
+    path: Path,
+    domains: Set[str],
+    header: Optional[str] = None,
+    preserve_subdomains: bool = False,
+) -> tuple:
     """
     Write domains to file with header in Pi-hole/AdGuard compatible format.
     Uses wildcard format to ensure ALL subdomains are blocked.
@@ -518,13 +730,14 @@ def write_domain_file(path: Path, domains: Set[str], header: Optional[str] = Non
     """
     ensure_dir(path.parent)
     
-    # Remove subdomains - only keep root domains
-    root_domains = set()
+    normalized_domains = set()
     for domain in domains:
-        root = get_root_domain(domain)
-        root_domains.add(root)
-    
-    sorted_domains = sorted(root_domains)
+        if preserve_subdomains:
+            normalized_domains.add(domain.lower().strip('.'))
+        else:
+            normalized_domains.add(get_root_domain(domain))
+
+    sorted_domains = sorted(normalized_domains)
     
     content = ""
     if header:
@@ -592,6 +805,43 @@ def fetch_json(url: str) -> Optional[any]:
     return fetch_with_retry(url, is_json=True)
 
 
+def fetch_json_with_curl(
+    url: str,
+    user_agent: Optional[str] = None,
+    gzipped: bool = False,
+) -> Optional[any]:
+    """
+    Fetch JSON via curl.
+
+    This is used as a fallback for endpoints such as PhishTank where Python
+    requests can fail on the final signed CDN redirect while curl succeeds.
+    """
+    cmd = ["curl", "-fsSL"]
+    if user_agent:
+        cmd.extend(["-A", user_agent])
+    cmd.append(url)
+
+    try:
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            check=True,
+        )
+        payload = result.stdout
+        if gzipped:
+            payload = gzip.decompress(payload)
+        return json.loads(payload.decode("utf-8"))
+    except subprocess.CalledProcessError as e:
+        stderr = e.stderr.strip() if e.stderr else str(e)
+        logger.error(f"curl failed for {url}: {stderr}")
+    except gzip.BadGzipFile as e:
+        logger.error(f"Invalid gzip returned by curl for {url}: {e}")
+    except json.JSONDecodeError as e:
+        logger.error(f"Invalid JSON returned by curl for {url}: {e}")
+
+    return None
+
+
 def fetch_binary(url: str, timeout: int = 120) -> Optional[bytes]:
     """Fetch binary content from URL."""
     import time
@@ -638,7 +888,9 @@ def main():
     # Dictionary to collect domains by target service/platform
     # Key: service name (e.g., "facebook", "tiktok", "emotet")
     # Value: {"group": category, "name": display_name, "domains": set()}
-    services_by_target = defaultdict(lambda: {"group": "", "name": "", "domains": set()})
+    services_by_target = defaultdict(
+        lambda: {"group": "", "name": "", "domains": set(), "preserve_subdomains": False}
+    )
     
     # Load custom domains from JSON file
     custom_domains = load_custom_domains()
@@ -688,6 +940,67 @@ def main():
     # -----------------------------
     # PHISHING FEEDS (per-source + aggregated)
     # -----------------------------
+    logger.info("Fetching UKLANS cache-domains gaming feeds...")
+    uklans_data = fetch_json(UKLANS_CACHE_DOMAINS_URL)
+
+    if not uklans_data or not isinstance(uklans_data, dict):
+        logger.error("Failed to fetch UKLANS cache-domains metadata")
+    else:
+        cache_domains = uklans_data.get("cache_domains", [])
+        imported_sources = 0
+        imported_domains = 0
+
+        for entry in cache_domains:
+            if not isinstance(entry, dict):
+                continue
+
+            source_name = str(entry.get("name", "")).strip().lower()
+            if not source_name or source_name in UKLANS_SKIP_SERVICES:
+                continue
+
+            domain_files = entry.get("domain_files", [])
+            if not isinstance(domain_files, list) or not domain_files:
+                continue
+
+            source_domains = set()
+            for domain_file in domain_files:
+                domain_file = str(domain_file).strip()
+                if not domain_file:
+                    continue
+
+                file_url = f"{UKLANS_RAW_BASE_URL}{quote(domain_file)}"
+                file_text = fetch_text(file_url)
+                if not file_text:
+                    logger.warning(f"Failed to fetch UKLANS file: {domain_file}")
+                    continue
+
+                source_domains.update(extract_domains_from_uklans_file(file_text))
+
+            if not source_domains:
+                logger.warning(f"No valid domains found for UKLANS source '{source_name}'")
+                continue
+
+            target = get_uklans_target(source_name, str(entry.get("description", "")).strip())
+            service_id = target["service_id"]
+
+            services_by_target[service_id]["group"] = target["group"]
+            if not services_by_target[service_id]["name"]:
+                services_by_target[service_id]["name"] = target["name"]
+            services_by_target[service_id]["domains"].update(source_domains)
+
+            imported_sources += 1
+            imported_domains += len(source_domains)
+            logger.info(
+                f"UKLANS {source_name}: added {len(source_domains)} domains into {service_id}"
+            )
+
+        logger.info(
+            f"Processed {imported_sources} UKLANS gaming sources ({imported_domains} raw domains)"
+        )
+
+    # -----------------------------
+    # PHISHING FEEDS (per-source + aggregated)
+    # -----------------------------
     logger.info("Fetching phishing feeds...")
     
     # Track all phishing domains for category aggregation
@@ -719,6 +1032,13 @@ def main():
 
     # PhishTank
     phishtank_json = fetch_json(PHISHTANK_URL)
+    if phishtank_json is None:
+        logger.info("Retrying PhishTank with curl gzip fallback...")
+        phishtank_json = fetch_json_with_curl(
+            PHISHTANK_GZ_URL,
+            user_agent=PHISHTANK_USER_AGENT,
+            gzipped=True,
+        )
     if phishtank_json:
         pt_domains = extract_domains_from_phishtank(phishtank_json)
         all_phishing_domains.update(pt_domains)
@@ -850,6 +1170,7 @@ def main():
     logger.info("Writing per-service/target files...")
     service_stats = []
     category_domains = defaultdict(set)
+    category_preserve_subdomains = defaultdict(bool)
 
     for service_id, svc_data in services_by_target.items():
         if not svc_data["domains"]:
@@ -858,18 +1179,29 @@ def main():
         group = svc_data["group"]
         name = svc_data["name"]
         domains = svc_data["domains"]
+        preserve_subdomains = svc_data.get("preserve_subdomains", False)
+        format_line = (
+            "# Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved"
+            if preserve_subdomains
+            else "# Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains"
+        )
 
         out_path = LISTS_DIR / group / f"{service_id}.txt"
         header = (
             f"# {name}\n"
             f"# Category: {group}\n"
             f"# Generated: {timestamp}\n"
-            f"# Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains\n"
+            f"{format_line}\n"
             f"# Original domains (before deduplication): {len(domains)}"
         )
 
         try:
-            count, size_mb = write_domain_file(out_path, domains, header)
+            count, size_mb = write_domain_file(
+                out_path,
+                domains,
+                header,
+                preserve_subdomains=preserve_subdomains,
+            )
             logger.info(f"✓ {group}/{service_id}.txt — {count} root domains ({size_mb:.2f}MB)")
         except ValueError as e:
             logger.warning(f"Skipped {out_path}: {e}")
@@ -887,6 +1219,9 @@ def main():
         })
 
         category_domains[group].update(domains)
+        category_preserve_subdomains[group] = (
+            category_preserve_subdomains[group] or preserve_subdomains
+        )
 
     # -----------------------------
     # WRITE PER-CATEGORY FILES
@@ -896,15 +1231,26 @@ def main():
 
     for group, domains in category_domains.items():
         out_path = CATEGORIES_DIR / f"{group}.txt"
+        preserve_subdomains = category_preserve_subdomains[group]
+        format_line = (
+            "# Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved"
+            if preserve_subdomains
+            else "# Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains"
+        )
         header = (
             f"# {group.capitalize()} Blocklist\n"
             f"# Generated: {timestamp}\n"
-            f"# Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains\n"
+            f"{format_line}\n"
             f"# Original domains (before deduplication): {len(domains)}"
         )
 
         try:
-            count, size_mb = write_domain_file(out_path, domains, header)
+            count, size_mb = write_domain_file(
+                out_path,
+                domains,
+                header,
+                preserve_subdomains=preserve_subdomains,
+            )
             logger.info(f"✓ {group}.txt — {count} root domains ({size_mb:.2f}MB)")
         except ValueError as e:
             logger.warning(f"Skipped {out_path}: {e}")
@@ -927,7 +1273,10 @@ def main():
     lines.append("# Threat Intelligence & Content Blocklists\n")
     lines.append(f"**Generated:** {timestamp}\n")
     lines.append("This repository provides curated blocklists for home network protection.\n")
-    lines.append("All lists are **Pi-hole and AdGuard Home compatible** - one root domain per line.\n")
+    lines.append(
+        "All lists are **Pi-hole and AdGuard Home compatible** - registrable domains by default, "
+        "with exact hostnames preserved where needed.\n"
+    )
     
     # Add quick start section
     lines.append("## 🚀 Quick Start (Recommended)\n")
@@ -1020,9 +1369,9 @@ def main():
     # Format details
     lines.append("## 📝 Format Details\n")
     lines.append("All lists follow these standards:\n")
-    lines.append("- **Hosts file format** - `0.0.0.0 domain.com` for maximum compatibility")
-    lines.append("- **Blocks all subdomains** - `0.0.0.0 example.com` blocks `www.example.com`, `api.example.com`, etc.")
-    lines.append("- **Root domains only** - more efficient and smaller file sizes")
+    lines.append("- **Hosts file format** - `0.0.0.0 hostname` for maximum compatibility")
+    lines.append("- **Registrable domains by default** - avoids invalid suffixes like `co.uk` and keeps lists smaller")
+    lines.append("- **Exact hostnames preserved when needed** - useful for DNS endpoints and similar targeted overrides")
     lines.append("- **One entry per line** - clean, simple format")
     lines.append("- **Commented headers** - each file includes metadata and generation timestamp")
     lines.append("- **Works with Pi-hole, AdGuard Home, hosts file, and most DNS blockers**\n")
@@ -1040,6 +1389,7 @@ def main():
     
     lines.append("### Content Filters")
     lines.append("- **[AdGuard](https://adguard.com/)** - Service blocklists (social media, gaming, streaming)")
+    lines.append("- **[UKLANS cache-domains](https://github.com/uklans/cache-domains)** - Gaming CDN and cache hostnames")
     lines.append("- **[StevenBlack](https://github.com/StevenBlack/hosts)** - Curated hosts files")
     lines.append("- **[Chad Mayfield](https://github.com/chadmayfield/my-pihole-blocklists)** - Pi-hole blocklists\n")
     

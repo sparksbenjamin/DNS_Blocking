@@ -1,10 +1,10 @@
 # Snapchat
 # Category: social_network
-# Generated: 2026-04-20 05:18:20 UTC
+# Generated: 2026-04-20 22:01:11 UTC
 # Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains
 # Original domains (before deduplication): 6
 
-0.0.0.0 amazonaws.com
+0.0.0.0 impala-media-production.s3.amazonaws.com
 0.0.0.0 sc-cdn.net
 0.0.0.0 snap-dev.net
 0.0.0.0 snapads.com

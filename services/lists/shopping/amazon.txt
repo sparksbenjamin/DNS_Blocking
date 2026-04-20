@@ -1,12 +1,15 @@
 # Amazon
 # Category: shopping
-# Generated: 2026-04-20 05:18:20 UTC
+# Generated: 2026-04-20 22:01:11 UTC
 # Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains
 # Original domains (before deduplication): 185
 
 0.0.0.0 a2z.com
+0.0.0.0 a2z.org.cn
 0.0.0.0 aboutamazon.cn
+0.0.0.0 aboutamazon.co.uk
 0.0.0.0 aboutamazon.com
+0.0.0.0 aboutamazon.com.au
 0.0.0.0 aboutamazon.de
 0.0.0.0 aboutamazon.es
 0.0.0.0 aboutamazon.eu
@@ -21,6 +24,7 @@
 0.0.0.0 aiv-cdn.net
 0.0.0.0 alexa.com
 0.0.0.0 alexafund.cn
+0.0.0.0 alexafund.com.cn
 0.0.0.0 amaaozn.com
 0.0.0.0 amazon-adsystem.com
 0.0.0.0 amazon-fashions.com
@@ -30,7 +34,13 @@
 0.0.0.0 amazon.ae
 0.0.0.0 amazon.ca
 0.0.0.0 amazon.cn
+0.0.0.0 amazon.co.jp
+0.0.0.0 amazon.co.uk
 0.0.0.0 amazon.com
+0.0.0.0 amazon.com.au
+0.0.0.0 amazon.com.br
+0.0.0.0 amazon.com.mx
+0.0.0.0 amazon.com.tr
 0.0.0.0 amazon.de
 0.0.0.0 amazon.es
 0.0.0.0 amazon.fr
@@ -46,25 +56,35 @@
 0.0.0.0 amazonauthorinsights.com
 0.0.0.0 amazonaws-china.com
 0.0.0.0 amazonaws.cn
+0.0.0.0 amazonaws.co.uk
+0.0.0.0 amazonaws.com.cn
 0.0.0.0 amazonaws.tv
 0.0.0.0 amazonbusiness.cn
+0.0.0.0 amazonbusiness.com.cn
 0.0.0.0 amazonbusiness.org
 0.0.0.0 amazonbusinessblog.com
 0.0.0.0 amazonchoice.cn
+0.0.0.0 amazonchoice.com.cn
 0.0.0.0 amazonchoices.cn
+0.0.0.0 amazonchoices.com.cn
 0.0.0.0 amazondevicesupport.com
 0.0.0.0 amazonfctours.com
 0.0.0.0 amazonianblog.com
 0.0.0.0 amazonimages.com
 0.0.0.0 amazoninspire.cn
+0.0.0.0 amazoninspire.com.cn
 0.0.0.0 amazonlaunchpad.cn
 0.0.0.0 amazonlaunchpad.com
+0.0.0.0 amazonlaunchpad.com.cn
+0.0.0.0 amazonlending.com.cn
 0.0.0.0 amazonliterarypartnership.com
 0.0.0.0 amazonlumberyard.wang
 0.0.0.0 amazonnow.cn
+0.0.0.0 amazonnow.com.cn
 0.0.0.0 amazonpay.com
 0.0.0.0 amazonpay.in
 0.0.0.0 amazonprimevideo.cn
+0.0.0.0 amazonprimevideo.com.cn
 0.0.0.0 amazonprimevideos.com
 0.0.0.0 amazonsdi.com
 0.0.0.0 amazonses.com
@@ -73,14 +93,17 @@
 0.0.0.0 amazonvideo.cc
 0.0.0.0 amazonvideo.com
 0.0.0.0 amazonvideodirect.com
+0.0.0.0 amazonwebservices.com.cn
 0.0.0.0 amazonworkdocs.cn
 0.0.0.0 amazonworkdocs.com
+0.0.0.0 amazonworkdocs.com.cn
 0.0.0.0 amplifyapp.com
 0.0.0.0 amplifyframework.com
 0.0.0.0 amzn.asia
 0.0.0.0 amzn.com
 0.0.0.0 amzn.to
 0.0.0.0 amznl.com
+0.0.0.0 asfiovnxocqpcry.com.cn
 0.0.0.0 assoc-amazon.cn
 0.0.0.0 associates-amazon.com
 0.0.0.0 audible.com
@@ -88,6 +111,7 @@
 0.0.0.0 aws-icp-domain-manager.cn
 0.0.0.0 aws-iot-hackathon.com
 0.0.0.0 awsapps.cn
+0.0.0.0 awsapps.com.cn
 0.0.0.0 awsautopilot.com
 0.0.0.0 awsautoscaling.com
 0.0.0.0 awsbraket.com
@@ -111,14 +135,7 @@
 0.0.0.0 cloudfront-test.cn
 0.0.0.0 cloudfront.cn
 0.0.0.0 cloudfront.net
-0.0.0.0 co.jp
-0.0.0.0 co.uk
-0.0.0.0 com.au
 0.0.0.0 com.be
-0.0.0.0 com.br
-0.0.0.0 com.cn
-0.0.0.0 com.mx
-0.0.0.0 com.tr
 0.0.0.0 containersonaws.com
 0.0.0.0 createspace.com
 0.0.0.0 elasticbeanstalk.com
@@ -128,6 +145,8 @@
 0.0.0.0 imdb.com
 0.0.0.0 imdb.to
 0.0.0.0 kindle.cn
+0.0.0.0 kindle.co.jp
+0.0.0.0 kindle.co.uk
 0.0.0.0 kindle.com
 0.0.0.0 kindle.de
 0.0.0.0 kindle.es
@@ -137,6 +156,7 @@
 0.0.0.0 kindle.jp
 0.0.0.0 kindleoasis.cn
 0.0.0.0 kindleoasis.com
+0.0.0.0 kindleoasis.com.cn
 0.0.0.0 kindleoasis.info
 0.0.0.0 kindleoasis.jp
 0.0.0.0 kindleoasis.org
@@ -146,11 +166,12 @@
 0.0.0.0 media-amazon.com
 0.0.0.0 media-imdb.com
 0.0.0.0 nwcdcloud.cn
+0.0.0.0 nwcdcloud.com.cn
 0.0.0.0 nwcddns.cn
 0.0.0.0 nwcdinfosec.cn
-0.0.0.0 org.cn
 0.0.0.0 prime-video.com
 0.0.0.0 primeday.cn
+0.0.0.0 primeday.com.cn
 0.0.0.0 primeday.info
 0.0.0.0 primevideo.cc
 0.0.0.0 primevideo.com
@@ -158,6 +179,7 @@
 0.0.0.0 primevideo.org
 0.0.0.0 primevideo.tv
 0.0.0.0 route53.cn
+0.0.0.0 sagemaker.com.cn
 0.0.0.0 serving-sys.com
 0.0.0.0 siege-amazon.com
 0.0.0.0 ss2.us
