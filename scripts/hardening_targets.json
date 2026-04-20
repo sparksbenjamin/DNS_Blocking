@@ -1,0 +1,93 @@
+{
+  "_schema_version": 1,
+  "defaults": {
+    "category": "brand_impersonation",
+    "threads": 8,
+    "timeout_seconds": 300,
+    "require_dns_records": true,
+    "max_variants_per_seed": 300,
+    "mxcheck": false,
+    "exclude_exact": [],
+    "exclude_suffix": []
+  },
+  "targets": [
+    {
+      "service_id": "adobe",
+      "name": "Adobe",
+      "seed_domains": [
+        "adobe.com",
+        "acrobat.com"
+      ]
+    },
+    {
+      "service_id": "amazon",
+      "name": "Amazon",
+      "seed_domains": [
+        "amazon.com"
+      ]
+    },
+    {
+      "service_id": "apple",
+      "name": "Apple",
+      "seed_domains": [
+        "apple.com",
+        "icloud.com"
+      ]
+    },
+    {
+      "service_id": "docusign",
+      "name": "DocuSign",
+      "seed_domains": [
+        "docusign.com"
+      ]
+    },
+    {
+      "service_id": "dropbox",
+      "name": "Dropbox",
+      "seed_domains": [
+        "dropbox.com",
+        "hellosign.com"
+      ]
+    },
+    {
+      "service_id": "google",
+      "name": "Google",
+      "seed_domains": [
+        "google.com",
+        "gmail.com"
+      ]
+    },
+    {
+      "service_id": "microsoft",
+      "name": "Microsoft",
+      "seed_domains": [
+        "microsoft.com",
+        "microsoftonline.com",
+        "office.com",
+        "outlook.com",
+        "live.com"
+      ]
+    },
+    {
+      "service_id": "okta",
+      "name": "Okta",
+      "seed_domains": [
+        "okta.com"
+      ]
+    },
+    {
+      "service_id": "paypal",
+      "name": "PayPal",
+      "seed_domains": [
+        "paypal.com"
+      ]
+    },
+    {
+      "service_id": "slack",
+      "name": "Slack",
+      "seed_domains": [
+        "slack.com"
+      ]
+    }
+  ]
+}

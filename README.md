@@ -38,6 +38,9 @@ All lists are **automatically updated daily** and validated for duplicates and s
 #### [Online Services](services/README.md)
 Contains lists of various online services — each service has its own file, allowing you to target them individually.
 
+### 🛡️ [Hardening](hardening/README.md)
+Optional DNSTwist-based lookalike and brand-impersonation lists for higher-sensitivity blocking.
+
 ### 🌐 [Tunneling](tunneling/README.md)
 Lists VPN and proxy providers that can be blocked or restricted.
 

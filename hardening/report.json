@@ -1,0 +1,245 @@
+{
+  "categories": [
+    {
+      "category": "brand_impersonation",
+      "count": 2553,
+      "path": "hardening/categories/brand_impersonation.txt"
+    }
+  ],
+  "generated_at": "2026-04-20T23:28:58.485326+00:00",
+  "nameservers": "192.168.100.5",
+  "targets": [
+    {
+      "category": "brand_impersonation",
+      "count": 177,
+      "had_skipped_seed": false,
+      "name": "Adobe",
+      "path": "hardening/lists/brand_impersonation/adobe.txt",
+      "seed_domains": [
+        "adobe.com",
+        "acrobat.com"
+      ],
+      "seed_results": [
+        {
+          "count": 132,
+          "seed_domain": "adobe.com",
+          "skipped": false
+        },
+        {
+          "count": 45,
+          "seed_domain": "acrobat.com",
+          "skipped": false
+        }
+      ],
+      "service_id": "adobe"
+    },
+    {
+      "category": "brand_impersonation",
+      "count": 255,
+      "had_skipped_seed": false,
+      "name": "Amazon",
+      "path": "hardening/lists/brand_impersonation/amazon.txt",
+      "seed_domains": [
+        "amazon.com"
+      ],
+      "seed_results": [
+        {
+          "count": 255,
+          "seed_domain": "amazon.com",
+          "skipped": false
+        }
+      ],
+      "service_id": "amazon"
+    },
+    {
+      "category": "brand_impersonation",
+      "count": 333,
+      "had_skipped_seed": false,
+      "name": "Apple",
+      "path": "hardening/lists/brand_impersonation/apple.txt",
+      "seed_domains": [
+        "apple.com",
+        "icloud.com"
+      ],
+      "seed_results": [
+        {
+          "count": 152,
+          "seed_domain": "apple.com",
+          "skipped": false
+        },
+        {
+          "count": 181,
+          "seed_domain": "icloud.com",
+          "skipped": false
+        }
+      ],
+      "service_id": "apple"
+    },
+    {
+      "category": "brand_impersonation",
+      "count": 85,
+      "had_skipped_seed": false,
+      "name": "DocuSign",
+      "path": "hardening/lists/brand_impersonation/docusign.txt",
+      "seed_domains": [
+        "docusign.com"
+      ],
+      "seed_results": [
+        {
+          "count": 85,
+          "seed_domain": "docusign.com",
+          "skipped": false
+        }
+      ],
+      "service_id": "docusign"
+    },
+    {
+      "category": "brand_impersonation",
+      "count": 127,
+      "had_skipped_seed": false,
+      "name": "Dropbox",
+      "path": "hardening/lists/brand_impersonation/dropbox.txt",
+      "seed_domains": [
+        "dropbox.com",
+        "hellosign.com"
+      ],
+      "seed_results": [
+        {
+          "count": 114,
+          "seed_domain": "dropbox.com",
+          "skipped": false
+        },
+        {
+          "count": 13,
+          "seed_domain": "hellosign.com",
+          "skipped": false
+        }
+      ],
+      "service_id": "dropbox"
+    },
+    {
+      "category": "brand_impersonation",
+      "count": 257,
+      "had_skipped_seed": true,
+      "name": "Google",
+      "path": "hardening/lists/brand_impersonation/google.txt",
+      "seed_domains": [
+        "google.com",
+        "gmail.com"
+      ],
+      "seed_results": [
+        {
+          "count": 305,
+          "seed_domain": "google.com",
+          "skipped": true
+        },
+        {
+          "count": 257,
+          "seed_domain": "gmail.com",
+          "skipped": false
+        }
+      ],
+      "service_id": "google"
+    },
+    {
+      "category": "brand_impersonation",
+      "count": 909,
+      "had_skipped_seed": false,
+      "name": "Microsoft",
+      "path": "hardening/lists/brand_impersonation/microsoft.txt",
+      "seed_domains": [
+        "microsoft.com",
+        "microsoftonline.com",
+        "office.com",
+        "outlook.com",
+        "live.com"
+      ],
+      "seed_results": [
+        {
+          "count": 282,
+          "seed_domain": "microsoft.com",
+          "skipped": false
+        },
+        {
+          "count": 156,
+          "seed_domain": "microsoftonline.com",
+          "skipped": false
+        },
+        {
+          "count": 159,
+          "seed_domain": "office.com",
+          "skipped": false
+        },
+        {
+          "count": 182,
+          "seed_domain": "outlook.com",
+          "skipped": false
+        },
+        {
+          "count": 130,
+          "seed_domain": "live.com",
+          "skipped": false
+        }
+      ],
+      "service_id": "microsoft"
+    },
+    {
+      "category": "brand_impersonation",
+      "count": 108,
+      "had_skipped_seed": false,
+      "name": "Okta",
+      "path": "hardening/lists/brand_impersonation/okta.txt",
+      "seed_domains": [
+        "okta.com"
+      ],
+      "seed_results": [
+        {
+          "count": 108,
+          "seed_domain": "okta.com",
+          "skipped": false
+        }
+      ],
+      "service_id": "okta"
+    },
+    {
+      "category": "brand_impersonation",
+      "count": 213,
+      "had_skipped_seed": false,
+      "name": "PayPal",
+      "path": "hardening/lists/brand_impersonation/paypal.txt",
+      "seed_domains": [
+        "paypal.com"
+      ],
+      "seed_results": [
+        {
+          "count": 213,
+          "seed_domain": "paypal.com",
+          "skipped": false
+        }
+      ],
+      "service_id": "paypal"
+    },
+    {
+      "category": "brand_impersonation",
+      "count": 89,
+      "had_skipped_seed": false,
+      "name": "Slack",
+      "path": "hardening/lists/brand_impersonation/slack.txt",
+      "seed_domains": [
+        "slack.com"
+      ],
+      "seed_results": [
+        {
+          "count": 89,
+          "seed_domain": "slack.com",
+          "skipped": false
+        }
+      ],
+      "service_id": "slack"
+    }
+  ],
+  "thread_override": 8,
+  "warnings": [
+    "google seed google.com produced 305 live variants, exceeding the limit of 300; skipping that seed"
+  ]
+}

@@ -1,34 +1,43 @@
-name: Update Twisted Services
+name: Update Hardening Lists
 on:
   schedule:
-    - cron: '0 4 * * *' # Runs weekly on Sunday
-  workflow_dispatch:   # Allows manual trigger
+    - cron: '0 4 * * 0'
+  workflow_dispatch:
 
 jobs:
-  update-lists:
-    runs-on: ubuntu-latest
+  update-hardening:
+    # For a private resolver such as 192.168.100.5, set HARDENING_RUNNER_LABELS
+    # to a JSON array like ["self-hosted","linux","dns-hardening"] and run the
+    # workflow on a self-hosted runner on the same network.
+    runs-on: ${{ fromJSON(vars.HARDENING_RUNNER_LABELS || '["ubuntu-latest"]') }}
+    env:
+      DNSTWIST_NAMESERVERS: ${{ vars.DNSTWIST_NAMESERVERS }}
+      DNSTWIST_THREADS: ${{ vars.DNSTWIST_THREADS }}
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.x'
+          python-version: '3.11'
 
       - name: Install Dependencies
         run: |
-          pip install dnstwist
+          pip install dnstwist dnspython pytest
 
-      - name: Generate Twisted Lists
-        run: python scripts/generate_twisted.py
+      - name: Generate Hardening Lists
+        run: python3 scripts/generate_twisted.py
 
-      - name: Group Services
-        run: python scripts/group_services.py
+      - name: Run tests
+        run: python3 -m pytest -q tests/test_generate_twisted.py
 
       - name: Commit and Push
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add services/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated update of twisted services" && git push)
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git remote set-url origin https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/${{ github.repository }}.git
+          git add hardening/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update hardening lists" && git push)
