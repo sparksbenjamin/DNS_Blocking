@@ -7,8 +7,8 @@ blobproxy-production-productionwe.trafficmanager.net
 bootstrap-1.appproxy.trafficmanager.net
 ctxathp-dsauthweb-fdproxy.trafficmanager.net
 ctxathp-identity4-fdproxy.trafficmanager.net
+ctxathp-samlweb-fdproxy.trafficmanager.net
 ctxwsp-agwcloudproxy-global.trafficmanager.net
-ctxwsp-agwproxy-eu.trafficmanager.net
 ctxwsp-agwproxy-global.trafficmanager.net
 ctxwsp-agwproxy-us.trafficmanager.net
 eur.proxy-1.appproxy.trafficmanager.net
@@ -18,10 +18,12 @@ flightproxy-afrc-teams.trafficmanager.net
 flightproxy-apac-teams.trafficmanager.net
 flightproxy-aust-teams.trafficmanager.net
 flightproxy-emea-teams.trafficmanager.net
+flightproxy-india-teams.trafficmanager.net
 flightproxy-latm-noam-teams.trafficmanager.net
 flightproxy-noam-teams.trafficmanager.net
 flightproxy.teams.trafficmanager.net
 fw-proxy-ds-prod-eastus2.trafficmanager.net
+ind.proxy-1.appproxy.trafficmanager.net
 nam.bootstrap-1.appproxy.trafficmanager.net
 nam.proxy-1.appproxy.trafficmanager.net
 nam.proxy-2.appproxy.trafficmanager.net
@@ -30,12 +32,14 @@ nam.update-1.appproxy.trafficmanager.net
 proxy-1.appproxy.trafficmanager.net
 proxy-2.appproxy.trafficmanager.net
 proxy-3.appproxy.trafficmanager.net
+r2-api-flightproxy-teams.trafficmanager.net
 r3-api-flightproxy-teams.trafficmanager.net
 reverseproxy.onenote.trafficmanager.net
 tm.aus.proxy-2.appproxy.trafficmanager.net
 tm.eur.proxy-1.appproxy.trafficmanager.net
 tm.eur.proxy-2.appproxy.trafficmanager.net
 tm.eur.proxy-3.appproxy.trafficmanager.net
+tm.ind.proxy-1.appproxy.trafficmanager.net
 tm.nam.bootstrap-1.appproxy.trafficmanager.net
 tm.nam.proxy-1.appproxy.trafficmanager.net
 tm.nam.proxy-2.appproxy.trafficmanager.net
@@ -48,6 +52,7 @@ www.tm.aus.proxy-2.appproxy.trafficmanager.net
 www.tm.eur.proxy-1.appproxy.trafficmanager.net
 www.tm.eur.proxy-2.appproxy.trafficmanager.net
 www.tm.eur.proxy-3.appproxy.trafficmanager.net
+www.tm.ind.proxy-1.appproxy.trafficmanager.net
 www.tm.nam.bootstrap-1.appproxy.trafficmanager.net
 www.tm.nam.proxy-1.appproxy.trafficmanager.net
 www.tm.nam.proxy-2.appproxy.trafficmanager.net
