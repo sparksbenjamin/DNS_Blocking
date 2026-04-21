@@ -3,7 +3,9 @@
 This workflow now defaults to a **self-hosted Linux GitHub Actions runner** so
 it can reach a private resolver on your home network without extra repo setup.
 It uses the runner's installed `python3` instead of `actions/setup-python`,
-which avoids platform-compatibility issues on self-hosted systems.
+which avoids platform-compatibility issues on self-hosted systems. On Debian 13
+and similar systems, the workflow creates its own virtual environment so it does
+not try to install packages into the system Python.
 
 If you want DNSTwist to use a private resolver such as `192.168.100.5`, a
 GitHub-hosted runner will not work because it cannot reach your LAN.
@@ -39,19 +41,30 @@ If you leave `HARDENING_RUNNER_LABELS` unset, the workflow at
 Inside the container:
 
 1. Install Python 3.11+
-2. Install the GitHub Actions runner
-3. Register it with this repo
-4. Confirm the runner shows the default `self-hosted` and `linux` labels
-5. Confirm it can resolve through `192.168.100.5`
-6. Confirm `python3 -m pip` works on the runner host
+2. Install `python3-venv` and `python3-pip`
+3. Install the GitHub Actions runner
+4. Register it with this repo
+5. Confirm the runner shows the default `self-hosted` and `linux` labels
+6. Confirm it can resolve through `192.168.100.5`
+7. Confirm `python3 -m pip` and `python3 -m venv` work on the runner host
+
+On Debian 13, this is usually enough:
+
+```bash
+sudo apt update
+sudo apt install -y python3 python3-pip python3-venv git curl ca-certificates
+```
 
 ## Quick Validation
 
 From the runner host, this should work:
 
 ```bash
-python3 -m pip install dnstwist dnspython
-DNSTWIST_NAMESERVERS=192.168.100.5 python3 scripts/generate_twisted.py --target paypal
+python3 -m venv .venv-hardening
+. .venv-hardening/bin/activate
+python -m pip install --upgrade pip
+python -m pip install dnstwist dnspython
+DNSTWIST_NAMESERVERS=192.168.100.5 python scripts/generate_twisted.py --target paypal
 ```
 
 If that succeeds, the scheduled workflow should work too.

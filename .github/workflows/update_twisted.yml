@@ -13,6 +13,7 @@ jobs:
     env:
       DNSTWIST_NAMESERVERS: ${{ vars.DNSTWIST_NAMESERVERS }}
       DNSTWIST_THREADS: ${{ vars.DNSTWIST_THREADS }}
+      VENV_PATH: .venv-hardening
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
@@ -23,17 +24,19 @@ jobs:
         run: |
           python3 --version
           python3 -m pip --version
+          python3 -m venv --help >/dev/null
 
       - name: Install Dependencies
         run: |
-          python3 -m pip install --upgrade pip
-          python3 -m pip install dnstwist dnspython pytest
+          python3 -m venv "$VENV_PATH"
+          "$VENV_PATH/bin/python" -m pip install --upgrade pip
+          "$VENV_PATH/bin/python" -m pip install dnstwist dnspython pytest
 
       - name: Generate Hardening Lists
-        run: python3 scripts/generate_twisted.py
+        run: $VENV_PATH/bin/python scripts/generate_twisted.py
 
       - name: Run tests
-        run: python3 -m pytest -q tests/test_generate_twisted.py
+        run: $VENV_PATH/bin/python -m pytest -q tests/test_generate_twisted.py
 
       - name: Commit and Push
         run: |
