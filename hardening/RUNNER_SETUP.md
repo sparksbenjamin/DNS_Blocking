@@ -29,11 +29,14 @@ Set these GitHub repository variables:
   Example:
   `192.168.100.5`
 - `DNSTWIST_JOBS`
-  Optional concurrent seed-job count. Start with:
-  `2`
+  Optional concurrent seed-job count. The workflow now defaults to:
+  `3`
 - `DNSTWIST_THREADS`
+  The workflow now defaults to:
+  `12`
+  Override if you want something else.
   Example:
-  `8`
+  `16`
 
 If you leave `HARDENING_RUNNER_LABELS` unset, the workflow at
 `.github/workflows/update_twisted.yml` will target any runner with the default
@@ -51,6 +54,7 @@ Inside the container:
 6. Confirm it can resolve through `192.168.100.5`
 7. Confirm `python3 -m pip` and `python3 -m venv` work on the runner host
 8. Tune `DNSTWIST_JOBS` and `DNSTWIST_THREADS` together instead of cranking only one knob
+9. If you leave the variables unset, the workflow will run with `DNSTWIST_JOBS=3` and `DNSTWIST_THREADS=12`
 
 On Debian 13, this is usually enough:
 
@@ -68,7 +72,7 @@ python3 -m venv .venv-hardening
 . .venv-hardening/bin/activate
 python -m pip install --upgrade pip
 python -m pip install dnstwist dnspython
-DNSTWIST_NAMESERVERS=192.168.100.5 DNSTWIST_JOBS=2 python scripts/generate_twisted.py --target paypal
+DNSTWIST_NAMESERVERS=192.168.100.5 DNSTWIST_JOBS=3 DNSTWIST_THREADS=12 python scripts/generate_twisted.py --target paypal
 ```
 
 If that succeeds, the scheduled workflow should work too.

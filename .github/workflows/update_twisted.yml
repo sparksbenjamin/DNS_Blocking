@@ -11,9 +11,9 @@ jobs:
     # want a stricter label match such as ["self-hosted","linux","x64"].
     runs-on: ${{ fromJSON(vars.HARDENING_RUNNER_LABELS || '["self-hosted","linux"]') }}
     env:
-      DNSTWIST_JOBS: ${{ vars.DNSTWIST_JOBS }}
+      DNSTWIST_JOBS: ${{ vars.DNSTWIST_JOBS || '3' }}
       DNSTWIST_NAMESERVERS: ${{ vars.DNSTWIST_NAMESERVERS }}
-      DNSTWIST_THREADS: ${{ vars.DNSTWIST_THREADS }}
+      DNSTWIST_THREADS: ${{ vars.DNSTWIST_THREADS || '12' }}
       VENV_PATH: .venv-hardening
     steps:
       - name: Checkout Repo
