@@ -2,6 +2,8 @@
 
 This workflow now defaults to a **self-hosted Linux GitHub Actions runner** so
 it can reach a private resolver on your home network without extra repo setup.
+It uses the runner's installed `python3` instead of `actions/setup-python`,
+which avoids platform-compatibility issues on self-hosted systems.
 
 If you want DNSTwist to use a private resolver such as `192.168.100.5`, a
 GitHub-hosted runner will not work because it cannot reach your LAN.
@@ -41,6 +43,7 @@ Inside the container:
 3. Register it with this repo
 4. Confirm the runner shows the default `self-hosted` and `linux` labels
 5. Confirm it can resolve through `192.168.100.5`
+6. Confirm `python3 -m pip` works on the runner host
 
 ## Quick Validation
 

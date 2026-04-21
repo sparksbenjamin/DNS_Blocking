@@ -19,14 +19,15 @@ jobs:
         with:
           token: ${{ secrets.PAT_TOKEN }}
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
+      - name: Check local Python
+        run: |
+          python3 --version
+          python3 -m pip --version
 
       - name: Install Dependencies
         run: |
-          pip install dnstwist dnspython pytest
+          python3 -m pip install --upgrade pip
+          python3 -m pip install dnstwist dnspython pytest
 
       - name: Generate Hardening Lists
         run: python3 scripts/generate_twisted.py
