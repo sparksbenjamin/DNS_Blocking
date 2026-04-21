@@ -6,10 +6,10 @@ on:
 
 jobs:
   update-hardening:
-    # For a private resolver such as 192.168.100.5, set HARDENING_RUNNER_LABELS
-    # to a JSON array like ["self-hosted","linux","dns-hardening"] and run the
-    # workflow on a self-hosted runner on the same network.
-    runs-on: ${{ fromJSON(vars.HARDENING_RUNNER_LABELS || '["ubuntu-latest"]') }}
+    # Default to a standard Linux self-hosted runner so private resolvers on the
+    # home network remain reachable. Override with HARDENING_RUNNER_LABELS if you
+    # want a stricter label match such as ["self-hosted","linux","x64"].
+    runs-on: ${{ fromJSON(vars.HARDENING_RUNNER_LABELS || '["self-hosted","linux"]') }}
     env:
       DNSTWIST_NAMESERVERS: ${{ vars.DNSTWIST_NAMESERVERS }}
       DNSTWIST_THREADS: ${{ vars.DNSTWIST_THREADS }}
