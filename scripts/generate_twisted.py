@@ -11,9 +11,10 @@ import shutil
 import subprocess
 import sys
 from collections import defaultdict
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Sequence, Set
+from typing import Dict, Iterable, List, Optional, Sequence, Set, Tuple
 from urllib.parse import urlparse
 
 
@@ -35,6 +36,7 @@ DNS_KEYS = ("dns_a", "dns_aaaa", "dns_ns", "dns_mx")
 
 DEFAULT_TIMEOUT_SECONDS = 300
 DEFAULT_THREADS = 8
+DEFAULT_JOBS = 2
 DEFAULT_MAX_VARIANTS_PER_SEED = 300
 
 DOMAIN_REGEX = r"^(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}$"
@@ -161,6 +163,26 @@ def resolve_threads(cli_value: Optional[int]) -> Optional[int]:
         return None
 
 
+def resolve_jobs(cli_value: Optional[int]) -> int:
+    """Resolve concurrent seed job count from CLI or environment."""
+    if cli_value is not None:
+        if cli_value < 1:
+            raise ValueError("--jobs must be at least 1")
+        return cli_value
+
+    env_value = os.environ.get("DNSTWIST_JOBS", "").strip()
+    if env_value:
+        try:
+            value = int(env_value)
+            if value < 1:
+                raise ValueError
+            return value
+        except ValueError:
+            logger.warning("Ignoring invalid DNSTWIST_JOBS value: %s", env_value)
+
+    return DEFAULT_JOBS
+
+
 def build_dnstwist_command(
     seed_domain: str,
     target: Dict,
@@ -236,6 +258,89 @@ def run_dnstwist(
     return payload
 
 
+def process_seed_domain(
+    seed_domain: str,
+    target: Dict,
+    nameservers: Optional[str],
+    thread_override: Optional[int],
+) -> Dict:
+    """Run dnstwist for one seed and return filtered results plus metadata."""
+    try:
+        results = run_dnstwist(seed_domain, target, nameservers, thread_override)
+    except subprocess.TimeoutExpired:
+        warning = f"{target['service_id']} timed out while twisting {seed_domain}"
+        logger.warning(warning)
+        return {"seed_domain": seed_domain, "count": 0, "skipped": False, "domains": set(), "warning": warning}
+    except Exception as exc:
+        warning = f"{target['service_id']} failed for {seed_domain}: {exc}"
+        logger.warning(warning)
+        return {"seed_domain": seed_domain, "count": 0, "skipped": False, "domains": set(), "warning": warning}
+
+    filtered = filter_dnstwist_results(results, target)
+    if len(filtered) > target["max_variants_per_seed"]:
+        warning = (
+            f"{target['service_id']} seed {seed_domain} produced {len(filtered)} live variants, "
+            f"exceeding the limit of {target['max_variants_per_seed']}; skipping that seed"
+        )
+        logger.warning(warning)
+        return {
+            "seed_domain": seed_domain,
+            "count": len(filtered),
+            "skipped": True,
+            "domains": set(),
+            "warning": warning,
+        }
+
+    return {
+        "seed_domain": seed_domain,
+        "count": len(filtered),
+        "skipped": False,
+        "domains": filtered,
+        "warning": None,
+    }
+
+
+def execute_seed_jobs(
+    targets: Sequence[Dict],
+    nameservers: Optional[str],
+    thread_override: Optional[int],
+    job_count: int,
+) -> Tuple[Dict[Tuple[int, int], Dict], List[str]]:
+    """Run seed domains concurrently and collect ordered results."""
+    warnings: List[str] = []
+    seed_outputs: Dict[Tuple[int, int], Dict] = {}
+    work_items: List[Tuple[int, int, Dict, str]] = []
+
+    for target_index, target in enumerate(targets):
+        for seed_index, seed_domain in enumerate(target["seed_domains"]):
+            work_items.append((target_index, seed_index, target, seed_domain))
+
+    logger.info(
+        "Running %d seed job(s) across %d target(s) with concurrency %d",
+        len(work_items),
+        len(targets),
+        job_count,
+    )
+
+    with ThreadPoolExecutor(max_workers=job_count) as executor:
+        future_map = {
+            executor.submit(process_seed_domain, seed_domain, target, nameservers, thread_override): (
+                target_index,
+                seed_index,
+            )
+            for target_index, seed_index, target, seed_domain in work_items
+        }
+        for future in as_completed(future_map):
+            job_key = future_map[future]
+            seed_output = future.result()
+            seed_outputs[job_key] = seed_output
+            warning = seed_output.get("warning")
+            if warning:
+                warnings.append(warning)
+
+    return seed_outputs, warnings
+
+
 def filter_dnstwist_results(results: Sequence[Dict], target: Dict) -> Set[str]:
     """Filter dnstwist results into a set of exact lookalike hostnames."""
     exact_excludes = set(target.get("exclude_exact", []))
@@ -296,7 +401,13 @@ def render_category_name(category: str) -> str:
     return labels.get(category, category.replace("_", " ").title())
 
 
-def generate_readme(timestamp: str, stats: List[Dict], category_stats: List[Dict], nameservers: Optional[str]) -> None:
+def generate_readme(
+    timestamp: str,
+    stats: List[Dict],
+    category_stats: List[Dict],
+    nameservers: Optional[str],
+    job_count: int,
+) -> None:
     """Generate the hardening README."""
     lines: List[str] = []
     lines.append("# DNSTwist Hardening Lists\n")
@@ -323,6 +434,7 @@ def generate_readme(timestamp: str, stats: List[Dict], category_stats: List[Dict
     lines.append(f"- Source tool: [dnstwist](https://github.com/elceef/dnstwist)")
     lines.append("- Mode: registered lookalike domains only")
     lines.append("- Output format: hosts file (`0.0.0.0 hostname`)")
+    lines.append(f"- Concurrent seed jobs: `{job_count}`")
     if nameservers:
         lines.append(f"- Nameservers: `{nameservers}`")
     else:
@@ -331,11 +443,12 @@ def generate_readme(timestamp: str, stats: List[Dict], category_stats: List[Dict
     lines.append("## Running With Your Own Resolver\n")
     lines.append(
         "If you want DNSTwist to query a resolver you control, set `DNSTWIST_NAMESERVERS` or pass "
-        "`--nameservers` when running the script.\n"
+        "`--nameservers` when running the script. You can also raise `DNSTWIST_JOBS` to run multiple "
+        "seed domains concurrently.\n"
     )
     lines.append("Example:\n")
     lines.append("```bash")
-    lines.append("DNSTWIST_NAMESERVERS=192.168.100.5 python3 scripts/generate_twisted.py")
+    lines.append("DNSTWIST_NAMESERVERS=192.168.100.5 DNSTWIST_JOBS=2 python3 scripts/generate_twisted.py")
     lines.append("```\n")
     lines.append(
         "If that resolver lives on a private address like `192.168.100.5`, the scheduled workflow should run on "
@@ -385,6 +498,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--target", action="append", default=[], help="Limit generation to one or more service_ids")
     parser.add_argument("--nameservers", help="Comma-separated DNS or DoH servers passed through to dnstwist")
     parser.add_argument("--threads", type=int, help="Override dnstwist thread count for all targets")
+    parser.add_argument("--jobs", type=int, help="Concurrent seed jobs to run across targets")
     return parser.parse_args()
 
 
@@ -396,6 +510,7 @@ def main() -> int:
     selected_targets = {value.strip().lower() for value in args.target if value.strip()}
     nameservers = resolve_nameservers(args.nameservers)
     thread_override = resolve_threads(args.threads)
+    job_count = resolve_jobs(args.jobs)
 
     clear_previous_outputs()
 
@@ -411,46 +526,35 @@ def main() -> int:
     if not targets:
         raise ValueError("no hardening targets selected")
 
+    enabled_targets: List[Dict] = []
     for target in targets:
-        if not target["enabled"]:
+        if target["enabled"]:
+            enabled_targets.append(target)
+        else:
             logger.info("Skipping disabled target %s", target["service_id"])
-            continue
 
+    if not enabled_targets:
+        raise ValueError("no enabled hardening targets selected")
+
+    seed_outputs, warnings = execute_seed_jobs(enabled_targets, nameservers, thread_override, job_count)
+
+    for target_index, target in enumerate(enabled_targets):
         logger.info("Processing %s", target["name"])
         collected: Set[str] = set()
         seed_results: List[Dict] = []
         skipped = False
 
-        for seed_domain in target["seed_domains"]:
-            try:
-                results = run_dnstwist(seed_domain, target, nameservers, thread_override)
-            except subprocess.TimeoutExpired:
-                warning = f"{target['service_id']} timed out while twisting {seed_domain}"
-                logger.warning(warning)
-                warnings.append(warning)
-                continue
-            except Exception as exc:
-                warning = f"{target['service_id']} failed for {seed_domain}: {exc}"
-                logger.warning(warning)
-                warnings.append(warning)
-                continue
-
-            filtered = filter_dnstwist_results(results, target)
-            if len(filtered) > target["max_variants_per_seed"]:
-                warning = (
-                    f"{target['service_id']} seed {seed_domain} produced {len(filtered)} live variants, "
-                    f"exceeding the limit of {target['max_variants_per_seed']}; skipping that seed"
-                )
-                logger.warning(warning)
-                warnings.append(warning)
-                seed_results.append(
-                    {"seed_domain": seed_domain, "count": len(filtered), "skipped": True}
-                )
-                skipped = True
-                continue
-
-            collected.update(filtered)
-            seed_results.append({"seed_domain": seed_domain, "count": len(filtered), "skipped": False})
+        for seed_index, seed_domain in enumerate(target["seed_domains"]):
+            seed_output = seed_outputs[(target_index, seed_index)]
+            skipped = skipped or bool(seed_output["skipped"])
+            collected.update(seed_output["domains"])
+            seed_results.append(
+                {
+                    "seed_domain": seed_domain,
+                    "count": seed_output["count"],
+                    "skipped": seed_output["skipped"],
+                }
+            )
 
         out_path = HARDENING_LISTS_DIR / target["category"] / f"{target['service_id']}.txt"
         header = (
@@ -497,10 +601,11 @@ def main() -> int:
         )
         logger.info("Saved %d exact host(s) to %s", count, out_path)
 
-    generate_readme(timestamp, target_stats, category_stats, nameservers)
+    generate_readme(timestamp, target_stats, category_stats, nameservers, job_count)
     write_report(
         {
             "generated_at": datetime.now(timezone.utc).isoformat(),
+            "jobs": job_count,
             "nameservers": nameservers,
             "thread_override": thread_override,
             "targets": target_stats,

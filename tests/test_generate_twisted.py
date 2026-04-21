@@ -33,6 +33,15 @@ def test_merge_target_config_normalizes_domains_and_defaults():
     assert merged["seed_domains"] == ["paypal.com", "www.paypal.com"]
 
 
+def test_resolve_jobs_prefers_cli_then_env_then_default(monkeypatch):
+    monkeypatch.delenv("DNSTWIST_JOBS", raising=False)
+    assert generate_twisted.resolve_jobs(None) == generate_twisted.DEFAULT_JOBS
+
+    monkeypatch.setenv("DNSTWIST_JOBS", "3")
+    assert generate_twisted.resolve_jobs(None) == 3
+    assert generate_twisted.resolve_jobs(4) == 4
+
+
 def test_filter_dnstwist_results_excludes_seeds_and_suffixes():
     target = {
         "seed_domains": ["microsoft.com", "office.com"],

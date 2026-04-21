@@ -2,16 +2,17 @@
   "categories": [
     {
       "category": "brand_impersonation",
-      "count": 4678,
+      "count": 4676,
       "path": "hardening/categories/brand_impersonation.txt"
     }
   ],
-  "generated_at": "2026-04-21T01:50:28.197577+00:00",
+  "generated_at": "2026-04-21T02:03:19.839177+00:00",
+  "jobs": 2,
   "nameservers": "192.168.100.5",
   "targets": [
     {
       "category": "brand_impersonation",
-      "count": 178,
+      "count": 177,
       "had_skipped_seed": false,
       "name": "Adobe",
       "path": "hardening/lists/brand_impersonation/adobe.txt",
@@ -21,7 +22,7 @@
       ],
       "seed_results": [
         {
-          "count": 133,
+          "count": 132,
           "seed_domain": "adobe.com",
           "skipped": false
         },
@@ -35,7 +36,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 258,
+      "count": 256,
       "had_skipped_seed": false,
       "name": "Amazon",
       "path": "hardening/lists/brand_impersonation/amazon.txt",
@@ -44,7 +45,7 @@
       ],
       "seed_results": [
         {
-          "count": 258,
+          "count": 256,
           "seed_domain": "amazon.com",
           "skipped": false
         }
@@ -197,7 +198,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 900,
+      "count": 902,
       "had_skipped_seed": false,
       "name": "Microsoft",
       "path": "hardening/lists/brand_impersonation/microsoft.txt",
@@ -210,7 +211,7 @@
       ],
       "seed_results": [
         {
-          "count": 278,
+          "count": 280,
           "seed_domain": "microsoft.com",
           "skipped": false
         },
@@ -239,7 +240,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 107,
+      "count": 105,
       "had_skipped_seed": false,
       "name": "Okta",
       "path": "hardening/lists/brand_impersonation/okta.txt",
@@ -248,7 +249,7 @@
       ],
       "seed_results": [
         {
-          "count": 107,
+          "count": 105,
           "seed_domain": "okta.com",
           "skipped": false
         }
@@ -257,7 +258,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 212,
+      "count": 211,
       "had_skipped_seed": false,
       "name": "PayPal",
       "path": "hardening/lists/brand_impersonation/paypal.txt",
@@ -266,7 +267,7 @@
       ],
       "seed_results": [
         {
-          "count": 212,
+          "count": 211,
           "seed_domain": "paypal.com",
           "skipped": false
         }
@@ -347,7 +348,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 201,
+      "count": 202,
       "had_skipped_seed": false,
       "name": "QuickBooks",
       "path": "hardening/lists/brand_impersonation/quickbooks.txt",
@@ -356,7 +357,7 @@
       ],
       "seed_results": [
         {
-          "count": 201,
+          "count": 202,
           "seed_domain": "quickbooks.com",
           "skipped": false
         }
@@ -401,7 +402,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 104,
+      "count": 105,
       "had_skipped_seed": false,
       "name": "Duo",
       "path": "hardening/lists/brand_impersonation/duo.txt",
@@ -410,7 +411,7 @@
       ],
       "seed_results": [
         {
-          "count": 104,
+          "count": 105,
           "seed_domain": "duo.com",
           "skipped": false
         }
@@ -419,7 +420,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 140,
+      "count": 139,
       "had_skipped_seed": false,
       "name": "Cloudflare",
       "path": "hardening/lists/brand_impersonation/cloudflare.txt",
@@ -428,7 +429,7 @@
       ],
       "seed_results": [
         {
-          "count": 140,
+          "count": 139,
           "seed_domain": "cloudflare.com",
           "skipped": false
         }
@@ -509,7 +510,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 95,
+      "count": 96,
       "had_skipped_seed": false,
       "name": "UPS",
       "path": "hardening/lists/brand_impersonation/ups.txt",
@@ -518,7 +519,7 @@
       ],
       "seed_results": [
         {
-          "count": 95,
+          "count": 96,
           "seed_domain": "ups.com",
           "skipped": false
         }
@@ -562,6 +563,6 @@
       "service_id": "trello"
     }
   ],
-  "thread_override": 8,
+  "thread_override": null,
   "warnings": []
 }
