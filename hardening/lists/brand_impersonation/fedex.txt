@@ -1,6 +1,6 @@
 # FedEx Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-21 01:56:25 UTC
+# Generated: 2026-04-21 02:18:35 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: fedex.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -14,10 +14,12 @@
 0.0.0.0 f-edex.com
 0.0.0.0 f4dex.com
 0.0.0.0 fadex.com
+0.0.0.0 fcbex.com
 0.0.0.0 fcdex.com
 0.0.0.0 fddex.com
 0.0.0.0 fdedex.com
 0.0.0.0 fdeex.com
+0.0.0.0 fdex.com
 0.0.0.0 fe-dex.com
 0.0.0.0 fe3dex.com
 0.0.0.0 febcx.com
@@ -54,7 +56,6 @@
 0.0.0.0 fedexa.com
 0.0.0.0 fedexc.com
 0.0.0.0 fedexcom.com
-0.0.0.0 fedexd.com
 0.0.0.0 fedexe.com
 0.0.0.0 fedexi.com
 0.0.0.0 fedexl.com
@@ -85,6 +86,7 @@
 0.0.0.0 fedx.com
 0.0.0.0 fedxe.com
 0.0.0.0 fedxex.com
+0.0.0.0 fedzx.com
 0.0.0.0 feedex.com
 0.0.0.0 feedx.com
 0.0.0.0 feeex.com
@@ -109,10 +111,12 @@
 0.0.0.0 fodex.com
 0.0.0.0 frdex.com
 0.0.0.0 fredex.com
+0.0.0.0 fsdex.com
 0.0.0.0 fudex.com
 0.0.0.0 fwdex.com
 0.0.0.0 fwedex.com
 0.0.0.0 fzdex.com
+0.0.0.0 gedex.com
 0.0.0.0 gfedex.com
 0.0.0.0 nedex.com
 0.0.0.0 redex.com

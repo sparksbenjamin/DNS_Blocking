@@ -1,6 +1,6 @@
 # Google Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-21 01:56:25 UTC
+# Generated: 2026-04-21 02:18:35 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: google.com, gmail.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -29,6 +29,7 @@
 0.0.0.0 g00qle.com
 0.0.0.0 g0og1e.com
 0.0.0.0 g0ogie.com
+0.0.0.0 g0oglc.com
 0.0.0.0 g0ogle.com
 0.0.0.0 g0oogle.com
 0.0.0.0 g0oqle.com
@@ -58,6 +59,7 @@
 0.0.0.0 gkoogle.com
 0.0.0.0 glail.com
 0.0.0.0 glmail.com
+0.0.0.0 glogle.com
 0.0.0.0 gloogle.com
 0.0.0.0 gm-ail.com
 0.0.0.0 gm1ail.com
@@ -86,6 +88,7 @@
 0.0.0.0 gmaiil.com
 0.0.0.0 gmaijl.com
 0.0.0.0 gmaik.com
+0.0.0.0 gmaikl.com
 0.0.0.0 gmail0.com
 0.0.0.0 gmail1.com
 0.0.0.0 gmail2.com
@@ -115,6 +118,7 @@
 0.0.0.0 gmailp.com
 0.0.0.0 gmailq.com
 0.0.0.0 gmailr.com
+0.0.0.0 gmails.com
 0.0.0.0 gmailt.com
 0.0.0.0 gmailu.com
 0.0.0.0 gmailv.com
@@ -145,6 +149,7 @@
 0.0.0.0 gmaul.com
 0.0.0.0 gmawil.com
 0.0.0.0 gmayl.com
+0.0.0.0 gmazil.com
 0.0.0.0 gmcil.com
 0.0.0.0 gmeil.com
 0.0.0.0 gmial.com
@@ -172,6 +177,7 @@
 0.0.0.0 gna1l.com
 0.0.0.0 gnai1.com
 0.0.0.0 gnaii.com
+0.0.0.0 gnail.com
 0.0.0.0 gnall.com
 0.0.0.0 gnmail.com
 0.0.0.0 gnnaii.com
@@ -207,6 +213,7 @@
 0.0.0.0 gooble.com
 0.0.0.0 goocle.com
 0.0.0.0 gooele.com
+0.0.0.0 goofgle.com
 0.0.0.0 goofle.com
 0.0.0.0 goog-le.com
 0.0.0.0 goog1e.com
@@ -233,6 +240,7 @@
 0.0.0.0 google1.com
 0.0.0.0 google2.com
 0.0.0.0 google3.com
+0.0.0.0 google4.com
 0.0.0.0 google5.com
 0.0.0.0 google6.com
 0.0.0.0 google7.com
@@ -280,6 +288,7 @@
 0.0.0.0 googme.com
 0.0.0.0 googmle.com
 0.0.0.0 googne.com
+0.0.0.0 googoe.com
 0.0.0.0 googole.com
 0.0.0.0 googpe.com
 0.0.0.0 googple.com
@@ -289,6 +298,7 @@
 0.0.0.0 googyle.com
 0.0.0.0 googzle.com
 0.0.0.0 goohgle.com
+0.0.0.0 goohle.com
 0.0.0.0 gooigle.com
 0.0.0.0 gookgle.com
 0.0.0.0 goole.com
@@ -303,10 +313,12 @@
 0.0.0.0 gooqle.com
 0.0.0.0 goosgle.com
 0.0.0.0 gootgle.com
+0.0.0.0 gootle.com
 0.0.0.0 goovgle.com
 0.0.0.0 goovle.com
 0.0.0.0 goowle.com
 0.0.0.0 gooygle.com
+0.0.0.0 gooyle.com
 0.0.0.0 goozle.com
 0.0.0.0 gopgle.com
 0.0.0.0 gopogle.com
@@ -330,6 +342,7 @@
 0.0.0.0 gvoogle.com
 0.0.0.0 gymail.com
 0.0.0.0 gyoogle.com
+0.0.0.0 gzmail.com
 0.0.0.0 hgmail.com
 0.0.0.0 hgoogle.com
 0.0.0.0 hmail.com
@@ -343,6 +356,7 @@
 0.0.0.0 qmai1.com
 0.0.0.0 qmaii.com
 0.0.0.0 qmail.com
+0.0.0.0 qmall.com
 0.0.0.0 qnail.com
 0.0.0.0 qoog1e.com
 0.0.0.0 qoogie.com
@@ -353,6 +367,7 @@
 0.0.0.0 tmail.com
 0.0.0.0 toogle.com
 0.0.0.0 vgmail.com
+0.0.0.0 vgoogle.com
 0.0.0.0 vmail.com
 0.0.0.0 voogle.com
 0.0.0.0 wmail.com

@@ -1,6 +1,6 @@
 # UPS Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-21 01:56:25 UTC
+# Generated: 2026-04-21 02:18:35 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: ups.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -14,6 +14,7 @@
 0.0.0.0 eps.com
 0.0.0.0 hps.com
 0.0.0.0 hups.com
+0.0.0.0 ips.com
 0.0.0.0 iups.com
 0.0.0.0 jps.com
 0.0.0.0 jups.com
@@ -51,10 +52,13 @@
 0.0.0.0 ups0.com
 0.0.0.0 ups1.com
 0.0.0.0 ups2.com
+0.0.0.0 ups3.com
 0.0.0.0 ups4.com
 0.0.0.0 ups5.com
 0.0.0.0 ups6.com
 0.0.0.0 ups7.com
+0.0.0.0 ups8.com
+0.0.0.0 ups9.com
 0.0.0.0 upsa.com
 0.0.0.0 upsb.com
 0.0.0.0 upsc.com
@@ -97,6 +101,7 @@
 0.0.0.0 uzps.com
 0.0.0.0 vps.com
 0.0.0.0 wps.com
+0.0.0.0 xn--p-o3a319s.com
 0.0.0.0 yps.com
 0.0.0.0 yups.com
 0.0.0.0 zps.com

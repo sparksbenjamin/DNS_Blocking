@@ -1,6 +1,6 @@
 # GitHub Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-21 01:56:25 UTC
+# Generated: 2026-04-21 02:18:35 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: github.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -75,6 +75,7 @@
 0.0.0.0 githubf.com
 0.0.0.0 githubg.com
 0.0.0.0 githubi.com
+0.0.0.0 githubl.com
 0.0.0.0 githubm.com
 0.0.0.0 githubn.com
 0.0.0.0 githubo.com
@@ -155,6 +156,7 @@
 0.0.0.0 tithub.com
 0.0.0.0 vgithub.com
 0.0.0.0 vithub.com
+0.0.0.0 withub.com
 0.0.0.0 xn--githb-nva.com
 0.0.0.0 xn--githu-w90b.com
 0.0.0.0 xn--gthub-5sa.com
@@ -162,4 +164,6 @@
 0.0.0.0 xn--gthub-tsa.com
 0.0.0.0 xn--ithub-qmc.com
 0.0.0.0 xn--ithub-v1a.com
+0.0.0.0 yithub.com
 0.0.0.0 zgithub.com
+0.0.0.0 zithub.com

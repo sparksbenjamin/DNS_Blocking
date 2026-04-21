@@ -1,6 +1,6 @@
 # Dropbox Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-21 01:56:25 UTC
+# Generated: 2026-04-21 02:18:35 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: dropbox.com, hellosign.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -25,6 +25,7 @@
 0.0.0.0 dr0pbox.com
 0.0.0.0 drapbox.com
 0.0.0.0 dreopbox.com
+0.0.0.0 drepbox.com
 0.0.0.0 drgpbox.com
 0.0.0.0 driopbox.com
 0.0.0.0 drkpbox.com
@@ -83,6 +84,7 @@
 0.0.0.0 drophox.com
 0.0.0.0 dropibox.com
 0.0.0.0 dropjox.com
+0.0.0.0 droplbox.com
 0.0.0.0 dropmbox.com
 0.0.0.0 dropnox.com
 0.0.0.0 dropobox.com
@@ -98,6 +100,7 @@
 0.0.0.0 drpbox.com
 0.0.0.0 drpobox.com
 0.0.0.0 drpopbox.com
+0.0.0.0 drppbox.com
 0.0.0.0 drropbox.com
 0.0.0.0 dsopbox.com
 0.0.0.0 dtopbox.com

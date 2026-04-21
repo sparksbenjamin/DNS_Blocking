@@ -1,21 +1,24 @@
 # Duo Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-21 01:56:25 UTC
+# Generated: 2026-04-21 02:18:35 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: duo.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
 
 0.0.0.0 bluo.com
+0.0.0.0 bu0.com
 0.0.0.0 buo.com
 0.0.0.0 bvo.com
 0.0.0.0 cduo.com
 0.0.0.0 ciuo.com
+0.0.0.0 clluo.com
 0.0.0.0 cluo.com
 0.0.0.0 clvo.com
 0.0.0.0 cuo.com
 0.0.0.0 d5o.com
 0.0.0.0 d7o.com
 0.0.0.0 d8o.com
+0.0.0.0 dao.com
 0.0.0.0 dcuo.com
 0.0.0.0 dduo.com
 0.0.0.0 deo.com
@@ -39,6 +42,7 @@
 0.0.0.0 du-o.com
 0.0.0.0 du.com
 0.0.0.0 du0.com
+0.0.0.0 du9.com
 0.0.0.0 dua.com
 0.0.0.0 due.com
 0.0.0.0 dug.com
@@ -51,15 +55,20 @@
 0.0.0.0 dum.com
 0.0.0.0 dun.com
 0.0.0.0 duo0.com
+0.0.0.0 duo1.com
 0.0.0.0 duo2.com
 0.0.0.0 duo3.com
 0.0.0.0 duo4.com
+0.0.0.0 duo5.com
 0.0.0.0 duo6.com
+0.0.0.0 duo7.com
+0.0.0.0 duo8.com
 0.0.0.0 duo9.com
 0.0.0.0 duoa.com
 0.0.0.0 duob.com
 0.0.0.0 duoc.com
 0.0.0.0 duocom.com
+0.0.0.0 duod.com
 0.0.0.0 duoe.com
 0.0.0.0 duof.com
 0.0.0.0 duog.com
@@ -76,6 +85,7 @@
 0.0.0.0 duor.com
 0.0.0.0 duos.com
 0.0.0.0 duot.com
+0.0.0.0 duou.com
 0.0.0.0 duov.com
 0.0.0.0 duow.com
 0.0.0.0 duox.com
@@ -84,6 +94,7 @@
 0.0.0.0 dup.com
 0.0.0.0 duu.com
 0.0.0.0 duuo.com
+0.0.0.0 duyo.com
 0.0.0.0 duzo.com
 0.0.0.0 dv0.com
 0.0.0.0 dvo.com
@@ -92,6 +103,7 @@
 0.0.0.0 dyo.com
 0.0.0.0 dyuo.com
 0.0.0.0 dzo.com
+0.0.0.0 dzuo.com
 0.0.0.0 eluo.com
 0.0.0.0 euo.com
 0.0.0.0 fduo.com
@@ -102,6 +114,7 @@
 0.0.0.0 ruo.com
 0.0.0.0 sduo.com
 0.0.0.0 suo.com
+0.0.0.0 tuo.com
 0.0.0.0 udo.com
 0.0.0.0 uo.com
 0.0.0.0 xduo.com

@@ -1,5 +1,5 @@
 # Brand Impersonation Hardening
-# Generated: 2026-04-21 01:56:25 UTC
+# Generated: 2026-04-21 02:18:35 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Purpose: Aggregated DNSTwist-based impersonation hardening
 
@@ -20,6 +20,7 @@
 0.0.0.0 1adobe.com
 0.0.0.0 1amazon.com
 0.0.0.0 1apple.com
+0.0.0.0 1box.com
 0.0.0.0 1c1oud.com
 0.0.0.0 1cioud.com
 0.0.0.0 1cloud.com
@@ -39,21 +40,23 @@
 0.0.0.0 2zoom.us
 0.0.0.0 3lack.com
 0.0.0.0 3oom.us
+0.0.0.0 3zoom.us
 0.0.0.0 4urbotax.com
 0.0.0.0 5ps.com
 0.0.0.0 7ps.com
 0.0.0.0 7ups.com
 0.0.0.0 8cloud.com
+0.0.0.0 8icloud.com
 0.0.0.0 8ntuit.com
 0.0.0.0 8ps.com
 0.0.0.0 8ups.com
 0.0.0.0 9cloud.com
 0.0.0.0 9ffice.com
+0.0.0.0 9icloud.com
 0.0.0.0 9ntuit.com
 0.0.0.0 9office.com
 0.0.0.0 9okta.com
 0.0.0.0 9utlook.com
-0.0.0.0 a-azon.com
 0.0.0.0 a-mazon.com
 0.0.0.0 a-pple.com
 0.0.0.0 a.crobat.com
@@ -191,6 +194,7 @@
 0.0.0.0 adore.com
 0.0.0.0 adovbe.com
 0.0.0.0 adove.com
+0.0.0.0 adpbe.com
 0.0.0.0 adpobe.com
 0.0.0.0 adrobat.com
 0.0.0.0 adrobe.com
@@ -241,6 +245,7 @@
 0.0.0.0 amagzon.com
 0.0.0.0 amahon.com
 0.0.0.0 amahzon.com
+0.0.0.0 amajon.com
 0.0.0.0 amaon.com
 0.0.0.0 amaozn.com
 0.0.0.0 amaqon.com
@@ -271,6 +276,7 @@
 0.0.0.0 amazeson.com
 0.0.0.0 amazgon.com
 0.0.0.0 amazhon.com
+0.0.0.0 amazin.com
 0.0.0.0 amazion.com
 0.0.0.0 amazkn.com
 0.0.0.0 amazkon.com
@@ -588,11 +594,11 @@
 0.0.0.0 bnx.com
 0.0.0.0 bo-x.com
 0.0.0.0 bo.com
-0.0.0.0 bo8.com
 0.0.0.0 boc.com
 0.0.0.0 bod.com
 0.0.0.0 boh.com
 0.0.0.0 boix.com
+0.0.0.0 bokx.com
 0.0.0.0 bolx.com
 0.0.0.0 boogle.com
 0.0.0.0 boox.com
@@ -607,9 +613,9 @@
 0.0.0.0 box3.com
 0.0.0.0 box4.com
 0.0.0.0 box5.com
-0.0.0.0 box6.com
 0.0.0.0 box7.com
 0.0.0.0 box8.com
+0.0.0.0 box9.com
 0.0.0.0 boxa.com
 0.0.0.0 boxb.com
 0.0.0.0 boxc.com
@@ -636,12 +642,14 @@
 0.0.0.0 boxw.com
 0.0.0.0 boxx.com
 0.0.0.0 boxy.com
+0.0.0.0 boxz.com
 0.0.0.0 boy.com
 0.0.0.0 boz.com
 0.0.0.0 bpox.com
 0.0.0.0 bpx.com
 0.0.0.0 bropbox.com
 0.0.0.0 bropdox.com
+0.0.0.0 bu0.com
 0.0.0.0 buo.com
 0.0.0.0 bux.com
 0.0.0.0 bvo.com
@@ -673,6 +681,7 @@
 0.0.0.0 cliudflare.com
 0.0.0.0 clkudflare.com
 0.0.0.0 clludflare.com
+0.0.0.0 clluo.com
 0.0.0.0 clmudflare.com
 0.0.0.0 clnudflare.com
 0.0.0.0 clo-udflare.com
@@ -732,6 +741,7 @@
 0.0.0.0 cloudflarer.com
 0.0.0.0 cloudflares.com
 0.0.0.0 cloudflaret.com
+0.0.0.0 cloudflareu.com
 0.0.0.0 cloudflarex.com
 0.0.0.0 cloudflarez.com
 0.0.0.0 cloudflarm.com
@@ -757,13 +767,17 @@
 0.0.0.0 cloudfmare.com
 0.0.0.0 cloudfnare.com
 0.0.0.0 cloudglare.com
+0.0.0.0 cloudiflare.com
 0.0.0.0 cloudlare.com
 0.0.0.0 cloudlfare.com
 0.0.0.0 cloudlflare.com
 0.0.0.0 cloudnlare.com
 0.0.0.0 cloudsflare.com
+0.0.0.0 cloudtflare.com
 0.0.0.0 cloudtlare.com
 0.0.0.0 cloudvflare.com
+0.0.0.0 cloudvlare.com
+0.0.0.0 cloudxflare.com
 0.0.0.0 cloueflare.com
 0.0.0.0 cloufdlare.com
 0.0.0.0 cloufflare.com
@@ -806,6 +820,8 @@
 0.0.0.0 d5o.com
 0.0.0.0 d7o.com
 0.0.0.0 d8o.com
+0.0.0.0 dalesforce.com
+0.0.0.0 dao.com
 0.0.0.0 daobe.com
 0.0.0.0 dcousign.com
 0.0.0.0 dcuo.com
@@ -813,6 +829,7 @@
 0.0.0.0 ddocusign.com
 0.0.0.0 ddropbox.com
 0.0.0.0 dduo.com
+0.0.0.0 decusign.com
 0.0.0.0 dedex.com
 0.0.0.0 deo.com
 0.0.0.0 deopbox.com
@@ -916,6 +933,7 @@
 0.0.0.0 drapbox.com
 0.0.0.0 drello.com
 0.0.0.0 dreopbox.com
+0.0.0.0 drepbox.com
 0.0.0.0 drgpbox.com
 0.0.0.0 driopbox.com
 0.0.0.0 drkpbox.com
@@ -974,6 +992,7 @@
 0.0.0.0 drophox.com
 0.0.0.0 dropibox.com
 0.0.0.0 dropjox.com
+0.0.0.0 droplbox.com
 0.0.0.0 dropmbox.com
 0.0.0.0 dropnox.com
 0.0.0.0 dropobox.com
@@ -989,6 +1008,7 @@
 0.0.0.0 drpbox.com
 0.0.0.0 drpobox.com
 0.0.0.0 drpopbox.com
+0.0.0.0 drppbox.com
 0.0.0.0 drropbox.com
 0.0.0.0 druo.com
 0.0.0.0 dsalesforce.com
@@ -1001,6 +1021,7 @@
 0.0.0.0 du-o.com
 0.0.0.0 du.com
 0.0.0.0 du0.com
+0.0.0.0 du9.com
 0.0.0.0 dua.com
 0.0.0.0 ducusign.com
 0.0.0.0 due.com
@@ -1014,15 +1035,20 @@
 0.0.0.0 dum.com
 0.0.0.0 dun.com
 0.0.0.0 duo0.com
+0.0.0.0 duo1.com
 0.0.0.0 duo2.com
 0.0.0.0 duo3.com
 0.0.0.0 duo4.com
+0.0.0.0 duo5.com
 0.0.0.0 duo6.com
+0.0.0.0 duo7.com
+0.0.0.0 duo8.com
 0.0.0.0 duo9.com
 0.0.0.0 duoa.com
 0.0.0.0 duob.com
 0.0.0.0 duoc.com
 0.0.0.0 duocom.com
+0.0.0.0 duod.com
 0.0.0.0 duoe.com
 0.0.0.0 duof.com
 0.0.0.0 duog.com
@@ -1039,6 +1065,7 @@
 0.0.0.0 duor.com
 0.0.0.0 duos.com
 0.0.0.0 duot.com
+0.0.0.0 duou.com
 0.0.0.0 duov.com
 0.0.0.0 duow.com
 0.0.0.0 duox.com
@@ -1048,6 +1075,7 @@
 0.0.0.0 durbotax.com
 0.0.0.0 duu.com
 0.0.0.0 duuo.com
+0.0.0.0 duyo.com
 0.0.0.0 duzo.com
 0.0.0.0 dv0.com
 0.0.0.0 dvo.com
@@ -1058,6 +1086,7 @@
 0.0.0.0 dyuo.com
 0.0.0.0 dzo.com
 0.0.0.0 dzopbox.com
+0.0.0.0 dzuo.com
 0.0.0.0 ecloud.com
 0.0.0.0 ecrobat.com
 0.0.0.0 edex.com
@@ -1066,6 +1095,8 @@
 0.0.0.0 edropbox.com
 0.0.0.0 eendesk.com
 0.0.0.0 efdex.com
+0.0.0.0 effice.com
+0.0.0.0 eicrosoft.com
 0.0.0.0 eithub.com
 0.0.0.0 ekta.com
 0.0.0.0 elack.com
@@ -1087,10 +1118,13 @@
 0.0.0.0 f1gma.com
 0.0.0.0 f4dex.com
 0.0.0.0 fadex.com
+0.0.0.0 fagma.com
+0.0.0.0 fcbex.com
 0.0.0.0 fcdex.com
 0.0.0.0 fddex.com
 0.0.0.0 fdedex.com
 0.0.0.0 fdeex.com
+0.0.0.0 fdex.com
 0.0.0.0 fdropbox.com
 0.0.0.0 fduo.com
 0.0.0.0 fe-dex.com
@@ -1129,7 +1163,6 @@
 0.0.0.0 fedexa.com
 0.0.0.0 fedexc.com
 0.0.0.0 fedexcom.com
-0.0.0.0 fedexd.com
 0.0.0.0 fedexe.com
 0.0.0.0 fedexi.com
 0.0.0.0 fedexl.com
@@ -1160,6 +1193,7 @@
 0.0.0.0 fedx.com
 0.0.0.0 fedxe.com
 0.0.0.0 fedxex.com
+0.0.0.0 fedzx.com
 0.0.0.0 feedex.com
 0.0.0.0 feedx.com
 0.0.0.0 feeex.com
@@ -1196,6 +1230,7 @@
 0.0.0.0 fig-ma.com
 0.0.0.0 figa.com
 0.0.0.0 figam.com
+0.0.0.0 figea.com
 0.0.0.0 figgma.com
 0.0.0.0 figia.com
 0.0.0.0 figja.com
@@ -1214,6 +1249,7 @@
 0.0.0.0 figmai.com
 0.0.0.0 figmal.com
 0.0.0.0 figman.com
+0.0.0.0 figmao.com
 0.0.0.0 figmap.com
 0.0.0.0 figmar.com
 0.0.0.0 figmas.com
@@ -1247,6 +1283,8 @@
 0.0.0.0 fitma.com
 0.0.0.0 fiyma.com
 0.0.0.0 fizma.com
+0.0.0.0 fjgma.com
+0.0.0.0 fkigma.com
 0.0.0.0 flgma.com
 0.0.0.0 fmail.com
 0.0.0.0 fmdex.com
@@ -1261,6 +1299,7 @@
 0.0.0.0 frello.com
 0.0.0.0 frigma.com
 0.0.0.0 fropbox.com
+0.0.0.0 fsdex.com
 0.0.0.0 fturbotax.com
 0.0.0.0 fudex.com
 0.0.0.0 fugma.com
@@ -1282,6 +1321,7 @@
 0.0.0.0 g00qle.com
 0.0.0.0 g0og1e.com
 0.0.0.0 g0ogie.com
+0.0.0.0 g0oglc.com
 0.0.0.0 g0ogle.com
 0.0.0.0 g0oogle.com
 0.0.0.0 g0oqle.com
@@ -1298,6 +1338,7 @@
 0.0.0.0 gboogle.com
 0.0.0.0 gbox.com
 0.0.0.0 geail.com
+0.0.0.0 gedex.com
 0.0.0.0 gendesk.com
 0.0.0.0 geogle.com
 0.0.0.0 gethub.com
@@ -1374,6 +1415,7 @@
 0.0.0.0 githubf.com
 0.0.0.0 githubg.com
 0.0.0.0 githubi.com
+0.0.0.0 githubl.com
 0.0.0.0 githubm.com
 0.0.0.0 githubn.com
 0.0.0.0 githubo.com
@@ -1441,6 +1483,7 @@
 0.0.0.0 gkthub.com
 0.0.0.0 glail.com
 0.0.0.0 glmail.com
+0.0.0.0 glogle.com
 0.0.0.0 gloogle.com
 0.0.0.0 gloudflare.com
 0.0.0.0 glthub.com
@@ -1471,6 +1514,7 @@
 0.0.0.0 gmaiil.com
 0.0.0.0 gmaijl.com
 0.0.0.0 gmaik.com
+0.0.0.0 gmaikl.com
 0.0.0.0 gmail0.com
 0.0.0.0 gmail1.com
 0.0.0.0 gmail2.com
@@ -1500,6 +1544,7 @@
 0.0.0.0 gmailp.com
 0.0.0.0 gmailq.com
 0.0.0.0 gmailr.com
+0.0.0.0 gmails.com
 0.0.0.0 gmailt.com
 0.0.0.0 gmailu.com
 0.0.0.0 gmailv.com
@@ -1530,6 +1575,7 @@
 0.0.0.0 gmaul.com
 0.0.0.0 gmawil.com
 0.0.0.0 gmayl.com
+0.0.0.0 gmazil.com
 0.0.0.0 gmcil.com
 0.0.0.0 gmeil.com
 0.0.0.0 gmial.com
@@ -1558,6 +1604,7 @@
 0.0.0.0 gna1l.com
 0.0.0.0 gnai1.com
 0.0.0.0 gnaii.com
+0.0.0.0 gnail.com
 0.0.0.0 gnall.com
 0.0.0.0 gnmail.com
 0.0.0.0 gnnaii.com
@@ -1594,6 +1641,7 @@
 0.0.0.0 gooble.com
 0.0.0.0 goocle.com
 0.0.0.0 gooele.com
+0.0.0.0 goofgle.com
 0.0.0.0 goofle.com
 0.0.0.0 goog-le.com
 0.0.0.0 goog1e.com
@@ -1620,6 +1668,7 @@
 0.0.0.0 google1.com
 0.0.0.0 google2.com
 0.0.0.0 google3.com
+0.0.0.0 google4.com
 0.0.0.0 google5.com
 0.0.0.0 google6.com
 0.0.0.0 google7.com
@@ -1667,6 +1716,7 @@
 0.0.0.0 googme.com
 0.0.0.0 googmle.com
 0.0.0.0 googne.com
+0.0.0.0 googoe.com
 0.0.0.0 googole.com
 0.0.0.0 googpe.com
 0.0.0.0 googple.com
@@ -1676,6 +1726,7 @@
 0.0.0.0 googyle.com
 0.0.0.0 googzle.com
 0.0.0.0 goohgle.com
+0.0.0.0 goohle.com
 0.0.0.0 gooigle.com
 0.0.0.0 gookgle.com
 0.0.0.0 goole.com
@@ -1691,10 +1742,12 @@
 0.0.0.0 gooqle.com
 0.0.0.0 goosgle.com
 0.0.0.0 gootgle.com
+0.0.0.0 gootle.com
 0.0.0.0 goovgle.com
 0.0.0.0 goovle.com
 0.0.0.0 goowle.com
 0.0.0.0 gooygle.com
+0.0.0.0 gooyle.com
 0.0.0.0 goozle.com
 0.0.0.0 gopgle.com
 0.0.0.0 gopogle.com
@@ -1730,6 +1783,7 @@
 0.0.0.0 gymail.com
 0.0.0.0 gyoogle.com
 0.0.0.0 gythub.com
+0.0.0.0 gzmail.com
 0.0.0.0 gzoom.us
 0.0.0.0 hallosign.com
 0.0.0.0 hbox.com
@@ -1791,7 +1845,9 @@
 0.0.0.0 iclgud.com
 0.0.0.0 iclioud.com
 0.0.0.0 icliud.com
+0.0.0.0 iclkoud.com
 0.0.0.0 iclkud.com
+0.0.0.0 iclloud.com
 0.0.0.0 icllud.com
 0.0.0.0 iclmud.com
 0.0.0.0 iclnud.com
@@ -1806,6 +1862,7 @@
 0.0.0.0 iclodu.com
 0.0.0.0 icloed.com
 0.0.0.0 iclohd.com
+0.0.0.0 icloid.com
 0.0.0.0 icloiud.com
 0.0.0.0 iclojd.com
 0.0.0.0 iclolud.com
@@ -1832,6 +1889,7 @@
 0.0.0.0 icloudb.com
 0.0.0.0 icloudc.com
 0.0.0.0 icloudcom.com
+0.0.0.0 icloudd.com
 0.0.0.0 icloude.com
 0.0.0.0 icloudf.com
 0.0.0.0 icloudg.com
@@ -1861,6 +1919,7 @@
 0.0.0.0 iclour.com
 0.0.0.0 iclous.com
 0.0.0.0 iclout.com
+0.0.0.0 iclouud.com
 0.0.0.0 icloux.com
 0.0.0.0 iclouyd.com
 0.0.0.0 iclovb.com
@@ -1878,6 +1937,7 @@
 0.0.0.0 icmoud.com
 0.0.0.0 icnoud.com
 0.0.0.0 icoloud.com
+0.0.0.0 icolud.com
 0.0.0.0 icooud.com
 0.0.0.0 icoud.com
 0.0.0.0 icpoud.com
@@ -2034,6 +2094,7 @@
 0.0.0.0 iotuit.com
 0.0.0.0 ioutlook.com
 0.0.0.0 ipple.com
+0.0.0.0 ips.com
 0.0.0.0 ira.com
 0.0.0.0 irtuit.com
 0.0.0.0 isloud.com
@@ -2049,13 +2110,17 @@
 0.0.0.0 ivloud.com
 0.0.0.0 ixcloud.com
 0.0.0.0 ixloud.com
+0.0.0.0 jara.com
+0.0.0.0 jcloud.com
 0.0.0.0 jendesk.com
 0.0.0.0 jera.com
 0.0.0.0 jhira.com
 0.0.0.0 jhra.com
 0.0.0.0 ji4a.com
+0.0.0.0 jia.com
 0.0.0.0 jiar.com
 0.0.0.0 jiba.com
+0.0.0.0 jicloud.com
 0.0.0.0 jicrosoft.com
 0.0.0.0 jida.com
 0.0.0.0 jidra.com
@@ -2063,6 +2128,7 @@
 0.0.0.0 jiera.com
 0.0.0.0 jifa.com
 0.0.0.0 jifra.com
+0.0.0.0 jiira.com
 0.0.0.0 jikra.com
 0.0.0.0 jintuit.com
 0.0.0.0 jiora.com
@@ -2076,12 +2142,14 @@
 0.0.0.0 jirac.com
 0.0.0.0 jiracom.com
 0.0.0.0 jirad.com
+0.0.0.0 jirae.com
 0.0.0.0 jiraf.com
 0.0.0.0 jirag.com
 0.0.0.0 jirah.com
 0.0.0.0 jirai.com
 0.0.0.0 jiraj.com
 0.0.0.0 jirak.com
+0.0.0.0 jiral.com
 0.0.0.0 jiram.com
 0.0.0.0 jiran.com
 0.0.0.0 jirao.com
@@ -2092,12 +2160,14 @@
 0.0.0.0 jirat.com
 0.0.0.0 jirau.com
 0.0.0.0 jirav.com
+0.0.0.0 jiraw.com
 0.0.0.0 jirax.com
 0.0.0.0 jiray.com
 0.0.0.0 jiraz.com
 0.0.0.0 jirc.com
 0.0.0.0 jirda.com
 0.0.0.0 jire.com
+0.0.0.0 jirea.com
 0.0.0.0 jirfa.com
 0.0.0.0 jiri.com
 0.0.0.0 jiro.com
@@ -2110,6 +2180,7 @@
 0.0.0.0 jiry.com
 0.0.0.0 jirz.com
 0.0.0.0 jisa.com
+0.0.0.0 jita.com
 0.0.0.0 jitra.com
 0.0.0.0 jiura.com
 0.0.0.0 jiva.com
@@ -2128,6 +2199,7 @@
 0.0.0.0 jox.com
 0.0.0.0 jps.com
 0.0.0.0 jra.com
+0.0.0.0 jria.com
 0.0.0.0 juira.com
 0.0.0.0 jups.com
 0.0.0.0 jura.com
@@ -2170,6 +2242,7 @@
 0.0.0.0 lcloudl.com
 0.0.0.0 lclovd.com
 0.0.0.0 ldox.com
+0.0.0.0 leve.com
 0.0.0.0 lffice.com
 0.0.0.0 lhve.com
 0.0.0.0 li-ve.com
@@ -2233,7 +2306,6 @@
 0.0.0.0 lives.com
 0.0.0.0 livet.com
 0.0.0.0 liveu.com
-0.0.0.0 livev.com
 0.0.0.0 livew.com
 0.0.0.0 livex.com
 0.0.0.0 livey.com
@@ -2246,12 +2318,14 @@
 0.0.0.0 livo.com
 0.0.0.0 livr.com
 0.0.0.0 livs.com
+0.0.0.0 livu.com
 0.0.0.0 livve.com
 0.0.0.0 livw.com
 0.0.0.0 livz.com
 0.0.0.0 liwe.com
 0.0.0.0 ljive.com
 0.0.0.0 ljve.com
+0.0.0.0 lkive.com
 0.0.0.0 lkta.com
 0.0.0.0 lkve.com
 0.0.0.0 llbox.com
@@ -2261,6 +2335,7 @@
 0.0.0.0 llve.com
 0.0.0.0 lmicrosoft.com
 0.0.0.0 lmve.com
+0.0.0.0 lntuit.com
 0.0.0.0 lntult.com
 0.0.0.0 loffice.com
 0.0.0.0 loive.com
@@ -2292,6 +2367,7 @@
 0.0.0.0 mail.com
 0.0.0.0 maypal.com
 0.0.0.0 mazon.com
+0.0.0.0 mcirosoft.com
 0.0.0.0 mcloud.com
 0.0.0.0 mcrosoftonline.com
 0.0.0.0 mecrosoft.com
@@ -2303,6 +2379,7 @@
 0.0.0.0 mi.crosoftonline.com
 0.0.0.0 mi8crosoft.com
 0.0.0.0 mi9crosoft.com
+0.0.0.0 mibrosoft.com
 0.0.0.0 mic.rosoft.com
 0.0.0.0 mic.rosoftonline.com
 0.0.0.0 mic2osoft.com
@@ -2566,6 +2643,7 @@
 0.0.0.0 microzoft.com
 0.0.0.0 microzsoft.com
 0.0.0.0 micrposoft.com
+0.0.0.0 micrpsoft.com
 0.0.0.0 micrpsoftonline.com
 0.0.0.0 micrrosoft.com
 0.0.0.0 micrrosoftonline.com
@@ -2638,11 +2716,13 @@
 0.0.0.0 mocrosoftonline.com
 0.0.0.0 moicrosoft.com
 0.0.0.0 motion.so
+0.0.0.0 mpaypal.com
 0.0.0.0 mucrosoft.com
 0.0.0.0 mucrosoftonline.com
 0.0.0.0 muicrosoft.com
 0.0.0.0 mutlook.com
 0.0.0.0 mycrosoft.com
+0.0.0.0 mycrosoftonline.com
 0.0.0.0 nation.so
 0.0.0.0 nbox.com
 0.0.0.0 nedex.com
@@ -2843,6 +2923,7 @@
 0.0.0.0 okt1.com
 0.0.0.0 okta0.com
 0.0.0.0 okta1.com
+0.0.0.0 okta3.com
 0.0.0.0 okta7.com
 0.0.0.0 okta8.com
 0.0.0.0 oktaa.com
@@ -2859,6 +2940,7 @@
 0.0.0.0 oktal.com
 0.0.0.0 oktam.com
 0.0.0.0 oktan.com
+0.0.0.0 oktao.com
 0.0.0.0 oktap.com
 0.0.0.0 oktar.com
 0.0.0.0 oktas.com
@@ -2872,6 +2954,7 @@
 0.0.0.0 oktc.com
 0.0.0.0 okte.com
 0.0.0.0 okti.com
+0.0.0.0 okto.com
 0.0.0.0 oktq.com
 0.0.0.0 oktra.com
 0.0.0.0 okts.com
@@ -2879,6 +2962,7 @@
 0.0.0.0 oktw.com
 0.0.0.0 okty.com
 0.0.0.0 oktya.com
+0.0.0.0 oktz.com
 0.0.0.0 okua.com
 0.0.0.0 okutlook.com
 0.0.0.0 okva.com
@@ -2902,6 +2986,7 @@
 0.0.0.0 ookta.com
 0.0.0.0 oom.us
 0.0.0.0 ooogle.com
+0.0.0.0 oota.com
 0.0.0.0 ootlook.com
 0.0.0.0 ooutlook.com
 0.0.0.0 opaypal.com
@@ -3029,6 +3114,7 @@
 0.0.0.0 outluok.com
 0.0.0.0 outmook.com
 0.0.0.0 outnook.com
+0.0.0.0 outolok.com
 0.0.0.0 outolook.com
 0.0.0.0 outook.com
 0.0.0.0 outoook.com
@@ -3214,6 +3300,7 @@
 0.0.0.0 qmai1.com
 0.0.0.0 qmaii.com
 0.0.0.0 qmail.com
+0.0.0.0 qmall.com
 0.0.0.0 qmazon.com
 0.0.0.0 qnail.com
 0.0.0.0 qoickbooks.com
@@ -3419,6 +3506,7 @@
 0.0.0.0 ropbox.com
 0.0.0.0 rox.com
 0.0.0.0 rricrosoft.com
+0.0.0.0 rtello.com
 0.0.0.0 rturbotax.com
 0.0.0.0 ruo.com
 0.0.0.0 rurbotax.com
@@ -3434,8 +3522,8 @@
 0.0.0.0 saesforce.com
 0.0.0.0 saiesforce.com
 0.0.0.0 sakesforce.com
-0.0.0.0 sal.esforce.com
 0.0.0.0 salack.com
+0.0.0.0 salasforce.com
 0.0.0.0 salck.com
 0.0.0.0 salcsforce.com
 0.0.0.0 saleaforce.com
@@ -3447,6 +3535,7 @@
 0.0.0.0 salerforce.com
 0.0.0.0 salersforce.com
 0.0.0.0 sales-force.com
+0.0.0.0 salesaforce.com
 0.0.0.0 salesdforce.com
 0.0.0.0 salesdorce.com
 0.0.0.0 saleseforce.com
@@ -3619,6 +3708,7 @@
 0.0.0.0 srtripe.com
 0.0.0.0 ssalesforce.com
 0.0.0.0 sslack.com
+0.0.0.0 sstripe.com
 0.0.0.0 st4ipe.com
 0.0.0.0 st5ipe.com
 0.0.0.0 steipe.com
@@ -3687,13 +3777,16 @@
 0.0.0.0 strope.com
 0.0.0.0 strpe.com
 0.0.0.0 strpie.com
+0.0.0.0 strripe.com
 0.0.0.0 strupe.com
 0.0.0.0 strype.com
 0.0.0.0 sttipe.com
+0.0.0.0 sttripe.com
 0.0.0.0 suickbooks.com
 0.0.0.0 suo.com
 0.0.0.0 sylack.com
 0.0.0.0 szlack.com
+0.0.0.0 szlesforce.com
 0.0.0.0 szoom.us
 0.0.0.0 t.rello.com
 0.0.0.0 t.urbotax.com
@@ -3787,6 +3880,7 @@
 0.0.0.0 tufbotax.com
 0.0.0.0 tuirbotax.com
 0.0.0.0 tujrbotax.com
+0.0.0.0 tuo.com
 0.0.0.0 tupbotax.com
 0.0.0.0 turb0tax.com
 0.0.0.0 turbatax.com
@@ -3909,6 +4003,7 @@
 0.0.0.0 uffice.com
 0.0.0.0 uhps.com
 0.0.0.0 uickbooks.com
+0.0.0.0 uicloud.com
 0.0.0.0 uintuit.com
 0.0.0.0 uips.com
 0.0.0.0 uira.com
@@ -3944,10 +4039,13 @@
 0.0.0.0 ups0.com
 0.0.0.0 ups1.com
 0.0.0.0 ups2.com
+0.0.0.0 ups3.com
 0.0.0.0 ups4.com
 0.0.0.0 ups5.com
 0.0.0.0 ups6.com
 0.0.0.0 ups7.com
+0.0.0.0 ups8.com
+0.0.0.0 ups9.com
 0.0.0.0 upsa.com
 0.0.0.0 upsb.com
 0.0.0.0 upsc.com
@@ -4001,6 +4099,7 @@
 0.0.0.0 vfedex.com
 0.0.0.0 vgithub.com
 0.0.0.0 vgmail.com
+0.0.0.0 vgoogle.com
 0.0.0.0 vigma.com
 0.0.0.0 vithub.com
 0.0.0.0 vmail.com
@@ -4014,6 +4113,7 @@
 0.0.0.0 wamazon.com
 0.0.0.0 wapple.com
 0.0.0.0 wdobe.com
+0.0.0.0 withub.com
 0.0.0.0 wlack.com
 0.0.0.0 wmail.com
 0.0.0.0 wmazon.com
@@ -4475,6 +4575,7 @@
 0.0.0.0 xn--outloo-1p7b.com
 0.0.0.0 xn--outloo-8bb.com
 0.0.0.0 xn--outook-5db.com
+0.0.0.0 xn--p-o3a319s.com
 0.0.0.0 xn--papa1-3va.com
 0.0.0.0 xn--papal-3va.com
 0.0.0.0 xn--papal-hy1b.com
@@ -4575,6 +4676,7 @@
 0.0.0.0 xn--strpe-g81b.com
 0.0.0.0 xn--strpe-p4a.com
 0.0.0.0 xn--tripe-jq1b.com
+0.0.0.0 xn--turbax-6wa4741d.com
 0.0.0.0 xn--utlook-9fb.com
 0.0.0.0 xn--utlook-vxa.com
 0.0.0.0 xn--zedesk-xt7b.com
@@ -4591,6 +4693,7 @@
 0.0.0.0 ycloud.com
 0.0.0.0 ygmail.com
 0.0.0.0 ygoogle.com
+0.0.0.0 yithub.com
 0.0.0.0 ymail.com
 0.0.0.0 ymazon.com
 0.0.0.0 yntuit.com
@@ -4658,6 +4761,7 @@
 0.0.0.0 ziom.us
 0.0.0.0 zioom.us
 0.0.0.0 zira.com
+0.0.0.0 zithub.com
 0.0.0.0 zlack.com
 0.0.0.0 zmail.com
 0.0.0.0 zmazon.com
@@ -4724,5 +4828,6 @@
 0.0.0.0 zuickbooks.com
 0.0.0.0 zundesk.com
 0.0.0.0 zups.com
+0.0.0.0 zwndesk.com
 0.0.0.0 zzendesk.com
 0.0.0.0 zzoom.us

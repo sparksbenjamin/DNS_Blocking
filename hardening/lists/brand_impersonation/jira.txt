@@ -1,6 +1,6 @@
 # Jira Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-21 01:56:25 UTC
+# Generated: 2026-04-21 02:18:35 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: jira.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -11,10 +11,12 @@
 0.0.0.0 ijira.com
 0.0.0.0 ijra.com
 0.0.0.0 ira.com
+0.0.0.0 jara.com
 0.0.0.0 jera.com
 0.0.0.0 jhira.com
 0.0.0.0 jhra.com
 0.0.0.0 ji4a.com
+0.0.0.0 jia.com
 0.0.0.0 jiar.com
 0.0.0.0 jiba.com
 0.0.0.0 jida.com
@@ -23,6 +25,7 @@
 0.0.0.0 jiera.com
 0.0.0.0 jifa.com
 0.0.0.0 jifra.com
+0.0.0.0 jiira.com
 0.0.0.0 jikra.com
 0.0.0.0 jiora.com
 0.0.0.0 jipa.com
@@ -35,12 +38,14 @@
 0.0.0.0 jirac.com
 0.0.0.0 jiracom.com
 0.0.0.0 jirad.com
+0.0.0.0 jirae.com
 0.0.0.0 jiraf.com
 0.0.0.0 jirag.com
 0.0.0.0 jirah.com
 0.0.0.0 jirai.com
 0.0.0.0 jiraj.com
 0.0.0.0 jirak.com
+0.0.0.0 jiral.com
 0.0.0.0 jiram.com
 0.0.0.0 jiran.com
 0.0.0.0 jirao.com
@@ -51,12 +56,14 @@
 0.0.0.0 jirat.com
 0.0.0.0 jirau.com
 0.0.0.0 jirav.com
+0.0.0.0 jiraw.com
 0.0.0.0 jirax.com
 0.0.0.0 jiray.com
 0.0.0.0 jiraz.com
 0.0.0.0 jirc.com
 0.0.0.0 jirda.com
 0.0.0.0 jire.com
+0.0.0.0 jirea.com
 0.0.0.0 jirfa.com
 0.0.0.0 jiri.com
 0.0.0.0 jiro.com
@@ -69,6 +76,7 @@
 0.0.0.0 jiry.com
 0.0.0.0 jirz.com
 0.0.0.0 jisa.com
+0.0.0.0 jita.com
 0.0.0.0 jitra.com
 0.0.0.0 jiura.com
 0.0.0.0 jiva.com
@@ -83,6 +91,7 @@
 0.0.0.0 joira.com
 0.0.0.0 jora.com
 0.0.0.0 jra.com
+0.0.0.0 jria.com
 0.0.0.0 juira.com
 0.0.0.0 jura.com
 0.0.0.0 jyra.com
