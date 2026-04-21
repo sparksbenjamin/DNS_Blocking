@@ -52,9 +52,31 @@
     {
       "service_id": "google",
       "name": "Google",
+      "max_variants_per_seed": 400,
       "seed_domains": [
         "google.com",
         "gmail.com"
+      ]
+    },
+    {
+      "service_id": "github",
+      "name": "GitHub",
+      "seed_domains": [
+        "github.com"
+      ]
+    },
+    {
+      "service_id": "atlassian",
+      "name": "Atlassian",
+      "seed_domains": [
+        "atlassian.com"
+      ]
+    },
+    {
+      "service_id": "jira",
+      "name": "Jira",
+      "seed_domains": [
+        "jira.com"
       ]
     },
     {
@@ -83,10 +105,115 @@
       ]
     },
     {
+      "service_id": "salesforce",
+      "name": "Salesforce",
+      "seed_domains": [
+        "salesforce.com"
+      ]
+    },
+    {
       "service_id": "slack",
       "name": "Slack",
       "seed_domains": [
         "slack.com"
+      ]
+    },
+    {
+      "service_id": "stripe",
+      "name": "Stripe",
+      "seed_domains": [
+        "stripe.com"
+      ]
+    },
+    {
+      "service_id": "intuit",
+      "name": "Intuit",
+      "seed_domains": [
+        "intuit.com"
+      ]
+    },
+    {
+      "service_id": "quickbooks",
+      "name": "QuickBooks",
+      "seed_domains": [
+        "quickbooks.com"
+      ]
+    },
+    {
+      "service_id": "turbotax",
+      "name": "TurboTax",
+      "seed_domains": [
+        "turbotax.com"
+      ]
+    },
+    {
+      "service_id": "zoom",
+      "name": "Zoom",
+      "seed_domains": [
+        "zoom.us"
+      ]
+    },
+    {
+      "service_id": "duo",
+      "name": "Duo",
+      "seed_domains": [
+        "duo.com"
+      ]
+    },
+    {
+      "service_id": "cloudflare",
+      "name": "Cloudflare",
+      "seed_domains": [
+        "cloudflare.com"
+      ]
+    },
+    {
+      "service_id": "box",
+      "name": "Box",
+      "seed_domains": [
+        "box.com"
+      ]
+    },
+    {
+      "service_id": "notion",
+      "name": "Notion",
+      "seed_domains": [
+        "notion.so"
+      ]
+    },
+    {
+      "service_id": "figma",
+      "name": "Figma",
+      "seed_domains": [
+        "figma.com"
+      ]
+    },
+    {
+      "service_id": "zendesk",
+      "name": "Zendesk",
+      "seed_domains": [
+        "zendesk.com"
+      ]
+    },
+    {
+      "service_id": "ups",
+      "name": "UPS",
+      "seed_domains": [
+        "ups.com"
+      ]
+    },
+    {
+      "service_id": "fedex",
+      "name": "FedEx",
+      "seed_domains": [
+        "fedex.com"
+      ]
+    },
+    {
+      "service_id": "trello",
+      "name": "Trello",
+      "seed_domains": [
+        "trello.com"
       ]
     }
   ]

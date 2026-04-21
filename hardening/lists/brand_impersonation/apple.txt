@@ -1,6 +1,6 @@
 # Apple Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-21 00:13:30 UTC
+# Generated: 2026-04-21 01:22:00 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: apple.com, icloud.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -158,9 +158,7 @@
 0.0.0.0 iclgud.com
 0.0.0.0 iclioud.com
 0.0.0.0 icliud.com
-0.0.0.0 iclkoud.com
 0.0.0.0 iclkud.com
-0.0.0.0 iclloud.com
 0.0.0.0 icllud.com
 0.0.0.0 iclmud.com
 0.0.0.0 iclnud.com
@@ -175,7 +173,6 @@
 0.0.0.0 iclodu.com
 0.0.0.0 icloed.com
 0.0.0.0 iclohd.com
-0.0.0.0 icloid.com
 0.0.0.0 icloiud.com
 0.0.0.0 iclojd.com
 0.0.0.0 iclolud.com
@@ -202,7 +199,6 @@
 0.0.0.0 icloudb.com
 0.0.0.0 icloudc.com
 0.0.0.0 icloudcom.com
-0.0.0.0 icloudd.com
 0.0.0.0 icloude.com
 0.0.0.0 icloudf.com
 0.0.0.0 icloudg.com
@@ -232,7 +228,6 @@
 0.0.0.0 iclour.com
 0.0.0.0 iclous.com
 0.0.0.0 iclout.com
-0.0.0.0 iclouud.com
 0.0.0.0 icloux.com
 0.0.0.0 iclouyd.com
 0.0.0.0 iclovb.com
@@ -250,7 +245,6 @@
 0.0.0.0 icmoud.com
 0.0.0.0 icnoud.com
 0.0.0.0 icoloud.com
-0.0.0.0 icolud.com
 0.0.0.0 icooud.com
 0.0.0.0 icoud.com
 0.0.0.0 icpoud.com
@@ -300,7 +294,6 @@
 0.0.0.0 sapple.com
 0.0.0.0 spple.com
 0.0.0.0 ucloud.com
-0.0.0.0 uicloud.com
 0.0.0.0 upple.com
 0.0.0.0 wapple.com
 0.0.0.0 wpple.com

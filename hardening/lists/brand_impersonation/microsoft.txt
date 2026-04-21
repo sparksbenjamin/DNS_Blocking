@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-21 00:13:30 UTC
+# Generated: 2026-04-21 01:22:00 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -138,14 +138,12 @@
 0.0.0.0 livo.com
 0.0.0.0 livr.com
 0.0.0.0 livs.com
-0.0.0.0 livu.com
 0.0.0.0 livve.com
 0.0.0.0 livw.com
 0.0.0.0 livz.com
 0.0.0.0 liwe.com
 0.0.0.0 ljive.com
 0.0.0.0 ljve.com
-0.0.0.0 lkive.com
 0.0.0.0 lkve.com
 0.0.0.0 llive.com
 0.0.0.0 llue.com
@@ -174,7 +172,6 @@
 0.0.0.0 m9icrosoft.com
 0.0.0.0 macrosoft.com
 0.0.0.0 macrosoftonline.com
-0.0.0.0 mcirosoft.com
 0.0.0.0 mcrosoftonline.com
 0.0.0.0 mecrosoft.com
 0.0.0.0 mecrosoftonline.com
@@ -184,7 +181,6 @@
 0.0.0.0 mi.crosoftonline.com
 0.0.0.0 mi8crosoft.com
 0.0.0.0 mi9crosoft.com
-0.0.0.0 mibrosoft.com
 0.0.0.0 mic.rosoft.com
 0.0.0.0 mic.rosoftonline.com
 0.0.0.0 mic2osoft.com
@@ -448,7 +444,6 @@
 0.0.0.0 microzoft.com
 0.0.0.0 microzsoft.com
 0.0.0.0 micrposoft.com
-0.0.0.0 micrpsoft.com
 0.0.0.0 micrpsoftonline.com
 0.0.0.0 micrrosoft.com
 0.0.0.0 micrrosoftonline.com
@@ -499,7 +494,6 @@
 0.0.0.0 mjicrosoft.com
 0.0.0.0 mkcrosoft.com
 0.0.0.0 mkicrosoft.com
-0.0.0.0 mlcr0soft.com
 0.0.0.0 mlcros0ft.com
 0.0.0.0 mlcrosoft.com
 0.0.0.0 mlcrosoft0nline.com
@@ -795,7 +789,6 @@
 0.0.0.0 outluok.com
 0.0.0.0 outmook.com
 0.0.0.0 outnook.com
-0.0.0.0 outolok.com
 0.0.0.0 outolook.com
 0.0.0.0 outook.com
 0.0.0.0 outoook.com
