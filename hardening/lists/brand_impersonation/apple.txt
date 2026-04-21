@@ -1,6 +1,6 @@
 # Apple Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-20 23:15:40 UTC
+# Generated: 2026-04-21 00:13:30 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: apple.com, icloud.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -13,7 +13,9 @@
 0.0.0.0 2apple.com
 0.0.0.0 2pple.com
 0.0.0.0 8cloud.com
+0.0.0.0 8icloud.com
 0.0.0.0 9cloud.com
+0.0.0.0 9icloud.com
 0.0.0.0 a-pple.com
 0.0.0.0 a0ple.com
 0.0.0.0 aapple.com
@@ -29,6 +31,7 @@
 0.0.0.0 ap0le.com
 0.0.0.0 ap0ple.com
 0.0.0.0 aple.com
+0.0.0.0 aplle.com
 0.0.0.0 aplpe.com
 0.0.0.0 aplple.com
 0.0.0.0 apmle.com
@@ -37,6 +40,7 @@
 0.0.0.0 apople.com
 0.0.0.0 app-le.com
 0.0.0.0 app.le.com
+0.0.0.0 app1e.com
 0.0.0.0 appde.com
 0.0.0.0 appe.com
 0.0.0.0 appel.com
@@ -70,6 +74,7 @@
 0.0.0.0 applef.com
 0.0.0.0 appleg.com
 0.0.0.0 appleh.com
+0.0.0.0 applei.com
 0.0.0.0 applej.com
 0.0.0.0 applek.com
 0.0.0.0 applel.com
@@ -145,6 +150,7 @@
 0.0.0.0 icioub.com
 0.0.0.0 icioud.com
 0.0.0.0 ickloud.com
+0.0.0.0 ickoud.com
 0.0.0.0 icl0ud.com
 0.0.0.0 icl9ud.com
 0.0.0.0 iclaud.com
@@ -166,6 +172,7 @@
 0.0.0.0 iclo9ud.com
 0.0.0.0 icload.com
 0.0.0.0 iclod.com
+0.0.0.0 iclodu.com
 0.0.0.0 icloed.com
 0.0.0.0 iclohd.com
 0.0.0.0 icloid.com
@@ -173,6 +180,7 @@
 0.0.0.0 iclojd.com
 0.0.0.0 iclolud.com
 0.0.0.0 iclood.com
+0.0.0.0 iclooud.com
 0.0.0.0 iclopud.com
 0.0.0.0 icloqd.com
 0.0.0.0 iclotd.com
@@ -186,6 +194,7 @@
 0.0.0.0 icloud3.com
 0.0.0.0 icloud4.com
 0.0.0.0 icloud5.com
+0.0.0.0 icloud6.com
 0.0.0.0 icloud7.com
 0.0.0.0 icloud8.com
 0.0.0.0 icloud9.com
@@ -209,7 +218,9 @@
 0.0.0.0 icloudr.com
 0.0.0.0 iclouds.com
 0.0.0.0 icloudt.com
+0.0.0.0 icloudv.com
 0.0.0.0 icloudw.com
+0.0.0.0 icloudx.com
 0.0.0.0 icloudy.com
 0.0.0.0 icloudz.com
 0.0.0.0 icloue.com
@@ -241,6 +252,7 @@
 0.0.0.0 icoloud.com
 0.0.0.0 icolud.com
 0.0.0.0 icooud.com
+0.0.0.0 icoud.com
 0.0.0.0 icpoud.com
 0.0.0.0 icvloud.com
 0.0.0.0 icxloud.com
@@ -256,6 +268,7 @@
 0.0.0.0 ijcloud.com
 0.0.0.0 ikcloud.com
 0.0.0.0 ikloud.com
+0.0.0.0 ilcoud.com
 0.0.0.0 iloud.com
 0.0.0.0 iocloud.com
 0.0.0.0 ipple.com
@@ -265,7 +278,10 @@
 0.0.0.0 ivloud.com
 0.0.0.0 ixcloud.com
 0.0.0.0 ixloud.com
+0.0.0.0 jcloud.com
+0.0.0.0 jicloud.com
 0.0.0.0 kcloud.com
+0.0.0.0 kicloud.com
 0.0.0.0 lc1oud.com
 0.0.0.0 lcl0ud.com
 0.0.0.0 lcloub.com
@@ -275,6 +291,7 @@
 0.0.0.0 lclovd.com
 0.0.0.0 mcloud.com
 0.0.0.0 ocloud.com
+0.0.0.0 oicloud.com
 0.0.0.0 opple.com
 0.0.0.0 paple.com
 0.0.0.0 pple.com

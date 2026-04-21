@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-20 23:15:40 UTC
+# Generated: 2026-04-21 00:13:30 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -24,6 +24,8 @@
 0.0.0.0 affice.com
 0.0.0.0 autlook.com
 0.0.0.0 dive.com
+0.0.0.0 effice.com
+0.0.0.0 eicrosoft.com
 0.0.0.0 eutlook.com
 0.0.0.0 ffice.com
 0.0.0.0 fofice.com
@@ -59,6 +61,7 @@
 0.0.0.0 l8ve.com
 0.0.0.0 l9ve.com
 0.0.0.0 lave.com
+0.0.0.0 leve.com
 0.0.0.0 lffice.com
 0.0.0.0 lhve.com
 0.0.0.0 li-ve.com
@@ -101,18 +104,19 @@
 0.0.0.0 live6.com
 0.0.0.0 live7.com
 0.0.0.0 live8.com
-0.0.0.0 live9.com
 0.0.0.0 livea.com
 0.0.0.0 liveb.com
 0.0.0.0 livec.com
 0.0.0.0 livecom.com
 0.0.0.0 lived.com
 0.0.0.0 livee.com
+0.0.0.0 livef.com
 0.0.0.0 liveg.com
 0.0.0.0 liveh.com
 0.0.0.0 livei.com
 0.0.0.0 livej.com
 0.0.0.0 livek.com
+0.0.0.0 livel.com
 0.0.0.0 livem.com
 0.0.0.0 liveo.com
 0.0.0.0 livep.com
@@ -121,6 +125,7 @@
 0.0.0.0 lives.com
 0.0.0.0 livet.com
 0.0.0.0 liveu.com
+0.0.0.0 livev.com
 0.0.0.0 livew.com
 0.0.0.0 livex.com
 0.0.0.0 livey.com
@@ -152,7 +157,6 @@
 0.0.0.0 loive.com
 0.0.0.0 loutlook.com
 0.0.0.0 love.com
-0.0.0.0 lpive.com
 0.0.0.0 luive.com
 0.0.0.0 lutlook.com
 0.0.0.0 luve.com
@@ -226,6 +230,7 @@
 0.0.0.0 micro.softonline.com
 0.0.0.0 micro0soft.com
 0.0.0.0 micro3oft.com
+0.0.0.0 micro3oftonline.com
 0.0.0.0 micro9soft.com
 0.0.0.0 microaoft.com
 0.0.0.0 microaoftonline.com
@@ -251,6 +256,7 @@
 0.0.0.0 microroftonline.com
 0.0.0.0 micros-oft.com
 0.0.0.0 micros.oft.com
+0.0.0.0 micros0ft.com
 0.0.0.0 micros0oft.com
 0.0.0.0 micros9oft.com
 0.0.0.0 microsaft.com
@@ -314,6 +320,7 @@
 0.0.0.0 microsoftb.com
 0.0.0.0 microsoftc.com
 0.0.0.0 microsoftcom.com
+0.0.0.0 microsoftd.com
 0.0.0.0 microsofte.com
 0.0.0.0 microsoftenline.com
 0.0.0.0 microsoftf.com
@@ -356,6 +363,7 @@
 0.0.0.0 microsoftonlinea.com
 0.0.0.0 microsoftonlinec.com
 0.0.0.0 microsoftonlinecom.com
+0.0.0.0 microsoftonlined.com
 0.0.0.0 microsoftonlinei.com
 0.0.0.0 microsoftonlines.com
 0.0.0.0 microsoftonlinme.com
@@ -466,6 +474,7 @@
 0.0.0.0 mierosoft.com
 0.0.0.0 mifrosoft.com
 0.0.0.0 migrosoft.com
+0.0.0.0 migrosoftonline.com
 0.0.0.0 miicrosoft.com
 0.0.0.0 miicrosoftonline.com
 0.0.0.0 mijcrosoft.com
@@ -494,6 +503,7 @@
 0.0.0.0 mlcros0ft.com
 0.0.0.0 mlcrosoft.com
 0.0.0.0 mlcrosoft0nline.com
+0.0.0.0 mlcrosoftoniine.com
 0.0.0.0 mlcrosoftonlime.com
 0.0.0.0 mlcrosoftonllne.com
 0.0.0.0 mlicrosoft.com
@@ -511,6 +521,7 @@
 0.0.0.0 muicrosoft.com
 0.0.0.0 mutlook.com
 0.0.0.0 mycrosoft.com
+0.0.0.0 mycrosoftonline.com
 0.0.0.0 nffice.com
 0.0.0.0 nicr0soft.com
 0.0.0.0 nicrosoft.com
@@ -570,6 +581,7 @@
 0.0.0.0 office3.com
 0.0.0.0 office4.com
 0.0.0.0 office5.com
+0.0.0.0 office6.com
 0.0.0.0 office7.com
 0.0.0.0 office8.com
 0.0.0.0 office9.com
@@ -612,6 +624,7 @@
 0.0.0.0 offidce.com
 0.0.0.0 offie.com
 0.0.0.0 offiec.com
+0.0.0.0 offiee.com
 0.0.0.0 offifce.com
 0.0.0.0 offife.com
 0.0.0.0 offige.com
@@ -622,7 +635,6 @@
 0.0.0.0 offisce.com
 0.0.0.0 offise.com
 0.0.0.0 offiuce.com
-0.0.0.0 offive.com
 0.0.0.0 offixce.com
 0.0.0.0 offixe.com
 0.0.0.0 offjce.com
@@ -648,6 +660,7 @@
 0.0.0.0 ogffice.com
 0.0.0.0 ogfice.com
 0.0.0.0 ohtlook.com
+0.0.0.0 oicrosoft.com
 0.0.0.0 oiffice.com
 0.0.0.0 oitlook.com
 0.0.0.0 oiutlook.com
@@ -693,12 +706,14 @@
 0.0.0.0 outdook.com
 0.0.0.0 outglook.com
 0.0.0.0 outhook.com
+0.0.0.0 outi00k.com
 0.0.0.0 outiook.com
 0.0.0.0 outklook.com
 0.0.0.0 outkook.com
 0.0.0.0 outl.ook.com
 0.0.0.0 outl00k.com
 0.0.0.0 outl0ok.com
+0.0.0.0 outl0ook.com
 0.0.0.0 outl9ok.com
 0.0.0.0 outlaok.com
 0.0.0.0 outlgok.com
@@ -736,7 +751,12 @@
 0.0.0.0 outlook1.com
 0.0.0.0 outlook2.com
 0.0.0.0 outlook3.com
+0.0.0.0 outlook5.com
+0.0.0.0 outlook6.com
 0.0.0.0 outlook7.com
+0.0.0.0 outlook8.com
+0.0.0.0 outlook9.com
+0.0.0.0 outlooka.com
 0.0.0.0 outlookb.com
 0.0.0.0 outlookc.com
 0.0.0.0 outlookcom.com
@@ -750,11 +770,14 @@
 0.0.0.0 outlookm.com
 0.0.0.0 outlookn.com
 0.0.0.0 outlooko.com
+0.0.0.0 outlookp.com
+0.0.0.0 outlookq.com
 0.0.0.0 outlookr.com
 0.0.0.0 outlooks.com
 0.0.0.0 outlookt.com
 0.0.0.0 outlooku.com
 0.0.0.0 outlookv.com
+0.0.0.0 outlookw.com
 0.0.0.0 outlookx.com
 0.0.0.0 outlooky.com
 0.0.0.0 outlookz.com
@@ -788,6 +811,7 @@
 0.0.0.0 ouytlook.com
 0.0.0.0 ouzlook.com
 0.0.0.0 ovffice.com
+0.0.0.0 ovtiook.com
 0.0.0.0 ovtlook.com
 0.0.0.0 owtlook.com
 0.0.0.0 oytlook.com
@@ -817,6 +841,7 @@
 0.0.0.0 xn--0ffce-vsa.com
 0.0.0.0 xn--ffice-iua.com
 0.0.0.0 xn--icrosoft-c3a.com
+0.0.0.0 xn--icrosoft-g89c.com
 0.0.0.0 xn--icrosoft-qy7c.com
 0.0.0.0 xn--icrosoftonline-kk7g.com
 0.0.0.0 xn--lcrosoft-g89c.com
@@ -832,6 +857,7 @@
 0.0.0.0 xn--mcrosft-7ya2d.com
 0.0.0.0 xn--mcrosoft-1ud.com
 0.0.0.0 xn--mcrosoft-21a.com
+0.0.0.0 xn--mcrosoft-6ob.com
 0.0.0.0 xn--mcrosoft-9ib.com
 0.0.0.0 xn--mcrosoft-bkb.com
 0.0.0.0 xn--mcrosoft-c2a.com

@@ -1,6 +1,6 @@
 # Google Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-20 23:15:40 UTC
+# Generated: 2026-04-21 00:13:30 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: google.com, gmail.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -162,6 +162,7 @@
 0.0.0.0 gtmail.com
 0.0.0.0 gvmail.com
 0.0.0.0 gymail.com
+0.0.0.0 gzmail.com
 0.0.0.0 hgmail.com
 0.0.0.0 hmail.com
 0.0.0.0 mail.com
@@ -228,6 +229,7 @@
 0.0.0.0 xn--gml-bla9e.com
 0.0.0.0 xn--gml-bpa4s.com
 0.0.0.0 xn--gml-fla4d.com
+0.0.0.0 xn--gml-fla4e.com
 0.0.0.0 xn--gml-fla9c.com
 0.0.0.0 xn--gml-fla9d.com
 0.0.0.0 xn--gml-jla4c.com
@@ -247,7 +249,6 @@
 0.0.0.0 xn--mail-47b.com
 0.0.0.0 xn--mail-9pb.com
 0.0.0.0 xn--mail-9wa.com
-0.0.0.0 xn--mail-kqb.com
 0.0.0.0 xn--mail-ksb.com
 0.0.0.0 xn--mail-kxa.com
 0.0.0.0 xn--mail-pwa.com

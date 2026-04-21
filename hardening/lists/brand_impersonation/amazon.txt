@@ -1,6 +1,6 @@
 # Amazon Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-20 23:15:40 UTC
+# Generated: 2026-04-21 00:13:30 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: amazon.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -34,6 +34,7 @@
 0.0.0.0 amagzon.com
 0.0.0.0 amahon.com
 0.0.0.0 amahzon.com
+0.0.0.0 amajon.com
 0.0.0.0 amaon.com
 0.0.0.0 amaozn.com
 0.0.0.0 amaqon.com
@@ -59,10 +60,12 @@
 0.0.0.0 amaz9on.com
 0.0.0.0 amazan.com
 0.0.0.0 amazaon.com
+0.0.0.0 amazen.com
 0.0.0.0 amazeon.com
 0.0.0.0 amazeson.com
 0.0.0.0 amazgon.com
 0.0.0.0 amazhon.com
+0.0.0.0 amazin.com
 0.0.0.0 amazion.com
 0.0.0.0 amazkn.com
 0.0.0.0 amazkon.com
@@ -94,10 +97,10 @@
 0.0.0.0 amazon6.com
 0.0.0.0 amazon7.com
 0.0.0.0 amazon8.com
+0.0.0.0 amazon9.com
 0.0.0.0 amazona.com
 0.0.0.0 amazonb.com
 0.0.0.0 amazonc.com
-0.0.0.0 amazoncom.com
 0.0.0.0 amazond.com
 0.0.0.0 amazone.com
 0.0.0.0 amazonf.com

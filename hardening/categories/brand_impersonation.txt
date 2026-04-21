@@ -1,5 +1,5 @@
 # Brand Impersonation Hardening
-# Generated: 2026-04-20 23:15:40 UTC
+# Generated: 2026-04-21 00:13:30 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Purpose: Aggregated DNSTwist-based impersonation hardening
 
@@ -32,8 +32,10 @@
 0.0.0.0 2pple.com
 0.0.0.0 3lack.com
 0.0.0.0 8cloud.com
+0.0.0.0 8icloud.com
 0.0.0.0 9cloud.com
 0.0.0.0 9ffice.com
+0.0.0.0 9icloud.com
 0.0.0.0 9office.com
 0.0.0.0 9okta.com
 0.0.0.0 9utlook.com
@@ -127,6 +129,7 @@
 0.0.0.0 adobeh.com
 0.0.0.0 adobel.com
 0.0.0.0 adobem.com
+0.0.0.0 adober.com
 0.0.0.0 adobes.com
 0.0.0.0 adobet.com
 0.0.0.0 adobeu.com
@@ -149,6 +152,7 @@
 0.0.0.0 adobz.com
 0.0.0.0 adoce.com
 0.0.0.0 adodc.com
+0.0.0.0 adode.com
 0.0.0.0 adodle.com
 0.0.0.0 adoe.com
 0.0.0.0 adoeb.com
@@ -161,6 +165,7 @@
 0.0.0.0 adoje.com
 0.0.0.0 adokbe.com
 0.0.0.0 adolbe.com
+0.0.0.0 adollbe.com
 0.0.0.0 adonbe.com
 0.0.0.0 adone.com
 0.0.0.0 adoobe.com
@@ -168,6 +173,7 @@
 0.0.0.0 adore.com
 0.0.0.0 adovbe.com
 0.0.0.0 adove.com
+0.0.0.0 adpbe.com
 0.0.0.0 adpobe.com
 0.0.0.0 adrobat.com
 0.0.0.0 adrobe.com
@@ -212,6 +218,7 @@
 0.0.0.0 amagzon.com
 0.0.0.0 amahon.com
 0.0.0.0 amahzon.com
+0.0.0.0 amajon.com
 0.0.0.0 amaon.com
 0.0.0.0 amaozn.com
 0.0.0.0 amaqon.com
@@ -237,10 +244,12 @@
 0.0.0.0 amaz9on.com
 0.0.0.0 amazan.com
 0.0.0.0 amazaon.com
+0.0.0.0 amazen.com
 0.0.0.0 amazeon.com
 0.0.0.0 amazeson.com
 0.0.0.0 amazgon.com
 0.0.0.0 amazhon.com
+0.0.0.0 amazin.com
 0.0.0.0 amazion.com
 0.0.0.0 amazkn.com
 0.0.0.0 amazkon.com
@@ -272,10 +281,10 @@
 0.0.0.0 amazon6.com
 0.0.0.0 amazon7.com
 0.0.0.0 amazon8.com
+0.0.0.0 amazon9.com
 0.0.0.0 amazona.com
 0.0.0.0 amazonb.com
 0.0.0.0 amazonc.com
-0.0.0.0 amazoncom.com
 0.0.0.0 amazond.com
 0.0.0.0 amazone.com
 0.0.0.0 amazonf.com
@@ -355,6 +364,7 @@
 0.0.0.0 ap0ple.com
 0.0.0.0 apazon.com
 0.0.0.0 aple.com
+0.0.0.0 aplle.com
 0.0.0.0 aplpe.com
 0.0.0.0 aplple.com
 0.0.0.0 apmazon.com
@@ -364,6 +374,7 @@
 0.0.0.0 apople.com
 0.0.0.0 app-le.com
 0.0.0.0 app.le.com
+0.0.0.0 app1e.com
 0.0.0.0 appde.com
 0.0.0.0 appe.com
 0.0.0.0 appel.com
@@ -397,6 +408,7 @@
 0.0.0.0 applef.com
 0.0.0.0 appleg.com
 0.0.0.0 appleh.com
+0.0.0.0 applei.com
 0.0.0.0 applej.com
 0.0.0.0 applek.com
 0.0.0.0 applel.com
@@ -458,6 +470,7 @@
 0.0.0.0 arrazon.com
 0.0.0.0 ascrobat.com
 0.0.0.0 asdobe.com
+0.0.0.0 aslack.com
 0.0.0.0 asmazon.com
 0.0.0.0 asobe.com
 0.0.0.0 aspple.com
@@ -508,6 +521,7 @@
 0.0.0.0 dcusign.com
 0.0.0.0 ddocusign.com
 0.0.0.0 ddropbox.com
+0.0.0.0 decusign.com
 0.0.0.0 deopbox.com
 0.0.0.0 deropbox.com
 0.0.0.0 dicusign.com
@@ -675,6 +689,8 @@
 0.0.0.0 edobe.com
 0.0.0.0 edocusign.com
 0.0.0.0 edropbox.com
+0.0.0.0 effice.com
+0.0.0.0 eicrosoft.com
 0.0.0.0 ekta.com
 0.0.0.0 elack.com
 0.0.0.0 email.com
@@ -842,11 +858,13 @@
 0.0.0.0 gutlook.com
 0.0.0.0 gvmail.com
 0.0.0.0 gymail.com
+0.0.0.0 gzmail.com
 0.0.0.0 hallosign.com
 0.0.0.0 hcloud.com
 0.0.0.0 hel.losign.com
 0.0.0.0 heliosign.com
 0.0.0.0 hello-sign.com
+0.0.0.0 hellosien.com
 0.0.0.0 hellosig.com
 0.0.0.0 hellosigh.com
 0.0.0.0 hellosigns.com
@@ -877,6 +895,7 @@
 0.0.0.0 icioub.com
 0.0.0.0 icioud.com
 0.0.0.0 ickloud.com
+0.0.0.0 ickoud.com
 0.0.0.0 icl0ud.com
 0.0.0.0 icl9ud.com
 0.0.0.0 iclaud.com
@@ -898,6 +917,7 @@
 0.0.0.0 iclo9ud.com
 0.0.0.0 icload.com
 0.0.0.0 iclod.com
+0.0.0.0 iclodu.com
 0.0.0.0 icloed.com
 0.0.0.0 iclohd.com
 0.0.0.0 icloid.com
@@ -905,6 +925,7 @@
 0.0.0.0 iclojd.com
 0.0.0.0 iclolud.com
 0.0.0.0 iclood.com
+0.0.0.0 iclooud.com
 0.0.0.0 iclopud.com
 0.0.0.0 icloqd.com
 0.0.0.0 iclotd.com
@@ -918,6 +939,7 @@
 0.0.0.0 icloud3.com
 0.0.0.0 icloud4.com
 0.0.0.0 icloud5.com
+0.0.0.0 icloud6.com
 0.0.0.0 icloud7.com
 0.0.0.0 icloud8.com
 0.0.0.0 icloud9.com
@@ -941,7 +963,9 @@
 0.0.0.0 icloudr.com
 0.0.0.0 iclouds.com
 0.0.0.0 icloudt.com
+0.0.0.0 icloudv.com
 0.0.0.0 icloudw.com
+0.0.0.0 icloudx.com
 0.0.0.0 icloudy.com
 0.0.0.0 icloudz.com
 0.0.0.0 icloue.com
@@ -973,6 +997,7 @@
 0.0.0.0 icoloud.com
 0.0.0.0 icolud.com
 0.0.0.0 icooud.com
+0.0.0.0 icoud.com
 0.0.0.0 icpoud.com
 0.0.0.0 icrosoft.com
 0.0.0.0 icrosoftonline.com
@@ -997,6 +1022,7 @@
 0.0.0.0 ikcloud.com
 0.0.0.0 ikloud.com
 0.0.0.0 ikta.com
+0.0.0.0 ilcoud.com
 0.0.0.0 iloud.com
 0.0.0.0 ilve.com
 0.0.0.0 imazon.com
@@ -1014,9 +1040,12 @@
 0.0.0.0 ivloud.com
 0.0.0.0 ixcloud.com
 0.0.0.0 ixloud.com
+0.0.0.0 jcloud.com
+0.0.0.0 jicloud.com
 0.0.0.0 jicrosoft.com
 0.0.0.0 kcloud.com
 0.0.0.0 kffice.com
+0.0.0.0 kicloud.com
 0.0.0.0 kicrosoft.com
 0.0.0.0 kive.com
 0.0.0.0 kkta.com
@@ -1044,6 +1073,7 @@
 0.0.0.0 lcloud.com
 0.0.0.0 lcloudl.com
 0.0.0.0 lclovd.com
+0.0.0.0 leve.com
 0.0.0.0 lffice.com
 0.0.0.0 lhve.com
 0.0.0.0 li-ve.com
@@ -1086,18 +1116,19 @@
 0.0.0.0 live6.com
 0.0.0.0 live7.com
 0.0.0.0 live8.com
-0.0.0.0 live9.com
 0.0.0.0 livea.com
 0.0.0.0 liveb.com
 0.0.0.0 livec.com
 0.0.0.0 livecom.com
 0.0.0.0 lived.com
 0.0.0.0 livee.com
+0.0.0.0 livef.com
 0.0.0.0 liveg.com
 0.0.0.0 liveh.com
 0.0.0.0 livei.com
 0.0.0.0 livej.com
 0.0.0.0 livek.com
+0.0.0.0 livel.com
 0.0.0.0 livem.com
 0.0.0.0 liveo.com
 0.0.0.0 livep.com
@@ -1106,6 +1137,7 @@
 0.0.0.0 lives.com
 0.0.0.0 livet.com
 0.0.0.0 liveu.com
+0.0.0.0 livev.com
 0.0.0.0 livew.com
 0.0.0.0 livex.com
 0.0.0.0 livey.com
@@ -1140,7 +1172,6 @@
 0.0.0.0 loutlook.com
 0.0.0.0 love.com
 0.0.0.0 lpaypal.com
-0.0.0.0 lpive.com
 0.0.0.0 lropbox.com
 0.0.0.0 luive.com
 0.0.0.0 lutlook.com
@@ -1161,6 +1192,7 @@
 0.0.0.0 macrosoft.com
 0.0.0.0 macrosoftonline.com
 0.0.0.0 mail.com
+0.0.0.0 maypal.com
 0.0.0.0 mazon.com
 0.0.0.0 mcirosoft.com
 0.0.0.0 mcloud.com
@@ -1220,6 +1252,7 @@
 0.0.0.0 micro.softonline.com
 0.0.0.0 micro0soft.com
 0.0.0.0 micro3oft.com
+0.0.0.0 micro3oftonline.com
 0.0.0.0 micro9soft.com
 0.0.0.0 microaoft.com
 0.0.0.0 microaoftonline.com
@@ -1245,6 +1278,7 @@
 0.0.0.0 microroftonline.com
 0.0.0.0 micros-oft.com
 0.0.0.0 micros.oft.com
+0.0.0.0 micros0ft.com
 0.0.0.0 micros0oft.com
 0.0.0.0 micros9oft.com
 0.0.0.0 microsaft.com
@@ -1308,6 +1342,7 @@
 0.0.0.0 microsoftb.com
 0.0.0.0 microsoftc.com
 0.0.0.0 microsoftcom.com
+0.0.0.0 microsoftd.com
 0.0.0.0 microsofte.com
 0.0.0.0 microsoftenline.com
 0.0.0.0 microsoftf.com
@@ -1350,6 +1385,7 @@
 0.0.0.0 microsoftonlinea.com
 0.0.0.0 microsoftonlinec.com
 0.0.0.0 microsoftonlinecom.com
+0.0.0.0 microsoftonlined.com
 0.0.0.0 microsoftonlinei.com
 0.0.0.0 microsoftonlines.com
 0.0.0.0 microsoftonlinme.com
@@ -1460,6 +1496,7 @@
 0.0.0.0 mierosoft.com
 0.0.0.0 mifrosoft.com
 0.0.0.0 migrosoft.com
+0.0.0.0 migrosoftonline.com
 0.0.0.0 miicrosoft.com
 0.0.0.0 miicrosoftonline.com
 0.0.0.0 mijcrosoft.com
@@ -1489,6 +1526,7 @@
 0.0.0.0 mlcros0ft.com
 0.0.0.0 mlcrosoft.com
 0.0.0.0 mlcrosoft0nline.com
+0.0.0.0 mlcrosoftoniine.com
 0.0.0.0 mlcrosoftonlime.com
 0.0.0.0 mlcrosoftonllne.com
 0.0.0.0 mlicrosoft.com
@@ -1507,6 +1545,7 @@
 0.0.0.0 muicrosoft.com
 0.0.0.0 mutlook.com
 0.0.0.0 mycrosoft.com
+0.0.0.0 mycrosoftonline.com
 0.0.0.0 nffice.com
 0.0.0.0 nicr0soft.com
 0.0.0.0 nicrosoft.com
@@ -1573,6 +1612,7 @@
 0.0.0.0 office3.com
 0.0.0.0 office4.com
 0.0.0.0 office5.com
+0.0.0.0 office6.com
 0.0.0.0 office7.com
 0.0.0.0 office8.com
 0.0.0.0 office9.com
@@ -1615,6 +1655,7 @@
 0.0.0.0 offidce.com
 0.0.0.0 offie.com
 0.0.0.0 offiec.com
+0.0.0.0 offiee.com
 0.0.0.0 offifce.com
 0.0.0.0 offife.com
 0.0.0.0 offige.com
@@ -1625,7 +1666,6 @@
 0.0.0.0 offisce.com
 0.0.0.0 offise.com
 0.0.0.0 offiuce.com
-0.0.0.0 offive.com
 0.0.0.0 offixce.com
 0.0.0.0 offixe.com
 0.0.0.0 offjce.com
@@ -1651,6 +1691,8 @@
 0.0.0.0 ogffice.com
 0.0.0.0 ogfice.com
 0.0.0.0 ohtlook.com
+0.0.0.0 oicloud.com
+0.0.0.0 oicrosoft.com
 0.0.0.0 oiffice.com
 0.0.0.0 oita.com
 0.0.0.0 oitlook.com
@@ -1666,6 +1708,7 @@
 0.0.0.0 okfa.com
 0.0.0.0 okffice.com
 0.0.0.0 okfta.com
+0.0.0.0 okga.com
 0.0.0.0 okgta.com
 0.0.0.0 okita.com
 0.0.0.0 okjta.com
@@ -1697,6 +1740,7 @@
 0.0.0.0 oktal.com
 0.0.0.0 oktam.com
 0.0.0.0 oktan.com
+0.0.0.0 oktao.com
 0.0.0.0 oktap.com
 0.0.0.0 oktar.com
 0.0.0.0 oktas.com
@@ -1738,6 +1782,7 @@
 0.0.0.0 onfice.com
 0.0.0.0 ooffice.com
 0.0.0.0 ookta.com
+0.0.0.0 oota.com
 0.0.0.0 ootlook.com
 0.0.0.0 ooutlook.com
 0.0.0.0 opaypal.com
@@ -1775,12 +1820,14 @@
 0.0.0.0 outdook.com
 0.0.0.0 outglook.com
 0.0.0.0 outhook.com
+0.0.0.0 outi00k.com
 0.0.0.0 outiook.com
 0.0.0.0 outklook.com
 0.0.0.0 outkook.com
 0.0.0.0 outl.ook.com
 0.0.0.0 outl00k.com
 0.0.0.0 outl0ok.com
+0.0.0.0 outl0ook.com
 0.0.0.0 outl9ok.com
 0.0.0.0 outlaok.com
 0.0.0.0 outlgok.com
@@ -1818,7 +1865,12 @@
 0.0.0.0 outlook1.com
 0.0.0.0 outlook2.com
 0.0.0.0 outlook3.com
+0.0.0.0 outlook5.com
+0.0.0.0 outlook6.com
 0.0.0.0 outlook7.com
+0.0.0.0 outlook8.com
+0.0.0.0 outlook9.com
+0.0.0.0 outlooka.com
 0.0.0.0 outlookb.com
 0.0.0.0 outlookc.com
 0.0.0.0 outlookcom.com
@@ -1832,11 +1884,14 @@
 0.0.0.0 outlookm.com
 0.0.0.0 outlookn.com
 0.0.0.0 outlooko.com
+0.0.0.0 outlookp.com
+0.0.0.0 outlookq.com
 0.0.0.0 outlookr.com
 0.0.0.0 outlooks.com
 0.0.0.0 outlookt.com
 0.0.0.0 outlooku.com
 0.0.0.0 outlookv.com
+0.0.0.0 outlookw.com
 0.0.0.0 outlookx.com
 0.0.0.0 outlooky.com
 0.0.0.0 outlookz.com
@@ -1870,6 +1925,7 @@
 0.0.0.0 ouytlook.com
 0.0.0.0 ouzlook.com
 0.0.0.0 ovffice.com
+0.0.0.0 ovtiook.com
 0.0.0.0 ovtlook.com
 0.0.0.0 owtlook.com
 0.0.0.0 oytlook.com
@@ -1927,6 +1983,7 @@
 0.0.0.0 paypal1.com
 0.0.0.0 paypal3.com
 0.0.0.0 paypal8.com
+0.0.0.0 paypal9.com
 0.0.0.0 paypala.com
 0.0.0.0 paypalc.com
 0.0.0.0 paypale.com
@@ -1984,7 +2041,6 @@
 0.0.0.0 pive.com
 0.0.0.0 piypal.com
 0.0.0.0 pkta.com
-0.0.0.0 playpal.com
 0.0.0.0 plive.com
 0.0.0.0 poaypal.com
 0.0.0.0 poffice.com
@@ -2093,6 +2149,7 @@
 0.0.0.0 slawck.com
 0.0.0.0 slcak.com
 0.0.0.0 slcck.com
+0.0.0.0 slck.com
 0.0.0.0 sleck.com
 0.0.0.0 slick.com
 0.0.0.0 sllack.com
@@ -2281,6 +2338,7 @@
 0.0.0.0 xn--gml-bla9e.com
 0.0.0.0 xn--gml-bpa4s.com
 0.0.0.0 xn--gml-fla4d.com
+0.0.0.0 xn--gml-fla4e.com
 0.0.0.0 xn--gml-fla9c.com
 0.0.0.0 xn--gml-fla9d.com
 0.0.0.0 xn--gml-jla4c.com
@@ -2309,6 +2367,7 @@
 0.0.0.0 xn--iclud-wta.com
 0.0.0.0 xn--icoud-o4a.com
 0.0.0.0 xn--icrosoft-c3a.com
+0.0.0.0 xn--icrosoft-g89c.com
 0.0.0.0 xn--icrosoft-qy7c.com
 0.0.0.0 xn--icrosoftonline-kk7g.com
 0.0.0.0 xn--iloud-q09a.com
@@ -2329,7 +2388,6 @@
 0.0.0.0 xn--mail-47b.com
 0.0.0.0 xn--mail-9pb.com
 0.0.0.0 xn--mail-9wa.com
-0.0.0.0 xn--mail-kqb.com
 0.0.0.0 xn--mail-ksb.com
 0.0.0.0 xn--mail-kxa.com
 0.0.0.0 xn--mail-pwa.com
@@ -2351,6 +2409,7 @@
 0.0.0.0 xn--mcrosft-7ya2d.com
 0.0.0.0 xn--mcrosoft-1ud.com
 0.0.0.0 xn--mcrosoft-21a.com
+0.0.0.0 xn--mcrosoft-6ob.com
 0.0.0.0 xn--mcrosoft-9ib.com
 0.0.0.0 xn--mcrosoft-bkb.com
 0.0.0.0 xn--mcrosoft-c2a.com
