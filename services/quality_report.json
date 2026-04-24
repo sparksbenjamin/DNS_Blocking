@@ -621,9 +621,9 @@
       "service": "blp_ransomware"
     },
     {
-      "baseline_count": 236,
-      "delta_pct": 1.69,
-      "domain_count": 240,
+      "baseline_count": 240,
+      "delta_pct": 7.08,
+      "domain_count": 257,
       "group": "malware",
       "kind": "service",
       "path": "services/lists/malware/threatfox.txt",
@@ -632,8 +632,8 @@
     },
     {
       "baseline_count": 1467,
-      "delta_pct": 0.0,
-      "domain_count": 1467,
+      "delta_pct": 0.27,
+      "domain_count": 1471,
       "group": "malware",
       "kind": "service",
       "path": "services/lists/malware/urlhaus.txt",
@@ -782,8 +782,8 @@
     },
     {
       "baseline_count": 18317,
-      "delta_pct": 0.0,
-      "domain_count": 18317,
+      "delta_pct": 0.2,
+      "domain_count": 18354,
       "group": "phishing",
       "kind": "service",
       "path": "services/lists/phishing/phishtank.txt",
@@ -1741,9 +1741,9 @@
       "service": null
     },
     {
-      "baseline_count": 3302,
-      "delta_pct": 0.09,
-      "domain_count": 3305,
+      "baseline_count": 3305,
+      "delta_pct": 0.51,
+      "domain_count": 3322,
       "group": "malware",
       "kind": "category",
       "path": "services/categories/malware.txt",
@@ -1762,8 +1762,8 @@
     },
     {
       "baseline_count": 299994,
-      "delta_pct": 0.0,
-      "domain_count": 299994,
+      "delta_pct": 0.01,
+      "domain_count": 300030,
       "group": "phishing",
       "kind": "category",
       "path": "services/categories/phishing.txt",
@@ -1841,13 +1841,13 @@
       "service": null
     }
   ],
-  "generated_at": "2026-04-24T16:01:15.035566+00:00",
+  "generated_at": "2026-04-24T18:36:19.757776+00:00",
   "issues": [],
   "profile": "services",
   "status": "passed",
   "summary": {
     "files_checked": 184,
     "issues": 0,
-    "total_domains": 1082247
+    "total_domains": 1082358
   }
 }
