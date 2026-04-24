@@ -911,7 +911,8 @@ def ensure_placeholder_readme(path: Path) -> None:
     path.write_text(
         "# Active Impersonation Review\n\n"
         "Run `python3 scripts/generate_active_impersonation.py` after generating hardening lists "
-        "to populate this directory with review reports.\n",
+        "or trigger the `Update Active Impersonation Review` workflow to populate this directory "
+        "with review reports.\n",
         encoding="utf-8",
     )
 

@@ -26,7 +26,7 @@ Quick links:
 
 ## Active Impersonation Review
 
-If you want more than “this domain is a live DNSTwist permutation,” run `scripts/generate_active_impersonation.py` after the hardening lists are generated.
+If you want more than “this domain is a live DNSTwist permutation,” run `scripts/generate_active_impersonation.py` after the hardening lists are generated, or use the separate `Update Active Impersonation Review` workflow.
 
 That report stage:
 - checks whether the real brand site is reachable
@@ -36,7 +36,7 @@ That report stage:
 
 This is useful when you want a tighter triage loop instead of auto-blocking every live permutation.
 
-If you do not see generated review files under `hardening/active_impersonation/`, the most likely reason is that the workflow ran with `ACTIVE_IMPERSONATION_ENABLED=false`.
+If you do not see generated review files under `hardening/active_impersonation/`, the most likely reason is that the separate review workflow has not run yet or has not committed a report yet.
 
 ## Generation Settings
 

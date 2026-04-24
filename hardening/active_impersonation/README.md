@@ -24,13 +24,13 @@ Recommended use:
 2. Run `scripts/generate_active_impersonation.py` against all or selected targets
 3. Review `HIGH_MATCH` and `MEDIUM_MATCH` rows before promoting anything into a curated blocklist
 
-The scheduled hardening workflow can generate these reports too, but it is off by default because probing every live lookalike site is materially heavier than generating the DNSTwist blocklists alone.
+The recommended automation path is the separate `Update Active Impersonation Review` workflow, which can run on its own cadence without re-running DNSTwist.
 
-If you only see this placeholder after a hardening workflow run, the most likely reason is that the review stage was **not enabled**.
+If you only see this placeholder after a review workflow run, the most likely reason is that the workflow has not completed yet or has not committed a generated report.
 
-The workflow only generates real review artifacts here when the repo variable below is set:
+Useful repo variables for the review workflow:
 
-- `ACTIVE_IMPERSONATION_ENABLED=true`
+- `ACTIVE_IMPERSONATION_RUNNER_LABELS=["self-hosted","linux"]`
 
 Optional scope controls:
 

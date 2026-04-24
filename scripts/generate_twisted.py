@@ -442,7 +442,8 @@ def generate_readme(
     lines.append("## Active Impersonation Review\n")
     lines.append(
         "If you want more than “this domain is a live DNSTwist permutation,” run "
-        "`scripts/generate_active_impersonation.py` after the hardening lists are generated.\n"
+        "`scripts/generate_active_impersonation.py` after the hardening lists are generated, "
+        "or use the separate `Update Active Impersonation Review` workflow.\n"
     )
     lines.append("That report stage:")
     lines.append("- checks whether the real brand site is reachable")
@@ -454,7 +455,7 @@ def generate_readme(
     )
     lines.append(
         "If you do not see generated review files under `hardening/active_impersonation/`, the most likely reason "
-        "is that the workflow ran with `ACTIVE_IMPERSONATION_ENABLED=false`.\n"
+        "is that the separate review workflow has not run yet or has not committed a report yet.\n"
     )
     lines.append("## Generation Settings\n")
     lines.append(f"- Source tool: [dnstwist](https://github.com/elceef/dnstwist)")
