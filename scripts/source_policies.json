@@ -1,0 +1,236 @@
+{
+  "_schema_version": 1,
+  "defaults": {
+    "mode": "registrable",
+    "forbid_public_suffix_entries": true,
+    "allow_shared_hosts": false,
+    "must_exist": false,
+    "max_delta_pct": 50,
+    "min_baseline_count_for_delta": 5,
+    "exclude_exact": [],
+    "exclude_suffix": [],
+    "required_domains": []
+  },
+  "categories": {
+    "adult": {
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "badware_hoster": {
+      "allow_shared_hosts": true,
+      "max_delta_pct": 50
+    },
+    "dns": {
+      "mode": "exact",
+      "allow_shared_hosts": true
+    },
+    "dynamic_dns": {
+      "allow_shared_hosts": true,
+      "max_delta_pct": 50
+    },
+    "gaming": {
+      "exclude_suffix": [
+        "edgekey.net",
+        "edgesuite.net",
+        "s3.amazonaws.com"
+      ],
+      "max_delta_pct": 40
+    },
+    "malware": {
+      "allow_shared_hosts": true,
+      "max_delta_pct": 1500
+    },
+    "phishing": {
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "scam": {
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "streaming": {
+      "exclude_suffix": [
+        "edgekey.net",
+        "edgesuite.net",
+        "s3.amazonaws.com"
+      ],
+      "max_delta_pct": 40
+    },
+    "tracking": {
+      "allow_shared_hosts": true,
+      "max_delta_pct": 50
+    }
+  },
+  "services": {
+    "CFDNS": {
+      "group": "dns",
+      "must_exist": true,
+      "required_domains": [
+        "cloudflare-dns.com"
+      ]
+    },
+    "blp_fraud": {
+      "group": "scam",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "blp_ransomware": {
+      "group": "malware",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "blp_scam": {
+      "group": "scam",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "blp_tracking": {
+      "group": "tracking",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 50
+    },
+    "chadmayfield_porn": {
+      "group": "adult",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "epic_games": {
+      "group": "gaming",
+      "must_exist": true,
+      "required_domains": [
+        "epicgames.com"
+      ],
+      "max_delta_pct": 40
+    },
+    "googleDNS": {
+      "group": "dns",
+      "must_exist": true,
+      "required_domains": [
+        "dns.google.com"
+      ]
+    },
+    "hagezi_dyndns": {
+      "group": "dynamic_dns",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 50
+    },
+    "hagezi_fake": {
+      "group": "scam",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "hagezi_hoster": {
+      "group": "badware_hoster",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 50
+    },
+    "netflix": {
+      "group": "streaming",
+      "must_exist": true,
+      "required_domains": [
+        "netflix.com"
+      ],
+      "max_delta_pct": 40
+    },
+    "nintendo": {
+      "group": "gaming",
+      "must_exist": true,
+      "required_domains": [
+        "nintendo.com"
+      ],
+      "max_delta_pct": 40
+    },
+    "openphish": {
+      "group": "phishing",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "phishing_army": {
+      "group": "phishing",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "phishtank": {
+      "group": "phishing",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "playstation": {
+      "group": "gaming",
+      "must_exist": true,
+      "required_domains": [
+        "playstation.com"
+      ],
+      "max_delta_pct": 40
+    },
+    "playstore": {
+      "group": "software",
+      "must_exist": true,
+      "required_domains": [
+        "play-fe.googleapis.com"
+      ],
+      "max_delta_pct": 50
+    },
+    "spotify": {
+      "group": "streaming",
+      "must_exist": true,
+      "required_domains": [
+        "spotify.com"
+      ],
+      "max_delta_pct": 40
+    },
+    "stevenblack_porn": {
+      "group": "adult",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "steam": {
+      "group": "gaming",
+      "must_exist": true,
+      "required_domains": [
+        "steampowered.com"
+      ],
+      "max_delta_pct": 40
+    },
+    "threatfox": {
+      "group": "malware",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "urlhaus": {
+      "group": "malware",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "xboxlive": {
+      "group": "gaming",
+      "must_exist": true,
+      "required_domains": [
+        "xboxlive.com"
+      ],
+      "max_delta_pct": 40
+    },
+    "youtube": {
+      "group": "streaming",
+      "must_exist": true,
+      "required_domains": [
+        "youtube.com"
+      ],
+      "max_delta_pct": 40
+    }
+  }
+}

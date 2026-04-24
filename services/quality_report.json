@@ -1,0 +1,1668 @@
+{
+  "files": [
+    {
+      "baseline_count": 5909,
+      "delta_pct": 0.47,
+      "domain_count": 5881,
+      "group": "adult",
+      "kind": "service",
+      "path": "services/lists/adult/chadmayfield_porn.txt",
+      "service": "chadmayfield_porn"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "adult",
+      "kind": "service",
+      "path": "services/lists/adult/grindr.txt",
+      "service": "grindr"
+    },
+    {
+      "baseline_count": 85006,
+      "delta_pct": 1.85,
+      "domain_count": 83433,
+      "group": "adult",
+      "kind": "service",
+      "path": "services/lists/adult/stevenblack_porn.txt",
+      "service": "stevenblack_porn"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "ai",
+      "kind": "service",
+      "path": "services/lists/ai/chatgpt.txt",
+      "service": "chatgpt"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "ai",
+      "kind": "service",
+      "path": "services/lists/ai/claude.txt",
+      "service": "claude"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "ai",
+      "kind": "service",
+      "path": "services/lists/ai/copilot.txt",
+      "service": "copilot"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "ai",
+      "kind": "service",
+      "path": "services/lists/ai/deepseek.txt",
+      "service": "deepseek"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "ai",
+      "kind": "service",
+      "path": "services/lists/ai/gemini.txt",
+      "service": "gemini"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "ai",
+      "kind": "service",
+      "path": "services/lists/ai/grok.txt",
+      "service": "grok"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "ai",
+      "kind": "service",
+      "path": "services/lists/ai/manus.txt",
+      "service": "manus"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "ai",
+      "kind": "service",
+      "path": "services/lists/ai/meta_ai.txt",
+      "service": "meta_ai"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "ai",
+      "kind": "service",
+      "path": "services/lists/ai/perplexity.txt",
+      "service": "perplexity"
+    },
+    {
+      "baseline_count": null,
+      "delta_pct": null,
+      "domain_count": 1201,
+      "group": "badware_hoster",
+      "kind": "service",
+      "path": "services/lists/badware_hoster/hagezi_hoster.txt",
+      "service": "hagezi_hoster"
+    },
+    {
+      "baseline_count": 30,
+      "delta_pct": 0.0,
+      "domain_count": 30,
+      "group": "cdn",
+      "kind": "service",
+      "path": "services/lists/cdn/cloudflare.txt",
+      "service": "cloudflare"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "dating",
+      "kind": "service",
+      "path": "services/lists/dating/plenty_of_fish.txt",
+      "service": "plenty_of_fish"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "dating",
+      "kind": "service",
+      "path": "services/lists/dating/tinder.txt",
+      "service": "tinder"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "dating",
+      "kind": "service",
+      "path": "services/lists/dating/wizz.txt",
+      "service": "wizz"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "dns",
+      "kind": "service",
+      "path": "services/lists/dns/CFDNS.txt",
+      "service": "CFDNS"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "dns",
+      "kind": "service",
+      "path": "services/lists/dns/googleDNS.txt",
+      "service": "googleDNS"
+    },
+    {
+      "baseline_count": null,
+      "delta_pct": null,
+      "domain_count": 1486,
+      "group": "dynamic_dns",
+      "kind": "service",
+      "path": "services/lists/dynamic_dns/hagezi_dyndns.txt",
+      "service": "hagezi_dyndns"
+    },
+    {
+      "baseline_count": 7,
+      "delta_pct": 0.0,
+      "domain_count": 7,
+      "group": "gambling",
+      "kind": "service",
+      "path": "services/lists/gambling/betano.txt",
+      "service": "betano"
+    },
+    {
+      "baseline_count": 6,
+      "delta_pct": 0.0,
+      "domain_count": 6,
+      "group": "gambling",
+      "kind": "service",
+      "path": "services/lists/gambling/betfair.txt",
+      "service": "betfair"
+    },
+    {
+      "baseline_count": 16,
+      "delta_pct": 0.0,
+      "domain_count": 16,
+      "group": "gambling",
+      "kind": "service",
+      "path": "services/lists/gambling/betway.txt",
+      "service": "betway"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "gambling",
+      "kind": "service",
+      "path": "services/lists/gambling/blaze.txt",
+      "service": "blaze"
+    },
+    {
+      "baseline_count": 7,
+      "delta_pct": 14.29,
+      "domain_count": 6,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/activision_blizzard.txt",
+      "service": "activision_blizzard"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/arenanet.txt",
+      "service": "arenanet"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/battle_net.txt",
+      "service": "battle_net"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/battlestate_games.txt",
+      "service": "battlestate_games"
+    },
+    {
+      "baseline_count": 15,
+      "delta_pct": 6.67,
+      "domain_count": 14,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/blizzard_entertainment.txt",
+      "service": "blizzard_entertainment"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/city_of_heroes.txt",
+      "service": "city_of_heroes"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/daybreak_games.txt",
+      "service": "daybreak_games"
+    },
+    {
+      "baseline_count": 6,
+      "delta_pct": 0.0,
+      "domain_count": 6,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/electronic_arts.txt",
+      "service": "electronic_arts"
+    },
+    {
+      "baseline_count": 8,
+      "delta_pct": 0.0,
+      "domain_count": 8,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/epic_games.txt",
+      "service": "epic_games"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/frontier_games.txt",
+      "service": "frontier_games"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/gog.txt",
+      "service": "gog"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/io_interactive.txt",
+      "service": "io_interactive"
+    },
+    {
+      "baseline_count": 5,
+      "delta_pct": 0.0,
+      "domain_count": 5,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/leagueoflegends.txt",
+      "service": "leagueoflegends"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/minecraft.txt",
+      "service": "minecraft"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/neverwinter.txt",
+      "service": "neverwinter"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/nexusmods.txt",
+      "service": "nexusmods"
+    },
+    {
+      "baseline_count": 19,
+      "delta_pct": 10.53,
+      "domain_count": 17,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/nintendo.txt",
+      "service": "nintendo"
+    },
+    {
+      "baseline_count": 10,
+      "delta_pct": 10.0,
+      "domain_count": 9,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/origin.txt",
+      "service": "origin"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/path_of_exile.txt",
+      "service": "path_of_exile"
+    },
+    {
+      "baseline_count": 12,
+      "delta_pct": 8.33,
+      "domain_count": 11,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/playstation.txt",
+      "service": "playstation"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/renegade_x.txt",
+      "service": "renegade_x"
+    },
+    {
+      "baseline_count": 8,
+      "delta_pct": 12.5,
+      "domain_count": 7,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/riot_games.txt",
+      "service": "riot_games"
+    },
+    {
+      "baseline_count": 13,
+      "delta_pct": 0.0,
+      "domain_count": 13,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/roblox.txt",
+      "service": "roblox"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/rockstar_games.txt",
+      "service": "rockstar_games"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/square_enix.txt",
+      "service": "square_enix"
+    },
+    {
+      "baseline_count": 33,
+      "delta_pct": 0.0,
+      "domain_count": 33,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/steam.txt",
+      "service": "steam"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/the_elder_scrolls_online.txt",
+      "service": "the_elder_scrolls_online"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/ubisoft.txt",
+      "service": "ubisoft"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/valorant.txt",
+      "service": "valorant"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/warframe.txt",
+      "service": "warframe"
+    },
+    {
+      "baseline_count": 9,
+      "delta_pct": 0.0,
+      "domain_count": 9,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/wargaming.txt",
+      "service": "wargaming"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/warnerbrosgames.txt",
+      "service": "warnerbrosgames"
+    },
+    {
+      "baseline_count": 8,
+      "delta_pct": 0.0,
+      "domain_count": 8,
+      "group": "gaming",
+      "kind": "service",
+      "path": "services/lists/gaming/xboxlive.txt",
+      "service": "xboxlive"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "hosting",
+      "kind": "service",
+      "path": "services/lists/hosting/box.txt",
+      "service": "box"
+    },
+    {
+      "baseline_count": 22,
+      "delta_pct": 0.0,
+      "domain_count": 22,
+      "group": "hosting",
+      "kind": "service",
+      "path": "services/lists/hosting/dropbox.txt",
+      "service": "dropbox"
+    },
+    {
+      "baseline_count": 6,
+      "delta_pct": 0.0,
+      "domain_count": 6,
+      "group": "hosting",
+      "kind": "service",
+      "path": "services/lists/hosting/flickr.txt",
+      "service": "flickr"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "hosting",
+      "kind": "service",
+      "path": "services/lists/hosting/imgur.txt",
+      "service": "imgur"
+    },
+    {
+      "baseline_count": null,
+      "delta_pct": null,
+      "domain_count": 1669,
+      "group": "malware",
+      "kind": "service",
+      "path": "services/lists/malware/blp_ransomware.txt",
+      "service": "blp_ransomware"
+    },
+    {
+      "baseline_count": 269,
+      "delta_pct": 12.27,
+      "domain_count": 236,
+      "group": "malware",
+      "kind": "service",
+      "path": "services/lists/malware/threatfox.txt",
+      "service": "threatfox"
+    },
+    {
+      "baseline_count": null,
+      "delta_pct": null,
+      "domain_count": 1467,
+      "group": "malware",
+      "kind": "service",
+      "path": "services/lists/malware/urlhaus.txt",
+      "service": "urlhaus"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "messenger",
+      "kind": "service",
+      "path": "services/lists/messenger/kakaotalk.txt",
+      "service": "kakaotalk"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "messenger",
+      "kind": "service",
+      "path": "services/lists/messenger/kik.txt",
+      "service": "kik"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "messenger",
+      "kind": "service",
+      "path": "services/lists/messenger/max.txt",
+      "service": "max"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "messenger",
+      "kind": "service",
+      "path": "services/lists/messenger/microsoft_teams.txt",
+      "service": "microsoft_teams"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "messenger",
+      "kind": "service",
+      "path": "services/lists/messenger/olvid.txt",
+      "service": "olvid"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "messenger",
+      "kind": "service",
+      "path": "services/lists/messenger/signal.txt",
+      "service": "signal"
+    },
+    {
+      "baseline_count": 7,
+      "delta_pct": 0.0,
+      "domain_count": 7,
+      "group": "messenger",
+      "kind": "service",
+      "path": "services/lists/messenger/skype.txt",
+      "service": "skype"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "messenger",
+      "kind": "service",
+      "path": "services/lists/messenger/slack.txt",
+      "service": "slack"
+    },
+    {
+      "baseline_count": 17,
+      "delta_pct": 0.0,
+      "domain_count": 17,
+      "group": "messenger",
+      "kind": "service",
+      "path": "services/lists/messenger/telegram.txt",
+      "service": "telegram"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "messenger",
+      "kind": "service",
+      "path": "services/lists/messenger/viber.txt",
+      "service": "viber"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "messenger",
+      "kind": "service",
+      "path": "services/lists/messenger/wechat.txt",
+      "service": "wechat"
+    },
+    {
+      "baseline_count": 11,
+      "delta_pct": 0.0,
+      "domain_count": 11,
+      "group": "messenger",
+      "kind": "service",
+      "path": "services/lists/messenger/whatsapp.txt",
+      "service": "whatsapp"
+    },
+    {
+      "baseline_count": 187,
+      "delta_pct": 3.74,
+      "domain_count": 194,
+      "group": "phishing",
+      "kind": "service",
+      "path": "services/lists/phishing/openphish.txt",
+      "service": "openphish"
+    },
+    {
+      "baseline_count": 283566,
+      "delta_pct": 0.0,
+      "domain_count": 283566,
+      "group": "phishing",
+      "kind": "service",
+      "path": "services/lists/phishing/phishing_army.txt",
+      "service": "phishing_army"
+    },
+    {
+      "baseline_count": 18292,
+      "delta_pct": 0.14,
+      "domain_count": 18317,
+      "group": "phishing",
+      "kind": "service",
+      "path": "services/lists/phishing/phishtank.txt",
+      "service": "phishtank"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "privacy",
+      "kind": "service",
+      "path": "services/lists/privacy/privacy.txt",
+      "service": "privacy"
+    },
+    {
+      "baseline_count": 5,
+      "delta_pct": 0.0,
+      "domain_count": 5,
+      "group": "privacy",
+      "kind": "service",
+      "path": "services/lists/privacy/proton.txt",
+      "service": "proton"
+    },
+    {
+      "baseline_count": null,
+      "delta_pct": null,
+      "domain_count": 114109,
+      "group": "scam",
+      "kind": "service",
+      "path": "services/lists/scam/blp_fraud.txt",
+      "service": "blp_fraud"
+    },
+    {
+      "baseline_count": null,
+      "delta_pct": null,
+      "domain_count": 726,
+      "group": "scam",
+      "kind": "service",
+      "path": "services/lists/scam/blp_scam.txt",
+      "service": "blp_scam"
+    },
+    {
+      "baseline_count": null,
+      "delta_pct": null,
+      "domain_count": 14518,
+      "group": "scam",
+      "kind": "service",
+      "path": "services/lists/scam/hagezi_fake.txt",
+      "service": "hagezi_fake"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "shopping",
+      "kind": "service",
+      "path": "services/lists/shopping/aliexpress.txt",
+      "service": "aliexpress"
+    },
+    {
+      "baseline_count": 185,
+      "delta_pct": 0.0,
+      "domain_count": 185,
+      "group": "shopping",
+      "kind": "service",
+      "path": "services/lists/shopping/amazon.txt",
+      "service": "amazon"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "shopping",
+      "kind": "service",
+      "path": "services/lists/shopping/coolapk.txt",
+      "service": "coolapk"
+    },
+    {
+      "baseline_count": 318,
+      "delta_pct": 0.0,
+      "domain_count": 318,
+      "group": "shopping",
+      "kind": "service",
+      "path": "services/lists/shopping/ebay.txt",
+      "service": "ebay"
+    },
+    {
+      "baseline_count": 9,
+      "delta_pct": 0.0,
+      "domain_count": 9,
+      "group": "shopping",
+      "kind": "service",
+      "path": "services/lists/shopping/lazada.txt",
+      "service": "lazada"
+    },
+    {
+      "baseline_count": 20,
+      "delta_pct": 0.0,
+      "domain_count": 20,
+      "group": "shopping",
+      "kind": "service",
+      "path": "services/lists/shopping/mercado_libre.txt",
+      "service": "mercado_libre"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "shopping",
+      "kind": "service",
+      "path": "services/lists/shopping/shein.txt",
+      "service": "shein"
+    },
+    {
+      "baseline_count": 20,
+      "delta_pct": 0.0,
+      "domain_count": 20,
+      "group": "shopping",
+      "kind": "service",
+      "path": "services/lists/shopping/shopee.txt",
+      "service": "shopee"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "shopping",
+      "kind": "service",
+      "path": "services/lists/shopping/temu.txt",
+      "service": "temu"
+    },
+    {
+      "baseline_count": 5,
+      "delta_pct": 0.0,
+      "domain_count": 5,
+      "group": "shopping",
+      "kind": "service",
+      "path": "services/lists/shopping/xiaohongshu.txt",
+      "service": "xiaohongshu"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/4chan.txt",
+      "service": "4chan"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/500px.txt",
+      "service": "500px"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/9gag.txt",
+      "service": "9gag"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/amino.txt",
+      "service": "amino"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/bluesky.txt",
+      "service": "bluesky"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/clubhouse.txt",
+      "service": "clubhouse"
+    },
+    {
+      "baseline_count": 27,
+      "delta_pct": 0.0,
+      "domain_count": 27,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/discord.txt",
+      "service": "discord"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/douban.txt",
+      "service": "douban"
+    },
+    {
+      "baseline_count": 441,
+      "delta_pct": 0.0,
+      "domain_count": 441,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/facebook.txt",
+      "service": "facebook"
+    },
+    {
+      "baseline_count": 72,
+      "delta_pct": 0.0,
+      "domain_count": 72,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/instagram.txt",
+      "service": "instagram"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/kook.txt",
+      "service": "kook"
+    },
+    {
+      "baseline_count": 18,
+      "delta_pct": 0.0,
+      "domain_count": 18,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/line.txt",
+      "service": "line"
+    },
+    {
+      "baseline_count": 14,
+      "delta_pct": 0.0,
+      "domain_count": 14,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/linkedin.txt",
+      "service": "linkedin"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/mail_ru.txt",
+      "service": "mail_ru"
+    },
+    {
+      "baseline_count": 97,
+      "delta_pct": 0.0,
+      "domain_count": 97,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/mastodon.txt",
+      "service": "mastodon"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/odysee.txt",
+      "service": "odysee"
+    },
+    {
+      "baseline_count": 6,
+      "delta_pct": 0.0,
+      "domain_count": 6,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/ok.txt",
+      "service": "ok"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/onlyfans.txt",
+      "service": "onlyfans"
+    },
+    {
+      "baseline_count": 49,
+      "delta_pct": 0.0,
+      "domain_count": 49,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/pinterest.txt",
+      "service": "pinterest"
+    },
+    {
+      "baseline_count": 5,
+      "delta_pct": 0.0,
+      "domain_count": 5,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/reddit.txt",
+      "service": "reddit"
+    },
+    {
+      "baseline_count": 6,
+      "delta_pct": 0.0,
+      "domain_count": 6,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/snapchat.txt",
+      "service": "snapchat"
+    },
+    {
+      "baseline_count": 31,
+      "delta_pct": 0.0,
+      "domain_count": 31,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/tiktok.txt",
+      "service": "tiktok"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/tumblr.txt",
+      "service": "tumblr"
+    },
+    {
+      "baseline_count": 23,
+      "delta_pct": 0.0,
+      "domain_count": 23,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/twitter.txt",
+      "service": "twitter"
+    },
+    {
+      "baseline_count": 20,
+      "delta_pct": 0.0,
+      "domain_count": 20,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/vk.txt",
+      "service": "vk"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "social_network",
+      "kind": "service",
+      "path": "services/lists/social_network/zhihu.txt",
+      "service": "zhihu"
+    },
+    {
+      "baseline_count": 10,
+      "delta_pct": 0.0,
+      "domain_count": 10,
+      "group": "software",
+      "kind": "service",
+      "path": "services/lists/software/nvidia.txt",
+      "service": "nvidia"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "software",
+      "kind": "service",
+      "path": "services/lists/software/playstore.txt",
+      "service": "playstore"
+    },
+    {
+      "baseline_count": 19,
+      "delta_pct": 0.0,
+      "domain_count": 19,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/amazon_streaming.txt",
+      "service": "amazon_streaming"
+    },
+    {
+      "baseline_count": 13,
+      "delta_pct": 0.0,
+      "domain_count": 13,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/apple_streaming.txt",
+      "service": "apple_streaming"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/bigo_live.txt",
+      "service": "bigo_live"
+    },
+    {
+      "baseline_count": 46,
+      "delta_pct": 0.0,
+      "domain_count": 46,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/bilibili.txt",
+      "service": "bilibili"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/canais_globo.txt",
+      "service": "canais_globo"
+    },
+    {
+      "baseline_count": 22,
+      "delta_pct": 0.0,
+      "domain_count": 22,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/claro.txt",
+      "service": "claro"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/crunchyroll.txt",
+      "service": "crunchyroll"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/dailymotion.txt",
+      "service": "dailymotion"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/deezer.txt",
+      "service": "deezer"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/directvgo.txt",
+      "service": "directvgo"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/discoveryplus.txt",
+      "service": "discoveryplus"
+    },
+    {
+      "baseline_count": 7,
+      "delta_pct": 0.0,
+      "domain_count": 7,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/disneyplus.txt",
+      "service": "disneyplus"
+    },
+    {
+      "baseline_count": 17,
+      "delta_pct": 0.0,
+      "domain_count": 17,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/espn.txt",
+      "service": "espn"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/fifa.txt",
+      "service": "fifa"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/globoplay.txt",
+      "service": "globoplay"
+    },
+    {
+      "baseline_count": 13,
+      "delta_pct": 0.0,
+      "domain_count": 13,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/hbomax.txt",
+      "service": "hbomax"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/hulu.txt",
+      "service": "hulu"
+    },
+    {
+      "baseline_count": 11,
+      "delta_pct": 0.0,
+      "domain_count": 11,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/iheartradio.txt",
+      "service": "iheartradio"
+    },
+    {
+      "baseline_count": 8,
+      "delta_pct": 0.0,
+      "domain_count": 8,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/iqiyi.txt",
+      "service": "iqiyi"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/lionsgateplus.txt",
+      "service": "lionsgateplus"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/looke.txt",
+      "service": "looke"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/nebula.txt",
+      "service": "nebula"
+    },
+    {
+      "baseline_count": 23,
+      "delta_pct": 4.35,
+      "domain_count": 22,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/netflix.txt",
+      "service": "netflix"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/paramountplus.txt",
+      "service": "paramountplus"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/peacock_tv.txt",
+      "service": "peacock_tv"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/plex.txt",
+      "service": "plex"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/pluto_tv.txt",
+      "service": "pluto_tv"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/qq.txt",
+      "service": "qq"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/rakuten_viki.txt",
+      "service": "rakuten_viki"
+    },
+    {
+      "baseline_count": 4,
+      "delta_pct": null,
+      "domain_count": 4,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/samsung_tv_plus.txt",
+      "service": "samsung_tv_plus"
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/soundcloud.txt",
+      "service": "soundcloud"
+    },
+    {
+      "baseline_count": 20,
+      "delta_pct": 5.0,
+      "domain_count": 19,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/spotify.txt",
+      "service": "spotify"
+    },
+    {
+      "baseline_count": 6,
+      "delta_pct": 16.67,
+      "domain_count": 5,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/spotify_video.txt",
+      "service": "spotify_video"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/tidal.txt",
+      "service": "tidal"
+    },
+    {
+      "baseline_count": 6,
+      "delta_pct": 0.0,
+      "domain_count": 6,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/twitch.txt",
+      "service": "twitch"
+    },
+    {
+      "baseline_count": 17,
+      "delta_pct": 0.0,
+      "domain_count": 17,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/vimeo.txt",
+      "service": "vimeo"
+    },
+    {
+      "baseline_count": 3,
+      "delta_pct": null,
+      "domain_count": 3,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/vivo_play.txt",
+      "service": "vivo_play"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/voot.txt",
+      "service": "voot"
+    },
+    {
+      "baseline_count": 7,
+      "delta_pct": 0.0,
+      "domain_count": 7,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/weibo.txt",
+      "service": "weibo"
+    },
+    {
+      "baseline_count": 174,
+      "delta_pct": 0.0,
+      "domain_count": 174,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/youtube.txt",
+      "service": "youtube"
+    },
+    {
+      "baseline_count": 1,
+      "delta_pct": null,
+      "domain_count": 1,
+      "group": "streaming",
+      "kind": "service",
+      "path": "services/lists/streaming/yy.txt",
+      "service": "yy"
+    },
+    {
+      "baseline_count": null,
+      "delta_pct": null,
+      "domain_count": 14763,
+      "group": "tracking",
+      "kind": "service",
+      "path": "services/lists/tracking/blp_tracking.txt",
+      "service": "blp_tracking"
+    },
+    {
+      "baseline_count": 87695,
+      "delta_pct": 1.8,
+      "domain_count": 86115,
+      "group": "adult",
+      "kind": "category",
+      "path": "services/categories/adult.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 19,
+      "delta_pct": 0.0,
+      "domain_count": 19,
+      "group": "ai",
+      "kind": "category",
+      "path": "services/categories/ai.txt",
+      "service": null
+    },
+    {
+      "baseline_count": null,
+      "delta_pct": null,
+      "domain_count": 1201,
+      "group": "badware_hoster",
+      "kind": "category",
+      "path": "services/categories/badware_hoster.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 30,
+      "delta_pct": 0.0,
+      "domain_count": 30,
+      "group": "cdn",
+      "kind": "category",
+      "path": "services/categories/cdn.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 7,
+      "delta_pct": 0.0,
+      "domain_count": 7,
+      "group": "dating",
+      "kind": "category",
+      "path": "services/categories/dating.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 2,
+      "delta_pct": null,
+      "domain_count": 2,
+      "group": "dns",
+      "kind": "category",
+      "path": "services/categories/dns.txt",
+      "service": null
+    },
+    {
+      "baseline_count": null,
+      "delta_pct": null,
+      "domain_count": 1486,
+      "group": "dynamic_dns",
+      "kind": "category",
+      "path": "services/categories/dynamic_dns.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 33,
+      "delta_pct": 0.0,
+      "domain_count": 33,
+      "group": "gambling",
+      "kind": "category",
+      "path": "services/categories/gambling.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 176,
+      "delta_pct": 2.27,
+      "domain_count": 172,
+      "group": "gaming",
+      "kind": "category",
+      "path": "services/categories/gaming.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 33,
+      "delta_pct": 0.0,
+      "domain_count": 33,
+      "group": "hosting",
+      "kind": "category",
+      "path": "services/categories/hosting.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 269,
+      "delta_pct": 1127.51,
+      "domain_count": 3302,
+      "group": "malware",
+      "kind": "category",
+      "path": "services/categories/malware.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 55,
+      "delta_pct": 0.0,
+      "domain_count": 55,
+      "group": "messenger",
+      "kind": "category",
+      "path": "services/categories/messenger.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 299970,
+      "delta_pct": 0.01,
+      "domain_count": 299994,
+      "group": "phishing",
+      "kind": "category",
+      "path": "services/categories/phishing.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 6,
+      "delta_pct": 0.0,
+      "domain_count": 6,
+      "group": "privacy",
+      "kind": "category",
+      "path": "services/categories/privacy.txt",
+      "service": null
+    },
+    {
+      "baseline_count": null,
+      "delta_pct": null,
+      "domain_count": 129332,
+      "group": "scam",
+      "kind": "category",
+      "path": "services/categories/scam.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 571,
+      "delta_pct": 0.0,
+      "domain_count": 571,
+      "group": "shopping",
+      "kind": "category",
+      "path": "services/categories/shopping.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 836,
+      "delta_pct": 0.0,
+      "domain_count": 836,
+      "group": "social_network",
+      "kind": "category",
+      "path": "services/categories/social_network.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 13,
+      "delta_pct": 0.0,
+      "domain_count": 13,
+      "group": "software",
+      "kind": "category",
+      "path": "services/categories/software.txt",
+      "service": null
+    },
+    {
+      "baseline_count": 456,
+      "delta_pct": 0.22,
+      "domain_count": 455,
+      "group": "streaming",
+      "kind": "category",
+      "path": "services/categories/streaming.txt",
+      "service": null
+    },
+    {
+      "baseline_count": null,
+      "delta_pct": null,
+      "domain_count": 14763,
+      "group": "tracking",
+      "kind": "category",
+      "path": "services/categories/tracking.txt",
+      "service": null
+    }
+  ],
+  "generated_at": "2026-04-24T15:28:59.589824+00:00",
+  "issues": [],
+  "status": "passed",
+  "summary": {
+    "files_checked": 184,
+    "issues": 0,
+    "total_domains": 1082240
+  }
+}

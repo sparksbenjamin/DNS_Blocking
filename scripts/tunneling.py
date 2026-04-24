@@ -32,7 +32,7 @@ VPN_DIR.mkdir(exist_ok=True)
 # === Sources ===
 AZ0_VPN = "https://az0-vpnip-public.oooninja.com/hostname.txt"
 AZ0_PROXY = "https://raw.githubusercontent.com/az0/vpn_ip/main/data/input/hostname_only/proxy.txt"
-UMBRELLA_TOP_DOMAINS = "http://s3-us-west-1.amazonaws.com/umbrella-static/top-1m.csv.zip"
+UMBRELLA_TOP_DOMAINS = "https://s3-us-west-1.amazonaws.com/umbrella-static/top-1m.csv.zip"
 
 # === Filters ===
 EXCLUDE_KEYWORDS = ["aws-proxy", "gcp-proxy", "internal-proxy"]
@@ -58,7 +58,7 @@ def domain_matches_keywords(domain: str, keywords: list[str]) -> bool:
 def fetch_list(url: str) -> list[str]:
     """Download a simple text list"""
     print(f"Fetching: {url}")
-    resp = requests.get(url)
+    resp = requests.get(url, timeout=60)
     resp.raise_for_status()
     return [line.strip() for line in resp.text.splitlines() if line.strip()]
 
@@ -74,7 +74,7 @@ print(f"Fetched {len(proxy_domains)} proxy domains from az0.")
 
 # 3. Umbrella filtering for proxies
 print("Fetching Umbrella top domains...")
-resp = requests.get(UMBRELLA_TOP_DOMAINS)
+resp = requests.get(UMBRELLA_TOP_DOMAINS, timeout=120)
 resp.raise_for_status()
 
 with zipfile.ZipFile(BytesIO(resp.content)) as z:

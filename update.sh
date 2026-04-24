@@ -1,3 +1,5 @@
+set -e
+
 
 #echo "Building services.json"
 #python scripts/build_services.py
@@ -11,5 +13,7 @@
 
 echo "Run Generator"
 python3 scripts/generator.py
+echo "Running Quality Validation"
+python3 scripts/validate_lists.py
 echo "Running Tunneling Script"
 python3 scripts/tunneling.py

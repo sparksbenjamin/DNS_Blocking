@@ -55,6 +55,7 @@ CUSTOM_DOMAINS_FILES = [
     SCRIPT_DIR / "custom_domains.json",
     REPO_ROOT / "custom_domains.json",
 ]
+SOURCE_POLICIES_FILE = SCRIPT_DIR / "source_policies.json"
 
 REPO = "sparksbenjamin/DNS_Blocking"
 BRANCH = "main"
@@ -82,6 +83,13 @@ EMERGING_THREATS_URL = "https://rules.emergingthreats.net/fwrules/emerging-Block
 UKLANS_CACHE_DOMAINS_URL = "https://raw.githubusercontent.com/uklans/cache-domains/master/cache_domains.json"
 UKLANS_RAW_BASE_URL = "https://raw.githubusercontent.com/uklans/cache-domains/master/"
 PUBLIC_SUFFIX_LIST_URL = "https://publicsuffix.org/list/public_suffix_list.dat"
+BLOCKLISTPROJECT_SCAM_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/scam.txt"
+BLOCKLISTPROJECT_FRAUD_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/fraud.txt"
+BLOCKLISTPROJECT_RANSOMWARE_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/ransomware.txt"
+BLOCKLISTPROJECT_TRACKING_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/tracking.txt"
+HAGEZI_DYNDNS_URL = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/dyndns-onlydomains.txt"
+HAGEZI_HOSTER_URL = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/hoster-onlydomains.txt"
+HAGEZI_FAKE_URL = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/fake-onlydomains.txt"
 
 # Adult lists (selective to avoid insane sizes)
 STEVENBLACK_PORN_URL = "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts"
@@ -300,7 +308,27 @@ def extract_domains_from_urlhaus(csv_text: str) -> Set[str]:
     """Extract domains from URLhaus CSV format."""
     domains = set()
     try:
-        reader = csv.DictReader(StringIO(csv_text))
+        csv_lines = []
+        for raw_line in csv_text.splitlines():
+            line = raw_line.strip()
+            if not line:
+                continue
+            if line.startswith("#"):
+                candidate = line.lstrip("#").strip()
+                if candidate.lower().startswith("id,dateadded,url,"):
+                    csv_lines.append(candidate)
+                continue
+            csv_lines.append(line)
+
+        if not csv_lines:
+            logger.warning("URLhaus feed did not contain a parseable CSV payload")
+            return domains
+
+        reader = csv.DictReader(StringIO("\n".join(csv_lines)))
+        if not reader.fieldnames or "url" not in reader.fieldnames:
+            logger.warning("URLhaus CSV header did not expose a 'url' column")
+            return domains
+
         for row in reader:
             url = row.get("url", "").strip()
             if not url:
@@ -461,6 +489,104 @@ def load_custom_domains() -> Dict[str, List[str]]:
         return {}
 
 
+def load_source_policies() -> Dict:
+    """
+    Load source validation/filter policies from JSON.
+
+    Returns:
+        Policy dictionary or empty configuration on failure.
+    """
+    if not SOURCE_POLICIES_FILE.exists():
+        logger.info(f"No source policies file found at {SOURCE_POLICIES_FILE}")
+        return {}
+
+    try:
+        with open(SOURCE_POLICIES_FILE, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        if not isinstance(data, dict):
+            logger.warning("Source policies must be a JSON object")
+            return {}
+        logger.info("Loaded source policies from %s", SOURCE_POLICIES_FILE)
+        return data
+    except json.JSONDecodeError as e:
+        logger.error(f"Invalid JSON in source policies file: {e}")
+        return {}
+    except Exception as e:
+        logger.error(f"Failed to load source policies: {e}")
+        return {}
+
+
+def _merge_unique(items: List[str]) -> List[str]:
+    """Preserve list order while removing duplicates."""
+    seen = set()
+    merged = []
+    for item in items:
+        if item in seen:
+            continue
+        seen.add(item)
+        merged.append(item)
+    return merged
+
+
+def domain_matches_suffix(domain: str, suffix: str) -> bool:
+    """Return True when the domain is the suffix or sits below it."""
+    domain = domain.lower().strip(".")
+    suffix = suffix.lower().strip(".")
+    return domain == suffix or domain.endswith(f".{suffix}")
+
+
+def merge_policy_layers(*layers: Optional[Dict]) -> Dict:
+    """Merge default/category/service policy layers into one effective policy."""
+    merged = {
+        "mode": "registrable",
+        "forbid_public_suffix_entries": True,
+        "allow_shared_hosts": False,
+        "must_exist": False,
+        "max_delta_pct": None,
+        "min_baseline_count_for_delta": 5,
+        "exclude_exact": [],
+        "exclude_suffix": [],
+        "required_domains": [],
+        "group": None,
+    }
+
+    list_keys = ("exclude_exact", "exclude_suffix", "required_domains")
+    scalar_keys = (
+        "mode",
+        "forbid_public_suffix_entries",
+        "allow_shared_hosts",
+        "must_exist",
+        "max_delta_pct",
+        "min_baseline_count_for_delta",
+        "group",
+    )
+
+    for layer in layers:
+        if not isinstance(layer, dict):
+            continue
+        for key in scalar_keys:
+            if key in layer:
+                merged[key] = layer[key]
+        for key in list_keys:
+            values = layer.get(key, [])
+            if isinstance(values, list):
+                merged[key].extend(str(value).lower().strip(".") for value in values if value)
+
+    for key in list_keys:
+        merged[key] = _merge_unique(merged[key])
+
+    return merged
+
+
+def get_effective_policy(policies: Dict, group: str, service_id: str) -> Dict:
+    """Resolve the effective policy for a service/category pair."""
+    return merge_policy_layers(
+        policies.get("defaults"),
+        policies.get("categories", {}).get(group, {}),
+        policies.get("services", {}).get(service_id, {}),
+    )
+
+
 def apply_custom_domains(services_by_target: Dict, custom_domains: Dict) -> None:
     """
     Apply custom domain additions from custom_domains.json.
@@ -545,6 +671,60 @@ def apply_custom_domains(services_by_target: Dict, custom_domains: Dict) -> None
         # Add custom domains
         services_by_target[service_id]["domains"].update(valid_domains)
         logger.info(f"Added {len(valid_domains)} custom domain(s) to '{service_id}'")
+
+
+def apply_source_policies(services_by_target: Dict, policies: Dict) -> None:
+    """
+    Apply repo-local source policies before writing generated files.
+
+    The first pass focuses on explicit exclusions and mode overrides so noisy
+    shared infrastructure entries can be trimmed without hard-coding those
+    decisions in Python.
+    """
+    if not policies:
+        return
+
+    for service_id, svc_data in services_by_target.items():
+        domains = svc_data.get("domains")
+        group = svc_data.get("group", "")
+        if not domains or not group:
+            continue
+
+        effective_policy = get_effective_policy(policies, group, service_id)
+        if effective_policy.get("mode") == "exact":
+            svc_data["preserve_subdomains"] = True
+
+        exclude_exact = set(effective_policy.get("exclude_exact", []))
+        exclude_suffix = effective_policy.get("exclude_suffix", [])
+        if not exclude_exact and not exclude_suffix:
+            continue
+
+        filtered_domains = set()
+        removed_domains = []
+
+        for domain in domains:
+            candidate = domain.lower().strip(".")
+            if candidate in exclude_exact:
+                removed_domains.append(candidate)
+                continue
+            if any(domain_matches_suffix(candidate, suffix) for suffix in exclude_suffix):
+                removed_domains.append(candidate)
+                continue
+            filtered_domains.add(candidate)
+
+        if removed_domains:
+            preview = ", ".join(sorted(removed_domains)[:5])
+            if len(removed_domains) > 5:
+                preview += ", ..."
+            logger.info(
+                "Policy filtered %d domain(s) from %s/%s: %s",
+                len(removed_domains),
+                group,
+                service_id,
+                preview,
+            )
+
+        svc_data["domains"] = filtered_domains
 
 
 def build_existing_domains_index(services_by_target: Dict) -> Dict[str, str]:
@@ -894,6 +1074,7 @@ def main():
     
     # Load custom domains from JSON file
     custom_domains = load_custom_domains()
+    source_policies = load_source_policies()
     
     # -----------------------------
     # ADGUARD SERVICES (social, gaming, streaming, etc.)
@@ -1091,23 +1272,91 @@ def main():
     urlhaus_csv = fetch_text(URLHAUS_URL)
     if urlhaus_csv:
         uh_domains = extract_domains_from_urlhaus(urlhaus_csv)
-        services_by_target["urlhaus"]["group"] = "malware"
-        services_by_target["urlhaus"]["name"] = "URLhaus"
-        services_by_target["urlhaus"]["domains"].update(uh_domains)
-        logger.info(f"URLhaus: {len(uh_domains)} domains")
+        if uh_domains:
+            services_by_target["urlhaus"]["group"] = "malware"
+            services_by_target["urlhaus"]["name"] = "URLhaus"
+            services_by_target["urlhaus"]["domains"].update(uh_domains)
+            logger.info(f"URLhaus: {len(uh_domains)} domains")
+        else:
+            logger.warning("URLhaus returned no valid domains after parsing")
     else:
         logger.error("Failed to fetch URLhaus data")
 
-    # SSL Blacklist - malicious SSL certificates
-    sslbl_csv = fetch_text(SSLBL_URL)
-    if sslbl_csv:
-        sb_domains = extract_domains_from_sslbl(sslbl_csv)
-        services_by_target["sslbl"]["group"] = "malware"
-        services_by_target["sslbl"]["name"] = "SSL Blacklist"
-        services_by_target["sslbl"]["domains"].update(sb_domains)
-        logger.info(f"SSLBL: {len(sb_domains)} domains")
-    else:
-        logger.error("Failed to fetch SSLBL data")
+    # SSL Blacklist - certificate/IP intelligence rather than hostname domains
+    logger.info(
+        "Skipping SSLBL for services output: upstream export is certificate/IP-oriented, not a DNS domain hosts feed"
+    )
+
+    # Curated category feeds
+    logger.info("Fetching curated category feeds...")
+    curated_feeds = (
+        {
+            "service_id": "blp_scam",
+            "group": "scam",
+            "name": "Block List Project Scam",
+            "url": BLOCKLISTPROJECT_SCAM_URL,
+            "extractor": extract_domains_from_hosts_file,
+        },
+        {
+            "service_id": "blp_fraud",
+            "group": "scam",
+            "name": "Block List Project Fraud",
+            "url": BLOCKLISTPROJECT_FRAUD_URL,
+            "extractor": extract_domains_from_hosts_file,
+        },
+        {
+            "service_id": "blp_ransomware",
+            "group": "malware",
+            "name": "Block List Project Ransomware",
+            "url": BLOCKLISTPROJECT_RANSOMWARE_URL,
+            "extractor": extract_domains_from_hosts_file,
+        },
+        {
+            "service_id": "blp_tracking",
+            "group": "tracking",
+            "name": "Block List Project Tracking",
+            "url": BLOCKLISTPROJECT_TRACKING_URL,
+            "extractor": extract_domains_from_hosts_file,
+        },
+        {
+            "service_id": "hagezi_dyndns",
+            "group": "dynamic_dns",
+            "name": "HaGeZi Dynamic DNS",
+            "url": HAGEZI_DYNDNS_URL,
+            "extractor": extract_domains_from_plain_list,
+        },
+        {
+            "service_id": "hagezi_hoster",
+            "group": "badware_hoster",
+            "name": "HaGeZi Badware Hoster",
+            "url": HAGEZI_HOSTER_URL,
+            "extractor": extract_domains_from_plain_list,
+        },
+        {
+            "service_id": "hagezi_fake",
+            "group": "scam",
+            "name": "HaGeZi Fake",
+            "url": HAGEZI_FAKE_URL,
+            "extractor": extract_domains_from_plain_list,
+        },
+    )
+
+    for feed in curated_feeds:
+        feed_text = fetch_text(feed["url"])
+        if not feed_text:
+            logger.error(f"Failed to fetch {feed['name']} data")
+            continue
+
+        feed_domains = feed["extractor"](feed_text)
+        if not feed_domains:
+            logger.warning(f"{feed['name']}: no valid domains extracted")
+            continue
+
+        service_id = feed["service_id"]
+        services_by_target[service_id]["group"] = feed["group"]
+        services_by_target[service_id]["name"] = feed["name"]
+        services_by_target[service_id]["domains"].update(feed_domains)
+        logger.info(f"{feed['name']}: {len(feed_domains)} domains")
 
     # -----------------------------
     # BUILD DOMAIN INDEX FOR DEDUPLICATION
@@ -1163,6 +1412,12 @@ def main():
     # -----------------------------
     logger.info("Applying custom domain additions...")
     apply_custom_domains(services_by_target, custom_domains)
+
+    # -----------------------------
+    # APPLY SOURCE POLICIES
+    # -----------------------------
+    logger.info("Applying source policies...")
+    apply_source_policies(services_by_target, source_policies)
 
     # -----------------------------
     # WRITE PER-SERVICE FILES
@@ -1302,24 +1557,18 @@ def main():
         raw_url = f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/services/{file_path}"
         
         # Add emoji and description per category
-        if group == "phishing":
-            emoji = "🎣"
-            desc = "Phishing & Scam Sites"
-        elif group == "malware":
-            emoji = "🦠"
-            desc = "Malware & Threats"
-        elif group == "adult":
-            emoji = "🔞"
-            desc = "Adult Content"
-        elif group == "social":
-            emoji = "📱"
-            desc = "Social Media"
-        elif group == "gaming":
-            emoji = "🎮"
-            desc = "Gaming Platforms"
-        else:
-            emoji = "📁"
-            desc = group.capitalize()
+        category_meta = {
+            "adult": ("🔞", "Adult Content"),
+            "badware_hoster": ("🗄️", "Badware Hosters"),
+            "dynamic_dns": ("🌐", "Dynamic DNS"),
+            "gaming": ("🎮", "Gaming Platforms"),
+            "malware": ("🦠", "Malware & Threats"),
+            "phishing": ("🎣", "Phishing & Scam Sites"),
+            "scam": ("💸", "Scam & Fraud"),
+            "social_network": ("📱", "Social Networks"),
+            "tracking": ("🛰️", "Tracking & Analytics"),
+        }
+        emoji, desc = category_meta.get(group, ("📁", group.replace("_", " ").title()))
         
         lines.append(f"| {emoji} {desc} | {count:,} | {source_count} | [{group}.txt]({file_path}) | [Raw]({raw_url}) |")
 
@@ -1338,7 +1587,7 @@ def main():
         services_by_category[svc["group"]].append(svc)
     
     for group in sorted(services_by_category.keys()):
-        lines.append(f"### {group.capitalize()}\n")
+        lines.append(f"### {group.replace('_', ' ').title()}\n")
         lines.append("| Source | Root Domains | File | Raw URL |")
         lines.append("|--------|--------------|------|---------|")
         
@@ -1384,11 +1633,12 @@ def main():
     lines.append("- **[OpenPhish](https://openphish.com/)** - Automated phishing detection")
     lines.append("- **[PhishTank](https://phishtank.org/)** - Verified phishing URLs")
     lines.append("- **[ThreatFox](https://threatfox.abuse.ch/)** - Malware IOCs from abuse.ch")
-    lines.append("- **[URLhaus](https://urlhaus.abuse.ch/)** - Malware distribution sites")
-    lines.append("- **[SSL Blacklist](https://sslbl.abuse.ch/)** - Malicious SSL certificates\n")
+    lines.append("- **[URLhaus](https://urlhaus.abuse.ch/)** - Malware distribution sites\n")
     
     lines.append("### Content Filters")
     lines.append("- **[AdGuard](https://adguard.com/)** - Service blocklists (social media, gaming, streaming)")
+    lines.append("- **[The Block List Project](https://github.com/blocklistproject/Lists)** - Curated scam, tracking, and ransomware blocklists")
+    lines.append("- **[HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists)** - Curated fake, dynamic DNS, and badware hoster categories")
     lines.append("- **[UKLANS cache-domains](https://github.com/uklans/cache-domains)** - Gaming CDN and cache hostnames")
     lines.append("- **[StevenBlack](https://github.com/StevenBlack/hosts)** - Curated hosts files")
     lines.append("- **[Chad Mayfield](https://github.com/chadmayfield/my-pihole-blocklists)** - Pi-hole blocklists\n")
