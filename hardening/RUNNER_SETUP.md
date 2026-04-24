@@ -32,6 +32,8 @@ Set these GitHub repository variables:
   `["self-hosted","linux","x64"]`
 - `ACTIVE_IMPERSONATION_MAX_WORKERS`
   Optional concurrent probe count for the separate review workflow.
+  The workflow now defaults to:
+  `10`
   Example:
   `10`
 - `ACTIVE_IMPERSONATION_TARGET_JOBS`
