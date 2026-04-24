@@ -13,6 +13,8 @@ Security-focused host blocking for phishing, malware, scam, dynamic DNS, and bad
 - **[services](../services/README.md)** - home-safe, registrable-domain blocklists
 - **[security](../security/README.md)** - exact-host security blocklists
 - **[rpz](../rpz/README.md)** - Unbound-friendly RPZ policies
+- **[hardening](../hardening/README.md)** - DNSTwist-derived brand impersonation blocklists
+- **[active impersonation review](../hardening/active_impersonation/README.md)** - scored live-lookalike review reports
 
 ## Quick Start
 

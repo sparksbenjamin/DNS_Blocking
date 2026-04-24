@@ -8,6 +8,11 @@ These lists are designed for **hardening against brand impersonation and typo-sq
 
 There is also a separate review layer at [active_impersonation/README.md](active_impersonation/README.md). That stage does **not** create another blocklist. Instead, it scores live lookalike domains against the real brand sites so you can review which ones look materially suspicious before promoting them anywhere.
 
+Quick links:
+
+- [Brand Impersonation Lists](#categories)
+- [Active Impersonation Review](active_impersonation/README.md)
+
 ## What DNSTwist Does
 
 `dnstwist` generates lookalike permutations for a brand domain and checks which ones appear to be live. That makes it useful for catching typo-squatting, homoglyph tricks, and brand impersonation domains.
@@ -30,6 +35,8 @@ That report stage:
 - writes review artifacts under `hardening/active_impersonation/`
 
 This is useful when you want a tighter triage loop instead of auto-blocking every live permutation.
+
+If you do not see generated review files under `hardening/active_impersonation/`, the most likely reason is that the workflow ran with `ACTIVE_IMPERSONATION_ENABLED=false`.
 
 ## Generation Settings
 

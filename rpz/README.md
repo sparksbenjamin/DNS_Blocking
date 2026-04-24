@@ -13,6 +13,8 @@ Unbound-friendly RPZ zone files generated from the same exact-host security laye
 - **[services](../services/README.md)** - home-safe, registrable-domain blocklists
 - **[security](../security/README.md)** - exact-host security blocklists
 - **[rpz](../rpz/README.md)** - Unbound-friendly RPZ policies
+- **[hardening](../hardening/README.md)** - DNSTwist-derived brand impersonation blocklists
+- **[active impersonation review](../hardening/active_impersonation/README.md)** - scored live-lookalike review reports
 
 ## Quick Start
 

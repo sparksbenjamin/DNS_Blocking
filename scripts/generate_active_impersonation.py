@@ -698,6 +698,9 @@ def write_readme(path: Path, report: Dict, results: Sequence[AuditResult]) -> No
         "This report scores live DNSTwist lookalike domains against the real brand sites using "
         "lightweight fingerprinting. It is a **review artifact**, not an auto-promoted blocklist.\n"
     )
+    lines.append("Quick links:\n")
+    lines.append("- [Back to Hardening](../README.md)")
+    lines.append("- [Back to Repo Root](../../README.md)\n")
     lines.append("## What This Means\n")
     lines.append("- **HIGH_MATCH** - the candidate looks materially like the baseline and deserves immediate review")
     lines.append("- **MEDIUM_MATCH** - some signals line up, but it still needs analyst judgment")

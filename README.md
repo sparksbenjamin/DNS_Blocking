@@ -47,6 +47,9 @@ Resolver-native RPZ zone files for Unbound and other policy-zone capable DNS ser
 ### 🛡️ [Hardening](hardening/README.md)
 Optional DNSTwist-based lookalike and brand-impersonation lists for higher-sensitivity blocking, plus an opt-in active impersonation review stage.
 
+- [Brand Impersonation Lists](hardening/README.md)
+- [Active Impersonation Review](hardening/active_impersonation/README.md)
+
 ### 🌐 [Tunneling](tunneling/README.md)
 Lists VPN and proxy providers that can be blocked or restricted.
 
@@ -60,7 +63,8 @@ Pick the output tier that matches how aggressive you want the blocking to be:
 - `services/` for standard DNS blocking
 - `security/` for exact-host security feeds
 - `rpz/` for Unbound-native policy zones
-- `hardening/` for DNSTwist-based brand impersonation blocking and live-lookalike review
+- `hardening/` for DNSTwist-based brand impersonation blocking
+- `hardening/active_impersonation/` for scored live-lookalike review reports
 
 You can import the `.txt` lists directly into Pi-hole or AdGuard Home, and the `.rpz` files into Unbound or another RPZ-capable resolver.
 

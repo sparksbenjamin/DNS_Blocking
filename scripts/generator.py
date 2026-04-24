@@ -1366,7 +1366,9 @@ def build_profile_readme(
     lines.append("## Output Tiers\n")
     lines.append("- **[services](../services/README.md)** - home-safe, registrable-domain blocklists")
     lines.append("- **[security](../security/README.md)** - exact-host security blocklists")
-    lines.append("- **[rpz](../rpz/README.md)** - Unbound-friendly RPZ policies\n")
+    lines.append("- **[rpz](../rpz/README.md)** - Unbound-friendly RPZ policies")
+    lines.append("- **[hardening](../hardening/README.md)** - DNSTwist-derived brand impersonation blocklists")
+    lines.append("- **[active impersonation review](../hardening/active_impersonation/README.md)** - scored live-lookalike review reports\n")
 
     lines.append(f"## {profile['quick_start_title']}\n")
     lines.append(profile["quick_start_body"] + "\n")

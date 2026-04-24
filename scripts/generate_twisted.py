@@ -426,6 +426,9 @@ def generate_readme(
         "the real brand sites so you can review which ones look materially suspicious before promoting them "
         "anywhere.\n"
     )
+    lines.append("Quick links:\n")
+    lines.append("- [Brand Impersonation Lists](#categories)")
+    lines.append("- [Active Impersonation Review](active_impersonation/README.md)\n")
     lines.append("## What DNSTwist Does\n")
     lines.append(
         "`dnstwist` generates lookalike permutations for a brand domain and checks which ones appear to be live. "
@@ -448,6 +451,10 @@ def generate_readme(
     lines.append("- writes review artifacts under `hardening/active_impersonation/`\n")
     lines.append(
         "This is useful when you want a tighter triage loop instead of auto-blocking every live permutation.\n"
+    )
+    lines.append(
+        "If you do not see generated review files under `hardening/active_impersonation/`, the most likely reason "
+        "is that the workflow ran with `ACTIVE_IMPERSONATION_ENABLED=false`.\n"
     )
     lines.append("## Generation Settings\n")
     lines.append(f"- Source tool: [dnstwist](https://github.com/elceef/dnstwist)")

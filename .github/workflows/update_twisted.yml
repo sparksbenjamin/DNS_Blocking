@@ -39,6 +39,12 @@ jobs:
       - name: Generate Hardening Lists
         run: $VENV_PATH/bin/python scripts/generate_twisted.py
 
+      - name: Active Impersonation Review Disabled
+        if: ${{ env.ACTIVE_IMPERSONATION_ENABLED != 'true' }}
+        run: |
+          echo "Active impersonation review skipped."
+          echo "Set ACTIVE_IMPERSONATION_ENABLED=true to generate hardening/active_impersonation/report.json and results.tsv."
+
       - name: Generate Active Impersonation Review
         if: ${{ env.ACTIVE_IMPERSONATION_ENABLED == 'true' }}
         run: $VENV_PATH/bin/python scripts/generate_active_impersonation.py
