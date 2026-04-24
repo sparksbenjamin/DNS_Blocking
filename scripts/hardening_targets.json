@@ -80,6 +80,34 @@
       ]
     },
     {
+      "service_id": "auth0",
+      "name": "Auth0",
+      "seed_domains": [
+        "auth0.com"
+      ]
+    },
+    {
+      "service_id": "onelogin",
+      "name": "OneLogin",
+      "seed_domains": [
+        "onelogin.com"
+      ]
+    },
+    {
+      "service_id": "pingidentity",
+      "name": "Ping Identity",
+      "seed_domains": [
+        "pingidentity.com"
+      ]
+    },
+    {
+      "service_id": "servicenow",
+      "name": "ServiceNow",
+      "seed_domains": [
+        "servicenow.com"
+      ]
+    },
+    {
       "service_id": "microsoft",
       "name": "Microsoft",
       "seed_domains": [
@@ -126,6 +154,20 @@
       ]
     },
     {
+      "service_id": "venmo",
+      "name": "Venmo",
+      "seed_domains": [
+        "venmo.com"
+      ]
+    },
+    {
+      "service_id": "coinbase",
+      "name": "Coinbase",
+      "seed_domains": [
+        "coinbase.com"
+      ]
+    },
+    {
       "service_id": "intuit",
       "name": "Intuit",
       "seed_domains": [
@@ -168,6 +210,20 @@
       ]
     },
     {
+      "service_id": "gitlab",
+      "name": "GitLab",
+      "seed_domains": [
+        "gitlab.com"
+      ]
+    },
+    {
+      "service_id": "docker",
+      "name": "Docker",
+      "seed_domains": [
+        "docker.com"
+      ]
+    },
+    {
       "service_id": "box",
       "name": "Box",
       "seed_domains": [
@@ -200,6 +256,34 @@
       "name": "UPS",
       "seed_domains": [
         "ups.com"
+      ]
+    },
+    {
+      "service_id": "usps",
+      "name": "USPS",
+      "seed_domains": [
+        "usps.com"
+      ]
+    },
+    {
+      "service_id": "dhl",
+      "name": "DHL",
+      "seed_domains": [
+        "dhl.com"
+      ]
+    },
+    {
+      "service_id": "shopify",
+      "name": "Shopify",
+      "seed_domains": [
+        "shopify.com"
+      ]
+    },
+    {
+      "service_id": "ebay",
+      "name": "eBay",
+      "seed_domains": [
+        "ebay.com"
       ]
     },
     {
