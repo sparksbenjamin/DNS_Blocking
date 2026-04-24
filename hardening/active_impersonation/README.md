@@ -31,6 +31,8 @@ If you only see this placeholder after a review workflow run, the most likely re
 Useful repo variables for the review workflow:
 
 - `ACTIVE_IMPERSONATION_RUNNER_LABELS=["self-hosted","linux"]`
+- `ACTIVE_IMPERSONATION_TARGET_JOBS=2`
+- `ACTIVE_IMPERSONATION_MAX_WORKERS=10`
 - `ACTIVE_IMPERSONATION_READ_TIMEOUT=10`
 - `ACTIVE_IMPERSONATION_CONNECT_TIMEOUT=5`
 
@@ -43,3 +45,5 @@ When the stage runs successfully, this directory will contain a generated summar
 
 - `report.json`
 - `results.tsv`
+
+Targets with no reachable baseline site are now skipped with a warning instead of failing the whole workflow.

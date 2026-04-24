@@ -34,6 +34,12 @@ Set these GitHub repository variables:
   Optional concurrent probe count for the separate review workflow.
   Example:
   `10`
+- `ACTIVE_IMPERSONATION_TARGET_JOBS`
+  Optional number of targets to audit in parallel in the separate review workflow.
+  The workflow now defaults to:
+  `2`
+  Example:
+  `3`
 - `ACTIVE_IMPERSONATION_CONNECT_TIMEOUT`
   Optional socket connect timeout in seconds for the separate review workflow.
   Example:

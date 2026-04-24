@@ -155,3 +155,34 @@ def test_resolve_positive_float_prefers_env(monkeypatch):
         "ACTIVE_IMPERSONATION_READ_TIMEOUT",
         active_impersonation.DEFAULT_READ_TIMEOUT,
     ) == 9.5
+
+
+def test_audit_target_skips_when_no_baselines(monkeypatch):
+    target = {
+        "service_id": "servicenow",
+        "name": "ServiceNow",
+        "category": "brand_impersonation",
+        "seed_domains": ["servicenow.com"],
+    }
+
+    monkeypatch.setattr(active_impersonation, "load_candidate_domains", lambda _: ["foo.example"])
+    monkeypatch.setattr(
+        active_impersonation,
+        "build_baselines",
+        lambda *args, **kwargs: ([], ["servicenow baseline failed"]),
+    )
+
+    target_summary, results, warnings_list = active_impersonation.audit_target(
+        target,
+        max_workers=4,
+        connect_timeout=3.0,
+        read_timeout=5.0,
+        max_response_bytes=1024,
+        max_domains_per_target=None,
+    )
+
+    assert results == []
+    assert target_summary["audited_count"] == 0
+    assert target_summary["status_counts"] == active_impersonation.empty_status_counts()
+    assert "Skipped target because no reachable baselines were available." == target_summary["note"]
+    assert any("no reachable baselines available" in warning for warning in warnings_list)

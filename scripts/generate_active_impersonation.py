@@ -45,10 +45,12 @@ DEFAULT_USER_AGENT = (
     "Chrome/122.0.0.0 Safari/537.36"
 )
 DEFAULT_MAX_WORKERS = 10
+DEFAULT_TARGET_JOBS = 2
 DEFAULT_CONNECT_TIMEOUT = 3.0
 DEFAULT_READ_TIMEOUT = 5.0
 DEFAULT_MAX_RESPONSE_BYTES = 262144
 BASELINE_RETRY_MULTIPLIER = 2.0
+PROGRESS_LOG_INTERVAL = 50
 
 ACTIVE_REPORT_DIR = generate_twisted.HARDENING_DIR / "active_impersonation"
 ACTIVE_REPORT_JSON = ACTIVE_REPORT_DIR / "report.json"
@@ -93,6 +95,18 @@ class AuditResult:
     title_similarity: str
     content_similarity: str
     note: str = ""
+
+
+def empty_status_counts() -> Dict[str, int]:
+    """Return a zeroed status-count mapping."""
+    return {
+        "HIGH_MATCH": 0,
+        "MEDIUM_MATCH": 0,
+        "LOW_MATCH": 0,
+        "INCONCLUSIVE": 0,
+        "OFFLINE": 0,
+        "ERROR": 0,
+    }
 
 
 class VisibleTextParser(HTMLParser):
@@ -147,6 +161,12 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=None,
         help=f"Maximum concurrent probes (default: {DEFAULT_MAX_WORKERS})",
+    )
+    parser.add_argument(
+        "--target-jobs",
+        type=int,
+        default=None,
+        help=f"Maximum concurrent target audits (default: {DEFAULT_TARGET_JOBS})",
     )
     parser.add_argument(
         "--connect-timeout",
@@ -698,14 +718,7 @@ def limit_candidate_domains(
 
 def count_statuses(results: Sequence[AuditResult]) -> Dict[str, int]:
     """Count statuses across a list of results."""
-    counts: Dict[str, int] = {
-        "HIGH_MATCH": 0,
-        "MEDIUM_MATCH": 0,
-        "LOW_MATCH": 0,
-        "INCONCLUSIVE": 0,
-        "OFFLINE": 0,
-        "ERROR": 0,
-    }
+    counts: Dict[str, int] = empty_status_counts()
     for result in results:
         counts[result.status] = counts.get(result.status, 0) + 1
     return counts
@@ -791,6 +804,7 @@ def write_readme(path: Path, report: Dict, results: Sequence[AuditResult]) -> No
     lines.append(f"- Targets audited: `{report['summary']['targets_audited']}`")
     lines.append(f"- Candidate domains audited: `{report['summary']['domains_audited']}`")
     lines.append(f"- Max workers: `{settings['max_workers']}`")
+    lines.append(f"- Target jobs: `{settings['target_jobs']}`")
     lines.append(f"- Connect timeout: `{settings['connect_timeout']}` seconds")
     lines.append(f"- Read timeout: `{settings['read_timeout']}` seconds")
     lines.append(f"- Max response bytes: `{settings['max_response_bytes']}`")
@@ -811,14 +825,14 @@ def write_readme(path: Path, report: Dict, results: Sequence[AuditResult]) -> No
     lines.append("")
 
     lines.append("## Per-Target Summary\n")
-    lines.append("| Target | Seeds | Audited | High | Medium | Low | Offline | Errors |")
-    lines.append("|--------|-------|---------|------|--------|-----|---------|--------|")
+    lines.append("| Target | Seeds | Audited | High | Medium | Low | Offline | Errors | Note |")
+    lines.append("|--------|-------|---------|------|--------|-----|---------|--------|------|")
     for target in sorted(targets, key=lambda item: item["name"]):
         counts = target["status_counts"]
         lines.append(
             f"| {target['name']} | {len(target['seed_domains'])} | {target['audited_count']} | "
             f"{counts['HIGH_MATCH']} | {counts['MEDIUM_MATCH']} | {counts['LOW_MATCH']} | "
-            f"{counts['OFFLINE']} | {counts['ERROR']} |"
+            f"{counts['OFFLINE']} | {counts['ERROR']} | {target.get('note', '')} |"
         )
     lines.append("")
 
@@ -919,6 +933,7 @@ def audit_target(
     max_domains_per_target: Optional[int],
 ) -> Tuple[Dict, List[AuditResult], List[str]]:
     """Audit all selected candidate domains for one target."""
+    LOGGER.info("Auditing target %s", target["name"])
     warnings_list: List[str] = []
     candidate_domains = load_candidate_domains(target)
     selected_domains = limit_candidate_domains(
@@ -936,9 +951,36 @@ def audit_target(
     warnings_list.extend(baseline_warnings)
 
     if not baselines:
-        raise RuntimeError(f"no reachable baselines available for target {target['service_id']}")
+        note = "Skipped target because no reachable baselines were available."
+        warning = f"{target['service_id']} skipped: no reachable baselines available"
+        LOGGER.warning(warning)
+        warnings_list.append(warning)
+        target_summary = {
+            "service_id": target["service_id"],
+            "name": target["name"],
+            "category": target["category"],
+            "seed_domains": target["seed_domains"],
+            "candidate_count": len(candidate_domains),
+            "audited_count": 0,
+            "status_counts": empty_status_counts(),
+            "baselines": [],
+            "results": [],
+            "note": note,
+        }
+        return target_summary, [], warnings_list
+
+    LOGGER.info(
+        "Target %s: %d candidate(s), auditing %d with %d baseline(s) and %d worker(s)",
+        target["name"],
+        len(candidate_domains),
+        len(selected_domains),
+        len(baselines),
+        max_workers,
+    )
 
     results: List[AuditResult] = []
+    completed = 0
+    total = len(selected_domains)
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
         future_map = {
             executor.submit(
@@ -962,6 +1004,14 @@ def audit_target(
                 warning = f"{target['service_id']} probe crashed for {domain}: {exc}"
                 LOGGER.warning(warning)
                 warnings_list.append(warning)
+            completed += 1
+            if total and (completed % PROGRESS_LOG_INTERVAL == 0 or completed == total):
+                LOGGER.info(
+                    "Target %s progress: %d/%d candidate(s) audited",
+                    target["name"],
+                    completed,
+                    total,
+                )
 
     results.sort(
         key=lambda item: (-item.score, -float(item.content_similarity), item.domain)
@@ -984,6 +1034,16 @@ def audit_target(
             f"Audited the top {max_domains_per_target} domains by lexical similarity out of "
             f"{len(candidate_domains)} generated candidates."
         )
+
+    LOGGER.info(
+        "Completed target %s: %d audited, %d high, %d medium, %d offline, %d error",
+        target["name"],
+        len(results),
+        status_counts["HIGH_MATCH"],
+        status_counts["MEDIUM_MATCH"],
+        status_counts["OFFLINE"],
+        status_counts["ERROR"],
+    )
 
     return target_summary, results, warnings_list
 
@@ -1016,6 +1076,11 @@ def main() -> int:
             "ACTIVE_IMPERSONATION_MAX_WORKERS",
             DEFAULT_MAX_WORKERS,
         )
+        target_jobs = resolve_positive_int(
+            args.target_jobs,
+            "ACTIVE_IMPERSONATION_TARGET_JOBS",
+            DEFAULT_TARGET_JOBS,
+        )
         connect_timeout = resolve_positive_float(
             args.connect_timeout,
             "ACTIVE_IMPERSONATION_CONNECT_TIMEOUT",
@@ -1037,23 +1102,56 @@ def main() -> int:
         if not targets:
             raise RuntimeError("no active impersonation targets selected")
 
+        LOGGER.info(
+            "Running active impersonation review for %d target(s) with %d target job(s) and %d per-target worker(s)",
+            len(targets),
+            target_jobs,
+            max_workers,
+        )
         all_results: List[AuditResult] = []
         target_reports: List[Dict] = []
         warnings_list: List[str] = []
 
-        for target in targets:
-            LOGGER.info("Auditing target %s", target["name"])
-            target_report, results, target_warnings = audit_target(
-                target,
-                max_workers,
-                connect_timeout,
-                read_timeout,
-                max_response_bytes,
-                max_domains_per_target,
-            )
-            all_results.extend(results)
-            target_reports.append(target_report)
-            warnings_list.extend(target_warnings)
+        with ThreadPoolExecutor(max_workers=target_jobs) as executor:
+            future_map = {
+                executor.submit(
+                    audit_target,
+                    target,
+                    max_workers,
+                    connect_timeout,
+                    read_timeout,
+                    max_response_bytes,
+                    max_domains_per_target,
+                ): target
+                for target in targets
+            }
+
+            for future in as_completed(future_map):
+                target = future_map[future]
+                try:
+                    target_report, results, target_warnings = future.result()
+                except Exception as exc:  # pragma: no cover - defensive safety net
+                    warning = f"{target['service_id']} target audit crashed: {exc}"
+                    LOGGER.exception("Unexpected target audit failure for %s", target["service_id"])
+                    warnings_list.append(warning)
+                    target_report = {
+                        "service_id": target["service_id"],
+                        "name": target["name"],
+                        "category": target["category"],
+                        "seed_domains": target["seed_domains"],
+                        "candidate_count": 0,
+                        "audited_count": 0,
+                        "status_counts": empty_status_counts(),
+                        "baselines": [],
+                        "results": [],
+                        "note": "Target audit crashed before producing a report.",
+                    }
+                    results = []
+                    target_warnings = [warning]
+
+                all_results.extend(results)
+                target_reports.append(target_report)
+                warnings_list.extend(target_warnings)
 
         all_results.sort(
             key=lambda item: (-item.score, -float(item.content_similarity), item.target_name, item.domain)
@@ -1064,6 +1162,7 @@ def main() -> int:
             "generated_at": generate_twisted.datetime.now(generate_twisted.timezone.utc).isoformat(),
             "settings": {
                 "max_workers": max_workers,
+                "target_jobs": target_jobs,
                 "connect_timeout": connect_timeout,
                 "read_timeout": read_timeout,
                 "max_response_bytes": max_response_bytes,
