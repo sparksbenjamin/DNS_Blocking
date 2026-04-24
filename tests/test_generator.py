@@ -10,9 +10,7 @@ import generator  # noqa: E402
 
 
 def make_services():
-    return defaultdict(
-        lambda: {"group": "", "name": "", "domains": set(), "preserve_subdomains": False}
-    )
+    return defaultdict(generator.make_service_record)
 
 
 def test_get_root_domain_handles_multi_label_cc_tld_without_psl(monkeypatch):
@@ -93,3 +91,52 @@ def test_apply_source_policies_filters_suffixes_and_sets_exact_mode():
     assert services["netflix"]["domains"] == {"netflix.com"}
     assert services["netflix"]["preserve_subdomains"] is False
     assert services["googleDNS"]["preserve_subdomains"] is True
+
+
+def test_security_profile_preserves_exact_hosts_and_excludes_non_security_groups():
+    services = make_services()
+    services["openphish"]["group"] = "phishing"
+    services["openphish"]["name"] = "OpenPhish"
+    services["openphish"]["domains"].add("login.example.com")
+    services["steam"]["group"] = "gaming"
+    services["steam"]["name"] = "Steam"
+    services["steam"]["domains"].add("store.steampowered.com")
+
+    security_profile = generator.get_output_profile("security")
+
+    assert generator.should_include_in_profile("openphish", services["openphish"], security_profile) is True
+    assert generator.should_include_in_profile("steam", services["steam"], security_profile) is False
+    assert generator.preserve_subdomains_for_profile("openphish", services["openphish"], security_profile) is True
+
+
+def test_write_rpz_file_uses_exact_mode_without_wildcard(tmp_path):
+    output = tmp_path / "security.rpz"
+
+    count, _ = generator.write_rpz_file(
+        output,
+        {"login.microsoftonline.com"},
+        header="; test",
+        preserve_subdomains=True,
+    )
+
+    content = output.read_text(encoding="utf-8")
+    assert count == 1
+    assert "login.microsoftonline.com CNAME ." in content
+    assert "*.login.microsoftonline.com CNAME ." not in content
+
+
+def test_write_rpz_file_uses_wildcard_for_registrable_domains(tmp_path, monkeypatch):
+    monkeypatch.setattr(generator, "get_public_suffix_rules", lambda: None)
+    output = tmp_path / "services.rpz"
+
+    count, _ = generator.write_rpz_file(
+        output,
+        {"store.example.co.uk"},
+        header="; test",
+        preserve_subdomains=False,
+    )
+
+    content = output.read_text(encoding="utf-8")
+    assert count == 1
+    assert "example.co.uk CNAME ." in content
+    assert "*.example.co.uk CNAME ." in content

@@ -2,23 +2,21 @@
 """
 Threat Intelligence Blocklist Generator
 
-Generates two-tier blocklist structure:
-1. Aggregated categories (recommended for most users)
-   - services/categories/phishing.txt - All phishing sources combined
-   - services/categories/malware.txt - All malware sources combined
-   - services/categories/adult.txt - All adult content sources combined
-   - services/categories/<group>.txt - Other categories
-
-2. Individual sources (for advanced users)
-   - services/lists/phishing/phishing_army.txt
-   - services/lists/phishing/openphish.txt
-   - services/lists/malware/threatfox.txt
+Generates three output tiers from the same source data:
+1. Standard service blocklists
+   - services/categories/<group>.txt
    - services/lists/<group>/<source>.txt
-
-3. Auto-generated README with stats and raw links
    - services/README.md
 
-All lists use Pi-hole/AdGuard compatible format (root domains only, one per line).
+2. Security exact-host blocklists
+   - security/categories/<group>.txt
+   - security/lists/<group>/<source>.txt
+   - security/README.md
+
+3. Unbound RPZ policies
+   - rpz/categories/<group>.rpz
+   - rpz/lists/<group>/<source>.rpz
+   - rpz/README.md
 """
 
 import requests
@@ -45,10 +43,6 @@ MAX_FILE_SIZE_MB = 90  # Safety buffer under GitHub 100MB limit
 MAX_RETRIES = 3
 RETRY_DELAY = 2
 
-BASE_DIR = Path("services")
-LISTS_DIR = BASE_DIR / "lists"
-CATEGORIES_DIR = BASE_DIR / "categories"
-README_PATH = BASE_DIR / "README.md"
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent
 CUSTOM_DOMAINS_FILES = [
@@ -66,6 +60,179 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 logger = logging.getLogger(__name__)
+
+SECURITY_OUTPUT_GROUPS = {
+    "badware_hoster",
+    "dynamic_dns",
+    "malware",
+    "phishing",
+    "scam",
+}
+
+OUTPUT_CATEGORY_META = {
+    "adult": {"emoji": "🔞", "label": "Adult Content"},
+    "badware_hoster": {"emoji": "🗄️", "label": "Badware Hosters"},
+    "dns": {"emoji": "🛜", "label": "DNS Providers"},
+    "dynamic_dns": {"emoji": "🌐", "label": "Dynamic DNS"},
+    "gaming": {"emoji": "🎮", "label": "Gaming Platforms"},
+    "malware": {"emoji": "🦠", "label": "Malware & Threats"},
+    "phishing": {"emoji": "🎣", "label": "Phishing & Scam Sites"},
+    "scam": {"emoji": "💸", "label": "Scam & Fraud"},
+    "social_network": {"emoji": "📱", "label": "Social Networks"},
+    "streaming": {"emoji": "📺", "label": "Streaming Services"},
+    "tracking": {"emoji": "🛰️", "label": "Tracking & Analytics"},
+}
+
+OUTPUT_PROFILES = {
+    "services": {
+        "base_dir": Path("services"),
+        "lists_dir": Path("services/lists"),
+        "categories_dir": Path("services/categories"),
+        "readme_path": Path("services/README.md"),
+        "quality_report_path": Path("services/quality_report.json"),
+        "file_extension": ".txt",
+        "format": "hosts",
+        "title": "Threat Intelligence & Content Blocklists",
+        "summary": (
+            "Home-safe default layer for Pi-hole, AdGuard Home, and similar DNS blockers. "
+            "Lists stay registrable-domain based by default so they are easier to reason about "
+            "and less likely to overblock."
+        ),
+        "audience": "Home-safe / standard",
+        "risk": "Moderate",
+        "include_groups": None,
+        "force_exact_groups": set(),
+        "quick_start_title": "Quick Start (Recommended)",
+        "quick_start_body": (
+            "Use the aggregated category lists below if you want broad blocking with lower churn "
+            "and easier troubleshooting."
+        ),
+        "category_intro": "One-click blocklists combining multiple sources for everyday blocking.",
+        "advanced_intro": (
+            "For granular control, each source is available separately if you want source-level "
+            "attribution or need to disable one feed."
+        ),
+        "usage": [
+            "### Pi-hole",
+            "1. Navigate to **Settings** → **Blocklists**",
+            "2. Paste the **Raw URL** of your desired list",
+            "3. Click **Save and Update**",
+            "4. Wait for gravity to update",
+            "",
+            "### AdGuard Home",
+            "1. Go to **Filters** → **DNS blocklists**",
+            "2. Click **Add blocklist** → **Add a custom list**",
+            "3. Paste the **Raw URL** and provide a name",
+            "4. Click **Save**",
+        ],
+        "format_notes": [
+            "**Hosts file format** - `0.0.0.0 hostname` for broad compatibility",
+            "**Registrable domains by default** - avoids invalid suffixes like `co.uk`",
+            "**Exact hostnames preserved where needed** - mainly DNS endpoint overrides",
+            "**One entry per line** with commented headers and generation metadata",
+        ],
+    },
+    "security": {
+        "base_dir": Path("security"),
+        "lists_dir": Path("security/lists"),
+        "categories_dir": Path("security/categories"),
+        "readme_path": Path("security/README.md"),
+        "quality_report_path": Path("security/quality_report.json"),
+        "file_extension": ".txt",
+        "format": "hosts",
+        "title": "Exact-Host Security Blocklists",
+        "summary": (
+            "Security-focused host blocking for phishing, malware, scam, dynamic DNS, and "
+            "badware hoster feeds. These lists preserve exact hostnames so URL-derived feeds "
+            "stay precise instead of collapsing to broad registrable roots."
+        ),
+        "audience": "Security-focused / higher churn",
+        "risk": "Elevated",
+        "include_groups": SECURITY_OUTPUT_GROUPS,
+        "force_exact_groups": SECURITY_OUTPUT_GROUPS,
+        "quick_start_title": "Quick Start",
+        "quick_start_body": (
+            "Use these lists when you want stronger protection against exact phishing or malware "
+            "hosts and you are comfortable with faster list churn."
+        ),
+        "category_intro": (
+            "Exact-host category bundles built from higher-sensitivity security feeds."
+        ),
+        "advanced_intro": (
+            "Each source is also available separately if you want tighter source attribution or "
+            "to tune false-positive handling."
+        ),
+        "usage": [
+            "### Pi-hole / AdGuard Home",
+            "1. Import the **Raw URL** of the exact-host list you want",
+            "2. Start with the aggregated categories before stacking individual feeds",
+            "3. Watch query logs closely after enabling them",
+            "",
+            "### When to use this layer",
+            "1. You want stronger phishing and malware coverage",
+            "2. You are comfortable whitelisting exact hosts when needed",
+            "3. You prefer precision over broad domain collapsing",
+        ],
+        "format_notes": [
+            "**Hosts file format** - `0.0.0.0 hostname`",
+            "**Exact hostnames preserved** - designed for URL-derived security feeds",
+            "**Higher churn** - entries can appear and disappear faster than the standard layer",
+            "**Best paired with logging and allowlisting** when you run it broadly",
+        ],
+    },
+    "rpz": {
+        "base_dir": Path("rpz"),
+        "lists_dir": Path("rpz/lists"),
+        "categories_dir": Path("rpz/categories"),
+        "readme_path": Path("rpz/README.md"),
+        "quality_report_path": Path("rpz/quality_report.json"),
+        "file_extension": ".rpz",
+        "format": "rpz",
+        "title": "RPZ Security Policies",
+        "summary": (
+            "Unbound-friendly RPZ zone files generated from the same exact-host security layer. "
+            "This is the advanced output for users who want native response-policy feeds instead "
+            "of hosts-style blocklists."
+        ),
+        "audience": "Advanced / Unbound RPZ",
+        "risk": "Elevated",
+        "include_groups": SECURITY_OUTPUT_GROUPS,
+        "force_exact_groups": SECURITY_OUTPUT_GROUPS,
+        "quick_start_title": "Quick Start",
+        "quick_start_body": (
+            "Use these files when you run Unbound or another resolver that supports RPZ and you "
+            "want policy-zone blocking instead of hosts-style imports."
+        ),
+        "category_intro": "RPZ category bundles for exact-host security blocking.",
+        "advanced_intro": (
+            "Per-source RPZ files are available if you want to map individual feeds into separate "
+            "policy zones."
+        ),
+        "usage": [
+            "### Unbound",
+            "1. Place the `.rpz` file somewhere your resolver can read it",
+            "2. Reference it from your RPZ configuration or local-zone include path",
+            "3. Reload Unbound after updating the file",
+            "",
+            "### Why use RPZ here",
+            "1. Keeps exact-host security feeds in a resolver-native format",
+            "2. Makes feed separation easier than large monolithic includes",
+            "3. Fits well with local automation and scheduled updates",
+        ],
+        "format_notes": [
+            "**RPZ zone format** with `CNAME .` policy actions",
+            "**Exact hostnames preserved** for URL-derived threat feeds",
+            "**Advanced output** intended for Unbound or other RPZ-capable resolvers",
+            "**Recommended after testing the matching `security/` hosts lists first**",
+        ],
+    },
+}
+
+# Backwards-compatible aliases for the default services output.
+BASE_DIR = OUTPUT_PROFILES["services"]["base_dir"]
+LISTS_DIR = OUTPUT_PROFILES["services"]["lists_dir"]
+CATEGORIES_DIR = OUTPUT_PROFILES["services"]["categories_dir"]
+README_PATH = OUTPUT_PROFILES["services"]["readme_path"]
 
 # -----------------------------
 # Feed URLs
@@ -430,6 +597,51 @@ def extract_domains_from_ut1_tarball(tar_content: bytes) -> Set[str]:
 def ensure_dir(path: Path) -> None:
     """Ensure directory exists."""
     path.mkdir(parents=True, exist_ok=True)
+
+
+def make_service_record() -> Dict[str, object]:
+    """Return the default mutable record used for a service target."""
+    return {"group": "", "name": "", "domains": set(), "preserve_subdomains": False}
+
+
+def get_output_profile(profile_name: str) -> Dict[str, object]:
+    """Return one output profile definition."""
+    return OUTPUT_PROFILES[profile_name]
+
+
+def should_include_in_profile(service_id: str, svc_data: Dict, profile: Dict) -> bool:
+    """Return True when a service should be emitted for the given output profile."""
+    if not svc_data.get("domains") or not svc_data.get("group"):
+        return False
+
+    include_groups = profile.get("include_groups")
+    if not include_groups:
+        return True
+
+    return svc_data["group"] in include_groups
+
+
+def preserve_subdomains_for_profile(service_id: str, svc_data: Dict, profile: Dict) -> bool:
+    """Resolve whether this service should keep exact hostnames in an output profile."""
+    if svc_data.get("preserve_subdomains", False):
+        return True
+
+    if svc_data.get("group") in profile.get("force_exact_groups", set()):
+        return True
+
+    return service_id in profile.get("force_exact_services", set())
+
+
+def format_output_label(format_name: str, preserve_subdomains: bool) -> str:
+    """Return a human-readable note describing how one output is encoded."""
+    if format_name == "rpz":
+        if preserve_subdomains:
+            return "; Format: RPZ (exact hostnames preserved)"
+        return "; Format: RPZ (registrable domains plus wildcard subdomains)"
+
+    if preserve_subdomains:
+        return "# Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved"
+    return "# Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains"
 
 
 def humanize_service_name(service_id: str) -> str:
@@ -909,15 +1121,7 @@ def write_domain_file(
         ValueError: If file size exceeds limit
     """
     ensure_dir(path.parent)
-    
-    normalized_domains = set()
-    for domain in domains:
-        if preserve_subdomains:
-            normalized_domains.add(domain.lower().strip('.'))
-        else:
-            normalized_domains.add(get_root_domain(domain))
-
-    sorted_domains = sorted(normalized_domains)
+    sorted_domains = normalize_domains(domains, preserve_subdomains)
     
     content = ""
     if header:
@@ -933,6 +1137,68 @@ def write_domain_file(
     if size_mb > MAX_FILE_SIZE_MB:
         raise ValueError(f"{path} exceeds {MAX_FILE_SIZE_MB}MB ({size_mb:.2f}MB)")
     
+    path.write_text(content, encoding="utf-8")
+    return len(sorted_domains), size_mb
+
+
+def normalize_domains(domains: Set[str], preserve_subdomains: bool = False) -> List[str]:
+    """Normalize domains for an output profile and return a sorted unique list."""
+    normalized_domains = set()
+    for domain in domains:
+        candidate = domain.lower().strip(".")
+        if not candidate:
+            continue
+        if preserve_subdomains:
+            normalized_domains.add(candidate)
+        else:
+            normalized_domains.add(get_root_domain(candidate))
+
+    return sorted(normalized_domains)
+
+
+def write_rpz_file(
+    path: Path,
+    domains: Set[str],
+    header: Optional[str] = None,
+    preserve_subdomains: bool = False,
+) -> tuple:
+    """
+    Write domains to a compact RPZ zone file.
+
+    Exact-host profiles emit one `CNAME .` rule per hostname. Registrable-domain
+    profiles also emit a wildcard rule so subdomains are covered in RPZ-aware
+    resolvers.
+    """
+    ensure_dir(path.parent)
+    sorted_domains = normalize_domains(domains, preserve_subdomains)
+    serial = datetime.utcnow().strftime("%Y%m%d%H")
+
+    lines = []
+    if header:
+        for raw_line in header.rstrip().splitlines():
+            stripped = raw_line.lstrip("#; ").rstrip()
+            lines.append(f"; {stripped}" if stripped else ";")
+        lines.append("")
+
+    lines.extend(
+        [
+            "$TTL 300",
+            f"@ 300 IN SOA localhost. root.localhost. {serial} 3600 900 1209600 300",
+            "@ 300 IN NS localhost.",
+            "",
+        ]
+    )
+
+    for domain in sorted_domains:
+        lines.append(f"{domain} CNAME .")
+        if not preserve_subdomains:
+            lines.append(f"*.{domain} CNAME .")
+
+    content = "\n".join(lines) + "\n"
+    size_mb = len(content.encode("utf-8")) / (1024 * 1024)
+    if size_mb > MAX_FILE_SIZE_MB:
+        raise ValueError(f"{path} exceeds {MAX_FILE_SIZE_MB}MB ({size_mb:.2f}MB)")
+
     path.write_text(content, encoding="utf-8")
     return len(sorted_domains), size_mb
 
@@ -1045,6 +1311,244 @@ def fetch_binary(url: str, timeout: int = 120) -> Optional[bytes]:
 
 
 # -----------------------------
+def clear_profile_outputs(profile_name: str) -> None:
+    """Remove previously generated files for one output profile."""
+    profile = get_output_profile(profile_name)
+    ensure_dir(profile["lists_dir"])
+    ensure_dir(profile["categories_dir"])
+
+    pattern = f"*{profile['file_extension']}"
+    for path in profile["lists_dir"].rglob(pattern):
+        path.unlink()
+    for path in profile["categories_dir"].glob(pattern):
+        path.unlink()
+
+
+def write_output_file(
+    profile: Dict[str, object],
+    path: Path,
+    domains: Set[str],
+    header: Optional[str],
+    preserve_subdomains: bool,
+) -> tuple:
+    """Dispatch to the correct writer for one output profile."""
+    if profile["format"] == "rpz":
+        return write_rpz_file(path, domains, header, preserve_subdomains=preserve_subdomains)
+
+    return write_domain_file(path, domains, header, preserve_subdomains=preserve_subdomains)
+
+
+def get_raw_url(path: Path) -> str:
+    """Return the raw GitHub URL for a repo-relative file path."""
+    rel_path = path.as_posix()
+    return f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/{rel_path}"
+
+
+def build_profile_readme(
+    profile_name: str,
+    timestamp: str,
+    service_stats: List[Dict],
+    category_stats: List[Dict],
+) -> None:
+    """Write the README for one generated output profile."""
+    profile = get_output_profile(profile_name)
+    base_dir = profile["base_dir"]
+    readme_path = profile["readme_path"]
+    count_label = "Root Domains" if profile_name == "services" else "Entries"
+    lines = []
+
+    lines.append(f"# {profile['title']}\n")
+    lines.append(f"**Generated:** {timestamp}\n")
+    lines.append(f"**Audience:** {profile['audience']}\n")
+    lines.append(f"**False-Positive Risk:** {profile['risk']}\n")
+    lines.append(profile["summary"] + "\n")
+
+    lines.append("## Output Tiers\n")
+    lines.append("- **[services](../services/README.md)** - home-safe, registrable-domain blocklists")
+    lines.append("- **[security](../security/README.md)** - exact-host security blocklists")
+    lines.append("- **[rpz](../rpz/README.md)** - Unbound-friendly RPZ policies\n")
+
+    lines.append(f"## {profile['quick_start_title']}\n")
+    lines.append(profile["quick_start_body"] + "\n")
+
+    lines.append("## Aggregated Categories\n")
+    lines.append(profile["category_intro"] + "\n")
+    lines.append(f"| Category | {count_label} | Sources | File | Raw URL |")
+    lines.append("|----------|---------|---------|------|---------|")
+
+    category_source_counts = defaultdict(int)
+    for svc in service_stats:
+        category_source_counts[svc["group"]] += 1
+
+    for category in sorted(category_stats, key=lambda item: item["group"]):
+        group = category["group"]
+        meta = OUTPUT_CATEGORY_META.get(group, {"emoji": "📁", "label": group.replace("_", " ").title()})
+        rel_path = category["path"].relative_to(base_dir)
+        raw_url = get_raw_url(category["path"])
+        lines.append(
+            f"| {meta['emoji']} {meta['label']} | {category['domains']:,} | "
+            f"{category_source_counts[group]} | [{rel_path.name}]({rel_path.as_posix()}) | [Raw]({raw_url}) |"
+        )
+
+    lines.append("")
+    lines.append("## Individual Sources\n")
+    lines.append(profile["advanced_intro"] + "\n")
+
+    services_by_category = defaultdict(list)
+    for svc in sorted(service_stats, key=lambda item: (item["group"], item["name"])):
+        services_by_category[svc["group"]].append(svc)
+
+    for group in sorted(services_by_category.keys()):
+        lines.append(f"### {group.replace('_', ' ').title()}\n")
+        lines.append(f"| Source | {count_label} | File | Raw URL |")
+        lines.append("|--------|---------|------|---------|")
+        for svc in services_by_category[group]:
+            rel_path = svc["path"].relative_to(base_dir)
+            raw_url = get_raw_url(svc["path"])
+            lines.append(
+                f"| {svc['name']} | {svc['domains']:,} | "
+                f"[{rel_path.name}]({rel_path.as_posix()}) | [Raw]({raw_url}) |"
+            )
+        lines.append("")
+
+    lines.append("## Usage\n")
+    lines.extend(profile["usage"])
+    lines.append("")
+
+    lines.append("## Format Details\n")
+    for note in profile["format_notes"]:
+        lines.append(f"- {note}")
+    lines.append("")
+
+    lines.append("## Data Sources\n")
+    lines.append("- **[AdGuard](https://adguard.com/)** - service blocklists for social media, gaming, streaming, and more")
+    lines.append("- **[Phishing Army](https://phishing.army/)** - active phishing domains")
+    lines.append("- **[OpenPhish](https://openphish.com/)** - phishing URLs converted to exact hosts")
+    lines.append("- **[PhishTank](https://phishtank.org/)** - verified phishing URLs converted to exact hosts")
+    lines.append("- **[ThreatFox](https://threatfox.abuse.ch/)** - malware indicators from abuse.ch")
+    lines.append("- **[URLhaus](https://urlhaus.abuse.ch/)** - malware distribution URLs converted to exact hosts")
+    lines.append("- **[The Block List Project](https://github.com/blocklistproject/Lists)** - scam, fraud, ransomware, and tracking feeds")
+    lines.append("- **[HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists)** - dynamic DNS, badware hoster, and fake-domain feeds")
+    lines.append("- **[UKLANS cache-domains](https://github.com/uklans/cache-domains)** - gaming CDN/cache hostnames")
+    lines.append("- **[StevenBlack](https://github.com/StevenBlack/hosts)** and **[Chad Mayfield](https://github.com/chadmayfield/my-pihole-blocklists)** - adult-content feeds\n")
+
+    lines.append("## Notes\n")
+    lines.append("- Start with the aggregated categories before stacking many source files")
+    lines.append("- Whitelist when needed and watch your resolver logs after major changes")
+    lines.append("- Exact-host security and RPZ layers are more aggressive than the standard services layer")
+    lines.append("- Source feeds change over time, so entry counts will drift\n")
+
+    readme_path.write_text("\n".join(lines), encoding="utf-8")
+    logger.info("README written to %s", readme_path)
+
+
+def generate_profile_outputs(
+    profile_name: str,
+    services_by_target: Dict[str, Dict],
+    timestamp: str,
+) -> Dict[str, object]:
+    """Generate files and README for one output profile."""
+    profile = get_output_profile(profile_name)
+    clear_profile_outputs(profile_name)
+
+    logger.info("Writing %s outputs...", profile_name)
+    service_stats = []
+    category_domains = defaultdict(set)
+    category_preserve_subdomains = defaultdict(bool)
+
+    for service_id, svc_data in services_by_target.items():
+        if not should_include_in_profile(service_id, svc_data, profile):
+            continue
+
+        group = svc_data["group"]
+        name = svc_data["name"]
+        domains = svc_data["domains"]
+        preserve_subdomains = preserve_subdomains_for_profile(service_id, svc_data, profile)
+        extension = profile["file_extension"]
+        format_line = format_output_label(profile["format"], preserve_subdomains)
+        comment_prefix = ";" if profile["format"] == "rpz" else "#"
+        out_path = profile["lists_dir"] / group / f"{service_id}{extension}"
+        header = (
+            f"{comment_prefix} {name}\n"
+            f"{comment_prefix} Category: {group}\n"
+            f"{comment_prefix} Generated: {timestamp}\n"
+            f"{format_line}\n"
+            f"{comment_prefix} Original domains (before deduplication): {len(domains)}"
+        )
+
+        try:
+            count, size_mb = write_output_file(
+                profile,
+                out_path,
+                domains,
+                header,
+                preserve_subdomains=preserve_subdomains,
+            )
+            logger.info("✓ %s — %d entries (%.2fMB)", out_path, count, size_mb)
+        except ValueError as e:
+            logger.warning("Skipped %s: %s", out_path, e)
+            continue
+        except Exception as e:
+            logger.error("Error writing %s: %s", out_path, e)
+            continue
+
+        service_stats.append(
+            {
+                "group": group,
+                "service": service_id,
+                "name": name,
+                "domains": count,
+                "path": out_path,
+            }
+        )
+        category_domains[group].update(domains)
+        category_preserve_subdomains[group] = (
+            category_preserve_subdomains[group] or preserve_subdomains
+        )
+
+    logger.info("Writing %s category files...", profile_name)
+    category_stats = []
+    extension = profile["file_extension"]
+    comment_prefix = ";" if profile["format"] == "rpz" else "#"
+
+    for group, domains in sorted(category_domains.items()):
+        preserve_subdomains = category_preserve_subdomains[group]
+        out_path = profile["categories_dir"] / f"{group}{extension}"
+        format_line = format_output_label(profile["format"], preserve_subdomains)
+        header = (
+            f"{comment_prefix} {group.replace('_', ' ').title()} Blocklist\n"
+            f"{comment_prefix} Generated: {timestamp}\n"
+            f"{format_line}\n"
+            f"{comment_prefix} Original domains (before deduplication): {len(domains)}"
+        )
+
+        try:
+            count, size_mb = write_output_file(
+                profile,
+                out_path,
+                domains,
+                header,
+                preserve_subdomains=preserve_subdomains,
+            )
+            logger.info("✓ %s — %d entries (%.2fMB)", out_path, count, size_mb)
+        except ValueError as e:
+            logger.warning("Skipped %s: %s", out_path, e)
+            continue
+        except Exception as e:
+            logger.error("Error writing %s: %s", out_path, e)
+            continue
+
+        category_stats.append({"group": group, "domains": count, "path": out_path})
+
+    build_profile_readme(profile_name, timestamp, service_stats, category_stats)
+    return {
+        "service_stats": service_stats,
+        "category_stats": category_stats,
+        "total_entries": sum(item["domains"] for item in category_stats),
+    }
+
+
+# -----------------------------
 # Main Logic
 # -----------------------------
 def main():
@@ -1055,22 +1559,10 @@ def main():
 
     timestamp = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
 
-    ensure_dir(LISTS_DIR)
-    ensure_dir(CATEGORIES_DIR)
-
-    # Clear previous outputs
-    logger.info("Clearing previous outputs...")
-    for p in LISTS_DIR.rglob("*.txt"):
-        p.unlink()
-    for p in CATEGORIES_DIR.glob("*.txt"):
-        p.unlink()
-
     # Dictionary to collect domains by target service/platform
     # Key: service name (e.g., "facebook", "tiktok", "emotet")
     # Value: {"group": category, "name": display_name, "domains": set()}
-    services_by_target = defaultdict(
-        lambda: {"group": "", "name": "", "domains": set(), "preserve_subdomains": False}
-    )
+    services_by_target = defaultdict(make_service_record)
     
     # Load custom domains from JSON file
     custom_domains = load_custom_domains()
@@ -1184,14 +1676,10 @@ def main():
     # -----------------------------
     logger.info("Fetching phishing feeds...")
     
-    # Track all phishing domains for category aggregation
-    all_phishing_domains = set()
-
     # Phishing Army
     phishing_army_text = fetch_text(PHISHING_ARMY_URL)
     if phishing_army_text:
         pa_domains = extract_domains_from_adblock(phishing_army_text)
-        all_phishing_domains.update(pa_domains)
         services_by_target["phishing_army"]["group"] = "phishing"
         services_by_target["phishing_army"]["name"] = "Phishing Army"
         services_by_target["phishing_army"]["domains"].update(pa_domains)
@@ -1203,7 +1691,6 @@ def main():
     openphish_text = fetch_text(OPENPHISH_URL)
     if openphish_text:
         op_domains = extract_domains_from_openphish(openphish_text)
-        all_phishing_domains.update(op_domains)
         services_by_target["openphish"]["group"] = "phishing"
         services_by_target["openphish"]["name"] = "OpenPhish"
         services_by_target["openphish"]["domains"].update(op_domains)
@@ -1222,7 +1709,6 @@ def main():
         )
     if phishtank_json:
         pt_domains = extract_domains_from_phishtank(phishtank_json)
-        all_phishing_domains.update(pt_domains)
         services_by_target["phishtank"]["group"] = "phishing"
         services_by_target["phishtank"]["name"] = "PhishTank"
         services_by_target["phishtank"]["domains"].update(pt_domains)
@@ -1420,257 +1906,25 @@ def main():
     apply_source_policies(services_by_target, source_policies)
 
     # -----------------------------
-    # WRITE PER-SERVICE FILES
+    # GENERATE ALL OUTPUT TIERS
     # -----------------------------
-    logger.info("Writing per-service/target files...")
-    service_stats = []
-    category_domains = defaultdict(set)
-    category_preserve_subdomains = defaultdict(bool)
-
-    for service_id, svc_data in services_by_target.items():
-        if not svc_data["domains"]:
-            continue
-            
-        group = svc_data["group"]
-        name = svc_data["name"]
-        domains = svc_data["domains"]
-        preserve_subdomains = svc_data.get("preserve_subdomains", False)
-        format_line = (
-            "# Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved"
-            if preserve_subdomains
-            else "# Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains"
+    profile_summaries = {}
+    for profile_name in OUTPUT_PROFILES:
+        profile_summaries[profile_name] = generate_profile_outputs(
+            profile_name,
+            services_by_target,
+            timestamp,
         )
-
-        out_path = LISTS_DIR / group / f"{service_id}.txt"
-        header = (
-            f"# {name}\n"
-            f"# Category: {group}\n"
-            f"# Generated: {timestamp}\n"
-            f"{format_line}\n"
-            f"# Original domains (before deduplication): {len(domains)}"
-        )
-
-        try:
-            count, size_mb = write_domain_file(
-                out_path,
-                domains,
-                header,
-                preserve_subdomains=preserve_subdomains,
-            )
-            logger.info(f"✓ {group}/{service_id}.txt — {count} root domains ({size_mb:.2f}MB)")
-        except ValueError as e:
-            logger.warning(f"Skipped {out_path}: {e}")
-            continue
-        except Exception as e:
-            logger.error(f"Error writing {out_path}: {e}")
-            continue
-
-        service_stats.append({
-            "group": group,
-            "service": service_id,
-            "name": name,
-            "domains": count,
-            "path": out_path,
-        })
-
-        category_domains[group].update(domains)
-        category_preserve_subdomains[group] = (
-            category_preserve_subdomains[group] or preserve_subdomains
-        )
-
-    # -----------------------------
-    # WRITE PER-CATEGORY FILES
-    # -----------------------------
-    logger.info("Writing category files...")
-    category_stats = []
-
-    for group, domains in category_domains.items():
-        out_path = CATEGORIES_DIR / f"{group}.txt"
-        preserve_subdomains = category_preserve_subdomains[group]
-        format_line = (
-            "# Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved"
-            if preserve_subdomains
-            else "# Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains"
-        )
-        header = (
-            f"# {group.capitalize()} Blocklist\n"
-            f"# Generated: {timestamp}\n"
-            f"{format_line}\n"
-            f"# Original domains (before deduplication): {len(domains)}"
-        )
-
-        try:
-            count, size_mb = write_domain_file(
-                out_path,
-                domains,
-                header,
-                preserve_subdomains=preserve_subdomains,
-            )
-            logger.info(f"✓ {group}.txt — {count} root domains ({size_mb:.2f}MB)")
-        except ValueError as e:
-            logger.warning(f"Skipped {out_path}: {e}")
-            continue
-        except Exception as e:
-            logger.error(f"Error writing {out_path}: {e}")
-            continue
-
-        category_stats.append({
-            "group": group,
-            "domains": count,
-            "path": out_path,
-        })
-
-    # -----------------------------
-    # GENERATE README
-    # -----------------------------
-    logger.info("Generating README...")
-    lines = []
-    lines.append("# Threat Intelligence & Content Blocklists\n")
-    lines.append(f"**Generated:** {timestamp}\n")
-    lines.append("This repository provides curated blocklists for home network protection.\n")
-    lines.append(
-        "All lists are **Pi-hole and AdGuard Home compatible** - registrable domains by default, "
-        "with exact hostnames preserved where needed.\n"
-    )
-    
-    # Add quick start section
-    lines.append("## 🚀 Quick Start (Recommended)\n")
-    lines.append("**For most users**: Use the aggregated category lists below. Each combines multiple trusted sources.\n")
-    
-    # Category section with better descriptions
-    lines.append("## 📋 Aggregated Categories\n")
-    lines.append("One-click blocklists combining multiple sources for comprehensive protection.\n")
-    lines.append("| Category | Root Domains | Sources | File | Raw URL |")
-    lines.append("|----------|--------------|---------|------|---------|")
-
-    # Count sources per category
-    category_source_counts = defaultdict(int)
-    for svc_data in services_by_target.values():
-        if svc_data["group"]:
-            category_source_counts[svc_data["group"]] += 1
-
-    for cat in sorted(category_stats, key=lambda x: x["group"]):
-        group = cat["group"]
-        count = cat["domains"]
-        source_count = category_source_counts[group]
-        file_path = f"categories/{group}.txt"
-        raw_url = f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/services/{file_path}"
-        
-        # Add emoji and description per category
-        category_meta = {
-            "adult": ("🔞", "Adult Content"),
-            "badware_hoster": ("🗄️", "Badware Hosters"),
-            "dynamic_dns": ("🌐", "Dynamic DNS"),
-            "gaming": ("🎮", "Gaming Platforms"),
-            "malware": ("🦠", "Malware & Threats"),
-            "phishing": ("🎣", "Phishing & Scam Sites"),
-            "scam": ("💸", "Scam & Fraud"),
-            "social_network": ("📱", "Social Networks"),
-            "tracking": ("🛰️", "Tracking & Analytics"),
-        }
-        emoji, desc = category_meta.get(group, ("📁", group.replace("_", " ").title()))
-        
-        lines.append(f"| {emoji} {desc} | {count:,} | {source_count} | [{group}.txt]({file_path}) | [Raw]({raw_url}) |")
-
-    lines.append("")
-    
-    # Advanced section for individual sources
-    lines.append("## 🔧 Individual Sources (Advanced)\n")
-    lines.append("For granular control, each source is available separately. Use these if you:\n")
-    lines.append("- Want to exclude a specific source with false positives")
-    lines.append("- Need source attribution for security analysis")
-    lines.append("- Prefer to test feeds individually before deployment\n")
-    
-    # Group services by category for better organization
-    services_by_category = defaultdict(list)
-    for svc in sorted(service_stats, key=lambda x: (x["group"], x["name"])):
-        services_by_category[svc["group"]].append(svc)
-    
-    for group in sorted(services_by_category.keys()):
-        lines.append(f"### {group.replace('_', ' ').title()}\n")
-        lines.append("| Source | Root Domains | File | Raw URL |")
-        lines.append("|--------|--------------|------|---------|")
-        
-        for svc in services_by_category[group]:
-            service = svc["service"]
-            name = svc["name"]
-            count = svc["domains"]
-            rel_path = f"lists/{group}/{service}.txt"
-            raw_url = f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/services/{rel_path}"
-            lines.append(f"| {name} | {count:,} | [{service}.txt]({rel_path}) | [Raw]({raw_url}) |")
-        
-        lines.append("")
-
-    # Add usage instructions
-    lines.append("## 📖 Usage Guide\n")
-    lines.append("### Pi-hole")
-    lines.append("1. Navigate to **Settings** → **Blocklists**")
-    lines.append("2. Paste the **Raw URL** of your desired list")
-    lines.append("3. Click **Save and Update**")
-    lines.append("4. Wait for gravity to update\n")
-    
-    lines.append("### AdGuard Home")
-    lines.append("1. Go to **Filters** → **DNS blocklists**")
-    lines.append("2. Click **Add blocklist** → **Add a custom list**")
-    lines.append("3. Paste the **Raw URL** and provide a name")
-    lines.append("4. Click **Save**\n")
-    
-    # Format details
-    lines.append("## 📝 Format Details\n")
-    lines.append("All lists follow these standards:\n")
-    lines.append("- **Hosts file format** - `0.0.0.0 hostname` for maximum compatibility")
-    lines.append("- **Registrable domains by default** - avoids invalid suffixes like `co.uk` and keeps lists smaller")
-    lines.append("- **Exact hostnames preserved when needed** - useful for DNS endpoints and similar targeted overrides")
-    lines.append("- **One entry per line** - clean, simple format")
-    lines.append("- **Commented headers** - each file includes metadata and generation timestamp")
-    lines.append("- **Works with Pi-hole, AdGuard Home, hosts file, and most DNS blockers**\n")
-    
-    # Add sources section
-    lines.append("## 🔍 Data Sources\n")
-    lines.append("This repository aggregates threat intelligence from trusted sources:\n")
-    lines.append("### Security Feeds")
-    lines.append("- **[Phishing Army](https://phishing.army/)** - Community-driven phishing database")
-    lines.append("- **[OpenPhish](https://openphish.com/)** - Automated phishing detection")
-    lines.append("- **[PhishTank](https://phishtank.org/)** - Verified phishing URLs")
-    lines.append("- **[ThreatFox](https://threatfox.abuse.ch/)** - Malware IOCs from abuse.ch")
-    lines.append("- **[URLhaus](https://urlhaus.abuse.ch/)** - Malware distribution sites\n")
-    
-    lines.append("### Content Filters")
-    lines.append("- **[AdGuard](https://adguard.com/)** - Service blocklists (social media, gaming, streaming)")
-    lines.append("- **[The Block List Project](https://github.com/blocklistproject/Lists)** - Curated scam, tracking, and ransomware blocklists")
-    lines.append("- **[HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists)** - Curated fake, dynamic DNS, and badware hoster categories")
-    lines.append("- **[UKLANS cache-domains](https://github.com/uklans/cache-domains)** - Gaming CDN and cache hostnames")
-    lines.append("- **[StevenBlack](https://github.com/StevenBlack/hosts)** - Curated hosts files")
-    lines.append("- **[Chad Mayfield](https://github.com/chadmayfield/my-pihole-blocklists)** - Pi-hole blocklists\n")
-    
-    lines.append("## ⚡ Updates\n")
-    lines.append("Lists are automatically updated on a regular schedule to ensure fresh threat intelligence.\n")
-    lines.append("Check the timestamp at the top of this README or in individual list files.\n")
-    
-    lines.append("## ⚠️ Important Notes\n")
-    lines.append("- **Test before deploying** - Some lists may block legitimate services")
-    lines.append("- **Start with categories** - Easier to manage and troubleshoot")
-    lines.append("- **Whitelist as needed** - Add exceptions for false positives")
-    lines.append("- **Monitor your logs** - Understand what's being blocked\n")
-    
-    lines.append("## 📜 License\n")
-    lines.append("This repository is provided as-is for informational and protective purposes.\n")
-    lines.append("Individual source feeds may have their own licenses and terms of use.\n")
-    
-    lines.append("## 🤝 Contributing\n")
-    lines.append("Found a false positive? Have a suggestion for a new source?\n")
-    lines.append("Please open an issue or submit a pull request!\n")
-
-    README_PATH.write_text("\n".join(lines), encoding="utf-8")
-    logger.info(f"README written to {README_PATH}")
 
     print("\n" + "=" * 70)
     print("✅ UPDATE COMPLETE!")
     print("=" * 70)
-    print(f"Individual sources: {len(service_stats)}")
-    print(f"Aggregated categories: {len(category_stats)}")
-    total_domains = sum(cat["domains"] for cat in category_stats)
-    print(f"Total unique root domains: {total_domains:,}")
+    for profile_name, summary in profile_summaries.items():
+        print(
+            f"{profile_name}: {len(summary['service_stats'])} sources, "
+            f"{len(summary['category_stats'])} categories, "
+            f"{summary['total_entries']:,} entries"
+        )
     print("=" * 70)
 
 

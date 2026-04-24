@@ -4,7 +4,7 @@
 ![Lists](https://img.shields.io/badge/Lists-120+-blue)
 ![Last Updated](https://img.shields.io/github/last-commit/sparksbenjamin/DNS_Blocking)
 
-Welcome to **DNS Filters & Blocking Lists** — your one-stop repository for comprehensive and enriched DNS filtering solutions.
+Welcome to **DNS Filters & Blocking Lists** — a repo of standard blocklists, exact-host security feeds, and Unbound-ready RPZ outputs.
 
 Our goal is to make DNS filtering **accessible, easy to understand, and ready to deploy** for everyone — whether you’re a home user, network admin, or privacy-focused professional.
 
@@ -31,12 +31,18 @@ You can enforce strict DNS routing and block or redirect outbound DNS-over-HTTPS
 
 ## 🗂️ What’s Included
 
-This repository provides **curated and enriched DNS blocklists** across multiple categories.  
-All lists are **automatically updated daily** and validated for duplicates and syntax errors.
+This repository provides **curated and enriched DNS blocking outputs** across multiple categories and delivery formats.  
+Lists are **automatically updated on a schedule** and validated for syntax, policy drift, and source health.
 
 ### 📂 Services
 #### [Online Services](services/README.md)
-Contains lists of various online services — each service has its own file, allowing you to target them individually.
+Home-safe, Pi-hole and AdGuard-friendly blocklists using registrable domains by default.
+
+### 🛡️ [Security](security/README.md)
+Exact-host security feeds for phishing, malware, scams, dynamic DNS, and badware hosters.
+
+### 🧱 [RPZ](rpz/README.md)
+Resolver-native RPZ zone files for Unbound and other policy-zone capable DNS servers.
 
 ### 🛡️ [Hardening](hardening/README.md)
 Optional DNSTwist-based lookalike and brand-impersonation lists for higher-sensitivity blocking.
@@ -49,7 +55,14 @@ Lists VPN and proxy providers that can be blocked or restricted.
 
 ## ⚙️ How to Use
 
-You can import any of the `.txt` lists directly into your preferred DNS solution:
+Pick the output tier that matches how aggressive you want the blocking to be:
+
+- `services/` for standard DNS blocking
+- `security/` for exact-host security feeds
+- `rpz/` for Unbound-native policy zones
+- `hardening/` for DNSTwist-based brand impersonation blocking
+
+You can import the `.txt` lists directly into Pi-hole or AdGuard Home, and the `.rpz` files into Unbound or another RPZ-capable resolver.
 
 ### Pi-hole
 ### Ad-Guard

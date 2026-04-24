@@ -7,6 +7,7 @@
       "group": "adult",
       "kind": "service",
       "path": "services/lists/adult/chadmayfield_porn.txt",
+      "profile": "services",
       "service": "chadmayfield_porn"
     },
     {
@@ -16,6 +17,7 @@
       "group": "adult",
       "kind": "service",
       "path": "services/lists/adult/grindr.txt",
+      "profile": "services",
       "service": "grindr"
     },
     {
@@ -25,6 +27,7 @@
       "group": "adult",
       "kind": "service",
       "path": "services/lists/adult/stevenblack_porn.txt",
+      "profile": "services",
       "service": "stevenblack_porn"
     },
     {
@@ -34,6 +37,7 @@
       "group": "ai",
       "kind": "service",
       "path": "services/lists/ai/chatgpt.txt",
+      "profile": "services",
       "service": "chatgpt"
     },
     {
@@ -43,6 +47,7 @@
       "group": "ai",
       "kind": "service",
       "path": "services/lists/ai/claude.txt",
+      "profile": "services",
       "service": "claude"
     },
     {
@@ -52,6 +57,7 @@
       "group": "ai",
       "kind": "service",
       "path": "services/lists/ai/copilot.txt",
+      "profile": "services",
       "service": "copilot"
     },
     {
@@ -61,6 +67,7 @@
       "group": "ai",
       "kind": "service",
       "path": "services/lists/ai/deepseek.txt",
+      "profile": "services",
       "service": "deepseek"
     },
     {
@@ -70,6 +77,7 @@
       "group": "ai",
       "kind": "service",
       "path": "services/lists/ai/gemini.txt",
+      "profile": "services",
       "service": "gemini"
     },
     {
@@ -79,6 +87,7 @@
       "group": "ai",
       "kind": "service",
       "path": "services/lists/ai/grok.txt",
+      "profile": "services",
       "service": "grok"
     },
     {
@@ -88,6 +97,7 @@
       "group": "ai",
       "kind": "service",
       "path": "services/lists/ai/manus.txt",
+      "profile": "services",
       "service": "manus"
     },
     {
@@ -97,6 +107,7 @@
       "group": "ai",
       "kind": "service",
       "path": "services/lists/ai/meta_ai.txt",
+      "profile": "services",
       "service": "meta_ai"
     },
     {
@@ -106,6 +117,7 @@
       "group": "ai",
       "kind": "service",
       "path": "services/lists/ai/perplexity.txt",
+      "profile": "services",
       "service": "perplexity"
     },
     {
@@ -115,6 +127,7 @@
       "group": "badware_hoster",
       "kind": "service",
       "path": "services/lists/badware_hoster/hagezi_hoster.txt",
+      "profile": "services",
       "service": "hagezi_hoster"
     },
     {
@@ -124,6 +137,7 @@
       "group": "cdn",
       "kind": "service",
       "path": "services/lists/cdn/cloudflare.txt",
+      "profile": "services",
       "service": "cloudflare"
     },
     {
@@ -133,6 +147,7 @@
       "group": "dating",
       "kind": "service",
       "path": "services/lists/dating/plenty_of_fish.txt",
+      "profile": "services",
       "service": "plenty_of_fish"
     },
     {
@@ -142,6 +157,7 @@
       "group": "dating",
       "kind": "service",
       "path": "services/lists/dating/tinder.txt",
+      "profile": "services",
       "service": "tinder"
     },
     {
@@ -151,6 +167,7 @@
       "group": "dating",
       "kind": "service",
       "path": "services/lists/dating/wizz.txt",
+      "profile": "services",
       "service": "wizz"
     },
     {
@@ -160,6 +177,7 @@
       "group": "dns",
       "kind": "service",
       "path": "services/lists/dns/CFDNS.txt",
+      "profile": "services",
       "service": "CFDNS"
     },
     {
@@ -169,6 +187,7 @@
       "group": "dns",
       "kind": "service",
       "path": "services/lists/dns/googleDNS.txt",
+      "profile": "services",
       "service": "googleDNS"
     },
     {
@@ -178,6 +197,7 @@
       "group": "dynamic_dns",
       "kind": "service",
       "path": "services/lists/dynamic_dns/hagezi_dyndns.txt",
+      "profile": "services",
       "service": "hagezi_dyndns"
     },
     {
@@ -187,6 +207,7 @@
       "group": "gambling",
       "kind": "service",
       "path": "services/lists/gambling/betano.txt",
+      "profile": "services",
       "service": "betano"
     },
     {
@@ -196,6 +217,7 @@
       "group": "gambling",
       "kind": "service",
       "path": "services/lists/gambling/betfair.txt",
+      "profile": "services",
       "service": "betfair"
     },
     {
@@ -205,6 +227,7 @@
       "group": "gambling",
       "kind": "service",
       "path": "services/lists/gambling/betway.txt",
+      "profile": "services",
       "service": "betway"
     },
     {
@@ -214,6 +237,7 @@
       "group": "gambling",
       "kind": "service",
       "path": "services/lists/gambling/blaze.txt",
+      "profile": "services",
       "service": "blaze"
     },
     {
@@ -223,6 +247,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/activision_blizzard.txt",
+      "profile": "services",
       "service": "activision_blizzard"
     },
     {
@@ -232,6 +257,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/arenanet.txt",
+      "profile": "services",
       "service": "arenanet"
     },
     {
@@ -241,6 +267,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/battle_net.txt",
+      "profile": "services",
       "service": "battle_net"
     },
     {
@@ -250,6 +277,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/battlestate_games.txt",
+      "profile": "services",
       "service": "battlestate_games"
     },
     {
@@ -259,6 +287,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/blizzard_entertainment.txt",
+      "profile": "services",
       "service": "blizzard_entertainment"
     },
     {
@@ -268,6 +297,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/city_of_heroes.txt",
+      "profile": "services",
       "service": "city_of_heroes"
     },
     {
@@ -277,6 +307,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/daybreak_games.txt",
+      "profile": "services",
       "service": "daybreak_games"
     },
     {
@@ -286,6 +317,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/electronic_arts.txt",
+      "profile": "services",
       "service": "electronic_arts"
     },
     {
@@ -295,6 +327,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/epic_games.txt",
+      "profile": "services",
       "service": "epic_games"
     },
     {
@@ -304,6 +337,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/frontier_games.txt",
+      "profile": "services",
       "service": "frontier_games"
     },
     {
@@ -313,6 +347,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/gog.txt",
+      "profile": "services",
       "service": "gog"
     },
     {
@@ -322,6 +357,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/io_interactive.txt",
+      "profile": "services",
       "service": "io_interactive"
     },
     {
@@ -331,6 +367,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/leagueoflegends.txt",
+      "profile": "services",
       "service": "leagueoflegends"
     },
     {
@@ -340,6 +377,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/minecraft.txt",
+      "profile": "services",
       "service": "minecraft"
     },
     {
@@ -349,6 +387,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/neverwinter.txt",
+      "profile": "services",
       "service": "neverwinter"
     },
     {
@@ -358,6 +397,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/nexusmods.txt",
+      "profile": "services",
       "service": "nexusmods"
     },
     {
@@ -367,6 +407,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/nintendo.txt",
+      "profile": "services",
       "service": "nintendo"
     },
     {
@@ -376,6 +417,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/origin.txt",
+      "profile": "services",
       "service": "origin"
     },
     {
@@ -385,6 +427,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/path_of_exile.txt",
+      "profile": "services",
       "service": "path_of_exile"
     },
     {
@@ -394,6 +437,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/playstation.txt",
+      "profile": "services",
       "service": "playstation"
     },
     {
@@ -403,6 +447,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/renegade_x.txt",
+      "profile": "services",
       "service": "renegade_x"
     },
     {
@@ -412,6 +457,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/riot_games.txt",
+      "profile": "services",
       "service": "riot_games"
     },
     {
@@ -421,6 +467,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/roblox.txt",
+      "profile": "services",
       "service": "roblox"
     },
     {
@@ -430,6 +477,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/rockstar_games.txt",
+      "profile": "services",
       "service": "rockstar_games"
     },
     {
@@ -439,6 +487,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/square_enix.txt",
+      "profile": "services",
       "service": "square_enix"
     },
     {
@@ -448,6 +497,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/steam.txt",
+      "profile": "services",
       "service": "steam"
     },
     {
@@ -457,6 +507,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/the_elder_scrolls_online.txt",
+      "profile": "services",
       "service": "the_elder_scrolls_online"
     },
     {
@@ -466,6 +517,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/ubisoft.txt",
+      "profile": "services",
       "service": "ubisoft"
     },
     {
@@ -475,6 +527,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/valorant.txt",
+      "profile": "services",
       "service": "valorant"
     },
     {
@@ -484,6 +537,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/warframe.txt",
+      "profile": "services",
       "service": "warframe"
     },
     {
@@ -493,6 +547,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/wargaming.txt",
+      "profile": "services",
       "service": "wargaming"
     },
     {
@@ -502,6 +557,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/warnerbrosgames.txt",
+      "profile": "services",
       "service": "warnerbrosgames"
     },
     {
@@ -511,6 +567,7 @@
       "group": "gaming",
       "kind": "service",
       "path": "services/lists/gaming/xboxlive.txt",
+      "profile": "services",
       "service": "xboxlive"
     },
     {
@@ -520,6 +577,7 @@
       "group": "hosting",
       "kind": "service",
       "path": "services/lists/hosting/box.txt",
+      "profile": "services",
       "service": "box"
     },
     {
@@ -529,6 +587,7 @@
       "group": "hosting",
       "kind": "service",
       "path": "services/lists/hosting/dropbox.txt",
+      "profile": "services",
       "service": "dropbox"
     },
     {
@@ -538,6 +597,7 @@
       "group": "hosting",
       "kind": "service",
       "path": "services/lists/hosting/flickr.txt",
+      "profile": "services",
       "service": "flickr"
     },
     {
@@ -547,6 +607,7 @@
       "group": "hosting",
       "kind": "service",
       "path": "services/lists/hosting/imgur.txt",
+      "profile": "services",
       "service": "imgur"
     },
     {
@@ -556,15 +617,17 @@
       "group": "malware",
       "kind": "service",
       "path": "services/lists/malware/blp_ransomware.txt",
+      "profile": "services",
       "service": "blp_ransomware"
     },
     {
       "baseline_count": 236,
-      "delta_pct": 0.0,
-      "domain_count": 236,
+      "delta_pct": 1.69,
+      "domain_count": 240,
       "group": "malware",
       "kind": "service",
       "path": "services/lists/malware/threatfox.txt",
+      "profile": "services",
       "service": "threatfox"
     },
     {
@@ -574,6 +637,7 @@
       "group": "malware",
       "kind": "service",
       "path": "services/lists/malware/urlhaus.txt",
+      "profile": "services",
       "service": "urlhaus"
     },
     {
@@ -583,6 +647,7 @@
       "group": "messenger",
       "kind": "service",
       "path": "services/lists/messenger/kakaotalk.txt",
+      "profile": "services",
       "service": "kakaotalk"
     },
     {
@@ -592,6 +657,7 @@
       "group": "messenger",
       "kind": "service",
       "path": "services/lists/messenger/kik.txt",
+      "profile": "services",
       "service": "kik"
     },
     {
@@ -601,6 +667,7 @@
       "group": "messenger",
       "kind": "service",
       "path": "services/lists/messenger/max.txt",
+      "profile": "services",
       "service": "max"
     },
     {
@@ -610,6 +677,7 @@
       "group": "messenger",
       "kind": "service",
       "path": "services/lists/messenger/microsoft_teams.txt",
+      "profile": "services",
       "service": "microsoft_teams"
     },
     {
@@ -619,6 +687,7 @@
       "group": "messenger",
       "kind": "service",
       "path": "services/lists/messenger/olvid.txt",
+      "profile": "services",
       "service": "olvid"
     },
     {
@@ -628,6 +697,7 @@
       "group": "messenger",
       "kind": "service",
       "path": "services/lists/messenger/signal.txt",
+      "profile": "services",
       "service": "signal"
     },
     {
@@ -637,6 +707,7 @@
       "group": "messenger",
       "kind": "service",
       "path": "services/lists/messenger/skype.txt",
+      "profile": "services",
       "service": "skype"
     },
     {
@@ -646,6 +717,7 @@
       "group": "messenger",
       "kind": "service",
       "path": "services/lists/messenger/slack.txt",
+      "profile": "services",
       "service": "slack"
     },
     {
@@ -655,6 +727,7 @@
       "group": "messenger",
       "kind": "service",
       "path": "services/lists/messenger/telegram.txt",
+      "profile": "services",
       "service": "telegram"
     },
     {
@@ -664,6 +737,7 @@
       "group": "messenger",
       "kind": "service",
       "path": "services/lists/messenger/viber.txt",
+      "profile": "services",
       "service": "viber"
     },
     {
@@ -673,6 +747,7 @@
       "group": "messenger",
       "kind": "service",
       "path": "services/lists/messenger/wechat.txt",
+      "profile": "services",
       "service": "wechat"
     },
     {
@@ -682,6 +757,7 @@
       "group": "messenger",
       "kind": "service",
       "path": "services/lists/messenger/whatsapp.txt",
+      "profile": "services",
       "service": "whatsapp"
     },
     {
@@ -691,6 +767,7 @@
       "group": "phishing",
       "kind": "service",
       "path": "services/lists/phishing/openphish.txt",
+      "profile": "services",
       "service": "openphish"
     },
     {
@@ -700,6 +777,7 @@
       "group": "phishing",
       "kind": "service",
       "path": "services/lists/phishing/phishing_army.txt",
+      "profile": "services",
       "service": "phishing_army"
     },
     {
@@ -709,6 +787,7 @@
       "group": "phishing",
       "kind": "service",
       "path": "services/lists/phishing/phishtank.txt",
+      "profile": "services",
       "service": "phishtank"
     },
     {
@@ -718,6 +797,7 @@
       "group": "privacy",
       "kind": "service",
       "path": "services/lists/privacy/privacy.txt",
+      "profile": "services",
       "service": "privacy"
     },
     {
@@ -727,6 +807,7 @@
       "group": "privacy",
       "kind": "service",
       "path": "services/lists/privacy/proton.txt",
+      "profile": "services",
       "service": "proton"
     },
     {
@@ -736,6 +817,7 @@
       "group": "scam",
       "kind": "service",
       "path": "services/lists/scam/blp_fraud.txt",
+      "profile": "services",
       "service": "blp_fraud"
     },
     {
@@ -745,6 +827,7 @@
       "group": "scam",
       "kind": "service",
       "path": "services/lists/scam/blp_scam.txt",
+      "profile": "services",
       "service": "blp_scam"
     },
     {
@@ -754,6 +837,7 @@
       "group": "scam",
       "kind": "service",
       "path": "services/lists/scam/hagezi_fake.txt",
+      "profile": "services",
       "service": "hagezi_fake"
     },
     {
@@ -763,6 +847,7 @@
       "group": "shopping",
       "kind": "service",
       "path": "services/lists/shopping/aliexpress.txt",
+      "profile": "services",
       "service": "aliexpress"
     },
     {
@@ -772,6 +857,7 @@
       "group": "shopping",
       "kind": "service",
       "path": "services/lists/shopping/amazon.txt",
+      "profile": "services",
       "service": "amazon"
     },
     {
@@ -781,6 +867,7 @@
       "group": "shopping",
       "kind": "service",
       "path": "services/lists/shopping/coolapk.txt",
+      "profile": "services",
       "service": "coolapk"
     },
     {
@@ -790,6 +877,7 @@
       "group": "shopping",
       "kind": "service",
       "path": "services/lists/shopping/ebay.txt",
+      "profile": "services",
       "service": "ebay"
     },
     {
@@ -799,6 +887,7 @@
       "group": "shopping",
       "kind": "service",
       "path": "services/lists/shopping/lazada.txt",
+      "profile": "services",
       "service": "lazada"
     },
     {
@@ -808,6 +897,7 @@
       "group": "shopping",
       "kind": "service",
       "path": "services/lists/shopping/mercado_libre.txt",
+      "profile": "services",
       "service": "mercado_libre"
     },
     {
@@ -817,6 +907,7 @@
       "group": "shopping",
       "kind": "service",
       "path": "services/lists/shopping/shein.txt",
+      "profile": "services",
       "service": "shein"
     },
     {
@@ -826,6 +917,7 @@
       "group": "shopping",
       "kind": "service",
       "path": "services/lists/shopping/shopee.txt",
+      "profile": "services",
       "service": "shopee"
     },
     {
@@ -835,6 +927,7 @@
       "group": "shopping",
       "kind": "service",
       "path": "services/lists/shopping/temu.txt",
+      "profile": "services",
       "service": "temu"
     },
     {
@@ -844,6 +937,7 @@
       "group": "shopping",
       "kind": "service",
       "path": "services/lists/shopping/xiaohongshu.txt",
+      "profile": "services",
       "service": "xiaohongshu"
     },
     {
@@ -853,6 +947,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/4chan.txt",
+      "profile": "services",
       "service": "4chan"
     },
     {
@@ -862,6 +957,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/500px.txt",
+      "profile": "services",
       "service": "500px"
     },
     {
@@ -871,6 +967,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/9gag.txt",
+      "profile": "services",
       "service": "9gag"
     },
     {
@@ -880,6 +977,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/amino.txt",
+      "profile": "services",
       "service": "amino"
     },
     {
@@ -889,6 +987,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/bluesky.txt",
+      "profile": "services",
       "service": "bluesky"
     },
     {
@@ -898,6 +997,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/clubhouse.txt",
+      "profile": "services",
       "service": "clubhouse"
     },
     {
@@ -907,6 +1007,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/discord.txt",
+      "profile": "services",
       "service": "discord"
     },
     {
@@ -916,6 +1017,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/douban.txt",
+      "profile": "services",
       "service": "douban"
     },
     {
@@ -925,6 +1027,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/facebook.txt",
+      "profile": "services",
       "service": "facebook"
     },
     {
@@ -934,6 +1037,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/instagram.txt",
+      "profile": "services",
       "service": "instagram"
     },
     {
@@ -943,6 +1047,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/kook.txt",
+      "profile": "services",
       "service": "kook"
     },
     {
@@ -952,6 +1057,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/line.txt",
+      "profile": "services",
       "service": "line"
     },
     {
@@ -961,6 +1067,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/linkedin.txt",
+      "profile": "services",
       "service": "linkedin"
     },
     {
@@ -970,6 +1077,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/mail_ru.txt",
+      "profile": "services",
       "service": "mail_ru"
     },
     {
@@ -979,6 +1087,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/mastodon.txt",
+      "profile": "services",
       "service": "mastodon"
     },
     {
@@ -988,6 +1097,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/odysee.txt",
+      "profile": "services",
       "service": "odysee"
     },
     {
@@ -997,6 +1107,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/ok.txt",
+      "profile": "services",
       "service": "ok"
     },
     {
@@ -1006,6 +1117,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/onlyfans.txt",
+      "profile": "services",
       "service": "onlyfans"
     },
     {
@@ -1015,6 +1127,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/pinterest.txt",
+      "profile": "services",
       "service": "pinterest"
     },
     {
@@ -1024,6 +1137,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/reddit.txt",
+      "profile": "services",
       "service": "reddit"
     },
     {
@@ -1033,6 +1147,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/snapchat.txt",
+      "profile": "services",
       "service": "snapchat"
     },
     {
@@ -1042,6 +1157,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/tiktok.txt",
+      "profile": "services",
       "service": "tiktok"
     },
     {
@@ -1051,6 +1167,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/tumblr.txt",
+      "profile": "services",
       "service": "tumblr"
     },
     {
@@ -1060,6 +1177,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/twitter.txt",
+      "profile": "services",
       "service": "twitter"
     },
     {
@@ -1069,6 +1187,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/vk.txt",
+      "profile": "services",
       "service": "vk"
     },
     {
@@ -1078,6 +1197,7 @@
       "group": "social_network",
       "kind": "service",
       "path": "services/lists/social_network/zhihu.txt",
+      "profile": "services",
       "service": "zhihu"
     },
     {
@@ -1087,6 +1207,7 @@
       "group": "software",
       "kind": "service",
       "path": "services/lists/software/nvidia.txt",
+      "profile": "services",
       "service": "nvidia"
     },
     {
@@ -1096,6 +1217,7 @@
       "group": "software",
       "kind": "service",
       "path": "services/lists/software/playstore.txt",
+      "profile": "services",
       "service": "playstore"
     },
     {
@@ -1105,6 +1227,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/amazon_streaming.txt",
+      "profile": "services",
       "service": "amazon_streaming"
     },
     {
@@ -1114,6 +1237,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/apple_streaming.txt",
+      "profile": "services",
       "service": "apple_streaming"
     },
     {
@@ -1123,6 +1247,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/bigo_live.txt",
+      "profile": "services",
       "service": "bigo_live"
     },
     {
@@ -1132,6 +1257,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/bilibili.txt",
+      "profile": "services",
       "service": "bilibili"
     },
     {
@@ -1141,6 +1267,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/canais_globo.txt",
+      "profile": "services",
       "service": "canais_globo"
     },
     {
@@ -1150,6 +1277,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/claro.txt",
+      "profile": "services",
       "service": "claro"
     },
     {
@@ -1159,6 +1287,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/crunchyroll.txt",
+      "profile": "services",
       "service": "crunchyroll"
     },
     {
@@ -1168,6 +1297,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/dailymotion.txt",
+      "profile": "services",
       "service": "dailymotion"
     },
     {
@@ -1177,6 +1307,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/deezer.txt",
+      "profile": "services",
       "service": "deezer"
     },
     {
@@ -1186,6 +1317,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/directvgo.txt",
+      "profile": "services",
       "service": "directvgo"
     },
     {
@@ -1195,6 +1327,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/discoveryplus.txt",
+      "profile": "services",
       "service": "discoveryplus"
     },
     {
@@ -1204,6 +1337,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/disneyplus.txt",
+      "profile": "services",
       "service": "disneyplus"
     },
     {
@@ -1213,6 +1347,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/espn.txt",
+      "profile": "services",
       "service": "espn"
     },
     {
@@ -1222,6 +1357,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/fifa.txt",
+      "profile": "services",
       "service": "fifa"
     },
     {
@@ -1231,6 +1367,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/globoplay.txt",
+      "profile": "services",
       "service": "globoplay"
     },
     {
@@ -1240,6 +1377,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/hbomax.txt",
+      "profile": "services",
       "service": "hbomax"
     },
     {
@@ -1249,6 +1387,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/hulu.txt",
+      "profile": "services",
       "service": "hulu"
     },
     {
@@ -1258,6 +1397,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/iheartradio.txt",
+      "profile": "services",
       "service": "iheartradio"
     },
     {
@@ -1267,6 +1407,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/iqiyi.txt",
+      "profile": "services",
       "service": "iqiyi"
     },
     {
@@ -1276,6 +1417,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/lionsgateplus.txt",
+      "profile": "services",
       "service": "lionsgateplus"
     },
     {
@@ -1285,6 +1427,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/looke.txt",
+      "profile": "services",
       "service": "looke"
     },
     {
@@ -1294,6 +1437,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/nebula.txt",
+      "profile": "services",
       "service": "nebula"
     },
     {
@@ -1303,6 +1447,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/netflix.txt",
+      "profile": "services",
       "service": "netflix"
     },
     {
@@ -1312,6 +1457,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/paramountplus.txt",
+      "profile": "services",
       "service": "paramountplus"
     },
     {
@@ -1321,6 +1467,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/peacock_tv.txt",
+      "profile": "services",
       "service": "peacock_tv"
     },
     {
@@ -1330,6 +1477,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/plex.txt",
+      "profile": "services",
       "service": "plex"
     },
     {
@@ -1339,6 +1487,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/pluto_tv.txt",
+      "profile": "services",
       "service": "pluto_tv"
     },
     {
@@ -1348,6 +1497,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/qq.txt",
+      "profile": "services",
       "service": "qq"
     },
     {
@@ -1357,6 +1507,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/rakuten_viki.txt",
+      "profile": "services",
       "service": "rakuten_viki"
     },
     {
@@ -1366,6 +1517,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/samsung_tv_plus.txt",
+      "profile": "services",
       "service": "samsung_tv_plus"
     },
     {
@@ -1375,6 +1527,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/soundcloud.txt",
+      "profile": "services",
       "service": "soundcloud"
     },
     {
@@ -1384,6 +1537,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/spotify.txt",
+      "profile": "services",
       "service": "spotify"
     },
     {
@@ -1393,6 +1547,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/spotify_video.txt",
+      "profile": "services",
       "service": "spotify_video"
     },
     {
@@ -1402,6 +1557,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/tidal.txt",
+      "profile": "services",
       "service": "tidal"
     },
     {
@@ -1411,6 +1567,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/twitch.txt",
+      "profile": "services",
       "service": "twitch"
     },
     {
@@ -1420,6 +1577,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/vimeo.txt",
+      "profile": "services",
       "service": "vimeo"
     },
     {
@@ -1429,6 +1587,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/vivo_play.txt",
+      "profile": "services",
       "service": "vivo_play"
     },
     {
@@ -1438,6 +1597,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/voot.txt",
+      "profile": "services",
       "service": "voot"
     },
     {
@@ -1447,6 +1607,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/weibo.txt",
+      "profile": "services",
       "service": "weibo"
     },
     {
@@ -1456,6 +1617,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/youtube.txt",
+      "profile": "services",
       "service": "youtube"
     },
     {
@@ -1465,6 +1627,7 @@
       "group": "streaming",
       "kind": "service",
       "path": "services/lists/streaming/yy.txt",
+      "profile": "services",
       "service": "yy"
     },
     {
@@ -1474,6 +1637,7 @@
       "group": "tracking",
       "kind": "service",
       "path": "services/lists/tracking/blp_tracking.txt",
+      "profile": "services",
       "service": "blp_tracking"
     },
     {
@@ -1483,6 +1647,7 @@
       "group": "adult",
       "kind": "category",
       "path": "services/categories/adult.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1492,6 +1657,7 @@
       "group": "ai",
       "kind": "category",
       "path": "services/categories/ai.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1501,6 +1667,7 @@
       "group": "badware_hoster",
       "kind": "category",
       "path": "services/categories/badware_hoster.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1510,6 +1677,7 @@
       "group": "cdn",
       "kind": "category",
       "path": "services/categories/cdn.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1519,6 +1687,7 @@
       "group": "dating",
       "kind": "category",
       "path": "services/categories/dating.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1528,6 +1697,7 @@
       "group": "dns",
       "kind": "category",
       "path": "services/categories/dns.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1537,6 +1707,7 @@
       "group": "dynamic_dns",
       "kind": "category",
       "path": "services/categories/dynamic_dns.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1546,6 +1717,7 @@
       "group": "gambling",
       "kind": "category",
       "path": "services/categories/gambling.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1555,6 +1727,7 @@
       "group": "gaming",
       "kind": "category",
       "path": "services/categories/gaming.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1564,15 +1737,17 @@
       "group": "hosting",
       "kind": "category",
       "path": "services/categories/hosting.txt",
+      "profile": "services",
       "service": null
     },
     {
       "baseline_count": 3302,
-      "delta_pct": 0.0,
-      "domain_count": 3302,
+      "delta_pct": 0.09,
+      "domain_count": 3305,
       "group": "malware",
       "kind": "category",
       "path": "services/categories/malware.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1582,6 +1757,7 @@
       "group": "messenger",
       "kind": "category",
       "path": "services/categories/messenger.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1591,6 +1767,7 @@
       "group": "phishing",
       "kind": "category",
       "path": "services/categories/phishing.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1600,6 +1777,7 @@
       "group": "privacy",
       "kind": "category",
       "path": "services/categories/privacy.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1609,6 +1787,7 @@
       "group": "scam",
       "kind": "category",
       "path": "services/categories/scam.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1618,6 +1797,7 @@
       "group": "shopping",
       "kind": "category",
       "path": "services/categories/shopping.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1627,6 +1807,7 @@
       "group": "social_network",
       "kind": "category",
       "path": "services/categories/social_network.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1636,6 +1817,7 @@
       "group": "software",
       "kind": "category",
       "path": "services/categories/software.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1645,6 +1827,7 @@
       "group": "streaming",
       "kind": "category",
       "path": "services/categories/streaming.txt",
+      "profile": "services",
       "service": null
     },
     {
@@ -1654,15 +1837,17 @@
       "group": "tracking",
       "kind": "category",
       "path": "services/categories/tracking.txt",
+      "profile": "services",
       "service": null
     }
   ],
-  "generated_at": "2026-04-24T15:32:47.668111+00:00",
+  "generated_at": "2026-04-24T16:01:15.035566+00:00",
   "issues": [],
+  "profile": "services",
   "status": "passed",
   "summary": {
     "files_checked": 184,
     "issues": 0,
-    "total_domains": 1082240
+    "total_domains": 1082247
   }
 }
