@@ -1,0 +1,45 @@
+# ServiceNow Brand Impersonation Hardening
+# Category: brand_impersonation
+# Generated: 2026-04-24 18:37:37 UTC
+# Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
+# Seed domains: servicenow.com
+# Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
+
+0.0.0.0 aservicenow.com
+0.0.0.0 ervicenow.com
+0.0.0.0 eservicenow.com
+0.0.0.0 ser.vicenow.com
+0.0.0.0 sericenow.com
+0.0.0.0 seruicenow.com
+0.0.0.0 serv.icenow.com
+0.0.0.0 servcienow.com
+0.0.0.0 serviccnow.com
+0.0.0.0 service-now.com
+0.0.0.0 service4now.com
+0.0.0.0 servicednow.com
+0.0.0.0 serviceenow.com
+0.0.0.0 servicehow.com
+0.0.0.0 servicemow.com
+0.0.0.0 servicenaw.com
+0.0.0.0 servicenew.com
+0.0.0.0 serviceno.com
+0.0.0.0 servicenoe.com
+0.0.0.0 servicenov.com
+0.0.0.0 servicenovv.com
+0.0.0.0 servicenow0.com
+0.0.0.0 servicenow2.com
+0.0.0.0 servicenows.com
+0.0.0.0 servicenoww.com
+0.0.0.0 servicenowx.com
+0.0.0.0 servicenw.com
+0.0.0.0 servicernow.com
+0.0.0.0 servicerow.com
+0.0.0.0 servicesnow.com
+0.0.0.0 servicnow.com
+0.0.0.0 servicsenow.com
+0.0.0.0 servienow.com
+0.0.0.0 servivenow.com
+0.0.0.0 servlcenow.com
+0.0.0.0 serwicenow.com
+0.0.0.0 sevicenow.com
+0.0.0.0 sevricenow.com

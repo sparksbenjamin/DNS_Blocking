@@ -1,6 +1,6 @@
 # Intuit Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-22 13:10:12 UTC
+# Generated: 2026-04-24 18:37:37 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: intuit.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -43,6 +43,7 @@
 0.0.0.0 int6uit.com
 0.0.0.0 int7uit.com
 0.0.0.0 intait.com
+0.0.0.0 inteit.com
 0.0.0.0 intfuit.com
 0.0.0.0 inthuit.com
 0.0.0.0 intiit.com
@@ -136,6 +137,7 @@
 0.0.0.0 jntuit.com
 0.0.0.0 kintuit.com
 0.0.0.0 kntuit.com
+0.0.0.0 lntuit.com
 0.0.0.0 lntult.com
 0.0.0.0 mntuit.com
 0.0.0.0 nituit.com

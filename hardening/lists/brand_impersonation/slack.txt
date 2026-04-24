@@ -1,6 +1,6 @@
 # Slack Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-22 13:10:12 UTC
+# Generated: 2026-04-24 18:37:37 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: slack.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -59,6 +59,7 @@
 0.0.0.0 slacle.com
 0.0.0.0 slacm.com
 0.0.0.0 slaco.com
+0.0.0.0 sladc.com
 0.0.0.0 sladk.com
 0.0.0.0 slaek.com
 0.0.0.0 slafk.com

@@ -1,0 +1,36 @@
+# Ping Identity Brand Impersonation Hardening
+# Category: brand_impersonation
+# Generated: 2026-04-24 18:37:37 UTC
+# Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
+# Seed domains: pingidentity.com
+# Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
+
+0.0.0.0 pigidentity.com
+0.0.0.0 piingidentity.com
+0.0.0.0 pin.gidentity.com
+0.0.0.0 ping1dentity.com
+0.0.0.0 pingdientity.com
+0.0.0.0 pinggidentity.com
+0.0.0.0 pingiddentity.com
+0.0.0.0 pingiddntity.com
+0.0.0.0 pingideentity.com
+0.0.0.0 pingiden.tity.com
+0.0.0.0 pingidenity.com
+0.0.0.0 pingidenntity.com
+0.0.0.0 pingident1ty.com
+0.0.0.0 pingidentify.com
+0.0.0.0 pingidentiity.com
+0.0.0.0 pingidentitty.com
+0.0.0.0 pingidentityy.com
+0.0.0.0 pingidentiy.com
+0.0.0.0 pingidentiyy.com
+0.0.0.0 pingidentlty.com
+0.0.0.0 pingidenttity.com
+0.0.0.0 pingidenyity.com
+0.0.0.0 pingiidentity.com
+0.0.0.0 pingtidentity.com
+0.0.0.0 pinngidentity.com
+0.0.0.0 pngidentity.com
+0.0.0.0 ppingidentity.com
+0.0.0.0 ringidentity.com
+0.0.0.0 xn--pngidentity-zzb.com
