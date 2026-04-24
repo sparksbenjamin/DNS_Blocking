@@ -1,8 +1,8 @@
 {
   "files": [
     {
-      "baseline_count": 5909,
-      "delta_pct": 0.47,
+      "baseline_count": 5881,
+      "delta_pct": 0.0,
       "domain_count": 5881,
       "group": "adult",
       "kind": "service",
@@ -19,8 +19,8 @@
       "service": "grindr"
     },
     {
-      "baseline_count": 85006,
-      "delta_pct": 1.85,
+      "baseline_count": 83433,
+      "delta_pct": 0.0,
       "domain_count": 83433,
       "group": "adult",
       "kind": "service",
@@ -109,8 +109,8 @@
       "service": "perplexity"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 1201,
+      "delta_pct": 0.0,
       "domain_count": 1201,
       "group": "badware_hoster",
       "kind": "service",
@@ -172,8 +172,8 @@
       "service": "googleDNS"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 1486,
+      "delta_pct": 0.0,
       "domain_count": 1486,
       "group": "dynamic_dns",
       "kind": "service",
@@ -217,8 +217,8 @@
       "service": "blaze"
     },
     {
-      "baseline_count": 7,
-      "delta_pct": 14.29,
+      "baseline_count": 6,
+      "delta_pct": 0.0,
       "domain_count": 6,
       "group": "gaming",
       "kind": "service",
@@ -253,8 +253,8 @@
       "service": "battlestate_games"
     },
     {
-      "baseline_count": 15,
-      "delta_pct": 6.67,
+      "baseline_count": 14,
+      "delta_pct": 0.0,
       "domain_count": 14,
       "group": "gaming",
       "kind": "service",
@@ -361,8 +361,8 @@
       "service": "nexusmods"
     },
     {
-      "baseline_count": 19,
-      "delta_pct": 10.53,
+      "baseline_count": 17,
+      "delta_pct": 0.0,
       "domain_count": 17,
       "group": "gaming",
       "kind": "service",
@@ -370,8 +370,8 @@
       "service": "nintendo"
     },
     {
-      "baseline_count": 10,
-      "delta_pct": 10.0,
+      "baseline_count": 9,
+      "delta_pct": 0.0,
       "domain_count": 9,
       "group": "gaming",
       "kind": "service",
@@ -388,8 +388,8 @@
       "service": "path_of_exile"
     },
     {
-      "baseline_count": 12,
-      "delta_pct": 8.33,
+      "baseline_count": 11,
+      "delta_pct": 0.0,
       "domain_count": 11,
       "group": "gaming",
       "kind": "service",
@@ -406,8 +406,8 @@
       "service": "renegade_x"
     },
     {
-      "baseline_count": 8,
-      "delta_pct": 12.5,
+      "baseline_count": 7,
+      "delta_pct": 0.0,
       "domain_count": 7,
       "group": "gaming",
       "kind": "service",
@@ -550,8 +550,8 @@
       "service": "imgur"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 1669,
+      "delta_pct": 0.0,
       "domain_count": 1669,
       "group": "malware",
       "kind": "service",
@@ -559,8 +559,8 @@
       "service": "blp_ransomware"
     },
     {
-      "baseline_count": 269,
-      "delta_pct": 12.27,
+      "baseline_count": 236,
+      "delta_pct": 0.0,
       "domain_count": 236,
       "group": "malware",
       "kind": "service",
@@ -568,8 +568,8 @@
       "service": "threatfox"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 1467,
+      "delta_pct": 0.0,
       "domain_count": 1467,
       "group": "malware",
       "kind": "service",
@@ -685,8 +685,8 @@
       "service": "whatsapp"
     },
     {
-      "baseline_count": 187,
-      "delta_pct": 3.74,
+      "baseline_count": 194,
+      "delta_pct": 0.0,
       "domain_count": 194,
       "group": "phishing",
       "kind": "service",
@@ -703,8 +703,8 @@
       "service": "phishing_army"
     },
     {
-      "baseline_count": 18292,
-      "delta_pct": 0.14,
+      "baseline_count": 18317,
+      "delta_pct": 0.0,
       "domain_count": 18317,
       "group": "phishing",
       "kind": "service",
@@ -730,8 +730,8 @@
       "service": "proton"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 114109,
+      "delta_pct": 0.0,
       "domain_count": 114109,
       "group": "scam",
       "kind": "service",
@@ -739,8 +739,8 @@
       "service": "blp_fraud"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 726,
+      "delta_pct": 0.0,
       "domain_count": 726,
       "group": "scam",
       "kind": "service",
@@ -748,8 +748,8 @@
       "service": "blp_scam"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 14518,
+      "delta_pct": 0.0,
       "domain_count": 14518,
       "group": "scam",
       "kind": "service",
@@ -1297,8 +1297,8 @@
       "service": "nebula"
     },
     {
-      "baseline_count": 23,
-      "delta_pct": 4.35,
+      "baseline_count": 22,
+      "delta_pct": 0.0,
       "domain_count": 22,
       "group": "streaming",
       "kind": "service",
@@ -1378,8 +1378,8 @@
       "service": "soundcloud"
     },
     {
-      "baseline_count": 20,
-      "delta_pct": 5.0,
+      "baseline_count": 19,
+      "delta_pct": 0.0,
       "domain_count": 19,
       "group": "streaming",
       "kind": "service",
@@ -1387,8 +1387,8 @@
       "service": "spotify"
     },
     {
-      "baseline_count": 6,
-      "delta_pct": 16.67,
+      "baseline_count": 5,
+      "delta_pct": 0.0,
       "domain_count": 5,
       "group": "streaming",
       "kind": "service",
@@ -1468,8 +1468,8 @@
       "service": "yy"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 14763,
+      "delta_pct": 0.0,
       "domain_count": 14763,
       "group": "tracking",
       "kind": "service",
@@ -1477,8 +1477,8 @@
       "service": "blp_tracking"
     },
     {
-      "baseline_count": 87695,
-      "delta_pct": 1.8,
+      "baseline_count": 86115,
+      "delta_pct": 0.0,
       "domain_count": 86115,
       "group": "adult",
       "kind": "category",
@@ -1495,8 +1495,8 @@
       "service": null
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 1201,
+      "delta_pct": 0.0,
       "domain_count": 1201,
       "group": "badware_hoster",
       "kind": "category",
@@ -1531,8 +1531,8 @@
       "service": null
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 1486,
+      "delta_pct": 0.0,
       "domain_count": 1486,
       "group": "dynamic_dns",
       "kind": "category",
@@ -1549,8 +1549,8 @@
       "service": null
     },
     {
-      "baseline_count": 176,
-      "delta_pct": 2.27,
+      "baseline_count": 172,
+      "delta_pct": 0.0,
       "domain_count": 172,
       "group": "gaming",
       "kind": "category",
@@ -1567,8 +1567,8 @@
       "service": null
     },
     {
-      "baseline_count": 269,
-      "delta_pct": 1127.51,
+      "baseline_count": 3302,
+      "delta_pct": 0.0,
       "domain_count": 3302,
       "group": "malware",
       "kind": "category",
@@ -1585,8 +1585,8 @@
       "service": null
     },
     {
-      "baseline_count": 299970,
-      "delta_pct": 0.01,
+      "baseline_count": 299994,
+      "delta_pct": 0.0,
       "domain_count": 299994,
       "group": "phishing",
       "kind": "category",
@@ -1603,8 +1603,8 @@
       "service": null
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 129332,
+      "delta_pct": 0.0,
       "domain_count": 129332,
       "group": "scam",
       "kind": "category",
@@ -1639,8 +1639,8 @@
       "service": null
     },
     {
-      "baseline_count": 456,
-      "delta_pct": 0.22,
+      "baseline_count": 455,
+      "delta_pct": 0.0,
       "domain_count": 455,
       "group": "streaming",
       "kind": "category",
@@ -1648,8 +1648,8 @@
       "service": null
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 14763,
+      "delta_pct": 0.0,
       "domain_count": 14763,
       "group": "tracking",
       "kind": "category",
@@ -1657,7 +1657,7 @@
       "service": null
     }
   ],
-  "generated_at": "2026-04-24T15:28:59.589824+00:00",
+  "generated_at": "2026-04-24T15:32:47.668111+00:00",
   "issues": [],
   "status": "passed",
   "summary": {

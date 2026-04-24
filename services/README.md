@@ -1,6 +1,6 @@
 # Threat Intelligence & Content Blocklists
 
-**Generated:** 2026-04-24 15:28:27 UTC
+**Generated:** 2026-04-24 15:32:08 UTC
 
 This repository provides curated blocklists for home network protection.
 
