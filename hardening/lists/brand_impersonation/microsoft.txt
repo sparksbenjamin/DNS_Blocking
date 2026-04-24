@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-24 18:37:37 UTC
+# Generated: 2026-04-24 19:19:41 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -11,7 +11,6 @@
 0.0.0.0 0office.com
 0.0.0.0 0outlook.com
 0.0.0.0 0ut1ook.com
-0.0.0.0 0utiook.com
 0.0.0.0 0utl00k.com
 0.0.0.0 0utlo0k.com
 0.0.0.0 0utlook.com
@@ -104,6 +103,7 @@
 0.0.0.0 live6.com
 0.0.0.0 live7.com
 0.0.0.0 live8.com
+0.0.0.0 live9.com
 0.0.0.0 livea.com
 0.0.0.0 liveb.com
 0.0.0.0 livec.com
@@ -125,7 +125,6 @@
 0.0.0.0 lives.com
 0.0.0.0 livet.com
 0.0.0.0 liveu.com
-0.0.0.0 livev.com
 0.0.0.0 livew.com
 0.0.0.0 livex.com
 0.0.0.0 livey.com
@@ -157,7 +156,6 @@
 0.0.0.0 loive.com
 0.0.0.0 loutlook.com
 0.0.0.0 love.com
-0.0.0.0 lpive.com
 0.0.0.0 luive.com
 0.0.0.0 lutlook.com
 0.0.0.0 luve.com
@@ -365,7 +363,6 @@
 0.0.0.0 microsoftonlinea.com
 0.0.0.0 microsoftonlinec.com
 0.0.0.0 microsoftonlinecom.com
-0.0.0.0 microsoftonlined.com
 0.0.0.0 microsoftonlinei.com
 0.0.0.0 microsoftonlines.com
 0.0.0.0 microsoftonlinme.com
@@ -401,6 +398,7 @@
 0.0.0.0 microsofu.com
 0.0.0.0 microsofv.com
 0.0.0.0 microsofvt.com
+0.0.0.0 microsofy.com
 0.0.0.0 microsofyonline.com
 0.0.0.0 microsofz.com
 0.0.0.0 microsogft.com
@@ -521,7 +519,6 @@
 0.0.0.0 muicrosoft.com
 0.0.0.0 mutlook.com
 0.0.0.0 mycrosoft.com
-0.0.0.0 mycrosoftonline.com
 0.0.0.0 nffice.com
 0.0.0.0 nicr0soft.com
 0.0.0.0 nicrosoft.com
@@ -857,7 +854,6 @@
 0.0.0.0 xn--mcrosft-7ya2d.com
 0.0.0.0 xn--mcrosoft-1ud.com
 0.0.0.0 xn--mcrosoft-21a.com
-0.0.0.0 xn--mcrosoft-6ob.com
 0.0.0.0 xn--mcrosoft-9ib.com
 0.0.0.0 xn--mcrosoft-bkb.com
 0.0.0.0 xn--mcrosoft-c2a.com
@@ -878,6 +874,7 @@
 0.0.0.0 xn--micosoft-i0d.com
 0.0.0.0 xn--micosoft-pf0d.com
 0.0.0.0 xn--micosoftonline-iwc.com
+0.0.0.0 xn--micosoftonlne-s8b56d.com
 0.0.0.0 xn--micosot-21b1347d.com
 0.0.0.0 xn--microoft-l9c.com
 0.0.0.0 xn--microoft-qvb.com
@@ -936,6 +933,7 @@
 0.0.0.0 xn--outloo-1p7b.com
 0.0.0.0 xn--outloo-8bb.com
 0.0.0.0 xn--outook-5db.com
+0.0.0.0 xn--outook-dwa.com
 0.0.0.0 xn--rncrosoft-64a.com
 0.0.0.0 xn--rncrosoft-h5a.com
 0.0.0.0 xn--rnicrosft-67a.com

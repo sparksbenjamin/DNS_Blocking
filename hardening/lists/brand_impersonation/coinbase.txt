@@ -1,6 +1,6 @@
 # Coinbase Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-24 18:37:37 UTC
+# Generated: 2026-04-24 19:19:41 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: coinbase.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -169,7 +169,6 @@
 0.0.0.0 doinbase.com
 0.0.0.0 fcoinbase.com
 0.0.0.0 foinbase.com
-0.0.0.0 koinbase.com
 0.0.0.0 ocinbase.com
 0.0.0.0 oinbase.com
 0.0.0.0 soinbase.com
