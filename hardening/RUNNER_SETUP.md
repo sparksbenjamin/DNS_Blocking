@@ -30,6 +30,22 @@ Set these GitHub repository variables:
   `HARDENING_RUNNER_LABELS`, then to `["self-hosted","linux"]`.
   Example:
   `["self-hosted","linux","x64"]`
+- `ACTIVE_IMPERSONATION_MAX_WORKERS`
+  Optional concurrent probe count for the separate review workflow.
+  Example:
+  `10`
+- `ACTIVE_IMPERSONATION_CONNECT_TIMEOUT`
+  Optional socket connect timeout in seconds for the separate review workflow.
+  Example:
+  `5`
+- `ACTIVE_IMPERSONATION_READ_TIMEOUT`
+  Optional HTTP read timeout in seconds for the separate review workflow.
+  Example:
+  `10`
+- `ACTIVE_IMPERSONATION_MAX_RESPONSE_BYTES`
+  Optional response-byte cap per probe for the separate review workflow.
+  Example:
+  `262144`
 - `DNSTWIST_NAMESERVERS`
   Example:
   `192.168.100.5`

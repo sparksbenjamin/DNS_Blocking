@@ -31,6 +31,8 @@ If you only see this placeholder after a review workflow run, the most likely re
 Useful repo variables for the review workflow:
 
 - `ACTIVE_IMPERSONATION_RUNNER_LABELS=["self-hosted","linux"]`
+- `ACTIVE_IMPERSONATION_READ_TIMEOUT=10`
+- `ACTIVE_IMPERSONATION_CONNECT_TIMEOUT=5`
 
 Optional scope controls:
 

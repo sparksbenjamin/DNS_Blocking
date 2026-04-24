@@ -115,3 +115,43 @@ def test_read_hosts_domains_extracts_unique_hosts(tmp_path):
         "foo.example.com",
         "bar.example.com",
     ]
+
+
+def test_get_baseline_fingerprint_retries_timeouts(monkeypatch):
+    calls = []
+
+    def fake_get_fingerprint(domain, connect_timeout, read_timeout, max_response_bytes):
+        calls.append((domain, connect_timeout, read_timeout, max_response_bytes))
+        if len(calls) == 1:
+            return active_impersonation.Fingerprint(
+                domain=domain,
+                reachable=False,
+                error="https probe failed: Read timed out",
+            )
+        return active_impersonation.Fingerprint(
+            domain=domain,
+            reachable=True,
+            scheme="https",
+            title="Baseline",
+            text_preview="Baseline content",
+        )
+
+    monkeypatch.setattr(active_impersonation, "get_fingerprint", fake_get_fingerprint)
+
+    result = active_impersonation.get_baseline_fingerprint("adobe.com", 3.0, 5.0, 1024)
+
+    assert result.reachable is True
+    assert calls == [
+        ("adobe.com", 3.0, 5.0, 1024),
+        ("adobe.com", 6.0, 10.0, 1024),
+    ]
+
+
+def test_resolve_positive_float_prefers_env(monkeypatch):
+    monkeypatch.setenv("ACTIVE_IMPERSONATION_READ_TIMEOUT", "9.5")
+
+    assert active_impersonation.resolve_positive_float(
+        None,
+        "ACTIVE_IMPERSONATION_READ_TIMEOUT",
+        active_impersonation.DEFAULT_READ_TIMEOUT,
+    ) == 9.5

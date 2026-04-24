@@ -48,6 +48,7 @@ DEFAULT_MAX_WORKERS = 10
 DEFAULT_CONNECT_TIMEOUT = 3.0
 DEFAULT_READ_TIMEOUT = 5.0
 DEFAULT_MAX_RESPONSE_BYTES = 262144
+BASELINE_RETRY_MULTIPLIER = 2.0
 
 ACTIVE_REPORT_DIR = generate_twisted.HARDENING_DIR / "active_impersonation"
 ACTIVE_REPORT_JSON = ACTIVE_REPORT_DIR / "report.json"
@@ -144,25 +145,25 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--max-workers",
         type=int,
-        default=DEFAULT_MAX_WORKERS,
+        default=None,
         help=f"Maximum concurrent probes (default: {DEFAULT_MAX_WORKERS})",
     )
     parser.add_argument(
         "--connect-timeout",
         type=float,
-        default=DEFAULT_CONNECT_TIMEOUT,
+        default=None,
         help=f"Socket connect timeout in seconds (default: {DEFAULT_CONNECT_TIMEOUT})",
     )
     parser.add_argument(
         "--read-timeout",
         type=float,
-        default=DEFAULT_READ_TIMEOUT,
+        default=None,
         help=f"HTTP read timeout in seconds (default: {DEFAULT_READ_TIMEOUT})",
     )
     parser.add_argument(
         "--max-response-bytes",
         type=int,
-        default=DEFAULT_MAX_RESPONSE_BYTES,
+        default=None,
         help=f"Maximum response body bytes to inspect per probe (default: {DEFAULT_MAX_RESPONSE_BYTES})",
     )
     parser.add_argument(
@@ -206,6 +207,54 @@ def resolve_max_domains_per_target(cli_value: Optional[int]) -> Optional[int]:
         return value
     except ValueError as exc:
         raise ValueError("ACTIVE_IMPERSONATION_MAX_CANDIDATES must be a positive integer") from exc
+
+
+def resolve_positive_int(
+    cli_value: Optional[int],
+    env_name: str,
+    default: int,
+) -> int:
+    """Resolve a positive integer from CLI, env, or default."""
+    if cli_value is not None:
+        if cli_value < 1:
+            raise ValueError(f"{env_name} must be at least 1")
+        return cli_value
+
+    env_value = os.environ.get(env_name, "").strip()
+    if not env_value:
+        return default
+
+    try:
+        value = int(env_value)
+        if value < 1:
+            raise ValueError
+        return value
+    except ValueError as exc:
+        raise ValueError(f"{env_name} must be a positive integer") from exc
+
+
+def resolve_positive_float(
+    cli_value: Optional[float],
+    env_name: str,
+    default: float,
+) -> float:
+    """Resolve a positive float from CLI, env, or default."""
+    if cli_value is not None:
+        if cli_value <= 0:
+            raise ValueError(f"{env_name} must be greater than 0")
+        return cli_value
+
+    env_value = os.environ.get(env_name, "").strip()
+    if not env_value:
+        return default
+
+    try:
+        value = float(env_value)
+        if value <= 0:
+            raise ValueError
+        return value
+    except ValueError as exc:
+        raise ValueError(f"{env_name} must be a positive number") from exc
 
 
 def normalize_whitespace(value: str) -> str:
@@ -405,6 +454,37 @@ def get_fingerprint(
         ip=ip_address,
         reachable=False,
         error=shorten_note("; ".join(errors)) if errors else "No successful probe",
+    )
+
+
+def get_baseline_fingerprint(
+    domain: str,
+    connect_timeout: float,
+    read_timeout: float,
+    max_response_bytes: int,
+) -> Fingerprint:
+    """Collect a baseline fingerprint, retrying once with softer timeouts if needed."""
+    fingerprint = get_fingerprint(domain, connect_timeout, read_timeout, max_response_bytes)
+    if fingerprint.reachable:
+        return fingerprint
+
+    error_text = fingerprint.error.lower()
+    if "timed out" not in error_text and "timeout" not in error_text:
+        return fingerprint
+
+    retry_connect_timeout = max(connect_timeout, connect_timeout * BASELINE_RETRY_MULTIPLIER)
+    retry_read_timeout = max(read_timeout, read_timeout * BASELINE_RETRY_MULTIPLIER)
+    LOGGER.info(
+        "Retrying slow baseline %s with connect timeout %.1fs and read timeout %.1fs",
+        domain,
+        retry_connect_timeout,
+        retry_read_timeout,
+    )
+    return get_fingerprint(
+        domain,
+        retry_connect_timeout,
+        retry_read_timeout,
+        max_response_bytes,
     )
 
 
@@ -814,7 +894,12 @@ def build_baselines(
     warnings_list: List[str] = []
 
     for seed_domain in target["seed_domains"]:
-        fingerprint = get_fingerprint(seed_domain, connect_timeout, read_timeout, max_response_bytes)
+        fingerprint = get_baseline_fingerprint(
+            seed_domain,
+            connect_timeout,
+            read_timeout,
+            max_response_bytes,
+        )
         if fingerprint.reachable:
             baselines.append(fingerprint)
         else:
@@ -921,16 +1006,33 @@ def main() -> int:
     args = parse_args()
     configure_logging(args.verbose)
 
-    if args.max_workers < 1:
-        LOGGER.error("--max-workers must be at least 1")
-        return 2
-
     config_path = Path(args.config).resolve()
     output_dir = Path(args.output_dir).resolve()
     selected_targets = resolve_selected_targets(args.target)
-    max_domains_per_target = resolve_max_domains_per_target(args.max_domains_per_target)
 
     try:
+        max_workers = resolve_positive_int(
+            args.max_workers,
+            "ACTIVE_IMPERSONATION_MAX_WORKERS",
+            DEFAULT_MAX_WORKERS,
+        )
+        connect_timeout = resolve_positive_float(
+            args.connect_timeout,
+            "ACTIVE_IMPERSONATION_CONNECT_TIMEOUT",
+            DEFAULT_CONNECT_TIMEOUT,
+        )
+        read_timeout = resolve_positive_float(
+            args.read_timeout,
+            "ACTIVE_IMPERSONATION_READ_TIMEOUT",
+            DEFAULT_READ_TIMEOUT,
+        )
+        max_response_bytes = resolve_positive_int(
+            args.max_response_bytes,
+            "ACTIVE_IMPERSONATION_MAX_RESPONSE_BYTES",
+            DEFAULT_MAX_RESPONSE_BYTES,
+        )
+        max_domains_per_target = resolve_max_domains_per_target(args.max_domains_per_target)
+
         targets = build_target_list(config_path, selected_targets)
         if not targets:
             raise RuntimeError("no active impersonation targets selected")
@@ -943,10 +1045,10 @@ def main() -> int:
             LOGGER.info("Auditing target %s", target["name"])
             target_report, results, target_warnings = audit_target(
                 target,
-                args.max_workers,
-                args.connect_timeout,
-                args.read_timeout,
-                args.max_response_bytes,
+                max_workers,
+                connect_timeout,
+                read_timeout,
+                max_response_bytes,
                 max_domains_per_target,
             )
             all_results.extend(results)
@@ -961,10 +1063,10 @@ def main() -> int:
         report = {
             "generated_at": generate_twisted.datetime.now(generate_twisted.timezone.utc).isoformat(),
             "settings": {
-                "max_workers": args.max_workers,
-                "connect_timeout": args.connect_timeout,
-                "read_timeout": args.read_timeout,
-                "max_response_bytes": args.max_response_bytes,
+                "max_workers": max_workers,
+                "connect_timeout": connect_timeout,
+                "read_timeout": read_timeout,
+                "max_response_bytes": max_response_bytes,
                 "max_domains_per_target": max_domains_per_target,
                 "selected_targets": sorted(selected_targets),
             },
