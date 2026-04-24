@@ -1,0 +1,117 @@
+from pathlib import Path
+import sys
+
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
+
+import generate_active_impersonation as active_impersonation  # noqa: E402
+
+
+def test_limit_candidate_domains_prioritizes_most_similar_domains():
+    domains = [
+        "paypa1.com",
+        "paypal-login.com",
+        "completely-random-example.net",
+    ]
+
+    limited = active_impersonation.limit_candidate_domains(domains, ["paypal.com"], 2)
+
+    assert "paypa1.com" in limited
+    assert "paypal-login.com" in limited
+    assert "completely-random-example.net" not in limited
+
+
+def test_classify_domain_accepts_baseline_redirect_alias():
+    baseline = active_impersonation.Fingerprint(
+        domain="paypal.com",
+        redirect_host="www.paypal.com",
+        banner="nginx",
+        issuer="DigiCert",
+        scheme="https",
+        title="PayPal",
+        text_preview="Send payments worldwide",
+        content_hash=active_impersonation.build_content_hash("Send payments worldwide"),
+        reachable=True,
+    )
+    current = active_impersonation.Fingerprint(
+        domain="paypa1-support.example",
+        redirect_host="www.paypal.com",
+        banner="nginx",
+        issuer="DigiCert",
+        scheme="https",
+        title="PayPal",
+        text_preview="Send payments worldwide",
+        content_hash=active_impersonation.build_content_hash("Send payments worldwide"),
+        http_status="200",
+        reachable=True,
+    )
+
+    result = active_impersonation.classify_domain(current, baseline, "paypal", "PayPal")
+
+    assert result.status == "HIGH_MATCH"
+    assert result.score >= 8
+    assert "redirects to baseline host www.paypal.com" in result.note
+
+
+def test_choose_best_result_prefers_highest_scoring_baseline():
+    current = active_impersonation.Fingerprint(
+        domain="login-microsoftsecure.example",
+        redirect_host="login.microsoftonline.com",
+        banner="Microsoft-IIS/10.0",
+        issuer="Microsoft Azure RSA TLS Issuing CA 07",
+        scheme="https",
+        title="Sign in to your account",
+        text_preview="Enter your password to continue",
+        content_hash=active_impersonation.build_content_hash("Enter your password to continue"),
+        http_status="200",
+        reachable=True,
+    )
+    weak = active_impersonation.Fingerprint(
+        domain="office.com",
+        redirect_host="www.office.com",
+        banner="nginx",
+        issuer="Other CA",
+        scheme="https",
+        title="Office",
+        text_preview="Collaborate",
+        content_hash=active_impersonation.build_content_hash("Collaborate"),
+        reachable=True,
+    )
+    strong = active_impersonation.Fingerprint(
+        domain="microsoftonline.com",
+        redirect_host="login.microsoftonline.com",
+        banner="Microsoft-IIS/10.0",
+        issuer="Microsoft Azure RSA TLS Issuing CA 07",
+        scheme="https",
+        title="Sign in to your account",
+        text_preview="Enter your password to continue",
+        content_hash=active_impersonation.build_content_hash("Enter your password to continue"),
+        reachable=True,
+    )
+
+    result = active_impersonation.choose_best_result(
+        current,
+        [weak, strong],
+        "microsoft",
+        "Microsoft",
+    )
+
+    assert result.matched_seed == "microsoftonline.com"
+    assert result.status == "HIGH_MATCH"
+
+
+def test_read_hosts_domains_extracts_unique_hosts(tmp_path):
+    path = tmp_path / "domains.txt"
+    path.write_text(
+        "# sample\n"
+        "0.0.0.0 foo.example.com\n"
+        "0.0.0.0 foo.example.com\n"
+        "0.0.0.0 bar.example.com\n",
+        encoding="utf-8",
+    )
+
+    assert active_impersonation.read_hosts_domains(path) == [
+        "foo.example.com",
+        "bar.example.com",
+    ]

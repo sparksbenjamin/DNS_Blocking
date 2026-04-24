@@ -420,6 +420,12 @@ def generate_readme(
         "These lists are designed for **hardening against brand impersonation and typo-squatting**, "
         "not for normal service blocking. They are intentionally kept separate from the standard `services/` lists.\n"
     )
+    lines.append(
+        "There is also a separate review layer at [active_impersonation/README.md](active_impersonation/README.md). "
+        "That stage does **not** create another blocklist. Instead, it scores live lookalike domains against "
+        "the real brand sites so you can review which ones look materially suspicious before promoting them "
+        "anywhere.\n"
+    )
     lines.append("## What DNSTwist Does\n")
     lines.append(
         "`dnstwist` generates lookalike permutations for a brand domain and checks which ones appear to be live. "
@@ -430,6 +436,19 @@ def generate_readme(
     lines.append("- **Exact hostnames are preserved** - these are not collapsed to registrable roots")
     lines.append("- **Best used for high-risk brands** - identity providers, mail brands, payment brands, and collaboration tools")
     lines.append("- **Review before broad deployment** - especially if you use wildcard-heavy allow/block policies\n")
+    lines.append("## Active Impersonation Review\n")
+    lines.append(
+        "If you want more than “this domain is a live DNSTwist permutation,” run "
+        "`scripts/generate_active_impersonation.py` after the hardening lists are generated.\n"
+    )
+    lines.append("That report stage:")
+    lines.append("- checks whether the real brand site is reachable")
+    lines.append("- fingerprints live lookalikes with lightweight HTTP, TLS, and content signals")
+    lines.append("- scores which domains most closely resemble the real site")
+    lines.append("- writes review artifacts under `hardening/active_impersonation/`\n")
+    lines.append(
+        "This is useful when you want a tighter triage loop instead of auto-blocking every live permutation.\n"
+    )
     lines.append("## Generation Settings\n")
     lines.append(f"- Source tool: [dnstwist](https://github.com/elceef/dnstwist)")
     lines.append("- Mode: registered lookalike domains only")

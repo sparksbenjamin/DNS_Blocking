@@ -6,6 +6,8 @@ This section contains optional high-sensitivity blocklists generated from curate
 
 These lists are designed for **hardening against brand impersonation and typo-squatting**, not for normal service blocking. They are intentionally kept separate from the standard `services/` lists.
 
+There is also a separate review layer at [active_impersonation/README.md](active_impersonation/README.md). That stage does **not** create another blocklist. Instead, it scores live lookalike domains against the real brand sites so you can review which ones look materially suspicious before promoting them anywhere.
+
 ## What DNSTwist Does
 
 `dnstwist` generates lookalike permutations for a brand domain and checks which ones appear to be live. That makes it useful for catching typo-squatting, homoglyph tricks, and brand impersonation domains.
@@ -16,6 +18,19 @@ These lists are designed for **hardening against brand impersonation and typo-sq
 - **Exact hostnames are preserved** - these are not collapsed to registrable roots
 - **Best used for high-risk brands** - identity providers, mail brands, payment brands, and collaboration tools
 - **Review before broad deployment** - especially if you use wildcard-heavy allow/block policies
+
+## Active Impersonation Review
+
+If you want more than “this domain is a live DNSTwist permutation,” run `scripts/generate_active_impersonation.py` after the hardening lists are generated.
+
+That report stage:
+
+- checks whether the real brand site is reachable
+- fingerprints live lookalikes with lightweight HTTP/TLS/content signals
+- scores which domains most closely resemble the real site
+- writes review artifacts under `hardening/active_impersonation/`
+
+This is useful when you want a tighter triage loop instead of auto-blocking every live permutation.
 
 ## Generation Settings
 

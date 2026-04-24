@@ -11,6 +11,9 @@ jobs:
     # want a stricter label match such as ["self-hosted","linux","x64"].
     runs-on: ${{ fromJSON(vars.HARDENING_RUNNER_LABELS || '["self-hosted","linux"]') }}
     env:
+      ACTIVE_IMPERSONATION_ENABLED: ${{ vars.ACTIVE_IMPERSONATION_ENABLED || 'false' }}
+      ACTIVE_IMPERSONATION_MAX_CANDIDATES: ${{ vars.ACTIVE_IMPERSONATION_MAX_CANDIDATES }}
+      ACTIVE_IMPERSONATION_TARGETS: ${{ vars.ACTIVE_IMPERSONATION_TARGETS }}
       DNSTWIST_JOBS: ${{ vars.DNSTWIST_JOBS || '3' }}
       DNSTWIST_NAMESERVERS: ${{ vars.DNSTWIST_NAMESERVERS }}
       DNSTWIST_THREADS: ${{ vars.DNSTWIST_THREADS || '12' }}
@@ -31,13 +34,17 @@ jobs:
         run: |
           python3 -m venv "$VENV_PATH"
           "$VENV_PATH/bin/python" -m pip install --upgrade pip
-          "$VENV_PATH/bin/python" -m pip install dnstwist dnspython pytest
+          "$VENV_PATH/bin/python" -m pip install dnstwist dnspython pytest requests
 
       - name: Generate Hardening Lists
         run: $VENV_PATH/bin/python scripts/generate_twisted.py
 
+      - name: Generate Active Impersonation Review
+        if: ${{ env.ACTIVE_IMPERSONATION_ENABLED == 'true' }}
+        run: $VENV_PATH/bin/python scripts/generate_active_impersonation.py
+
       - name: Run tests
-        run: $VENV_PATH/bin/python -m pytest -q tests/test_generate_twisted.py
+        run: $VENV_PATH/bin/python -m pytest -q tests/test_generate_twisted.py tests/test_generate_active_impersonation.py
 
       - name: Commit and Push
         run: |

@@ -37,6 +37,20 @@ Set these GitHub repository variables:
   Override if you want something else.
   Example:
   `16`
+- `ACTIVE_IMPERSONATION_ENABLED`
+  Optional. Set to:
+  `true`
+  if you want the workflow to generate active impersonation review reports after
+  the DNSTwist lists are built.
+- `ACTIVE_IMPERSONATION_TARGETS`
+  Optional comma-separated subset for the active review stage.
+  Example:
+  `paypal,okta,microsoft`
+- `ACTIVE_IMPERSONATION_MAX_CANDIDATES`
+  Optional per-target cap for the active review stage so it does not probe every
+  generated domain in one run.
+  Example:
+  `25`
 
 If you leave `HARDENING_RUNNER_LABELS` unset, the workflow at
 `.github/workflows/update_twisted.yml` will target any runner with the default
@@ -55,6 +69,7 @@ Inside the container:
 7. Confirm `python3 -m pip` and `python3 -m venv` work on the runner host
 8. Tune `DNSTWIST_JOBS` and `DNSTWIST_THREADS` together instead of cranking only one knob
 9. If you leave the variables unset, the workflow will run with `DNSTWIST_JOBS=3` and `DNSTWIST_THREADS=12`
+10. Leave `ACTIVE_IMPERSONATION_ENABLED` off until you are ready for the extra probe load
 
 On Debian 13, this is usually enough:
 
@@ -71,8 +86,14 @@ From the runner host, this should work:
 python3 -m venv .venv-hardening
 . .venv-hardening/bin/activate
 python -m pip install --upgrade pip
-python -m pip install dnstwist dnspython
+python -m pip install dnstwist dnspython requests
 DNSTWIST_NAMESERVERS=192.168.100.5 DNSTWIST_JOBS=3 DNSTWIST_THREADS=12 python scripts/generate_twisted.py --target paypal
 ```
 
 If that succeeds, the scheduled workflow should work too.
+
+If you want to validate the active impersonation stage too, try a small scoped run:
+
+```bash
+ACTIVE_IMPERSONATION_MAX_CANDIDATES=10 python scripts/generate_active_impersonation.py --target paypal
+```
