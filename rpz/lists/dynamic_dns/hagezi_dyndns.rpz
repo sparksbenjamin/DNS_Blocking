@@ -1,11 +1,11 @@
 ; HaGeZi Dynamic DNS
 ; Category: dynamic_dns
-; Generated: 2026-04-24 18:35:46 UTC
+; Generated: 2026-04-25 04:40:23 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1486
+; Original domains (before deduplication): 1480
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026042418 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026042504 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 0000000000000000000000.com CNAME .
@@ -99,7 +99,6 @@ authorizeddns.org CNAME .
 authorizeddns.us CNAME .
 autoipset.com CNAME .
 avandns.com CNAME .
-awiki.org CNAME .
 ax.lt CNAME .
 b0tnet.com CNAME .
 b33r.us CNAME .
@@ -345,7 +344,6 @@ dsmynas.com CNAME .
 dsmynas.net CNAME .
 dsmynas.org CNAME .
 dtdns.com CNAME .
-dtdns.net CNAME .
 dtdns.org CNAME .
 dubya.info CNAME .
 dubya.net CNAME .
@@ -379,7 +377,6 @@ dynalias.net CNAME .
 dynalias.org CNAME .
 dynamai.com CNAME .
 dynamic-dns.net CNAME .
-dynamic-dns.us CNAME .
 dynamic-m.com CNAME .
 dynamic-site.net CNAME .
 dynamic.domains CNAME .
@@ -431,7 +428,6 @@ dynme.ovh CNAME .
 dynnamn.ru CNAME .
 dynns.com CNAME .
 dyns.be CNAME .
-dyns.cx CNAME .
 dyns.net CNAME .
 dynserv.org CNAME .
 dynssl.com CNAME .
@@ -488,7 +484,6 @@ etitrans.com CNAME .
 eurotank.ro CNAME .
 eva.hk CNAME .
 everton.com CNAME .
-evils.in CNAME .
 expired-dns.com CNAME .
 ez-dns.com CNAME .
 ez-ip.net CNAME .
@@ -653,7 +648,6 @@ ham-radio-op.net CNAME .
 ham.gd CNAME .
 hamshack.info CNAME .
 happyforever.com CNAME .
-happyminecraft.com CNAME .
 hatenboer.org CNAME .
 hbmc.net CNAME .
 health-carereform.com CNAME .

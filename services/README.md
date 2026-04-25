@@ -1,6 +1,6 @@
 # Threat Intelligence & Content Blocklists
 
-**Generated:** 2026-04-24 18:35:46 UTC
+**Generated:** 2026-04-25 04:40:23 UTC
 
 **Audience:** Home-safe / standard
 
@@ -26,21 +26,21 @@ One-click blocklists combining multiple sources for everyday blocking.
 
 | Category | Root Domains | Sources | File | Raw URL |
 |----------|---------|---------|------|---------|
-| 🔞 Adult Content | 86,115 | 3 | [adult.txt](categories/adult.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/adult.txt) |
+| 🔞 Adult Content | 86,119 | 3 | [adult.txt](categories/adult.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/adult.txt) |
 | 📁 Ai | 19 | 9 | [ai.txt](categories/ai.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/ai.txt) |
-| 🗄️ Badware Hosters | 1,201 | 1 | [badware_hoster.txt](categories/badware_hoster.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/badware_hoster.txt) |
+| 🗄️ Badware Hosters | 1,194 | 1 | [badware_hoster.txt](categories/badware_hoster.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/badware_hoster.txt) |
 | 📁 Cdn | 30 | 1 | [cdn.txt](categories/cdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/cdn.txt) |
 | 📁 Dating | 7 | 3 | [dating.txt](categories/dating.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dating.txt) |
 | 🛜 DNS Providers | 2 | 2 | [dns.txt](categories/dns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dns.txt) |
-| 🌐 Dynamic DNS | 1,486 | 1 | [dynamic_dns.txt](categories/dynamic_dns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dynamic_dns.txt) |
+| 🌐 Dynamic DNS | 1,480 | 1 | [dynamic_dns.txt](categories/dynamic_dns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dynamic_dns.txt) |
 | 📁 Gambling | 33 | 4 | [gambling.txt](categories/gambling.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/gambling.txt) |
 | 🎮 Gaming Platforms | 172 | 33 | [gaming.txt](categories/gaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/gaming.txt) |
 | 📁 Hosting | 33 | 4 | [hosting.txt](categories/hosting.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/hosting.txt) |
-| 🦠 Malware & Threats | 3,322 | 3 | [malware.txt](categories/malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/malware.txt) |
+| 🦠 Malware & Threats | 3,313 | 3 | [malware.txt](categories/malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/malware.txt) |
 | 📁 Messenger | 55 | 12 | [messenger.txt](categories/messenger.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/messenger.txt) |
-| 🎣 Phishing & Scam Sites | 300,030 | 3 | [phishing.txt](categories/phishing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/phishing.txt) |
+| 🎣 Phishing & Scam Sites | 299,979 | 3 | [phishing.txt](categories/phishing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/phishing.txt) |
 | 📁 Privacy | 6 | 2 | [privacy.txt](categories/privacy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/privacy.txt) |
-| 💸 Scam & Fraud | 129,332 | 3 | [scam.txt](categories/scam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/scam.txt) |
+| 💸 Scam & Fraud | 129,070 | 3 | [scam.txt](categories/scam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/scam.txt) |
 | 📁 Shopping | 571 | 10 | [shopping.txt](categories/shopping.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/shopping.txt) |
 | 📱 Social Networks | 836 | 26 | [social_network.txt](categories/social_network.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/social_network.txt) |
 | 📁 Software | 13 | 2 | [software.txt](categories/software.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/software.txt) |
@@ -57,7 +57,7 @@ For granular control, each source is available separately if you want source-lev
 |--------|---------|------|---------|
 | Chad Mayfield Porn | 5,881 | [chadmayfield_porn.txt](lists/adult/chadmayfield_porn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/chadmayfield_porn.txt) |
 | Grindr | 1 | [grindr.txt](lists/adult/grindr.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/grindr.txt) |
-| StevenBlack Porn | 83,433 | [stevenblack_porn.txt](lists/adult/stevenblack_porn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/stevenblack_porn.txt) |
+| StevenBlack Porn | 83,437 | [stevenblack_porn.txt](lists/adult/stevenblack_porn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/stevenblack_porn.txt) |
 
 ### Ai
 
@@ -77,7 +77,7 @@ For granular control, each source is available separately if you want source-lev
 
 | Source | Root Domains | File | Raw URL |
 |--------|---------|------|---------|
-| HaGeZi Badware Hoster | 1,201 | [hagezi_hoster.txt](lists/badware_hoster/hagezi_hoster.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/badware_hoster/hagezi_hoster.txt) |
+| HaGeZi Badware Hoster | 1,194 | [hagezi_hoster.txt](lists/badware_hoster/hagezi_hoster.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/badware_hoster/hagezi_hoster.txt) |
 
 ### Cdn
 
@@ -104,7 +104,7 @@ For granular control, each source is available separately if you want source-lev
 
 | Source | Root Domains | File | Raw URL |
 |--------|---------|------|---------|
-| HaGeZi Dynamic DNS | 1,486 | [hagezi_dyndns.txt](lists/dynamic_dns/hagezi_dyndns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dynamic_dns/hagezi_dyndns.txt) |
+| HaGeZi Dynamic DNS | 1,480 | [hagezi_dyndns.txt](lists/dynamic_dns/hagezi_dyndns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dynamic_dns/hagezi_dyndns.txt) |
 
 ### Gambling
 
@@ -167,8 +167,8 @@ For granular control, each source is available separately if you want source-lev
 | Source | Root Domains | File | Raw URL |
 |--------|---------|------|---------|
 | Block List Project Ransomware | 1,669 | [blp_ransomware.txt](lists/malware/blp_ransomware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/malware/blp_ransomware.txt) |
-| ThreatFox | 257 | [threatfox.txt](lists/malware/threatfox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/malware/threatfox.txt) |
-| URLhaus | 1,471 | [urlhaus.txt](lists/malware/urlhaus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/malware/urlhaus.txt) |
+| ThreatFox | 264 | [threatfox.txt](lists/malware/threatfox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/malware/threatfox.txt) |
+| URLhaus | 1,452 | [urlhaus.txt](lists/malware/urlhaus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/malware/urlhaus.txt) |
 
 ### Messenger
 
@@ -191,8 +191,8 @@ For granular control, each source is available separately if you want source-lev
 
 | Source | Root Domains | File | Raw URL |
 |--------|---------|------|---------|
-| OpenPhish | 194 | [openphish.txt](lists/phishing/openphish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/openphish.txt) |
-| PhishTank | 18,354 | [phishtank.txt](lists/phishing/phishtank.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/phishtank.txt) |
+| OpenPhish | 185 | [openphish.txt](lists/phishing/openphish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/openphish.txt) |
+| PhishTank | 18,310 | [phishtank.txt](lists/phishing/phishtank.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/phishtank.txt) |
 | Phishing Army | 283,566 | [phishing_army.txt](lists/phishing/phishing_army.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/phishing_army.txt) |
 
 ### Privacy
@@ -208,7 +208,7 @@ For granular control, each source is available separately if you want source-lev
 |--------|---------|------|---------|
 | Block List Project Fraud | 114,109 | [blp_fraud.txt](lists/scam/blp_fraud.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/scam/blp_fraud.txt) |
 | Block List Project Scam | 726 | [blp_scam.txt](lists/scam/blp_scam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/scam/blp_scam.txt) |
-| HaGeZi Fake | 14,518 | [hagezi_fake.txt](lists/scam/hagezi_fake.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/scam/hagezi_fake.txt) |
+| HaGeZi Fake | 14,256 | [hagezi_fake.txt](lists/scam/hagezi_fake.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/scam/hagezi_fake.txt) |
 
 ### Shopping
 
