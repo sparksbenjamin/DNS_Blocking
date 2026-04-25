@@ -1,6 +1,6 @@
 # DNSTwist Hardening Lists
 
-**Generated:** 2026-04-24 19:19:41 UTC
+**Generated:** 2026-04-25 05:51:35 UTC
 
 This section contains optional high-sensitivity blocklists generated from curated brand seeds with [dnstwist](https://github.com/elceef/dnstwist).
 
@@ -62,52 +62,52 @@ If that resolver lives on a private address like `192.168.100.5`, the scheduled 
 
 | Category | Exact Hosts | File | Raw URL |
 |----------|-------------|------|---------|
-| Brand Impersonation | 6,086 | [brand_impersonation.txt](categories/brand_impersonation.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/categories/brand_impersonation.txt) |
+| Brand Impersonation | 6,105 | [brand_impersonation.txt](categories/brand_impersonation.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/categories/brand_impersonation.txt) |
 
 ## Per-Target Lists
 
 | Target | Seeds | Exact Hosts | File | Raw URL |
 |--------|-------|-------------|------|---------|
 | Adobe | 2 | 180 | [adobe.txt](lists/brand_impersonation/adobe.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/adobe.txt) |
-| Amazon | 1 | 257 | [amazon.txt](lists/brand_impersonation/amazon.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/amazon.txt) |
-| Apple | 2 | 350 | [apple.txt](lists/brand_impersonation/apple.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/apple.txt) |
-| Atlassian | 1 | 45 | [atlassian.txt](lists/brand_impersonation/atlassian.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/atlassian.txt) |
-| Auth0 | 1 | 187 | [auth0.txt](lists/brand_impersonation/auth0.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/auth0.txt) |
+| Amazon | 1 | 258 | [amazon.txt](lists/brand_impersonation/amazon.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/amazon.txt) |
+| Apple | 2 | 346 | [apple.txt](lists/brand_impersonation/apple.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/apple.txt) |
+| Atlassian | 1 | 46 | [atlassian.txt](lists/brand_impersonation/atlassian.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/atlassian.txt) |
+| Auth0 | 1 | 188 | [auth0.txt](lists/brand_impersonation/auth0.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/auth0.txt) |
 | Box | 1 | 103 | [box.txt](lists/brand_impersonation/box.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/box.txt) |
 | Cloudflare | 1 | 147 | [cloudflare.txt](lists/brand_impersonation/cloudflare.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/cloudflare.txt) |
-| Coinbase | 1 | 250 | [coinbase.txt](lists/brand_impersonation/coinbase.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/coinbase.txt) |
+| Coinbase | 1 | 251 | [coinbase.txt](lists/brand_impersonation/coinbase.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/coinbase.txt) |
 | DHL | 1 | 105 | [dhl.txt](lists/brand_impersonation/dhl.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/dhl.txt) |
-| Docker | 1 | 89 | [docker.txt](lists/brand_impersonation/docker.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/docker.txt) |
-| DocuSign | 1 | 85 | [docusign.txt](lists/brand_impersonation/docusign.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/docusign.txt) |
+| Docker | 1 | 88 | [docker.txt](lists/brand_impersonation/docker.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/docker.txt) |
+| DocuSign | 1 | 86 | [docusign.txt](lists/brand_impersonation/docusign.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/docusign.txt) |
 | Dropbox | 2 | 129 | [dropbox.txt](lists/brand_impersonation/dropbox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/dropbox.txt) |
-| Duo | 1 | 118 | [duo.txt](lists/brand_impersonation/duo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/duo.txt) |
-| FedEx | 1 | 119 | [fedex.txt](lists/brand_impersonation/fedex.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/fedex.txt) |
+| Duo | 1 | 119 | [duo.txt](lists/brand_impersonation/duo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/duo.txt) |
+| FedEx | 1 | 120 | [fedex.txt](lists/brand_impersonation/fedex.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/fedex.txt) |
 | Figma | 1 | 84 | [figma.txt](lists/brand_impersonation/figma.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/figma.txt) |
 | GitHub | 1 | 162 | [github.txt](lists/brand_impersonation/github.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/github.txt) |
-| GitLab | 1 | 79 | [gitlab.txt](lists/brand_impersonation/gitlab.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/gitlab.txt) |
-| Google | 2 | 567 | [google.txt](lists/brand_impersonation/google.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/google.txt) |
-| Intuit | 1 | 142 | [intuit.txt](lists/brand_impersonation/intuit.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/intuit.txt) |
+| GitLab | 1 | 80 | [gitlab.txt](lists/brand_impersonation/gitlab.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/gitlab.txt) |
+| Google | 2 | 569 | [google.txt](lists/brand_impersonation/google.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/google.txt) |
+| Intuit | 1 | 143 | [intuit.txt](lists/brand_impersonation/intuit.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/intuit.txt) |
 | Jira | 1 | 99 | [jira.txt](lists/brand_impersonation/jira.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/jira.txt) |
 | Microsoft | 5 | 934 | [microsoft.txt](lists/brand_impersonation/microsoft.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/microsoft.txt) |
 | Notion | 1 | 13 | [notion.txt](lists/brand_impersonation/notion.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/notion.txt) |
-| Okta | 1 | 110 | [okta.txt](lists/brand_impersonation/okta.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/okta.txt) |
+| Okta | 1 | 111 | [okta.txt](lists/brand_impersonation/okta.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/okta.txt) |
 | OneLogin | 1 | 32 | [onelogin.txt](lists/brand_impersonation/onelogin.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/onelogin.txt) |
-| PayPal | 1 | 213 | [paypal.txt](lists/brand_impersonation/paypal.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/paypal.txt) |
-| Ping Identity | 1 | 28 | [pingidentity.txt](lists/brand_impersonation/pingidentity.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/pingidentity.txt) |
+| PayPal | 1 | 215 | [paypal.txt](lists/brand_impersonation/paypal.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/paypal.txt) |
+| Ping Identity | 1 | 29 | [pingidentity.txt](lists/brand_impersonation/pingidentity.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/pingidentity.txt) |
 | QuickBooks | 1 | 202 | [quickbooks.txt](lists/brand_impersonation/quickbooks.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/quickbooks.txt) |
-| Salesforce | 1 | 117 | [salesforce.txt](lists/brand_impersonation/salesforce.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/salesforce.txt) |
+| Salesforce | 1 | 119 | [salesforce.txt](lists/brand_impersonation/salesforce.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/salesforce.txt) |
 | ServiceNow | 1 | 38 | [servicenow.txt](lists/brand_impersonation/servicenow.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/servicenow.txt) |
-| Shopify | 1 | 177 | [shopify.txt](lists/brand_impersonation/shopify.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/shopify.txt) |
-| Slack | 1 | 91 | [slack.txt](lists/brand_impersonation/slack.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/slack.txt) |
+| Shopify | 1 | 178 | [shopify.txt](lists/brand_impersonation/shopify.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/shopify.txt) |
+| Slack | 1 | 92 | [slack.txt](lists/brand_impersonation/slack.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/slack.txt) |
 | Stripe | 1 | 96 | [stripe.txt](lists/brand_impersonation/stripe.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/stripe.txt) |
 | Trello | 1 | 61 | [trello.txt](lists/brand_impersonation/trello.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/trello.txt) |
-| TurboTax | 1 | 150 | [turbotax.txt](lists/brand_impersonation/turbotax.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/turbotax.txt) |
+| TurboTax | 1 | 151 | [turbotax.txt](lists/brand_impersonation/turbotax.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/turbotax.txt) |
 | UPS | 1 | 100 | [ups.txt](lists/brand_impersonation/ups.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/ups.txt) |
 | USPS | 1 | 99 | [usps.txt](lists/brand_impersonation/usps.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/usps.txt) |
-| Venmo | 1 | 71 | [venmo.txt](lists/brand_impersonation/venmo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/venmo.txt) |
+| Venmo | 1 | 73 | [venmo.txt](lists/brand_impersonation/venmo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/venmo.txt) |
 | Zendesk | 1 | 61 | [zendesk.txt](lists/brand_impersonation/zendesk.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/zendesk.txt) |
-| Zoom | 1 | 82 | [zoom.txt](lists/brand_impersonation/zoom.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/zoom.txt) |
-| eBay | 1 | 122 | [ebay.txt](lists/brand_impersonation/ebay.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/ebay.txt) |
+| Zoom | 1 | 81 | [zoom.txt](lists/brand_impersonation/zoom.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/zoom.txt) |
+| eBay | 1 | 125 | [ebay.txt](lists/brand_impersonation/ebay.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/hardening/lists/brand_impersonation/ebay.txt) |
 
 ## Recommended Use
 
