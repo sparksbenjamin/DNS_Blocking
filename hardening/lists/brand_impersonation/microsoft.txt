@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-25 05:51:35 UTC
+# Generated: 2026-04-26 06:12:13 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -124,6 +124,7 @@
 0.0.0.0 lives.com
 0.0.0.0 livet.com
 0.0.0.0 liveu.com
+0.0.0.0 livev.com
 0.0.0.0 livew.com
 0.0.0.0 livex.com
 0.0.0.0 livey.com
@@ -136,7 +137,6 @@
 0.0.0.0 livo.com
 0.0.0.0 livr.com
 0.0.0.0 livs.com
-0.0.0.0 livu.com
 0.0.0.0 livve.com
 0.0.0.0 livw.com
 0.0.0.0 livz.com
@@ -254,6 +254,7 @@
 0.0.0.0 microroftonline.com
 0.0.0.0 micros-oft.com
 0.0.0.0 micros.oft.com
+0.0.0.0 micros0ft.com
 0.0.0.0 micros0oft.com
 0.0.0.0 micros9oft.com
 0.0.0.0 microsaft.com
@@ -684,7 +685,6 @@
 0.0.0.0 otulook.com
 0.0.0.0 ou.tlook.com
 0.0.0.0 ou5look.com
-0.0.0.0 ou6look.com
 0.0.0.0 ou8tlook.com
 0.0.0.0 oudlook.com
 0.0.0.0 ouflook.com
@@ -704,7 +704,6 @@
 0.0.0.0 outdook.com
 0.0.0.0 outglook.com
 0.0.0.0 outhook.com
-0.0.0.0 outi00k.com
 0.0.0.0 outiook.com
 0.0.0.0 outklook.com
 0.0.0.0 outkook.com
@@ -853,6 +852,7 @@
 0.0.0.0 xn--lve-vma.com
 0.0.0.0 xn--mcosoft-rfb211a.com
 0.0.0.0 xn--mcrosft-7ya2d.com
+0.0.0.0 xn--mcrosofonline-9uc7204i.com
 0.0.0.0 xn--mcrosoft-1ud.com
 0.0.0.0 xn--mcrosoft-21a.com
 0.0.0.0 xn--mcrosoft-6ob.com
@@ -917,6 +917,7 @@
 0.0.0.0 xn--offce-vsa.com
 0.0.0.0 xn--offce-ywb.com
 0.0.0.0 xn--oice-geba.com
+0.0.0.0 xn--ot1ook-3mb.com
 0.0.0.0 xn--otlook-3ya.com
 0.0.0.0 xn--otlook-wnb.com
 0.0.0.0 xn--oulook-jmc.com
