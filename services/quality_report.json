@@ -1,8 +1,8 @@
 {
   "files": [
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 240662,
+      "delta_pct": 0.0,
       "domain_count": 240662,
       "group": "abuse",
       "kind": "service",
@@ -11,8 +11,8 @@
       "service": "blp_abuse"
     },
     {
-      "baseline_count": 5848,
-      "delta_pct": 5.28,
+      "baseline_count": 5539,
+      "delta_pct": 0.0,
       "domain_count": 5539,
       "group": "adult",
       "kind": "service",
@@ -31,8 +31,8 @@
       "service": "grindr"
     },
     {
-      "baseline_count": 83434,
-      "delta_pct": 6.47,
+      "baseline_count": 78035,
+      "delta_pct": 0.0,
       "domain_count": 78035,
       "group": "adult",
       "kind": "service",
@@ -141,8 +141,8 @@
       "service": "hagezi_hoster"
     },
     {
-      "baseline_count": 30,
-      "delta_pct": 20.0,
+      "baseline_count": 24,
+      "delta_pct": 0.0,
       "domain_count": 24,
       "group": "cdn",
       "kind": "service",
@@ -151,8 +151,8 @@
       "service": "cloudflare"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 8130,
+      "delta_pct": 0.0,
       "domain_count": 8130,
       "group": "crypto",
       "kind": "service",
@@ -3311,274 +3311,14 @@
       "service": "dfg"
     },
     {
-      "baseline_count": 1,
+      "baseline_count": null,
       "delta_pct": null,
-      "domain_count": 1,
+      "domain_count": 93,
       "group": "dating",
       "kind": "service",
-      "path": "services/lists/dating/dial01.txt",
+      "path": "services/lists/dating/dial.txt",
       "profile": "services",
-      "service": "dial01"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial02.txt",
-      "profile": "services",
-      "service": "dial02"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial03.txt",
-      "profile": "services",
-      "service": "dial03"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial04.txt",
-      "profile": "services",
-      "service": "dial04"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial05.txt",
-      "profile": "services",
-      "service": "dial05"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial06.txt",
-      "profile": "services",
-      "service": "dial06"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial07.txt",
-      "profile": "services",
-      "service": "dial07"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial08.txt",
-      "profile": "services",
-      "service": "dial08"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial09.txt",
-      "profile": "services",
-      "service": "dial09"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial10.txt",
-      "profile": "services",
-      "service": "dial10"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial11.txt",
-      "profile": "services",
-      "service": "dial11"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial12.txt",
-      "profile": "services",
-      "service": "dial12"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial13.txt",
-      "profile": "services",
-      "service": "dial13"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial14.txt",
-      "profile": "services",
-      "service": "dial14"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial15.txt",
-      "profile": "services",
-      "service": "dial15"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial16.txt",
-      "profile": "services",
-      "service": "dial16"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial17.txt",
-      "profile": "services",
-      "service": "dial17"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial19.txt",
-      "profile": "services",
-      "service": "dial19"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial21.txt",
-      "profile": "services",
-      "service": "dial21"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial22.txt",
-      "profile": "services",
-      "service": "dial22"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial23.txt",
-      "profile": "services",
-      "service": "dial23"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial24.txt",
-      "profile": "services",
-      "service": "dial24"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial25.txt",
-      "profile": "services",
-      "service": "dial25"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial26.txt",
-      "profile": "services",
-      "service": "dial26"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial27.txt",
-      "profile": "services",
-      "service": "dial27"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial28.txt",
-      "profile": "services",
-      "service": "dial28"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial29.txt",
-      "profile": "services",
-      "service": "dial29"
+      "service": "dial"
     },
     {
       "baseline_count": 1,
@@ -3599,666 +3339,6 @@
       "path": "services/lists/dating/dial2b.txt",
       "profile": "services",
       "service": "dial2b"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial30.txt",
-      "profile": "services",
-      "service": "dial30"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial31.txt",
-      "profile": "services",
-      "service": "dial31"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial32.txt",
-      "profile": "services",
-      "service": "dial32"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial33.txt",
-      "profile": "services",
-      "service": "dial33"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial34.txt",
-      "profile": "services",
-      "service": "dial34"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial35.txt",
-      "profile": "services",
-      "service": "dial35"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial36.txt",
-      "profile": "services",
-      "service": "dial36"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial37.txt",
-      "profile": "services",
-      "service": "dial37"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial38.txt",
-      "profile": "services",
-      "service": "dial38"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial39.txt",
-      "profile": "services",
-      "service": "dial39"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial40.txt",
-      "profile": "services",
-      "service": "dial40"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial41.txt",
-      "profile": "services",
-      "service": "dial41"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial42.txt",
-      "profile": "services",
-      "service": "dial42"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial43.txt",
-      "profile": "services",
-      "service": "dial43"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial44.txt",
-      "profile": "services",
-      "service": "dial44"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial45.txt",
-      "profile": "services",
-      "service": "dial45"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial46.txt",
-      "profile": "services",
-      "service": "dial46"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial47.txt",
-      "profile": "services",
-      "service": "dial47"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial48.txt",
-      "profile": "services",
-      "service": "dial48"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial49.txt",
-      "profile": "services",
-      "service": "dial49"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial50.txt",
-      "profile": "services",
-      "service": "dial50"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial51.txt",
-      "profile": "services",
-      "service": "dial51"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial52.txt",
-      "profile": "services",
-      "service": "dial52"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial53.txt",
-      "profile": "services",
-      "service": "dial53"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial54.txt",
-      "profile": "services",
-      "service": "dial54"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial55.txt",
-      "profile": "services",
-      "service": "dial55"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial56.txt",
-      "profile": "services",
-      "service": "dial56"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial57.txt",
-      "profile": "services",
-      "service": "dial57"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial58.txt",
-      "profile": "services",
-      "service": "dial58"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial59.txt",
-      "profile": "services",
-      "service": "dial59"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial60.txt",
-      "profile": "services",
-      "service": "dial60"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial61.txt",
-      "profile": "services",
-      "service": "dial61"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial62.txt",
-      "profile": "services",
-      "service": "dial62"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial63.txt",
-      "profile": "services",
-      "service": "dial63"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial64.txt",
-      "profile": "services",
-      "service": "dial64"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial65.txt",
-      "profile": "services",
-      "service": "dial65"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial66.txt",
-      "profile": "services",
-      "service": "dial66"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial67.txt",
-      "profile": "services",
-      "service": "dial67"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial68.txt",
-      "profile": "services",
-      "service": "dial68"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial69.txt",
-      "profile": "services",
-      "service": "dial69"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial70.txt",
-      "profile": "services",
-      "service": "dial70"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial71.txt",
-      "profile": "services",
-      "service": "dial71"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial72.txt",
-      "profile": "services",
-      "service": "dial72"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial73.txt",
-      "profile": "services",
-      "service": "dial73"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial74.txt",
-      "profile": "services",
-      "service": "dial74"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial75.txt",
-      "profile": "services",
-      "service": "dial75"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial76.txt",
-      "profile": "services",
-      "service": "dial76"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial77.txt",
-      "profile": "services",
-      "service": "dial77"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial78.txt",
-      "profile": "services",
-      "service": "dial78"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial79.txt",
-      "profile": "services",
-      "service": "dial79"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial80.txt",
-      "profile": "services",
-      "service": "dial80"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial81.txt",
-      "profile": "services",
-      "service": "dial81"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial82.txt",
-      "profile": "services",
-      "service": "dial82"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial83.txt",
-      "profile": "services",
-      "service": "dial83"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial84.txt",
-      "profile": "services",
-      "service": "dial84"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial85.txt",
-      "profile": "services",
-      "service": "dial85"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial86.txt",
-      "profile": "services",
-      "service": "dial86"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial87.txt",
-      "profile": "services",
-      "service": "dial87"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial88.txt",
-      "profile": "services",
-      "service": "dial88"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial89.txt",
-      "profile": "services",
-      "service": "dial89"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial90.txt",
-      "profile": "services",
-      "service": "dial90"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial91.txt",
-      "profile": "services",
-      "service": "dial91"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial92.txt",
-      "profile": "services",
-      "service": "dial92"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial93.txt",
-      "profile": "services",
-      "service": "dial93"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial94.txt",
-      "profile": "services",
-      "service": "dial94"
-    },
-    {
-      "baseline_count": 1,
-      "delta_pct": null,
-      "domain_count": 1,
-      "group": "dating",
-      "kind": "service",
-      "path": "services/lists/dating/dial95.txt",
-      "profile": "services",
-      "service": "dial95"
     },
     {
       "baseline_count": 1,
@@ -8651,7 +7731,7 @@
       "service": "rbrides"
     },
     {
-      "baseline_count": null,
+      "baseline_count": 96,
       "delta_pct": null,
       "domain_count": 96,
       "group": "dating",
@@ -11691,8 +10771,8 @@
       "service": "googleDNS"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 19077,
+      "delta_pct": 0.0,
       "domain_count": 19077,
       "group": "dns_bypass",
       "kind": "service",
@@ -11701,8 +10781,8 @@
       "service": "hagezi_doh_vpn_proxy_bypass"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 18320,
+      "delta_pct": 0.0,
       "domain_count": 18320,
       "group": "drugs",
       "kind": "service",
@@ -11711,8 +10791,8 @@
       "service": "blp_drugs"
     },
     {
-      "baseline_count": 1480,
-      "delta_pct": 30.88,
+      "baseline_count": 1023,
+      "delta_pct": 0.0,
       "domain_count": 1023,
       "group": "dynamic_dns",
       "kind": "service",
@@ -11951,8 +11031,8 @@
       "service": "path_of_exile"
     },
     {
-      "baseline_count": 11,
-      "delta_pct": 9.09,
+      "baseline_count": 10,
+      "delta_pct": 0.0,
       "domain_count": 10,
       "group": "gaming",
       "kind": "service",
@@ -12141,8 +11221,8 @@
       "service": "blp_ransomware"
     },
     {
-      "baseline_count": 230,
-      "delta_pct": 1.3,
+      "baseline_count": 233,
+      "delta_pct": 0.0,
       "domain_count": 233,
       "group": "malware",
       "kind": "service",
@@ -12291,8 +11371,8 @@
       "service": "openphish"
     },
     {
-      "baseline_count": 283565,
-      "delta_pct": 0.03,
+      "baseline_count": 283467,
+      "delta_pct": 0.0,
       "domain_count": 283467,
       "group": "phishing",
       "kind": "service",
@@ -12301,8 +11381,8 @@
       "service": "phishing_army"
     },
     {
-      "baseline_count": 18372,
-      "delta_pct": 0.05,
+      "baseline_count": 18362,
+      "delta_pct": 0.0,
       "domain_count": 18362,
       "group": "phishing",
       "kind": "service",
@@ -12311,8 +11391,8 @@
       "service": "phishtank"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 1065,
+      "delta_pct": 0.0,
       "domain_count": 1065,
       "group": "piracy",
       "kind": "service",
@@ -12341,8 +11421,8 @@
       "service": "proton"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 99201,
+      "delta_pct": 0.0,
       "domain_count": 99201,
       "group": "redirect",
       "kind": "service",
@@ -12351,7 +11431,7 @@
       "service": "blp_redirect"
     },
     {
-      "baseline_count": 114109,
+      "baseline_count": 114108,
       "delta_pct": 0.0,
       "domain_count": 114108,
       "group": "scam",
@@ -12391,8 +11471,8 @@
       "service": "aliexpress"
     },
     {
-      "baseline_count": 185,
-      "delta_pct": 2.16,
+      "baseline_count": 181,
+      "delta_pct": 0.0,
       "domain_count": 181,
       "group": "shopping",
       "kind": "service",
@@ -12481,8 +11561,8 @@
       "service": "xiaohongshu"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 70,
+      "delta_pct": 0.0,
       "domain_count": 70,
       "group": "smart_tv",
       "kind": "service",
@@ -12551,8 +11631,8 @@
       "service": "clubhouse"
     },
     {
-      "baseline_count": 27,
-      "delta_pct": 3.7,
+      "baseline_count": 26,
+      "delta_pct": 0.0,
       "domain_count": 26,
       "group": "social_network",
       "kind": "service",
@@ -13161,8 +12241,8 @@
       "service": "weibo"
     },
     {
-      "baseline_count": 174,
-      "delta_pct": 0.57,
+      "baseline_count": 173,
+      "delta_pct": 0.0,
       "domain_count": 173,
       "group": "streaming",
       "kind": "service",
@@ -13181,8 +12261,8 @@
       "service": "yy"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 2192,
+      "delta_pct": 0.0,
       "domain_count": 2192,
       "group": "torrent",
       "kind": "service",
@@ -13191,8 +12271,8 @@
       "service": "blp_torrent"
     },
     {
-      "baseline_count": 14763,
-      "delta_pct": 0.01,
+      "baseline_count": 14761,
+      "delta_pct": 0.0,
       "domain_count": 14761,
       "group": "tracking",
       "kind": "service",
@@ -13201,8 +12281,8 @@
       "service": "blp_tracking"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 9973,
+      "delta_pct": 0.0,
       "domain_count": 9973,
       "group": "url_shortener",
       "kind": "service",
@@ -13211,8 +12291,8 @@
       "service": "hagezi_urlshortener"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 32,
+      "delta_pct": 0.0,
       "domain_count": 32,
       "group": "vaping",
       "kind": "service",
@@ -13221,8 +12301,8 @@
       "service": "blp_vaping"
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 240662,
+      "delta_pct": 0.0,
       "domain_count": 240662,
       "group": "abuse",
       "kind": "category",
@@ -13231,8 +12311,8 @@
       "service": null
     },
     {
-      "baseline_count": 86092,
-      "delta_pct": 6.39,
+      "baseline_count": 80594,
+      "delta_pct": 0.0,
       "domain_count": 80594,
       "group": "adult",
       "kind": "category",
@@ -13261,8 +12341,8 @@
       "service": null
     },
     {
-      "baseline_count": 30,
-      "delta_pct": 20.0,
+      "baseline_count": 24,
+      "delta_pct": 0.0,
       "domain_count": 24,
       "group": "cdn",
       "kind": "category",
@@ -13271,8 +12351,8 @@
       "service": null
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 8130,
+      "delta_pct": 0.0,
       "domain_count": 8130,
       "group": "crypto",
       "kind": "category",
@@ -13301,8 +12381,8 @@
       "service": null
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 19077,
+      "delta_pct": 0.0,
       "domain_count": 19077,
       "group": "dns_bypass",
       "kind": "category",
@@ -13311,8 +12391,8 @@
       "service": null
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 18320,
+      "delta_pct": 0.0,
       "domain_count": 18320,
       "group": "drugs",
       "kind": "category",
@@ -13321,8 +12401,8 @@
       "service": null
     },
     {
-      "baseline_count": 1480,
-      "delta_pct": 30.88,
+      "baseline_count": 1023,
+      "delta_pct": 0.0,
       "domain_count": 1023,
       "group": "dynamic_dns",
       "kind": "category",
@@ -13341,8 +12421,8 @@
       "service": null
     },
     {
-      "baseline_count": 172,
-      "delta_pct": 0.58,
+      "baseline_count": 171,
+      "delta_pct": 0.0,
       "domain_count": 171,
       "group": "gaming",
       "kind": "category",
@@ -13361,8 +12441,8 @@
       "service": null
     },
     {
-      "baseline_count": 3216,
-      "delta_pct": 0.06,
+      "baseline_count": 3218,
+      "delta_pct": 0.0,
       "domain_count": 3218,
       "group": "malware",
       "kind": "category",
@@ -13381,8 +12461,8 @@
       "service": null
     },
     {
-      "baseline_count": 300077,
-      "delta_pct": 0.03,
+      "baseline_count": 299972,
+      "delta_pct": 0.0,
       "domain_count": 299972,
       "group": "phishing",
       "kind": "category",
@@ -13391,8 +12471,8 @@
       "service": null
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 1065,
+      "delta_pct": 0.0,
       "domain_count": 1065,
       "group": "piracy",
       "kind": "category",
@@ -13411,8 +12491,8 @@
       "service": null
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 99201,
+      "delta_pct": 0.0,
       "domain_count": 99201,
       "group": "redirect",
       "kind": "category",
@@ -13421,7 +12501,7 @@
       "service": null
     },
     {
-      "baseline_count": 129082,
+      "baseline_count": 129081,
       "delta_pct": 0.0,
       "domain_count": 129081,
       "group": "scam",
@@ -13431,8 +12511,8 @@
       "service": null
     },
     {
-      "baseline_count": 571,
-      "delta_pct": 0.7,
+      "baseline_count": 567,
+      "delta_pct": 0.0,
       "domain_count": 567,
       "group": "shopping",
       "kind": "category",
@@ -13441,8 +12521,8 @@
       "service": null
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 70,
+      "delta_pct": 0.0,
       "domain_count": 70,
       "group": "smart_tv",
       "kind": "category",
@@ -13451,8 +12531,8 @@
       "service": null
     },
     {
-      "baseline_count": 836,
-      "delta_pct": 0.12,
+      "baseline_count": 835,
+      "delta_pct": 0.0,
       "domain_count": 835,
       "group": "social_network",
       "kind": "category",
@@ -13471,8 +12551,8 @@
       "service": null
     },
     {
-      "baseline_count": 455,
-      "delta_pct": 0.22,
+      "baseline_count": 454,
+      "delta_pct": 0.0,
       "domain_count": 454,
       "group": "streaming",
       "kind": "category",
@@ -13481,8 +12561,8 @@
       "service": null
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 2192,
+      "delta_pct": 0.0,
       "domain_count": 2192,
       "group": "torrent",
       "kind": "category",
@@ -13491,8 +12571,8 @@
       "service": null
     },
     {
-      "baseline_count": 14763,
-      "delta_pct": 0.01,
+      "baseline_count": 14761,
+      "delta_pct": 0.0,
       "domain_count": 14761,
       "group": "tracking",
       "kind": "category",
@@ -13501,8 +12581,8 @@
       "service": null
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 9973,
+      "delta_pct": 0.0,
       "domain_count": 9973,
       "group": "url_shortener",
       "kind": "category",
@@ -13511,8 +12591,8 @@
       "service": null
     },
     {
-      "baseline_count": null,
-      "delta_pct": null,
+      "baseline_count": 32,
+      "delta_pct": 0.0,
       "domain_count": 32,
       "group": "vaping",
       "kind": "category",
@@ -13521,12 +12601,12 @@
       "service": null
     }
   ],
-  "generated_at": "2026-04-27T13:54:05.240313+00:00",
+  "generated_at": "2026-04-27T13:58:43.655602+00:00",
   "issues": [],
   "profile": "services",
   "status": "passed",
   "summary": {
-    "files_checked": 1352,
+    "files_checked": 1260,
     "issues": 0,
     "total_domains": 1869340
   }

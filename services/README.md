@@ -1,6 +1,6 @@
 # Threat Intelligence & Content Blocklists
 
-**Generated:** 2026-04-27 13:52:50 UTC
+**Generated:** 2026-04-27 13:57:35 UTC
 
 **Audience:** Home-safe / standard
 
@@ -32,7 +32,7 @@ One-click blocklists combining multiple sources for everyday blocking.
 | [🗄️ Badware Hosters](#badware-hoster) | 1,195 | 1 | [badware_hoster.txt](categories/badware_hoster.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/badware_hoster.txt) |
 | [📁 Cdn](#cdn) | 24 | 1 | [cdn.txt](categories/cdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/cdn.txt) |
 | [🪙 Crypto & Cryptojacking](#crypto) | 8,130 | 1 | [crypto.txt](categories/crypto.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/crypto.txt) |
-| [💕 Dating Services](#dating) | 1,302 | 1151 | [dating.txt](categories/dating.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dating.txt) |
+| [💕 Dating Services](#dating) | 1,302 | 1059 | [dating.txt](categories/dating.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dating.txt) |
 | [🛜 DNS Providers](#dns) | 2 | 2 | [dns.txt](categories/dns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dns.txt) |
 | [🛡️ DNS / VPN Bypass](#dns-bypass) | 19,077 | 1 | [dns_bypass.txt](categories/dns_bypass.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dns_bypass.txt) |
 | [💊 Drugs](#drugs) | 18,320 | 1 | [drugs.txt](categories/drugs.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/drugs.txt) |
@@ -426,101 +426,9 @@ For granular control, each source is available separately if you want source-lev
 | Democraticpeoplemeet | 1 | [democraticpeoplemeet.txt](lists/dating/democraticpeoplemeet.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/democraticpeoplemeet.txt) |
 | Derya | 1 | [derya.txt](lists/dating/derya.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/derya.txt) |
 | Dfg | 1 | [dfg.txt](lists/dating/dfg.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dfg.txt) |
-| Dial01 | 1 | [dial01.txt](lists/dating/dial01.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial01.txt) |
-| Dial02 | 1 | [dial02.txt](lists/dating/dial02.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial02.txt) |
-| Dial03 | 1 | [dial03.txt](lists/dating/dial03.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial03.txt) |
-| Dial04 | 1 | [dial04.txt](lists/dating/dial04.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial04.txt) |
-| Dial05 | 1 | [dial05.txt](lists/dating/dial05.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial05.txt) |
-| Dial06 | 1 | [dial06.txt](lists/dating/dial06.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial06.txt) |
-| Dial07 | 1 | [dial07.txt](lists/dating/dial07.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial07.txt) |
-| Dial08 | 1 | [dial08.txt](lists/dating/dial08.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial08.txt) |
-| Dial09 | 1 | [dial09.txt](lists/dating/dial09.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial09.txt) |
-| Dial10 | 1 | [dial10.txt](lists/dating/dial10.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial10.txt) |
-| Dial11 | 1 | [dial11.txt](lists/dating/dial11.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial11.txt) |
-| Dial12 | 1 | [dial12.txt](lists/dating/dial12.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial12.txt) |
-| Dial13 | 1 | [dial13.txt](lists/dating/dial13.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial13.txt) |
-| Dial14 | 1 | [dial14.txt](lists/dating/dial14.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial14.txt) |
-| Dial15 | 1 | [dial15.txt](lists/dating/dial15.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial15.txt) |
-| Dial16 | 1 | [dial16.txt](lists/dating/dial16.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial16.txt) |
-| Dial17 | 1 | [dial17.txt](lists/dating/dial17.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial17.txt) |
-| Dial19 | 1 | [dial19.txt](lists/dating/dial19.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial19.txt) |
-| Dial21 | 1 | [dial21.txt](lists/dating/dial21.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial21.txt) |
-| Dial22 | 1 | [dial22.txt](lists/dating/dial22.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial22.txt) |
-| Dial23 | 1 | [dial23.txt](lists/dating/dial23.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial23.txt) |
-| Dial24 | 1 | [dial24.txt](lists/dating/dial24.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial24.txt) |
-| Dial25 | 1 | [dial25.txt](lists/dating/dial25.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial25.txt) |
-| Dial26 | 1 | [dial26.txt](lists/dating/dial26.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial26.txt) |
-| Dial27 | 1 | [dial27.txt](lists/dating/dial27.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial27.txt) |
-| Dial28 | 1 | [dial28.txt](lists/dating/dial28.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial28.txt) |
-| Dial29 | 1 | [dial29.txt](lists/dating/dial29.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial29.txt) |
+| Dial | 93 | [dial.txt](lists/dating/dial.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial.txt) |
 | Dial2A | 1 | [dial2a.txt](lists/dating/dial2a.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial2a.txt) |
 | Dial2B | 1 | [dial2b.txt](lists/dating/dial2b.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial2b.txt) |
-| Dial30 | 1 | [dial30.txt](lists/dating/dial30.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial30.txt) |
-| Dial31 | 1 | [dial31.txt](lists/dating/dial31.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial31.txt) |
-| Dial32 | 1 | [dial32.txt](lists/dating/dial32.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial32.txt) |
-| Dial33 | 1 | [dial33.txt](lists/dating/dial33.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial33.txt) |
-| Dial34 | 1 | [dial34.txt](lists/dating/dial34.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial34.txt) |
-| Dial35 | 1 | [dial35.txt](lists/dating/dial35.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial35.txt) |
-| Dial36 | 1 | [dial36.txt](lists/dating/dial36.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial36.txt) |
-| Dial37 | 1 | [dial37.txt](lists/dating/dial37.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial37.txt) |
-| Dial38 | 1 | [dial38.txt](lists/dating/dial38.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial38.txt) |
-| Dial39 | 1 | [dial39.txt](lists/dating/dial39.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial39.txt) |
-| Dial40 | 1 | [dial40.txt](lists/dating/dial40.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial40.txt) |
-| Dial41 | 1 | [dial41.txt](lists/dating/dial41.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial41.txt) |
-| Dial42 | 1 | [dial42.txt](lists/dating/dial42.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial42.txt) |
-| Dial43 | 1 | [dial43.txt](lists/dating/dial43.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial43.txt) |
-| Dial44 | 1 | [dial44.txt](lists/dating/dial44.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial44.txt) |
-| Dial45 | 1 | [dial45.txt](lists/dating/dial45.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial45.txt) |
-| Dial46 | 1 | [dial46.txt](lists/dating/dial46.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial46.txt) |
-| Dial47 | 1 | [dial47.txt](lists/dating/dial47.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial47.txt) |
-| Dial48 | 1 | [dial48.txt](lists/dating/dial48.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial48.txt) |
-| Dial49 | 1 | [dial49.txt](lists/dating/dial49.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial49.txt) |
-| Dial50 | 1 | [dial50.txt](lists/dating/dial50.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial50.txt) |
-| Dial51 | 1 | [dial51.txt](lists/dating/dial51.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial51.txt) |
-| Dial52 | 1 | [dial52.txt](lists/dating/dial52.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial52.txt) |
-| Dial53 | 1 | [dial53.txt](lists/dating/dial53.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial53.txt) |
-| Dial54 | 1 | [dial54.txt](lists/dating/dial54.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial54.txt) |
-| Dial55 | 1 | [dial55.txt](lists/dating/dial55.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial55.txt) |
-| Dial56 | 1 | [dial56.txt](lists/dating/dial56.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial56.txt) |
-| Dial57 | 1 | [dial57.txt](lists/dating/dial57.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial57.txt) |
-| Dial58 | 1 | [dial58.txt](lists/dating/dial58.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial58.txt) |
-| Dial59 | 1 | [dial59.txt](lists/dating/dial59.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial59.txt) |
-| Dial60 | 1 | [dial60.txt](lists/dating/dial60.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial60.txt) |
-| Dial61 | 1 | [dial61.txt](lists/dating/dial61.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial61.txt) |
-| Dial62 | 1 | [dial62.txt](lists/dating/dial62.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial62.txt) |
-| Dial63 | 1 | [dial63.txt](lists/dating/dial63.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial63.txt) |
-| Dial64 | 1 | [dial64.txt](lists/dating/dial64.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial64.txt) |
-| Dial65 | 1 | [dial65.txt](lists/dating/dial65.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial65.txt) |
-| Dial66 | 1 | [dial66.txt](lists/dating/dial66.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial66.txt) |
-| Dial67 | 1 | [dial67.txt](lists/dating/dial67.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial67.txt) |
-| Dial68 | 1 | [dial68.txt](lists/dating/dial68.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial68.txt) |
-| Dial69 | 1 | [dial69.txt](lists/dating/dial69.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial69.txt) |
-| Dial70 | 1 | [dial70.txt](lists/dating/dial70.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial70.txt) |
-| Dial71 | 1 | [dial71.txt](lists/dating/dial71.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial71.txt) |
-| Dial72 | 1 | [dial72.txt](lists/dating/dial72.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial72.txt) |
-| Dial73 | 1 | [dial73.txt](lists/dating/dial73.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial73.txt) |
-| Dial74 | 1 | [dial74.txt](lists/dating/dial74.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial74.txt) |
-| Dial75 | 1 | [dial75.txt](lists/dating/dial75.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial75.txt) |
-| Dial76 | 1 | [dial76.txt](lists/dating/dial76.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial76.txt) |
-| Dial77 | 1 | [dial77.txt](lists/dating/dial77.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial77.txt) |
-| Dial78 | 1 | [dial78.txt](lists/dating/dial78.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial78.txt) |
-| Dial79 | 1 | [dial79.txt](lists/dating/dial79.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial79.txt) |
-| Dial80 | 1 | [dial80.txt](lists/dating/dial80.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial80.txt) |
-| Dial81 | 1 | [dial81.txt](lists/dating/dial81.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial81.txt) |
-| Dial82 | 1 | [dial82.txt](lists/dating/dial82.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial82.txt) |
-| Dial83 | 1 | [dial83.txt](lists/dating/dial83.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial83.txt) |
-| Dial84 | 1 | [dial84.txt](lists/dating/dial84.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial84.txt) |
-| Dial85 | 1 | [dial85.txt](lists/dating/dial85.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial85.txt) |
-| Dial86 | 1 | [dial86.txt](lists/dating/dial86.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial86.txt) |
-| Dial87 | 1 | [dial87.txt](lists/dating/dial87.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial87.txt) |
-| Dial88 | 1 | [dial88.txt](lists/dating/dial88.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial88.txt) |
-| Dial89 | 1 | [dial89.txt](lists/dating/dial89.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial89.txt) |
-| Dial90 | 1 | [dial90.txt](lists/dating/dial90.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial90.txt) |
-| Dial91 | 1 | [dial91.txt](lists/dating/dial91.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial91.txt) |
-| Dial92 | 1 | [dial92.txt](lists/dating/dial92.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial92.txt) |
-| Dial93 | 1 | [dial93.txt](lists/dating/dial93.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial93.txt) |
-| Dial94 | 1 | [dial94.txt](lists/dating/dial94.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial94.txt) |
-| Dial95 | 1 | [dial95.txt](lists/dating/dial95.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dial95.txt) |
 | Dialweb | 1 | [dialweb.txt](lists/dating/dialweb.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dialweb.txt) |
 | Diamond Dating | 1 | [diamond_dating.txt](lists/dating/diamond_dating.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/diamond_dating.txt) |
 | Dilkarishta | 1 | [dilkarishta.txt](lists/dating/dilkarishta.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/dilkarishta.txt) |

@@ -170,6 +170,38 @@ def test_add_shadowwhisperer_dating_domains_groups_numbered_rdv_sites():
     assert services["rdv"]["domains"] == {"rdv01.fr", "rdv38.fr", "rdv98.fr"}
 
 
+def test_add_shadowwhisperer_dating_domains_groups_numbered_dial_family():
+    services = make_services()
+
+    added = generator.add_shadowwhisperer_dating_domains(
+        services,
+        {
+            "dial01.fr",
+            "dial38.fr",
+            "dial95.fr",
+        },
+    )
+
+    assert added == 3
+    assert services["dial"]["name"] == "Dial"
+    assert services["dial"]["domains"] == {"dial01.fr", "dial38.fr", "dial95.fr"}
+
+
+def test_add_shadowwhisperer_dating_domains_keeps_one_off_numbered_domain_separate():
+    services = make_services()
+
+    added = generator.add_shadowwhisperer_dating_domains(
+        services,
+        {
+            "single01.example",
+        },
+    )
+
+    assert added == 1
+    assert "single01" in services
+    assert services["single01"]["domains"] == {"single01.example"}
+
+
 def test_apply_source_policies_filters_public_suffix_entries():
     services = make_services()
     services["hagezi_urlshortener"]["group"] = "url_shortener"

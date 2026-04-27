@@ -358,6 +358,8 @@ SHADOWWHISPERER_DATING_OVERRIDES = {
 SHADOWWHISPERER_DATING_PATTERN_OVERRIDES = (
     (re.compile(r"^rdv\d+$"), {"service_id": "rdv", "name": "RDV"}),
 )
+SHADOWWHISPERER_DATING_NUMERIC_FAMILY_REGEX = re.compile(r"^(?P<base>[a-z][a-z-]{2,})(?P<number>\d{2,3})$")
+SHADOWWHISPERER_DATING_NUMERIC_FAMILY_MIN_SIBLINGS = 3
 
 # -----------------------------
 # Utilities
@@ -747,6 +749,49 @@ def get_shadowwhisperer_dating_override(brand_key: str) -> Optional[Dict[str, st
     return None
 
 
+def build_shadowwhisperer_numeric_family_overrides(domains: Set[str]) -> Dict[str, Dict[str, str]]:
+    """
+    Build source-scoped overrides for numbered dating-domain families.
+
+    This lets imported discovery feeds collapse obvious shard families like
+    `dial01.fr` through `dial95.fr` into one local service record without
+    applying broad regex merging across unrelated categories.
+    """
+    family_members: Dict[str, Set[str]] = defaultdict(set)
+
+    for domain in domains:
+        root_domain = get_root_domain(domain)
+        brand_key = get_brand_key_from_root_domain(root_domain)
+        if not brand_key:
+            continue
+
+        if SHADOWWHISPERER_DATING_OVERRIDES.get(brand_key):
+            continue
+        if any(pattern.match(brand_key) for pattern, _ in SHADOWWHISPERER_DATING_PATTERN_OVERRIDES):
+            continue
+
+        match = SHADOWWHISPERER_DATING_NUMERIC_FAMILY_REGEX.match(brand_key)
+        if not match:
+            continue
+
+        family_members[match.group("base")].add(brand_key)
+
+    overrides: Dict[str, Dict[str, str]] = {}
+    for base_key, members in family_members.items():
+        if len(members) < SHADOWWHISPERER_DATING_NUMERIC_FAMILY_MIN_SIBLINGS:
+            continue
+
+        service_id = re.sub(r"[^a-z0-9]+", "_", base_key.lower()).strip("_")
+        if not service_id:
+            continue
+
+        override = {"service_id": service_id, "name": humanize_service_name(service_id)}
+        for member in members:
+            overrides[member] = override
+
+    return overrides
+
+
 def get_unique_service_id(
     services_by_target: Dict,
     service_id: str,
@@ -781,6 +826,7 @@ def add_shadowwhisperer_dating_domains(
     upstream-branded source file.
     """
     added_roots = 0
+    numeric_family_overrides = build_shadowwhisperer_numeric_family_overrides(domains)
 
     for domain in domains:
         root_domain = get_root_domain(domain)
@@ -789,6 +835,8 @@ def add_shadowwhisperer_dating_domains(
             continue
 
         override = get_shadowwhisperer_dating_override(brand_key)
+        if not override:
+            override = numeric_family_overrides.get(brand_key)
         if override:
             service_id = override["service_id"]
             display_name = override["name"]
