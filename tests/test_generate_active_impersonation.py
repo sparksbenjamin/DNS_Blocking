@@ -54,6 +54,51 @@ def test_classify_domain_accepts_baseline_redirect_alias():
     assert "redirects to baseline host www.paypal.com" in result.note
 
 
+def test_partition_visible_results_filters_canonical_brand_redirects():
+    redirect_only = active_impersonation.AuditResult(
+        service_id="apple",
+        target_name="Apple",
+        domain="aple.com",
+        status="HIGH_MATCH",
+        score=11,
+        matched_seed="apple.com",
+        matched_redirect_host="www.apple.com",
+        ip="1.2.3.4",
+        issuer="Unknown",
+        banner="Apple",
+        scheme="https",
+        http_status="200",
+        redirect_host="www.apple.com",
+        title_similarity="1.00",
+        content_similarity="1.00",
+        note="redirects to baseline host www.apple.com",
+    )
+    actionable = active_impersonation.AuditResult(
+        service_id="apple",
+        target_name="Apple",
+        domain="apple-alert-login.example",
+        status="HIGH_MATCH",
+        score=8,
+        matched_seed="apple.com",
+        matched_redirect_host="www.apple.com",
+        ip="5.6.7.8",
+        issuer="Other",
+        banner="nginx",
+        scheme="https",
+        http_status="200",
+        redirect_host="apple-alert-login.example",
+        title_similarity="0.90",
+        content_similarity="0.88",
+        note="content hash matches baseline",
+    )
+
+    visible, filtered = active_impersonation.partition_visible_results([redirect_only, actionable])
+
+    assert visible == [actionable]
+    assert filtered == [redirect_only]
+    assert active_impersonation.select_blocklist_domains(visible) == ["apple-alert-login.example"]
+
+
 def test_choose_best_result_prefers_highest_scoring_baseline():
     current = active_impersonation.Fingerprint(
         domain="login-microsoftsecure.example",
@@ -186,3 +231,32 @@ def test_audit_target_skips_when_no_baselines(monkeypatch):
     assert target_summary["status_counts"] == active_impersonation.empty_status_counts()
     assert "Skipped target because no reachable baselines were available." == target_summary["note"]
     assert any("no reachable baselines available" in warning for warning in warnings_list)
+
+
+def test_write_blocklist_outputs_writes_aggregated_and_per_target_files(tmp_path):
+    target_reports = [
+        {
+            "service_id": "apple",
+            "name": "Apple",
+            "blocklist_domains": ["apple-alert-login.example"],
+        },
+        {
+            "service_id": "amazon",
+            "name": "Amazon",
+            "blocklist_domains": [],
+        },
+    ]
+
+    outputs = active_impersonation.write_blocklist_outputs(
+        tmp_path,
+        "2026-04-24T20:22:20+00:00",
+        target_reports,
+    )
+
+    assert outputs["count"] == 1
+    assert outputs["targets"][0]["hosts_path"] == "lists/apple.txt"
+    assert (tmp_path / "categories" / "active_impersonation.txt").exists()
+    assert (tmp_path / "categories" / "active_impersonation.rpz").exists()
+    assert (tmp_path / "lists" / "apple.txt").exists()
+    assert (tmp_path / "lists" / "apple.rpz").exists()
+    assert not (tmp_path / "lists" / "amazon.txt").exists()

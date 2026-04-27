@@ -421,10 +421,9 @@ def generate_readme(
         "not for normal service blocking. They are intentionally kept separate from the standard `services/` lists.\n"
     )
     lines.append(
-        "There is also a separate review layer at [active_impersonation/README.md](active_impersonation/README.md). "
-        "That stage does **not** create another blocklist. Instead, it scores live lookalike domains against "
-        "the real brand sites so you can review which ones look materially suspicious before promoting them "
-        "anywhere.\n"
+        "There is also a separate live-impersonation layer at [active_impersonation/README.md](active_impersonation/README.md). "
+        "That stage scores live lookalike domains against the real brand sites, filters out canonical redirects to the "
+        "real brand, and emits conservative exact-host blocking lists from the highest-confidence remaining findings.\n"
     )
     lines.append("Quick links:\n")
     lines.append("- [Brand Impersonation Lists](#categories)")
@@ -445,13 +444,13 @@ def generate_readme(
         "`scripts/generate_active_impersonation.py` after the hardening lists are generated, "
         "or use the separate `Update Active Impersonation Review` workflow.\n"
     )
-    lines.append("That report stage:")
+    lines.append("That stage:")
     lines.append("- checks whether the real brand site is reachable")
     lines.append("- fingerprints live lookalikes with lightweight HTTP, TLS, and content signals")
-    lines.append("- scores which domains most closely resemble the real site")
-    lines.append("- writes review artifacts under `hardening/active_impersonation/`\n")
+    lines.append("- filters out typo domains that only redirect to the real brand")
+    lines.append("- writes both review artifacts and exact-host blocking lists under `hardening/active_impersonation/`\n")
     lines.append(
-        "This is useful when you want a tighter triage loop instead of auto-blocking every live permutation.\n"
+        "This is useful when you want actionable active-impersonation blocklists instead of auto-blocking every live permutation.\n"
     )
     lines.append(
         "If you do not see generated review files under `hardening/active_impersonation/`, the most likely reason "

@@ -10,6 +10,7 @@ import json
 import logging
 import os
 import re
+import shutil
 import socket
 import ssl
 import sys
@@ -58,6 +59,8 @@ ACTIVE_REPORT_TSV = ACTIVE_REPORT_DIR / "results.tsv"
 ACTIVE_REPORT_README = ACTIVE_REPORT_DIR / "README.md"
 HOSTS_PREFIX = "0.0.0.0 "
 MAX_NOTE_LENGTH = 400
+ACTIONABLE_BLOCKLIST_STATUSES = {"HIGH_MATCH"}
+ACTIONABLE_CATEGORY_NAME = "active_impersonation"
 
 
 @dataclass(frozen=True)
@@ -724,6 +727,133 @@ def count_statuses(results: Sequence[AuditResult]) -> Dict[str, int]:
     return counts
 
 
+def is_canonical_brand_redirect(result: AuditResult) -> bool:
+    """Return True when a candidate only redirects to the real brand host."""
+    redirect_host = normalize_domain(result.redirect_host)
+    domain = normalize_domain(result.domain)
+    if not redirect_host or redirect_host in {"n/a", domain}:
+        return False
+
+    baseline_hosts = {
+        normalize_domain(result.matched_seed),
+        normalize_domain(result.matched_redirect_host),
+    }
+    baseline_hosts.discard("")
+    baseline_hosts.discard("n/a")
+    return redirect_host in baseline_hosts
+
+
+def partition_visible_results(results: Sequence[AuditResult]) -> Tuple[List[AuditResult], List[AuditResult]]:
+    """Split results into visible findings and filtered canonical redirects."""
+    visible: List[AuditResult] = []
+    filtered_redirects: List[AuditResult] = []
+    for result in results:
+        if is_canonical_brand_redirect(result):
+            filtered_redirects.append(result)
+        else:
+            visible.append(result)
+    return visible, filtered_redirects
+
+
+def select_blocklist_domains(results: Sequence[AuditResult]) -> List[str]:
+    """Select conservative blocklist domains from visible review results."""
+    return sorted(
+        {
+            result.domain
+            for result in results
+            if result.status in ACTIONABLE_BLOCKLIST_STATUSES
+        }
+    )
+
+
+def write_hosts_blocklist(path: Path, domains: Sequence[str], title: str, generated_at: str) -> None:
+    """Write an exact-host blocklist in hosts-file format."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    unique_domains = sorted({normalize_domain(domain) for domain in domains if normalize_domain(domain)})
+    lines = [
+        f"# {title}",
+        f"# Generated: {generated_at}",
+        "# Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved",
+        f"# Entries: {len(unique_domains)}",
+        "",
+    ]
+    lines.extend(f"{HOSTS_PREFIX}{domain}" for domain in unique_domains)
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def write_rpz_blocklist(path: Path, domains: Sequence[str], title: str, generated_at: str) -> None:
+    """Write an exact-host blocklist in RPZ format."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    unique_domains = sorted({normalize_domain(domain) for domain in domains if normalize_domain(domain)})
+    lines = [
+        f"; {title}",
+        f"; Generated: {generated_at}",
+        "; Format: RPZ zone file (<hostname> CNAME .) - exact hostnames preserved",
+        f"; Entries: {len(unique_domains)}",
+        "",
+    ]
+    lines.extend(f"{domain} CNAME ." for domain in unique_domains)
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+def write_blocklist_outputs(base_dir: Path, generated_at: str, target_reports: Sequence[Dict]) -> Dict:
+    """Write aggregated and per-target blocking lists from actionable results."""
+    category_dir = base_dir / "categories"
+    lists_dir = base_dir / "lists"
+    if category_dir.exists():
+        shutil.rmtree(category_dir)
+    if lists_dir.exists():
+        shutil.rmtree(lists_dir)
+
+    category_dir.mkdir(parents=True, exist_ok=True)
+    lists_dir.mkdir(parents=True, exist_ok=True)
+
+    aggregated_domains = set()
+    target_outputs: List[Dict] = []
+
+    for target in sorted(target_reports, key=lambda item: item["name"]):
+        domains = sorted({normalize_domain(domain) for domain in target.get("blocklist_domains", []) if normalize_domain(domain)})
+        if not domains:
+            continue
+
+        hosts_rel = Path("lists") / f"{target['service_id']}.txt"
+        rpz_rel = Path("lists") / f"{target['service_id']}.rpz"
+        write_hosts_blocklist(base_dir / hosts_rel, domains, f"{target['name']} Active Impersonation Blocklist", generated_at)
+        write_rpz_blocklist(base_dir / rpz_rel, domains, f"{target['name']} Active Impersonation Blocklist", generated_at)
+        aggregated_domains.update(domains)
+        target_outputs.append(
+            {
+                "service_id": target["service_id"],
+                "name": target["name"],
+                "count": len(domains),
+                "hosts_path": hosts_rel.as_posix(),
+                "rpz_path": rpz_rel.as_posix(),
+            }
+        )
+
+    category_hosts_rel = Path("categories") / f"{ACTIONABLE_CATEGORY_NAME}.txt"
+    category_rpz_rel = Path("categories") / f"{ACTIONABLE_CATEGORY_NAME}.rpz"
+    write_hosts_blocklist(
+        base_dir / category_hosts_rel,
+        sorted(aggregated_domains),
+        "Active Impersonation Blocklist",
+        generated_at,
+    )
+    write_rpz_blocklist(
+        base_dir / category_rpz_rel,
+        sorted(aggregated_domains),
+        "Active Impersonation Blocklist",
+        generated_at,
+    )
+
+    return {
+        "count": len(aggregated_domains),
+        "category_hosts": category_hosts_rel.as_posix(),
+        "category_rpz": category_rpz_rel.as_posix(),
+        "targets": target_outputs,
+    }
+
+
 def write_results_tsv(path: Path, results: Sequence[AuditResult]) -> None:
     """Write a flat TSV report for spreadsheet-friendly review."""
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -783,13 +913,15 @@ def write_readme(path: Path, report: Dict, results: Sequence[AuditResult]) -> No
     settings = report["settings"]
     targets = report["targets"]
     overall = report["summary"]["statuses"]
+    blocklists = report["blocklists"]
     lines: List[str] = []
 
     lines.append("# Active Impersonation Review\n")
     lines.append(f"**Generated:** {report['generated_at']}\n")
     lines.append(
-        "This report scores live DNSTwist lookalike domains against the real brand sites using "
-        "lightweight fingerprinting. It is a **review artifact**, not an auto-promoted blocklist.\n"
+        "This stage scores live DNSTwist lookalike domains against the real brand sites using "
+        "lightweight fingerprinting, then emits conservative blocking lists from only the highest-confidence "
+        "non-canonical findings.\n"
     )
     lines.append("Quick links:\n")
     lines.append("- [Back to Hardening](../README.md)")
@@ -799,10 +931,17 @@ def write_readme(path: Path, report: Dict, results: Sequence[AuditResult]) -> No
     lines.append("- **MEDIUM_MATCH** - some signals line up, but it still needs analyst judgment")
     lines.append("- **LOW_MATCH / INCONCLUSIVE** - weak resemblance or not enough content to decide")
     lines.append("- **OFFLINE / ERROR** - the candidate did not respond cleanly during this run\n")
+    lines.append(
+        "Domains that only canonical-redirect to the real brand are filtered out of the visible findings and are "
+        "**not** added to the blocking lists.\n"
+    )
 
     lines.append("## Settings\n")
     lines.append(f"- Targets audited: `{report['summary']['targets_audited']}`")
     lines.append(f"- Candidate domains audited: `{report['summary']['domains_audited']}`")
+    lines.append(f"- Visible findings kept: `{report['summary']['visible_results']}`")
+    lines.append(f"- Canonical brand redirects filtered out: `{report['summary']['filtered_brand_redirects']}`")
+    lines.append(f"- Blocklist entries emitted: `{report['summary']['blocklist_entries']}`")
     lines.append(f"- Max workers: `{settings['max_workers']}`")
     lines.append(f"- Target jobs: `{settings['target_jobs']}`")
     lines.append(f"- Connect timeout: `{settings['connect_timeout']}` seconds")
@@ -813,7 +952,9 @@ def write_readme(path: Path, report: Dict, results: Sequence[AuditResult]) -> No
     else:
         lines.append(f"- Max domains per target: `{settings['max_domains_per_target']}`")
     lines.append(f"- TSV report: [results.tsv](results.tsv)")
-    lines.append(f"- JSON report: [report.json](report.json)\n")
+    lines.append(f"- JSON report: [report.json](report.json)")
+    lines.append(f"- Aggregated hosts blocklist: [{blocklists['category_hosts']}]({blocklists['category_hosts']})")
+    lines.append(f"- Aggregated RPZ blocklist: [{blocklists['category_rpz']}]({blocklists['category_rpz']})\n")
 
     lines.append("## Overall Summary\n")
     lines.append("| HIGH | MEDIUM | LOW | INCONCLUSIVE | OFFLINE | ERROR |")
@@ -824,17 +965,45 @@ def write_readme(path: Path, report: Dict, results: Sequence[AuditResult]) -> No
     )
     lines.append("")
 
+    lines.append("## Blocking Lists\n")
+    lines.append(
+        "Only `HIGH_MATCH` domains that do **not** canonical-redirect to the real brand are added to these exact-host blocklists.\n"
+    )
+    lines.append("| Output | Entries | File |")
+    lines.append("|--------|---------|------|")
+    lines.append(
+        f"| Hosts | {blocklists['count']} | [{blocklists['category_hosts']}]({blocklists['category_hosts']}) |"
+    )
+    lines.append(
+        f"| RPZ | {blocklists['count']} | [{blocklists['category_rpz']}]({blocklists['category_rpz']}) |"
+    )
+    lines.append("")
+
     lines.append("## Per-Target Summary\n")
-    lines.append("| Target | Seeds | Audited | High | Medium | Low | Offline | Errors | Note |")
-    lines.append("|--------|-------|---------|------|--------|-----|---------|--------|------|")
+    lines.append("| Target | Seeds | Audited | Visible | Blocklist | Filtered Redirects | High | Medium | Low | Offline | Errors | Note |")
+    lines.append("|--------|-------|---------|---------|-----------|--------------------|------|--------|-----|---------|--------|------|")
     for target in sorted(targets, key=lambda item: item["name"]):
         counts = target["status_counts"]
         lines.append(
             f"| {target['name']} | {len(target['seed_domains'])} | {target['audited_count']} | "
-            f"{counts['HIGH_MATCH']} | {counts['MEDIUM_MATCH']} | {counts['LOW_MATCH']} | "
-            f"{counts['OFFLINE']} | {counts['ERROR']} | {target.get('note', '')} |"
+            f"{target.get('visible_count', target['audited_count'])} | {target.get('blocklist_count', 0)} | "
+            f"{target.get('filtered_redirect_count', 0)} | {counts['HIGH_MATCH']} | {counts['MEDIUM_MATCH']} | "
+            f"{counts['LOW_MATCH']} | {counts['OFFLINE']} | {counts['ERROR']} | {target.get('note', '')} |"
         )
     lines.append("")
+
+    lines.append("## Per-Target Blocking Lists\n")
+    if not blocklists["targets"]:
+        lines.append("No block-worthy domains were emitted in this run.\n")
+    else:
+        lines.append("| Target | Entries | Hosts | RPZ |")
+        lines.append("|--------|---------|-------|-----|")
+        for target in blocklists["targets"]:
+            lines.append(
+                f"| {target['name']} | {target['count']} | [{target['hosts_path']}]({target['hosts_path']}) | "
+                f"[{target['rpz_path']}]({target['rpz_path']}) |"
+            )
+        lines.append("")
 
     suspicious = [
         result
@@ -861,9 +1030,9 @@ def write_readme(path: Path, report: Dict, results: Sequence[AuditResult]) -> No
         lines.append("")
 
     lines.append("## Operational Notes\n")
-    lines.append("1. Use this report to review and promote domains manually into a curated blocklist if needed")
-    lines.append("2. A redirect to the real brand is suspicious, but not sufficient proof on its own")
-    lines.append("3. Similar content and matching certificate/banner signals raise confidence")
+    lines.append("1. Canonical redirects to the real brand are intentionally excluded from both the report rows and the blocklists")
+    lines.append("2. The blocking lists are conservative and only include `HIGH_MATCH` domains")
+    lines.append("3. Review `MEDIUM_MATCH` findings manually before promoting them anywhere")
     lines.append("4. Re-run the report when you regenerate hardening lists or change target coverage\n")
 
     path.write_text("\n".join(lines), encoding="utf-8")
@@ -962,6 +1131,10 @@ def audit_target(
             "seed_domains": target["seed_domains"],
             "candidate_count": len(candidate_domains),
             "audited_count": 0,
+            "visible_count": 0,
+            "filtered_redirect_count": 0,
+            "blocklist_count": 0,
+            "blocklist_domains": [],
             "status_counts": empty_status_counts(),
             "baselines": [],
             "results": [],
@@ -1016,7 +1189,9 @@ def audit_target(
     results.sort(
         key=lambda item: (-item.score, -float(item.content_similarity), item.domain)
     )
-    status_counts = count_statuses(results)
+    visible_results, filtered_redirects = partition_visible_results(results)
+    status_counts = count_statuses(visible_results)
+    blocklist_domains = select_blocklist_domains(visible_results)
 
     target_summary = {
         "service_id": target["service_id"],
@@ -1025,9 +1200,13 @@ def audit_target(
         "seed_domains": target["seed_domains"],
         "candidate_count": len(candidate_domains),
         "audited_count": len(results),
+        "visible_count": len(visible_results),
+        "filtered_redirect_count": len(filtered_redirects),
+        "blocklist_count": len(blocklist_domains),
+        "blocklist_domains": blocklist_domains,
         "status_counts": status_counts,
         "baselines": [asdict(item) for item in baselines],
-        "results": [asdict(item) for item in results],
+        "results": [asdict(item) for item in visible_results],
     }
     if max_domains_per_target is not None and len(candidate_domains) > max_domains_per_target:
         target_summary["note"] = (
@@ -1045,7 +1224,7 @@ def audit_target(
         status_counts["ERROR"],
     )
 
-    return target_summary, results, warnings_list
+    return target_summary, visible_results, warnings_list
 
 
 def ensure_placeholder_readme(path: Path) -> None:
@@ -1141,6 +1320,10 @@ def main() -> int:
                         "seed_domains": target["seed_domains"],
                         "candidate_count": 0,
                         "audited_count": 0,
+                        "visible_count": 0,
+                        "filtered_redirect_count": 0,
+                        "blocklist_count": 0,
+                        "blocklist_domains": [],
                         "status_counts": empty_status_counts(),
                         "baselines": [],
                         "results": [],
@@ -1156,10 +1339,14 @@ def main() -> int:
         all_results.sort(
             key=lambda item: (-item.score, -float(item.content_similarity), item.target_name, item.domain)
         )
+        total_audited = sum(target["audited_count"] for target in target_reports)
+        total_filtered_redirects = sum(target.get("filtered_redirect_count", 0) for target in target_reports)
         summary_counts = count_statuses(all_results)
+        generated_at = generate_twisted.datetime.now(generate_twisted.timezone.utc).isoformat()
+        blocklists = write_blocklist_outputs(output_dir, generated_at, target_reports)
 
         report = {
-            "generated_at": generate_twisted.datetime.now(generate_twisted.timezone.utc).isoformat(),
+            "generated_at": generated_at,
             "settings": {
                 "max_workers": max_workers,
                 "target_jobs": target_jobs,
@@ -1171,9 +1358,13 @@ def main() -> int:
             },
             "summary": {
                 "targets_audited": len(target_reports),
-                "domains_audited": len(all_results),
+                "domains_audited": total_audited,
+                "visible_results": len(all_results),
+                "filtered_brand_redirects": total_filtered_redirects,
+                "blocklist_entries": blocklists["count"],
                 "statuses": summary_counts,
             },
+            "blocklists": blocklists,
             "targets": target_reports,
             "warnings": warnings_list,
         }
@@ -1189,7 +1380,10 @@ def main() -> int:
 
         LOGGER.info("Active impersonation review complete")
         LOGGER.info("Targets audited: %d", len(target_reports))
-        LOGGER.info("Domains audited: %d", len(all_results))
+        LOGGER.info("Domains audited: %d", total_audited)
+        LOGGER.info("Visible findings kept: %d", len(all_results))
+        LOGGER.info("Canonical brand redirects filtered: %d", total_filtered_redirects)
+        LOGGER.info("Blocklist entries emitted: %d", blocklists["count"])
         return 0
     except KeyboardInterrupt:
         LOGGER.error("Interrupted by user")

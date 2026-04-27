@@ -6,7 +6,7 @@ This section contains optional high-sensitivity blocklists generated from curate
 
 These lists are designed for **hardening against brand impersonation and typo-squatting**, not for normal service blocking. They are intentionally kept separate from the standard `services/` lists.
 
-There is also a separate review layer at [active_impersonation/README.md](active_impersonation/README.md). That stage does **not** create another blocklist. Instead, it scores live lookalike domains against the real brand sites so you can review which ones look materially suspicious before promoting them anywhere.
+There is also a separate live-impersonation layer at [active_impersonation/README.md](active_impersonation/README.md). That stage scores live lookalike domains against the real brand sites, filters out canonical redirects to the real brand, and emits conservative exact-host blocking lists from the highest-confidence remaining findings.
 
 Quick links:
 
@@ -28,13 +28,13 @@ Quick links:
 
 If you want more than “this domain is a live DNSTwist permutation,” run `scripts/generate_active_impersonation.py` after the hardening lists are generated, or use the separate `Update Active Impersonation Review` workflow.
 
-That report stage:
+That stage:
 - checks whether the real brand site is reachable
 - fingerprints live lookalikes with lightweight HTTP, TLS, and content signals
-- scores which domains most closely resemble the real site
-- writes review artifacts under `hardening/active_impersonation/`
+- filters out typo domains that only redirect to the real brand
+- writes both review artifacts and exact-host blocking lists under `hardening/active_impersonation/`
 
-This is useful when you want a tighter triage loop instead of auto-blocking every live permutation.
+This is useful when you want actionable active-impersonation blocklists instead of auto-blocking every live permutation.
 
 If you do not see generated review files under `hardening/active_impersonation/`, the most likely reason is that the separate review workflow has not run yet or has not committed a report yet.
 
