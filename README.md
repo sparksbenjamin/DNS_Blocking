@@ -1,76 +1,98 @@
 # 🛡️ DNS Filters & Blocking Lists
 ![Auto Update](https://img.shields.io/badge/Update-Automated-success)
 ![License](https://img.shields.io/github/license/sparksbenjamin/DNS_Blocking)
-![Lists](https://img.shields.io/badge/Lists-120+-blue)
+![Lists](https://img.shields.io/badge/Lists-1200%2B-blue)
 ![Last Updated](https://img.shields.io/github/last-commit/sparksbenjamin/DNS_Blocking)
 
-Welcome to **DNS Filters & Blocking Lists** — a repo of standard blocklists, exact-host security feeds, and Unbound-ready RPZ outputs.
+DNS blocklists for people who want a practical one-stop shop instead of hunting down a dozen separate feeds.
 
-Our goal is to make DNS filtering **accessible, easy to understand, and ready to deploy** for everyone — whether you’re a home user, network admin, or privacy-focused professional.
+This repo now ships:
+- standard Pi-hole / AdGuard-friendly hosts lists
+- exact-host security feeds
+- Unbound-ready RPZ zone files
+- optional brand-impersonation and live-impersonation hardening layers
 
----
+## Start Here
 
-## 📘 Why Use DNS Filtering?
+If you do not want to think about categories yet, start with one of these:
 
-DNS filtering allows you to block unwanted or harmful content at the network level — preventing devices from resolving specific domains.
+| Profile | Best For | File | Raw URL |
+|---------|----------|------|---------|
+| `Home Safe` | Most home users | [services/recommended/home_safe.txt](/Users/bjspark/Documents/scripts/dns_blocking/services/recommended/home_safe.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/recommended/home_safe.txt) |
+| `Family` | Shared devices and kid-safe networks | [services/recommended/family.txt](/Users/bjspark/Documents/scripts/dns_blocking/services/recommended/family.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/recommended/family.txt) |
+| `Aggressive` | Lock-it-down hosts blocking | [services/recommended/aggressive.txt](/Users/bjspark/Documents/scripts/dns_blocking/services/recommended/aggressive.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/recommended/aggressive.txt) |
+| `Security` | Exact-host phishing and malware blocking | [security/recommended/security.txt](/Users/bjspark/Documents/scripts/dns_blocking/security/recommended/security.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/recommended/security.txt) |
+| `Security RPZ` | Unbound / RPZ-capable resolvers | [rpz/recommended/security.rpz](/Users/bjspark/Documents/scripts/dns_blocking/rpz/recommended/security.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/recommended/security.rpz) |
 
-✅ Block ads, trackers, and malware  
-🚀 Improve network performance  
-🧒 Enforce safe browsing policies  
-🕵️ Enhance privacy by reducing tracking
+## Why Trust This Repo
 
----
+- Public Suffix List-aware normalization prevents junk outputs like bare `co.uk` or `gov.tw`.
+- Repo-local source policies strip noisy shared infrastructure and known bad broad matches before lists are written.
+- Generated outputs are validated for syntax, exclusion policy, and count drift on every run.
+- Standard hosts, exact-host security, and RPZ outputs are built from the same source graph so they stay aligned.
+- Hardening and active impersonation layers are split out, so more aggressive protection does not contaminate the default lists.
 
-## 🔒 Worried About DNS Bypassing?
+Quality and validation reports:
+- [services/quality_report.json](/Users/bjspark/Documents/scripts/dns_blocking/services/quality_report.json)
+- [security/quality_report.json](/Users/bjspark/Documents/scripts/dns_blocking/security/quality_report.json)
+- [rpz/quality_report.json](/Users/bjspark/Documents/scripts/dns_blocking/rpz/quality_report.json)
 
-You can enforce strict DNS routing and block or redirect outbound DNS-over-HTTPS (DoH), DNS-over-TLS (DoT), and QUIC traffic.
-
-➡️ [Learn how to prevent DNS bypassing](DNS_Bypass.md)
-
----
-
-## 🗂️ What’s Included
-
-This repository provides **curated and enriched DNS blocking outputs** across multiple categories and delivery formats.  
-Lists are **automatically updated on a schedule** and validated for syntax, policy drift, and source health.
-
-### 📂 Services
-#### [Online Services](services/README.md)
-Home-safe, Pi-hole and AdGuard-friendly blocklists using registrable domains by default.
-
-### 🛡️ [Security](security/README.md)
-Exact-host security feeds for phishing, malware, scams, dynamic DNS, and badware hosters.
-
-### 🧱 [RPZ](rpz/README.md)
-Resolver-native RPZ zone files for Unbound and other policy-zone capable DNS servers.
-
-### 🛡️ [Hardening](hardening/README.md)
-Optional DNSTwist-based lookalike and brand-impersonation lists for higher-sensitivity blocking, plus a separate active impersonation workflow that emits conservative live-impersonation blocklists.
-
-- [Brand Impersonation Lists](hardening/README.md)
-- [Active Impersonation Review](hardening/active_impersonation/README.md)
-
-### 🌐 [Tunneling](tunneling/README.md)
-Lists VPN and proxy providers that can be blocked or restricted.
-
-- [VPNs](tunneling/vpns.txt)  
-- [Proxies](tunneling/proxies.txt)
-
-## ⚙️ How to Use
-
-Pick the output tier that matches how aggressive you want the blocking to be:
-
-- `services/` for standard DNS blocking
-- `security/` for exact-host security feeds
-- `rpz/` for Unbound-native policy zones
-- `hardening/` for DNSTwist-based brand impersonation blocking
-- `hardening/active_impersonation/` for live-impersonation blocklists and supporting review reports generated by a separate daily workflow
-
-You can import the `.txt` lists directly into Pi-hole or AdGuard Home, and the `.rpz` files into Unbound or another RPZ-capable resolver.
+## Install In 60 Seconds
 
 ### Pi-hole
-### Ad-Guard
-### Group-policy
+1. Go to `Settings` → `Blocklists`
+2. Paste one of the raw URLs above
+3. Save and run gravity
 
+### AdGuard Home
+1. Go to `Filters` → `DNS blocklists`
+2. Add a custom blocklist
+3. Paste one of the raw URLs above
 
-## ⭐ If this project helps you, please star the repo!
+### Unbound
+1. Use the RPZ profile or category file under [rpz](/Users/bjspark/Documents/scripts/dns_blocking/rpz/README.md)
+2. Include it from your RPZ config
+3. Reload Unbound
+
+## What’s Included
+
+### [Services](/Users/bjspark/Documents/scripts/dns_blocking/services/README.md)
+Standard hosts-style lists for broad compatibility and easier troubleshooting.
+
+### [Security](/Users/bjspark/Documents/scripts/dns_blocking/security/README.md)
+Exact-host security lists for phishing, malware, scams, dynamic DNS, and badware hosters.
+
+### [RPZ](/Users/bjspark/Documents/scripts/dns_blocking/rpz/README.md)
+Resolver-native policy zones for Unbound and other RPZ-aware DNS servers.
+
+### [Hardening](/Users/bjspark/Documents/scripts/dns_blocking/hardening/README.md)
+Optional DNSTwist-derived lookalike blocking and separate active impersonation review outputs.
+
+### [Tunneling](/Users/bjspark/Documents/scripts/dns_blocking/tunneling/README.md)
+VPN and proxy domain lists if you want to restrict common bypass routes.
+
+## Optional Add-Ons
+
+These are useful, but they are intentionally not the default starting point:
+
+| Add-On | Why You’d Use It | File |
+|--------|------------------|------|
+| `DNS / VPN Bypass` | Block common DoH, VPN, and proxy-bypass endpoints | [services/categories/dns_bypass.txt](/Users/bjspark/Documents/scripts/dns_blocking/services/categories/dns_bypass.txt) |
+| `URL Shorteners` | Reduce redirector and shortlink abuse | [services/categories/url_shortener.txt](/Users/bjspark/Documents/scripts/dns_blocking/services/categories/url_shortener.txt) |
+| `Brand Impersonation` | DNSTwist-derived lookalike blocking | [hardening/categories/brand_impersonation.txt](/Users/bjspark/Documents/scripts/dns_blocking/hardening/categories/brand_impersonation.txt) |
+| `Active Impersonation` | Conservatively promoted live impersonation blocklist | [hardening/active_impersonation/categories/active_impersonation.txt](/Users/bjspark/Documents/scripts/dns_blocking/hardening/active_impersonation/categories/active_impersonation.txt) |
+
+## Notes
+
+- If you are new here, start with one recommended profile, not ten category feeds.
+- If something breaks, move down a level: `Aggressive` → `Family` → `Home Safe`.
+- If you want source-level control, every generated layer also ships per-source files in its own README.
+
+## Related Docs
+
+- [Prevent DNS bypassing](/Users/bjspark/Documents/scripts/dns_blocking/DNS_Bypass.md)
+- [Services README](/Users/bjspark/Documents/scripts/dns_blocking/services/README.md)
+- [Security README](/Users/bjspark/Documents/scripts/dns_blocking/security/README.md)
+- [RPZ README](/Users/bjspark/Documents/scripts/dns_blocking/rpz/README.md)
+- [Hardening README](/Users/bjspark/Documents/scripts/dns_blocking/hardening/README.md)
+- [Active Impersonation Review](/Users/bjspark/Documents/scripts/dns_blocking/hardening/active_impersonation/README.md)

@@ -1,6 +1,6 @@
 # RPZ Security Policies
 
-**Generated:** 2026-04-27 13:57:35 UTC
+**Generated:** 2026-04-27 14:19:52 UTC
 
 **Audience:** Advanced / Unbound RPZ
 
@@ -20,6 +20,21 @@ Unbound-friendly RPZ zone files generated from the same exact-host security laye
 
 Use these files when you run Unbound or another resolver that supports RPZ and you want policy-zone blocking instead of hosts-style imports.
 
+## Recommended Entry Points
+
+Use these starter bundles if you want a fast, opinionated default instead of picking categories one by one.
+
+| Bundle | Best For | Entries | Includes | File | Raw URL |
+|--------|----------|---------|----------|------|---------|
+| **Security RPZ** | Unbound and RPZ-capable resolvers | 632,125 | Badware Hosters, Dynamic DNS, Malware & Threats, Phishing & Scam Sites, Scam & Fraud | [security.rpz](recommended/security.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/recommended/security.rpz) |
+
+## Why Trust This Layer
+
+- Public Suffix List-aware domain normalization prevents bad roots like `co.uk` from leaking into generated outputs
+- Repo-local source policies remove noisy shared infrastructure and known false-positive patterns before lists are written
+- Validation reports are published at [quality_report.json](quality_report.json) and check syntax, exclusions, and count drift
+- Standard, exact-host, and RPZ outputs are generated from the same source graph so the repo stays internally consistent
+
 ## Aggregated Categories
 
 RPZ category bundles for exact-host security blocking.
@@ -28,7 +43,7 @@ RPZ category bundles for exact-host security blocking.
 |----------|---------|---------|------|---------|
 | [🗄️ Badware Hosters](#badware-hoster) | 1,195 | 1 | [badware_hoster.rpz](categories/badware_hoster.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/badware_hoster.rpz) |
 | [🌐 Dynamic DNS](#dynamic-dns) | 1,023 | 1 | [dynamic_dns.rpz](categories/dynamic_dns.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/dynamic_dns.rpz) |
-| [🦠 Malware & Threats](#malware) | 8,690 | 3 | [malware.rpz](categories/malware.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/malware.rpz) |
+| [🦠 Malware & Threats](#malware) | 8,697 | 3 | [malware.rpz](categories/malware.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/malware.rpz) |
 | [🎣 Phishing & Scam Sites](#phishing) | 409,863 | 3 | [phishing.rpz](categories/phishing.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/phishing.rpz) |
 | [💸 Scam & Fraud](#scam) | 211,451 | 3 | [scam.rpz](categories/scam.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/scam.rpz) |
 
@@ -36,27 +51,27 @@ RPZ category bundles for exact-host security blocking.
 
 Per-source RPZ files are available if you want to map individual feeds into separate policy zones.
 
-### Badware Hoster
+### Badware Hosters
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
 | HaGeZi Badware Hoster | 1,195 | [hagezi_hoster.rpz](lists/badware_hoster/hagezi_hoster.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/badware_hoster/hagezi_hoster.rpz) |
 
-### Dynamic Dns
+### Dynamic DNS
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
 | HaGeZi Dynamic DNS | 1,023 | [hagezi_dyndns.rpz](lists/dynamic_dns/hagezi_dyndns.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/dynamic_dns/hagezi_dyndns.rpz) |
 
-### Malware
+### Malware & Threats
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
 | Block List Project Ransomware | 1,904 | [blp_ransomware.rpz](lists/malware/blp_ransomware.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/blp_ransomware.rpz) |
-| ThreatFox | 656 | [threatfox.rpz](lists/malware/threatfox.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/threatfox.rpz) |
-| URLhaus | 6,603 | [urlhaus.rpz](lists/malware/urlhaus.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/urlhaus.rpz) |
+| ThreatFox | 661 | [threatfox.rpz](lists/malware/threatfox.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/threatfox.rpz) |
+| URLhaus | 6,607 | [urlhaus.rpz](lists/malware/urlhaus.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/urlhaus.rpz) |
 
-### Phishing
+### Phishing & Scam Sites
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
@@ -64,7 +79,7 @@ Per-source RPZ files are available if you want to map individual feeds into sepa
 | PhishTank | 26,678 | [phishtank.rpz](lists/phishing/phishtank.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/phishing/phishtank.rpz) |
 | Phishing Army | 385,059 | [phishing_army.rpz](lists/phishing/phishing_army.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/phishing/phishing_army.rpz) |
 
-### Scam
+### Scam & Fraud
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
@@ -106,7 +121,8 @@ Per-source RPZ files are available if you want to map individual feeds into sepa
 
 ## Notes
 
-- Start with the aggregated categories before stacking many source files
+- Start with the recommended bundles if you want the fewest decisions
+- Move to aggregated categories when you want control without going fully source-by-source
 - Whitelist when needed and watch your resolver logs after major changes
 - Exact-host security and RPZ layers are more aggressive than the standard services layer
 - Source feeds change over time, so entry counts will drift

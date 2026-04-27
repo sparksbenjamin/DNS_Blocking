@@ -31,9 +31,9 @@
       "service": "blp_ransomware"
     },
     {
-      "baseline_count": 657,
-      "delta_pct": 0.15,
-      "domain_count": 656,
+      "baseline_count": 656,
+      "delta_pct": 0.76,
+      "domain_count": 661,
       "group": "malware",
       "kind": "service",
       "path": "rpz/lists/malware/threatfox.rpz",
@@ -41,9 +41,9 @@
       "service": "threatfox"
     },
     {
-      "baseline_count": 6601,
-      "delta_pct": 0.03,
-      "domain_count": 6603,
+      "baseline_count": 6603,
+      "delta_pct": 0.06,
+      "domain_count": 6607,
       "group": "malware",
       "kind": "service",
       "path": "rpz/lists/malware/urlhaus.rpz",
@@ -131,9 +131,9 @@
       "service": null
     },
     {
-      "baseline_count": 8688,
-      "delta_pct": 0.02,
-      "domain_count": 8690,
+      "baseline_count": 8690,
+      "delta_pct": 0.08,
+      "domain_count": 8697,
       "group": "malware",
       "kind": "category",
       "path": "rpz/categories/malware.rpz",
@@ -161,13 +161,13 @@
       "service": null
     }
   ],
-  "generated_at": "2026-04-27T13:58:55.033838+00:00",
+  "generated_at": "2026-04-27T14:21:19.677379+00:00",
   "issues": [],
   "profile": "rpz",
   "status": "passed",
   "summary": {
     "files_checked": 16,
     "issues": 0,
-    "total_domains": 1267101
+    "total_domains": 1267117
   }
 }

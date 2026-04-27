@@ -3311,7 +3311,7 @@
       "service": "dfg"
     },
     {
-      "baseline_count": null,
+      "baseline_count": 93,
       "delta_pct": null,
       "domain_count": 93,
       "group": "dating",
@@ -11232,8 +11232,8 @@
     },
     {
       "baseline_count": 1413,
-      "delta_pct": 0.0,
-      "domain_count": 1413,
+      "delta_pct": 0.07,
+      "domain_count": 1414,
       "group": "malware",
       "kind": "service",
       "path": "services/lists/malware/urlhaus.txt",
@@ -12601,13 +12601,13 @@
       "service": null
     }
   ],
-  "generated_at": "2026-04-27T13:58:43.655602+00:00",
+  "generated_at": "2026-04-27T14:21:08.155085+00:00",
   "issues": [],
   "profile": "services",
   "status": "passed",
   "summary": {
     "files_checked": 1260,
     "issues": 0,
-    "total_domains": 1869340
+    "total_domains": 1869341
   }
 }

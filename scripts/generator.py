@@ -72,21 +72,29 @@ SECURITY_OUTPUT_GROUPS = {
 OUTPUT_CATEGORY_META = {
     "abuse": {"emoji": "🚨", "label": "Abuse & Malvertising"},
     "adult": {"emoji": "🔞", "label": "Adult Content"},
+    "ai": {"emoji": "🤖", "label": "AI Assistants"},
     "crypto": {"emoji": "🪙", "label": "Crypto & Cryptojacking"},
     "badware_hoster": {"emoji": "🗄️", "label": "Badware Hosters"},
+    "cdn": {"emoji": "☁️", "label": "CDNs & Edge"},
     "dating": {"emoji": "💕", "label": "Dating Services"},
     "dns": {"emoji": "🛜", "label": "DNS Providers"},
     "dns_bypass": {"emoji": "🛡️", "label": "DNS / VPN Bypass"},
     "drugs": {"emoji": "💊", "label": "Drugs"},
     "dynamic_dns": {"emoji": "🌐", "label": "Dynamic DNS"},
+    "gambling": {"emoji": "🎰", "label": "Gambling & Betting"},
     "gaming": {"emoji": "🎮", "label": "Gaming Platforms"},
+    "hosting": {"emoji": "🗃️", "label": "Hosting & File Platforms"},
     "malware": {"emoji": "🦠", "label": "Malware & Threats"},
+    "messenger": {"emoji": "💬", "label": "Messaging Apps"},
     "phishing": {"emoji": "🎣", "label": "Phishing & Scam Sites"},
     "piracy": {"emoji": "🏴‍☠️", "label": "Piracy"},
+    "privacy": {"emoji": "🕶️", "label": "Privacy Tools"},
     "redirect": {"emoji": "↪️", "label": "Redirectors"},
     "scam": {"emoji": "💸", "label": "Scam & Fraud"},
+    "shopping": {"emoji": "🛍️", "label": "Shopping & Marketplaces"},
     "social_network": {"emoji": "📱", "label": "Social Networks"},
     "smart_tv": {"emoji": "📡", "label": "Smart TV Telemetry"},
+    "software": {"emoji": "🧰", "label": "Software & Updates"},
     "streaming": {"emoji": "📺", "label": "Streaming Services"},
     "torrent": {"emoji": "🧲", "label": "Torrent"},
     "tracking": {"emoji": "🛰️", "label": "Tracking & Analytics"},
@@ -99,6 +107,7 @@ OUTPUT_PROFILES = {
         "base_dir": Path("services"),
         "lists_dir": Path("services/lists"),
         "categories_dir": Path("services/categories"),
+        "recommended_dir": Path("services/recommended"),
         "readme_path": Path("services/README.md"),
         "quality_report_path": Path("services/quality_report.json"),
         "file_extension": ".txt",
@@ -123,6 +132,72 @@ OUTPUT_PROFILES = {
             "For granular control, each source is available separately if you want source-level "
             "attribution or need to disable one feed."
         ),
+        "recommended_bundles": [
+            {
+                "bundle_id": "home_safe",
+                "name": "Home Safe",
+                "best_for": "Most home users",
+                "description": "Balanced default with common security, abuse, and tracking coverage.",
+                "groups": [
+                    "abuse",
+                    "badware_hoster",
+                    "dynamic_dns",
+                    "malware",
+                    "phishing",
+                    "redirect",
+                    "scam",
+                    "tracking",
+                ],
+                "preserve_subdomains": False,
+            },
+            {
+                "bundle_id": "family",
+                "name": "Family",
+                "best_for": "Shared devices and kid-safe networks",
+                "description": "Home Safe plus adult, dating, gambling, drugs, and vaping blocks.",
+                "groups": [
+                    "abuse",
+                    "adult",
+                    "badware_hoster",
+                    "dating",
+                    "drugs",
+                    "dynamic_dns",
+                    "gambling",
+                    "malware",
+                    "phishing",
+                    "redirect",
+                    "scam",
+                    "tracking",
+                    "vaping",
+                ],
+                "preserve_subdomains": False,
+            },
+            {
+                "bundle_id": "aggressive",
+                "name": "Aggressive",
+                "best_for": "Lock-it-down blocking",
+                "description": "Family profile plus crypto, piracy, and torrent-heavy domains.",
+                "groups": [
+                    "abuse",
+                    "adult",
+                    "badware_hoster",
+                    "crypto",
+                    "dating",
+                    "drugs",
+                    "dynamic_dns",
+                    "gambling",
+                    "malware",
+                    "phishing",
+                    "piracy",
+                    "redirect",
+                    "scam",
+                    "torrent",
+                    "tracking",
+                    "vaping",
+                ],
+                "preserve_subdomains": False,
+            },
+        ],
         "usage": [
             "### Pi-hole",
             "1. Navigate to **Settings** → **Blocklists**",
@@ -147,6 +222,7 @@ OUTPUT_PROFILES = {
         "base_dir": Path("security"),
         "lists_dir": Path("security/lists"),
         "categories_dir": Path("security/categories"),
+        "recommended_dir": Path("security/recommended"),
         "readme_path": Path("security/README.md"),
         "quality_report_path": Path("security/quality_report.json"),
         "file_extension": ".txt",
@@ -173,6 +249,16 @@ OUTPUT_PROFILES = {
             "Each source is also available separately if you want tighter source attribution or "
             "to tune false-positive handling."
         ),
+        "recommended_bundles": [
+            {
+                "bundle_id": "security",
+                "name": "Security",
+                "best_for": "People who want stronger phishing and malware coverage",
+                "description": "Exact-host security coverage across phishing, malware, scams, dynamic DNS, and badware hosters.",
+                "groups": sorted(SECURITY_OUTPUT_GROUPS),
+                "preserve_subdomains": True,
+            },
+        ],
         "usage": [
             "### Pi-hole / AdGuard Home",
             "1. Import the **Raw URL** of the exact-host list you want",
@@ -195,6 +281,7 @@ OUTPUT_PROFILES = {
         "base_dir": Path("rpz"),
         "lists_dir": Path("rpz/lists"),
         "categories_dir": Path("rpz/categories"),
+        "recommended_dir": Path("rpz/recommended"),
         "readme_path": Path("rpz/README.md"),
         "quality_report_path": Path("rpz/quality_report.json"),
         "file_extension": ".rpz",
@@ -219,6 +306,16 @@ OUTPUT_PROFILES = {
             "Per-source RPZ files are available if you want to map individual feeds into separate "
             "policy zones."
         ),
+        "recommended_bundles": [
+            {
+                "bundle_id": "security",
+                "name": "Security RPZ",
+                "best_for": "Unbound and RPZ-capable resolvers",
+                "description": "Resolver-native exact-host policy zone covering phishing, malware, scams, dynamic DNS, and badware hosters.",
+                "groups": sorted(SECURITY_OUTPUT_GROUPS),
+                "preserve_subdomains": True,
+            },
+        ],
         "usage": [
             "### Unbound",
             "1. Place the `.rpz` file somewhere your resolver can read it",
@@ -1513,11 +1610,14 @@ def clear_profile_outputs(profile_name: str) -> None:
     profile = get_output_profile(profile_name)
     ensure_dir(profile["lists_dir"])
     ensure_dir(profile["categories_dir"])
+    ensure_dir(profile["recommended_dir"])
 
     pattern = f"*{profile['file_extension']}"
     for path in profile["lists_dir"].rglob(pattern):
         path.unlink()
     for path in profile["categories_dir"].glob(pattern):
+        path.unlink()
+    for path in profile["recommended_dir"].glob(pattern):
         path.unlink()
 
 
@@ -1541,11 +1641,96 @@ def get_raw_url(path: Path) -> str:
     return f"https://raw.githubusercontent.com/{REPO}/{BRANCH}/{rel_path}"
 
 
+def get_quality_report_link(profile: Dict[str, object]) -> str:
+    """Return the README-local link to the profile quality report."""
+    return profile["quality_report_path"].relative_to(profile["base_dir"]).as_posix()
+
+
+def get_bundle_group_labels(groups: List[str]) -> str:
+    """Return a readable comma-separated category label list for a bundle."""
+    labels = []
+    for group in groups:
+        meta = OUTPUT_CATEGORY_META.get(group, {"label": group.replace("_", " ").title()})
+        labels.append(meta["label"])
+    return ", ".join(labels)
+
+
+def generate_recommended_bundles(
+    profile_name: str,
+    timestamp: str,
+    category_domains: Dict[str, Set[str]],
+    category_preserve_subdomains: Dict[str, bool],
+) -> List[Dict[str, object]]:
+    """Generate recommended starter bundles for one output profile."""
+    profile = get_output_profile(profile_name)
+    bundle_stats: List[Dict[str, object]] = []
+    bundles = profile.get("recommended_bundles", [])
+    if not bundles:
+        return bundle_stats
+
+    extension = profile["file_extension"]
+    comment_prefix = ";" if profile["format"] == "rpz" else "#"
+
+    for bundle in bundles:
+        selected_groups = [group for group in bundle["groups"] if group in category_domains]
+        if not selected_groups:
+            continue
+
+        bundle_domains: Set[str] = set()
+        for group in selected_groups:
+            bundle_domains.update(category_domains[group])
+
+        preserve_subdomains = bundle.get(
+            "preserve_subdomains",
+            any(category_preserve_subdomains.get(group, False) for group in selected_groups),
+        )
+        out_path = profile["recommended_dir"] / f"{bundle['bundle_id']}{extension}"
+        format_line = format_output_label(profile["format"], preserve_subdomains)
+        header = (
+            f"{comment_prefix} {bundle['name']}\n"
+            f"{comment_prefix} Generated: {timestamp}\n"
+            f"{format_line}\n"
+            f"{comment_prefix} Included categories: {', '.join(selected_groups)}\n"
+            f"{comment_prefix} Original domains (before deduplication): {len(bundle_domains)}"
+        )
+
+        try:
+            count, size_mb = write_output_file(
+                profile,
+                out_path,
+                bundle_domains,
+                header,
+                preserve_subdomains=preserve_subdomains,
+            )
+            logger.info("✓ %s — %d entries (%.2fMB)", out_path, count, size_mb)
+        except ValueError as e:
+            logger.warning("Skipped %s: %s", out_path, e)
+            continue
+        except Exception as e:
+            logger.error("Error writing %s: %s", out_path, e)
+            continue
+
+        bundle_stats.append(
+            {
+                "bundle_id": bundle["bundle_id"],
+                "name": bundle["name"],
+                "best_for": bundle["best_for"],
+                "description": bundle["description"],
+                "groups": selected_groups,
+                "domains": count,
+                "path": out_path,
+            }
+        )
+
+    return bundle_stats
+
+
 def build_profile_readme(
     profile_name: str,
     timestamp: str,
     service_stats: List[Dict],
     category_stats: List[Dict],
+    bundle_stats: List[Dict[str, object]],
 ) -> None:
     """Write the README for one generated output profile."""
     profile = get_output_profile(profile_name)
@@ -1569,6 +1754,27 @@ def build_profile_readme(
 
     lines.append(f"## {profile['quick_start_title']}\n")
     lines.append(profile["quick_start_body"] + "\n")
+
+    if bundle_stats:
+        lines.append("## Recommended Entry Points\n")
+        lines.append("Use these starter bundles if you want a fast, opinionated default instead of picking categories one by one.\n")
+        lines.append(f"| Bundle | Best For | {count_label} | Includes | File | Raw URL |")
+        lines.append("|--------|----------|---------|----------|------|---------|")
+        for bundle in bundle_stats:
+            rel_path = bundle["path"].relative_to(base_dir)
+            raw_url = get_raw_url(bundle["path"])
+            lines.append(
+                f"| **{bundle['name']}** | {bundle['best_for']} | {bundle['domains']:,} | "
+                f"{get_bundle_group_labels(bundle['groups'])} | "
+                f"[{rel_path.name}]({rel_path.as_posix()}) | [Raw]({raw_url}) |"
+            )
+        lines.append("")
+
+    lines.append("## Why Trust This Layer\n")
+    lines.append("- Public Suffix List-aware domain normalization prevents bad roots like `co.uk` from leaking into generated outputs")
+    lines.append("- Repo-local source policies remove noisy shared infrastructure and known false-positive patterns before lists are written")
+    lines.append(f"- Validation reports are published at [{profile['quality_report_path'].name}]({get_quality_report_link(profile)}) and check syntax, exclusions, and count drift")
+    lines.append("- Standard, exact-host, and RPZ outputs are generated from the same source graph so the repo stays internally consistent\n")
 
     lines.append("## Aggregated Categories\n")
     lines.append(profile["category_intro"] + "\n")
@@ -1598,7 +1804,8 @@ def build_profile_readme(
         services_by_category[svc["group"]].append(svc)
 
     for group in sorted(services_by_category.keys()):
-        lines.append(f"### {group.replace('_', ' ').title()}\n")
+        meta = OUTPUT_CATEGORY_META.get(group, {"label": group.replace("_", " ").title()})
+        lines.append(f"### {meta['label']}\n")
         lines.append(f"| Source | {count_label} | File | Raw URL |")
         lines.append("|--------|---------|------|---------|")
         for svc in services_by_category[group]:
@@ -1632,7 +1839,8 @@ def build_profile_readme(
     lines.append("- **[StevenBlack](https://github.com/StevenBlack/hosts)** and **[Chad Mayfield](https://github.com/chadmayfield/my-pihole-blocklists)** - adult-content feeds\n")
 
     lines.append("## Notes\n")
-    lines.append("- Start with the aggregated categories before stacking many source files")
+    lines.append("- Start with the recommended bundles if you want the fewest decisions")
+    lines.append("- Move to aggregated categories when you want control without going fully source-by-source")
     lines.append("- Whitelist when needed and watch your resolver logs after major changes")
     lines.append("- Exact-host security and RPZ layers are more aggressive than the standard services layer")
     lines.append("- Source feeds change over time, so entry counts will drift\n")
@@ -1739,10 +1947,17 @@ def generate_profile_outputs(
 
         category_stats.append({"group": group, "domains": count, "path": out_path})
 
-    build_profile_readme(profile_name, timestamp, service_stats, category_stats)
+    bundle_stats = generate_recommended_bundles(
+        profile_name,
+        timestamp,
+        category_domains,
+        category_preserve_subdomains,
+    )
+    build_profile_readme(profile_name, timestamp, service_stats, category_stats, bundle_stats)
     return {
         "service_stats": service_stats,
         "category_stats": category_stats,
+        "bundle_stats": bundle_stats,
         "total_entries": sum(item["domains"] for item in category_stats),
     }
 

@@ -1,10 +1,10 @@
 ; Phishing Blocklist
-; Generated: 2026-04-27 13:57:35 UTC
+; Generated: 2026-04-27 14:19:52 UTC
 ; Format: RPZ (exact hostnames preserved)
 ; Original domains (before deduplication): 409863
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026042713 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026042714 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 0-105.com CNAME .

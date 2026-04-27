@@ -1,6 +1,6 @@
 # Exact-Host Security Blocklists
 
-**Generated:** 2026-04-27 13:57:35 UTC
+**Generated:** 2026-04-27 14:19:52 UTC
 
 **Audience:** Security-focused / higher churn
 
@@ -20,6 +20,21 @@ Security-focused host blocking for phishing, malware, scam, dynamic DNS, and bad
 
 Use these lists when you want stronger protection against exact phishing or malware hosts and you are comfortable with faster list churn.
 
+## Recommended Entry Points
+
+Use these starter bundles if you want a fast, opinionated default instead of picking categories one by one.
+
+| Bundle | Best For | Entries | Includes | File | Raw URL |
+|--------|----------|---------|----------|------|---------|
+| **Security** | People who want stronger phishing and malware coverage | 632,125 | Badware Hosters, Dynamic DNS, Malware & Threats, Phishing & Scam Sites, Scam & Fraud | [security.txt](recommended/security.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/recommended/security.txt) |
+
+## Why Trust This Layer
+
+- Public Suffix List-aware domain normalization prevents bad roots like `co.uk` from leaking into generated outputs
+- Repo-local source policies remove noisy shared infrastructure and known false-positive patterns before lists are written
+- Validation reports are published at [quality_report.json](quality_report.json) and check syntax, exclusions, and count drift
+- Standard, exact-host, and RPZ outputs are generated from the same source graph so the repo stays internally consistent
+
 ## Aggregated Categories
 
 Exact-host category bundles built from higher-sensitivity security feeds.
@@ -28,7 +43,7 @@ Exact-host category bundles built from higher-sensitivity security feeds.
 |----------|---------|---------|------|---------|
 | [🗄️ Badware Hosters](#badware-hoster) | 1,195 | 1 | [badware_hoster.txt](categories/badware_hoster.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/badware_hoster.txt) |
 | [🌐 Dynamic DNS](#dynamic-dns) | 1,023 | 1 | [dynamic_dns.txt](categories/dynamic_dns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/dynamic_dns.txt) |
-| [🦠 Malware & Threats](#malware) | 8,690 | 3 | [malware.txt](categories/malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/malware.txt) |
+| [🦠 Malware & Threats](#malware) | 8,697 | 3 | [malware.txt](categories/malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/malware.txt) |
 | [🎣 Phishing & Scam Sites](#phishing) | 409,863 | 3 | [phishing.txt](categories/phishing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/phishing.txt) |
 | [💸 Scam & Fraud](#scam) | 211,451 | 3 | [scam.txt](categories/scam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/scam.txt) |
 
@@ -36,27 +51,27 @@ Exact-host category bundles built from higher-sensitivity security feeds.
 
 Each source is also available separately if you want tighter source attribution or to tune false-positive handling.
 
-### Badware Hoster
+### Badware Hosters
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
 | HaGeZi Badware Hoster | 1,195 | [hagezi_hoster.txt](lists/badware_hoster/hagezi_hoster.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/badware_hoster/hagezi_hoster.txt) |
 
-### Dynamic Dns
+### Dynamic DNS
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
 | HaGeZi Dynamic DNS | 1,023 | [hagezi_dyndns.txt](lists/dynamic_dns/hagezi_dyndns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/dynamic_dns/hagezi_dyndns.txt) |
 
-### Malware
+### Malware & Threats
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
 | Block List Project Ransomware | 1,904 | [blp_ransomware.txt](lists/malware/blp_ransomware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/malware/blp_ransomware.txt) |
-| ThreatFox | 656 | [threatfox.txt](lists/malware/threatfox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/malware/threatfox.txt) |
-| URLhaus | 6,603 | [urlhaus.txt](lists/malware/urlhaus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/malware/urlhaus.txt) |
+| ThreatFox | 661 | [threatfox.txt](lists/malware/threatfox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/malware/threatfox.txt) |
+| URLhaus | 6,607 | [urlhaus.txt](lists/malware/urlhaus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/malware/urlhaus.txt) |
 
-### Phishing
+### Phishing & Scam Sites
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
@@ -64,7 +79,7 @@ Each source is also available separately if you want tighter source attribution 
 | PhishTank | 26,678 | [phishtank.txt](lists/phishing/phishtank.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/phishing/phishtank.txt) |
 | Phishing Army | 385,059 | [phishing_army.txt](lists/phishing/phishing_army.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/phishing/phishing_army.txt) |
 
-### Scam
+### Scam & Fraud
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
@@ -106,7 +121,8 @@ Each source is also available separately if you want tighter source attribution 
 
 ## Notes
 
-- Start with the aggregated categories before stacking many source files
+- Start with the recommended bundles if you want the fewest decisions
+- Move to aggregated categories when you want control without going fully source-by-source
 - Whitelist when needed and watch your resolver logs after major changes
 - Exact-host security and RPZ layers are more aggressive than the standard services layer
 - Source feeds change over time, so entry counts will drift
