@@ -72,6 +72,7 @@ SECURITY_OUTPUT_GROUPS = {
 OUTPUT_CATEGORY_META = {
     "adult": {"emoji": "🔞", "label": "Adult Content"},
     "badware_hoster": {"emoji": "🗄️", "label": "Badware Hosters"},
+    "dating": {"emoji": "💕", "label": "Dating Services"},
     "dns": {"emoji": "🛜", "label": "DNS Providers"},
     "dynamic_dns": {"emoji": "🌐", "label": "Dynamic DNS"},
     "gaming": {"emoji": "🎮", "label": "Gaming Platforms"},
@@ -257,6 +258,7 @@ BLOCKLISTPROJECT_TRACKING_URL = "https://raw.githubusercontent.com/blocklistproj
 HAGEZI_DYNDNS_URL = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/dyndns-onlydomains.txt"
 HAGEZI_HOSTER_URL = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/hoster-onlydomains.txt"
 HAGEZI_FAKE_URL = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/fake-onlydomains.txt"
+SHADOWWHISPERER_DATING_URL = "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/RAW/Dating"
 
 # Adult lists (selective to avoid insane sizes)
 STEVENBLACK_PORN_URL = "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts"
@@ -1431,6 +1433,7 @@ def build_profile_readme(
     lines.append("- **[URLhaus](https://urlhaus.abuse.ch/)** - malware distribution URLs converted to exact hosts")
     lines.append("- **[The Block List Project](https://github.com/blocklistproject/Lists)** - scam, fraud, ransomware, and tracking feeds")
     lines.append("- **[HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists)** - dynamic DNS, badware hoster, and fake-domain feeds")
+    lines.append("- **[ShadowWhisperer BlockLists](https://github.com/ShadowWhisperer/BlockLists)** - extended dating-service coverage")
     lines.append("- **[UKLANS cache-domains](https://github.com/uklans/cache-domains)** - gaming CDN/cache hostnames")
     lines.append("- **[StevenBlack](https://github.com/StevenBlack/hosts)** and **[Chad Mayfield](https://github.com/chadmayfield/my-pihole-blocklists)** - adult-content feeds\n")
 
@@ -1778,6 +1781,13 @@ def main():
     # Curated category feeds
     logger.info("Fetching curated category feeds...")
     curated_feeds = (
+        {
+            "service_id": "shadowwhisperer_dating",
+            "group": "dating",
+            "name": "ShadowWhisperer Dating",
+            "url": SHADOWWHISPERER_DATING_URL,
+            "extractor": extract_domains_from_plain_list,
+        },
         {
             "service_id": "blp_scam",
             "group": "scam",

@@ -20,6 +20,10 @@
       "allow_shared_hosts": true,
       "max_delta_pct": 50
     },
+    "dating": {
+      "max_delta_pct": 80,
+      "min_baseline_count_for_delta": 100
+    },
     "dns": {
       "mode": "exact",
       "allow_shared_hosts": true
@@ -98,6 +102,24 @@
       "must_exist": true,
       "allow_shared_hosts": true,
       "max_delta_pct": 70
+    },
+    "shadowwhisperer_dating": {
+      "group": "dating",
+      "must_exist": true,
+      "required_domains": [
+        "bumble.com",
+        "hinge.co",
+        "hily.com",
+        "okcupid.com"
+      ],
+      "exclude_suffix": [
+        "amazonaws.com",
+        "arkoselabs.com",
+        "cloudfront.net",
+        "firebaseapp.com",
+        "sendbird.com"
+      ],
+      "max_delta_pct": 80
     },
     "epic_games": {
       "group": "gaming",
