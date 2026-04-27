@@ -1,6 +1,6 @@
 # Active Impersonation Review
 
-**Generated:** 2026-04-26T07:24:07.442460+00:00
+**Generated:** 2026-04-27T07:58:10.636363+00:00
 
 This report scores live DNSTwist lookalike domains against the real brand sites using lightweight fingerprinting. It is a **review artifact**, not an auto-promoted blocklist.
 
@@ -19,7 +19,7 @@ Quick links:
 ## Settings
 
 - Targets audited: `40`
-- Candidate domains audited: `5430`
+- Candidate domains audited: `5673`
 - Max workers: `10`
 - Target jobs: `2`
 - Connect timeout: `3.0` seconds
@@ -33,52 +33,52 @@ Quick links:
 
 | HIGH | MEDIUM | LOW | INCONCLUSIVE | OFFLINE | ERROR |
 |------|--------|-----|--------------|---------|-------|
-| 228 | 132 | 2418 | 1074 | 1578 | 0 |
+| 231 | 133 | 2776 | 843 | 1690 | 0 |
 
 ## Per-Target Summary
 
 | Target | Seeds | Audited | High | Medium | Low | Offline | Errors | Note |
 |--------|-------|---------|------|--------|-----|---------|--------|------|
-| Adobe | 2 | 180 | 0 | 0 | 82 | 71 | 0 |  |
-| Amazon | 1 | 258 | 0 | 117 | 58 | 71 | 0 |  |
-| Apple | 2 | 346 | 17 | 1 | 136 | 135 | 0 |  |
-| Atlassian | 1 | 46 | 6 | 0 | 31 | 7 | 0 |  |
-| Auth0 | 1 | 188 | 4 | 0 | 4 | 73 | 0 |  |
-| Box | 1 | 103 | 0 | 0 | 67 | 26 | 0 |  |
-| Cloudflare | 1 | 150 | 2 | 0 | 50 | 88 | 0 |  |
-| Coinbase | 1 | 255 | 1 | 0 | 30 | 36 | 0 |  |
+| Adobe | 2 | 180 | 0 | 0 | 94 | 73 | 0 |  |
+| Amazon | 1 | 258 | 0 | 117 | 62 | 71 | 0 |  |
+| Apple | 2 | 346 | 17 | 1 | 159 | 137 | 0 |  |
+| Atlassian | 1 | 46 | 6 | 0 | 29 | 9 | 0 |  |
+| Auth0 | 1 | 188 | 4 | 0 | 5 | 73 | 0 |  |
+| Box | 1 | 103 | 0 | 0 | 71 | 27 | 0 |  |
+| Cloudflare | 1 | 150 | 2 | 0 | 54 | 87 | 0 |  |
+| Coinbase | 1 | 255 | 0 | 1 | 34 | 37 | 0 |  |
 | DHL | 1 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| Docker | 1 | 90 | 0 | 0 | 52 | 21 | 0 |  |
-| DocuSign | 1 | 87 | 5 | 0 | 47 | 26 | 0 |  |
-| Dropbox | 2 | 129 | 1 | 4 | 73 | 42 | 0 |  |
-| Duo | 1 | 116 | 0 | 0 | 60 | 28 | 0 |  |
-| FedEx | 1 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| Figma | 1 | 84 | 0 | 0 | 48 | 19 | 0 |  |
-| GitHub | 1 | 162 | 6 | 0 | 88 | 44 | 0 |  |
-| GitLab | 1 | 81 | 1 | 0 | 35 | 36 | 0 |  |
-| Google | 2 | 567 | 10 | 10 | 215 | 253 | 0 |  |
-| Intuit | 1 | 142 | 0 | 0 | 79 | 31 | 0 |  |
-| Jira | 1 | 99 | 0 | 0 | 65 | 19 | 0 |  |
-| Microsoft | 5 | 935 | 68 | 0 | 489 | 253 | 0 |  |
-| Notion | 1 | 13 | 0 | 0 | 10 | 0 | 0 |  |
-| Okta | 1 | 110 | 0 | 0 | 54 | 31 | 0 |  |
-| OneLogin | 1 | 32 | 0 | 0 | 17 | 12 | 0 |  |
-| PayPal | 1 | 216 | 9 | 0 | 82 | 14 | 0 |  |
-| Ping Identity | 1 | 29 | 0 | 0 | 0 | 26 | 0 |  |
+| Docker | 1 | 90 | 0 | 0 | 49 | 28 | 0 |  |
+| DocuSign | 1 | 87 | 5 | 0 | 49 | 23 | 0 |  |
+| Dropbox | 2 | 129 | 1 | 4 | 74 | 43 | 0 |  |
+| Duo | 1 | 116 | 0 | 0 | 75 | 24 | 0 |  |
+| FedEx | 1 | 119 | 0 | 0 | 60 | 51 | 0 |  |
+| Figma | 1 | 84 | 0 | 0 | 57 | 18 | 0 |  |
+| GitHub | 1 | 162 | 6 | 0 | 97 | 42 | 0 |  |
+| GitLab | 1 | 81 | 1 | 0 | 40 | 36 | 0 |  |
+| Google | 2 | 567 | 10 | 10 | 235 | 258 | 0 |  |
+| Intuit | 1 | 142 | 0 | 0 | 78 | 39 | 0 |  |
+| Jira | 1 | 99 | 0 | 0 | 75 | 19 | 0 |  |
+| Microsoft | 5 | 935 | 69 | 0 | 534 | 252 | 0 |  |
+| Notion | 1 | 13 | 0 | 0 | 11 | 0 | 0 |  |
+| Okta | 1 | 110 | 0 | 0 | 63 | 32 | 0 |  |
+| OneLogin | 1 | 32 | 0 | 0 | 17 | 13 | 0 |  |
+| PayPal | 1 | 216 | 9 | 0 | 89 | 17 | 0 |  |
+| Ping Identity | 1 | 29 | 0 | 0 | 1 | 26 | 0 |  |
 | QuickBooks | 1 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| Salesforce | 1 | 117 | 15 | 0 | 51 | 35 | 0 |  |
+| Salesforce | 1 | 117 | 15 | 0 | 53 | 36 | 0 |  |
 | ServiceNow | 1 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| Shopify | 1 | 177 | 49 | 0 | 81 | 22 | 0 |  |
-| Slack | 1 | 92 | 0 | 0 | 48 | 21 | 0 |  |
-| Stripe | 1 | 98 | 6 | 0 | 57 | 23 | 0 |  |
-| Trello | 1 | 61 | 1 | 0 | 36 | 11 | 0 |  |
-| TurboTax | 1 | 151 | 24 | 0 | 72 | 37 | 0 |  |
+| Shopify | 1 | 177 | 39 | 0 | 99 | 22 | 0 |  |
+| Slack | 1 | 92 | 0 | 0 | 59 | 21 | 0 |  |
+| Stripe | 1 | 98 | 6 | 0 | 61 | 24 | 0 |  |
+| Trello | 1 | 61 | 1 | 0 | 38 | 11 | 0 |  |
+| TurboTax | 1 | 151 | 24 | 0 | 77 | 39 | 0 |  |
 | UPS | 1 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| USPS | 1 | 99 | 0 | 0 | 69 | 20 | 0 |  |
-| Venmo | 1 | 73 | 1 | 0 | 38 | 17 | 0 |  |
-| Zendesk | 1 | 62 | 2 | 0 | 36 | 17 | 0 |  |
-| Zoom | 1 | 82 | 0 | 0 | 58 | 13 | 0 |  |
-| eBay | 1 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
+| USPS | 1 | 99 | 0 | 0 | 72 | 19 | 0 |  |
+| Venmo | 1 | 73 | 1 | 0 | 42 | 17 | 0 |  |
+| Zendesk | 1 | 62 | 2 | 0 | 41 | 17 | 0 |  |
+| Zoom | 1 | 82 | 0 | 0 | 62 | 15 | 0 |  |
+| eBay | 1 | 124 | 13 | 0 | 60 | 34 | 0 |  |
 
 ## Top Suspicious Matches
 
@@ -103,12 +103,12 @@ Quick links:
 | GitHub | `git-hub.com` | HIGH_MATCH | 11 | `github.com` | `github.com` | 1.00 | 1.00 |
 | GitHub | `gitgub.com` | HIGH_MATCH | 11 | `github.com` | `github.com` | 1.00 | 1.00 |
 | GitHub | `githuh.com` | HIGH_MATCH | 11 | `github.com` | `github.com` | 1.00 | 1.00 |
-| Google | `gogle.com` | HIGH_MATCH | 11 | `google.com` | `www.google.com` | 1.00 | 1.00 |
-| Google | `googel.com` | HIGH_MATCH | 11 | `google.com` | `www.google.com` | 1.00 | 1.00 |
-| Google | `googl.com` | HIGH_MATCH | 11 | `google.com` | `www.google.com` | 1.00 | 1.00 |
-| Google | `gooogle.com` | HIGH_MATCH | 11 | `google.com` | `www.google.com` | 1.00 | 1.00 |
+| Google | `gogole.com` | HIGH_MATCH | 11 | `google.com` | `www.google.com` | 1.00 | 1.00 |
 | GitHub | `guthub.com` | HIGH_MATCH | 11 | `github.com` | `github.com` | 1.00 | 1.00 |
 | Apple | `icloude.com` | HIGH_MATCH | 11 | `apple.com` | `www.apple.com` | 1.00 | 1.00 |
+| Apple | `icloudo.com` | HIGH_MATCH | 11 | `apple.com` | `www.apple.com` | 1.00 | 1.00 |
+| Apple | `icloue.com` | HIGH_MATCH | 11 | `icloud.com` | `www.icloud.com` | 1.00 | 1.00 |
+| Apple | `icmoud.com` | HIGH_MATCH | 11 | `icloud.com` | `www.icloud.com` | 1.00 | 1.00 |
 
 ## Operational Notes
 
