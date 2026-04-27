@@ -70,18 +70,28 @@ SECURITY_OUTPUT_GROUPS = {
 }
 
 OUTPUT_CATEGORY_META = {
+    "abuse": {"emoji": "🚨", "label": "Abuse & Malvertising"},
     "adult": {"emoji": "🔞", "label": "Adult Content"},
+    "crypto": {"emoji": "🪙", "label": "Crypto & Cryptojacking"},
     "badware_hoster": {"emoji": "🗄️", "label": "Badware Hosters"},
     "dating": {"emoji": "💕", "label": "Dating Services"},
     "dns": {"emoji": "🛜", "label": "DNS Providers"},
+    "dns_bypass": {"emoji": "🛡️", "label": "DNS / VPN Bypass"},
+    "drugs": {"emoji": "💊", "label": "Drugs"},
     "dynamic_dns": {"emoji": "🌐", "label": "Dynamic DNS"},
     "gaming": {"emoji": "🎮", "label": "Gaming Platforms"},
     "malware": {"emoji": "🦠", "label": "Malware & Threats"},
     "phishing": {"emoji": "🎣", "label": "Phishing & Scam Sites"},
+    "piracy": {"emoji": "🏴‍☠️", "label": "Piracy"},
+    "redirect": {"emoji": "↪️", "label": "Redirectors"},
     "scam": {"emoji": "💸", "label": "Scam & Fraud"},
     "social_network": {"emoji": "📱", "label": "Social Networks"},
+    "smart_tv": {"emoji": "📡", "label": "Smart TV Telemetry"},
     "streaming": {"emoji": "📺", "label": "Streaming Services"},
+    "torrent": {"emoji": "🧲", "label": "Torrent"},
     "tracking": {"emoji": "🛰️", "label": "Tracking & Analytics"},
+    "url_shortener": {"emoji": "🔗", "label": "URL Shorteners"},
+    "vaping": {"emoji": "💨", "label": "Vaping"},
 }
 
 OUTPUT_PROFILES = {
@@ -255,9 +265,19 @@ BLOCKLISTPROJECT_SCAM_URL = "https://raw.githubusercontent.com/blocklistproject/
 BLOCKLISTPROJECT_FRAUD_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/fraud.txt"
 BLOCKLISTPROJECT_RANSOMWARE_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/ransomware.txt"
 BLOCKLISTPROJECT_TRACKING_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/tracking.txt"
+BLOCKLISTPROJECT_ABUSE_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/abuse.txt"
+BLOCKLISTPROJECT_CRYPTO_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/crypto.txt"
+BLOCKLISTPROJECT_DRUGS_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/drugs.txt"
+BLOCKLISTPROJECT_PIRACY_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/piracy.txt"
+BLOCKLISTPROJECT_REDIRECT_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/redirect.txt"
+BLOCKLISTPROJECT_SMART_TV_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/smart-tv.txt"
+BLOCKLISTPROJECT_TORRENT_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/torrent.txt"
+BLOCKLISTPROJECT_VAPING_URL = "https://raw.githubusercontent.com/blocklistproject/Lists/master/vaping.txt"
 HAGEZI_DYNDNS_URL = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/dyndns-onlydomains.txt"
 HAGEZI_HOSTER_URL = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/hoster-onlydomains.txt"
 HAGEZI_FAKE_URL = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/fake-onlydomains.txt"
+HAGEZI_DOH_VPN_PROXY_BYPASS_URL = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/doh-vpn-proxy-bypass-onlydomains.txt"
+HAGEZI_URLSHORTENER_URL = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/urlshortener-onlydomains.txt"
 SHADOWWHISPERER_DATING_URL = "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/RAW/Dating"
 
 # Adult lists (selective to avoid insane sizes)
@@ -335,6 +355,9 @@ SHADOWWHISPERER_DATING_OVERRIDES = {
     "weareher": {"service_id": "her", "name": "HER"},
     "zoosk": {"service_id": "zoosk", "name": "Zoosk"},
 }
+SHADOWWHISPERER_DATING_PATTERN_OVERRIDES = (
+    (re.compile(r"^rdv\d+$"), {"service_id": "rdv", "name": "RDV"}),
+)
 
 # -----------------------------
 # Utilities
@@ -711,6 +734,19 @@ def get_brand_key_from_root_domain(root_domain: str) -> str:
     return ".".join(labels[: len(labels) - len(suffix_labels)])
 
 
+def get_shadowwhisperer_dating_override(brand_key: str) -> Optional[Dict[str, str]]:
+    """Return an explicit dating service mapping for imported discovery domains."""
+    override = SHADOWWHISPERER_DATING_OVERRIDES.get(brand_key)
+    if override:
+        return override
+
+    for pattern, pattern_override in SHADOWWHISPERER_DATING_PATTERN_OVERRIDES:
+        if pattern.match(brand_key):
+            return pattern_override
+
+    return None
+
+
 def get_unique_service_id(
     services_by_target: Dict,
     service_id: str,
@@ -752,7 +788,7 @@ def add_shadowwhisperer_dating_domains(
         if not brand_key:
             continue
 
-        override = SHADOWWHISPERER_DATING_OVERRIDES.get(brand_key)
+        override = get_shadowwhisperer_dating_override(brand_key)
         if override:
             service_id = override["service_id"]
             display_name = override["name"]
@@ -1013,9 +1049,10 @@ def apply_source_policies(services_by_target: Dict, policies: Dict) -> None:
         if effective_policy.get("mode") == "exact":
             svc_data["preserve_subdomains"] = True
 
+        forbid_public_suffix_entries = effective_policy.get("forbid_public_suffix_entries", True)
         exclude_exact = set(effective_policy.get("exclude_exact", []))
         exclude_suffix = effective_policy.get("exclude_suffix", [])
-        if not exclude_exact and not exclude_suffix:
+        if not forbid_public_suffix_entries and not exclude_exact and not exclude_suffix:
             continue
 
         filtered_domains = set()
@@ -1023,6 +1060,11 @@ def apply_source_policies(services_by_target: Dict, policies: Dict) -> None:
 
         for domain in domains:
             candidate = domain.lower().strip(".")
+            if forbid_public_suffix_entries:
+                public_suffix = get_public_suffix(candidate)
+                if public_suffix and candidate == public_suffix:
+                    removed_domains.append(candidate)
+                    continue
             if candidate in exclude_exact:
                 removed_domains.append(candidate)
                 continue
@@ -1536,8 +1578,8 @@ def build_profile_readme(
     lines.append("- **[PhishTank](https://phishtank.org/)** - verified phishing URLs converted to exact hosts")
     lines.append("- **[ThreatFox](https://threatfox.abuse.ch/)** - malware indicators from abuse.ch")
     lines.append("- **[URLhaus](https://urlhaus.abuse.ch/)** - malware distribution URLs converted to exact hosts")
-    lines.append("- **[The Block List Project](https://github.com/blocklistproject/Lists)** - scam, fraud, ransomware, and tracking feeds")
-    lines.append("- **[HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists)** - dynamic DNS, badware hoster, and fake-domain feeds")
+    lines.append("- **[The Block List Project](https://github.com/blocklistproject/Lists)** - curated category feeds for abuse, crypto, drugs, piracy, redirects, smart TV, torrent, tracking, vaping, and more")
+    lines.append("- **[HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists)** - dynamic DNS, badware hoster, fake-domain, DNS-bypass, and URL-shortener feeds")
     lines.append("- **[UKLANS cache-domains](https://github.com/uklans/cache-domains)** - gaming CDN/cache hostnames")
     lines.append("- **[StevenBlack](https://github.com/StevenBlack/hosts)** and **[Chad Mayfield](https://github.com/chadmayfield/my-pihole-blocklists)** - adult-content feeds\n")
 
@@ -1894,10 +1936,52 @@ def main():
             "split_into_services": True,
         },
         {
+            "service_id": "blp_abuse",
+            "group": "abuse",
+            "name": "Block List Project Abuse",
+            "url": BLOCKLISTPROJECT_ABUSE_URL,
+            "extractor": extract_domains_from_hosts_file,
+        },
+        {
+            "service_id": "blp_crypto",
+            "group": "crypto",
+            "name": "Block List Project Crypto",
+            "url": BLOCKLISTPROJECT_CRYPTO_URL,
+            "extractor": extract_domains_from_hosts_file,
+        },
+        {
+            "service_id": "blp_drugs",
+            "group": "drugs",
+            "name": "Block List Project Drugs",
+            "url": BLOCKLISTPROJECT_DRUGS_URL,
+            "extractor": extract_domains_from_hosts_file,
+        },
+        {
+            "service_id": "blp_piracy",
+            "group": "piracy",
+            "name": "Block List Project Piracy",
+            "url": BLOCKLISTPROJECT_PIRACY_URL,
+            "extractor": extract_domains_from_hosts_file,
+        },
+        {
+            "service_id": "blp_redirect",
+            "group": "redirect",
+            "name": "Block List Project Redirect",
+            "url": BLOCKLISTPROJECT_REDIRECT_URL,
+            "extractor": extract_domains_from_hosts_file,
+        },
+        {
             "service_id": "blp_scam",
             "group": "scam",
             "name": "Block List Project Scam",
             "url": BLOCKLISTPROJECT_SCAM_URL,
+            "extractor": extract_domains_from_hosts_file,
+        },
+        {
+            "service_id": "blp_smart_tv",
+            "group": "smart_tv",
+            "name": "Block List Project Smart TV",
+            "url": BLOCKLISTPROJECT_SMART_TV_URL,
             "extractor": extract_domains_from_hosts_file,
         },
         {
@@ -1915,11 +1999,32 @@ def main():
             "extractor": extract_domains_from_hosts_file,
         },
         {
+            "service_id": "blp_torrent",
+            "group": "torrent",
+            "name": "Block List Project Torrent",
+            "url": BLOCKLISTPROJECT_TORRENT_URL,
+            "extractor": extract_domains_from_hosts_file,
+        },
+        {
             "service_id": "blp_tracking",
             "group": "tracking",
             "name": "Block List Project Tracking",
             "url": BLOCKLISTPROJECT_TRACKING_URL,
             "extractor": extract_domains_from_hosts_file,
+        },
+        {
+            "service_id": "blp_vaping",
+            "group": "vaping",
+            "name": "Block List Project Vaping",
+            "url": BLOCKLISTPROJECT_VAPING_URL,
+            "extractor": extract_domains_from_hosts_file,
+        },
+        {
+            "service_id": "hagezi_doh_vpn_proxy_bypass",
+            "group": "dns_bypass",
+            "name": "HaGeZi DoH VPN Proxy Bypass",
+            "url": HAGEZI_DOH_VPN_PROXY_BYPASS_URL,
+            "extractor": extract_domains_from_plain_list,
         },
         {
             "service_id": "hagezi_dyndns",
@@ -1940,6 +2045,13 @@ def main():
             "group": "scam",
             "name": "HaGeZi Fake",
             "url": HAGEZI_FAKE_URL,
+            "extractor": extract_domains_from_plain_list,
+        },
+        {
+            "service_id": "hagezi_urlshortener",
+            "group": "url_shortener",
+            "name": "HaGeZi URL Shortener",
+            "url": HAGEZI_URLSHORTENER_URL,
             "extractor": extract_domains_from_plain_list,
         },
     )

@@ -1,6 +1,6 @@
 # Threat Intelligence & Content Blocklists
 
-**Generated:** 2026-04-27 13:36:30 UTC
+**Generated:** 2026-04-27 13:52:50 UTC
 
 **Audience:** Home-safe / standard
 
@@ -26,38 +26,54 @@ One-click blocklists combining multiple sources for everyday blocking.
 
 | Category | Root Domains | Sources | File | Raw URL |
 |----------|---------|---------|------|---------|
-| [🔞 Adult Content](#adult) | 86,092 | 3 | [adult.txt](categories/adult.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/adult.txt) |
+| [🚨 Abuse & Malvertising](#abuse) | 240,662 | 1 | [abuse.txt](categories/abuse.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/abuse.txt) |
+| [🔞 Adult Content](#adult) | 80,594 | 3 | [adult.txt](categories/adult.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/adult.txt) |
 | [📁 Ai](#ai) | 19 | 9 | [ai.txt](categories/ai.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/ai.txt) |
 | [🗄️ Badware Hosters](#badware-hoster) | 1,195 | 1 | [badware_hoster.txt](categories/badware_hoster.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/badware_hoster.txt) |
-| [📁 Cdn](#cdn) | 30 | 1 | [cdn.txt](categories/cdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/cdn.txt) |
-| [💕 Dating Services](#dating) | 1,302 | 1246 | [dating.txt](categories/dating.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dating.txt) |
+| [📁 Cdn](#cdn) | 24 | 1 | [cdn.txt](categories/cdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/cdn.txt) |
+| [🪙 Crypto & Cryptojacking](#crypto) | 8,130 | 1 | [crypto.txt](categories/crypto.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/crypto.txt) |
+| [💕 Dating Services](#dating) | 1,302 | 1151 | [dating.txt](categories/dating.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dating.txt) |
 | [🛜 DNS Providers](#dns) | 2 | 2 | [dns.txt](categories/dns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dns.txt) |
-| [🌐 Dynamic DNS](#dynamic-dns) | 1,480 | 1 | [dynamic_dns.txt](categories/dynamic_dns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dynamic_dns.txt) |
+| [🛡️ DNS / VPN Bypass](#dns-bypass) | 19,077 | 1 | [dns_bypass.txt](categories/dns_bypass.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dns_bypass.txt) |
+| [💊 Drugs](#drugs) | 18,320 | 1 | [drugs.txt](categories/drugs.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/drugs.txt) |
+| [🌐 Dynamic DNS](#dynamic-dns) | 1,023 | 1 | [dynamic_dns.txt](categories/dynamic_dns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/dynamic_dns.txt) |
 | [📁 Gambling](#gambling) | 33 | 4 | [gambling.txt](categories/gambling.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/gambling.txt) |
-| [🎮 Gaming Platforms](#gaming) | 172 | 33 | [gaming.txt](categories/gaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/gaming.txt) |
+| [🎮 Gaming Platforms](#gaming) | 171 | 33 | [gaming.txt](categories/gaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/gaming.txt) |
 | [📁 Hosting](#hosting) | 33 | 4 | [hosting.txt](categories/hosting.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/hosting.txt) |
-| [🦠 Malware & Threats](#malware) | 3,216 | 3 | [malware.txt](categories/malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/malware.txt) |
+| [🦠 Malware & Threats](#malware) | 3,218 | 3 | [malware.txt](categories/malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/malware.txt) |
 | [📁 Messenger](#messenger) | 55 | 12 | [messenger.txt](categories/messenger.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/messenger.txt) |
-| [🎣 Phishing & Scam Sites](#phishing) | 300,077 | 3 | [phishing.txt](categories/phishing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/phishing.txt) |
+| [🎣 Phishing & Scam Sites](#phishing) | 299,972 | 3 | [phishing.txt](categories/phishing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/phishing.txt) |
+| [🏴‍☠️ Piracy](#piracy) | 1,065 | 1 | [piracy.txt](categories/piracy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/piracy.txt) |
 | [📁 Privacy](#privacy) | 6 | 2 | [privacy.txt](categories/privacy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/privacy.txt) |
-| [💸 Scam & Fraud](#scam) | 129,082 | 3 | [scam.txt](categories/scam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/scam.txt) |
-| [📁 Shopping](#shopping) | 571 | 10 | [shopping.txt](categories/shopping.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/shopping.txt) |
-| [📱 Social Networks](#social-network) | 836 | 26 | [social_network.txt](categories/social_network.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/social_network.txt) |
+| [↪️ Redirectors](#redirect) | 99,201 | 1 | [redirect.txt](categories/redirect.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/redirect.txt) |
+| [💸 Scam & Fraud](#scam) | 129,081 | 3 | [scam.txt](categories/scam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/scam.txt) |
+| [📁 Shopping](#shopping) | 567 | 10 | [shopping.txt](categories/shopping.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/shopping.txt) |
+| [📡 Smart TV Telemetry](#smart-tv) | 70 | 1 | [smart_tv.txt](categories/smart_tv.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/smart_tv.txt) |
+| [📱 Social Networks](#social-network) | 835 | 26 | [social_network.txt](categories/social_network.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/social_network.txt) |
 | [📁 Software](#software) | 13 | 2 | [software.txt](categories/software.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/software.txt) |
-| [📺 Streaming Services](#streaming) | 455 | 41 | [streaming.txt](categories/streaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/streaming.txt) |
-| [🛰️ Tracking & Analytics](#tracking) | 14,763 | 1 | [tracking.txt](categories/tracking.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/tracking.txt) |
+| [📺 Streaming Services](#streaming) | 454 | 41 | [streaming.txt](categories/streaming.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/streaming.txt) |
+| [🧲 Torrent](#torrent) | 2,192 | 1 | [torrent.txt](categories/torrent.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/torrent.txt) |
+| [🛰️ Tracking & Analytics](#tracking) | 14,761 | 1 | [tracking.txt](categories/tracking.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/tracking.txt) |
+| [🔗 URL Shorteners](#url-shortener) | 9,973 | 1 | [url_shortener.txt](categories/url_shortener.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/url_shortener.txt) |
+| [💨 Vaping](#vaping) | 32 | 1 | [vaping.txt](categories/vaping.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/categories/vaping.txt) |
 
 ## Individual Sources
 
 For granular control, each source is available separately if you want source-level attribution or need to disable one feed.
 
+### Abuse
+
+| Source | Root Domains | File | Raw URL |
+|--------|---------|------|---------|
+| Block List Project Abuse | 240,662 | [blp_abuse.txt](lists/abuse/blp_abuse.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/abuse/blp_abuse.txt) |
+
 ### Adult
 
 | Source | Root Domains | File | Raw URL |
 |--------|---------|------|---------|
-| Chad Mayfield Porn | 5,848 | [chadmayfield_porn.txt](lists/adult/chadmayfield_porn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/chadmayfield_porn.txt) |
+| Chad Mayfield Porn | 5,539 | [chadmayfield_porn.txt](lists/adult/chadmayfield_porn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/chadmayfield_porn.txt) |
 | Grindr | 1 | [grindr.txt](lists/adult/grindr.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/grindr.txt) |
-| StevenBlack Porn | 83,434 | [stevenblack_porn.txt](lists/adult/stevenblack_porn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/stevenblack_porn.txt) |
+| StevenBlack Porn | 78,035 | [stevenblack_porn.txt](lists/adult/stevenblack_porn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/adult/stevenblack_porn.txt) |
 
 ### Ai
 
@@ -83,7 +99,13 @@ For granular control, each source is available separately if you want source-lev
 
 | Source | Root Domains | File | Raw URL |
 |--------|---------|------|---------|
-| Cloudflare | 30 | [cloudflare.txt](lists/cdn/cloudflare.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/cdn/cloudflare.txt) |
+| Cloudflare | 24 | [cloudflare.txt](lists/cdn/cloudflare.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/cdn/cloudflare.txt) |
+
+### Crypto
+
+| Source | Root Domains | File | Raw URL |
+|--------|---------|------|---------|
+| Block List Project Crypto | 8,130 | [blp_crypto.txt](lists/crypto/blp_crypto.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/crypto/blp_crypto.txt) |
 
 ### Dating
 
@@ -932,106 +954,11 @@ For granular control, each source is available separately if you want source-lev
 | Q2W | 1 | [q2w.txt](lists/dating/q2w.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/q2w.txt) |
 | Quality Singles | 1 | [quality_singles.txt](lists/dating/quality_singles.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/quality_singles.txt) |
 | Questchat | 1 | [questchat.txt](lists/dating/questchat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/questchat.txt) |
+| RDV | 96 | [rdv.txt](lists/dating/rdv.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv.txt) |
 | Radar Rencontres | 1 | [radar_rencontres.txt](lists/dating/radar_rencontres.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/radar_rencontres.txt) |
 | Rande | 2 | [rande.txt](lists/dating/rande.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rande.txt) |
 | Raw | 1 | [raw.txt](lists/dating/raw.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/raw.txt) |
 | Rbrides | 1 | [rbrides.txt](lists/dating/rbrides.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rbrides.txt) |
-| Rdv01 | 1 | [rdv01.txt](lists/dating/rdv01.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv01.txt) |
-| Rdv02 | 1 | [rdv02.txt](lists/dating/rdv02.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv02.txt) |
-| Rdv03 | 1 | [rdv03.txt](lists/dating/rdv03.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv03.txt) |
-| Rdv04 | 1 | [rdv04.txt](lists/dating/rdv04.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv04.txt) |
-| Rdv05 | 1 | [rdv05.txt](lists/dating/rdv05.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv05.txt) |
-| Rdv06 | 1 | [rdv06.txt](lists/dating/rdv06.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv06.txt) |
-| Rdv07 | 1 | [rdv07.txt](lists/dating/rdv07.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv07.txt) |
-| Rdv08 | 1 | [rdv08.txt](lists/dating/rdv08.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv08.txt) |
-| Rdv09 | 1 | [rdv09.txt](lists/dating/rdv09.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv09.txt) |
-| Rdv10 | 1 | [rdv10.txt](lists/dating/rdv10.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv10.txt) |
-| Rdv11 | 1 | [rdv11.txt](lists/dating/rdv11.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv11.txt) |
-| Rdv12 | 1 | [rdv12.txt](lists/dating/rdv12.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv12.txt) |
-| Rdv13 | 1 | [rdv13.txt](lists/dating/rdv13.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv13.txt) |
-| Rdv14 | 1 | [rdv14.txt](lists/dating/rdv14.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv14.txt) |
-| Rdv15 | 1 | [rdv15.txt](lists/dating/rdv15.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv15.txt) |
-| Rdv16 | 1 | [rdv16.txt](lists/dating/rdv16.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv16.txt) |
-| Rdv17 | 1 | [rdv17.txt](lists/dating/rdv17.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv17.txt) |
-| Rdv19 | 1 | [rdv19.txt](lists/dating/rdv19.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv19.txt) |
-| Rdv20 | 1 | [rdv20.txt](lists/dating/rdv20.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv20.txt) |
-| Rdv21 | 1 | [rdv21.txt](lists/dating/rdv21.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv21.txt) |
-| Rdv22 | 1 | [rdv22.txt](lists/dating/rdv22.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv22.txt) |
-| Rdv23 | 1 | [rdv23.txt](lists/dating/rdv23.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv23.txt) |
-| Rdv24 | 1 | [rdv24.txt](lists/dating/rdv24.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv24.txt) |
-| Rdv25 | 1 | [rdv25.txt](lists/dating/rdv25.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv25.txt) |
-| Rdv26 | 1 | [rdv26.txt](lists/dating/rdv26.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv26.txt) |
-| Rdv27 | 1 | [rdv27.txt](lists/dating/rdv27.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv27.txt) |
-| Rdv28 | 1 | [rdv28.txt](lists/dating/rdv28.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv28.txt) |
-| Rdv29 | 1 | [rdv29.txt](lists/dating/rdv29.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv29.txt) |
-| Rdv30 | 1 | [rdv30.txt](lists/dating/rdv30.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv30.txt) |
-| Rdv31 | 1 | [rdv31.txt](lists/dating/rdv31.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv31.txt) |
-| Rdv32 | 1 | [rdv32.txt](lists/dating/rdv32.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv32.txt) |
-| Rdv33 | 1 | [rdv33.txt](lists/dating/rdv33.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv33.txt) |
-| Rdv34 | 1 | [rdv34.txt](lists/dating/rdv34.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv34.txt) |
-| Rdv35 | 1 | [rdv35.txt](lists/dating/rdv35.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv35.txt) |
-| Rdv36 | 1 | [rdv36.txt](lists/dating/rdv36.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv36.txt) |
-| Rdv37 | 1 | [rdv37.txt](lists/dating/rdv37.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv37.txt) |
-| Rdv38 | 1 | [rdv38.txt](lists/dating/rdv38.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv38.txt) |
-| Rdv39 | 1 | [rdv39.txt](lists/dating/rdv39.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv39.txt) |
-| Rdv40 | 1 | [rdv40.txt](lists/dating/rdv40.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv40.txt) |
-| Rdv41 | 1 | [rdv41.txt](lists/dating/rdv41.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv41.txt) |
-| Rdv42 | 1 | [rdv42.txt](lists/dating/rdv42.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv42.txt) |
-| Rdv43 | 1 | [rdv43.txt](lists/dating/rdv43.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv43.txt) |
-| Rdv44 | 1 | [rdv44.txt](lists/dating/rdv44.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv44.txt) |
-| Rdv45 | 1 | [rdv45.txt](lists/dating/rdv45.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv45.txt) |
-| Rdv46 | 1 | [rdv46.txt](lists/dating/rdv46.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv46.txt) |
-| Rdv47 | 1 | [rdv47.txt](lists/dating/rdv47.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv47.txt) |
-| Rdv48 | 1 | [rdv48.txt](lists/dating/rdv48.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv48.txt) |
-| Rdv49 | 1 | [rdv49.txt](lists/dating/rdv49.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv49.txt) |
-| Rdv50 | 1 | [rdv50.txt](lists/dating/rdv50.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv50.txt) |
-| Rdv51 | 1 | [rdv51.txt](lists/dating/rdv51.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv51.txt) |
-| Rdv52 | 1 | [rdv52.txt](lists/dating/rdv52.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv52.txt) |
-| Rdv53 | 1 | [rdv53.txt](lists/dating/rdv53.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv53.txt) |
-| Rdv54 | 1 | [rdv54.txt](lists/dating/rdv54.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv54.txt) |
-| Rdv55 | 1 | [rdv55.txt](lists/dating/rdv55.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv55.txt) |
-| Rdv56 | 1 | [rdv56.txt](lists/dating/rdv56.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv56.txt) |
-| Rdv57 | 1 | [rdv57.txt](lists/dating/rdv57.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv57.txt) |
-| Rdv58 | 1 | [rdv58.txt](lists/dating/rdv58.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv58.txt) |
-| Rdv59 | 1 | [rdv59.txt](lists/dating/rdv59.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv59.txt) |
-| Rdv60 | 1 | [rdv60.txt](lists/dating/rdv60.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv60.txt) |
-| Rdv61 | 1 | [rdv61.txt](lists/dating/rdv61.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv61.txt) |
-| Rdv62 | 1 | [rdv62.txt](lists/dating/rdv62.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv62.txt) |
-| Rdv63 | 1 | [rdv63.txt](lists/dating/rdv63.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv63.txt) |
-| Rdv64 | 1 | [rdv64.txt](lists/dating/rdv64.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv64.txt) |
-| Rdv65 | 1 | [rdv65.txt](lists/dating/rdv65.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv65.txt) |
-| Rdv66 | 1 | [rdv66.txt](lists/dating/rdv66.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv66.txt) |
-| Rdv67 | 1 | [rdv67.txt](lists/dating/rdv67.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv67.txt) |
-| Rdv68 | 1 | [rdv68.txt](lists/dating/rdv68.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv68.txt) |
-| Rdv69 | 1 | [rdv69.txt](lists/dating/rdv69.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv69.txt) |
-| Rdv70 | 1 | [rdv70.txt](lists/dating/rdv70.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv70.txt) |
-| Rdv71 | 1 | [rdv71.txt](lists/dating/rdv71.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv71.txt) |
-| Rdv72 | 1 | [rdv72.txt](lists/dating/rdv72.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv72.txt) |
-| Rdv73 | 1 | [rdv73.txt](lists/dating/rdv73.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv73.txt) |
-| Rdv74 | 1 | [rdv74.txt](lists/dating/rdv74.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv74.txt) |
-| Rdv75 | 1 | [rdv75.txt](lists/dating/rdv75.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv75.txt) |
-| Rdv76 | 1 | [rdv76.txt](lists/dating/rdv76.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv76.txt) |
-| Rdv77 | 1 | [rdv77.txt](lists/dating/rdv77.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv77.txt) |
-| Rdv78 | 1 | [rdv78.txt](lists/dating/rdv78.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv78.txt) |
-| Rdv79 | 1 | [rdv79.txt](lists/dating/rdv79.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv79.txt) |
-| Rdv80 | 1 | [rdv80.txt](lists/dating/rdv80.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv80.txt) |
-| Rdv81 | 1 | [rdv81.txt](lists/dating/rdv81.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv81.txt) |
-| Rdv82 | 1 | [rdv82.txt](lists/dating/rdv82.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv82.txt) |
-| Rdv83 | 1 | [rdv83.txt](lists/dating/rdv83.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv83.txt) |
-| Rdv84 | 1 | [rdv84.txt](lists/dating/rdv84.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv84.txt) |
-| Rdv85 | 1 | [rdv85.txt](lists/dating/rdv85.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv85.txt) |
-| Rdv86 | 1 | [rdv86.txt](lists/dating/rdv86.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv86.txt) |
-| Rdv87 | 1 | [rdv87.txt](lists/dating/rdv87.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv87.txt) |
-| Rdv88 | 1 | [rdv88.txt](lists/dating/rdv88.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv88.txt) |
-| Rdv89 | 1 | [rdv89.txt](lists/dating/rdv89.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv89.txt) |
-| Rdv90 | 1 | [rdv90.txt](lists/dating/rdv90.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv90.txt) |
-| Rdv91 | 1 | [rdv91.txt](lists/dating/rdv91.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv91.txt) |
-| Rdv92 | 1 | [rdv92.txt](lists/dating/rdv92.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv92.txt) |
-| Rdv93 | 1 | [rdv93.txt](lists/dating/rdv93.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv93.txt) |
-| Rdv94 | 1 | [rdv94.txt](lists/dating/rdv94.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv94.txt) |
-| Rdv95 | 1 | [rdv95.txt](lists/dating/rdv95.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv95.txt) |
-| Rdv97 | 1 | [rdv97.txt](lists/dating/rdv97.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv97.txt) |
-| Rdv98 | 1 | [rdv98.txt](lists/dating/rdv98.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdv98.txt) |
 | Rdvadultere | 1 | [rdvadultere.txt](lists/dating/rdvadultere.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/rdvadultere.txt) |
 | Realpeopledating | 1 | [realpeopledating.txt](lists/dating/realpeopledating.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/realpeopledating.txt) |
 | Register | 1 | [register.txt](lists/dating/register.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dating/register.txt) |
@@ -1343,11 +1270,23 @@ For granular control, each source is available separately if you want source-lev
 | Cloud Flare DNS | 1 | [CFDNS.txt](lists/dns/CFDNS.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dns/CFDNS.txt) |
 | Google DNS | 1 | [googleDNS.txt](lists/dns/googleDNS.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dns/googleDNS.txt) |
 
+### Dns Bypass
+
+| Source | Root Domains | File | Raw URL |
+|--------|---------|------|---------|
+| HaGeZi DoH VPN Proxy Bypass | 19,077 | [hagezi_doh_vpn_proxy_bypass.txt](lists/dns_bypass/hagezi_doh_vpn_proxy_bypass.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dns_bypass/hagezi_doh_vpn_proxy_bypass.txt) |
+
+### Drugs
+
+| Source | Root Domains | File | Raw URL |
+|--------|---------|------|---------|
+| Block List Project Drugs | 18,320 | [blp_drugs.txt](lists/drugs/blp_drugs.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/drugs/blp_drugs.txt) |
+
 ### Dynamic Dns
 
 | Source | Root Domains | File | Raw URL |
 |--------|---------|------|---------|
-| HaGeZi Dynamic DNS | 1,480 | [hagezi_dyndns.txt](lists/dynamic_dns/hagezi_dyndns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dynamic_dns/hagezi_dyndns.txt) |
+| HaGeZi Dynamic DNS | 1,023 | [hagezi_dyndns.txt](lists/dynamic_dns/hagezi_dyndns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/dynamic_dns/hagezi_dyndns.txt) |
 
 ### Gambling
 
@@ -1381,7 +1320,7 @@ For granular control, each source is available separately if you want source-lev
 | Nintendo | 17 | [nintendo.txt](lists/gaming/nintendo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/nintendo.txt) |
 | Origin | 9 | [origin.txt](lists/gaming/origin.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/origin.txt) |
 | Path of Exile | 1 | [path_of_exile.txt](lists/gaming/path_of_exile.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/path_of_exile.txt) |
-| PlayStation | 11 | [playstation.txt](lists/gaming/playstation.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/playstation.txt) |
+| PlayStation | 10 | [playstation.txt](lists/gaming/playstation.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/playstation.txt) |
 | Renegade X | 2 | [renegade_x.txt](lists/gaming/renegade_x.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/renegade_x.txt) |
 | Riot Games | 7 | [riot_games.txt](lists/gaming/riot_games.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/riot_games.txt) |
 | Roblox | 13 | [roblox.txt](lists/gaming/roblox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/gaming/roblox.txt) |
@@ -1410,7 +1349,7 @@ For granular control, each source is available separately if you want source-lev
 | Source | Root Domains | File | Raw URL |
 |--------|---------|------|---------|
 | Block List Project Ransomware | 1,669 | [blp_ransomware.txt](lists/malware/blp_ransomware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/malware/blp_ransomware.txt) |
-| ThreatFox | 230 | [threatfox.txt](lists/malware/threatfox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/malware/threatfox.txt) |
+| ThreatFox | 233 | [threatfox.txt](lists/malware/threatfox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/malware/threatfox.txt) |
 | URLhaus | 1,413 | [urlhaus.txt](lists/malware/urlhaus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/malware/urlhaus.txt) |
 
 ### Messenger
@@ -1435,8 +1374,14 @@ For granular control, each source is available separately if you want source-lev
 | Source | Root Domains | File | Raw URL |
 |--------|---------|------|---------|
 | OpenPhish | 208 | [openphish.txt](lists/phishing/openphish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/openphish.txt) |
-| PhishTank | 18,372 | [phishtank.txt](lists/phishing/phishtank.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/phishtank.txt) |
-| Phishing Army | 283,565 | [phishing_army.txt](lists/phishing/phishing_army.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/phishing_army.txt) |
+| PhishTank | 18,362 | [phishtank.txt](lists/phishing/phishtank.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/phishtank.txt) |
+| Phishing Army | 283,467 | [phishing_army.txt](lists/phishing/phishing_army.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/phishing/phishing_army.txt) |
+
+### Piracy
+
+| Source | Root Domains | File | Raw URL |
+|--------|---------|------|---------|
+| Block List Project Piracy | 1,065 | [blp_piracy.txt](lists/piracy/blp_piracy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/piracy/blp_piracy.txt) |
 
 ### Privacy
 
@@ -1445,11 +1390,17 @@ For granular control, each source is available separately if you want source-lev
 | Privacy | 1 | [privacy.txt](lists/privacy/privacy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/privacy/privacy.txt) |
 | Proton | 5 | [proton.txt](lists/privacy/proton.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/privacy/proton.txt) |
 
+### Redirect
+
+| Source | Root Domains | File | Raw URL |
+|--------|---------|------|---------|
+| Block List Project Redirect | 99,201 | [blp_redirect.txt](lists/redirect/blp_redirect.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/redirect/blp_redirect.txt) |
+
 ### Scam
 
 | Source | Root Domains | File | Raw URL |
 |--------|---------|------|---------|
-| Block List Project Fraud | 114,109 | [blp_fraud.txt](lists/scam/blp_fraud.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/scam/blp_fraud.txt) |
+| Block List Project Fraud | 114,108 | [blp_fraud.txt](lists/scam/blp_fraud.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/scam/blp_fraud.txt) |
 | Block List Project Scam | 726 | [blp_scam.txt](lists/scam/blp_scam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/scam/blp_scam.txt) |
 | HaGeZi Fake | 14,268 | [hagezi_fake.txt](lists/scam/hagezi_fake.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/scam/hagezi_fake.txt) |
 
@@ -1458,7 +1409,7 @@ For granular control, each source is available separately if you want source-lev
 | Source | Root Domains | File | Raw URL |
 |--------|---------|------|---------|
 | AliExpress | 4 | [aliexpress.txt](lists/shopping/aliexpress.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/aliexpress.txt) |
-| Amazon | 185 | [amazon.txt](lists/shopping/amazon.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/amazon.txt) |
+| Amazon | 181 | [amazon.txt](lists/shopping/amazon.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/amazon.txt) |
 | CoolApk | 3 | [coolapk.txt](lists/shopping/coolapk.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/coolapk.txt) |
 | Lazada | 9 | [lazada.txt](lists/shopping/lazada.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/lazada.txt) |
 | Mercado Libre | 20 | [mercado_libre.txt](lists/shopping/mercado_libre.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/mercado_libre.txt) |
@@ -1467,6 +1418,12 @@ For granular control, each source is available separately if you want source-lev
 | Temu | 3 | [temu.txt](lists/shopping/temu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/temu.txt) |
 | Xiaohongshu | 5 | [xiaohongshu.txt](lists/shopping/xiaohongshu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/xiaohongshu.txt) |
 | eBay | 318 | [ebay.txt](lists/shopping/ebay.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/shopping/ebay.txt) |
+
+### Smart Tv
+
+| Source | Root Domains | File | Raw URL |
+|--------|---------|------|---------|
+| Block List Project Smart TV | 70 | [blp_smart_tv.txt](lists/smart_tv/blp_smart_tv.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/smart_tv/blp_smart_tv.txt) |
 
 ### Social Network
 
@@ -1478,7 +1435,7 @@ For granular control, each source is available separately if you want source-lev
 | Amino | 1 | [amino.txt](lists/social_network/amino.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/amino.txt) |
 | Bluesky | 2 | [bluesky.txt](lists/social_network/bluesky.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/bluesky.txt) |
 | Clubhouse | 2 | [clubhouse.txt](lists/social_network/clubhouse.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/clubhouse.txt) |
-| Discord | 27 | [discord.txt](lists/social_network/discord.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/discord.txt) |
+| Discord | 26 | [discord.txt](lists/social_network/discord.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/discord.txt) |
 | Douban | 3 | [douban.txt](lists/social_network/douban.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/douban.txt) |
 | Facebook | 441 | [facebook.txt](lists/social_network/facebook.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/facebook.txt) |
 | Instagram | 72 | [instagram.txt](lists/social_network/instagram.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/social_network/instagram.txt) |
@@ -1548,15 +1505,33 @@ For granular control, each source is available separately if you want source-lev
 | Voot | 1 | [voot.txt](lists/streaming/voot.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/voot.txt) |
 | Weibo | 7 | [weibo.txt](lists/streaming/weibo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/weibo.txt) |
 | YY | 1 | [yy.txt](lists/streaming/yy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/yy.txt) |
-| YouTube | 174 | [youtube.txt](lists/streaming/youtube.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/youtube.txt) |
+| YouTube | 173 | [youtube.txt](lists/streaming/youtube.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/youtube.txt) |
 | iHeartRadio | 11 | [iheartradio.txt](lists/streaming/iheartradio.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/iheartradio.txt) |
 | iQIYI | 8 | [iqiyi.txt](lists/streaming/iqiyi.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/streaming/iqiyi.txt) |
+
+### Torrent
+
+| Source | Root Domains | File | Raw URL |
+|--------|---------|------|---------|
+| Block List Project Torrent | 2,192 | [blp_torrent.txt](lists/torrent/blp_torrent.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/torrent/blp_torrent.txt) |
 
 ### Tracking
 
 | Source | Root Domains | File | Raw URL |
 |--------|---------|------|---------|
-| Block List Project Tracking | 14,763 | [blp_tracking.txt](lists/tracking/blp_tracking.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/tracking/blp_tracking.txt) |
+| Block List Project Tracking | 14,761 | [blp_tracking.txt](lists/tracking/blp_tracking.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/tracking/blp_tracking.txt) |
+
+### Url Shortener
+
+| Source | Root Domains | File | Raw URL |
+|--------|---------|------|---------|
+| HaGeZi URL Shortener | 9,973 | [hagezi_urlshortener.txt](lists/url_shortener/hagezi_urlshortener.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/url_shortener/hagezi_urlshortener.txt) |
+
+### Vaping
+
+| Source | Root Domains | File | Raw URL |
+|--------|---------|------|---------|
+| Block List Project Vaping | 32 | [blp_vaping.txt](lists/vaping/blp_vaping.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/lists/vaping/blp_vaping.txt) |
 
 ## Usage
 
@@ -1587,8 +1562,8 @@ For granular control, each source is available separately if you want source-lev
 - **[PhishTank](https://phishtank.org/)** - verified phishing URLs converted to exact hosts
 - **[ThreatFox](https://threatfox.abuse.ch/)** - malware indicators from abuse.ch
 - **[URLhaus](https://urlhaus.abuse.ch/)** - malware distribution URLs converted to exact hosts
-- **[The Block List Project](https://github.com/blocklistproject/Lists)** - scam, fraud, ransomware, and tracking feeds
-- **[HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists)** - dynamic DNS, badware hoster, and fake-domain feeds
+- **[The Block List Project](https://github.com/blocklistproject/Lists)** - curated category feeds for abuse, crypto, drugs, piracy, redirects, smart TV, torrent, tracking, vaping, and more
+- **[HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists)** - dynamic DNS, badware hoster, fake-domain, DNS-bypass, and URL-shortener feeds
 - **[UKLANS cache-domains](https://github.com/uklans/cache-domains)** - gaming CDN/cache hostnames
 - **[StevenBlack](https://github.com/StevenBlack/hosts)** and **[Chad Mayfield](https://github.com/chadmayfield/my-pihole-blocklists)** - adult-content feeds
 

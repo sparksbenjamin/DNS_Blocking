@@ -172,9 +172,7 @@ def validate_file(path: Path, profile_name: str, profile: Dict[str, object], pol
 
         if effective_policy.get("forbid_public_suffix_entries", True):
             public_suffix = generator.get_public_suffix(domain)
-            labels = [label for label in domain.split(".") if label]
-            fallback_suffix = generator.get_fallback_public_suffix(labels) if labels else ""
-            if public_suffix and domain == public_suffix and fallback_suffix == domain:
+            if public_suffix and domain == public_suffix:
                 issues.append(
                     build_issue(
                         f"generic registry suffix '{domain}' should not appear in output",

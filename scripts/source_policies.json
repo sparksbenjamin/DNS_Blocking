@@ -12,6 +12,10 @@
     "required_domains": []
   },
   "categories": {
+    "abuse": {
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
     "adult": {
       "allow_shared_hosts": true,
       "max_delta_pct": 70
@@ -19,6 +23,10 @@
     "badware_hoster": {
       "allow_shared_hosts": true,
       "max_delta_pct": 50
+    },
+    "crypto": {
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
     },
     "dating": {
       "exclude_suffix": [
@@ -34,6 +42,14 @@
     "dns": {
       "mode": "exact",
       "allow_shared_hosts": true
+    },
+    "dns_bypass": {
+      "mode": "exact",
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "drugs": {
+      "max_delta_pct": 70
     },
     "dynamic_dns": {
       "allow_shared_hosts": true,
@@ -55,8 +71,27 @@
       "allow_shared_hosts": true,
       "max_delta_pct": 70
     },
+    "piracy": {
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "redirect": {
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
     "scam": {
       "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "smart_tv": {
+      "mode": "exact",
+      "allow_shared_hosts": true,
+      "exclude_suffix": [
+        "amazonaws.com",
+        "cloudfront.net",
+        "edgesuite.net",
+        "msecnd.net"
+      ],
       "max_delta_pct": 70
     },
     "streaming": {
@@ -67,9 +102,21 @@
       ],
       "max_delta_pct": 40
     },
+    "torrent": {
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
     "tracking": {
       "allow_shared_hosts": true,
       "max_delta_pct": 50
+    },
+    "url_shortener": {
+      "mode": "exact",
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "vaping": {
+      "max_delta_pct": 70
     }
   },
   "services": {
@@ -86,6 +133,35 @@
       "allow_shared_hosts": true,
       "max_delta_pct": 70
     },
+    "blp_abuse": {
+      "group": "abuse",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "blp_crypto": {
+      "group": "crypto",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "blp_drugs": {
+      "group": "drugs",
+      "must_exist": true,
+      "max_delta_pct": 70
+    },
+    "blp_piracy": {
+      "group": "piracy",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "blp_redirect": {
+      "group": "redirect",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
     "blp_ransomware": {
       "group": "malware",
       "must_exist": true,
@@ -98,11 +174,28 @@
       "allow_shared_hosts": true,
       "max_delta_pct": 70
     },
+    "blp_smart_tv": {
+      "group": "smart_tv",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
+    "blp_torrent": {
+      "group": "torrent",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
     "blp_tracking": {
       "group": "tracking",
       "must_exist": true,
       "allow_shared_hosts": true,
       "max_delta_pct": 50
+    },
+    "blp_vaping": {
+      "group": "vaping",
+      "must_exist": true,
+      "max_delta_pct": 70
     },
     "chadmayfield_porn": {
       "group": "adult",
@@ -131,6 +224,12 @@
       "allow_shared_hosts": true,
       "max_delta_pct": 50
     },
+    "hagezi_doh_vpn_proxy_bypass": {
+      "group": "dns_bypass",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
+    },
     "hagezi_fake": {
       "group": "scam",
       "must_exist": true,
@@ -142,6 +241,12 @@
       "must_exist": true,
       "allow_shared_hosts": true,
       "max_delta_pct": 50
+    },
+    "hagezi_urlshortener": {
+      "group": "url_shortener",
+      "must_exist": true,
+      "allow_shared_hosts": true,
+      "max_delta_pct": 70
     },
     "netflix": {
       "group": "streaming",

@@ -152,6 +152,56 @@ def test_add_shadowwhisperer_dating_domains_splits_into_native_services():
     assert services["eharmony"]["domains"] == {"eharmony.com", "eharmony.co.uk"}
 
 
+def test_add_shadowwhisperer_dating_domains_groups_numbered_rdv_sites():
+    services = make_services()
+
+    added = generator.add_shadowwhisperer_dating_domains(
+        services,
+        {
+            "rdv01.fr",
+            "rdv38.fr",
+            "rdv98.fr",
+        },
+    )
+
+    assert added == 3
+    assert "rdv" in services
+    assert services["rdv"]["name"] == "RDV"
+    assert services["rdv"]["domains"] == {"rdv01.fr", "rdv38.fr", "rdv98.fr"}
+
+
+def test_apply_source_policies_filters_public_suffix_entries():
+    services = make_services()
+    services["hagezi_urlshortener"]["group"] = "url_shortener"
+    services["hagezi_urlshortener"]["name"] = "HaGeZi URL Shortener"
+    services["hagezi_urlshortener"]["domains"].update(
+        {
+            "bit.ly",
+            "gov.tw",
+            "now.sh",
+        }
+    )
+
+    policies = {
+        "defaults": {
+            "mode": "registrable",
+            "forbid_public_suffix_entries": True,
+        },
+        "categories": {
+            "url_shortener": {
+                "mode": "exact",
+                "allow_shared_hosts": True,
+            }
+        },
+        "services": {},
+    }
+
+    generator.apply_source_policies(services, policies)
+
+    assert services["hagezi_urlshortener"]["preserve_subdomains"] is True
+    assert services["hagezi_urlshortener"]["domains"] == {"bit.ly"}
+
+
 def test_security_profile_preserves_exact_hosts_and_excludes_non_security_groups():
     services = make_services()
     services["openphish"]["group"] = "phishing"

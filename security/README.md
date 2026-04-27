@@ -1,6 +1,6 @@
 # Exact-Host Security Blocklists
 
-**Generated:** 2026-04-27 13:36:30 UTC
+**Generated:** 2026-04-27 13:52:50 UTC
 
 **Audience:** Security-focused / higher churn
 
@@ -27,10 +27,10 @@ Exact-host category bundles built from higher-sensitivity security feeds.
 | Category | Entries | Sources | File | Raw URL |
 |----------|---------|---------|------|---------|
 | [🗄️ Badware Hosters](#badware-hoster) | 1,195 | 1 | [badware_hoster.txt](categories/badware_hoster.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/badware_hoster.txt) |
-| [🌐 Dynamic DNS](#dynamic-dns) | 1,480 | 1 | [dynamic_dns.txt](categories/dynamic_dns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/dynamic_dns.txt) |
-| [🦠 Malware & Threats](#malware) | 8,685 | 3 | [malware.txt](categories/malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/malware.txt) |
-| [🎣 Phishing & Scam Sites](#phishing) | 409,968 | 3 | [phishing.txt](categories/phishing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/phishing.txt) |
-| [💸 Scam & Fraud](#scam) | 211,452 | 3 | [scam.txt](categories/scam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/scam.txt) |
+| [🌐 Dynamic DNS](#dynamic-dns) | 1,023 | 1 | [dynamic_dns.txt](categories/dynamic_dns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/dynamic_dns.txt) |
+| [🦠 Malware & Threats](#malware) | 8,688 | 3 | [malware.txt](categories/malware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/malware.txt) |
+| [🎣 Phishing & Scam Sites](#phishing) | 409,863 | 3 | [phishing.txt](categories/phishing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/phishing.txt) |
+| [💸 Scam & Fraud](#scam) | 211,451 | 3 | [scam.txt](categories/scam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/categories/scam.txt) |
 
 ## Individual Sources
 
@@ -46,29 +46,29 @@ Each source is also available separately if you want tighter source attribution 
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
-| HaGeZi Dynamic DNS | 1,480 | [hagezi_dyndns.txt](lists/dynamic_dns/hagezi_dyndns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/dynamic_dns/hagezi_dyndns.txt) |
+| HaGeZi Dynamic DNS | 1,023 | [hagezi_dyndns.txt](lists/dynamic_dns/hagezi_dyndns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/dynamic_dns/hagezi_dyndns.txt) |
 
 ### Malware
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
 | Block List Project Ransomware | 1,904 | [blp_ransomware.txt](lists/malware/blp_ransomware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/malware/blp_ransomware.txt) |
-| ThreatFox | 652 | [threatfox.txt](lists/malware/threatfox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/malware/threatfox.txt) |
-| URLhaus | 6,600 | [urlhaus.txt](lists/malware/urlhaus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/malware/urlhaus.txt) |
+| ThreatFox | 657 | [threatfox.txt](lists/malware/threatfox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/malware/threatfox.txt) |
+| URLhaus | 6,601 | [urlhaus.txt](lists/malware/urlhaus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/malware/urlhaus.txt) |
 
 ### Phishing
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
 | OpenPhish | 237 | [openphish.txt](lists/phishing/openphish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/phishing/openphish.txt) |
-| PhishTank | 26,688 | [phishtank.txt](lists/phishing/phishtank.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/phishing/phishtank.txt) |
-| Phishing Army | 385,157 | [phishing_army.txt](lists/phishing/phishing_army.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/phishing/phishing_army.txt) |
+| PhishTank | 26,678 | [phishtank.txt](lists/phishing/phishtank.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/phishing/phishtank.txt) |
+| Phishing Army | 385,059 | [phishing_army.txt](lists/phishing/phishing_army.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/phishing/phishing_army.txt) |
 
 ### Scam
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
-| Block List Project Fraud | 195,905 | [blp_fraud.txt](lists/scam/blp_fraud.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/scam/blp_fraud.txt) |
+| Block List Project Fraud | 195,904 | [blp_fraud.txt](lists/scam/blp_fraud.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/scam/blp_fraud.txt) |
 | Block List Project Scam | 1,274 | [blp_scam.txt](lists/scam/blp_scam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/scam/blp_scam.txt) |
 | HaGeZi Fake | 14,346 | [hagezi_fake.txt](lists/scam/hagezi_fake.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/lists/scam/hagezi_fake.txt) |
 
@@ -99,8 +99,8 @@ Each source is also available separately if you want tighter source attribution 
 - **[PhishTank](https://phishtank.org/)** - verified phishing URLs converted to exact hosts
 - **[ThreatFox](https://threatfox.abuse.ch/)** - malware indicators from abuse.ch
 - **[URLhaus](https://urlhaus.abuse.ch/)** - malware distribution URLs converted to exact hosts
-- **[The Block List Project](https://github.com/blocklistproject/Lists)** - scam, fraud, ransomware, and tracking feeds
-- **[HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists)** - dynamic DNS, badware hoster, and fake-domain feeds
+- **[The Block List Project](https://github.com/blocklistproject/Lists)** - curated category feeds for abuse, crypto, drugs, piracy, redirects, smart TV, torrent, tracking, vaping, and more
+- **[HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists)** - dynamic DNS, badware hoster, fake-domain, DNS-bypass, and URL-shortener feeds
 - **[UKLANS cache-domains](https://github.com/uklans/cache-domains)** - gaming CDN/cache hostnames
 - **[StevenBlack](https://github.com/StevenBlack/hosts)** and **[Chad Mayfield](https://github.com/chadmayfield/my-pihole-blocklists)** - adult-content feeds
 
