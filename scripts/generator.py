@@ -310,6 +310,31 @@ UKLANS_SERVICE_OVERRIDES = {
     "wargaming": {"service_id": "wargaming", "name": "Wargaming", "group": "gaming"},
     "xboxlive": {"service_id": "xboxlive", "name": "Xbox Live", "group": "gaming"},
 }
+SHADOWWHISPERER_DATING_OVERRIDES = {
+    "badoo": {"service_id": "badoo", "name": "Badoo"},
+    "badoocdn": {"service_id": "badoo", "name": "Badoo"},
+    "boo": {"service_id": "boo", "name": "Boo"},
+    "bumble": {"service_id": "bumble", "name": "Bumble"},
+    "bumbcdn": {"service_id": "bumble", "name": "Bumble"},
+    "bumblexternalstatic": {"service_id": "bumble", "name": "Bumble"},
+    "coffeemeetsbagel": {"service_id": "coffee_meets_bagel", "name": "Coffee Meets Bagel"},
+    "eharmony": {"service_id": "eharmony", "name": "eHarmony"},
+    "happn": {"service_id": "happn", "name": "happn"},
+    "her": {"service_id": "her", "name": "HER"},
+    "hily": {"service_id": "hily", "name": "Hily"},
+    "hinge": {"service_id": "hinge", "name": "Hinge"},
+    "jaumo": {"service_id": "jaumo", "name": "Jaumo"},
+    "match": {"service_id": "match", "name": "Match"},
+    "okccdn": {"service_id": "okcupid", "name": "OkCupid"},
+    "okcupid": {"service_id": "okcupid", "name": "OkCupid"},
+    "pof": {"service_id": "plenty_of_fish", "name": "Plenty of Fish"},
+    "skout": {"service_id": "skout", "name": "Skout"},
+    "tantanapp": {"service_id": "tantan", "name": "TanTan"},
+    "tancdn": {"service_id": "tantan", "name": "TanTan"},
+    "tinder": {"service_id": "tinder", "name": "Tinder"},
+    "weareher": {"service_id": "her", "name": "HER"},
+    "zoosk": {"service_id": "zoosk", "name": "Zoosk"},
+}
 
 # -----------------------------
 # Utilities
@@ -651,6 +676,11 @@ def humanize_service_name(service_id: str) -> str:
     return service_id.replace("_", " ").replace("-", " ").title()
 
 
+def get_category_anchor(group: str) -> str:
+    """Return the markdown anchor used for a category section heading."""
+    return "#" + group.replace("_", "-")
+
+
 def get_uklans_target(service_name: str, description: str = "") -> Dict[str, str]:
     """
     Map a UKLANS source into the local service model.
@@ -665,6 +695,81 @@ def get_uklans_target(service_name: str, description: str = "") -> Dict[str, str
     display_name = description.replace("CDN for ", "").strip() or humanize_service_name(service_name)
     service_id = re.sub(r"[^a-z0-9]+", "_", service_name.lower()).strip("_")
     return {"service_id": service_id, "name": display_name, "group": "gaming"}
+
+
+def get_brand_key_from_root_domain(root_domain: str) -> str:
+    """Return the left-hand brand label for a registrable domain."""
+    labels = [label for label in root_domain.lower().strip(".").split(".") if label]
+    if not labels:
+        return ""
+
+    public_suffix = get_public_suffix(root_domain)
+    suffix_labels = public_suffix.split(".") if public_suffix else [labels[-1]]
+    if len(labels) <= len(suffix_labels):
+        return labels[0]
+
+    return ".".join(labels[: len(labels) - len(suffix_labels)])
+
+
+def get_unique_service_id(
+    services_by_target: Dict,
+    service_id: str,
+    group: str,
+) -> str:
+    """Return a service id that will not collide with another category."""
+    existing_group = services_by_target[service_id]["group"]
+    if not existing_group or existing_group == group:
+        return service_id
+
+    candidate = f"{group}_{service_id}"
+    if not services_by_target[candidate]["group"] or services_by_target[candidate]["group"] == group:
+        return candidate
+
+    counter = 2
+    while True:
+        candidate = f"{group}_{service_id}_{counter}"
+        if not services_by_target[candidate]["group"] or services_by_target[candidate]["group"] == group:
+            return candidate
+        counter += 1
+
+
+def add_shadowwhisperer_dating_domains(
+    services_by_target: Dict,
+    domains: Set[str],
+) -> int:
+    """
+    Expand imported dating domains into per-service records.
+
+    The dating feed is used as discovery input, but the repo should expose
+    dating services uniformly as individual service files instead of a single
+    upstream-branded source file.
+    """
+    added_roots = 0
+
+    for domain in domains:
+        root_domain = get_root_domain(domain)
+        brand_key = get_brand_key_from_root_domain(root_domain)
+        if not brand_key:
+            continue
+
+        override = SHADOWWHISPERER_DATING_OVERRIDES.get(brand_key)
+        if override:
+            service_id = override["service_id"]
+            display_name = override["name"]
+        else:
+            service_id = re.sub(r"[^a-z0-9]+", "_", brand_key.lower()).strip("_")
+            if not service_id:
+                continue
+            display_name = humanize_service_name(service_id)
+
+        service_id = get_unique_service_id(services_by_target, service_id, "dating")
+        services_by_target[service_id]["group"] = "dating"
+        if not services_by_target[service_id]["name"]:
+            services_by_target[service_id]["name"] = display_name
+        services_by_target[service_id]["domains"].add(root_domain)
+        added_roots += 1
+
+    return added_roots
 
 
 def load_custom_domains() -> Dict[str, List[str]]:
@@ -1390,7 +1495,7 @@ def build_profile_readme(
         rel_path = category["path"].relative_to(base_dir)
         raw_url = get_raw_url(category["path"])
         lines.append(
-            f"| {meta['emoji']} {meta['label']} | {category['domains']:,} | "
+            f"| [{meta['emoji']} {meta['label']}]({get_category_anchor(group)}) | {category['domains']:,} | "
             f"{category_source_counts[group]} | [{rel_path.name}]({rel_path.as_posix()}) | [Raw]({raw_url}) |"
         )
 
@@ -1433,7 +1538,6 @@ def build_profile_readme(
     lines.append("- **[URLhaus](https://urlhaus.abuse.ch/)** - malware distribution URLs converted to exact hosts")
     lines.append("- **[The Block List Project](https://github.com/blocklistproject/Lists)** - scam, fraud, ransomware, and tracking feeds")
     lines.append("- **[HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists)** - dynamic DNS, badware hoster, and fake-domain feeds")
-    lines.append("- **[ShadowWhisperer BlockLists](https://github.com/ShadowWhisperer/BlockLists)** - extended dating-service coverage")
     lines.append("- **[UKLANS cache-domains](https://github.com/uklans/cache-domains)** - gaming CDN/cache hostnames")
     lines.append("- **[StevenBlack](https://github.com/StevenBlack/hosts)** and **[Chad Mayfield](https://github.com/chadmayfield/my-pihole-blocklists)** - adult-content feeds\n")
 
@@ -1787,6 +1891,7 @@ def main():
             "name": "ShadowWhisperer Dating",
             "url": SHADOWWHISPERER_DATING_URL,
             "extractor": extract_domains_from_plain_list,
+            "split_into_services": True,
         },
         {
             "service_id": "blp_scam",
@@ -1848,6 +1953,15 @@ def main():
         feed_domains = feed["extractor"](feed_text)
         if not feed_domains:
             logger.warning(f"{feed['name']}: no valid domains extracted")
+            continue
+
+        if feed.get("split_into_services"):
+            added_domains = add_shadowwhisperer_dating_domains(services_by_target, feed_domains)
+            logger.info(
+                "%s: expanded %d raw domains into dating service files",
+                feed["name"],
+                added_domains,
+            )
             continue
 
         service_id = feed["service_id"]

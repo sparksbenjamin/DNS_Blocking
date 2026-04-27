@@ -93,14 +93,13 @@ def test_apply_source_policies_filters_suffixes_and_sets_exact_mode():
     assert services["googleDNS"]["preserve_subdomains"] is True
 
 
-def test_apply_source_policies_filters_shadowwhisperer_shared_infra():
+def test_apply_source_policies_filters_dating_shared_infra():
     services = make_services()
-    services["shadowwhisperer_dating"]["group"] = "dating"
-    services["shadowwhisperer_dating"]["name"] = "ShadowWhisperer Dating"
-    services["shadowwhisperer_dating"]["domains"].update(
+    services["bumble"]["group"] = "dating"
+    services["bumble"]["name"] = "Bumble"
+    services["bumble"]["domains"].update(
         {
             "bumble.com",
-            "hinge.co",
             "api-3cdad91c.sendbird.com",
             "hinge-ue1-prod-cli-public-downloads.s3.amazonaws.com",
             "bumble-api.arkoselabs.com",
@@ -109,9 +108,8 @@ def test_apply_source_policies_filters_shadowwhisperer_shared_infra():
 
     policies = {
         "defaults": {"mode": "registrable"},
-        "categories": {"dating": {}},
-        "services": {
-            "shadowwhisperer_dating": {
+        "categories": {
+            "dating": {
                 "exclude_suffix": [
                     "amazonaws.com",
                     "arkoselabs.com",
@@ -119,11 +117,39 @@ def test_apply_source_policies_filters_shadowwhisperer_shared_infra():
                 ]
             }
         },
+        "services": {},
     }
 
     generator.apply_source_policies(services, policies)
 
-    assert services["shadowwhisperer_dating"]["domains"] == {"bumble.com", "hinge.co"}
+    assert services["bumble"]["domains"] == {"bumble.com"}
+
+
+def test_add_shadowwhisperer_dating_domains_splits_into_native_services():
+    services = make_services()
+    services["tinder"]["group"] = "dating"
+    services["tinder"]["name"] = "Tinder"
+    services["tinder"]["domains"].add("gotinder.com")
+
+    added = generator.add_shadowwhisperer_dating_domains(
+        services,
+        {
+            "tinder.com",
+            "pof.com",
+            "weareher.com",
+            "eharmony.com",
+            "eharmony.co.uk",
+        },
+    )
+
+    assert added == 5
+    assert services["tinder"]["domains"] == {"gotinder.com", "tinder.com"}
+    assert services["plenty_of_fish"]["name"] == "Plenty of Fish"
+    assert services["plenty_of_fish"]["domains"] == {"pof.com"}
+    assert services["her"]["name"] == "HER"
+    assert services["her"]["domains"] == {"weareher.com"}
+    assert services["eharmony"]["name"] == "eHarmony"
+    assert services["eharmony"]["domains"] == {"eharmony.com", "eharmony.co.uk"}
 
 
 def test_security_profile_preserves_exact_hosts_and_excludes_non_security_groups():

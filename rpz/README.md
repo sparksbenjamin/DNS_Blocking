@@ -1,6 +1,6 @@
 # RPZ Security Policies
 
-**Generated:** 2026-04-27 13:25:56 UTC
+**Generated:** 2026-04-27 13:36:30 UTC
 
 **Audience:** Advanced / Unbound RPZ
 
@@ -26,11 +26,11 @@ RPZ category bundles for exact-host security blocking.
 
 | Category | Entries | Sources | File | Raw URL |
 |----------|---------|---------|------|---------|
-| 🗄️ Badware Hosters | 1,195 | 1 | [badware_hoster.rpz](categories/badware_hoster.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/badware_hoster.rpz) |
-| 🌐 Dynamic DNS | 1,480 | 1 | [dynamic_dns.rpz](categories/dynamic_dns.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/dynamic_dns.rpz) |
-| 🦠 Malware & Threats | 8,681 | 3 | [malware.rpz](categories/malware.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/malware.rpz) |
-| 🎣 Phishing & Scam Sites | 409,968 | 3 | [phishing.rpz](categories/phishing.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/phishing.rpz) |
-| 💸 Scam & Fraud | 211,452 | 3 | [scam.rpz](categories/scam.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/scam.rpz) |
+| [🗄️ Badware Hosters](#badware-hoster) | 1,195 | 1 | [badware_hoster.rpz](categories/badware_hoster.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/badware_hoster.rpz) |
+| [🌐 Dynamic DNS](#dynamic-dns) | 1,480 | 1 | [dynamic_dns.rpz](categories/dynamic_dns.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/dynamic_dns.rpz) |
+| [🦠 Malware & Threats](#malware) | 8,685 | 3 | [malware.rpz](categories/malware.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/malware.rpz) |
+| [🎣 Phishing & Scam Sites](#phishing) | 409,968 | 3 | [phishing.rpz](categories/phishing.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/phishing.rpz) |
+| [💸 Scam & Fraud](#scam) | 211,452 | 3 | [scam.rpz](categories/scam.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/scam.rpz) |
 
 ## Individual Sources
 
@@ -53,8 +53,8 @@ Per-source RPZ files are available if you want to map individual feeds into sepa
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
 | Block List Project Ransomware | 1,904 | [blp_ransomware.rpz](lists/malware/blp_ransomware.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/blp_ransomware.rpz) |
-| ThreatFox | 640 | [threatfox.rpz](lists/malware/threatfox.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/threatfox.rpz) |
-| URLhaus | 6,598 | [urlhaus.rpz](lists/malware/urlhaus.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/urlhaus.rpz) |
+| ThreatFox | 652 | [threatfox.rpz](lists/malware/threatfox.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/threatfox.rpz) |
+| URLhaus | 6,600 | [urlhaus.rpz](lists/malware/urlhaus.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/urlhaus.rpz) |
 
 ### Phishing
 
@@ -101,7 +101,6 @@ Per-source RPZ files are available if you want to map individual feeds into sepa
 - **[URLhaus](https://urlhaus.abuse.ch/)** - malware distribution URLs converted to exact hosts
 - **[The Block List Project](https://github.com/blocklistproject/Lists)** - scam, fraud, ransomware, and tracking feeds
 - **[HaGeZi DNS Blocklists](https://github.com/hagezi/dns-blocklists)** - dynamic DNS, badware hoster, and fake-domain feeds
-- **[ShadowWhisperer BlockLists](https://github.com/ShadowWhisperer/BlockLists)** - extended dating-service coverage
 - **[UKLANS cache-domains](https://github.com/uklans/cache-domains)** - gaming CDN/cache hostnames
 - **[StevenBlack](https://github.com/StevenBlack/hosts)** and **[Chad Mayfield](https://github.com/chadmayfield/my-pihole-blocklists)** - adult-content feeds
 
