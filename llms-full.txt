@@ -1,0 +1,246 @@
+# DNS Blocking
+
+> Public DNS blocklists, exact-host security feeds, RPZ policies, and optional hardening outputs for DNS filtering platforms.
+
+Canonical repository: https://github.com/sparksbenjamin/DNS_Blocking
+
+## Overview
+
+DNS Blocking is a generated repository of DNS blocklists designed to be usable across common self-hosted DNS filtering stacks.
+
+Primary targets:
+
+- Pi-hole
+- AdGuard Home
+- Unbound with RPZ
+- NextDNS custom blocklists
+- Other resolvers or clients that accept hosts-style or RPZ-style DNS blocking feeds
+
+The repository is meant to be a one-stop source instead of requiring users to combine many unrelated public lists by hand.
+
+## Output layers
+
+### Services
+
+Path: `services/`
+
+Purpose:
+
+- Standard hosts-style blocklists
+- Registrable-domain focused outputs for easier troubleshooting
+- Broad compatibility with Pi-hole, AdGuard Home, and similar DNS filters
+
+Start here:
+
+- `services/recommended/home_safe.txt`
+- `services/recommended/family.txt`
+- `services/recommended/aggressive.txt`
+
+Main categories include:
+
+- abuse
+- adult
+- ai
+- badware_hoster
+- cdn
+- crypto
+- dating
+- dns
+- dns_bypass
+- drugs
+- dynamic_dns
+- gambling
+- gaming
+- hosting
+- malware
+- messenger
+- phishing
+- piracy
+- privacy
+- redirect
+- scam
+- shopping
+- smart_tv
+- social_network
+- software
+- streaming
+- torrent
+- tracking
+- url_shortener
+- vaping
+
+Docs:
+
+- https://github.com/sparksbenjamin/DNS_Blocking/blob/main/services/README.md
+
+### Security
+
+Path: `security/`
+
+Purpose:
+
+- Exact-host security feeds
+- Better fit for phishing, malware, scam, badware hoster, and dynamic DNS sources
+- Higher churn but more precise host-level blocking
+
+Start here:
+
+- `security/recommended/security.txt`
+
+Categories:
+
+- badware_hoster
+- dynamic_dns
+- malware
+- phishing
+- scam
+
+Docs:
+
+- https://github.com/sparksbenjamin/DNS_Blocking/blob/main/security/README.md
+
+### RPZ
+
+Path: `rpz/`
+
+Purpose:
+
+- Resolver-native response-policy zone outputs
+- Intended for Unbound or other RPZ-capable resolvers
+
+Start here:
+
+- `rpz/recommended/security.rpz`
+
+Categories:
+
+- badware_hoster
+- dynamic_dns
+- malware
+- phishing
+- scam
+
+Docs:
+
+- https://github.com/sparksbenjamin/DNS_Blocking/blob/main/rpz/README.md
+
+### Hardening
+
+Path: `hardening/`
+
+Purpose:
+
+- DNSTwist-derived lookalike domains for optional brand-impersonation blocking
+- Separate active impersonation review outputs for live lookalike analysis
+
+Main outputs:
+
+- `hardening/categories/brand_impersonation.txt`
+- `hardening/active_impersonation/categories/active_impersonation.txt`
+- `hardening/active_impersonation/categories/active_impersonation.rpz`
+
+Docs:
+
+- https://github.com/sparksbenjamin/DNS_Blocking/blob/main/hardening/README.md
+- https://github.com/sparksbenjamin/DNS_Blocking/blob/main/hardening/active_impersonation/README.md
+
+### Tunneling
+
+Path: `tunneling/`
+
+Purpose:
+
+- VPN and proxy-related DNS blocking outputs for bypass reduction
+
+Docs:
+
+- https://github.com/sparksbenjamin/DNS_Blocking/blob/main/tunneling/README.md
+
+## Recommended profiles
+
+### Home Safe
+
+- Path: `services/recommended/home_safe.txt`
+- Best for: most home users
+- Focus: abuse, badware hosters, dynamic DNS, malware, phishing, redirects, scams, tracking
+
+### Family
+
+- Path: `services/recommended/family.txt`
+- Best for: shared devices and kid-safe networks
+- Focus: Home Safe plus adult, dating, drugs, gambling, and vaping
+
+### Aggressive
+
+- Path: `services/recommended/aggressive.txt`
+- Best for: users who want stronger category blocking in one file
+- Focus: Family plus crypto, piracy, torrent, and related higher-friction categories
+
+### Security
+
+- Path: `security/recommended/security.txt`
+- Best for: users who want exact-host phishing and malware blocking
+
+### Security RPZ
+
+- Path: `rpz/recommended/security.rpz`
+- Best for: Unbound and RPZ-capable resolvers
+
+## Trust and quality model
+
+The repository is not a raw dump of upstream feeds. It applies repository-side controls before publishing outputs.
+
+Those controls include:
+
+- Public Suffix List-aware domain normalization
+- Source policy filtering for shared infrastructure and known noisy matches
+- Separate output layers for registrable-domain, exact-host, and RPZ use cases
+- Generated validation reports for services, security, and RPZ outputs
+- Optional hardening layers kept separate from default home-safe lists
+
+Key files:
+
+- `scripts/generator.py`
+- `scripts/validate_lists.py`
+- `scripts/source_policies.json`
+- `services/quality_report.json`
+- `security/quality_report.json`
+- `rpz/quality_report.json`
+
+## Update cadence
+
+- Services update workflow: daily at `02:00 UTC`
+- Hardening DNSTwist workflow: Sunday, Tuesday, Thursday, and Saturday at `04:00 UTC`
+- Active impersonation review workflow: daily at `05:30 UTC`
+
+Workflow files:
+
+- `.github/workflows/update.yml`
+- `.github/workflows/update_twisted.yml`
+- `.github/workflows/update_active_impersonation.yml`
+
+## Search intent and keywords
+
+Useful phrases for this project include:
+
+- dns blocklist
+- dns blocking lists
+- pihole blocklists
+- adguard home blocklists
+- unbound rpz feeds
+- phishing domains
+- malware domains
+- scam domains
+- parental control dns
+- social media blocklist
+- streaming blocklist
+- gaming blocklist
+- torrent blocklist
+- dns bypass blocking
+- url shortener blocking
+
+## Structured repo index
+
+For a machine-readable JSON summary, use:
+
+- `repo-index.json`

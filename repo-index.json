@@ -1,0 +1,167 @@
+{
+  "name": "DNS Blocking",
+  "repository": "https://github.com/sparksbenjamin/DNS_Blocking",
+  "summary": "Public DNS blocklists, exact-host security feeds, RPZ policies, and optional hardening outputs for Pi-hole, AdGuard Home, Unbound, NextDNS, and similar DNS filtering setups.",
+  "keywords": [
+    "dns blocklist",
+    "dns blocking",
+    "pihole blocklist",
+    "adguard home blocklist",
+    "unbound rpz",
+    "nextdns custom list",
+    "phishing domain list",
+    "malware domain list",
+    "scam domain list",
+    "parental control dns",
+    "social media blocklist",
+    "streaming blocklist",
+    "gaming blocklist",
+    "torrent blocklist",
+    "dns bypass blocking"
+  ],
+  "suggested_github_topics": [
+    "dns-blocklist",
+    "dns-filtering",
+    "domain-blocklist",
+    "pihole",
+    "adguard-home",
+    "unbound",
+    "rpz",
+    "nextdns",
+    "phishing",
+    "malware",
+    "cybersecurity",
+    "dns-security",
+    "threat-intelligence",
+    "content-filtering",
+    "parental-controls"
+  ],
+  "targets": [
+    "Pi-hole",
+    "AdGuard Home",
+    "Unbound",
+    "NextDNS",
+    "Other hosts-style or RPZ-capable DNS filters"
+  ],
+  "machine_readable_docs": {
+    "llms": "llms.txt",
+    "llms_full": "llms-full.txt",
+    "repo_index": "repo-index.json"
+  },
+  "recommended_profiles": [
+    {
+      "id": "home_safe",
+      "layer": "services",
+      "path": "services/recommended/home_safe.txt",
+      "raw_url": "https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/recommended/home_safe.txt",
+      "best_for": "Most home users"
+    },
+    {
+      "id": "family",
+      "layer": "services",
+      "path": "services/recommended/family.txt",
+      "raw_url": "https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/recommended/family.txt",
+      "best_for": "Shared devices and kid-safe networks"
+    },
+    {
+      "id": "aggressive",
+      "layer": "services",
+      "path": "services/recommended/aggressive.txt",
+      "raw_url": "https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/recommended/aggressive.txt",
+      "best_for": "Stronger all-in-one blocking"
+    },
+    {
+      "id": "security",
+      "layer": "security",
+      "path": "security/recommended/security.txt",
+      "raw_url": "https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/recommended/security.txt",
+      "best_for": "Exact-host phishing and malware blocking"
+    },
+    {
+      "id": "security_rpz",
+      "layer": "rpz",
+      "path": "rpz/recommended/security.rpz",
+      "raw_url": "https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/recommended/security.rpz",
+      "best_for": "Unbound and RPZ-capable resolvers"
+    }
+  ],
+  "layers": {
+    "services": {
+      "description": "Standard hosts-style blocklists using registrable-domain oriented outputs for broad DNS filter compatibility.",
+      "readme": "services/README.md",
+      "quality_report": "services/quality_report.json",
+      "categories": [
+        "abuse",
+        "adult",
+        "ai",
+        "badware_hoster",
+        "cdn",
+        "crypto",
+        "dating",
+        "dns",
+        "dns_bypass",
+        "drugs",
+        "dynamic_dns",
+        "gambling",
+        "gaming",
+        "hosting",
+        "malware",
+        "messenger",
+        "phishing",
+        "piracy",
+        "privacy",
+        "redirect",
+        "scam",
+        "shopping",
+        "smart_tv",
+        "social_network",
+        "software",
+        "streaming",
+        "torrent",
+        "tracking",
+        "url_shortener",
+        "vaping"
+      ]
+    },
+    "security": {
+      "description": "Exact-host security blocklists for phishing, malware, scams, dynamic DNS, and badware hosters.",
+      "readme": "security/README.md",
+      "quality_report": "security/quality_report.json",
+      "categories": [
+        "badware_hoster",
+        "dynamic_dns",
+        "malware",
+        "phishing",
+        "scam"
+      ]
+    },
+    "rpz": {
+      "description": "RPZ outputs generated from the same exact-host security layer for Unbound and similar resolvers.",
+      "readme": "rpz/README.md",
+      "quality_report": "rpz/quality_report.json",
+      "categories": [
+        "badware_hoster",
+        "dynamic_dns",
+        "malware",
+        "phishing",
+        "scam"
+      ]
+    },
+    "hardening": {
+      "description": "Optional DNSTwist-derived lookalike blocking and live active-impersonation review outputs.",
+      "readme": "hardening/README.md",
+      "brand_impersonation": "hardening/categories/brand_impersonation.txt",
+      "active_impersonation": "hardening/active_impersonation/categories/active_impersonation.txt",
+      "active_impersonation_rpz": "hardening/active_impersonation/categories/active_impersonation.rpz"
+    },
+    "tunneling": {
+      "description": "VPN and proxy-related DNS blocking outputs for bypass reduction.",
+      "readme": "tunneling/README.md"
+    }
+  },
+  "update_schedule": {
+    "services": "Daily at 02:00 UTC",
+    "hardening": "Sunday, Tuesday, Thursday, and Saturday at 04:00 UTC",
+    "active_impersonation": "Daily at 05:30 UTC"
+  }
+}

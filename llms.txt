@@ -1,0 +1,54 @@
+# DNS Blocking
+
+> Public DNS blocklists and RPZ feeds for Pi-hole, AdGuard Home, Unbound, NextDNS, and other DNS filtering setups.
+
+Canonical repository: https://github.com/sparksbenjamin/DNS_Blocking
+
+## What this project is
+
+- A multi-output DNS blocking repository with standard hosts lists, exact-host security lists, RPZ files, and optional hardening layers.
+- A one-stop source for phishing, malware, scam, tracking, adult, dating, social, streaming, gaming, DNS bypass, privacy, torrent, piracy, and similar DNS block categories.
+- A generated repository with validation, source policies, and automated updates.
+
+## Best starting points
+
+- Home Safe: https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/recommended/home_safe.txt
+- Family: https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/recommended/family.txt
+- Aggressive: https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/services/recommended/aggressive.txt
+- Security exact-hosts: https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/security/recommended/security.txt
+- Security RPZ: https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/recommended/security.rpz
+
+## Key docs
+
+- Root README: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/README.md
+- Services layer: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/services/README.md
+- Security layer: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/security/README.md
+- RPZ layer: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/rpz/README.md
+- Hardening layer: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/hardening/README.md
+- Active impersonation review: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/hardening/active_impersonation/README.md
+- Tunneling lists: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/tunneling/README.md
+
+## Machine-readable files
+
+- Full project summary: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/llms-full.txt
+- Structured repo index: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/repo-index.json
+- Services validation report: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/services/quality_report.json
+- Security validation report: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/security/quality_report.json
+- RPZ validation report: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/rpz/quality_report.json
+
+## Search keywords
+
+- dns blocklist
+- dns blocking
+- pihole blocklist
+- adguard home blocklist
+- unbound rpz
+- phishing domain list
+- malware domain list
+- scam domain list
+- parental control dns list
+- social media blocklist
+- streaming blocklist
+- gaming blocklist
+- torrent blocklist
+- dns bypass blocking

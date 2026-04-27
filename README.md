@@ -4,13 +4,28 @@
 ![Lists](https://img.shields.io/badge/Lists-1200%2B-blue)
 ![Last Updated](https://img.shields.io/github/last-commit/sparksbenjamin/DNS_Blocking)
 
-DNS blocklists for people who want a practical one-stop shop instead of hunting down a dozen separate feeds.
+Public DNS blocklists for people who want a practical one-stop shop instead of hunting down a dozen separate feeds.
+
+This repository is built for:
+- Pi-hole blocklists
+- AdGuard Home DNS blocklists
+- Unbound RPZ feeds
+- NextDNS custom lists
+- phishing, malware, scam, tracking, parental-control, and optional hardening DNS blocking
 
 This repo now ships:
 - standard Pi-hole / AdGuard-friendly hosts lists
 - exact-host security feeds
 - Unbound-ready RPZ zone files
 - optional brand-impersonation and live-impersonation hardening layers
+
+## Machine-Readable Docs
+
+If you are indexing or summarizing this repository with an LLM, start here:
+
+- [llms.txt](llms.txt)
+- [llms-full.txt](llms-full.txt)
+- [repo-index.json](repo-index.json)
 
 ## Start Here
 
