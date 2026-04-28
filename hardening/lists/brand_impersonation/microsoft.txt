@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-26 06:12:13 UTC
+# Generated: 2026-04-28 06:34:58 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -137,6 +137,7 @@
 0.0.0.0 livo.com
 0.0.0.0 livr.com
 0.0.0.0 livs.com
+0.0.0.0 livu.com
 0.0.0.0 livve.com
 0.0.0.0 livw.com
 0.0.0.0 livz.com
@@ -342,6 +343,7 @@
 0.0.0.0 microsoftoline.com
 0.0.0.0 microsoftomline.com
 0.0.0.0 microsofton1ine.com
+0.0.0.0 microsoftonbline.com
 0.0.0.0 microsoftoniine.com
 0.0.0.0 microsoftonilne.com
 0.0.0.0 microsoftonine.com
@@ -704,6 +706,7 @@
 0.0.0.0 outdook.com
 0.0.0.0 outglook.com
 0.0.0.0 outhook.com
+0.0.0.0 outi00k.com
 0.0.0.0 outiook.com
 0.0.0.0 outklook.com
 0.0.0.0 outkook.com
@@ -852,7 +855,6 @@
 0.0.0.0 xn--lve-vma.com
 0.0.0.0 xn--mcosoft-rfb211a.com
 0.0.0.0 xn--mcrosft-7ya2d.com
-0.0.0.0 xn--mcrosofonline-9uc7204i.com
 0.0.0.0 xn--mcrosoft-1ud.com
 0.0.0.0 xn--mcrosoft-21a.com
 0.0.0.0 xn--mcrosoft-6ob.com
@@ -875,7 +877,7 @@
 0.0.0.0 xn--micosof-emd9545d.com
 0.0.0.0 xn--micosoft-i0d.com
 0.0.0.0 xn--micosoft-pf0d.com
-0.0.0.0 xn--micosoftonline-iwc.com
+0.0.0.0 xn--micosoftnline-pmb3893i.com
 0.0.0.0 xn--micosot-21b1347d.com
 0.0.0.0 xn--microoft-l9c.com
 0.0.0.0 xn--microoft-qvb.com
@@ -909,6 +911,8 @@
 0.0.0.0 xn--mirosoft-hw7c.com
 0.0.0.0 xn--mirosoft-lbb.com
 0.0.0.0 xn--mirosoft-t0a.com
+0.0.0.0 xn--mirosoftoline-x9c61o.com
+0.0.0.0 xn--mlcrsoftonline-t88g.com
 0.0.0.0 xn--offce-1sa.com
 0.0.0.0 xn--offce-7sa.com
 0.0.0.0 xn--offce-doc.com
@@ -917,7 +921,6 @@
 0.0.0.0 xn--offce-vsa.com
 0.0.0.0 xn--offce-ywb.com
 0.0.0.0 xn--oice-geba.com
-0.0.0.0 xn--ot1ook-3mb.com
 0.0.0.0 xn--otlook-3ya.com
 0.0.0.0 xn--otlook-wnb.com
 0.0.0.0 xn--oulook-jmc.com

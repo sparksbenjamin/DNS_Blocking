@@ -1,6 +1,6 @@
 # GitLab Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-26 06:12:13 UTC
+# Generated: 2026-04-28 06:34:58 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: gitlab.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -83,6 +83,5 @@
 0.0.0.0 xn--gtlab-q81b.com
 0.0.0.0 xn--gtlab-tsa.com
 0.0.0.0 xn--gtlab-zsa.com
-0.0.0.0 xn--gtlb-0ya86o.com
 0.0.0.0 yitlab.com
 0.0.0.0 zitlab.com
