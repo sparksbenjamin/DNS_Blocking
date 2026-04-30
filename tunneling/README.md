@@ -14,12 +14,12 @@ This directory contains curated lists of VPN and proxy provider domains.
 <!-- START:tunneling -->
 *(auto-generated section — do not edit manually)*
 
-Generated: 2026-04-29 05:33 UTC
+Generated: 2026-04-30 05:37 UTC
 
 | List | Entries | File | Raw URL |
 |------|----------|------|---------|
 | proxies | 4671 | [proxies.txt](tunneling/proxies.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/proxies.txt) |
-| vpns | 29993 | [vpns.txt](tunneling/vpns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpns.txt) |
+| vpns | 29424 | [vpns.txt](tunneling/vpns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpns.txt) |
 | proxy_0068023 | 1 | [proxy_0068023.txt](tunneling/proxy/proxy_0068023.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/proxy/proxy_0068023.txt) |
 | proxy_072155 | 1 | [proxy_072155.txt](tunneling/proxy/proxy_072155.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/proxy/proxy_072155.txt) |
 | proxy_100 | 1 | [proxy_100.txt](tunneling/proxy/proxy_100.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/proxy/proxy_100.txt) |
@@ -2788,7 +2788,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_000000555 | 1 | [vpn_000000555.txt](tunneling/vpn/vpn_000000555.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_000000555.txt) |
 | vpn_09vpn | 1 | [vpn_09vpn.txt](tunneling/vpn/vpn_09vpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_09vpn.txt) |
 | vpn_0mvpnbpo | 2 | [vpn_0mvpnbpo.txt](tunneling/vpn/vpn_0mvpnbpo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_0mvpnbpo.txt) |
-| vpn_103prxy | 2 | [vpn_103prxy.txt](tunneling/vpn/vpn_103prxy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_103prxy.txt) |
+| vpn_103prxy | 1 | [vpn_103prxy.txt](tunneling/vpn/vpn_103prxy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_103prxy.txt) |
 | vpn_180connect | 1 | [vpn_180connect.txt](tunneling/vpn/vpn_180connect.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_180connect.txt) |
 | vpn_1clickvpn | 20 | [vpn_1clickvpn.txt](tunneling/vpn/vpn_1clickvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_1clickvpn.txt) |
 | vpn_1edisource | 1 | [vpn_1edisource.txt](tunneling/vpn/vpn_1edisource.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_1edisource.txt) |
@@ -2811,7 +2811,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_6gvpn | 1 | [vpn_6gvpn.txt](tunneling/vpn/vpn_6gvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_6gvpn.txt) |
 | vpn_7eleven | 2 | [vpn_7eleven.txt](tunneling/vpn/vpn_7eleven.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_7eleven.txt) |
 | vpn_7thidea | 1 | [vpn_7thidea.txt](tunneling/vpn/vpn_7thidea.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_7thidea.txt) |
-| vpn_867732738 | 545 | [vpn_867732738.txt](tunneling/vpn/vpn_867732738.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_867732738.txt) |
+| vpn_867732738 | 537 | [vpn_867732738.txt](tunneling/vpn/vpn_867732738.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_867732738.txt) |
 | vpn_883559 | 1 | [vpn_883559.txt](tunneling/vpn/vpn_883559.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_883559.txt) |
 | vpn_8axggq6dvpnj6lni | 2 | [vpn_8axggq6dvpnj6lni.txt](tunneling/vpn/vpn_8axggq6dvpnj6lni.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_8axggq6dvpnj6lni.txt) |
 | vpn_8v9m | 1 | [vpn_8v9m.txt](tunneling/vpn/vpn_8v9m.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_8v9m.txt) |
@@ -2849,7 +2849,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_adidasgroup | 1 | [vpn_adidasgroup.txt](tunneling/vpn/vpn_adidasgroup.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_adidasgroup.txt) |
 | vpn_adm | 1 | [vpn_adm.txt](tunneling/vpn/vpn_adm.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_adm.txt) |
 | vpn_adobe | 1 | [vpn_adobe.txt](tunneling/vpn/vpn_adobe.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_adobe.txt) |
-| vpn_adsoasis | 2 | [vpn_adsoasis.txt](tunneling/vpn/vpn_adsoasis.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_adsoasis.txt) |
+| vpn_adsoasis | 1 | [vpn_adsoasis.txt](tunneling/vpn/vpn_adsoasis.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_adsoasis.txt) |
 | vpn_adsupportserver | 1 | [vpn_adsupportserver.txt](tunneling/vpn/vpn_adsupportserver.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_adsupportserver.txt) |
 | vpn_advanceddataanalysiscenter | 1 | [vpn_advanceddataanalysiscenter.txt](tunneling/vpn/vpn_advanceddataanalysiscenter.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_advanceddataanalysiscenter.txt) |
 | vpn_adventhealth | 2 | [vpn_adventhealth.txt](tunneling/vpn/vpn_adventhealth.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_adventhealth.txt) |
@@ -2913,7 +2913,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_alumolins | 1 | [vpn_alumolins.txt](tunneling/vpn/vpn_alumolins.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_alumolins.txt) |
 | vpn_alvimedica | 1 | [vpn_alvimedica.txt](tunneling/vpn/vpn_alvimedica.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_alvimedica.txt) |
 | vpn_amazon | 1 | [vpn_amazon.txt](tunneling/vpn/vpn_amazon.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_amazon.txt) |
-| vpn_amazonaws | 79 | [vpn_amazonaws.txt](tunneling/vpn/vpn_amazonaws.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_amazonaws.txt) |
+| vpn_amazonaws | 78 | [vpn_amazonaws.txt](tunneling/vpn/vpn_amazonaws.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_amazonaws.txt) |
 | vpn_amazoncorp | 3 | [vpn_amazoncorp.txt](tunneling/vpn/vpn_amazoncorp.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_amazoncorp.txt) |
 | vpn_amcnetworks | 1 | [vpn_amcnetworks.txt](tunneling/vpn/vpn_amcnetworks.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_amcnetworks.txt) |
 | vpn_amcorgroup | 2 | [vpn_amcorgroup.txt](tunneling/vpn/vpn_amcorgroup.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_amcorgroup.txt) |
@@ -2923,7 +2923,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_amicizie | 1 | [vpn_amicizie.txt](tunneling/vpn/vpn_amicizie.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_amicizie.txt) |
 | vpn_aminerals | 1 | [vpn_aminerals.txt](tunneling/vpn/vpn_aminerals.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_aminerals.txt) |
 | vpn_amns | 1 | [vpn_amns.txt](tunneling/vpn/vpn_amns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_amns.txt) |
-| vpn_amounts | 8 | [vpn_amounts.txt](tunneling/vpn/vpn_amounts.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_amounts.txt) |
+| vpn_amounts | 7 | [vpn_amounts.txt](tunneling/vpn/vpn_amounts.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_amounts.txt) |
 | vpn_ampproject | 1 | [vpn_ampproject.txt](tunneling/vpn/vpn_ampproject.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_ampproject.txt) |
 | vpn_amsadobe | 1 | [vpn_amsadobe.txt](tunneling/vpn/vpn_amsadobe.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_amsadobe.txt) |
 | vpn_amsoil | 1 | [vpn_amsoil.txt](tunneling/vpn/vpn_amsoil.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_amsoil.txt) |
@@ -2954,7 +2954,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_apple | 15 | [vpn_apple.txt](tunneling/vpn/vpn_apple.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_apple.txt) |
 | vpn_appletsvpn | 1 | [vpn_appletsvpn.txt](tunneling/vpn/vpn_appletsvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_appletsvpn.txt) |
 | vpn_appsflyersdk | 4 | [vpn_appsflyersdk.txt](tunneling/vpn/vpn_appsflyersdk.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_appsflyersdk.txt) |
-| vpn_appspot | 1 | [vpn_appspot.txt](tunneling/vpn/vpn_appspot.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_appspot.txt) |
+| vpn_appspot | 2 | [vpn_appspot.txt](tunneling/vpn/vpn_appspot.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_appspot.txt) |
 | vpn_appstate | 1 | [vpn_appstate.txt](tunneling/vpn/vpn_appstate.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_appstate.txt) |
 | vpn_appsu | 1 | [vpn_appsu.txt](tunneling/vpn/vpn_appsu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_appsu.txt) |
 | vpn_aps | 1 | [vpn_aps.txt](tunneling/vpn/vpn_aps.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_aps.txt) |
@@ -3006,7 +3006,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_atieva | 1 | [vpn_atieva.txt](tunneling/vpn/vpn_atieva.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_atieva.txt) |
 | vpn_atlascopco | 1 | [vpn_atlascopco.txt](tunneling/vpn/vpn_atlascopco.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_atlascopco.txt) |
 | vpn_atlassian | 1 | [vpn_atlassian.txt](tunneling/vpn/vpn_atlassian.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_atlassian.txt) |
-| vpn_atlasvpn | 2 | [vpn_atlasvpn.txt](tunneling/vpn/vpn_atlasvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_atlasvpn.txt) |
+| vpn_atlasvpn | 3 | [vpn_atlasvpn.txt](tunneling/vpn/vpn_atlasvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_atlasvpn.txt) |
 | vpn_aton | 1 | [vpn_aton.txt](tunneling/vpn/vpn_aton.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_aton.txt) |
 | vpn_atpacdoka | 1 | [vpn_atpacdoka.txt](tunneling/vpn/vpn_atpacdoka.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_atpacdoka.txt) |
 | vpn_atresmedia | 2 | [vpn_atresmedia.txt](tunneling/vpn/vpn_atresmedia.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_atresmedia.txt) |
@@ -3040,7 +3040,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_azirevpn | 1 | [vpn_azirevpn.txt](tunneling/vpn/vpn_azirevpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_azirevpn.txt) |
 | vpn_azure | 37 | [vpn_azure.txt](tunneling/vpn/vpn_azure.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_azure.txt) |
 | vpn_backvpn | 1 | [vpn_backvpn.txt](tunneling/vpn/vpn_backvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_backvpn.txt) |
-| vpn_bailey | 5 | [vpn_bailey.txt](tunneling/vpn/vpn_bailey.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bailey.txt) |
+| vpn_bailey | 7 | [vpn_bailey.txt](tunneling/vpn/vpn_bailey.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bailey.txt) |
 | vpn_bain | 1 | [vpn_bain.txt](tunneling/vpn/vpn_bain.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bain.txt) |
 | vpn_bajajlife | 1 | [vpn_bajajlife.txt](tunneling/vpn/vpn_bajajlife.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bajajlife.txt) |
 | vpn_bakelite | 1 | [vpn_bakelite.txt](tunneling/vpn/vpn_bakelite.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bakelite.txt) |
@@ -3059,13 +3059,13 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_baplc | 1 | [vpn_baplc.txt](tunneling/vpn/vpn_baplc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_baplc.txt) |
 | vpn_bartonhealth | 1 | [vpn_bartonhealth.txt](tunneling/vpn/vpn_bartonhealth.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bartonhealth.txt) |
 | vpn_baseserver | 1 | [vpn_baseserver.txt](tunneling/vpn/vpn_baseserver.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_baseserver.txt) |
-| vpn_batch | 8 | [vpn_batch.txt](tunneling/vpn/vpn_batch.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_batch.txt) |
+| vpn_batch | 7 | [vpn_batch.txt](tunneling/vpn/vpn_batch.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_batch.txt) |
 | vpn_batech | 1 | [vpn_batech.txt](tunneling/vpn/vpn_batech.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_batech.txt) |
 | vpn_battalionoil | 1 | [vpn_battalionoil.txt](tunneling/vpn/vpn_battalionoil.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_battalionoil.txt) |
 | vpn_baxalta | 1 | [vpn_baxalta.txt](tunneling/vpn/vpn_baxalta.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_baxalta.txt) |
 | vpn_bbuconnect | 1 | [vpn_bbuconnect.txt](tunneling/vpn/vpn_bbuconnect.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bbuconnect.txt) |
 | vpn_bc | 2 | [vpn_bc.txt](tunneling/vpn/vpn_bc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bc.txt) |
-| vpn_bcdn | 13 | [vpn_bcdn.txt](tunneling/vpn/vpn_bcdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bcdn.txt) |
+| vpn_bcdn | 17 | [vpn_bcdn.txt](tunneling/vpn/vpn_bcdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bcdn.txt) |
 | vpn_bchydro | 1 | [vpn_bchydro.txt](tunneling/vpn/vpn_bchydro.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bchydro.txt) |
 | vpn_bciseguros | 1 | [vpn_bciseguros.txt](tunneling/vpn/vpn_bciseguros.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bciseguros.txt) |
 | vpn_bcm | 1 | [vpn_bcm.txt](tunneling/vpn/vpn_bcm.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bcm.txt) |
@@ -3085,7 +3085,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_beshideshi | 1 | [vpn_beshideshi.txt](tunneling/vpn/vpn_beshideshi.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_beshideshi.txt) |
 | vpn_bestproxyreviews | 1 | [vpn_bestproxyreviews.txt](tunneling/vpn/vpn_bestproxyreviews.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bestproxyreviews.txt) |
 | vpn_bestsecrettec | 1 | [vpn_bestsecrettec.txt](tunneling/vpn/vpn_bestsecrettec.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bestsecrettec.txt) |
-| vpn_bestserver | 2 | [vpn_bestserver.txt](tunneling/vpn/vpn_bestserver.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bestserver.txt) |
+| vpn_bestserver | 1 | [vpn_bestserver.txt](tunneling/vpn/vpn_bestserver.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bestserver.txt) |
 | vpn_bestvaluevpn | 1 | [vpn_bestvaluevpn.txt](tunneling/vpn/vpn_bestvaluevpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bestvaluevpn.txt) |
 | vpn_bestvpn | 1 | [vpn_bestvpn.txt](tunneling/vpn/vpn_bestvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bestvpn.txt) |
 | vpn_bettermode | 1 | [vpn_bettermode.txt](tunneling/vpn/vpn_bettermode.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bettermode.txt) |
@@ -3115,7 +3115,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_blendlabs | 1 | [vpn_blendlabs.txt](tunneling/vpn/vpn_blendlabs.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_blendlabs.txt) |
 | vpn_blickleinternational | 1 | [vpn_blickleinternational.txt](tunneling/vpn/vpn_blickleinternational.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_blickleinternational.txt) |
 | vpn_blockhide | 1 | [vpn_blockhide.txt](tunneling/vpn/vpn_blockhide.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_blockhide.txt) |
-| vpn_blockonlyifyouhaveasmallpeepee | 619 | [vpn_blockonlyifyouhaveasmallpeepee.txt](tunneling/vpn/vpn_blockonlyifyouhaveasmallpeepee.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_blockonlyifyouhaveasmallpeepee.txt) |
+| vpn_blockonlyifyouhaveasmallpeepee | 598 | [vpn_blockonlyifyouhaveasmallpeepee.txt](tunneling/vpn/vpn_blockonlyifyouhaveasmallpeepee.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_blockonlyifyouhaveasmallpeepee.txt) |
 | vpn_bloomu | 1 | [vpn_bloomu.txt](tunneling/vpn/vpn_bloomu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bloomu.txt) |
 | vpn_bloxd | 1 | [vpn_bloxd.txt](tunneling/vpn/vpn_bloxd.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bloxd.txt) |
 | vpn_blpprofessional | 1 | [vpn_blpprofessional.txt](tunneling/vpn/vpn_blpprofessional.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_blpprofessional.txt) |
@@ -3133,7 +3133,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_bodhidesignsbd | 1 | [vpn_bodhidesignsbd.txt](tunneling/vpn/vpn_bodhidesignsbd.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bodhidesignsbd.txt) |
 | vpn_boeing | 26 | [vpn_boeing.txt](tunneling/vpn/vpn_boeing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_boeing.txt) |
 | vpn_boeinglabnet | 1 | [vpn_boeinglabnet.txt](tunneling/vpn/vpn_boeinglabnet.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_boeinglabnet.txt) |
-| vpn_boi9osyg1uwtyafn | 7 | [vpn_boi9osyg1uwtyafn.txt](tunneling/vpn/vpn_boi9osyg1uwtyafn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_boi9osyg1uwtyafn.txt) |
+| vpn_boi9osyg1uwtyafn | 6 | [vpn_boi9osyg1uwtyafn.txt](tunneling/vpn/vpn_boi9osyg1uwtyafn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_boi9osyg1uwtyafn.txt) |
 | vpn_bolehvpn | 1 | [vpn_bolehvpn.txt](tunneling/vpn/vpn_bolehvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bolehvpn.txt) |
 | vpn_boliden | 1 | [vpn_boliden.txt](tunneling/vpn/vpn_boliden.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_boliden.txt) |
 | vpn_booking | 2 | [vpn_booking.txt](tunneling/vpn/vpn_booking.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_booking.txt) |
@@ -3156,7 +3156,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_bropay | 15 | [vpn_bropay.txt](tunneling/vpn/vpn_bropay.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bropay.txt) |
 | vpn_broru | 1 | [vpn_broru.txt](tunneling/vpn/vpn_broru.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_broru.txt) |
 | vpn_brotranssion | 1 | [vpn_brotranssion.txt](tunneling/vpn/vpn_brotranssion.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_brotranssion.txt) |
-| vpn_browsec | 2 | [vpn_browsec.txt](tunneling/vpn/vpn_browsec.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_browsec.txt) |
+| vpn_browsec | 3 | [vpn_browsec.txt](tunneling/vpn/vpn_browsec.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_browsec.txt) |
 | vpn_browsecru | 1 | [vpn_browsecru.txt](tunneling/vpn/vpn_browsecru.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_browsecru.txt) |
 | vpn_brytesa | 1 | [vpn_brytesa.txt](tunneling/vpn/vpn_brytesa.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_brytesa.txt) |
 | vpn_bsjmjj | 1 | [vpn_bsjmjj.txt](tunneling/vpn/vpn_bsjmjj.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_bsjmjj.txt) |
@@ -3179,13 +3179,13 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_byuh | 1 | [vpn_byuh.txt](tunneling/vpn/vpn_byuh.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_byuh.txt) |
 | vpn_c2mi | 1 | [vpn_c2mi.txt](tunneling/vpn/vpn_c2mi.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_c2mi.txt) |
 | vpn_c6bank | 1 | [vpn_c6bank.txt](tunneling/vpn/vpn_c6bank.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_c6bank.txt) |
-| vpn_c6gjstatic | 150 | [vpn_c6gjstatic.txt](tunneling/vpn/vpn_c6gjstatic.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_c6gjstatic.txt) |
+| vpn_c6gjstatic | 141 | [vpn_c6gjstatic.txt](tunneling/vpn/vpn_c6gjstatic.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_c6gjstatic.txt) |
 | vpn_ca | 2 | [vpn_ca.txt](tunneling/vpn/vpn_ca.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_ca.txt) |
 | vpn_caasco | 4 | [vpn_caasco.txt](tunneling/vpn/vpn_caasco.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_caasco.txt) |
 | vpn_cablelabs | 1 | [vpn_cablelabs.txt](tunneling/vpn/vpn_cablelabs.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cablelabs.txt) |
 | vpn_cablevision | 1 | [vpn_cablevision.txt](tunneling/vpn/vpn_cablevision.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cablevision.txt) |
 | vpn_cabotcheese | 1 | [vpn_cabotcheese.txt](tunneling/vpn/vpn_cabotcheese.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cabotcheese.txt) |
-| vpn_cacheflow | 2 | [vpn_cacheflow.txt](tunneling/vpn/vpn_cacheflow.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cacheflow.txt) |
+| vpn_cacheflow | 3 | [vpn_cacheflow.txt](tunneling/vpn/vpn_cacheflow.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cacheflow.txt) |
 | vpn_cachequick | 7 | [vpn_cachequick.txt](tunneling/vpn/vpn_cachequick.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cachequick.txt) |
 | vpn_cactusvpn | 2 | [vpn_cactusvpn.txt](tunneling/vpn/vpn_cactusvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cactusvpn.txt) |
 | vpn_calculuscrafter | 1 | [vpn_calculuscrafter.txt](tunneling/vpn/vpn_calculuscrafter.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_calculuscrafter.txt) |
@@ -3208,7 +3208,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_carvajal | 1 | [vpn_carvajal.txt](tunneling/vpn/vpn_carvajal.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_carvajal.txt) |
 | vpn_casella | 1 | [vpn_casella.txt](tunneling/vpn/vpn_casella.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_casella.txt) |
 | vpn_caseresidencial | 1 | [vpn_caseresidencial.txt](tunneling/vpn/vpn_caseresidencial.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_caseresidencial.txt) |
-| vpn_cashiers | 10 | [vpn_cashiers.txt](tunneling/vpn/vpn_cashiers.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cashiers.txt) |
+| vpn_cashiers | 9 | [vpn_cashiers.txt](tunneling/vpn/vpn_cashiers.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cashiers.txt) |
 | vpn_cat | 1 | [vpn_cat.txt](tunneling/vpn/vpn_cat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cat.txt) |
 | vpn_catonetwork | 1 | [vpn_catonetwork.txt](tunneling/vpn/vpn_catonetwork.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_catonetwork.txt) |
 | vpn_catonetworks | 2 | [vpn_catonetworks.txt](tunneling/vpn/vpn_catonetworks.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_catonetworks.txt) |
@@ -3225,10 +3225,10 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_cdn20 | 1 | [vpn_cdn20.txt](tunneling/vpn/vpn_cdn20.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cdn20.txt) |
 | vpn_cdnaccelerate | 9 | [vpn_cdnaccelerate.txt](tunneling/vpn/vpn_cdnaccelerate.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cdnaccelerate.txt) |
 | vpn_cdnboost | 8 | [vpn_cdnboost.txt](tunneling/vpn/vpn_cdnboost.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cdnboost.txt) |
-| vpn_cdnbridge | 2 | [vpn_cdnbridge.txt](tunneling/vpn/vpn_cdnbridge.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cdnbridge.txt) |
+| vpn_cdnbridge | 3 | [vpn_cdnbridge.txt](tunneling/vpn/vpn_cdnbridge.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cdnbridge.txt) |
 | vpn_cdncloudhost | 5 | [vpn_cdncloudhost.txt](tunneling/vpn/vpn_cdncloudhost.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cdncloudhost.txt) |
-| vpn_cdnexpress | 7 | [vpn_cdnexpress.txt](tunneling/vpn/vpn_cdnexpress.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cdnexpress.txt) |
-| vpn_cdnflare | 3 | [vpn_cdnflare.txt](tunneling/vpn/vpn_cdnflare.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cdnflare.txt) |
+| vpn_cdnexpress | 8 | [vpn_cdnexpress.txt](tunneling/vpn/vpn_cdnexpress.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cdnexpress.txt) |
+| vpn_cdnflare | 5 | [vpn_cdnflare.txt](tunneling/vpn/vpn_cdnflare.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cdnflare.txt) |
 | vpn_cdnflow | 7 | [vpn_cdnflow.txt](tunneling/vpn/vpn_cdnflow.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cdnflow.txt) |
 | vpn_cdnnetwork | 4 | [vpn_cdnnetwork.txt](tunneling/vpn/vpn_cdnnetwork.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cdnnetwork.txt) |
 | vpn_cdnrocket | 2 | [vpn_cdnrocket.txt](tunneling/vpn/vpn_cdnrocket.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cdnrocket.txt) |
@@ -3276,7 +3276,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_chinacloudapi | 2 | [vpn_chinacloudapi.txt](tunneling/vpn/vpn_chinacloudapi.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_chinacloudapi.txt) |
 | vpn_chinatizivpn | 1 | [vpn_chinatizivpn.txt](tunneling/vpn/vpn_chinatizivpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_chinatizivpn.txt) |
 | vpn_chinesefreevpn | 2 | [vpn_chinesefreevpn.txt](tunneling/vpn/vpn_chinesefreevpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_chinesefreevpn.txt) |
-| vpn_chips | 8 | [vpn_chips.txt](tunneling/vpn/vpn_chips.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_chips.txt) |
+| vpn_chips | 7 | [vpn_chips.txt](tunneling/vpn/vpn_chips.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_chips.txt) |
 | vpn_chisagocountymn | 1 | [vpn_chisagocountymn.txt](tunneling/vpn/vpn_chisagocountymn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_chisagocountymn.txt) |
 | vpn_chobani | 1 | [vpn_chobani.txt](tunneling/vpn/vpn_chobani.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_chobani.txt) |
 | vpn_choices | 8 | [vpn_choices.txt](tunneling/vpn/vpn_choices.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_choices.txt) |
@@ -3313,7 +3313,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_clorox | 1 | [vpn_clorox.txt](tunneling/vpn/vpn_clorox.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_clorox.txt) |
 | vpn_cloudbees | 1 | [vpn_cloudbees.txt](tunneling/vpn/vpn_cloudbees.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cloudbees.txt) |
 | vpn_cloudflare | 3 | [vpn_cloudflare.txt](tunneling/vpn/vpn_cloudflare.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cloudflare.txt) |
-| vpn_cloudfront | 12 | [vpn_cloudfront.txt](tunneling/vpn/vpn_cloudfront.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cloudfront.txt) |
+| vpn_cloudfront | 9 | [vpn_cloudfront.txt](tunneling/vpn/vpn_cloudfront.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cloudfront.txt) |
 | vpn_cloudmgmt | 1 | [vpn_cloudmgmt.txt](tunneling/vpn/vpn_cloudmgmt.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cloudmgmt.txt) |
 | vpn_cloudmylab | 1 | [vpn_cloudmylab.txt](tunneling/vpn/vpn_cloudmylab.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cloudmylab.txt) |
 | vpn_cloudnetcdn | 2 | [vpn_cloudnetcdn.txt](tunneling/vpn/vpn_cloudnetcdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cloudnetcdn.txt) |
@@ -3333,7 +3333,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_coam | 1 | [vpn_coam.txt](tunneling/vpn/vpn_coam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_coam.txt) |
 | vpn_cocacola | 1 | [vpn_cocacola.txt](tunneling/vpn/vpn_cocacola.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cocacola.txt) |
 | vpn_codelco | 1 | [vpn_codelco.txt](tunneling/vpn/vpn_codelco.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_codelco.txt) |
-| vpn_codespeeing | 8 | [vpn_codespeeing.txt](tunneling/vpn/vpn_codespeeing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_codespeeing.txt) |
+| vpn_codespeeing | 7 | [vpn_codespeeing.txt](tunneling/vpn/vpn_codespeeing.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_codespeeing.txt) |
 | vpn_cofcointernational | 1 | [vpn_cofcointernational.txt](tunneling/vpn/vpn_cofcointernational.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cofcointernational.txt) |
 | vpn_coinbasecorp | 1 | [vpn_coinbasecorp.txt](tunneling/vpn/vpn_coinbasecorp.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_coinbasecorp.txt) |
 | vpn_cokeme | 1 | [vpn_cokeme.txt](tunneling/vpn/vpn_cokeme.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_cokeme.txt) |
@@ -3362,7 +3362,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_connectyourcare | 1 | [vpn_connectyourcare.txt](tunneling/vpn/vpn_connectyourcare.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_connectyourcare.txt) |
 | vpn_connollykeyjoint | 1 | [vpn_connollykeyjoint.txt](tunneling/vpn/vpn_connollykeyjoint.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_connollykeyjoint.txt) |
 | vpn_contentboost | 4 | [vpn_contentboost.txt](tunneling/vpn/vpn_contentboost.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_contentboost.txt) |
-| vpn_contentnode | 5 | [vpn_contentnode.txt](tunneling/vpn/vpn_contentnode.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_contentnode.txt) |
+| vpn_contentnode | 4 | [vpn_contentnode.txt](tunneling/vpn/vpn_contentnode.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_contentnode.txt) |
 | vpn_conturasteel | 1 | [vpn_conturasteel.txt](tunneling/vpn/vpn_conturasteel.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_conturasteel.txt) |
 | vpn_coop | 2 | [vpn_coop.txt](tunneling/vpn/vpn_coop.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_coop.txt) |
 | vpn_coopedcowhide | 1 | [vpn_coopedcowhide.txt](tunneling/vpn/vpn_coopedcowhide.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_coopedcowhide.txt) |
@@ -3445,10 +3445,10 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_dartmouth | 1 | [vpn_dartmouth.txt](tunneling/vpn/vpn_dartmouth.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_dartmouth.txt) |
 | vpn_datadispatch | 1 | [vpn_datadispatch.txt](tunneling/vpn/vpn_datadispatch.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_datadispatch.txt) |
 | vpn_datadistribute | 1 | [vpn_datadistribute.txt](tunneling/vpn/vpn_datadistribute.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_datadistribute.txt) |
-| vpn_datafrenzy | 4 | [vpn_datafrenzy.txt](tunneling/vpn/vpn_datafrenzy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_datafrenzy.txt) |
+| vpn_datafrenzy | 6 | [vpn_datafrenzy.txt](tunneling/vpn/vpn_datafrenzy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_datafrenzy.txt) |
 | vpn_dataport | 1 | [vpn_dataport.txt](tunneling/vpn/vpn_dataport.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_dataport.txt) |
-| vpn_datasecuritymobile | 1 | [vpn_datasecuritymobile.txt](tunneling/vpn/vpn_datasecuritymobile.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_datasecuritymobile.txt) |
-| vpn_dated | 10 | [vpn_dated.txt](tunneling/vpn/vpn_dated.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_dated.txt) |
+| vpn_datasecuritymobile | 2 | [vpn_datasecuritymobile.txt](tunneling/vpn/vpn_datasecuritymobile.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_datasecuritymobile.txt) |
+| vpn_dated | 8 | [vpn_dated.txt](tunneling/vpn/vpn_dated.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_dated.txt) |
 | vpn_datto | 1 | [vpn_datto.txt](tunneling/vpn/vpn_datto.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_datto.txt) |
 | vpn_dbschenker | 1 | [vpn_dbschenker.txt](tunneling/vpn/vpn_dbschenker.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_dbschenker.txt) |
 | vpn_dc | 1 | [vpn_dc.txt](tunneling/vpn/vpn_dc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_dc.txt) |
@@ -3460,11 +3460,11 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_ddsgdemo | 1 | [vpn_ddsgdemo.txt](tunneling/vpn/vpn_ddsgdemo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_ddsgdemo.txt) |
 | vpn_de | 1 | [vpn_de.txt](tunneling/vpn/vpn_de.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_de.txt) |
 | vpn_debswana | 1 | [vpn_debswana.txt](tunneling/vpn/vpn_debswana.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_debswana.txt) |
-| vpn_decades | 10 | [vpn_decades.txt](tunneling/vpn/vpn_decades.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_decades.txt) |
+| vpn_decades | 8 | [vpn_decades.txt](tunneling/vpn/vpn_decades.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_decades.txt) |
 | vpn_decisions | 1 | [vpn_decisions.txt](tunneling/vpn/vpn_decisions.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_decisions.txt) |
 | vpn_decisionvue | 1 | [vpn_decisionvue.txt](tunneling/vpn/vpn_decisionvue.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_decisionvue.txt) |
 | vpn_deepfield | 1 | [vpn_deepfield.txt](tunneling/vpn/vpn_deepfield.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_deepfield.txt) |
-| vpn_deepstateplatypus | 633 | [vpn_deepstateplatypus.txt](tunneling/vpn/vpn_deepstateplatypus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_deepstateplatypus.txt) |
+| vpn_deepstateplatypus | 632 | [vpn_deepstateplatypus.txt](tunneling/vpn/vpn_deepstateplatypus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_deepstateplatypus.txt) |
 | vpn_deere | 1 | [vpn_deere.txt](tunneling/vpn/vpn_deere.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_deere.txt) |
 | vpn_default2024 | 1 | [vpn_default2024.txt](tunneling/vpn/vpn_default2024.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_default2024.txt) |
 | vpn_deliverycenter | 1 | [vpn_deliverycenter.txt](tunneling/vpn/vpn_deliverycenter.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_deliverycenter.txt) |
@@ -3557,8 +3557,8 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_edelkey | 1 | [vpn_edelkey.txt](tunneling/vpn/vpn_edelkey.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_edelkey.txt) |
 | vpn_edfen | 1 | [vpn_edfen.txt](tunneling/vpn/vpn_edfen.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_edfen.txt) |
 | vpn_edfre | 1 | [vpn_edfre.txt](tunneling/vpn/vpn_edfre.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_edfre.txt) |
-| vpn_edgeaccelerator | 11 | [vpn_edgeaccelerator.txt](tunneling/vpn/vpn_edgeaccelerator.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_edgeaccelerator.txt) |
-| vpn_edgecache | 8 | [vpn_edgecache.txt](tunneling/vpn/vpn_edgecache.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_edgecache.txt) |
+| vpn_edgeaccelerator | 10 | [vpn_edgeaccelerator.txt](tunneling/vpn/vpn_edgeaccelerator.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_edgeaccelerator.txt) |
+| vpn_edgecache | 7 | [vpn_edgecache.txt](tunneling/vpn/vpn_edgecache.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_edgecache.txt) |
 | vpn_edgecdn | 2 | [vpn_edgecdn.txt](tunneling/vpn/vpn_edgecdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_edgecdn.txt) |
 | vpn_edgelab | 1 | [vpn_edgelab.txt](tunneling/vpn/vpn_edgelab.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_edgelab.txt) |
 | vpn_edgesuite | 1 | [vpn_edgesuite.txt](tunneling/vpn/vpn_edgesuite.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_edgesuite.txt) |
@@ -3644,7 +3644,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_expedient | 2 | [vpn_expedient.txt](tunneling/vpn/vpn_expedient.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_expedient.txt) |
 | vpn_expo2020dubai | 4 | [vpn_expo2020dubai.txt](tunneling/vpn/vpn_expo2020dubai.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_expo2020dubai.txt) |
 | vpn_expressapisv2 | 6 | [vpn_expressapisv2.txt](tunneling/vpn/vpn_expressapisv2.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_expressapisv2.txt) |
-| vpn_expressvpn | 28 | [vpn_expressvpn.txt](tunneling/vpn/vpn_expressvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_expressvpn.txt) |
+| vpn_expressvpn | 27 | [vpn_expressvpn.txt](tunneling/vpn/vpn_expressvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_expressvpn.txt) |
 | vpn_expressvpnrouter | 2 | [vpn_expressvpnrouter.txt](tunneling/vpn/vpn_expressvpnrouter.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_expressvpnrouter.txt) |
 | vpn_expressvpnsignup | 2 | [vpn_expressvpnsignup.txt](tunneling/vpn/vpn_expressvpnsignup.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_expressvpnsignup.txt) |
 | vpn_exprogroup | 1 | [vpn_exprogroup.txt](tunneling/vpn/vpn_exprogroup.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_exprogroup.txt) |
@@ -3671,7 +3671,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_fastco | 1 | [vpn_fastco.txt](tunneling/vpn/vpn_fastco.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_fastco.txt) |
 | vpn_fastcontent | 2 | [vpn_fastcontent.txt](tunneling/vpn/vpn_fastcontent.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_fastcontent.txt) |
 | vpn_fastervpn | 1 | [vpn_fastervpn.txt](tunneling/vpn/vpn_fastervpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_fastervpn.txt) |
-| vpn_fastestvpn | 3 | [vpn_fastestvpn.txt](tunneling/vpn/vpn_fastestvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_fastestvpn.txt) |
+| vpn_fastestvpn | 1 | [vpn_fastestvpn.txt](tunneling/vpn/vpn_fastestvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_fastestvpn.txt) |
 | vpn_fastfetch | 3 | [vpn_fastfetch.txt](tunneling/vpn/vpn_fastfetch.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_fastfetch.txt) |
 | vpn_fastlaneus | 1 | [vpn_fastlaneus.txt](tunneling/vpn/vpn_fastlaneus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_fastlaneus.txt) |
 | vpn_fastsafevpn | 2 | [vpn_fastsafevpn.txt](tunneling/vpn/vpn_fastsafevpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_fastsafevpn.txt) |
@@ -3756,7 +3756,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_freewheel | 3 | [vpn_freewheel.txt](tunneling/vpn/vpn_freewheel.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_freewheel.txt) |
 | vpn_freshideascatalog | 2 | [vpn_freshideascatalog.txt](tunneling/vpn/vpn_freshideascatalog.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_freshideascatalog.txt) |
 | vpn_friscovsfvpncheck | 1 | [vpn_friscovsfvpncheck.txt](tunneling/vpn/vpn_friscovsfvpncheck.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_friscovsfvpncheck.txt) |
-| vpn_frmdom | 360 | [vpn_frmdom.txt](tunneling/vpn/vpn_frmdom.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_frmdom.txt) |
+| vpn_frmdom | 347 | [vpn_frmdom.txt](tunneling/vpn/vpn_frmdom.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_frmdom.txt) |
 | vpn_frogger | 1 | [vpn_frogger.txt](tunneling/vpn/vpn_frogger.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_frogger.txt) |
 | vpn_frontporch | 1 | [vpn_frontporch.txt](tunneling/vpn/vpn_frontporch.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_frontporch.txt) |
 | vpn_fruit | 3 | [vpn_fruit.txt](tunneling/vpn/vpn_fruit.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_fruit.txt) |
@@ -3776,7 +3776,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_geislinger | 1 | [vpn_geislinger.txt](tunneling/vpn/vpn_geislinger.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_geislinger.txt) |
 | vpn_gemmapower | 1 | [vpn_gemmapower.txt](tunneling/vpn/vpn_gemmapower.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_gemmapower.txt) |
 | vpn_gemvpnzugdtsi | 5 | [vpn_gemvpnzugdtsi.txt](tunneling/vpn/vpn_gemvpnzugdtsi.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_gemvpnzugdtsi.txt) |
-| vpn_gen4 | 2509 | [vpn_gen4.txt](tunneling/vpn/vpn_gen4.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_gen4.txt) |
+| vpn_gen4 | 2428 | [vpn_gen4.txt](tunneling/vpn/vpn_gen4.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_gen4.txt) |
 | vpn_gencat | 1 | [vpn_gencat.txt](tunneling/vpn/vpn_gencat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_gencat.txt) |
 | vpn_generali | 1 | [vpn_generali.txt](tunneling/vpn/vpn_generali.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_generali.txt) |
 | vpn_generaligruppe | 1 | [vpn_generaligruppe.txt](tunneling/vpn/vpn_generaligruppe.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_generaligruppe.txt) |
@@ -3852,7 +3852,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_grainger | 1 | [vpn_grainger.txt](tunneling/vpn/vpn_grainger.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_grainger.txt) |
 | vpn_grameenphone | 1 | [vpn_grameenphone.txt](tunneling/vpn/vpn_grameenphone.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_grameenphone.txt) |
 | vpn_graphicvpn | 1 | [vpn_graphicvpn.txt](tunneling/vpn/vpn_graphicvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_graphicvpn.txt) |
-| vpn_grave | 5 | [vpn_grave.txt](tunneling/vpn/vpn_grave.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_grave.txt) |
+| vpn_grave | 6 | [vpn_grave.txt](tunneling/vpn/vpn_grave.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_grave.txt) |
 | vpn_greateasternlife | 2 | [vpn_greateasternlife.txt](tunneling/vpn/vpn_greateasternlife.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_greateasternlife.txt) |
 | vpn_greatersudbury | 1 | [vpn_greatersudbury.txt](tunneling/vpn/vpn_greatersudbury.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_greatersudbury.txt) |
 | vpn_greenfield | 1 | [vpn_greenfield.txt](tunneling/vpn/vpn_greenfield.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_greenfield.txt) |
@@ -3890,7 +3890,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_hamilton | 1 | [vpn_hamilton.txt](tunneling/vpn/vpn_hamilton.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hamilton.txt) |
 | vpn_hammervpn | 2 | [vpn_hammervpn.txt](tunneling/vpn/vpn_hammervpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hammervpn.txt) |
 | vpn_handicappershideaway | 1 | [vpn_handicappershideaway.txt](tunneling/vpn/vpn_handicappershideaway.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_handicappershideaway.txt) |
-| vpn_hanging | 9 | [vpn_hanging.txt](tunneling/vpn/vpn_hanging.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hanging.txt) |
+| vpn_hanging | 8 | [vpn_hanging.txt](tunneling/vpn/vpn_hanging.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hanging.txt) |
 | vpn_hanonsystems | 1 | [vpn_hanonsystems.txt](tunneling/vpn/vpn_hanonsystems.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hanonsystems.txt) |
 | vpn_hapusa | 1 | [vpn_hapusa.txt](tunneling/vpn/vpn_hapusa.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hapusa.txt) |
 | vpn_harleydavidson | 1 | [vpn_harleydavidson.txt](tunneling/vpn/vpn_harleydavidson.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_harleydavidson.txt) |
@@ -3948,7 +3948,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_hidely | 2 | [vpn_hidely.txt](tunneling/vpn/vpn_hidely.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hidely.txt) |
 | vpn_hidemenow | 2 | [vpn_hidemenow.txt](tunneling/vpn/vpn_hidemenow.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hidemenow.txt) |
 | vpn_hidemium | 2 | [vpn_hidemium.txt](tunneling/vpn/vpn_hidemium.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hidemium.txt) |
-| vpn_hidemy | 2 | [vpn_hidemy.txt](tunneling/vpn/vpn_hidemy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hidemy.txt) |
+| vpn_hidemy | 3 | [vpn_hidemy.txt](tunneling/vpn/vpn_hidemy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hidemy.txt) |
 | vpn_hidemyass | 2 | [vpn_hidemyass.txt](tunneling/vpn/vpn_hidemyass.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hidemyass.txt) |
 | vpn_hidemyip | 2 | [vpn_hidemyip.txt](tunneling/vpn/vpn_hidemyip.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hidemyip.txt) |
 | vpn_hidemyphone | 1 | [vpn_hidemyphone.txt](tunneling/vpn/vpn_hidemyphone.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hidemyphone.txt) |
@@ -3989,17 +3989,17 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_hokivpn1 | 1 | [vpn_hokivpn1.txt](tunneling/vpn/vpn_hokivpn1.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hokivpn1.txt) |
 | vpn_hokivpn2 | 1 | [vpn_hokivpn2.txt](tunneling/vpn/vpn_hokivpn2.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hokivpn2.txt) |
 | vpn_hokivpn3 | 1 | [vpn_hokivpn3.txt](tunneling/vpn/vpn_hokivpn3.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hokivpn3.txt) |
-| vpn_hola | 1504 | [vpn_hola.txt](tunneling/vpn/vpn_hola.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hola.txt) |
-| vpn_holabrowser | 2 | [vpn_holabrowser.txt](tunneling/vpn/vpn_holabrowser.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_holabrowser.txt) |
+| vpn_hola | 1470 | [vpn_hola.txt](tunneling/vpn/vpn_hola.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hola.txt) |
+| vpn_holabrowser | 1 | [vpn_holabrowser.txt](tunneling/vpn/vpn_holabrowser.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_holabrowser.txt) |
 | vpn_holacompat | 1 | [vpn_holacompat.txt](tunneling/vpn/vpn_holacompat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_holacompat.txt) |
 | vpn_holafreevpn | 1 | [vpn_holafreevpn.txt](tunneling/vpn/vpn_holafreevpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_holafreevpn.txt) |
-| vpn_holavpn | 520 | [vpn_holavpn.txt](tunneling/vpn/vpn_holavpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_holavpn.txt) |
+| vpn_holavpn | 512 | [vpn_holavpn.txt](tunneling/vpn/vpn_holavpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_holavpn.txt) |
 | vpn_holavpnandroid | 2 | [vpn_holavpnandroid.txt](tunneling/vpn/vpn_holavpnandroid.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_holavpnandroid.txt) |
 | vpn_holavpnextension | 2 | [vpn_holavpnextension.txt](tunneling/vpn/vpn_holavpnextension.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_holavpnextension.txt) |
 | vpn_holavpninstaller | 2 | [vpn_holavpninstaller.txt](tunneling/vpn/vpn_holavpninstaller.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_holavpninstaller.txt) |
 | vpn_holavpnrussia | 2 | [vpn_holavpnrussia.txt](tunneling/vpn/vpn_holavpnrussia.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_holavpnrussia.txt) |
-| vpn_holavpnworld | 2 | [vpn_holavpnworld.txt](tunneling/vpn/vpn_holavpnworld.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_holavpnworld.txt) |
-| vpn_holax | 576 | [vpn_holax.txt](tunneling/vpn/vpn_holax.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_holax.txt) |
+| vpn_holavpnworld | 1 | [vpn_holavpnworld.txt](tunneling/vpn/vpn_holavpnworld.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_holavpnworld.txt) |
+| vpn_holax | 575 | [vpn_holax.txt](tunneling/vpn/vpn_holax.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_holax.txt) |
 | vpn_hollisterstier | 1 | [vpn_hollisterstier.txt](tunneling/vpn/vpn_hollisterstier.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hollisterstier.txt) |
 | vpn_homeadvisor | 1 | [vpn_homeadvisor.txt](tunneling/vpn/vpn_homeadvisor.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_homeadvisor.txt) |
 | vpn_homevpn | 2 | [vpn_homevpn.txt](tunneling/vpn/vpn_homevpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_homevpn.txt) |
@@ -4015,7 +4015,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_houston | 1 | [vpn_houston.txt](tunneling/vpn/vpn_houston.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_houston.txt) |
 | vpn_houstontx | 2 | [vpn_houstontx.txt](tunneling/vpn/vpn_houstontx.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_houstontx.txt) |
 | vpn_howmet | 1 | [vpn_howmet.txt](tunneling/vpn/vpn_howmet.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_howmet.txt) |
-| vpn_hoxx | 7 | [vpn_hoxx.txt](tunneling/vpn/vpn_hoxx.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hoxx.txt) |
+| vpn_hoxx | 8 | [vpn_hoxx.txt](tunneling/vpn/vpn_hoxx.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hoxx.txt) |
 | vpn_hpe | 1 | [vpn_hpe.txt](tunneling/vpn/vpn_hpe.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hpe.txt) |
 | vpn_hpicorp | 2 | [vpn_hpicorp.txt](tunneling/vpn/vpn_hpicorp.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hpicorp.txt) |
 | vpn_hsselite | 2 | [vpn_hsselite.txt](tunneling/vpn/vpn_hsselite.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_hsselite.txt) |
@@ -4045,7 +4045,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_icicibank | 1 | [vpn_icicibank.txt](tunneling/vpn/vpn_icicibank.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_icicibank.txt) |
 | vpn_iclinc | 1 | [vpn_iclinc.txt](tunneling/vpn/vpn_iclinc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_iclinc.txt) |
 | vpn_icorevpn | 1 | [vpn_icorevpn.txt](tunneling/vpn/vpn_icorevpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_icorevpn.txt) |
-| vpn_icpsuawn1zy5amys | 6 | [vpn_icpsuawn1zy5amys.txt](tunneling/vpn/vpn_icpsuawn1zy5amys.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_icpsuawn1zy5amys.txt) |
+| vpn_icpsuawn1zy5amys | 7 | [vpn_icpsuawn1zy5amys.txt](tunneling/vpn/vpn_icpsuawn1zy5amys.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_icpsuawn1zy5amys.txt) |
 | vpn_icsvpn | 1 | [vpn_icsvpn.txt](tunneling/vpn/vpn_icsvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_icsvpn.txt) |
 | vpn_ida | 1 | [vpn_ida.txt](tunneling/vpn/vpn_ida.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_ida.txt) |
 | vpn_idemitsu | 2 | [vpn_idemitsu.txt](tunneling/vpn/vpn_idemitsu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_idemitsu.txt) |
@@ -4113,7 +4113,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_iovpn | 1 | [vpn_iovpn.txt](tunneling/vpn/vpn_iovpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_iovpn.txt) |
 | vpn_ipsen | 1 | [vpn_ipsen.txt](tunneling/vpn/vpn_ipsen.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_ipsen.txt) |
 | vpn_iptor | 2 | [vpn_iptor.txt](tunneling/vpn/vpn_iptor.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_iptor.txt) |
-| vpn_ipvanish | 13 | [vpn_ipvanish.txt](tunneling/vpn/vpn_ipvanish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_ipvanish.txt) |
+| vpn_ipvanish | 12 | [vpn_ipvanish.txt](tunneling/vpn/vpn_ipvanish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_ipvanish.txt) |
 | vpn_ipvpn | 2 | [vpn_ipvpn.txt](tunneling/vpn/vpn_ipvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_ipvpn.txt) |
 | vpn_iqeq | 1 | [vpn_iqeq.txt](tunneling/vpn/vpn_iqeq.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_iqeq.txt) |
 | vpn_irccloud | 1 | [vpn_irccloud.txt](tunneling/vpn/vpn_irccloud.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_irccloud.txt) |
@@ -4133,7 +4133,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_itctransco | 1 | [vpn_itctransco.txt](tunneling/vpn/vpn_itctransco.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_itctransco.txt) |
 | vpn_itopvpn | 8 | [vpn_itopvpn.txt](tunneling/vpn/vpn_itopvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_itopvpn.txt) |
 | vpn_itsbarangaroo | 1 | [vpn_itsbarangaroo.txt](tunneling/vpn/vpn_itsbarangaroo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_itsbarangaroo.txt) |
-| vpn_itself | 5 | [vpn_itself.txt](tunneling/vpn/vpn_itself.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_itself.txt) |
+| vpn_itself | 6 | [vpn_itself.txt](tunneling/vpn/vpn_itself.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_itself.txt) |
 | vpn_itv | 2 | [vpn_itv.txt](tunneling/vpn/vpn_itv.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_itv.txt) |
 | vpn_itwin | 1 | [vpn_itwin.txt](tunneling/vpn/vpn_itwin.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_itwin.txt) |
 | vpn_iup | 1 | [vpn_iup.txt](tunneling/vpn/vpn_iup.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_iup.txt) |
@@ -4176,7 +4176,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_kasikornasset | 1 | [vpn_kasikornasset.txt](tunneling/vpn/vpn_kasikornasset.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_kasikornasset.txt) |
 | vpn_kaspersky | 2 | [vpn_kaspersky.txt](tunneling/vpn/vpn_kaspersky.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_kaspersky.txt) |
 | vpn_kasperskylabs | 1 | [vpn_kasperskylabs.txt](tunneling/vpn/vpn_kasperskylabs.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_kasperskylabs.txt) |
-| vpn_kbz0pwvxmv | 147 | [vpn_kbz0pwvxmv.txt](tunneling/vpn/vpn_kbz0pwvxmv.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_kbz0pwvxmv.txt) |
+| vpn_kbz0pwvxmv | 137 | [vpn_kbz0pwvxmv.txt](tunneling/vpn/vpn_kbz0pwvxmv.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_kbz0pwvxmv.txt) |
 | vpn_kcmrm | 1 | [vpn_kcmrm.txt](tunneling/vpn/vpn_kcmrm.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_kcmrm.txt) |
 | vpn_kdrp | 1 | [vpn_kdrp.txt](tunneling/vpn/vpn_kdrp.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_kdrp.txt) |
 | vpn_keepsolid | 12 | [vpn_keepsolid.txt](tunneling/vpn/vpn_keepsolid.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_keepsolid.txt) |
@@ -4224,7 +4224,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_kutxabank | 1 | [vpn_kutxabank.txt](tunneling/vpn/vpn_kutxabank.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_kutxabank.txt) |
 | vpn_kvblimited | 2 | [vpn_kvblimited.txt](tunneling/vpn/vpn_kvblimited.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_kvblimited.txt) |
 | vpn_kwl63irf | 1 | [vpn_kwl63irf.txt](tunneling/vpn/vpn_kwl63irf.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_kwl63irf.txt) |
-| vpn_kxcdn | 3 | [vpn_kxcdn.txt](tunneling/vpn/vpn_kxcdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_kxcdn.txt) |
+| vpn_kxcdn | 2 | [vpn_kxcdn.txt](tunneling/vpn/vpn_kxcdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_kxcdn.txt) |
 | vpn_ky | 2 | [vpn_ky.txt](tunneling/vpn/vpn_ky.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_ky.txt) |
 | vpn_kyotohideya | 1 | [vpn_kyotohideya.txt](tunneling/vpn/vpn_kyotohideya.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_kyotohideya.txt) |
 | vpn_l4bor | 1 | [vpn_l4bor.txt](tunneling/vpn/vpn_l4bor.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_l4bor.txt) |
@@ -4313,7 +4313,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_macletsvpn | 1 | [vpn_macletsvpn.txt](tunneling/vpn/vpn_macletsvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_macletsvpn.txt) |
 | vpn_macys | 4 | [vpn_macys.txt](tunneling/vpn/vpn_macys.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_macys.txt) |
 | vpn_mada | 1 | [vpn_mada.txt](tunneling/vpn/vpn_mada.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_mada.txt) |
-| vpn_madonna | 8 | [vpn_madonna.txt](tunneling/vpn/vpn_madonna.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_madonna.txt) |
+| vpn_madonna | 7 | [vpn_madonna.txt](tunneling/vpn/vpn_madonna.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_madonna.txt) |
 | vpn_maf | 1 | [vpn_maf.txt](tunneling/vpn/vpn_maf.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_maf.txt) |
 | vpn_magenic | 1 | [vpn_magenic.txt](tunneling/vpn/vpn_magenic.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_magenic.txt) |
 | vpn_magnera | 1 | [vpn_magnera.txt](tunneling/vpn/vpn_magnera.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_magnera.txt) |
@@ -4335,7 +4335,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_mathcraftinghub | 1 | [vpn_mathcraftinghub.txt](tunneling/vpn/vpn_mathcraftinghub.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_mathcraftinghub.txt) |
 | vpn_maximo | 2 | [vpn_maximo.txt](tunneling/vpn/vpn_maximo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_maximo.txt) |
 | vpn_maxiscloud | 1 | [vpn_maxiscloud.txt](tunneling/vpn/vpn_maxiscloud.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_maxiscloud.txt) |
-| vpn_maxxxcdn | 52 | [vpn_maxxxcdn.txt](tunneling/vpn/vpn_maxxxcdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_maxxxcdn.txt) |
+| vpn_maxxxcdn | 53 | [vpn_maxxxcdn.txt](tunneling/vpn/vpn_maxxxcdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_maxxxcdn.txt) |
 | vpn_mayo | 2 | [vpn_mayo.txt](tunneling/vpn/vpn_mayo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_mayo.txt) |
 | vpn_mb | 1 | [vpn_mb.txt](tunneling/vpn/vpn_mb.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_mb.txt) |
 | vpn_mbconnect24 | 2 | [vpn_mbconnect24.txt](tunneling/vpn/vpn_mbconnect24.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_mbconnect24.txt) |
@@ -4372,7 +4372,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_mi | 1 | [vpn_mi.txt](tunneling/vpn/vpn_mi.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_mi.txt) |
 | vpn_microchip | 2 | [vpn_microchip.txt](tunneling/vpn/vpn_microchip.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_microchip.txt) |
 | vpn_microsoft | 2 | [vpn_microsoft.txt](tunneling/vpn/vpn_microsoft.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_microsoft.txt) |
-| vpn_microyiappstudio | 2 | [vpn_microyiappstudio.txt](tunneling/vpn/vpn_microyiappstudio.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_microyiappstudio.txt) |
+| vpn_microyiappstudio | 1 | [vpn_microyiappstudio.txt](tunneling/vpn/vpn_microyiappstudio.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_microyiappstudio.txt) |
 | vpn_midrex | 1 | [vpn_midrex.txt](tunneling/vpn/vpn_midrex.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_midrex.txt) |
 | vpn_mildhide | 2 | [vpn_mildhide.txt](tunneling/vpn/vpn_mildhide.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_mildhide.txt) |
 | vpn_millennium1solutions | 3 | [vpn_millennium1solutions.txt](tunneling/vpn/vpn_millennium1solutions.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_millennium1solutions.txt) |
@@ -4448,16 +4448,16 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_myoas | 3 | [vpn_myoas.txt](tunneling/vpn/vpn_myoas.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_myoas.txt) |
 | vpn_myproxy | 1 | [vpn_myproxy.txt](tunneling/vpn/vpn_myproxy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_myproxy.txt) |
 | vpn_myrex24 | 1 | [vpn_myrex24.txt](tunneling/vpn/vpn_myrex24.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_myrex24.txt) |
-| vpn_mysafenet | 21 | [vpn_mysafenet.txt](tunneling/vpn/vpn_mysafenet.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_mysafenet.txt) |
+| vpn_mysafenet | 22 | [vpn_mysafenet.txt](tunneling/vpn/vpn_mysafenet.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_mysafenet.txt) |
 | vpn_mysteriumvpn | 2 | [vpn_mysteriumvpn.txt](tunneling/vpn/vpn_mysteriumvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_mysteriumvpn.txt) |
 | vpn_mysystemservice | 2 | [vpn_mysystemservice.txt](tunneling/vpn/vpn_mysystemservice.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_mysystemservice.txt) |
 | vpn_myvpnhub | 1 | [vpn_myvpnhub.txt](tunneling/vpn/vpn_myvpnhub.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_myvpnhub.txt) |
 | vpn_myvpnonline | 2 | [vpn_myvpnonline.txt](tunneling/vpn/vpn_myvpnonline.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_myvpnonline.txt) |
 | vpn_nabu | 1 | [vpn_nabu.txt](tunneling/vpn/vpn_nabu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nabu.txt) |
 | vpn_namfg | 1 | [vpn_namfg.txt](tunneling/vpn/vpn_namfg.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_namfg.txt) |
-| vpn_napps1 | 7 | [vpn_napps1.txt](tunneling/vpn/vpn_napps1.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_napps1.txt) |
+| vpn_napps1 | 6 | [vpn_napps1.txt](tunneling/vpn/vpn_napps1.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_napps1.txt) |
 | vpn_napps2 | 7 | [vpn_napps2.txt](tunneling/vpn/vpn_napps2.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_napps2.txt) |
-| vpn_napps6 | 8 | [vpn_napps6.txt](tunneling/vpn/vpn_napps6.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_napps6.txt) |
+| vpn_napps6 | 7 | [vpn_napps6.txt](tunneling/vpn/vpn_napps6.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_napps6.txt) |
 | vpn_nasa | 1 | [vpn_nasa.txt](tunneling/vpn/vpn_nasa.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nasa.txt) |
 | vpn_natanvpn | 1 | [vpn_natanvpn.txt](tunneling/vpn/vpn_natanvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_natanvpn.txt) |
 | vpn_nationwide | 1 | [vpn_nationwide.txt](tunneling/vpn/vpn_nationwide.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nationwide.txt) |
@@ -4516,14 +4516,14 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_nnva | 1 | [vpn_nnva.txt](tunneling/vpn/vpn_nnva.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nnva.txt) |
 | vpn_nnvpn | 1 | [vpn_nnvpn.txt](tunneling/vpn/vpn_nnvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nnvpn.txt) |
 | vpn_noaa | 2 | [vpn_noaa.txt](tunneling/vpn/vpn_noaa.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_noaa.txt) |
-| vpn_nolagvpn | 1 | [vpn_nolagvpn.txt](tunneling/vpn/vpn_nolagvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nolagvpn.txt) |
+| vpn_nolagvpn | 2 | [vpn_nolagvpn.txt](tunneling/vpn/vpn_nolagvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nolagvpn.txt) |
 | vpn_nomadish | 1 | [vpn_nomadish.txt](tunneling/vpn/vpn_nomadish.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nomadish.txt) |
 | vpn_nordaccount | 8 | [vpn_nordaccount.txt](tunneling/vpn/vpn_nordaccount.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nordaccount.txt) |
 | vpn_nordcdn | 1 | [vpn_nordcdn.txt](tunneling/vpn/vpn_nordcdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nordcdn.txt) |
 | vpn_nordicsemi | 1 | [vpn_nordicsemi.txt](tunneling/vpn/vpn_nordicsemi.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nordicsemi.txt) |
-| vpn_nordlayer | 11 | [vpn_nordlayer.txt](tunneling/vpn/vpn_nordlayer.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nordlayer.txt) |
+| vpn_nordlayer | 9 | [vpn_nordlayer.txt](tunneling/vpn/vpn_nordlayer.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nordlayer.txt) |
 | vpn_nordmeccanica | 1 | [vpn_nordmeccanica.txt](tunneling/vpn/vpn_nordmeccanica.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nordmeccanica.txt) |
-| vpn_nordvpn | 8338 | [vpn_nordvpn.txt](tunneling/vpn/vpn_nordvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nordvpn.txt) |
+| vpn_nordvpn | 8167 | [vpn_nordvpn.txt](tunneling/vpn/vpn_nordvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nordvpn.txt) |
 | vpn_nordvpnteams | 2 | [vpn_nordvpnteams.txt](tunneling/vpn/vpn_nordvpnteams.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_nordvpnteams.txt) |
 | vpn_northghost | 1 | [vpn_northghost.txt](tunneling/vpn/vpn_northghost.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_northghost.txt) |
 | vpn_northmarq | 1 | [vpn_northmarq.txt](tunneling/vpn/vpn_northmarq.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_northmarq.txt) |
@@ -4608,10 +4608,10 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_opencloud | 1 | [vpn_opencloud.txt](tunneling/vpn/vpn_opencloud.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_opencloud.txt) |
 | vpn_opendns | 1 | [vpn_opendns.txt](tunneling/vpn/vpn_opendns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_opendns.txt) |
 | vpn_opengw | 1 | [vpn_opengw.txt](tunneling/vpn/vpn_opengw.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_opengw.txt) |
-| vpn_openips | 1060 | [vpn_openips.txt](tunneling/vpn/vpn_openips.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_openips.txt) |
+| vpn_openips | 1026 | [vpn_openips.txt](tunneling/vpn/vpn_openips.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_openips.txt) |
 | vpn_openproxylist | 1 | [vpn_openproxylist.txt](tunneling/vpn/vpn_openproxylist.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_openproxylist.txt) |
 | vpn_opentext | 1 | [vpn_opentext.txt](tunneling/vpn/vpn_opentext.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_opentext.txt) |
-| vpn_openvpn | 25 | [vpn_openvpn.txt](tunneling/vpn/vpn_openvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_openvpn.txt) |
+| vpn_openvpn | 26 | [vpn_openvpn.txt](tunneling/vpn/vpn_openvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_openvpn.txt) |
 | vpn_operatorwss | 1 | [vpn_operatorwss.txt](tunneling/vpn/vpn_operatorwss.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_operatorwss.txt) |
 | vpn_opg | 1 | [vpn_opg.txt](tunneling/vpn/vpn_opg.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_opg.txt) |
 | vpn_oppo | 2 | [vpn_oppo.txt](tunneling/vpn/vpn_oppo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_oppo.txt) |
@@ -4711,7 +4711,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_phoenix | 1 | [vpn_phoenix.txt](tunneling/vpn/vpn_phoenix.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_phoenix.txt) |
 | vpn_phosphorusonline | 2 | [vpn_phosphorusonline.txt](tunneling/vpn/vpn_phosphorusonline.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_phosphorusonline.txt) |
 | vpn_pianpianaichidezhuai | 1 | [vpn_pianpianaichidezhuai.txt](tunneling/vpn/vpn_pianpianaichidezhuai.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_pianpianaichidezhuai.txt) |
-| vpn_picknife | 2 | [vpn_picknife.txt](tunneling/vpn/vpn_picknife.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_picknife.txt) |
+| vpn_picknife | 1 | [vpn_picknife.txt](tunneling/vpn/vpn_picknife.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_picknife.txt) |
 | vpn_pinnacleliving | 1 | [vpn_pinnacleliving.txt](tunneling/vpn/vpn_pinnacleliving.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_pinnacleliving.txt) |
 | vpn_pinzhidesrt | 2 | [vpn_pinzhidesrt.txt](tunneling/vpn/vpn_pinzhidesrt.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_pinzhidesrt.txt) |
 | vpn_pioneer | 1 | [vpn_pioneer.txt](tunneling/vpn/vpn_pioneer.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_pioneer.txt) |
@@ -4736,7 +4736,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_pofm | 1 | [vpn_pofm.txt](tunneling/vpn/vpn_pofm.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_pofm.txt) |
 | vpn_point32health | 1 | [vpn_point32health.txt](tunneling/vpn/vpn_point32health.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_point32health.txt) |
 | vpn_pointed | 7 | [vpn_pointed.txt](tunneling/vpn/vpn_pointed.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_pointed.txt) |
-| vpn_pointtoserver | 237 | [vpn_pointtoserver.txt](tunneling/vpn/vpn_pointtoserver.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_pointtoserver.txt) |
+| vpn_pointtoserver | 227 | [vpn_pointtoserver.txt](tunneling/vpn/vpn_pointtoserver.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_pointtoserver.txt) |
 | vpn_polarisind | 1 | [vpn_polarisind.txt](tunneling/vpn/vpn_polarisind.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_polarisind.txt) |
 | vpn_polembros | 1 | [vpn_polembros.txt](tunneling/vpn/vpn_polembros.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_polembros.txt) |
 | vpn_polishairports | 1 | [vpn_polishairports.txt](tunneling/vpn/vpn_polishairports.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_polishairports.txt) |
@@ -4767,17 +4767,17 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_privatevpn | 1 | [vpn_privatevpn.txt](tunneling/vpn/vpn_privatevpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_privatevpn.txt) |
 | vpn_privoravpn | 1 | [vpn_privoravpn.txt](tunneling/vpn/vpn_privoravpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_privoravpn.txt) |
 | vpn_prmdom | 1 | [vpn_prmdom.txt](tunneling/vpn/vpn_prmdom.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_prmdom.txt) |
-| vpn_prmsrvs | 922 | [vpn_prmsrvs.txt](tunneling/vpn/vpn_prmsrvs.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_prmsrvs.txt) |
+| vpn_prmsrvs | 911 | [vpn_prmsrvs.txt](tunneling/vpn/vpn_prmsrvs.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_prmsrvs.txt) |
 | vpn_procentricvpn | 1 | [vpn_procentricvpn.txt](tunneling/vpn/vpn_procentricvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_procentricvpn.txt) |
 | vpn_products | 1 | [vpn_products.txt](tunneling/vpn/vpn_products.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_products.txt) |
 | vpn_progressrail | 1 | [vpn_progressrail.txt](tunneling/vpn/vpn_progressrail.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_progressrail.txt) |
 | vpn_prohidef | 1 | [vpn_prohidef.txt](tunneling/vpn/vpn_prohidef.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_prohidef.txt) |
 | vpn_projectorbit | 1 | [vpn_projectorbit.txt](tunneling/vpn/vpn_projectorbit.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_projectorbit.txt) |
 | vpn_prostovpn | 2 | [vpn_prostovpn.txt](tunneling/vpn/vpn_prostovpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_prostovpn.txt) |
-| vpn_protectmyip | 35 | [vpn_protectmyip.txt](tunneling/vpn/vpn_protectmyip.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_protectmyip.txt) |
-| vpn_proton | 57 | [vpn_proton.txt](tunneling/vpn/vpn_proton.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_proton.txt) |
+| vpn_protectmyip | 34 | [vpn_protectmyip.txt](tunneling/vpn/vpn_protectmyip.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_protectmyip.txt) |
+| vpn_proton | 55 | [vpn_proton.txt](tunneling/vpn/vpn_proton.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_proton.txt) |
 | vpn_protondownload | 1 | [vpn_protondownload.txt](tunneling/vpn/vpn_protondownload.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_protondownload.txt) |
-| vpn_protonvpn | 1723 | [vpn_protonvpn.txt](tunneling/vpn/vpn_protonvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_protonvpn.txt) |
+| vpn_protonvpn | 1672 | [vpn_protonvpn.txt](tunneling/vpn/vpn_protonvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_protonvpn.txt) |
 | vpn_protonweb | 1 | [vpn_protonweb.txt](tunneling/vpn/vpn_protonweb.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_protonweb.txt) |
 | vpn_provpn | 1 | [vpn_provpn.txt](tunneling/vpn/vpn_provpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_provpn.txt) |
 | vpn_proxfree | 1 | [vpn_proxfree.txt](tunneling/vpn/vpn_proxfree.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_proxfree.txt) |
@@ -4789,7 +4789,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_proxynova | 1 | [vpn_proxynova.txt](tunneling/vpn/vpn_proxynova.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_proxynova.txt) |
 | vpn_proxyscan | 1 | [vpn_proxyscan.txt](tunneling/vpn/vpn_proxyscan.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_proxyscan.txt) |
 | vpn_proxyscrape | 1 | [vpn_proxyscrape.txt](tunneling/vpn/vpn_proxyscrape.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_proxyscrape.txt) |
-| vpn_proxysite | 4 | [vpn_proxysite.txt](tunneling/vpn/vpn_proxysite.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_proxysite.txt) |
+| vpn_proxysite | 3 | [vpn_proxysite.txt](tunneling/vpn/vpn_proxysite.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_proxysite.txt) |
 | vpn_proxyway | 1 | [vpn_proxyway.txt](tunneling/vpn/vpn_proxyway.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_proxyway.txt) |
 | vpn_proxyyoutube | 1 | [vpn_proxyyoutube.txt](tunneling/vpn/vpn_proxyyoutube.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_proxyyoutube.txt) |
 | vpn_prvxvpn | 1 | [vpn_prvxvpn.txt](tunneling/vpn/vpn_prvxvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_prvxvpn.txt) |
@@ -4804,9 +4804,9 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_pulsen | 1 | [vpn_pulsen.txt](tunneling/vpn/vpn_pulsen.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_pulsen.txt) |
 | vpn_purdue | 1 | [vpn_purdue.txt](tunneling/vpn/vpn_purdue.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_purdue.txt) |
 | vpn_puredome | 3 | [vpn_puredome.txt](tunneling/vpn/vpn_puredome.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_puredome.txt) |
-| vpn_purevpn | 13 | [vpn_purevpn.txt](tunneling/vpn/vpn_purevpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_purevpn.txt) |
+| vpn_purevpn | 12 | [vpn_purevpn.txt](tunneling/vpn/vpn_purevpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_purevpn.txt) |
 | vpn_purevpntools | 2 | [vpn_purevpntools.txt](tunneling/vpn/vpn_purevpntools.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_purevpntools.txt) |
-| vpn_pursuant | 8 | [vpn_pursuant.txt](tunneling/vpn/vpn_pursuant.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_pursuant.txt) |
+| vpn_pursuant | 9 | [vpn_pursuant.txt](tunneling/vpn/vpn_pursuant.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_pursuant.txt) |
 | vpn_pushvpn | 1 | [vpn_pushvpn.txt](tunneling/vpn/vpn_pushvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_pushvpn.txt) |
 | vpn_pvamu | 1 | [vpn_pvamu.txt](tunneling/vpn/vpn_pvamu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_pvamu.txt) |
 | vpn_pvpn | 1 | [vpn_pvpn.txt](tunneling/vpn/vpn_pvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_pvpn.txt) |
@@ -4826,7 +4826,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_qualfon | 1 | [vpn_qualfon.txt](tunneling/vpn/vpn_qualfon.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_qualfon.txt) |
 | vpn_qualtrics | 1 | [vpn_qualtrics.txt](tunneling/vpn/vpn_qualtrics.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_qualtrics.txt) |
 | vpn_questdiagnostics | 2 | [vpn_questdiagnostics.txt](tunneling/vpn/vpn_questdiagnostics.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_questdiagnostics.txt) |
-| vpn_quickcache | 9 | [vpn_quickcache.txt](tunneling/vpn/vpn_quickcache.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_quickcache.txt) |
+| vpn_quickcache | 10 | [vpn_quickcache.txt](tunneling/vpn/vpn_quickcache.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_quickcache.txt) |
 | vpn_quickvpn11 | 2 | [vpn_quickvpn11.txt](tunneling/vpn/vpn_quickvpn11.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_quickvpn11.txt) |
 | vpn_r2 | 1 | [vpn_r2.txt](tunneling/vpn/vpn_r2.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_r2.txt) |
 | vpn_radissonhotels | 1 | [vpn_radissonhotels.txt](tunneling/vpn/vpn_radissonhotels.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_radissonhotels.txt) |
@@ -4907,7 +4907,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_sacmi | 1 | [vpn_sacmi.txt](tunneling/vpn/vpn_sacmi.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sacmi.txt) |
 | vpn_sacpinfo | 1 | [vpn_sacpinfo.txt](tunneling/vpn/vpn_sacpinfo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sacpinfo.txt) |
 | vpn_safaricom | 1 | [vpn_safaricom.txt](tunneling/vpn/vpn_safaricom.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_safaricom.txt) |
-| vpn_saferip | 1 | [vpn_saferip.txt](tunneling/vpn/vpn_saferip.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_saferip.txt) |
+| vpn_saferip | 2 | [vpn_saferip.txt](tunneling/vpn/vpn_saferip.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_saferip.txt) |
 | vpn_safersoftware | 1 | [vpn_safersoftware.txt](tunneling/vpn/vpn_safersoftware.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_safersoftware.txt) |
 | vpn_safervpn | 1 | [vpn_safervpn.txt](tunneling/vpn/vpn_safervpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_safervpn.txt) |
 | vpn_safeshellvpn | 1 | [vpn_safeshellvpn.txt](tunneling/vpn/vpn_safeshellvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_safeshellvpn.txt) |
@@ -4942,13 +4942,13 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_sbjct | 6 | [vpn_sbjct.txt](tunneling/vpn/vpn_sbjct.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sbjct.txt) |
 | vpn_sbmoffshore | 2 | [vpn_sbmoffshore.txt](tunneling/vpn/vpn_sbmoffshore.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sbmoffshore.txt) |
 | vpn_scandiums | 1 | [vpn_scandiums.txt](tunneling/vpn/vpn_scandiums.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_scandiums.txt) |
-| vpn_scanners | 6 | [vpn_scanners.txt](tunneling/vpn/vpn_scanners.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_scanners.txt) |
+| vpn_scanners | 5 | [vpn_scanners.txt](tunneling/vpn/vpn_scanners.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_scanners.txt) |
 | vpn_schiphol | 1 | [vpn_schiphol.txt](tunneling/vpn/vpn_schiphol.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_schiphol.txt) |
 | vpn_scholastic | 2 | [vpn_scholastic.txt](tunneling/vpn/vpn_scholastic.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_scholastic.txt) |
 | vpn_schoolcomminicate | 1 | [vpn_schoolcomminicate.txt](tunneling/vpn/vpn_schoolcomminicate.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_schoolcomminicate.txt) |
 | vpn_schott | 1 | [vpn_schott.txt](tunneling/vpn/vpn_schott.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_schott.txt) |
 | vpn_schwerterorchideenzucht | 1 | [vpn_schwerterorchideenzucht.txt](tunneling/vpn/vpn_schwerterorchideenzucht.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_schwerterorchideenzucht.txt) |
-| vpn_sciences | 7 | [vpn_sciences.txt](tunneling/vpn/vpn_sciences.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sciences.txt) |
+| vpn_sciences | 8 | [vpn_sciences.txt](tunneling/vpn/vpn_sciences.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sciences.txt) |
 | vpn_scoreltd | 1 | [vpn_scoreltd.txt](tunneling/vpn/vpn_scoreltd.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_scoreltd.txt) |
 | vpn_scottsports | 1 | [vpn_scottsports.txt](tunneling/vpn/vpn_scottsports.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_scottsports.txt) |
 | vpn_scroogevpn | 2 | [vpn_scroogevpn.txt](tunneling/vpn/vpn_scroogevpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_scroogevpn.txt) |
@@ -4960,7 +4960,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_seat | 1 | [vpn_seat.txt](tunneling/vpn/vpn_seat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_seat.txt) |
 | vpn_secure24 | 6 | [vpn_secure24.txt](tunneling/vpn/vpn_secure24.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_secure24.txt) |
 | vpn_secureaccessfed | 3 | [vpn_secureaccessfed.txt](tunneling/vpn/vpn_secureaccessfed.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_secureaccessfed.txt) |
-| vpn_securestartup | 1 | [vpn_securestartup.txt](tunneling/vpn/vpn_securestartup.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_securestartup.txt) |
+| vpn_securestartup | 2 | [vpn_securestartup.txt](tunneling/vpn/vpn_securestartup.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_securestartup.txt) |
 | vpn_security | 2 | [vpn_security.txt](tunneling/vpn/vpn_security.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_security.txt) |
 | vpn_securly | 9 | [vpn_securly.txt](tunneling/vpn/vpn_securly.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_securly.txt) |
 | vpn_seepervpn | 2 | [vpn_seepervpn.txt](tunneling/vpn/vpn_seepervpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_seepervpn.txt) |
@@ -4984,7 +4984,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_servicessyntax | 1 | [vpn_servicessyntax.txt](tunneling/vpn/vpn_servicessyntax.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_servicessyntax.txt) |
 | vpn_setupvpn | 7 | [vpn_setupvpn.txt](tunneling/vpn/vpn_setupvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_setupvpn.txt) |
 | vpn_severfield | 1 | [vpn_severfield.txt](tunneling/vpn/vpn_severfield.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_severfield.txt) |
-| vpn_severity | 1558 | [vpn_severity.txt](tunneling/vpn/vpn_severity.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_severity.txt) |
+| vpn_severity | 1501 | [vpn_severity.txt](tunneling/vpn/vpn_severity.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_severity.txt) |
 | vpn_sfbcic | 1 | [vpn_sfbcic.txt](tunneling/vpn/vpn_sfbcic.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sfbcic.txt) |
 | vpn_sfctdzvpntuau | 1 | [vpn_sfctdzvpntuau.txt](tunneling/vpn/vpn_sfctdzvpntuau.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sfctdzvpntuau.txt) |
 | vpn_sfgiants | 1 | [vpn_sfgiants.txt](tunneling/vpn/vpn_sfgiants.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sfgiants.txt) |
@@ -4992,7 +4992,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_sfiqplatform | 1 | [vpn_sfiqplatform.txt](tunneling/vpn/vpn_sfiqplatform.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sfiqplatform.txt) |
 | vpn_sgbnl | 1 | [vpn_sgbnl.txt](tunneling/vpn/vpn_sgbnl.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sgbnl.txt) |
 | vpn_sgws | 1 | [vpn_sgws.txt](tunneling/vpn/vpn_sgws.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sgws.txt) |
-| vpn_shaft | 10 | [vpn_shaft.txt](tunneling/vpn/vpn_shaft.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_shaft.txt) |
+| vpn_shaft | 9 | [vpn_shaft.txt](tunneling/vpn/vpn_shaft.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_shaft.txt) |
 | vpn_shanlinvpn | 1 | [vpn_shanlinvpn.txt](tunneling/vpn/vpn_shanlinvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_shanlinvpn.txt) |
 | vpn_shelfdrilling | 1 | [vpn_shelfdrilling.txt](tunneling/vpn/vpn_shelfdrilling.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_shelfdrilling.txt) |
 | vpn_shepwedd | 1 | [vpn_shepwedd.txt](tunneling/vpn/vpn_shepwedd.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_shepwedd.txt) |
@@ -5060,13 +5060,13 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_sodiaal | 1 | [vpn_sodiaal.txt](tunneling/vpn/vpn_sodiaal.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sodiaal.txt) |
 | vpn_sofavpn | 1 | [vpn_sofavpn.txt](tunneling/vpn/vpn_sofavpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sofavpn.txt) |
 | vpn_softether | 1 | [vpn_softether.txt](tunneling/vpn/vpn_softether.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_softether.txt) |
-| vpn_softicus | 1 | [vpn_softicus.txt](tunneling/vpn/vpn_softicus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_softicus.txt) |
+| vpn_softicus | 2 | [vpn_softicus.txt](tunneling/vpn/vpn_softicus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_softicus.txt) |
 | vpn_softlayer | 1 | [vpn_softlayer.txt](tunneling/vpn/vpn_softlayer.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_softlayer.txt) |
 | vpn_softnour | 1 | [vpn_softnour.txt](tunneling/vpn/vpn_softnour.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_softnour.txt) |
-| vpn_softonic | 2 | [vpn_softonic.txt](tunneling/vpn/vpn_softonic.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_softonic.txt) |
+| vpn_softonic | 1 | [vpn_softonic.txt](tunneling/vpn/vpn_softonic.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_softonic.txt) |
 | vpn_sogovpn | 1 | [vpn_sogovpn.txt](tunneling/vpn/vpn_sogovpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sogovpn.txt) |
 | vpn_soil | 1 | [vpn_soil.txt](tunneling/vpn/vpn_soil.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_soil.txt) |
-| vpn_sola55 | 1 | [vpn_sola55.txt](tunneling/vpn/vpn_sola55.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sola55.txt) |
+| vpn_sola55 | 2 | [vpn_sola55.txt](tunneling/vpn/vpn_sola55.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sola55.txt) |
 | vpn_solaivpn | 3 | [vpn_solaivpn.txt](tunneling/vpn/vpn_solaivpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_solaivpn.txt) |
 | vpn_solarsie | 1 | [vpn_solarsie.txt](tunneling/vpn/vpn_solarsie.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_solarsie.txt) |
 | vpn_solistica | 1 | [vpn_solistica.txt](tunneling/vpn/vpn_solistica.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_solistica.txt) |
@@ -5090,9 +5090,9 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_spectrumbrands | 1 | [vpn_spectrumbrands.txt](tunneling/vpn/vpn_spectrumbrands.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_spectrumbrands.txt) |
 | vpn_spectrumvpn | 1 | [vpn_spectrumvpn.txt](tunneling/vpn/vpn_spectrumvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_spectrumvpn.txt) |
 | vpn_speedcdn | 4 | [vpn_speedcdn.txt](tunneling/vpn/vpn_speedcdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_speedcdn.txt) |
-| vpn_speedserve | 2 | [vpn_speedserve.txt](tunneling/vpn/vpn_speedserve.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_speedserve.txt) |
-| vpn_speedstream | 7 | [vpn_speedstream.txt](tunneling/vpn/vpn_speedstream.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_speedstream.txt) |
-| vpn_speedycdn | 7 | [vpn_speedycdn.txt](tunneling/vpn/vpn_speedycdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_speedycdn.txt) |
+| vpn_speedserve | 1 | [vpn_speedserve.txt](tunneling/vpn/vpn_speedserve.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_speedserve.txt) |
+| vpn_speedstream | 9 | [vpn_speedstream.txt](tunneling/vpn/vpn_speedstream.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_speedstream.txt) |
+| vpn_speedycdn | 6 | [vpn_speedycdn.txt](tunneling/vpn/vpn_speedycdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_speedycdn.txt) |
 | vpn_splittool | 1 | [vpn_splittool.txt](tunneling/vpn/vpn_splittool.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_splittool.txt) |
 | vpn_splunk | 2 | [vpn_splunk.txt](tunneling/vpn/vpn_splunk.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_splunk.txt) |
 | vpn_spoken | 10 | [vpn_spoken.txt](tunneling/vpn/vpn_spoken.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_spoken.txt) |
@@ -5114,11 +5114,11 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_starfirenetwork | 1 | [vpn_starfirenetwork.txt](tunneling/vpn/vpn_starfirenetwork.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_starfirenetwork.txt) |
 | vpn_starlingbank | 1 | [vpn_starlingbank.txt](tunneling/vpn/vpn_starlingbank.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_starlingbank.txt) |
 | vpn_staticfn | 1 | [vpn_staticfn.txt](tunneling/vpn/vpn_staticfn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_staticfn.txt) |
-| vpn_staticnetcontent | 901 | [vpn_staticnetcontent.txt](tunneling/vpn/vpn_staticnetcontent.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_staticnetcontent.txt) |
+| vpn_staticnetcontent | 894 | [vpn_staticnetcontent.txt](tunneling/vpn/vpn_staticnetcontent.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_staticnetcontent.txt) |
 | vpn_staticrush | 4 | [vpn_staticrush.txt](tunneling/vpn/vpn_staticrush.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_staticrush.txt) |
 | vpn_staticstream | 27 | [vpn_staticstream.txt](tunneling/vpn/vpn_staticstream.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_staticstream.txt) |
 | vpn_statsnet | 2 | [vpn_statsnet.txt](tunneling/vpn/vpn_statsnet.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_statsnet.txt) |
-| vpn_steganos | 5 | [vpn_steganos.txt](tunneling/vpn/vpn_steganos.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_steganos.txt) |
+| vpn_steganos | 6 | [vpn_steganos.txt](tunneling/vpn/vpn_steganos.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_steganos.txt) |
 | vpn_stena | 1 | [vpn_stena.txt](tunneling/vpn/vpn_stena.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_stena.txt) |
 | vpn_sterlingcapitalmgt | 1 | [vpn_sterlingcapitalmgt.txt](tunneling/vpn/vpn_sterlingcapitalmgt.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_sterlingcapitalmgt.txt) |
 | vpn_stevanatogroup | 1 | [vpn_stevanatogroup.txt](tunneling/vpn/vpn_stevanatogroup.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_stevanatogroup.txt) |
@@ -5131,14 +5131,14 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_stovpn | 3 | [vpn_stovpn.txt](tunneling/vpn/vpn_stovpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_stovpn.txt) |
 | vpn_straumann | 1 | [vpn_straumann.txt](tunneling/vpn/vpn_straumann.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_straumann.txt) |
 | vpn_streamlined | 1 | [vpn_streamlined.txt](tunneling/vpn/vpn_streamlined.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_streamlined.txt) |
-| vpn_streamlineddata | 7 | [vpn_streamlineddata.txt](tunneling/vpn/vpn_streamlineddata.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_streamlineddata.txt) |
+| vpn_streamlineddata | 8 | [vpn_streamlineddata.txt](tunneling/vpn/vpn_streamlineddata.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_streamlineddata.txt) |
 | vpn_stretchoid | 1 | [vpn_stretchoid.txt](tunneling/vpn/vpn_stretchoid.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_stretchoid.txt) |
 | vpn_stricklandinsgroup | 1 | [vpn_stricklandinsgroup.txt](tunneling/vpn/vpn_stricklandinsgroup.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_stricklandinsgroup.txt) |
 | vpn_strongvpn | 1 | [vpn_strongvpn.txt](tunneling/vpn/vpn_strongvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_strongvpn.txt) |
 | vpn_stryker | 1 | [vpn_stryker.txt](tunneling/vpn/vpn_stryker.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_stryker.txt) |
 | vpn_studystudyup | 1 | [vpn_studystudyup.txt](tunneling/vpn/vpn_studystudyup.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_studystudyup.txt) |
 | vpn_stw | 1 | [vpn_stw.txt](tunneling/vpn/vpn_stw.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_stw.txt) |
-| vpn_su89cdn | 166 | [vpn_su89cdn.txt](tunneling/vpn/vpn_su89cdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_su89cdn.txt) |
+| vpn_su89cdn | 167 | [vpn_su89cdn.txt](tunneling/vpn/vpn_su89cdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_su89cdn.txt) |
 | vpn_subscan | 1 | [vpn_subscan.txt](tunneling/vpn/vpn_subscan.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_subscan.txt) |
 | vpn_subssosavpn | 1 | [vpn_subssosavpn.txt](tunneling/vpn/vpn_subssosavpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_subssosavpn.txt) |
 | vpn_substack | 1 | [vpn_substack.txt](tunneling/vpn/vpn_substack.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_substack.txt) |
@@ -5157,7 +5157,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_suppliervpnfiatria | 1 | [vpn_suppliervpnfiatria.txt](tunneling/vpn/vpn_suppliervpnfiatria.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_suppliervpnfiatria.txt) |
 | vpn_suppliesonthefly | 2 | [vpn_suppliesonthefly.txt](tunneling/vpn/vpn_suppliesonthefly.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_suppliesonthefly.txt) |
 | vpn_supporttdsynnex | 1 | [vpn_supporttdsynnex.txt](tunneling/vpn/vpn_supporttdsynnex.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_supporttdsynnex.txt) |
-| vpn_surfshark | 304 | [vpn_surfshark.txt](tunneling/vpn/vpn_surfshark.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_surfshark.txt) |
+| vpn_surfshark | 306 | [vpn_surfshark.txt](tunneling/vpn/vpn_surfshark.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_surfshark.txt) |
 | vpn_surfsharkdns | 1 | [vpn_surfsharkdns.txt](tunneling/vpn/vpn_surfsharkdns.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_surfsharkdns.txt) |
 | vpn_surfsharkstatus | 1 | [vpn_surfsharkstatus.txt](tunneling/vpn/vpn_surfsharkstatus.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_surfsharkstatus.txt) |
 | vpn_surprise | 9 | [vpn_surprise.txt](tunneling/vpn/vpn_surprise.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_surprise.txt) |
@@ -5190,7 +5190,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_talbots | 1 | [vpn_talbots.txt](tunneling/vpn/vpn_talbots.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_talbots.txt) |
 | vpn_talend | 1 | [vpn_talend.txt](tunneling/vpn/vpn_talend.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_talend.txt) |
 | vpn_talk2m | 4 | [vpn_talk2m.txt](tunneling/vpn/vpn_talk2m.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_talk2m.txt) |
-| vpn_talked | 7 | [vpn_talked.txt](tunneling/vpn/vpn_talked.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_talked.txt) |
+| vpn_talked | 6 | [vpn_talked.txt](tunneling/vpn/vpn_talked.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_talked.txt) |
 | vpn_talosenergy | 1 | [vpn_talosenergy.txt](tunneling/vpn/vpn_talosenergy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_talosenergy.txt) |
 | vpn_tamam | 2 | [vpn_tamam.txt](tunneling/vpn/vpn_tamam.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_tamam.txt) |
 | vpn_tamhsc | 1 | [vpn_tamhsc.txt](tunneling/vpn/vpn_tamhsc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_tamhsc.txt) |
@@ -5214,7 +5214,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_teachingstrategies | 1 | [vpn_teachingstrategies.txt](tunneling/vpn/vpn_teachingstrategies.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_teachingstrategies.txt) |
 | vpn_teamsystem | 2 | [vpn_teamsystem.txt](tunneling/vpn/vpn_teamsystem.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_teamsystem.txt) |
 | vpn_techdata | 15 | [vpn_techdata.txt](tunneling/vpn/vpn_techdata.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_techdata.txt) |
-| vpn_techdatacdn | 1 | [vpn_techdatacdn.txt](tunneling/vpn/vpn_techdatacdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_techdatacdn.txt) |
+| vpn_techdatacdn | 2 | [vpn_techdatacdn.txt](tunneling/vpn/vpn_techdatacdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_techdatacdn.txt) |
 | vpn_technogym | 2 | [vpn_technogym.txt](tunneling/vpn/vpn_technogym.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_technogym.txt) |
 | vpn_techsmith | 1 | [vpn_techsmith.txt](tunneling/vpn/vpn_techsmith.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_techsmith.txt) |
 | vpn_techstreamsupport | 1 | [vpn_techstreamsupport.txt](tunneling/vpn/vpn_techstreamsupport.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_techstreamsupport.txt) |
@@ -5229,7 +5229,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_telekomvpn | 1 | [vpn_telekomvpn.txt](tunneling/vpn/vpn_telekomvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_telekomvpn.txt) |
 | vpn_telemedti | 1 | [vpn_telemedti.txt](tunneling/vpn/vpn_telemedti.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_telemedti.txt) |
 | vpn_telia | 1 | [vpn_telia.txt](tunneling/vpn/vpn_telia.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_telia.txt) |
-| vpn_telleport | 26 | [vpn_telleport.txt](tunneling/vpn/vpn_telleport.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_telleport.txt) |
+| vpn_telleport | 27 | [vpn_telleport.txt](tunneling/vpn/vpn_telleport.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_telleport.txt) |
 | vpn_telmate | 1 | [vpn_telmate.txt](tunneling/vpn/vpn_telmate.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_telmate.txt) |
 | vpn_telmex | 1 | [vpn_telmex.txt](tunneling/vpn/vpn_telmex.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_telmex.txt) |
 | vpn_telogis | 8 | [vpn_telogis.txt](tunneling/vpn/vpn_telogis.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_telogis.txt) |
@@ -5280,7 +5280,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_titlefc | 1 | [vpn_titlefc.txt](tunneling/vpn/vpn_titlefc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_titlefc.txt) |
 | vpn_tkelevator | 1 | [vpn_tkelevator.txt](tunneling/vpn/vpn_tkelevator.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_tkelevator.txt) |
 | vpn_tktm | 2 | [vpn_tktm.txt](tunneling/vpn/vpn_tktm.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_tktm.txt) |
-| vpn_tlsext | 79 | [vpn_tlsext.txt](tunneling/vpn/vpn_tlsext.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_tlsext.txt) |
+| vpn_tlsext | 75 | [vpn_tlsext.txt](tunneling/vpn/vpn_tlsext.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_tlsext.txt) |
 | vpn_tlsvpn | 2 | [vpn_tlsvpn.txt](tunneling/vpn/vpn_tlsvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_tlsvpn.txt) |
 | vpn_tm3abp107hides | 2 | [vpn_tm3abp107hides.txt](tunneling/vpn/vpn_tm3abp107hides.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_tm3abp107hides.txt) |
 | vpn_tmobile | 5 | [vpn_tmobile.txt](tunneling/vpn/vpn_tmobile.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_tmobile.txt) |
@@ -5305,14 +5305,14 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_toptown | 1 | [vpn_toptown.txt](tunneling/vpn/vpn_toptown.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_toptown.txt) |
 | vpn_topvpn | 1 | [vpn_topvpn.txt](tunneling/vpn/vpn_topvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_topvpn.txt) |
 | vpn_torrentvpn | 1 | [vpn_torrentvpn.txt](tunneling/vpn/vpn_torrentvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_torrentvpn.txt) |
-| vpn_totallyacdn | 823 | [vpn_totallyacdn.txt](tunneling/vpn/vpn_totallyacdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_totallyacdn.txt) |
+| vpn_totallyacdn | 841 | [vpn_totallyacdn.txt](tunneling/vpn/vpn_totallyacdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_totallyacdn.txt) |
 | vpn_totalvpn | 1 | [vpn_totalvpn.txt](tunneling/vpn/vpn_totalvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_totalvpn.txt) |
 | vpn_totalvpnfree | 1 | [vpn_totalvpnfree.txt](tunneling/vpn/vpn_totalvpnfree.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_totalvpnfree.txt) |
 | vpn_touchstonecommunities | 1 | [vpn_touchstonecommunities.txt](tunneling/vpn/vpn_touchstonecommunities.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_touchstonecommunities.txt) |
-| vpn_touchvpn | 1 | [vpn_touchvpn.txt](tunneling/vpn/vpn_touchvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_touchvpn.txt) |
+| vpn_touchvpn | 2 | [vpn_touchvpn.txt](tunneling/vpn/vpn_touchvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_touchvpn.txt) |
 | vpn_towb | 1 | [vpn_towb.txt](tunneling/vpn/vpn_towb.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_towb.txt) |
 | vpn_toyotaindustries | 1 | [vpn_toyotaindustries.txt](tunneling/vpn/vpn_toyotaindustries.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_toyotaindustries.txt) |
-| vpn_trafcfy | 114 | [vpn_trafcfy.txt](tunneling/vpn/vpn_trafcfy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_trafcfy.txt) |
+| vpn_trafcfy | 115 | [vpn_trafcfy.txt](tunneling/vpn/vpn_trafcfy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_trafcfy.txt) |
 | vpn_trafficmanager | 1 | [vpn_trafficmanager.txt](tunneling/vpn/vpn_trafficmanager.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_trafficmanager.txt) |
 | vpn_trafflink | 9 | [vpn_trafflink.txt](tunneling/vpn/vpn_trafflink.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_trafflink.txt) |
 | vpn_trafnet | 1 | [vpn_trafnet.txt](tunneling/vpn/vpn_trafnet.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_trafnet.txt) |
@@ -5532,6 +5532,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_updated20260427t001228z | 1 | [vpn_updated20260427t001228z.txt](tunneling/vpn/vpn_updated20260427t001228z.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_updated20260427t001228z.txt) |
 | vpn_updated20260428t001141z | 1 | [vpn_updated20260428t001141z.txt](tunneling/vpn/vpn_updated20260428t001141z.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_updated20260428t001141z.txt) |
 | vpn_updated20260429t001226z | 1 | [vpn_updated20260429t001226z.txt](tunneling/vpn/vpn_updated20260429t001226z.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_updated20260429t001226z.txt) |
+| vpn_updated20260430t001240z | 1 | [vpn_updated20260430t001240z.txt](tunneling/vpn/vpn_updated20260430t001240z.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_updated20260430t001240z.txt) |
 | vpn_upenn | 3 | [vpn_upenn.txt](tunneling/vpn/vpn_upenn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_upenn.txt) |
 | vpn_uplinkdata | 1 | [vpn_uplinkdata.txt](tunneling/vpn/vpn_uplinkdata.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_uplinkdata.txt) |
 | vpn_upmc | 1 | [vpn_upmc.txt](tunneling/vpn/vpn_upmc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_upmc.txt) |
@@ -5542,7 +5543,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_upv | 1 | [vpn_upv.txt](tunneling/vpn/vpn_upv.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_upv.txt) |
 | vpn_uqac | 1 | [vpn_uqac.txt](tunneling/vpn/vpn_uqac.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_uqac.txt) |
 | vpn_ur | 1 | [vpn_ur.txt](tunneling/vpn/vpn_ur.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_ur.txt) |
-| vpn_urbanvpn | 276 | [vpn_urbanvpn.txt](tunneling/vpn/vpn_urbanvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_urbanvpn.txt) |
+| vpn_urbanvpn | 273 | [vpn_urbanvpn.txt](tunneling/vpn/vpn_urbanvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_urbanvpn.txt) |
 | vpn_us4u | 2 | [vpn_us4u.txt](tunneling/vpn/vpn_us4u.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_us4u.txt) |
 | vpn_uscc | 3 | [vpn_uscc.txt](tunneling/vpn/vpn_uscc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_uscc.txt) |
 | vpn_useducatlon | 1 | [vpn_useducatlon.txt](tunneling/vpn/vpn_useducatlon.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_useducatlon.txt) |
@@ -5585,7 +5586,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_vassar | 1 | [vpn_vassar.txt](tunneling/vpn/vpn_vassar.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_vassar.txt) |
 | vpn_vd | 1 | [vpn_vd.txt](tunneling/vpn/vpn_vd.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_vd.txt) |
 | vpn_vdohide | 2 | [vpn_vdohide.txt](tunneling/vpn/vpn_vdohide.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_vdohide.txt) |
-| vpn_veepn | 18 | [vpn_veepn.txt](tunneling/vpn/vpn_veepn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_veepn.txt) |
+| vpn_veepn | 17 | [vpn_veepn.txt](tunneling/vpn/vpn_veepn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_veepn.txt) |
 | vpn_velux | 1 | [vpn_velux.txt](tunneling/vpn/vpn_velux.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_velux.txt) |
 | vpn_velvetvpn | 1 | [vpn_velvetvpn.txt](tunneling/vpn/vpn_velvetvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_velvetvpn.txt) |
 | vpn_venatorcorp | 1 | [vpn_venatorcorp.txt](tunneling/vpn/vpn_venatorcorp.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_venatorcorp.txt) |
@@ -5712,7 +5713,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_vpntun | 1 | [vpn_vpntun.txt](tunneling/vpn/vpn_vpntun.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_vpntun.txt) |
 | vpn_vpntxvpn | 2 | [vpn_vpntxvpn.txt](tunneling/vpn/vpn_vpntxvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_vpntxvpn.txt) |
 | vpn_vpnunlimited | 3 | [vpn_vpnunlimited.txt](tunneling/vpn/vpn_vpnunlimited.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_vpnunlimited.txt) |
-| vpn_vpnunlimitedapp | 72 | [vpn_vpnunlimitedapp.txt](tunneling/vpn/vpn_vpnunlimitedapp.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_vpnunlimitedapp.txt) |
+| vpn_vpnunlimitedapp | 78 | [vpn_vpnunlimitedapp.txt](tunneling/vpn/vpn_vpnunlimitedapp.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_vpnunlimitedapp.txt) |
 | vpn_vpnusers | 2 | [vpn_vpnusers.txt](tunneling/vpn/vpn_vpnusers.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_vpnusers.txt) |
 | vpn_vpnv | 1 | [vpn_vpnv.txt](tunneling/vpn/vpn_vpnv.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_vpnv.txt) |
 | vpn_vpnvezdehod | 2 | [vpn_vpnvezdehod.txt](tunneling/vpn/vpn_vpnvezdehod.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_vpnvezdehod.txt) |
@@ -5756,7 +5757,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_webhelp | 1 | [vpn_webhelp.txt](tunneling/vpn/vpn_webhelp.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_webhelp.txt) |
 | vpn_webproxy | 1 | [vpn_webproxy.txt](tunneling/vpn/vpn_webproxy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_webproxy.txt) |
 | vpn_webshare | 1 | [vpn_webshare.txt](tunneling/vpn/vpn_webshare.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_webshare.txt) |
-| vpn_webshots | 9 | [vpn_webshots.txt](tunneling/vpn/vpn_webshots.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_webshots.txt) |
+| vpn_webshots | 8 | [vpn_webshots.txt](tunneling/vpn/vpn_webshots.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_webshots.txt) |
 | vpn_websmatrix | 1 | [vpn_websmatrix.txt](tunneling/vpn/vpn_websmatrix.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_websmatrix.txt) |
 | vpn_webstat | 1 | [vpn_webstat.txt](tunneling/vpn/vpn_webstat.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_webstat.txt) |
 | vpn_webtec | 1 | [vpn_webtec.txt](tunneling/vpn/vpn_webtec.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_webtec.txt) |
@@ -5770,7 +5771,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_wgeld | 1 | [vpn_wgeld.txt](tunneling/vpn/vpn_wgeld.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_wgeld.txt) |
 | vpn_wgu | 1 | [vpn_wgu.txt](tunneling/vpn/vpn_wgu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_wgu.txt) |
 | vpn_wheelpros | 1 | [vpn_wheelpros.txt](tunneling/vpn/vpn_wheelpros.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_wheelpros.txt) |
-| vpn_whiskergalaxy | 915 | [vpn_whiskergalaxy.txt](tunneling/vpn/vpn_whiskergalaxy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_whiskergalaxy.txt) |
+| vpn_whiskergalaxy | 894 | [vpn_whiskergalaxy.txt](tunneling/vpn/vpn_whiskergalaxy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_whiskergalaxy.txt) |
 | vpn_whitecasecom | 1 | [vpn_whitecasecom.txt](tunneling/vpn/vpn_whitecasecom.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_whitecasecom.txt) |
 | vpn_whitehatsec | 1 | [vpn_whitehatsec.txt](tunneling/vpn/vpn_whitehatsec.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_whitehatsec.txt) |
 | vpn_whlaustralasia | 1 | [vpn_whlaustralasia.txt](tunneling/vpn/vpn_whlaustralasia.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_whlaustralasia.txt) |
@@ -5782,7 +5783,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_wildfirevpn | 1 | [vpn_wildfirevpn.txt](tunneling/vpn/vpn_wildfirevpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_wildfirevpn.txt) |
 | vpn_williamhillplc | 1 | [vpn_williamhillplc.txt](tunneling/vpn/vpn_williamhillplc.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_williamhillplc.txt) |
 | vpn_wind | 1 | [vpn_wind.txt](tunneling/vpn/vpn_wind.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_wind.txt) |
-| vpn_windscribe | 1217 | [vpn_windscribe.txt](tunneling/vpn/vpn_windscribe.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_windscribe.txt) |
+| vpn_windscribe | 1194 | [vpn_windscribe.txt](tunneling/vpn/vpn_windscribe.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_windscribe.txt) |
 | vpn_windtre | 1 | [vpn_windtre.txt](tunneling/vpn/vpn_windtre.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_windtre.txt) |
 | vpn_wio | 1 | [vpn_wio.txt](tunneling/vpn/vpn_wio.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_wio.txt) |
 | vpn_wireguard | 2 | [vpn_wireguard.txt](tunneling/vpn/vpn_wireguard.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_wireguard.txt) |
@@ -5824,9 +5825,9 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_wyndhamvo | 1 | [vpn_wyndhamvo.txt](tunneling/vpn/vpn_wyndhamvo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_wyndhamvo.txt) |
 | vpn_wzshide | 1 | [vpn_wzshide.txt](tunneling/vpn/vpn_wzshide.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_wzshide.txt) |
 | vpn_x5 | 1 | [vpn_x5.txt](tunneling/vpn/vpn_x5.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_x5.txt) |
-| vpn_x9fnzrtl4x8pynsf | 7 | [vpn_x9fnzrtl4x8pynsf.txt](tunneling/vpn/vpn_x9fnzrtl4x8pynsf.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_x9fnzrtl4x8pynsf.txt) |
+| vpn_x9fnzrtl4x8pynsf | 6 | [vpn_x9fnzrtl4x8pynsf.txt](tunneling/vpn/vpn_x9fnzrtl4x8pynsf.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_x9fnzrtl4x8pynsf.txt) |
 | vpn_xacbank | 1 | [vpn_xacbank.txt](tunneling/vpn/vpn_xacbank.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_xacbank.txt) |
-| vpn_xcdnstatic | 125 | [vpn_xcdnstatic.txt](tunneling/vpn/vpn_xcdnstatic.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_xcdnstatic.txt) |
+| vpn_xcdnstatic | 124 | [vpn_xcdnstatic.txt](tunneling/vpn/vpn_xcdnstatic.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_xcdnstatic.txt) |
 | vpn_xenvpn | 1 | [vpn_xenvpn.txt](tunneling/vpn/vpn_xenvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_xenvpn.txt) |
 | vpn_xiaomi | 7 | [vpn_xiaomi.txt](tunneling/vpn/vpn_xiaomi.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_xiaomi.txt) |
 | vpn_xlnvpn | 1 | [vpn_xlnvpn.txt](tunneling/vpn/vpn_xlnvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_xlnvpn.txt) |
@@ -5845,7 +5846,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_yd6n63ptky | 1 | [vpn_yd6n63ptky.txt](tunneling/vpn/vpn_yd6n63ptky.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_yd6n63ptky.txt) |
 | vpn_yelpcorp | 21 | [vpn_yelpcorp.txt](tunneling/vpn/vpn_yelpcorp.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_yelpcorp.txt) |
 | vpn_yeti | 1 | [vpn_yeti.txt](tunneling/vpn/vpn_yeti.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_yeti.txt) |
-| vpn_yg5sjx5kzy | 129 | [vpn_yg5sjx5kzy.txt](tunneling/vpn/vpn_yg5sjx5kzy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_yg5sjx5kzy.txt) |
+| vpn_yg5sjx5kzy | 127 | [vpn_yg5sjx5kzy.txt](tunneling/vpn/vpn_yg5sjx5kzy.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_yg5sjx5kzy.txt) |
 | vpn_youngliving | 2 | [vpn_youngliving.txt](tunneling/vpn/vpn_youngliving.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_youngliving.txt) |
 | vpn_youngwilliams | 1 | [vpn_youngwilliams.txt](tunneling/vpn/vpn_youngwilliams.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_youngwilliams.txt) |
 | vpn_yourdomain | 2 | [vpn_yourdomain.txt](tunneling/vpn/vpn_yourdomain.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_yourdomain.txt) |
@@ -5857,7 +5858,7 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_zeku | 1 | [vpn_zeku.txt](tunneling/vpn/vpn_zeku.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zeku.txt) |
 | vpn_zendesk | 5 | [vpn_zendesk.txt](tunneling/vpn/vpn_zendesk.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zendesk.txt) |
 | vpn_zenguard | 2 | [vpn_zenguard.txt](tunneling/vpn/vpn_zenguard.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zenguard.txt) |
-| vpn_zenmate | 2 | [vpn_zenmate.txt](tunneling/vpn/vpn_zenmate.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zenmate.txt) |
+| vpn_zenmate | 3 | [vpn_zenmate.txt](tunneling/vpn/vpn_zenmate.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zenmate.txt) |
 | vpn_zenvpn | 1 | [vpn_zenvpn.txt](tunneling/vpn/vpn_zenvpn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zenvpn.txt) |
 | vpn_zgjuvpnlfhyfip | 2 | [vpn_zgjuvpnlfhyfip.txt](tunneling/vpn/vpn_zgjuvpnlfhyfip.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zgjuvpnlfhyfip.txt) |
 | vpn_zhideedu | 1 | [vpn_zhideedu.txt](tunneling/vpn/vpn_zhideedu.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zhideedu.txt) |
@@ -5880,6 +5881,6 @@ Generated: 2026-04-29 05:33 UTC
 | vpn_zscalerthree | 1 | [vpn_zscalerthree.txt](tunneling/vpn/vpn_zscalerthree.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zscalerthree.txt) |
 | vpn_zscalertwo | 14 | [vpn_zscalertwo.txt](tunneling/vpn/vpn_zscalertwo.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zscalertwo.txt) |
 | vpn_zscloud | 1 | [vpn_zscloud.txt](tunneling/vpn/vpn_zscloud.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zscloud.txt) |
-| vpn_zspeedcdn | 11 | [vpn_zspeedcdn.txt](tunneling/vpn/vpn_zspeedcdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zspeedcdn.txt) |
-| vpn_zwyr157wwiu6eior | 8 | [vpn_zwyr157wwiu6eior.txt](tunneling/vpn/vpn_zwyr157wwiu6eior.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zwyr157wwiu6eior.txt) |
+| vpn_zspeedcdn | 13 | [vpn_zspeedcdn.txt](tunneling/vpn/vpn_zspeedcdn.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zspeedcdn.txt) |
+| vpn_zwyr157wwiu6eior | 7 | [vpn_zwyr157wwiu6eior.txt](tunneling/vpn/vpn_zwyr157wwiu6eior.txt) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/tunneling/vpn/vpn_zwyr157wwiu6eior.txt) |
 <!-- END:tunneling -->

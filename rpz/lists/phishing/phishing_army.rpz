@@ -1,11 +1,11 @@
 ; Phishing Army
 ; Category: phishing
-; Generated: 2026-04-29 05:31:47 UTC
+; Generated: 2026-04-30 05:35:43 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 385059
+; Original domains (before deduplication): 385060
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026042905 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026043005 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 0-105.com CNAME .
@@ -279820,6 +279820,7 @@ maxzer.net CNAME .
 may-be67.ml CNAME .
 may.yartt248.workers.dev CNAME .
 may2021.page CNAME .
+mayabusiness.ph CNAME .
 mayacamaspirit.com CNAME .
 mayachess.com CNAME .
 mayacompu345terwir.ru CNAME .
