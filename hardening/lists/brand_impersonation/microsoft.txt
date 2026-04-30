@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-28 06:34:58 UTC
+# Generated: 2026-04-30 06:33:10 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -144,7 +144,6 @@
 0.0.0.0 liwe.com
 0.0.0.0 ljive.com
 0.0.0.0 ljve.com
-0.0.0.0 lkive.com
 0.0.0.0 lkve.com
 0.0.0.0 llive.com
 0.0.0.0 llue.com
@@ -208,6 +207,7 @@
 0.0.0.0 micr0s0ftonline.com
 0.0.0.0 micr0soft.com
 0.0.0.0 micr0soft0nline.com
+0.0.0.0 micr0softonline.com
 0.0.0.0 micr4osoft.com
 0.0.0.0 micr5osoft.com
 0.0.0.0 micr9osoft.com
@@ -343,7 +343,6 @@
 0.0.0.0 microsoftoline.com
 0.0.0.0 microsoftomline.com
 0.0.0.0 microsofton1ine.com
-0.0.0.0 microsoftonbline.com
 0.0.0.0 microsoftoniine.com
 0.0.0.0 microsoftonilne.com
 0.0.0.0 microsoftonine.com
@@ -843,6 +842,7 @@
 0.0.0.0 xn--icrosoft-c3a.com
 0.0.0.0 xn--icrosoft-g89c.com
 0.0.0.0 xn--icrosoft-qy7c.com
+0.0.0.0 xn--icrosoftoline-cle4805h.com
 0.0.0.0 xn--icrosoftonline-kk7g.com
 0.0.0.0 xn--lcrosoft-g89c.com
 0.0.0.0 xn--lie-t6x.com
@@ -871,13 +871,14 @@
 0.0.0.0 xn--mcrosoftonline-5fc.com
 0.0.0.0 xn--mcrosoftonline-llb.com
 0.0.0.0 xn--mcrosoftonlne-39bk.com
+0.0.0.0 xn--mcrosoftonlne-b9b4284i.com
 0.0.0.0 xn--mcrosoftonlne-iibz.com
 0.0.0.0 xn--mcrosoftonlne-wibk.com
 0.0.0.0 xn--mcrsoft-7ya0d.com
 0.0.0.0 xn--micosof-emd9545d.com
 0.0.0.0 xn--micosoft-i0d.com
 0.0.0.0 xn--micosoft-pf0d.com
-0.0.0.0 xn--micosoftnline-pmb3893i.com
+0.0.0.0 xn--micosoftonline-iwc.com
 0.0.0.0 xn--micosot-21b1347d.com
 0.0.0.0 xn--microoft-l9c.com
 0.0.0.0 xn--microoft-qvb.com
@@ -893,6 +894,7 @@
 0.0.0.0 xn--microsof-hk0d.com
 0.0.0.0 xn--microsoftnline-tob.com
 0.0.0.0 xn--microsoftnline-y88g.com
+0.0.0.0 xn--microsoftollne-pl7g.com
 0.0.0.0 xn--microsoftonine-bkc.com
 0.0.0.0 xn--microsoftonine-vlb.com
 0.0.0.0 xn--microsoftonlie-ipc.com
@@ -911,8 +913,6 @@
 0.0.0.0 xn--mirosoft-hw7c.com
 0.0.0.0 xn--mirosoft-lbb.com
 0.0.0.0 xn--mirosoft-t0a.com
-0.0.0.0 xn--mirosoftoline-x9c61o.com
-0.0.0.0 xn--mlcrsoftonline-t88g.com
 0.0.0.0 xn--offce-1sa.com
 0.0.0.0 xn--offce-7sa.com
 0.0.0.0 xn--offce-doc.com

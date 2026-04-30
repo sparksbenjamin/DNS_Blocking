@@ -1,6 +1,6 @@
 # Docker Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-28 06:34:58 UTC
+# Generated: 2026-04-30 06:33:10 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: docker.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -91,6 +91,5 @@
 0.0.0.0 tocker.com
 0.0.0.0 xdocker.com
 0.0.0.0 xn--bcker-jua.com
-0.0.0.0 xn--dcke-53a32p.com
 0.0.0.0 xn--dcker-m29a.com
 0.0.0.0 xocker.com
