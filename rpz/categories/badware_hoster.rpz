@@ -1,10 +1,10 @@
 ; Badware Hoster Blocklist
-; Generated: 2026-04-30 05:35:43 UTC
+; Generated: 2026-05-01 05:47:14 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1195
+; Original domains (before deduplication): 1196
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026043005 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026050105 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000a.de CNAME .
@@ -361,6 +361,7 @@ ccname.org CNAME .
 cdnfree.org CNAME .
 cellnovis.com CNAME .
 center.tl CNAME .
+cfw.me CNAME .
 ch.gp CNAME .
 ch.kg CNAME .
 ch.st CNAME .
