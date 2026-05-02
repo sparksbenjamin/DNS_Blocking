@@ -1,6 +1,6 @@
 # Apple Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-30 06:33:10 UTC
+# Generated: 2026-05-02 06:12:48 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: apple.com, icloud.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -148,7 +148,6 @@
 0.0.0.0 icdoud.com
 0.0.0.0 ichoud.com
 0.0.0.0 icioub.com
-0.0.0.0 icioud.com
 0.0.0.0 ickloud.com
 0.0.0.0 ickoud.com
 0.0.0.0 icl0ud.com
@@ -321,7 +320,6 @@
 0.0.0.0 xn--cloud-m4a.com
 0.0.0.0 xn--cloud-ssa.com
 0.0.0.0 xn--cloud-ysa.com
-0.0.0.0 xn--clud-4w5aoa.com
 0.0.0.0 xn--iciod-9d2b.com
 0.0.0.0 xn--iciou-xya.com
 0.0.0.0 xn--iciud-481b.com

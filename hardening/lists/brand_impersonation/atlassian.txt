@@ -1,6 +1,6 @@
 # Atlassian Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-30 06:33:10 UTC
+# Generated: 2026-05-02 06:12:48 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: atlassian.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -32,6 +32,7 @@
 0.0.0.0 atlassiab.com
 0.0.0.0 atlassiam.com
 0.0.0.0 atlassian0.com
+0.0.0.0 atlassiann.com
 0.0.0.0 atlassiano.com
 0.0.0.0 atlassians.com
 0.0.0.0 atlassiasn.com

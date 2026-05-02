@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-30 06:33:10 UTC
+# Generated: 2026-05-02 06:12:48 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -17,7 +17,6 @@
 0.0.0.0 11ve.com
 0.0.0.0 1ive.com
 0.0.0.0 1lve.com
-0.0.0.0 9ffice.com
 0.0.0.0 9office.com
 0.0.0.0 9utlook.com
 0.0.0.0 affice.com
@@ -144,6 +143,7 @@
 0.0.0.0 liwe.com
 0.0.0.0 ljive.com
 0.0.0.0 ljve.com
+0.0.0.0 lkive.com
 0.0.0.0 lkve.com
 0.0.0.0 llive.com
 0.0.0.0 llue.com
@@ -155,6 +155,7 @@
 0.0.0.0 loive.com
 0.0.0.0 loutlook.com
 0.0.0.0 love.com
+0.0.0.0 lpive.com
 0.0.0.0 luive.com
 0.0.0.0 lutlook.com
 0.0.0.0 luve.com
@@ -715,6 +716,7 @@
 0.0.0.0 outl0ook.com
 0.0.0.0 outl9ok.com
 0.0.0.0 outlaok.com
+0.0.0.0 outleok.com
 0.0.0.0 outlgok.com
 0.0.0.0 outliok.com
 0.0.0.0 outliook.com
@@ -842,7 +844,6 @@
 0.0.0.0 xn--icrosoft-c3a.com
 0.0.0.0 xn--icrosoft-g89c.com
 0.0.0.0 xn--icrosoft-qy7c.com
-0.0.0.0 xn--icrosoftoline-cle4805h.com
 0.0.0.0 xn--icrosoftonline-kk7g.com
 0.0.0.0 xn--lcrosoft-g89c.com
 0.0.0.0 xn--lie-t6x.com
@@ -871,7 +872,6 @@
 0.0.0.0 xn--mcrosoftonline-5fc.com
 0.0.0.0 xn--mcrosoftonline-llb.com
 0.0.0.0 xn--mcrosoftonlne-39bk.com
-0.0.0.0 xn--mcrosoftonlne-b9b4284i.com
 0.0.0.0 xn--mcrosoftonlne-iibz.com
 0.0.0.0 xn--mcrosoftonlne-wibk.com
 0.0.0.0 xn--mcrsoft-7ya0d.com
@@ -894,7 +894,6 @@
 0.0.0.0 xn--microsof-hk0d.com
 0.0.0.0 xn--microsoftnline-tob.com
 0.0.0.0 xn--microsoftnline-y88g.com
-0.0.0.0 xn--microsoftollne-pl7g.com
 0.0.0.0 xn--microsoftonine-bkc.com
 0.0.0.0 xn--microsoftonine-vlb.com
 0.0.0.0 xn--microsoftonlie-ipc.com

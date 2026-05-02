@@ -1,6 +1,6 @@
 # GitLab Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-04-30 06:33:10 UTC
+# Generated: 2026-05-02 06:12:48 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: gitlab.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -40,6 +40,7 @@
 0.0.0.0 gitlabc.com
 0.0.0.0 gitlabs.com
 0.0.0.0 gitlabx.com
+0.0.0.0 gitlad.com
 0.0.0.0 gitlag.com
 0.0.0.0 gitlah.com
 0.0.0.0 gitlan.com
