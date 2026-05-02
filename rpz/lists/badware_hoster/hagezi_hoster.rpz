@@ -1,11 +1,11 @@
 ; HaGeZi Badware Hoster
 ; Category: badware_hoster
-; Generated: 2026-05-01 05:47:14 UTC
+; Generated: 2026-05-02 05:16:11 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1196
+; Original domains (before deduplication): 1198
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026050105 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026050205 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000a.de CNAME .
@@ -238,6 +238,7 @@ bloggt.de CNAME .
 blogia.com CNAME .
 blogmaster.net CNAME .
 blogmonster.de CNAME .
+blogpostie.com CNAME .
 blogrip.com CNAME .
 blogsky.com CNAME .
 blogspot.ae CNAME .
@@ -437,6 +438,7 @@ designcarthosting.com CNAME .
 digitalzones.com CNAME .
 dimsolo.com CNAME .
 dinamikajambi.com CNAME .
+diowebhost.com CNAME .
 dnip.net CNAME .
 domain.lc CNAME .
 doodlekit.com CNAME .
