@@ -1,6 +1,6 @@
 # DHL Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-02 06:12:48 UTC
+# Generated: 2026-05-03 06:31:41 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: dhl.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -18,7 +18,6 @@
 0.0.0.0 d-hl.com
 0.0.0.0 dbhl.com
 0.0.0.0 dbl.com
-0.0.0.0 dchl.com
 0.0.0.0 ddhl.com
 0.0.0.0 dehl.com
 0.0.0.0 dfhl.com

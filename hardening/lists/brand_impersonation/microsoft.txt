@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-02 06:12:48 UTC
+# Generated: 2026-05-03 06:31:41 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -155,7 +155,6 @@
 0.0.0.0 loive.com
 0.0.0.0 loutlook.com
 0.0.0.0 love.com
-0.0.0.0 lpive.com
 0.0.0.0 luive.com
 0.0.0.0 lutlook.com
 0.0.0.0 luve.com
@@ -842,7 +841,6 @@
 0.0.0.0 xn--0ffce-vsa.com
 0.0.0.0 xn--ffice-iua.com
 0.0.0.0 xn--icrosoft-c3a.com
-0.0.0.0 xn--icrosoft-g89c.com
 0.0.0.0 xn--icrosoft-qy7c.com
 0.0.0.0 xn--icrosoftonline-kk7g.com
 0.0.0.0 xn--lcrosoft-g89c.com

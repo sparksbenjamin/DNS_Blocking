@@ -1,6 +1,6 @@
 # TurboTax Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-02 06:12:48 UTC
+# Generated: 2026-05-03 06:31:41 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: turbotax.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -26,6 +26,7 @@
 0.0.0.0 tqrbotax.com
 0.0.0.0 trbotax.com
 0.0.0.0 trubotax.com
+0.0.0.0 trurbotax.com
 0.0.0.0 tturbotax.com
 0.0.0.0 tu.rbotax.com
 0.0.0.0 tu2botax.com
@@ -67,6 +68,7 @@
 0.0.0.0 turbortax.com
 0.0.0.0 turbostax.com
 0.0.0.0 turbot-ax.com
+0.0.0.0 turbot.ax.com
 0.0.0.0 turbota.com
 0.0.0.0 turbota8.com
 0.0.0.0 turbotaax.com
@@ -151,5 +153,6 @@
 0.0.0.0 utrbotax.com
 0.0.0.0 uurbotax.com
 0.0.0.0 vurbotax.com
+0.0.0.0 xn--trbtax-pmb2921d.com
 0.0.0.0 yturbotax.com
 0.0.0.0 yurbotax.com
