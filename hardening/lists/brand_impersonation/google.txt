@@ -1,6 +1,6 @@
 # Google Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-03 06:31:41 UTC
+# Generated: 2026-05-05 06:23:53 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: google.com, gmail.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -190,7 +190,6 @@
 0.0.0.0 go0qle.com
 0.0.0.0 go9gle.com
 0.0.0.0 go9ogle.com
-0.0.0.0 goagle.com
 0.0.0.0 goail.com
 0.0.0.0 goegle.com
 0.0.0.0 goggle.com

@@ -1,6 +1,6 @@
 # Stripe Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-03 06:31:41 UTC
+# Generated: 2026-05-05 06:23:53 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: stripe.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -12,7 +12,6 @@
 0.0.0.0 etripe.com
 0.0.0.0 qstripe.com
 0.0.0.0 s6ripe.com
-0.0.0.0 sdtripe.com
 0.0.0.0 spripe.com
 0.0.0.0 sripe.com
 0.0.0.0 srtipe.com
@@ -98,6 +97,7 @@
 0.0.0.0 xn--strpe-1sa.com
 0.0.0.0 xn--strpe-g81b.com
 0.0.0.0 xn--strpe-p4a.com
+0.0.0.0 xn--tipe-gdck.com
 0.0.0.0 xn--tripe-jq1b.com
 0.0.0.0 xstripe.com
 0.0.0.0 xtripe.com

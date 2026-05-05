@@ -1,5 +1,5 @@
 # Brand Impersonation Hardening
-# Generated: 2026-05-03 06:31:41 UTC
+# Generated: 2026-05-05 06:23:53 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Purpose: Aggregated DNSTwist-based impersonation hardening
 
@@ -585,7 +585,6 @@
 0.0.0.0 attlassian.com
 0.0.0.0 atuh0.com
 0.0.0.0 au-th0.com
-0.0.0.0 au.th0.com
 0.0.0.0 au4h0.com
 0.0.0.0 au5h0.com
 0.0.0.0 au5th0.com
@@ -936,7 +935,6 @@
 0.0.0.0 cloudflarm.com
 0.0.0.0 cloudflarr.com
 0.0.0.0 cloudflarre.com
-0.0.0.0 cloudflars.com
 0.0.0.0 cloudflaru.com
 0.0.0.0 cloudflarz.com
 0.0.0.0 cloudflase.com
@@ -1215,6 +1213,7 @@
 0.0.0.0 dhle.com
 0.0.0.0 dhlf.com
 0.0.0.0 dhlg.com
+0.0.0.0 dhlh.com
 0.0.0.0 dhli.com
 0.0.0.0 dhlj.com
 0.0.0.0 dhlk.com
@@ -1585,10 +1584,10 @@
 0.0.0.0 eba6.com
 0.0.0.0 eba7.com
 0.0.0.0 ebaa.com
+0.0.0.0 ebaay.com
 0.0.0.0 ebag.com
 0.0.0.0 ebah.com
 0.0.0.0 ebai.com
-0.0.0.0 ebaq.com
 0.0.0.0 ebaqy.com
 0.0.0.0 ebas.com
 0.0.0.0 ebasy.com
@@ -1662,6 +1661,7 @@
 0.0.0.0 edocker.com
 0.0.0.0 edocusign.com
 0.0.0.0 edropbox.com
+0.0.0.0 eduo.com
 0.0.0.0 eebay.com
 0.0.0.0 eendesk.com
 0.0.0.0 efay.com
@@ -1681,6 +1681,7 @@
 0.0.0.0 ekta.com
 0.0.0.0 elack.com
 0.0.0.0 elbay.com
+0.0.0.0 elday.com
 0.0.0.0 elhl.com
 0.0.0.0 ellbay.com
 0.0.0.0 elocker.com
@@ -1715,6 +1716,7 @@
 0.0.0.0 ezoom.us
 0.0.0.0 f-edex.com
 0.0.0.0 f1gma.com
+0.0.0.0 f3dex.com
 0.0.0.0 f4dex.com
 0.0.0.0 fadex.com
 0.0.0.0 fagma.com
@@ -1724,6 +1726,7 @@
 0.0.0.0 fddex.com
 0.0.0.0 fdedex.com
 0.0.0.0 fdeex.com
+0.0.0.0 fdex.com
 0.0.0.0 fdhl.com
 0.0.0.0 fdropbox.com
 0.0.0.0 fduo.com
@@ -1943,7 +1946,6 @@
 0.0.0.0 gboogle.com
 0.0.0.0 gbox.com
 0.0.0.0 geail.com
-0.0.0.0 gedex.com
 0.0.0.0 gendesk.com
 0.0.0.0 genmo.com
 0.0.0.0 geogle.com
@@ -2274,7 +2276,6 @@
 0.0.0.0 go0qle.com
 0.0.0.0 go9gle.com
 0.0.0.0 go9ogle.com
-0.0.0.0 goagle.com
 0.0.0.0 goail.com
 0.0.0.0 goegle.com
 0.0.0.0 goggle.com
@@ -2388,7 +2389,6 @@
 0.0.0.0 goole.com
 0.0.0.0 goolge.com
 0.0.0.0 goolgle.com
-0.0.0.0 goom.us
 0.0.0.0 gooogle.com
 0.0.0.0 gooole.com
 0.0.0.0 goopgle.com
@@ -2505,6 +2505,7 @@
 0.0.0.0 icdoud.com
 0.0.0.0 ichoud.com
 0.0.0.0 icioub.com
+0.0.0.0 icioud.com
 0.0.0.0 ickloud.com
 0.0.0.0 ickoud.com
 0.0.0.0 icl0ud.com
@@ -3001,7 +3002,6 @@
 0.0.0.0 liwe.com
 0.0.0.0 ljive.com
 0.0.0.0 ljve.com
-0.0.0.0 lkive.com
 0.0.0.0 lkta.com
 0.0.0.0 lkve.com
 0.0.0.0 llbox.com
@@ -3079,7 +3079,6 @@
 0.0.0.0 micposoft.com
 0.0.0.0 micr.osoft.com
 0.0.0.0 micr0osoft.com
-0.0.0.0 micr0s0ft.com
 0.0.0.0 micr0s0ftonline.com
 0.0.0.0 micr0soft.com
 0.0.0.0 micr0soft0nline.com
@@ -3402,7 +3401,6 @@
 0.0.0.0 muicrosoft.com
 0.0.0.0 mutlook.com
 0.0.0.0 mycrosoft.com
-0.0.0.0 mycrosoftonline.com
 0.0.0.0 nation.so
 0.0.0.0 nbox.com
 0.0.0.0 nedex.com
@@ -3907,6 +3905,7 @@
 0.0.0.0 paypal8.com
 0.0.0.0 paypal9.com
 0.0.0.0 paypala.com
+0.0.0.0 paypalb.com
 0.0.0.0 paypalc.com
 0.0.0.0 paypale.com
 0.0.0.0 paypalg.com
@@ -3988,7 +3987,6 @@
 0.0.0.0 pive.com
 0.0.0.0 piypal.com
 0.0.0.0 pkta.com
-0.0.0.0 playpal.com
 0.0.0.0 plive.com
 0.0.0.0 pngidentity.com
 0.0.0.0 poaypal.com
@@ -4153,7 +4151,6 @@
 0.0.0.0 quickbookw.com
 0.0.0.0 quickbookx.com
 0.0.0.0 quickbooky.com
-0.0.0.0 quickbookz.com
 0.0.0.0 quickboolks.com
 0.0.0.0 quickbools.com
 0.0.0.0 quickboomks.com
@@ -4290,7 +4287,6 @@
 0.0.0.0 salerforce.com
 0.0.0.0 salersforce.com
 0.0.0.0 sales-force.com
-0.0.0.0 salesaforce.com
 0.0.0.0 salesdforce.com
 0.0.0.0 salesdorce.com
 0.0.0.0 saleseforce.com
@@ -4383,7 +4379,6 @@
 0.0.0.0 sdobe.com
 0.0.0.0 sdocker.com
 0.0.0.0 sdropbox.com
-0.0.0.0 sdtripe.com
 0.0.0.0 sduo.com
 0.0.0.0 sebay.com
 0.0.0.0 sehopify.com
@@ -4470,6 +4465,7 @@
 0.0.0.0 shopefy.com
 0.0.0.0 shopfiy.com
 0.0.0.0 shopfy.com
+0.0.0.0 shopi.fy.com
 0.0.0.0 shopi8fy.com
 0.0.0.0 shopi9fy.com
 0.0.0.0 shopicfy.com
@@ -4543,6 +4539,7 @@
 0.0.0.0 shoplify.com
 0.0.0.0 shopofy.com
 0.0.0.0 shopoify.com
+0.0.0.0 shoppify.com
 0.0.0.0 shopsify.com
 0.0.0.0 shopufy.com
 0.0.0.0 shopuify.com
@@ -4574,7 +4571,6 @@
 0.0.0.0 slaci.com
 0.0.0.0 slack0.com
 0.0.0.0 slack2.com
-0.0.0.0 slack4.com
 0.0.0.0 slacka.com
 0.0.0.0 slackb.com
 0.0.0.0 slackc.com
@@ -4978,6 +4974,7 @@
 0.0.0.0 uintuit.com
 0.0.0.0 uips.com
 0.0.0.0 uira.com
+0.0.0.0 uisps.com
 0.0.0.0 ujira.com
 0.0.0.0 ujps.com
 0.0.0.0 ujsps.com
@@ -5114,7 +5111,6 @@
 0.0.0.0 uswps.com
 0.0.0.0 usxps.com
 0.0.0.0 usxs.com
-0.0.0.0 usyps.com
 0.0.0.0 uth0.com
 0.0.0.0 utlook.com
 0.0.0.0 utrbotax.com
@@ -5249,6 +5245,7 @@
 0.0.0.0 xn--aazon-919a.com
 0.0.0.0 xn--aazon-fl1b.com
 0.0.0.0 xn--aazon-qk1b.com
+0.0.0.0 xn--ack-rva8248a.com
 0.0.0.0 xn--adob-yva.com
 0.0.0.0 xn--amaon-6y1b.com
 0.0.0.0 xn--amaon-7hb.com
@@ -5364,22 +5361,24 @@
 0.0.0.0 xn--cinbase-t2c.com
 0.0.0.0 xn--cioud-m4a.com
 0.0.0.0 xn--cioud-p81b.com
+0.0.0.0 xn--cirbase-t0a.com
 0.0.0.0 xn--clod-4w5a1g.com
-0.0.0.0 xn--clodfare-08c65f.com
 0.0.0.0 xn--clodflare-i6b.com
 0.0.0.0 xn--clodflare-is7d.com
 0.0.0.0 xn--cloud-4sa.com
 0.0.0.0 xn--cloud-m4a.com
 0.0.0.0 xn--cloud-ssa.com
 0.0.0.0 xn--cloud-ysa.com
+0.0.0.0 xn--cloudfare-v5a.com
 0.0.0.0 xn--cloudflae-7fe.com
 0.0.0.0 xn--cloudflae-7n6d.com
 0.0.0.0 xn--cloudflar-3f7d.com
 0.0.0.0 xn--cloudflar-j4a.com
 0.0.0.0 xn--cloudflre-676d.com
 0.0.0.0 xn--cloudflre-ccb.com
+0.0.0.0 xn--clouflar-imd9222e.com
 0.0.0.0 xn--clouflare-t05d.com
-0.0.0.0 xn--clovdflae-xfe.com
+0.0.0.0 xn--cludflar-53a015a.com
 0.0.0.0 xn--cludflare-6x3d.com
 0.0.0.0 xn--cludflare-ml7d.com
 0.0.0.0 xn--cludflare-wxb.com
@@ -5400,6 +5399,7 @@
 0.0.0.0 xn--coinase-4rd.com
 0.0.0.0 xn--coinase-5m3c.com
 0.0.0.0 xn--coinase-8l3c.com
+0.0.0.0 xn--coinba-nz7bq2a.com
 0.0.0.0 xn--coinbae-873c.com
 0.0.0.0 xn--coinbae-9x2z.com
 0.0.0.0 xn--coinbae-fqb.com
@@ -5429,7 +5429,6 @@
 0.0.0.0 xn--conase-krb8401d.com
 0.0.0.0 xn--conase-q9a78d.com
 0.0.0.0 xn--conbas-4va45a.com
-0.0.0.0 xn--conbas-j8a2830d.com
 0.0.0.0 xn--conbas-nvat.com
 0.0.0.0 xn--conbase-0ya.com
 0.0.0.0 xn--conbase-4gc.com
@@ -5444,13 +5443,13 @@
 0.0.0.0 xn--conbase-vgd.com
 0.0.0.0 xn--conbase-ydb.com
 0.0.0.0 xn--conbse-sta7g.com
-0.0.0.0 xn--coudfare-4mb8f.com
 0.0.0.0 xn--coudflare-0sb.com
 0.0.0.0 xn--dcker-m29a.com
 0.0.0.0 xn--do-rka.com
 0.0.0.0 xn--docuign-vxc.com
 0.0.0.0 xn--docusgn-cza.com
 0.0.0.0 xn--docusgn-vfb.com
+0.0.0.0 xn--doudflre-n8a.com
 0.0.0.0 xn--dropox-eg7b.com
 0.0.0.0 xn--drpbox-4wa.com
 0.0.0.0 xn--drpbox-cxa.com
@@ -5463,6 +5462,7 @@
 0.0.0.0 xn--endesk-opb.com
 0.0.0.0 xn--fdex-vva.com
 0.0.0.0 xn--ffice-iua.com
+0.0.0.0 xn--fma-9tb8a.com
 0.0.0.0 xn--gail-5c5a.com
 0.0.0.0 xn--gail-bbc.com
 0.0.0.0 xn--gail-gd5a.com
@@ -5496,7 +5496,7 @@
 0.0.0.0 xn--gil-9ka8078a.com
 0.0.0.0 xn--gil-9ka8278a.com
 0.0.0.0 xn--gil-mla3968a.com
-0.0.0.0 xn--gita-i1a5035b.com
+0.0.0.0 xn--gita-i9b9943b.com
 0.0.0.0 xn--githb-nva.com
 0.0.0.0 xn--githu-w90b.com
 0.0.0.0 xn--gma-lua9c.com
@@ -5627,6 +5627,7 @@
 0.0.0.0 xn--gthub-5sa.com
 0.0.0.0 xn--gthub-n4a.com
 0.0.0.0 xn--gthub-tsa.com
+0.0.0.0 xn--gtla-qpa17s.com
 0.0.0.0 xn--gtlab-5sa.com
 0.0.0.0 xn--gtlab-q81b.com
 0.0.0.0 xn--gtlab-tsa.com
@@ -5644,14 +5645,15 @@
 0.0.0.0 xn--iclud-wta.com
 0.0.0.0 xn--icoud-o4a.com
 0.0.0.0 xn--icrosoft-c3a.com
+0.0.0.0 xn--icrosoft-g89c.com
 0.0.0.0 xn--icrosoft-qy7c.com
 0.0.0.0 xn--icrosoftonline-kk7g.com
 0.0.0.0 xn--iloud-q09a.com
+0.0.0.0 xn--init-18a1265b.com
 0.0.0.0 xn--intut-wsa.com
 0.0.0.0 xn--ithub-qmc.com
 0.0.0.0 xn--ithub-v1a.com
 0.0.0.0 xn--jra-jua.com
-0.0.0.0 xn--ka-7ja95b.com
 0.0.0.0 xn--kta-bna.com
 0.0.0.0 xn--kta-fna.com
 0.0.0.0 xn--kta-slz.com
@@ -5754,7 +5756,6 @@
 0.0.0.0 xn--mzon-koab.com
 0.0.0.0 xn--mzon-p5bb.com
 0.0.0.0 xn--mzon-znab.com
-0.0.0.0 xn--ntut-ppa93o.com
 0.0.0.0 xn--ocusign-sp3c.com
 0.0.0.0 xn--offce-1sa.com
 0.0.0.0 xn--offce-7sa.com
@@ -5777,7 +5778,6 @@
 0.0.0.0 xn--okt-kpa.com
 0.0.0.0 xn--okt-sla.com
 0.0.0.0 xn--okt-ugz.com
-0.0.0.0 xn--onbase-90a53a.com
 0.0.0.0 xn--onlogin-ss4c.com
 0.0.0.0 xn--ooge-21a88g.com
 0.0.0.0 xn--ooge-9wa1p.com
@@ -5823,9 +5823,9 @@
 0.0.0.0 xn--papal-ouc.com
 0.0.0.0 xn--papal-rva.com
 0.0.0.0 xn--papal-wec.com
+0.0.0.0 xn--papl-2mb0985b.com
 0.0.0.0 xn--papl-2na8p.com
 0.0.0.0 xn--papl-doa6o.com
-0.0.0.0 xn--papl-dta6907b.com
 0.0.0.0 xn--payal-1tb.com
 0.0.0.0 xn--payal-lpb.com
 0.0.0.0 xn--payal-wo1b.com
@@ -5866,7 +5866,6 @@
 0.0.0.0 xn--pple-psa.com
 0.0.0.0 xn--pple-u6b.com
 0.0.0.0 xn--pple-zna.com
-0.0.0.0 xn--ps-qka28m.com
 0.0.0.0 xn--pypa-bta74a.com
 0.0.0.0 xn--pypa1-3qa.com
 0.0.0.0 xn--pypa1-9qa.com
@@ -5906,13 +5905,14 @@
 0.0.0.0 xn--pypl-goac.com
 0.0.0.0 xn--pypl-loac.com
 0.0.0.0 xn--pypl-soa9n.com
-0.0.0.0 xn--qikbooks-lbb23g.com
-0.0.0.0 xn--quicbo0ks-j7c.com
-0.0.0.0 xn--quiekboks-msd.com
+0.0.0.0 xn--qckbooks-l2a34k.com
+0.0.0.0 xn--qckbooks-tkb3517e.com
+0.0.0.0 xn--qickboks-qrc8280e.com
+0.0.0.0 xn--quckboks-j4a9847e.com
+0.0.0.0 xn--quickks-5rd2116da.com
 0.0.0.0 xn--rncrosoft-64a.com
 0.0.0.0 xn--rncrosoft-h5a.com
 0.0.0.0 xn--rnicrosft-67a.com
-0.0.0.0 xn--salefrce-nsb2p.com
 0.0.0.0 xn--salesforc-83a.com
 0.0.0.0 xn--salesforc-j4a.com
 0.0.0.0 xn--salesorce-pic.com
@@ -5921,16 +5921,15 @@
 0.0.0.0 xn--shopfy-s9a.com
 0.0.0.0 xn--shopfy-zk8b.com
 0.0.0.0 xn--slac-e59b.com
-0.0.0.0 xn--slesf0rce-01a.com
 0.0.0.0 xn--stipe-rrc.com
 0.0.0.0 xn--strip-8ra.com
 0.0.0.0 xn--strip-fsa.com
 0.0.0.0 xn--strpe-1sa.com
 0.0.0.0 xn--strpe-g81b.com
 0.0.0.0 xn--strpe-p4a.com
-0.0.0.0 xn--trbtax-pmb2921d.com
+0.0.0.0 xn--tipe-gdck.com
 0.0.0.0 xn--tripe-jq1b.com
-0.0.0.0 xn--tuit-4pam.com
+0.0.0.0 xn--turbox-fua92h.com
 0.0.0.0 xn--uth0-4na.com
 0.0.0.0 xn--uth0-4q5a.com
 0.0.0.0 xn--uth0-9na.com
@@ -5947,13 +5946,12 @@
 0.0.0.0 xn--vemo-m2a.com
 0.0.0.0 xn--venm-oqa.com
 0.0.0.0 xn--venn-jra.com
-0.0.0.0 xn--vmo-brb4596a.com
+0.0.0.0 xn--vmo-fma46b.com
 0.0.0.0 xn--zedesk-xt7b.com
 0.0.0.0 xn--zendes-1bb.com
 0.0.0.0 xn--zendes-ui8d.com
 0.0.0.0 xn--zendsk-eva.com
-0.0.0.0 xn--zenek-xcb4352c.com
-0.0.0.0 xn--zensk-jsa16w.com
+0.0.0.0 xn--znesk-bsa7733c.com
 0.0.0.0 xocker.com
 0.0.0.0 xoinbase.com
 0.0.0.0 xoom.us
