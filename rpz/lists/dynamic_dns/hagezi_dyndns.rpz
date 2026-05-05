@@ -1,11 +1,11 @@
 ; HaGeZi Dynamic DNS
 ; Category: dynamic_dns
-; Generated: 2026-05-02 05:16:11 UTC
+; Generated: 2026-05-05 05:19:44 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1023
+; Original domains (before deduplication): 1022
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026050205 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026050505 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 0000000000000000000000.com CNAME .
@@ -386,7 +386,6 @@ freeddns.com CNAME .
 freeddns.uk CNAME .
 freedynamicdns.net CNAME .
 freedynamicdns.org CNAME .
-freehost000.xyz CNAME .
 freesa.org CNAME .
 freetcp.com CNAME .
 freewww.biz CNAME .

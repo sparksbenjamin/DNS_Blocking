@@ -1,10 +1,10 @@
 ; Badware Hoster Blocklist
-; Generated: 2026-05-02 05:16:11 UTC
+; Generated: 2026-05-05 05:19:44 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1198
+; Original domains (before deduplication): 1316
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026050205 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026050505 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000a.de CNAME .
@@ -27,14 +27,17 @@ $TTL 300
 0pi.com CNAME .
 1.vg CNAME .
 10001mb.com CNAME .
+100free.com CNAME .
 100freemb.com CNAME .
 100webspace.com CNAME .
 100webspace.net CNAME .
+10gbfreehost.com CNAME .
 10h.us CNAME .
 110mb.com CNAME .
 114.at CNAME .
 115.at CNAME .
 125mb.com CNAME .
+126.com CNAME .
 128-199-7-137.cprapid.com CNAME .
 12n.de CNAME .
 131.at CNAME .
@@ -84,6 +87,7 @@ $TTL 300
 2fh.co CNAME .
 2itb.com CNAME .
 2kool4u.net CNAME .
+2nt.com CNAME .
 3-89-181-9.cprapid.com CNAME .
 310.at CNAME .
 350.com CNAME .
@@ -149,30 +153,39 @@ absorbiert.de CNAME .
 abstellen.de CNAME .
 abwechslungsreiches.de CNAME .
 ac6.de CNAME .
+acidblog.net CNAME .
 admarketlocation.com CNAME .
 adr.com.ua CNAME .
 aeza.network CNAME .
+affiliatblogger.com CNAME .
 ag.gp CNAME .
 ag0rcgwjv5.com CNAME .
 ahlamountada.com CNAME .
+aioblogs.com CNAME .
 al6.de CNAME .
+alboompro.com CNAME .
 all.co.uk CNAME .
 all.lc CNAME .
 allemal.de CNAME .
+allmyblog.com CNAME .
 als-geschenk.de CNAME .
 am-geilsten.de CNAME .
 am-strand.de CNAME .
 amarillozoo.com CNAME .
+amoblog.com CNAME .
 an-erster-stelle.de CNAME .
 and-friends.de CNAME .
 and-you.de CNAME .
 anfliegen.de CNAME .
 angelfire.com CNAME .
+angelinsblog.com CNAME .
 anschauen.in CNAME .
 anschiessen.de CNAME .
 ar.gp CNAME .
 arcadepages.com CNAME .
 arrangiert.de CNAME .
+articlesblogger.com CNAME .
+arwebo.com CNAME .
 asia.cm CNAME .
 asia.gp CNAME .
 at.cr CNAME .
@@ -181,6 +194,7 @@ atsnx.com CNAME .
 atspace.biz CNAME .
 atspace.co.uk CNAME .
 atspace.com CNAME .
+atualblog.com CNAME .
 atwebpages.com CNAME .
 au.gp CNAME .
 aufbauend.de CNAME .
@@ -200,6 +214,8 @@ bappy.com CNAME .
 batcave.net CNAME .
 bcz.com CNAME .
 be.gp CNAME .
+bearsfanteamshop.com CNAME .
+beepworld.de CNAME .
 beepworld.it CNAME .
 beget.tech CNAME .
 begins.de CNAME .
@@ -217,29 +233,52 @@ bizhat.com CNAME .
 blackapplehost.com CNAME .
 blackblogs.org CNAME .
 blinkweb.com CNAME .
+blog-mall.com CNAME .
 blog-online.eu CNAME .
 blog.co.uk CNAME .
 blog.com CNAME .
 blog.hr CNAME .
+blog.hu CNAME .
 blog.lc CNAME .
 blog.ru CNAME .
+blog.shinobi.jp CNAME .
+blog4youth.com CNAME .
 blog5.net CNAME .
+blogblog.com CNAME .
 blogcu.com CNAME .
 blogcudinti.com CNAME .
+blogdal.com CNAME .
+blogdeazar.com CNAME .
+blogdemls.com CNAME .
 blogdosaga.com CNAME .
+blogflux.com CNAME .
 blogg.de CNAME .
 blogg.se CNAME .
+bloggactif.com CNAME .
+bloggazzo.com CNAME .
 blogger.ba CNAME .
+blogger.com CNAME .
 blogger.hu CNAME .
+bloggerchest.com CNAME .
+bloggin-ads.com CNAME .
 blogginger.com CNAME .
+bloggosite.com CNAME .
 bloggplatsen.se CNAME .
 bloggt.de CNAME .
 blogia.com CNAME .
+bloginder.com CNAME .
+bloglovin.com CNAME .
 blogmaster.net CNAME .
 blogmonster.de CNAME .
+blogofoto.com CNAME .
+blogolize.com CNAME .
+blogpayz.com CNAME .
 blogpostie.com CNAME .
 blogrip.com CNAME .
+blogs-service.com CNAME .
+blogse.nl CNAME .
 blogsky.com CNAME .
+blogsmine.com CNAME .
 blogspot.ae CNAME .
 blogspot.al CNAME .
 blogspot.am CNAME .
@@ -250,6 +289,7 @@ blogspot.ca CNAME .
 blogspot.cf CNAME .
 blogspot.ch CNAME .
 blogspot.cl CNAME .
+blogspot.cm CNAME .
 blogspot.co CNAME .
 blogspot.co.at CNAME .
 blogspot.co.id CNAME .
@@ -308,10 +348,18 @@ blogspot.sk CNAME .
 blogspot.sn CNAME .
 blogspot.tw CNAME .
 blogspot.ug CNAME .
+blogsuperapp.com CNAME .
+blogsys.jp CNAME .
+blogtov.com CNAME .
+blogtrafic.com CNAME .
+blogunteer.com CNAME .
 blogzet.com CNAME .
 bo.gp CNAME .
+boardhost.com CNAME .
+bokee.com CNAME .
 bookmark.com CNAME .
 booru.org CNAME .
+boosterblog.com CNAME .
 boxmail.biz CNAME .
 boxmode.io CNAME .
 br.gp CNAME .
@@ -362,6 +410,7 @@ ccname.org CNAME .
 cdnfree.org CNAME .
 cellnovis.com CNAME .
 center.tl CNAME .
+centerblog.net CNAME .
 cfw.me CNAME .
 ch.gp CNAME .
 ch.kg CNAME .
@@ -386,9 +435,11 @@ client.jp CNAME .
 cloudwaysapps.com CNAME .
 club-area.de CNAME .
 club.lc CNAME .
+clubeo.com CNAME .
 clumsy.de CNAME .
 cn.gp CNAME .
 co.gp CNAME .
+collectblogs.com CNAME .
 com-portal.de CNAME .
 com.nu CNAME .
 com0.de CNAME .
@@ -403,8 +454,10 @@ comxa.com CNAME .
 conohawing.com CNAME .
 cool.hn CNAME .
 cool.lc CNAME .
+coolfreepages.com CNAME .
 coolpage.biz CNAME .
 corolain.ru CNAME .
+creacionblog.com CNAME .
 creatorlink.net CNAME .
 cryptonight.net CNAME .
 cs-clan.org CNAME .
@@ -419,7 +472,9 @@ d3l.de CNAME .
 da.cx CNAME .
 da.ru CNAME .
 daftpage.com CNAME .
+dailyblogzz.com CNAME .
 dax.ru CNAME .
+dbblog.net CNAME .
 dcr.sehlat.io CNAME .
 ddl2.pl CNAME .
 de-2.de CNAME .
@@ -434,7 +489,10 @@ de.mg CNAME .
 de.pl CNAME .
 design.tl CNAME .
 designcarthosting.com CNAME .
+designi1.com CNAME .
+digiblogbox.com CNAME .
 digitalzones.com CNAME .
+digitollblog.com CNAME .
 dimsolo.com CNAME .
 dinamikajambi.com CNAME .
 diowebhost.com CNAME .
@@ -451,6 +509,7 @@ dox4.com CNAME .
 dr.ag CNAME .
 dreamstation.com CNAME .
 dreht-auf.de CNAME .
+dsiblogger.com CNAME .
 dtiblog.com CNAME .
 duanwenzi.cn CNAME .
 dvd.lc CNAME .
@@ -467,8 +526,10 @@ ecrater.com CNAME .
 edoctransfer.com CNAME .
 edu.eu CNAME .
 edublogs.org CNAME .
+educationalimpactblog.com CNAME .
 educatorpage.com CNAME .
 educatorpages.com CNAME .
+eedblog.com CNAME .
 efacturas.net CNAME .
 eg.gp CNAME .
 ehaitao.com CNAME .
@@ -505,6 +566,7 @@ event-redeem.com CNAME .
 events-games.com CNAME .
 evenweb.com CNAME .
 exactpages.com CNAME .
+exblog.jp CNAME .
 ez-sites.ws CNAME .
 ezblogz.com CNAME .
 ezyro.com CNAME .
@@ -521,6 +583,7 @@ fileave.com CNAME .
 filme.lc CNAME .
 financecryptoworld.com CNAME .
 firearms.com CNAME .
+fireblogz.com CNAME .
 firm.nu CNAME .
 fitnell.com CNAME .
 flashbuilder.net CNAME .
@@ -530,6 +593,7 @@ fleek.cool CNAME .
 flf.li CNAME .
 flirten.info CNAME .
 flu.cc CNAME .
+footeo.com CNAME .
 for-ladys.de CNAME .
 formbuddy.com CNAME .
 forum.lc CNAME .
@@ -541,6 +605,7 @@ forumotion.com CNAME .
 fotos.lc CNAME .
 fr.gp CNAME .
 fr.nf CNAME .
+free-blogz.com CNAME .
 free.bg CNAME .
 free.cr CNAME .
 free.lc CNAME .
@@ -569,12 +634,14 @@ freewebhostingarea.com CNAME .
 freewebhostmost.com CNAME .
 freewebpages.org CNAME .
 freewebportal.com CNAME .
+freewebs.com CNAME .
 freewebsitehosting.com CNAME .
 freewebspace.com CNAME .
 freewebtools.com CNAME .
 freewha.com CNAME .
 freezoka.net CNAME .
 freightinternationalservices.com CNAME .
+frewwebs.com CNAME .
 friendcircles.com CNAME .
 ftp.totallyanonymous.com CNAME .
 fuer-alle.de CNAME .
@@ -587,6 +654,7 @@ fw.hu CNAME .
 game.lc CNAME .
 gaming.lc CNAME .
 gearhostpreview.com CNAME .
+genblogger.com CNAME .
 gerentebr.com CNAME .
 getenjoyment.net CNAME .
 getresponsesite.com CNAME .
@@ -595,6 +663,7 @@ gilde.in CNAME .
 gildenseite.de CNAME .
 girlsense.com CNAME .
 glitch.me CNAME .
+goabroadblog.com CNAME .
 godaddysites.com CNAME .
 gofreeserve.com CNAME .
 googletagmanagers.com CNAME .
@@ -610,6 +679,7 @@ gtempurl.com CNAME .
 guest.de CNAME .
 guide.lc CNAME .
 guzhibo.cn CNAME .
+gynoblog.com CNAME .
 h.gp CNAME .
 h4g3z1-hoster.web.app CNAME .
 hanefra7bikiemta.com CNAME .
@@ -623,6 +693,7 @@ home.lc CNAME .
 homemarker.com CNAME .
 homepage.cx CNAME .
 homepage.lc CNAME .
+homestead.com CNAME .
 hop.ru CNAME .
 host.sk CNAME .
 hostedforfree.com CNAME .
@@ -633,6 +704,7 @@ hostkda.com CNAME .
 hostland.pro CNAME .
 hostseba.com CNAME .
 hot.lc CNAME .
+hotusa.org CNAME .
 hoxty.com CNAME .
 hp.lc CNAME .
 hpage.com CNAME .
@@ -655,6 +727,7 @@ iblogger.org CNAME .
 iceiy.com CNAME .
 id.gp CNAME .
 idiot24.de CNAME .
+ifdef.jp CNAME .
 igg.biz CNAME .
 ij2.de CNAME .
 il.gp CNAME .
@@ -665,6 +738,7 @@ in24.de CNAME .
 inbox24.eu CNAME .
 inbox24.net CNAME .
 inbox24.org CNAME .
+infinityfree.com CNAME .
 infinityfree.net CNAME .
 infinityfreeapp.com CNAME .
 info-com.de CNAME .
@@ -684,6 +758,7 @@ invoicenotices.com CNAME .
 ir.gp CNAME .
 is-alive.de CNAME .
 is-best.net CNAME .
+is-blog.com CNAME .
 is-great.org CNAME .
 ishg.za.com CNAME .
 ispot.cc CNAME .
@@ -699,9 +774,11 @@ iwarp.com CNAME .
 iwopop.com CNAME .
 ixeo.com CNAME .
 j55.eu CNAME .
+jaiblogs.com CNAME .
 janhost.com CNAME .
 jcmemoryscan.com CNAME .
 jeun.fr CNAME .
+jiliblog.com CNAME .
 jimdofree.com CNAME .
 jimdosite.com CNAME .
 jixx.de CNAME .
@@ -715,7 +792,9 @@ jugem.jp CNAME .
 justns.ru CNAME .
 k.gp CNAME .
 k1.cx CNAME .
+ka-blogs.com CNAME .
 kann-helfen.de CNAME .
+kataweb.it CNAME .
 keepfree.de CNAME .
 kilu.at CNAME .
 kilu.biz CNAME .
@@ -737,11 +816,13 @@ l4n.org CNAME .
 l8n5kafm6l.net CNAME .
 laden.biz CNAME .
 land.to CNAME .
+laowaiblog.com CNAME .
 launchaco.com CNAME .
 leaguelineup.com CNAME .
 lernt.de CNAME .
 lhosting.info CNAME .
 liebe.lc CNAME .
+life3dblog.com CNAME .
 like-blogs.com CNAME .
 likesyou.org CNAME .
 links.lc CNAME .
@@ -749,6 +830,8 @@ list-mgmt.com CNAME .
 live-stream.eu CNAME .
 live2.de CNAME .
 liveblog365.com CNAME .
+livebloggs.com CNAME .
+livedoor.jp CNAME .
 livehost.fr CNAME .
 logdown.com CNAME .
 lojaintegrada.com.br CNAME .
@@ -774,7 +857,8 @@ megabyet.net CNAME .
 members.domaindlx.com CNAME .
 merchats.com CNAME .
 mex.tl CNAME .
-mindnmagick.com CNAME .
+mforos.com CNAME .
+miarroba.com CNAME .
 mit-wenig-geld.de CNAME .
 mixh.jp CNAME .
 mmm.page CNAME .
@@ -787,6 +871,7 @@ mpeblog.com CNAME .
 muf.mobi CNAME .
 musik.cx CNAME .
 musik.lc CNAME .
+mw.hu CNAME .
 mx.gp CNAME .
 my-board.org CNAME .
 my-free.website CNAME .
@@ -798,9 +883,11 @@ my1.ru CNAME .
 my3gb.com CNAME .
 myartsonline.com CNAME .
 mybb.pw CNAME .
+mybb.ru CNAME .
 myblogvoice.com CNAME .
 mybluehost.me CNAME .
 mybluehostin.me CNAME .
+mybuzzblog.com CNAME .
 mycpanel.rs CNAME .
 mydiscussion.net CNAME .
 myeweb.net CNAME .
@@ -827,6 +914,7 @@ netz.tl CNAME .
 newmail.ru CNAME .
 nexgenelectricct.com CNAME .
 nichesite.org CNAME .
+nizarblog.com CNAME .
 nl.gp CNAME .
 nl.kg CNAME .
 noads.biz CNAME .
@@ -858,9 +946,11 @@ only4u.eu CNAME .
 onmbl.com CNAME .
 orgsites.com CNAME .
 over-blog.com CNAME .
+overblog.com CNAME .
 own-free-website.com CNAME .
 ozq.de CNAME .
 p.gp CNAME .
+p2blogs.com CNAME .
 page.tl CNAME .
 page4.me CNAME .
 pages10.com CNAME .
@@ -887,6 +977,7 @@ pl.de CNAME .
 pl.gp CNAME .
 planet.tl CNAME .
 podia.com CNAME .
+pointblog.net CNAME .
 populr.me CNAME .
 portal.lc CNAME .
 postbit.com CNAME .
@@ -896,23 +987,28 @@ privat.lc CNAME .
 pro.ac CNAME .
 pro.vg CNAME .
 pro3.de CNAME .
+proboards.com CNAME .
 profis.info CNAME .
 profreehost.com CNAME .
 prohosts.org CNAME .
 prv.pl CNAME .
 psend.com CNAME .
+psend.net CNAME .
 pt.gp CNAME .
 pt.kg CNAME .
 q.gp CNAME .
 q77.eu CNAME .
 qipim.ru CNAME .
 ql4h.net CNAME .
+qowap.com CNAME .
 qu.am CNAME .
 quiztionnaire.uk CNAME .
 r.gp CNAME .
+raidersfanteamshop.com CNAME .
 re2.de CNAME .
 reco.ws CNAME .
 regruhosting.ru CNAME .
+review-blogger.com CNAME .
 rf.gd CNAME .
 ro.gp CNAME .
 royal-host.com CNAME .
@@ -965,8 +1061,10 @@ sitepalace.com CNAME .
 siterubix.com CNAME .
 sitew.fr CNAME .
 skul.de CNAME .
+skyblog.com CNAME .
 skyrock.com CNAME .
 sms.cr CNAME .
+snack-blog.com CNAME .
 social-networking.me CNAME .
 socialsmp.com CNAME .
 solidwebhost.com CNAME .
@@ -980,6 +1078,7 @@ sportsontheweb.net CNAME .
 spruz.com CNAME .
 srv1.org CNAME .
 start.lc CNAME .
+startertjes.nl CNAME .
 sth.nz CNAME .
 stormloader.com CNAME .
 stormpages.com CNAME .
@@ -1000,6 +1099,7 @@ te4m.de CNAME .
 team.cx CNAME .
 team.tl CNAME .
 teamzonesports.com CNAME .
+techionblog.com CNAME .
 tehno-politen.ru CNAME .
 teleporthq.app CNAME .
 telrock.org CNAME .
@@ -1012,9 +1112,13 @@ testingnow.me CNAME .
 tggame.xyz CNAME .
 th.gp CNAME .
 thamboli.co.za CNAME .
+theideasblog.com CNAME .
+theisblog.com CNAME .
+thezenweb.com CNAME .
 thisistap.com CNAME .
 tiiny.host CNAME .
 tilda.ws CNAME .
+timeblog.net CNAME .
 timeforchangecounselling.com CNAME .
 tld.cc CNAME .
 tmweb.ru CNAME .
@@ -1029,8 +1133,11 @@ trackfinanceworld.com CNAME .
 trend.in CNAME .
 tribalpages.com CNAME .
 tripod.com CNAME .
+tripod.lycos.co.uk CNAME .
+tripod.lycos.it CNAME .
 turbo.site CNAME .
 turkish.lc CNAME .
+tusblogos.com CNAME .
 tw.gp CNAME .
 tw1.ru CNAME .
 u.gp CNAME .
@@ -1071,6 +1178,7 @@ uzblog.net CNAME .
 v.gp CNAME .
 v0r.org CNAME .
 vastserve.com CNAME .
+vblogetin.com CNAME .
 ve.gp CNAME .
 verifypass.pw CNAME .
 veritafinancebank.com CNAME .
@@ -1097,14 +1205,18 @@ web-chat.eu CNAME .
 web-clan.de CNAME .
 web.gg CNAME .
 web.pe CNAME .
+web1000.com CNAME .
 web1337.net CNAME .
 webaccess-alert.com CNAME .
 webaccess-email.com CNAME .
 webador.com CNAME .
 webatu.com CNAME .
 webblog24.de CNAME .
+webblogg.se CNAME .
+webbuzzfeed.com CNAME .
 webcindario.com CNAME .
 webgarden.com CNAME .
+weblium.com CNAME .
 weblium.site CNAME .
 webng.com CNAME .
 webnode.be CNAME .
@@ -1136,6 +1248,7 @@ webnode.se CNAME .
 webnode.sk CNAME .
 webnode.tw CNAME .
 webnode.vn CNAME .
+webobo.com CNAME .
 webs.com CNAME .
 webself.net CNAME .
 webselfsite.net CNAME .
@@ -1152,8 +1265,10 @@ webzdarma.cz CNAME .
 weebly.com CNAME .
 weeblysite.com CNAME .
 welt.tl CNAME .
+widblog.com CNAME .
 wiki.lc CNAME .
 will-dich.eu CNAME .
+wixapps.net CNAME .
 world-blog.de CNAME .
 world-store.de CNAME .
 world.mu CNAME .
@@ -1167,6 +1282,7 @@ x.gp CNAME .
 x10.bz CNAME .
 x9.eu CNAME .
 x90x.net CNAME .
+xanga.com CNAME .
 xaper.com CNAME .
 xl.lc CNAME .
 xml.in CNAME .
@@ -1184,6 +1300,7 @@ xxxxxxxx.jp CNAME .
 y.gp CNAME .
 y0.pl CNAME .
 y55.eu CNAME .
+yamanoha.com CNAME .
 ygrrvlvvgf.top CNAME .
 yi.org CNAME .
 yj.ae CNAME .
@@ -1196,6 +1313,7 @@ yourjavascript.com CNAME .
 yuichi.shop CNAME .
 z.gp CNAME .
 za.gp CNAME .
+zoekvinden.nl CNAME .
 zohosites.com CNAME .
 zoomshare.com CNAME .
 zustimmen.de CNAME .
