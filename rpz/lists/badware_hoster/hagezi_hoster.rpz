@@ -1,17 +1,22 @@
 ; HaGeZi Badware Hoster
 ; Category: badware_hoster
-; Generated: 2026-05-05 05:19:44 UTC
+; Generated: 2026-05-06 05:34:48 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1316
+; Original domains (before deduplication): 1323
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026050505 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026050605 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000a.de CNAME .
+000free.us CNAME .
+000nethost.com CNAME .
 000space.com CNAME .
+000webapp.com CNAME .
 000webhost.com CNAME .
+000webhost.fr CNAME .
 000webhostapp.com CNAME .
+000worldwide.com CNAME .
 00author.com CNAME .
 00freehost.com CNAME .
 00go.com CNAME .
@@ -1079,6 +1084,7 @@ sportsontheweb.net CNAME .
 spruz.com CNAME .
 srv1.org CNAME .
 start.lc CNAME .
+start.page CNAME .
 startertjes.nl CNAME .
 sth.nz CNAME .
 stormloader.com CNAME .
@@ -1135,6 +1141,7 @@ trend.in CNAME .
 tribalpages.com CNAME .
 tripod.com CNAME .
 tripod.lycos.co.uk CNAME .
+tripod.lycos.de CNAME .
 tripod.lycos.it CNAME .
 turbo.site CNAME .
 turkish.lc CNAME .
