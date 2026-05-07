@@ -1,10 +1,10 @@
 ; Badware Hoster Blocklist
-; Generated: 2026-05-06 05:34:48 UTC
+; Generated: 2026-05-07 05:36:59 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1323
+; Original domains (before deduplication): 1325
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026050605 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026050705 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000a.de CNAME .
@@ -457,6 +457,7 @@ comule.com CNAME .
 comunidades.net CNAME .
 comxa.com CNAME .
 conohawing.com CNAME .
+convertri.com CNAME .
 cool.hn CNAME .
 cool.lc CNAME .
 coolfreepages.com CNAME .
@@ -664,6 +665,7 @@ gerentebr.com CNAME .
 getenjoyment.net CNAME .
 getresponsesite.com CNAME .
 gg123.vip CNAME .
+ghost.io CNAME .
 gilde.in CNAME .
 gildenseite.de CNAME .
 girlsense.com CNAME .
@@ -729,6 +731,7 @@ hyperphp.com CNAME .
 i.gp CNAME .
 ibiz.cc CNAME .
 iblogger.org CNAME .
+ic0.app CNAME .
 iceiy.com CNAME .
 id.gp CNAME .
 idiot24.de CNAME .
@@ -1178,7 +1181,6 @@ us.nf CNAME .
 us.st CNAME .
 usa.gg CNAME .
 usafreespace.com CNAME .
-usclargo.com CNAME .
 user.lc CNAME .
 uz.gp CNAME .
 uzblog.net CNAME .
