@@ -1,6 +1,6 @@
 # Box Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-05 06:23:53 UTC
+# Generated: 2026-05-07 06:44:00 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: box.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -97,7 +97,6 @@
 0.0.0.0 lb0x.com
 0.0.0.0 lbox.com
 0.0.0.0 ldox.com
-0.0.0.0 llbox.com
 0.0.0.0 nbox.com
 0.0.0.0 nox.com
 0.0.0.0 obx.com

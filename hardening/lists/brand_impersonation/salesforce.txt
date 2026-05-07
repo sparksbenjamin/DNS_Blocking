@@ -1,6 +1,6 @@
 # Salesforce Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-05 06:23:53 UTC
+# Generated: 2026-05-07 06:44:00 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: salesforce.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -27,6 +27,7 @@
 0.0.0.0 salerforce.com
 0.0.0.0 salersforce.com
 0.0.0.0 sales-force.com
+0.0.0.0 salesaforce.com
 0.0.0.0 salesdforce.com
 0.0.0.0 salesdorce.com
 0.0.0.0 saleseforce.com
@@ -48,7 +49,6 @@
 0.0.0.0 salesfor.ce.com
 0.0.0.0 salesforbe.com
 0.0.0.0 salesforc.com
-0.0.0.0 salesforca.com
 0.0.0.0 salesforcc.com
 0.0.0.0 salesforcce.com
 0.0.0.0 salesforce1.com
@@ -113,9 +113,9 @@
 0.0.0.0 slesforce.com
 0.0.0.0 solesforce.com
 0.0.0.0 ssalesforce.com
-0.0.0.0 szlesforce.com
 0.0.0.0 walesforce.com
 0.0.0.0 wsalesforce.com
+0.0.0.0 xn--saesfrce-7ob7i.com
 0.0.0.0 xn--salesforc-83a.com
 0.0.0.0 xn--salesforc-j4a.com
 0.0.0.0 xn--salesorce-pic.com

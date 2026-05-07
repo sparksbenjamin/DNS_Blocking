@@ -1,6 +1,6 @@
 # Adobe Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-05 06:23:53 UTC
+# Generated: 2026-05-07 06:44:00 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: adobe.com, acrobat.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -16,7 +16,6 @@
 0.0.0.0 accrobat.com
 0.0.0.0 acdobe.com
 0.0.0.0 aclobe.com
-0.0.0.0 aclode.com
 0.0.0.0 acobat.com
 0.0.0.0 acobe.com
 0.0.0.0 acorbat.com
@@ -36,7 +35,6 @@
 0.0.0.0 acrobatx.com
 0.0.0.0 acrobatz.com
 0.0.0.0 acrobau.com
-0.0.0.0 acrobay.com
 0.0.0.0 acrobet.com
 0.0.0.0 acrobit.com
 0.0.0.0 acrobot.com
@@ -63,6 +61,7 @@
 0.0.0.0 adkobe.com
 0.0.0.0 adlbe.com
 0.0.0.0 adlobe.com
+0.0.0.0 ado-be.com
 0.0.0.0 ado0be.com
 0.0.0.0 ado9be.com
 0.0.0.0 adob.com
@@ -105,7 +104,6 @@
 0.0.0.0 adobne.com
 0.0.0.0 adobo.com
 0.0.0.0 adobr.com
-0.0.0.0 adobs.com
 0.0.0.0 adobu.com
 0.0.0.0 adobve.com
 0.0.0.0 adobw.com
@@ -122,7 +120,6 @@
 0.0.0.0 adohbe.com
 0.0.0.0 adohe.com
 0.0.0.0 adoibe.com
-0.0.0.0 adoje.com
 0.0.0.0 adokbe.com
 0.0.0.0 adolbe.com
 0.0.0.0 adollbe.com
@@ -138,7 +135,6 @@
 0.0.0.0 adrobat.com
 0.0.0.0 adrobe.com
 0.0.0.0 adsobe.com
-0.0.0.0 adube.com
 0.0.0.0 adxobe.com
 0.0.0.0 aedobe.com
 0.0.0.0 aeobe.com
@@ -165,14 +161,12 @@
 0.0.0.0 axdobe.com
 0.0.0.0 axobe.com
 0.0.0.0 azdobe.com
-0.0.0.0 carobat.com
 0.0.0.0 cdobe.com
 0.0.0.0 crobat.com
 0.0.0.0 daobe.com
 0.0.0.0 dobe.com
 0.0.0.0 ecrobat.com
 0.0.0.0 edobe.com
-0.0.0.0 idobe.com
 0.0.0.0 odobe.com
 0.0.0.0 qadobe.com
 0.0.0.0 qdobe.com

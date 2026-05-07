@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-05 06:23:53 UTC
+# Generated: 2026-05-07 06:44:00 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -56,7 +56,6 @@
 0.0.0.0 l1ue.com
 0.0.0.0 l1vc.com
 0.0.0.0 l1ve.com
-0.0.0.0 l8ve.com
 0.0.0.0 l9ve.com
 0.0.0.0 lave.com
 0.0.0.0 leve.com
@@ -113,7 +112,6 @@
 0.0.0.0 liveh.com
 0.0.0.0 livei.com
 0.0.0.0 livej.com
-0.0.0.0 livek.com
 0.0.0.0 livel.com
 0.0.0.0 livem.com
 0.0.0.0 liveo.com
@@ -143,6 +141,7 @@
 0.0.0.0 liwe.com
 0.0.0.0 ljive.com
 0.0.0.0 ljve.com
+0.0.0.0 lkive.com
 0.0.0.0 lkve.com
 0.0.0.0 llive.com
 0.0.0.0 llue.com
@@ -275,7 +274,6 @@
 0.0.0.0 microsloft.com
 0.0.0.0 microsloftonline.com
 0.0.0.0 microsmft.com
-0.0.0.0 microsnft.com
 0.0.0.0 microsnftonline.com
 0.0.0.0 microso0ft.com
 0.0.0.0 microso9ft.com
@@ -518,6 +516,7 @@
 0.0.0.0 muicrosoft.com
 0.0.0.0 mutlook.com
 0.0.0.0 mycrosoft.com
+0.0.0.0 mycrosoftonline.com
 0.0.0.0 nffice.com
 0.0.0.0 nicr0soft.com
 0.0.0.0 nicrosoft.com
@@ -539,13 +538,11 @@
 0.0.0.0 oatlook.com
 0.0.0.0 ocfice.com
 0.0.0.0 odffice.com
-0.0.0.0 odfice.com
 0.0.0.0 oetlook.com
 0.0.0.0 of-fice.com
 0.0.0.0 of.fice.com
 0.0.0.0 ofcice.com
 0.0.0.0 ofdfice.com
-0.0.0.0 ofdice.com
 0.0.0.0 off-ice.com
 0.0.0.0 off1ce.com
 0.0.0.0 off8ce.com
@@ -567,10 +564,8 @@
 0.0.0.0 offic3.com
 0.0.0.0 offic4.com
 0.0.0.0 offica.com
-0.0.0.0 officc.com
 0.0.0.0 officce.com
 0.0.0.0 officd.com
-0.0.0.0 officde.com
 0.0.0.0 office0.com
 0.0.0.0 office1.com
 0.0.0.0 office2.com
@@ -595,7 +590,6 @@
 0.0.0.0 officek.com
 0.0.0.0 officel.com
 0.0.0.0 officem.com
-0.0.0.0 officen.com
 0.0.0.0 officeo.com
 0.0.0.0 officep.com
 0.0.0.0 officeq.com
@@ -618,6 +612,7 @@
 0.0.0.0 officxe.com
 0.0.0.0 officz.com
 0.0.0.0 offidce.com
+0.0.0.0 offide.com
 0.0.0.0 offie.com
 0.0.0.0 offiec.com
 0.0.0.0 offiee.com
@@ -625,7 +620,6 @@
 0.0.0.0 offife.com
 0.0.0.0 offige.com
 0.0.0.0 offiice.com
-0.0.0.0 offikce.com
 0.0.0.0 offike.com
 0.0.0.0 offioce.com
 0.0.0.0 offisce.com
@@ -700,7 +694,6 @@
 0.0.0.0 out5look.com
 0.0.0.0 out6look.com
 0.0.0.0 outdook.com
-0.0.0.0 outglook.com
 0.0.0.0 outhook.com
 0.0.0.0 outi00k.com
 0.0.0.0 outiook.com
@@ -727,7 +720,6 @@
 0.0.0.0 outlo0ok.com
 0.0.0.0 outlo9k.com
 0.0.0.0 outlo9ok.com
-0.0.0.0 outloak.com
 0.0.0.0 outloek.com
 0.0.0.0 outloik.com
 0.0.0.0 outloiok.com
@@ -930,7 +922,6 @@
 0.0.0.0 xn--outlok-lxa.com
 0.0.0.0 xn--outlok-tl8b.com
 0.0.0.0 xn--outloo-1bb.com
-0.0.0.0 xn--outloo-1p7b.com
 0.0.0.0 xn--outloo-8bb.com
 0.0.0.0 xn--outook-5db.com
 0.0.0.0 xn--rncrosoft-64a.com

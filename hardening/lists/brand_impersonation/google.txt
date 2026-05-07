@@ -1,6 +1,6 @@
 # Google Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-05 06:23:53 UTC
+# Generated: 2026-05-07 06:44:00 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: google.com, gmail.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -74,7 +74,6 @@
 0.0.0.0 gma9l.com
 0.0.0.0 gmaail.com
 0.0.0.0 gmaal.com
-0.0.0.0 gmael.com
 0.0.0.0 gmahl.com
 0.0.0.0 gmai-l.com
 0.0.0.0 gmai.com
@@ -321,7 +320,6 @@
 0.0.0.0 gopogle.com
 0.0.0.0 gougle.com
 0.0.0.0 gpail.com
-0.0.0.0 gpmail.com
 0.0.0.0 gpogle.com
 0.0.0.0 gpoogle.com
 0.0.0.0 grail.com
@@ -329,7 +327,6 @@
 0.0.0.0 grna1l.com
 0.0.0.0 grnai1.com
 0.0.0.0 grnaii.com
-0.0.0.0 grnail.com
 0.0.0.0 grnall.com
 0.0.0.0 grrail.com
 0.0.0.0 gtmail.com
@@ -431,7 +428,6 @@
 0.0.0.0 xn--gmil-1na.com
 0.0.0.0 xn--gmil-1sa.com
 0.0.0.0 xn--gmil-6na.com
-0.0.0.0 xn--gmil-6q5a.com
 0.0.0.0 xn--gmil-hoa.com
 0.0.0.0 xn--gmil-moa.com
 0.0.0.0 xn--gmil-roa.com
