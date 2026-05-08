@@ -1,11 +1,11 @@
 ; HaGeZi Badware Hoster
 ; Category: badware_hoster
-; Generated: 2026-05-07 05:36:59 UTC
+; Generated: 2026-05-08 04:57:04 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1325
+; Original domains (before deduplication): 1326
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026050705 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026050804 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000a.de CNAME .
@@ -1151,6 +1151,7 @@ turkish.lc CNAME .
 tusblogos.com CNAME .
 tw.gp CNAME .
 tw1.ru CNAME .
+twc1.net CNAME .
 u.gp CNAME .
 ua.gp CNAME .
 ubpages.com CNAME .
