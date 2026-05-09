@@ -1,6 +1,6 @@
 # GitLab Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-07 06:44:00 UTC
+# Generated: 2026-05-09 06:22:08 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: gitlab.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -19,6 +19,7 @@
 0.0.0.0 giftlab.com
 0.0.0.0 giglab.com
 0.0.0.0 giitlab.com
+0.0.0.0 gilab.com
 0.0.0.0 giltab.com
 0.0.0.0 giplab.com
 0.0.0.0 girlab.com
@@ -32,6 +33,7 @@
 0.0.0.0 gitflab.com
 0.0.0.0 githab.com
 0.0.0.0 gitiab.com
+0.0.0.0 gitla-b.com
 0.0.0.0 gitla.com
 0.0.0.0 gitlab0.com
 0.0.0.0 gitlab6.com
@@ -41,8 +43,10 @@
 0.0.0.0 gitlabs.com
 0.0.0.0 gitlabx.com
 0.0.0.0 gitlabz.com
+0.0.0.0 gitlad.com
 0.0.0.0 gitlag.com
 0.0.0.0 gitlah.com
+0.0.0.0 gitlan.com
 0.0.0.0 gitlav.com
 0.0.0.0 gitlawb.com
 0.0.0.0 gitlb.com
@@ -52,6 +56,7 @@
 0.0.0.0 gitllab.com
 0.0.0.0 gitlob.com
 0.0.0.0 gitlsb.com
+0.0.0.0 gitlub.com
 0.0.0.0 gitslab.com
 0.0.0.0 gittlab.com
 0.0.0.0 giulab.com
@@ -62,6 +67,7 @@
 0.0.0.0 gltlab.com
 0.0.0.0 gmtlab.com
 0.0.0.0 goitlab.com
+0.0.0.0 gotlab.com
 0.0.0.0 gtilab.com
 0.0.0.0 gtlab.com
 0.0.0.0 guitlab.com
@@ -76,6 +82,8 @@
 0.0.0.0 titlab.com
 0.0.0.0 vitlab.com
 0.0.0.0 witlab.com
+0.0.0.0 xn--gitl-ocb58j.com
+0.0.0.0 xn--gitlab-mcb.com
 0.0.0.0 xn--gtlab-5sa.com
 0.0.0.0 xn--gtlab-q81b.com
 0.0.0.0 xn--gtlab-tsa.com

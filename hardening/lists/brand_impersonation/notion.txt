@@ -1,6 +1,6 @@
 # Notion Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-07 06:44:00 UTC
+# Generated: 2026-05-09 06:22:08 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: notion.so
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -9,11 +9,8 @@
 0.0.0.0 motion.so
 0.0.0.0 nation.so
 0.0.0.0 noiton.so
-0.0.0.0 norion.so
 0.0.0.0 noteon.so
-0.0.0.0 notin.so
 0.0.0.0 notio.so
-0.0.0.0 notiom.so
 0.0.0.0 notions.so
 0.0.0.0 notionso.com
 0.0.0.0 notlon.so

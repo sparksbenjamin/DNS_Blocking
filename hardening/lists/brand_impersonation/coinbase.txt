@@ -1,6 +1,6 @@
 # Coinbase Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-07 06:44:00 UTC
+# Generated: 2026-05-09 06:22:08 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: coinbase.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -43,6 +43,7 @@
 0.0.0.0 coijnbase.com
 0.0.0.0 coiknbase.com
 0.0.0.0 coimbase.com
+0.0.0.0 coimlbase.com
 0.0.0.0 coimnbase.com
 0.0.0.0 coin-base.com
 0.0.0.0 coinabse.com
@@ -163,13 +164,13 @@
 0.0.0.0 counbase.com
 0.0.0.0 cpinbase.com
 0.0.0.0 cpoinbase.com
+0.0.0.0 cuinbase.com
 0.0.0.0 cvoinbase.com
 0.0.0.0 cxoinbase.com
 0.0.0.0 dcoinbase.com
 0.0.0.0 doinbase.com
 0.0.0.0 fcoinbase.com
 0.0.0.0 foinbase.com
-0.0.0.0 koinbase.com
 0.0.0.0 ocinbase.com
 0.0.0.0 oinbase.com
 0.0.0.0 soinbase.com
@@ -189,6 +190,7 @@
 0.0.0.0 xn--cinbase-sx4c.com
 0.0.0.0 xn--cinbase-t0a.com
 0.0.0.0 xn--cinbase-t2c.com
+0.0.0.0 xn--cnbase-iwa1822d.com
 0.0.0.0 xn--cnbase-wva16l.com
 0.0.0.0 xn--cobase-4va24e.com
 0.0.0.0 xn--coibas-yt7b11b.com
@@ -232,6 +234,7 @@
 0.0.0.0 xn--coinbse-rgc.com
 0.0.0.0 xn--coinbse-twa.com
 0.0.0.0 xn--coinbse-w3a.com
+0.0.0.0 xn--colnbas-z8a.com
 0.0.0.0 xn--conase-krb8401d.com
 0.0.0.0 xn--conase-q9a78d.com
 0.0.0.0 xn--conbas-4va45a.com
