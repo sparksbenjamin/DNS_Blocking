@@ -1,11 +1,11 @@
 ; HaGeZi Badware Hoster
 ; Category: badware_hoster
-; Generated: 2026-05-08 04:57:04 UTC
+; Generated: 2026-05-09 05:26:36 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1326
+; Original domains (before deduplication): 1327
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026050804 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026050905 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000a.de CNAME .
@@ -263,7 +263,6 @@ blogg.se CNAME .
 bloggactif.com CNAME .
 bloggazzo.com CNAME .
 blogger.ba CNAME .
-blogger.com CNAME .
 blogger.hu CNAME .
 bloggerchest.com CNAME .
 bloggin-ads.com CNAME .
@@ -465,6 +464,7 @@ coolfreepages.com CNAME .
 coolpage.biz CNAME .
 corolain.ru CNAME .
 creacionblog.com CNAME .
+created.app CNAME .
 creatorlink.net CNAME .
 cryptonight.net CNAME .
 cs-clan.org CNAME .
@@ -573,6 +573,7 @@ event-redeem.com CNAME .
 events-games.com CNAME .
 evenweb.com CNAME .
 exactpages.com CNAME .
+example-website.work.gd CNAME .
 exblog.jp CNAME .
 ez-sites.ws CNAME .
 ezblogz.com CNAME .
@@ -707,6 +708,7 @@ host.sk CNAME .
 hostedforfree.com CNAME .
 hostfree.pw CNAME .
 hostingas.in CNAME .
+hostingersite.com CNAME .
 hostingsiteforfree.com CNAME .
 hostkda.com CNAME .
 hostland.pro CNAME .
@@ -1022,7 +1024,6 @@ rf.gd CNAME .
 ro.gp CNAME .
 royal-host.com CNAME .
 rozblog.com CNAME .
-rssing.com CNAME .
 ru.cm CNAME .
 ru.gp CNAME .
 ru.nu CNAME .
@@ -1053,7 +1054,6 @@ server3.eu CNAME .
 service.lc CNAME .
 share.lc CNAME .
 sharkserve.com CNAME .
-shivtr.com CNAME .
 shop-pro.jp CNAME .
 shop.co CNAME .
 shop.fm CNAME .
@@ -1324,6 +1324,7 @@ yourjavascript.com CNAME .
 yuichi.shop CNAME .
 z.gp CNAME .
 za.gp CNAME .
+zapier.app CNAME .
 zoekvinden.nl CNAME .
 zohosites.com CNAME .
 zoomshare.com CNAME .
