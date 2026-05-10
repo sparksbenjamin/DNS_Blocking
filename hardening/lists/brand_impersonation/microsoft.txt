@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-09 06:22:08 UTC
+# Generated: 2026-05-10 06:38:15 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -65,6 +65,7 @@
 0.0.0.0 lhve.com
 0.0.0.0 li-ve.com
 0.0.0.0 li.ve.com
+0.0.0.0 li6e.com
 0.0.0.0 li9ve.com
 0.0.0.0 libe.com
 0.0.0.0 libve.com
@@ -124,6 +125,7 @@
 0.0.0.0 lives.com
 0.0.0.0 livet.com
 0.0.0.0 liveu.com
+0.0.0.0 livev.com
 0.0.0.0 livew.com
 0.0.0.0 livex.com
 0.0.0.0 livey.com
@@ -883,6 +885,7 @@
 0.0.0.0 xn--microoft-l9c.com
 0.0.0.0 xn--microoft-qvb.com
 0.0.0.0 xn--microoft-rwb.com
+0.0.0.0 xn--microoftonlin-n1b52h.com
 0.0.0.0 xn--microsft-03a.com
 0.0.0.0 xn--microsft-380d.com
 0.0.0.0 xn--microsft-5rb.com
@@ -908,11 +911,13 @@
 0.0.0.0 xn--micrsoft-p3a.com
 0.0.0.0 xn--micrsoft-q4a.com
 0.0.0.0 xn--mirooft-vxa69h.com
+0.0.0.0 xn--mirooftonline-ctb63k.com
 0.0.0.0 xn--mirosoft-18a.com
 0.0.0.0 xn--mirosoft-hw7c.com
 0.0.0.0 xn--mirosoft-lbb.com
 0.0.0.0 xn--mirosoft-t0a.com
-0.0.0.0 xn--nnicrosoftnline-lsb.com
+0.0.0.0 xn--mirosoftonlin-1hb73b.com
+0.0.0.0 xn--mirosoftonlne-6ib92u.com
 0.0.0.0 xn--offce-1sa.com
 0.0.0.0 xn--offce-7sa.com
 0.0.0.0 xn--offce-doc.com
@@ -923,6 +928,7 @@
 0.0.0.0 xn--oice-geba.com
 0.0.0.0 xn--otlook-3ya.com
 0.0.0.0 xn--otlook-wnb.com
+0.0.0.0 xn--ouloo-119an1i.com
 0.0.0.0 xn--oulook-jmc.com
 0.0.0.0 xn--outlk-xtah.com
 0.0.0.0 xn--outlok-6wa.com
@@ -940,5 +946,6 @@
 0.0.0.0 xn--rncrosoft-64a.com
 0.0.0.0 xn--rncrosoft-h5a.com
 0.0.0.0 xn--rnicrosft-67a.com
+0.0.0.0 xn--utlk-iraa2854c.com
 0.0.0.0 xn--utlook-9fb.com
 0.0.0.0 xn--utlook-vxa.com
