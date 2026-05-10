@@ -1,7 +1,7 @@
 # Dynamic Dns Blocklist
-# Generated: 2026-05-09 05:26:36 UTC
+# Generated: 2026-05-10 05:42:06 UTC
 # Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains
-# Original domains (before deduplication): 1021
+# Original domains (before deduplication): 1022
 
 0.0.0.0 0000000000000000000000.com
 0.0.0.0 0x.no
@@ -85,6 +85,7 @@
 0.0.0.0 authorizeddns.us
 0.0.0.0 autoipset.com
 0.0.0.0 avandns.com
+0.0.0.0 awiki.org
 0.0.0.0 ax.lt
 0.0.0.0 b0tnet.com
 0.0.0.0 b33r.us
