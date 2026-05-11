@@ -1,11 +1,11 @@
 ; Phishing Army
 ; Category: phishing
-; Generated: 2026-05-10 05:42:06 UTC
+; Generated: 2026-05-11 06:04:18 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 385109
+; Original domains (before deduplication): 385113
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026051005 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026051106 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 0-105.com CNAME .
@@ -161510,6 +161510,8 @@ dofus-fr.com CNAME .
 dofus-mmorpg.com CNAME .
 dofus-mmorpg.fr CNAME .
 dofus-quest.shop CNAME .
+dofus-retro-com.com CNAME .
+dofus-retro-devblog.com CNAME .
 dofus-retro-event.shop CNAME .
 dofus-retro-maj.com CNAME .
 dofus-retro-saisonnier.com CNAME .
@@ -161521,6 +161523,7 @@ dofus.pro CNAME .
 dofusevents.com CNAME .
 dofuspoulesnoobs.fr CNAME .
 dofuspounlesnoobs.com CNAME .
+dofuspourlenoob.com CNAME .
 dofuspourlenoobs.fr CNAME .
 dofuspourlesnoobs.eu CNAME .
 dofuspourlesnoobs.fr CNAME .
@@ -299312,6 +299315,7 @@ my0secureverfymtb24.serveirc.com CNAME .
 my1023.lihao20020101.workers.dev CNAME .
 my121-site1820-home-106648.weeblysite.com CNAME .
 my1citibank1.serveusers.com CNAME .
+my1password.xyz CNAME .
 my1stwebsiteimeanhaha.000webhostapp.com CNAME .
 my2fa.wpenginepowered.com CNAME .
 my3-accountdetails.com CNAME .
