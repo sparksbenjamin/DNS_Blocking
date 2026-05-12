@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-10 06:38:15 UTC
+# Generated: 2026-05-12 06:41:49 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -157,6 +157,7 @@
 0.0.0.0 loive.com
 0.0.0.0 loutlook.com
 0.0.0.0 love.com
+0.0.0.0 lpive.com
 0.0.0.0 luive.com
 0.0.0.0 lutlook.com
 0.0.0.0 luve.com
@@ -398,6 +399,7 @@
 0.0.0.0 microsoftv.com
 0.0.0.0 microsoftw.com
 0.0.0.0 microsofty.com
+0.0.0.0 microsoftz.com
 0.0.0.0 microsofu.com
 0.0.0.0 microsofv.com
 0.0.0.0 microsofvt.com
@@ -494,7 +496,6 @@
 0.0.0.0 mive.com
 0.0.0.0 mivrosoft.com
 0.0.0.0 mivrosoftonline.com
-0.0.0.0 mixcrosoft.com
 0.0.0.0 mixrosoft.com
 0.0.0.0 mjcrosoft.com
 0.0.0.0 mjicrosoft.com
@@ -506,6 +507,7 @@
 0.0.0.0 mlcrosoft0nline.com
 0.0.0.0 mlcrosoftoniine.com
 0.0.0.0 mlcrosoftonlime.com
+0.0.0.0 mlcrosoftonline.com
 0.0.0.0 mlcrosoftonllne.com
 0.0.0.0 mlicrosoft.com
 0.0.0.0 mlive.com
@@ -531,6 +533,7 @@
 0.0.0.0 nlcrosoft.com
 0.0.0.0 nmicrosoft.com
 0.0.0.0 nmicrosoftonline.com
+0.0.0.0 nnicrosoft.com
 0.0.0.0 nnicrosoftonline.com
 0.0.0.0 nricrosoftonline.com
 0.0.0.0 nutlook.com
@@ -691,7 +694,6 @@
 0.0.0.0 ou5look.com
 0.0.0.0 ou8tlook.com
 0.0.0.0 oudlook.com
-0.0.0.0 ouflook.com
 0.0.0.0 ouglook.com
 0.0.0.0 ougtlook.com
 0.0.0.0 ouitlook.com
@@ -844,7 +846,6 @@
 0.0.0.0 xn--0ffce-vsa.com
 0.0.0.0 xn--ffice-iua.com
 0.0.0.0 xn--icrosoft-c3a.com
-0.0.0.0 xn--icrosoft-g89c.com
 0.0.0.0 xn--icrosoft-qy7c.com
 0.0.0.0 xn--icrosoftonline-kk7g.com
 0.0.0.0 xn--lcrosoft-g89c.com
@@ -885,7 +886,6 @@
 0.0.0.0 xn--microoft-l9c.com
 0.0.0.0 xn--microoft-qvb.com
 0.0.0.0 xn--microoft-rwb.com
-0.0.0.0 xn--microoftonlin-n1b52h.com
 0.0.0.0 xn--microsft-03a.com
 0.0.0.0 xn--microsft-380d.com
 0.0.0.0 xn--microsft-5rb.com
@@ -906,18 +906,16 @@
 0.0.0.0 xn--microsot-ez9c.com
 0.0.0.0 xn--microsot-x9b.com
 0.0.0.0 xn--micrsft-t1ab.com
+0.0.0.0 xn--micrsftonline-t6e2001i.com
 0.0.0.0 xn--micrsoft-73a.com
 0.0.0.0 xn--micrsoft-84a.com
 0.0.0.0 xn--micrsoft-p3a.com
 0.0.0.0 xn--micrsoft-q4a.com
 0.0.0.0 xn--mirooft-vxa69h.com
-0.0.0.0 xn--mirooftonline-ctb63k.com
 0.0.0.0 xn--mirosoft-18a.com
 0.0.0.0 xn--mirosoft-hw7c.com
 0.0.0.0 xn--mirosoft-lbb.com
 0.0.0.0 xn--mirosoft-t0a.com
-0.0.0.0 xn--mirosoftonlin-1hb73b.com
-0.0.0.0 xn--mirosoftonlne-6ib92u.com
 0.0.0.0 xn--offce-1sa.com
 0.0.0.0 xn--offce-7sa.com
 0.0.0.0 xn--offce-doc.com
@@ -928,7 +926,6 @@
 0.0.0.0 xn--oice-geba.com
 0.0.0.0 xn--otlook-3ya.com
 0.0.0.0 xn--otlook-wnb.com
-0.0.0.0 xn--ouloo-119an1i.com
 0.0.0.0 xn--oulook-jmc.com
 0.0.0.0 xn--outlk-xtah.com
 0.0.0.0 xn--outlok-6wa.com
@@ -946,6 +943,6 @@
 0.0.0.0 xn--rncrosoft-64a.com
 0.0.0.0 xn--rncrosoft-h5a.com
 0.0.0.0 xn--rnicrosft-67a.com
-0.0.0.0 xn--utlk-iraa2854c.com
+0.0.0.0 xn--utlk-xqaa23d.com
 0.0.0.0 xn--utlook-9fb.com
 0.0.0.0 xn--utlook-vxa.com

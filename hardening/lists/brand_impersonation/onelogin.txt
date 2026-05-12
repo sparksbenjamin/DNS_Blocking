@@ -1,6 +1,6 @@
 # OneLogin Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-10 06:38:15 UTC
+# Generated: 2026-05-12 06:41:49 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: onelogin.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -20,7 +20,6 @@
 0.0.0.0 onelgin.com
 0.0.0.0 onelgoin.com
 0.0.0.0 oneligin.com
-0.0.0.0 onellogin.com
 0.0.0.0 onelogi.com
 0.0.0.0 onelogiin.com
 0.0.0.0 onelogincom.com

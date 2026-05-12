@@ -1,6 +1,6 @@
 # eBay Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-10 06:38:15 UTC
+# Generated: 2026-05-12 06:41:49 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: ebay.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -13,6 +13,7 @@
 0.0.0.0 bay.com
 0.0.0.0 beay.com
 0.0.0.0 cbay.com
+0.0.0.0 clbay.com
 0.0.0.0 dbay.com
 0.0.0.0 debay.com
 0.0.0.0 e-bay.com
@@ -28,6 +29,7 @@
 0.0.0.0 ebag.com
 0.0.0.0 ebah.com
 0.0.0.0 ebai.com
+0.0.0.0 ebaq.com
 0.0.0.0 ebaqy.com
 0.0.0.0 ebas.com
 0.0.0.0 ebasy.com
