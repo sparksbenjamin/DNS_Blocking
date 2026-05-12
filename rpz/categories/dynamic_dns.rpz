@@ -1,10 +1,10 @@
 ; Dynamic Dns Blocklist
-; Generated: 2026-05-11 06:04:18 UTC
+; Generated: 2026-05-12 05:43:32 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1024
+; Original domains (before deduplication): 1020
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026051106 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026051205 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 0000000000000000000000.com CNAME .
@@ -195,7 +195,6 @@ ddns.cam CNAME .
 ddns.com.br CNAME .
 ddns.com.co CNAME .
 ddns.info CNAME .
-ddns.me.uk CNAME .
 ddns.mobi CNAME .
 ddns.ms CNAME .
 ddns.name CNAME .
@@ -430,7 +429,6 @@ guthriecontainers.com CNAME .
 gw.lt CNAME .
 gw1.org CNAME .
 h-o-s-t.name CNAME .
-h0stname.net CNAME .
 h1x.com CNAME .
 h4ck.me CNAME .
 h4g3z1-dyndns.web.app CNAME .
@@ -447,6 +445,7 @@ heroinewarrior.com CNAME .
 hiddencorner.org CNAME .
 hijaxdesigns.com CNAME .
 hin.tw CNAME .
+hiprinter.com CNAME .
 his.name CNAME .
 hitremixes.com CNAME .
 hldns.ru CNAME .
@@ -454,7 +453,6 @@ hmail.us CNAME .
 hmao.pro CNAME .
 hokum-smack.com CNAME .
 home.kg CNAME .
-home64.de CNAME .
 homelinuxserver.org CNAME .
 homenode.ca CNAME .
 homepc.it CNAME .
@@ -775,7 +773,6 @@ publicvm.com CNAME .
 pudim.info CNAME .
 qc.to CNAME .
 qhigh.com CNAME .
-qlbv.vn CNAME .
 qpoe.com CNAME .
 qthome.org CNAME .
 quackerscomic.com CNAME .
@@ -918,7 +915,6 @@ thenme.net CNAME .
 thesemmels.com CNAME .
 thingsnewandused.com CNAME .
 tinyrealm.com CNAME .
-tobuy.us CNAME .
 toh.info CNAME .
 topdns.com CNAME .
 topsddns.net CNAME .

@@ -1,10 +1,10 @@
 ; Badware Hoster Blocklist
-; Generated: 2026-05-11 06:04:18 UTC
+; Generated: 2026-05-12 05:43:32 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1254
+; Original domains (before deduplication): 1255
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026051106 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026051205 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000.pe CNAME .
@@ -103,11 +103,10 @@ $TTL 300
 4everland.app CNAME .
 4kp.de CNAME .
 4u2.de CNAME .
-500mb.net CNAME .
 50megs.com CNAME .
 50webs.com CNAME .
+50webs.org CNAME .
 530.at CNAME .
-5gbfree.com CNAME .
 5mp.eu CNAME .
 5on.de CNAME .
 5oo.de CNAME .
@@ -188,6 +187,7 @@ atsnx.com CNAME .
 atspace.biz CNAME .
 atspace.co.uk CNAME .
 atspace.com CNAME .
+atspace.org CNAME .
 atwebpages.com CNAME .
 au.gp CNAME .
 aufbauend.de CNAME .
@@ -626,7 +626,6 @@ gg123.vip CNAME .
 ghost.io CNAME .
 gilde.in CNAME .
 gildenseite.de CNAME .
-girlsense.com CNAME .
 glitch.me CNAME .
 godaddysites.com CNAME .
 gofreeserve.com CNAME .
@@ -864,6 +863,7 @@ neocities.org CNAME .
 netai.net CNAME .
 netfast.org CNAME .
 nethouse.ru CNAME .
+netspace.net.au CNAME .
 netten.ru CNAME .
 netz.tl CNAME .
 newmail.ru CNAME .
@@ -1018,6 +1018,7 @@ socialsmp.com CNAME .
 solidwebhost.com CNAME .
 somee.com CNAME .
 sophiashantidaniel.com CNAME .
+sosblog.com CNAME .
 soup.io CNAME .
 sp.gname.net CNAME .
 space.lc CNAME .
