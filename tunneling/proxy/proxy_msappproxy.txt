@@ -1,7 +1,6 @@
 05894af0-cb28-46d8-8716-74cdb46e2226.tenant.runtime.msappproxy.net
 28fbb2af-a743-4fb9-8e66-24d90147e2ec.tenant.runtime.msappproxy.net
 adminfrontend-cus-dm2p-1.msappproxy.net
-archndesproxy-archcapservices.msappproxy.net
 autoupdate.msappproxy.net
 baldoauthserviceprod-volvogroup.msappproxy.net
 bootstrap-appproxy-cus-dm2p-1.msappproxy.net
@@ -16,7 +15,6 @@ bootstrap.msappproxy.net
 chartcrl-chartindustries.msappproxy.net
 connector.his.msappproxy.net
 connector.msappproxy.net
-crl-pthsg.msappproxy.net
 crl-sunocoinc.msappproxy.net
 crl-wmic.msappproxy.net
 crldistributionpoint-viadcorp.msappproxy.net
@@ -28,16 +26,18 @@ cwap-ind1-runtime.routing.msappproxy.net
 cwap-nam1-runtime.routing.msappproxy.net
 cwap-nam2-runtime.routing.msappproxy.net
 cwap-nam3-runtime.routing.msappproxy.net
-cwap-nam4-runtime.routing.msappproxy.net
 dhscares-nychra.msappproxy.net
 edf442f5-b994-4c86-a131-b42b03a16c95.tenant.runtime.msappproxy.net
 his.msappproxy.net
+intunescep03-sap.msappproxy.net
+intunescep04-sap.msappproxy.net
 khsdscepprofileservice-khsd.msappproxy.net
 kotakworld-kotakeo.msappproxy.net
 matomowebanalytics-ogletree.msappproxy.net
 msappproxy.net
 msappproxy.us
 msgraph.msappproxy.net
+namsadmin-volvogroup.msappproxy.net
 ndes-ecobank.msappproxy.net
 ocsp-arrowelectronics.msappproxy.net
 orbit-techmahindra.msappproxy.net
@@ -48,7 +48,6 @@ proxy-appproxy-seaus-ml1p-1.msappproxy.net
 psfs-nmhealth.msappproxy.net
 pshr-nmhealth.msappproxy.net
 pta.bootstrap.his.msappproxy.net
-radsaas-aeliadutyfree.msappproxy.net
 rbccrl-readinggovuk.msappproxy.net
 recastgateway-armstrongceilings.msappproxy.net
 routing.msappproxy.net
@@ -120,7 +119,6 @@ vm2-proxy-hisgeneral-ncus-ch1p-4.connector.his.msappproxy.net
 vm2-proxy-hisgeneral-ncus-chi01p-2.connector.his.msappproxy.net
 vm2-proxy-hisgeneral-ncus-chi01p-6.connector.his.msappproxy.net
 vm2-proxy-hisgeneral-wus2-mw1p-1.connector.his.msappproxy.net
-vm2-proxy-hisgeneral-wus2-mwh01p-3.connector.his.msappproxy.net
 vm2-proxy-hisgeneral-wus2-mwh02p-2.connector.his.msappproxy.net
 vm2-proxy-pta-eus-bl02p-2.connector.his.msappproxy.net
 vm2-proxy-pta-eus-mnz01p-3.connector.his.msappproxy.net
@@ -194,8 +192,6 @@ vm7-proxy-hisgeneral-eus-bl02p-2.connector.his.msappproxy.net
 vm7-proxy-hisgeneral-eus-bl2p-1.connector.his.msappproxy.net
 vm7-proxy-hisgeneral-eus-mnz01p-3.connector.his.msappproxy.net
 vm7-proxy-hisgeneral-ncus-chi01p-2.connector.his.msappproxy.net
-vm7-proxy-hisgeneral-wus2-mw1p-1.connector.his.msappproxy.net
-vm7-proxy-hisgeneral-wus2-mwh01p-3.connector.his.msappproxy.net
 vm7-proxy-hisgeneral-wus2-mwh02p-2.connector.his.msappproxy.net
 vm7-proxy-pta-eus-bl02p-2.connector.his.msappproxy.net
 vm7-proxy-pta-eus-mnz01p-3.connector.his.msappproxy.net
