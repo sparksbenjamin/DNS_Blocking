@@ -1,7 +1,7 @@
 # Dynamic Dns Blocklist
-# Generated: 2026-05-13 05:54:05 UTC
+# Generated: 2026-05-14 05:53:12 UTC
 # Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains
-# Original domains (before deduplication): 1020
+# Original domains (before deduplication): 1021
 
 0.0.0.0 0000000000000000000000.com
 0.0.0.0 0x.no
@@ -887,6 +887,7 @@
 0.0.0.0 synology-ds.de
 0.0.0.0 synoserver.com
 0.0.0.0 sysadminetworks.com
+0.0.0.0 system-ns.com
 0.0.0.0 systes.net
 0.0.0.0 tallison.com
 0.0.0.0 tamaragibson.com

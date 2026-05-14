@@ -1,11 +1,11 @@
 ; HaGeZi Dynamic DNS
 ; Category: dynamic_dns
-; Generated: 2026-05-13 05:54:05 UTC
+; Generated: 2026-05-14 05:53:12 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1020
+; Original domains (before deduplication): 1021
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026051305 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026051405 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 0000000000000000000000.com CNAME .
@@ -892,6 +892,7 @@ synology-diskstation.de CNAME .
 synology-ds.de CNAME .
 synoserver.com CNAME .
 sysadminetworks.com CNAME .
+system-ns.com CNAME .
 systes.net CNAME .
 tallison.com CNAME .
 tamaragibson.com CNAME .
