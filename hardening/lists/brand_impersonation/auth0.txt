@@ -1,6 +1,6 @@
 # Auth0 Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-12 06:41:49 UTC
+# Generated: 2026-05-14 06:50:01 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: auth0.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -94,7 +94,6 @@
 0.0.0.0 auth1.com
 0.0.0.0 auth2.com
 0.0.0.0 auth4.com
-0.0.0.0 auth8.com
 0.0.0.0 auth9.com
 0.0.0.0 authb0.com
 0.0.0.0 authg0.com

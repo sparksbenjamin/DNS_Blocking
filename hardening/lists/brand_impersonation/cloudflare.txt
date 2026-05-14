@@ -1,6 +1,6 @@
 # Cloudflare Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-12 06:41:49 UTC
+# Generated: 2026-05-14 06:50:01 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: cloudflare.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -76,7 +76,6 @@
 0.0.0.0 cloudflared.com
 0.0.0.0 cloudflaree.com
 0.0.0.0 cloudflaren.com
-0.0.0.0 cloudflareo.com
 0.0.0.0 cloudflarer.com
 0.0.0.0 cloudflares.com
 0.0.0.0 cloudflaret.com
@@ -141,9 +140,9 @@
 0.0.0.0 kloudflare.com
 0.0.0.0 loudflare.com
 0.0.0.0 sloudflare.com
-0.0.0.0 xn--cldflare-g5a39n.com
 0.0.0.0 xn--clodflare-i6b.com
 0.0.0.0 xn--clodflare-is7d.com
+0.0.0.0 xn--clodlflare-pdb.com
 0.0.0.0 xn--cloudflae-7fe.com
 0.0.0.0 xn--cloudflae-7n6d.com
 0.0.0.0 xn--cloudflar-3f7d.com
@@ -154,5 +153,5 @@
 0.0.0.0 xn--cludflare-6x3d.com
 0.0.0.0 xn--cludflare-ml7d.com
 0.0.0.0 xn--cludflare-wxb.com
+0.0.0.0 xn--codflare-4mb50c.com
 0.0.0.0 xn--coudflare-0sb.com
-0.0.0.0 xn--loudflre-i9a0886e.com
