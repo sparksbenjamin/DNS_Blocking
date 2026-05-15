@@ -1,7 +1,7 @@
 # Dynamic Dns Blocklist
-# Generated: 2026-05-14 05:53:12 UTC
+# Generated: 2026-05-15 06:00:06 UTC
 # Format: Hosts file (0.0.0.0 domain.com) - blocks all subdomains
-# Original domains (before deduplication): 1021
+# Original domains (before deduplication): 1022
 
 0.0.0.0 0000000000000000000000.com
 0.0.0.0 0x.no
@@ -933,6 +933,7 @@
 0.0.0.0 twsuser.com
 0.0.0.0 tzo.com
 0.0.0.0 ucvradio.cl
+0.0.0.0 udp64.de
 0.0.0.0 ufodns.com
 0.0.0.0 ugo.si
 0.0.0.0 uk.ms
