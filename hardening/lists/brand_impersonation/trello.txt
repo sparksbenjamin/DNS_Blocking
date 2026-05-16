@@ -1,6 +1,6 @@
 # Trello Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-14 06:50:01 UTC
+# Generated: 2026-05-16 06:26:51 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: trello.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -44,7 +44,6 @@
 0.0.0.0 trellox.com
 0.0.0.0 trellp.com
 0.0.0.0 trellu.com
-0.0.0.0 trelmo.com
 0.0.0.0 trelo.com
 0.0.0.0 trelolo.com
 0.0.0.0 treloo.com

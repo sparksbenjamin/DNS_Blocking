@@ -1,13 +1,12 @@
 # Zoom Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-14 06:50:01 UTC
+# Generated: 2026-05-16 06:26:51 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: zoom.us
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
 
 0.0.0.0 2zoom.us
 0.0.0.0 3oom.us
-0.0.0.0 3zoom.us
 0.0.0.0 aoom.us
 0.0.0.0 azoom.us
 0.0.0.0 eoom.us

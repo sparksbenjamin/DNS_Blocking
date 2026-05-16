@@ -1,6 +1,6 @@
 # Cloudflare Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-14 06:50:01 UTC
+# Generated: 2026-05-16 06:26:51 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: cloudflare.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -85,6 +85,7 @@
 0.0.0.0 cloudflarm.com
 0.0.0.0 cloudflarr.com
 0.0.0.0 cloudflarre.com
+0.0.0.0 cloudflars.com
 0.0.0.0 cloudflaru.com
 0.0.0.0 cloudflarz.com
 0.0.0.0 cloudflase.com
@@ -114,7 +115,6 @@
 0.0.0.0 cloudtflare.com
 0.0.0.0 cloudtlare.com
 0.0.0.0 cloudvflare.com
-0.0.0.0 cloudvlare.com
 0.0.0.0 cloudxflare.com
 0.0.0.0 cloueflare.com
 0.0.0.0 cloufdlare.com
@@ -140,9 +140,10 @@
 0.0.0.0 kloudflare.com
 0.0.0.0 loudflare.com
 0.0.0.0 sloudflare.com
+0.0.0.0 xn--clodflare-26b.com
 0.0.0.0 xn--clodflare-i6b.com
 0.0.0.0 xn--clodflare-is7d.com
-0.0.0.0 xn--clodlflare-pdb.com
+0.0.0.0 xn--clouclflar-0mb.com
 0.0.0.0 xn--cloudflae-7fe.com
 0.0.0.0 xn--cloudflae-7n6d.com
 0.0.0.0 xn--cloudflar-3f7d.com
@@ -153,5 +154,6 @@
 0.0.0.0 xn--cludflare-6x3d.com
 0.0.0.0 xn--cludflare-ml7d.com
 0.0.0.0 xn--cludflare-wxb.com
-0.0.0.0 xn--codflare-4mb50c.com
+0.0.0.0 xn--codflare-nnb53m.com
 0.0.0.0 xn--coudflare-0sb.com
+0.0.0.0 xn--loudflare-kfb.com
