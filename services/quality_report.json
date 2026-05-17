@@ -31,9 +31,9 @@
       "service": "grindr"
     },
     {
-      "baseline_count": 76988,
-      "delta_pct": 0.15,
-      "domain_count": 76876,
+      "baseline_count": 76876,
+      "delta_pct": 0.01,
+      "domain_count": 76886,
       "group": "adult",
       "kind": "service",
       "path": "services/lists/adult/stevenblack_porn.txt",
@@ -10791,9 +10791,9 @@
       "service": "googleDNS"
     },
     {
-      "baseline_count": 18406,
-      "delta_pct": 0.02,
-      "domain_count": 18403,
+      "baseline_count": 18403,
+      "delta_pct": 0.71,
+      "domain_count": 18272,
       "group": "dns_bypass",
       "kind": "service",
       "path": "services/lists/dns_bypass/hagezi_doh_vpn_proxy_bypass.txt",
@@ -11241,9 +11241,9 @@
       "service": "blp_ransomware"
     },
     {
-      "baseline_count": 208,
-      "delta_pct": 13.94,
-      "domain_count": 237,
+      "baseline_count": 237,
+      "delta_pct": 25.74,
+      "domain_count": 176,
       "group": "malware",
       "kind": "service",
       "path": "services/lists/malware/threatfox.txt",
@@ -11251,9 +11251,9 @@
       "service": "threatfox"
     },
     {
-      "baseline_count": 1648,
-      "delta_pct": 2.43,
-      "domain_count": 1688,
+      "baseline_count": 1688,
+      "delta_pct": 3.85,
+      "domain_count": 1753,
       "group": "malware",
       "kind": "service",
       "path": "services/lists/malware/urlhaus.txt",
@@ -11381,9 +11381,9 @@
       "service": "whatsapp"
     },
     {
-      "baseline_count": 282,
-      "delta_pct": 6.38,
-      "domain_count": 264,
+      "baseline_count": 264,
+      "delta_pct": 11.74,
+      "domain_count": 233,
       "group": "phishing",
       "kind": "service",
       "path": "services/lists/phishing/openphish.txt",
@@ -11391,7 +11391,7 @@
       "service": "openphish"
     },
     {
-      "baseline_count": 283706,
+      "baseline_count": 283707,
       "delta_pct": 0.0,
       "domain_count": 283707,
       "group": "phishing",
@@ -11401,9 +11401,9 @@
       "service": "phishing_army"
     },
     {
-      "baseline_count": 20242,
-      "delta_pct": 1.12,
-      "domain_count": 20469,
+      "baseline_count": 20469,
+      "delta_pct": 0.52,
+      "domain_count": 20363,
       "group": "phishing",
       "kind": "service",
       "path": "services/lists/phishing/phishtank.txt",
@@ -11471,9 +11471,9 @@
       "service": "blp_scam"
     },
     {
-      "baseline_count": 15306,
-      "delta_pct": 1.07,
-      "domain_count": 15470,
+      "baseline_count": 15470,
+      "delta_pct": 0.94,
+      "domain_count": 15616,
       "group": "scam",
       "kind": "service",
       "path": "services/lists/scam/hagezi_fake.txt",
@@ -12302,8 +12302,8 @@
     },
     {
       "baseline_count": 9949,
-      "delta_pct": 0.0,
-      "domain_count": 9949,
+      "delta_pct": 0.09,
+      "domain_count": 9940,
       "group": "url_shortener",
       "kind": "service",
       "path": "services/lists/url_shortener/hagezi_urlshortener.txt",
@@ -12331,9 +12331,9 @@
       "service": null
     },
     {
-      "baseline_count": 79547,
-      "delta_pct": 0.14,
-      "domain_count": 79435,
+      "baseline_count": 79435,
+      "delta_pct": 0.01,
+      "domain_count": 79445,
       "group": "adult",
       "kind": "category",
       "path": "services/categories/adult.txt",
@@ -12401,9 +12401,9 @@
       "service": null
     },
     {
-      "baseline_count": 18406,
-      "delta_pct": 0.02,
-      "domain_count": 18403,
+      "baseline_count": 18403,
+      "delta_pct": 0.71,
+      "domain_count": 18272,
       "group": "dns_bypass",
       "kind": "category",
       "path": "services/categories/dns_bypass.txt",
@@ -12461,9 +12461,9 @@
       "service": null
     },
     {
-      "baseline_count": 3393,
-      "delta_pct": 1.62,
-      "domain_count": 3448,
+      "baseline_count": 3448,
+      "delta_pct": 0.03,
+      "domain_count": 3449,
       "group": "malware",
       "kind": "category",
       "path": "services/categories/malware.txt",
@@ -12481,9 +12481,9 @@
       "service": null
     },
     {
-      "baseline_count": 302232,
-      "delta_pct": 0.06,
-      "domain_count": 302411,
+      "baseline_count": 302411,
+      "delta_pct": 0.04,
+      "domain_count": 302281,
       "group": "phishing",
       "kind": "category",
       "path": "services/categories/phishing.txt",
@@ -12521,9 +12521,9 @@
       "service": null
     },
     {
-      "baseline_count": 130119,
-      "delta_pct": 0.13,
-      "domain_count": 130283,
+      "baseline_count": 130283,
+      "delta_pct": 0.11,
+      "domain_count": 130429,
       "group": "scam",
       "kind": "category",
       "path": "services/categories/scam.txt",
@@ -12602,8 +12602,8 @@
     },
     {
       "baseline_count": 9949,
-      "delta_pct": 0.0,
-      "domain_count": 9949,
+      "delta_pct": 0.09,
+      "domain_count": 9940,
       "group": "url_shortener",
       "kind": "category",
       "path": "services/categories/url_shortener.txt",
@@ -12621,13 +12621,13 @@
       "service": null
     }
   ],
-  "generated_at": "2026-05-16T05:33:21.726865+00:00",
+  "generated_at": "2026-05-17T05:55:17.415300+00:00",
   "issues": [],
   "profile": "services",
   "status": "passed",
   "summary": {
     "files_checked": 1262,
     "issues": 0,
-    "total_domains": 1873589
+    "total_domains": 1873359
   }
 }
