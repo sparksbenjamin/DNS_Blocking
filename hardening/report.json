@@ -2,17 +2,17 @@
   "categories": [
     {
       "category": "brand_impersonation",
-      "count": 6131,
+      "count": 6115,
       "path": "hardening/categories/brand_impersonation.txt"
     }
   ],
-  "generated_at": "2026-05-16T06:34:58.871688+00:00",
+  "generated_at": "2026-05-17T06:57:14.577752+00:00",
   "jobs": 3,
   "nameservers": null,
   "targets": [
     {
       "category": "brand_impersonation",
-      "count": 183,
+      "count": 184,
       "had_skipped_seed": false,
       "name": "Adobe",
       "path": "hardening/lists/brand_impersonation/adobe.txt",
@@ -27,7 +27,7 @@
           "skipped": false
         },
         {
-          "count": 44,
+          "count": 45,
           "seed_domain": "acrobat.com",
           "skipped": false
         }
@@ -120,7 +120,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 565,
+      "count": 566,
       "had_skipped_seed": false,
       "name": "Google",
       "path": "hardening/lists/brand_impersonation/google.txt",
@@ -130,7 +130,7 @@
       ],
       "seed_results": [
         {
-          "count": 305,
+          "count": 306,
           "seed_domain": "google.com",
           "skipped": false
         },
@@ -270,7 +270,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 943,
+      "count": 940,
       "had_skipped_seed": false,
       "name": "Microsoft",
       "path": "hardening/lists/brand_impersonation/microsoft.txt",
@@ -283,12 +283,12 @@
       ],
       "seed_results": [
         {
-          "count": 290,
+          "count": 289,
           "seed_domain": "microsoft.com",
           "skipped": false
         },
         {
-          "count": 165,
+          "count": 164,
           "seed_domain": "microsoftonline.com",
           "skipped": false
         },
@@ -298,7 +298,7 @@
           "skipped": false
         },
         {
-          "count": 191,
+          "count": 190,
           "seed_domain": "outlook.com",
           "skipped": false
         },
@@ -348,7 +348,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 119,
+      "count": 118,
       "had_skipped_seed": false,
       "name": "Salesforce",
       "path": "hardening/lists/brand_impersonation/salesforce.txt",
@@ -357,7 +357,7 @@
       ],
       "seed_results": [
         {
-          "count": 119,
+          "count": 118,
           "seed_domain": "salesforce.com",
           "skipped": false
         }
@@ -366,7 +366,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 90,
+      "count": 92,
       "had_skipped_seed": false,
       "name": "Slack",
       "path": "hardening/lists/brand_impersonation/slack.txt",
@@ -375,7 +375,7 @@
       ],
       "seed_results": [
         {
-          "count": 90,
+          "count": 92,
           "seed_domain": "slack.com",
           "skipped": false
         }
@@ -420,7 +420,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 255,
+      "count": 254,
       "had_skipped_seed": false,
       "name": "Coinbase",
       "path": "hardening/lists/brand_impersonation/coinbase.txt",
@@ -429,7 +429,7 @@
       ],
       "seed_results": [
         {
-          "count": 255,
+          "count": 254,
           "seed_domain": "coinbase.com",
           "skipped": false
         }
@@ -438,7 +438,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 141,
+      "count": 140,
       "had_skipped_seed": false,
       "name": "Intuit",
       "path": "hardening/lists/brand_impersonation/intuit.txt",
@@ -447,7 +447,7 @@
       ],
       "seed_results": [
         {
-          "count": 141,
+          "count": 140,
           "seed_domain": "intuit.com",
           "skipped": false
         }
@@ -474,7 +474,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 151,
+      "count": 150,
       "had_skipped_seed": false,
       "name": "TurboTax",
       "path": "hardening/lists/brand_impersonation/turbotax.txt",
@@ -483,7 +483,7 @@
       ],
       "seed_results": [
         {
-          "count": 151,
+          "count": 150,
           "seed_domain": "turbotax.com",
           "skipped": false
         }
@@ -492,7 +492,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 80,
+      "count": 81,
       "had_skipped_seed": false,
       "name": "Zoom",
       "path": "hardening/lists/brand_impersonation/zoom.txt",
@@ -501,7 +501,7 @@
       ],
       "seed_results": [
         {
-          "count": 80,
+          "count": 81,
           "seed_domain": "zoom.us",
           "skipped": false
         }
@@ -510,7 +510,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 119,
+      "count": 118,
       "had_skipped_seed": false,
       "name": "Duo",
       "path": "hardening/lists/brand_impersonation/duo.txt",
@@ -519,7 +519,7 @@
       ],
       "seed_results": [
         {
-          "count": 119,
+          "count": 118,
           "seed_domain": "duo.com",
           "skipped": false
         }
@@ -546,7 +546,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 82,
+      "count": 81,
       "had_skipped_seed": false,
       "name": "GitLab",
       "path": "hardening/lists/brand_impersonation/gitlab.txt",
@@ -555,7 +555,7 @@
       ],
       "seed_results": [
         {
-          "count": 82,
+          "count": 81,
           "seed_domain": "gitlab.com",
           "skipped": false
         }
@@ -564,7 +564,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 88,
+      "count": 87,
       "had_skipped_seed": false,
       "name": "Docker",
       "path": "hardening/lists/brand_impersonation/docker.txt",
@@ -573,7 +573,7 @@
       ],
       "seed_results": [
         {
-          "count": 88,
+          "count": 87,
           "seed_domain": "docker.com",
           "skipped": false
         }
@@ -582,7 +582,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 102,
+      "count": 103,
       "had_skipped_seed": false,
       "name": "Box",
       "path": "hardening/lists/brand_impersonation/box.txt",
@@ -591,7 +591,7 @@
       ],
       "seed_results": [
         {
-          "count": 102,
+          "count": 103,
           "seed_domain": "box.com",
           "skipped": false
         }
@@ -600,7 +600,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 10,
+      "count": 11,
       "had_skipped_seed": false,
       "name": "Notion",
       "path": "hardening/lists/brand_impersonation/notion.txt",
@@ -609,7 +609,7 @@
       ],
       "seed_results": [
         {
-          "count": 10,
+          "count": 11,
           "seed_domain": "notion.so",
           "skipped": false
         }
@@ -618,7 +618,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 83,
+      "count": 81,
       "had_skipped_seed": false,
       "name": "Figma",
       "path": "hardening/lists/brand_impersonation/figma.txt",
@@ -627,7 +627,7 @@
       ],
       "seed_results": [
         {
-          "count": 83,
+          "count": 81,
           "seed_domain": "figma.com",
           "skipped": false
         }
@@ -636,7 +636,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 62,
+      "count": 60,
       "had_skipped_seed": false,
       "name": "Zendesk",
       "path": "hardening/lists/brand_impersonation/zendesk.txt",
@@ -645,7 +645,7 @@
       ],
       "seed_results": [
         {
-          "count": 62,
+          "count": 60,
           "seed_domain": "zendesk.com",
           "skipped": false
         }
@@ -672,7 +672,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 101,
+      "count": 100,
       "had_skipped_seed": false,
       "name": "USPS",
       "path": "hardening/lists/brand_impersonation/usps.txt",
@@ -681,7 +681,7 @@
       ],
       "seed_results": [
         {
-          "count": 101,
+          "count": 100,
           "seed_domain": "usps.com",
           "skipped": false
         }
@@ -708,7 +708,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 177,
+      "count": 178,
       "had_skipped_seed": false,
       "name": "Shopify",
       "path": "hardening/lists/brand_impersonation/shopify.txt",
@@ -717,7 +717,7 @@
       ],
       "seed_results": [
         {
-          "count": 177,
+          "count": 178,
           "seed_domain": "shopify.com",
           "skipped": false
         }
@@ -726,7 +726,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 130,
+      "count": 127,
       "had_skipped_seed": false,
       "name": "eBay",
       "path": "hardening/lists/brand_impersonation/ebay.txt",
@@ -735,7 +735,7 @@
       ],
       "seed_results": [
         {
-          "count": 130,
+          "count": 127,
           "seed_domain": "ebay.com",
           "skipped": false
         }
@@ -744,7 +744,7 @@
     },
     {
       "category": "brand_impersonation",
-      "count": 129,
+      "count": 123,
       "had_skipped_seed": false,
       "name": "FedEx",
       "path": "hardening/lists/brand_impersonation/fedex.txt",
@@ -753,7 +753,7 @@
       ],
       "seed_results": [
         {
-          "count": 129,
+          "count": 123,
           "seed_domain": "fedex.com",
           "skipped": false
         }

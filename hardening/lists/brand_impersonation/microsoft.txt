@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-16 06:26:51 UTC
+# Generated: 2026-05-17 06:49:13 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -234,7 +234,6 @@
 0.0.0.0 micro.softonline.com
 0.0.0.0 micro0soft.com
 0.0.0.0 micro3oft.com
-0.0.0.0 micro3oftonline.com
 0.0.0.0 micro9soft.com
 0.0.0.0 microaoft.com
 0.0.0.0 microaoftonline.com
@@ -260,7 +259,6 @@
 0.0.0.0 microroftonline.com
 0.0.0.0 micros-oft.com
 0.0.0.0 micros.oft.com
-0.0.0.0 micros0ft.com
 0.0.0.0 micros0oft.com
 0.0.0.0 micros9oft.com
 0.0.0.0 microsaft.com
@@ -508,7 +506,6 @@
 0.0.0.0 mlcros0ft.com
 0.0.0.0 mlcrosoft.com
 0.0.0.0 mlcrosoft0nline.com
-0.0.0.0 mlcrosoftoniine.com
 0.0.0.0 mlcrosoftonlime.com
 0.0.0.0 mlcrosoftonline.com
 0.0.0.0 mlcrosoftonllne.com
@@ -780,7 +777,6 @@
 0.0.0.0 outlookq.com
 0.0.0.0 outlookr.com
 0.0.0.0 outlooks.com
-0.0.0.0 outlookt.com
 0.0.0.0 outlooku.com
 0.0.0.0 outlookv.com
 0.0.0.0 outlookw.com
@@ -846,9 +842,9 @@
 0.0.0.0 uutlook.com
 0.0.0.0 xn--0ffce-vsa.com
 0.0.0.0 xn--ffice-iua.com
-0.0.0.0 xn--icrooftonline-z4f4303h.com
 0.0.0.0 xn--icrosoft-c3a.com
 0.0.0.0 xn--icrosoft-qy7c.com
+0.0.0.0 xn--icrosoftoline-cle4379h.com
 0.0.0.0 xn--icrosoftonline-kk7g.com
 0.0.0.0 xn--lcrosoft-g89c.com
 0.0.0.0 xn--lie-t6x.com
@@ -860,6 +856,7 @@
 0.0.0.0 xn--lve-rma.com
 0.0.0.0 xn--lve-vma.com
 0.0.0.0 xn--mcosoft-rfb211a.com
+0.0.0.0 xn--mcosoftonline-w6b595a.com
 0.0.0.0 xn--mcrosft-7ya2d.com
 0.0.0.0 xn--mcrosoft-1ud.com
 0.0.0.0 xn--mcrosoft-21a.com
@@ -883,13 +880,11 @@
 0.0.0.0 xn--micosof-emd9545d.com
 0.0.0.0 xn--micosoft-i0d.com
 0.0.0.0 xn--micosoft-pf0d.com
-0.0.0.0 xn--micosoftnline-pmb353b.com
 0.0.0.0 xn--micosoftonline-iwc.com
 0.0.0.0 xn--micosot-21b1347d.com
 0.0.0.0 xn--microoft-l9c.com
 0.0.0.0 xn--microoft-qvb.com
 0.0.0.0 xn--microoft-rwb.com
-0.0.0.0 xn--microotonline-0rc5751i.com
 0.0.0.0 xn--microsft-03a.com
 0.0.0.0 xn--microsft-380d.com
 0.0.0.0 xn--microsft-5rb.com
@@ -899,8 +894,10 @@
 0.0.0.0 xn--microsof-69c.com
 0.0.0.0 xn--microsof-eyb.com
 0.0.0.0 xn--microsof-hk0d.com
+0.0.0.0 xn--microsoftline-jmc49w.com
 0.0.0.0 xn--microsoftnline-tob.com
 0.0.0.0 xn--microsoftnline-y88g.com
+0.0.0.0 xn--microsoftolie-rjc18694d.com
 0.0.0.0 xn--microsoftonine-bkc.com
 0.0.0.0 xn--microsoftonine-vlb.com
 0.0.0.0 xn--microsoftonlie-ipc.com

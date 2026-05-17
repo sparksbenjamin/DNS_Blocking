@@ -1,6 +1,6 @@
 # Shopify Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-16 06:26:51 UTC
+# Generated: 2026-05-17 06:49:13 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: shopify.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -102,6 +102,7 @@
 0.0.0.0 shopifye.com
 0.0.0.0 shopifyf.com
 0.0.0.0 shopifyh.com
+0.0.0.0 shopifyl.com
 0.0.0.0 shopifyo.com
 0.0.0.0 shopifyp.com
 0.0.0.0 shopifyq.com
