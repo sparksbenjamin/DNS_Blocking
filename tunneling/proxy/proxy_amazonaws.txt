@@ -29,10 +29,10 @@ apiproxy-ftl-http-nlb-0a6bdb9ef5cdd17e.elb.us-east-2.amazonaws.com
 apiproxy-ftl-http-nlb-38738ca310a7b66b.elb.us-west-2.amazonaws.com
 apiproxy-ftl-http-nlb-9ca76ece395fe934.elb.us-east-1.amazonaws.com
 apiproxy-ftl-http-nlb-cc971c97dfc340e4.elb.eu-west-1.amazonaws.com
+apiproxy-helpcenter-nlb-21656db222a3f2b7.elb.eu-west-1.amazonaws.com
 apiproxy-helpcenter-nlb-6cc037a5a8a90429.elb.us-east-2.amazonaws.com
 apiproxy-helpcenter-nlb-8f45ed8b6aa9cee1.elb.us-east-1.amazonaws.com
 apiproxy-helpcenter-nlb-c7098e1ee413230a.elb.us-west-2.amazonaws.com
-apiproxy-island-prod-nlb-a35ba0376662b7b4.elb.us-east-2.amazonaws.com
 apiproxy-island-prod-nlb-d0597974a2822a9e.elb.us-east-1.amazonaws.com
 apiproxy-log-nlb-0dbe90394fe752bf.elb.us-west-2.amazonaws.com
 apiproxy-log-nlb-1f304af4d3ac01a4.elb.us-east-2.amazonaws.com
@@ -116,7 +116,6 @@ arc-prod-reverseproxy-a3bb46afcb971fe6.elb.us-east-1.amazonaws.com
 blog-rt-proxy-prd-9be7b76b0fb012b7.elb.us-west-2.amazonaws.com
 brave-production-proxy-238320562.us-west-2.elb.amazonaws.com
 brazil-proxy-6dd3fa02e902f93c.elb.sa-east-1.amazonaws.com
-bubble-live-message-api-proxy-1852099838.ap-northeast-1.elb.amazonaws.com
 cf-proxy-cf-ap10-06b5d40dd8d94686.elb.ap-southeast-2.amazonaws.com
 cf-proxy-cf-br10-9fde872d4468879a.elb.sa-east-1.amazonaws.com
 cf-proxy-cf-eu10-004-ca8ff5b93d5f2e9b.elb.eu-central-1.amazonaws.com
@@ -179,9 +178,9 @@ mav-gyr-dmz-p-ngsiem-proxy-42df12a8eabfece8.elb.us-west-2.amazonaws.com
 miaproxyservervip-1831489572.us-east-1.elb.amazonaws.com
 miaproxyservervip-713031753.us-west-2.elb.amazonaws.com
 netdial-udp-tunnel-ca-21ff36bb893ca1f6.elb.us-west-1.amazonaws.com
-nginx-proxy-1180199945.eu-central-1.elb.amazonaws.com
-nginx-proxy-975137200.us-west-2.elb.amazonaws.com
 nlb-proxy-prod-us-east-2-v2-0775b3e35e2dc05d.elb.us-east-2.amazonaws.com
+outsideproxy-1-5193617dc6a409d9.elb.us-east-1.amazonaws.com
+outsideproxy-2-9f1b1809ba7c1b7a.elb.us-east-1.amazonaws.com
 outsideproxy-3-577978871fbc7864.elb.us-east-1.amazonaws.com
 posthog-proxy-service-prod-eu-bfb365ef029ea8b9.elb.eu-central-1.amazonaws.com
 posthog-proxy-service-prod-us-786081f7c4028325.elb.us-east-1.amazonaws.com
@@ -193,6 +192,7 @@ prod-endpoint-api-proxy-530919549.us-east-1.elb.amazonaws.com
 prod-proxy-nlb-72fbbec3c47c6147.elb.us-west-2.amazonaws.com
 prod-proxy-pub-nlb-v2-4fb90eae27f6b21c.elb.us-east-1.amazonaws.com
 prod-ses-proxy-ext-lb-9287c7c2cf3220a1.elb.eu-west-1.amazonaws.com
+production-proxy-lb-6888e9367140f263.elb.us-east-1.amazonaws.com
 proxy-alb-traffic-mirror-prod-1026582848.eu-west-1.elb.amazonaws.com
 proxy-express-scripts-prod-957532894.us-east-1.elb.amazonaws.com
 proxy-mycigna-prod-678433465.us-east-1.elb.amazonaws.com
@@ -216,6 +216,7 @@ sg-proxy-49e811e274252b82.elb.ap-southeast-1.amazonaws.com
 sip-proxy-lb-73f5bd51330d124b.elb.us-east-1.amazonaws.com
 svc-proxy-prod-alb-1761140421.us-east-1.elb.amazonaws.com
 tbt-edge-proxy-nlb-d2bf09d621f110a4.elb.us-east-1.amazonaws.com
+tf-tunnel-servers-lb-1543192835.us-east-1.elb.amazonaws.com
 tunnelbear.s3.amazonaws.com
 tunnelconfig-provisioner-production-us-west-2.s3-accelerate.amazonaws.com
 usw-arc-reverse-proxy-c14d052d5018d404.elb.us-west-2.amazonaws.com
