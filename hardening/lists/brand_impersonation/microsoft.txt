@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-17 06:49:13 UTC
+# Generated: 2026-05-19 07:53:00 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -259,6 +259,7 @@
 0.0.0.0 microroftonline.com
 0.0.0.0 micros-oft.com
 0.0.0.0 micros.oft.com
+0.0.0.0 micros0ft.com
 0.0.0.0 micros0oft.com
 0.0.0.0 micros9oft.com
 0.0.0.0 microsaft.com
@@ -506,6 +507,7 @@
 0.0.0.0 mlcros0ft.com
 0.0.0.0 mlcrosoft.com
 0.0.0.0 mlcrosoft0nline.com
+0.0.0.0 mlcrosoftoniine.com
 0.0.0.0 mlcrosoftonlime.com
 0.0.0.0 mlcrosoftonline.com
 0.0.0.0 mlcrosoftonllne.com
@@ -532,6 +534,7 @@
 0.0.0.0 nive.com
 0.0.0.0 nlcrosoft.com
 0.0.0.0 nmicrosoft.com
+0.0.0.0 nnicr0soft.com
 0.0.0.0 nnicrosoft.com
 0.0.0.0 nnicrosoftonline.com
 0.0.0.0 nricrosoftonline.com
@@ -812,7 +815,6 @@
 0.0.0.0 ouylook.com
 0.0.0.0 ouytlook.com
 0.0.0.0 ouzlook.com
-0.0.0.0 ovffice.com
 0.0.0.0 ovtiook.com
 0.0.0.0 ovtlook.com
 0.0.0.0 owtlook.com
@@ -844,7 +846,6 @@
 0.0.0.0 xn--ffice-iua.com
 0.0.0.0 xn--icrosoft-c3a.com
 0.0.0.0 xn--icrosoft-qy7c.com
-0.0.0.0 xn--icrosoftoline-cle4379h.com
 0.0.0.0 xn--icrosoftonline-kk7g.com
 0.0.0.0 xn--lcrosoft-g89c.com
 0.0.0.0 xn--lie-t6x.com
@@ -856,7 +857,7 @@
 0.0.0.0 xn--lve-rma.com
 0.0.0.0 xn--lve-vma.com
 0.0.0.0 xn--mcosoft-rfb211a.com
-0.0.0.0 xn--mcosoftonline-w6b595a.com
+0.0.0.0 xn--mcrooftonline-b9b7523i.com
 0.0.0.0 xn--mcrosft-7ya2d.com
 0.0.0.0 xn--mcrosoft-1ud.com
 0.0.0.0 xn--mcrosoft-21a.com
@@ -894,10 +895,9 @@
 0.0.0.0 xn--microsof-69c.com
 0.0.0.0 xn--microsof-eyb.com
 0.0.0.0 xn--microsof-hk0d.com
-0.0.0.0 xn--microsoftline-jmc49w.com
 0.0.0.0 xn--microsoftnline-tob.com
 0.0.0.0 xn--microsoftnline-y88g.com
-0.0.0.0 xn--microsoftolie-rjc18694d.com
+0.0.0.0 xn--microsofton1ne-5kc.com
 0.0.0.0 xn--microsoftonine-bkc.com
 0.0.0.0 xn--microsoftonine-vlb.com
 0.0.0.0 xn--microsoftonlie-ipc.com
@@ -911,7 +911,6 @@
 0.0.0.0 xn--micrsoft-84a.com
 0.0.0.0 xn--micrsoft-p3a.com
 0.0.0.0 xn--micrsoft-q4a.com
-0.0.0.0 xn--mirooft-vxa69h.com
 0.0.0.0 xn--mirosoft-18a.com
 0.0.0.0 xn--mirosoft-hw7c.com
 0.0.0.0 xn--mirosoft-lbb.com

@@ -1,6 +1,6 @@
 # DocuSign Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-17 06:49:13 UTC
+# Generated: 2026-05-19 07:53:00 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: docusign.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -41,6 +41,7 @@
 0.0.0.0 docus1gn.com
 0.0.0.0 docusgin.com
 0.0.0.0 docusgn.com
+0.0.0.0 docusifn.com
 0.0.0.0 docusig.com
 0.0.0.0 docusigb.com
 0.0.0.0 docusiggn.com
@@ -81,6 +82,7 @@
 0.0.0.0 dosusign.com
 0.0.0.0 doucsign.com
 0.0.0.0 dousign.com
+0.0.0.0 dovusign.com
 0.0.0.0 doxusign.com
 0.0.0.0 dpcusign.com
 0.0.0.0 ducusign.com
