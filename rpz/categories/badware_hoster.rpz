@@ -1,10 +1,10 @@
 ; Badware Hoster Blocklist
-; Generated: 2026-05-18 06:20:20 UTC
+; Generated: 2026-05-19 06:14:46 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1298
+; Original domains (before deduplication): 1312
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026051806 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026051906 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000.pe CNAME .
@@ -106,10 +106,12 @@ $TTL 300
 4everland.app CNAME .
 4kp.de CNAME .
 4u2.de CNAME .
+500mb.net CNAME .
 50megs.com CNAME .
 50webs.com CNAME .
 50webs.org CNAME .
 530.at CNAME .
+5gbfree.com CNAME .
 5mp.eu CNAME .
 5on.de CNAME .
 5oo.de CNAME .
@@ -220,6 +222,7 @@ beplaced.com CNAME .
 berlin.tl CNAME .
 betrunken.org CNAME .
 bg.gp CNAME .
+bget.ru CNAME .
 bigheadhosting.net CNAME .
 bilder.lc CNAME .
 billblett.com CNAME .
@@ -422,6 +425,7 @@ comeze.com CNAME .
 comhem.se CNAME .
 community.lc CNAME .
 community24.eu CNAME .
+company.site CNAME .
 comule.com CNAME .
 comunidades.net CNAME .
 comxa.com CNAME .
@@ -559,6 +563,7 @@ filme.lc CNAME .
 financecryptoworld.com CNAME .
 firearms.com CNAME .
 firm.nu CNAME .
+firstcloudit.com CNAME .
 fitnell.com CNAME .
 flashbuilder.net CNAME .
 flazio.com CNAME .
@@ -642,6 +647,7 @@ getresponsesite.com CNAME .
 gg123.vip CNAME .
 gilde.in CNAME .
 gildenseite.de CNAME .
+girlsense.com CNAME .
 glide.page CNAME .
 glitch.me CNAME .
 godaddysites.com CNAME .
@@ -730,6 +736,7 @@ info4.de CNAME .
 infos.cx CNAME .
 infos.lc CNAME .
 infos.st CNAME .
+inmotionhosting.com CNAME .
 instantfreesite.com CNAME .
 int.ps CNAME .
 internetsite.eu CNAME .
@@ -882,6 +889,7 @@ mypressonline.com CNAME .
 mysteria.cz CNAME .
 mystrikingly.com CNAME .
 mywebcommunity.org CNAME .
+mywebsitetransfer.com CNAME .
 n-e.kr CNAME .
 n.gp CNAME .
 nabble.com CNAME .
@@ -889,7 +897,6 @@ name.ac CNAME .
 name.vg CNAME .
 narod.ru CNAME .
 nazuka.net CNAME .
-nazwa.pl CNAME .
 neocities.org CNAME .
 netai.net CNAME .
 netfast.org CNAME .
@@ -920,6 +927,7 @@ on-air.de CNAME .
 on.gp CNAME .
 on.lc CNAME .
 one4u.0lx.net CNAME .
+onepage.me CNAME .
 onepage.website CNAME .
 online-net.de CNAME .
 online.cm CNAME .
@@ -950,6 +958,7 @@ pc.lc CNAME .
 pcriot.com CNAME .
 pe.gp CNAME .
 pe.hu CNAME .
+peraichi.com CNAME .
 perfektionieren.de CNAME .
 perl.sh CNAME .
 ph.gp CNAME .
@@ -965,6 +974,7 @@ pl-oferta-id2387942371.top CNAME .
 pl.de CNAME .
 pl.gp CNAME .
 planet.tl CNAME .
+plasmic.run CNAME .
 podia.com CNAME .
 populr.me CNAME .
 portal.lc CNAME .
@@ -993,6 +1003,7 @@ r.gp CNAME .
 re2.de CNAME .
 reco.ws CNAME .
 regruhosting.ru CNAME .
+renderforestsites.com CNAME .
 reodev.com CNAME .
 rf.gd CNAME .
 ro.gp CNAME .
@@ -1196,6 +1207,7 @@ webador.com CNAME .
 webatu.com CNAME .
 webblog24.de CNAME .
 webblogg.se CNAME .
+webboss.site CNAME .
 webcindario.com CNAME .
 webgarden.com CNAME .
 weblium.com CNAME .
@@ -1232,6 +1244,7 @@ webnode.sk CNAME .
 webnode.tw CNAME .
 webnode.vn CNAME .
 webobo.com CNAME .
+webpages.one CNAME .
 webs.com CNAME .
 webself.net CNAME .
 webselfsite.net CNAME .
@@ -1242,6 +1255,7 @@ website.com CNAME .
 website.org CNAME .
 website2.me CNAME .
 webspawner.com CNAME .
+webstarterz.com CNAME .
 webstarts.com CNAME .
 webwave.dev CNAME .
 webzdarma.cz CNAME .

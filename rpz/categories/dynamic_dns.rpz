@@ -1,10 +1,10 @@
 ; Dynamic Dns Blocklist
-; Generated: 2026-05-18 06:20:20 UTC
+; Generated: 2026-05-19 06:14:46 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1022
+; Original domains (before deduplication): 1030
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026051806 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026051906 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 0000000000000000000000.com CNAME .
@@ -52,6 +52,7 @@ adagio.tw CNAME .
 afraid.org CNAME .
 agropeople.ru CNAME .
 aintno.info CNAME .
+airdns.org CNAME .
 airlinemeals.net CNAME .
 albertn.ru CNAME .
 allez.la CNAME .
@@ -195,6 +196,7 @@ ddns.cam CNAME .
 ddns.com.br CNAME .
 ddns.com.co CNAME .
 ddns.info CNAME .
+ddns.me.uk CNAME .
 ddns.mobi CNAME .
 ddns.ms CNAME .
 ddns.name CNAME .
@@ -252,7 +254,6 @@ dnyp.com CNAME .
 dob.jp CNAME .
 donhoo.com CNAME .
 dougtreadwell.com CNAME .
-doyleandprendergast.com CNAME .
 dp76.com CNAME .
 dpcube.com CNAME .
 dray-dns.de CNAME .
@@ -364,6 +365,7 @@ ezua.com CNAME .
 ezxdev.org CNAME .
 f-parts.net CNAME .
 f3322.net CNAME .
+f3322.org CNAME .
 fairuse.org CNAME .
 falcongreen.com CNAME .
 faqserv.com CNAME .
@@ -385,6 +387,7 @@ fortiddns.com CNAME .
 fragmentary.info CNAME .
 freeddns.com CNAME .
 freeddns.uk CNAME .
+freedns.tech CNAME .
 freedynamicdns.net CNAME .
 freedynamicdns.org CNAME .
 freesa.org CNAME .
@@ -404,6 +407,7 @@ gerastar.ru CNAME .
 gettrails.com CNAME .
 gettrials.com CNAME .
 ghostnation.org CNAME .
+gicp.net CNAME .
 gigaportal.pl CNAME .
 glddns.com CNAME .
 global-instr.us CNAME .
@@ -429,6 +433,7 @@ guthriecontainers.com CNAME .
 gw.lt CNAME .
 gw1.org CNAME .
 h-o-s-t.name CNAME .
+h0stname.net CNAME .
 h1x.com CNAME .
 h4ck.me CNAME .
 h4g3z1-dyndns.web.app CNAME .
@@ -453,6 +458,7 @@ hmail.us CNAME .
 hmao.pro CNAME .
 hokum-smack.com CNAME .
 home.kg CNAME .
+home64.de CNAME .
 homelinuxserver.org CNAME .
 homenode.ca CNAME .
 homepc.it CNAME .
@@ -670,7 +676,6 @@ nas64.de CNAME .
 nat-ddns.com CNAME .
 natrofa.com CNAME .
 ndcg.com CNAME .
-nedvighimost-sochi.ru CNAME .
 nerdcamp.net CNAME .
 netcabo.pt CNAME .
 netdorm.com CNAME .
@@ -732,12 +737,12 @@ parikh.net CNAME .
 partycenteronline.com CNAME .
 patelmortgage.com CNAME .
 paulkelly.org CNAME .
+pdns.cz CNAME .
 peachyweb.com CNAME .
 pedie.info CNAME .
 pendulumaudio.com CNAME .
 peregrineair.com CNAME .
 phenixs.org CNAME .
-photo-cult.com CNAME .
 photo-frame.com CNAME .
 php-dev.net CNAME .
 pics.mu CNAME .
@@ -773,6 +778,7 @@ publicvm.com CNAME .
 pudim.info CNAME .
 qc.to CNAME .
 qhigh.com CNAME .
+qlbv.vn CNAME .
 qpoe.com CNAME .
 qthome.org CNAME .
 quackerscomic.com CNAME .
@@ -916,6 +922,7 @@ thenme.net CNAME .
 thesemmels.com CNAME .
 thingsnewandused.com CNAME .
 tinyrealm.com CNAME .
+tobuy.us CNAME .
 toh.info CNAME .
 topdns.com CNAME .
 topsddns.net CNAME .
@@ -961,6 +968,7 @@ venez.fr CNAME .
 venez.net CNAME .
 verymad.net CNAME .
 viamisoftware.com CNAME .
+vicp.cc CNAME .
 vietnamddns.com CNAME .
 viewdns.net CNAME .
 viiic.net CNAME .

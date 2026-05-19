@@ -2,8 +2,8 @@
   "files": [
     {
       "baseline_count": 1298,
-      "delta_pct": 0.0,
-      "domain_count": 1298,
+      "delta_pct": 1.08,
+      "domain_count": 1312,
       "group": "badware_hoster",
       "kind": "service",
       "path": "security/lists/badware_hoster/hagezi_hoster.txt",
@@ -12,8 +12,8 @@
     },
     {
       "baseline_count": 1022,
-      "delta_pct": 0.0,
-      "domain_count": 1022,
+      "delta_pct": 0.78,
+      "domain_count": 1030,
       "group": "dynamic_dns",
       "kind": "service",
       "path": "security/lists/dynamic_dns/hagezi_dyndns.txt",
@@ -31,9 +31,9 @@
       "service": "blp_ransomware"
     },
     {
-      "baseline_count": 217,
-      "delta_pct": 14.29,
-      "domain_count": 248,
+      "baseline_count": 248,
+      "delta_pct": 27.82,
+      "domain_count": 317,
       "group": "malware",
       "kind": "service",
       "path": "security/lists/malware/threatfox.txt",
@@ -41,9 +41,9 @@
       "service": "threatfox"
     },
     {
-      "baseline_count": 7210,
-      "delta_pct": 1.07,
-      "domain_count": 7133,
+      "baseline_count": 7133,
+      "delta_pct": 1.47,
+      "domain_count": 7028,
       "group": "malware",
       "kind": "service",
       "path": "security/lists/malware/urlhaus.txt",
@@ -51,9 +51,9 @@
       "service": "urlhaus"
     },
     {
-      "baseline_count": 248,
-      "delta_pct": 4.03,
-      "domain_count": 258,
+      "baseline_count": 258,
+      "delta_pct": 3.49,
+      "domain_count": 249,
       "group": "phishing",
       "kind": "service",
       "path": "security/lists/phishing/openphish.txt",
@@ -71,9 +71,9 @@
       "service": "phishing_army"
     },
     {
-      "baseline_count": 29078,
-      "delta_pct": 0.19,
-      "domain_count": 29134,
+      "baseline_count": 29134,
+      "delta_pct": 0.26,
+      "domain_count": 29209,
       "group": "phishing",
       "kind": "service",
       "path": "security/lists/phishing/phishtank.txt",
@@ -101,9 +101,9 @@
       "service": "blp_scam"
     },
     {
-      "baseline_count": 15681,
-      "delta_pct": 0.04,
-      "domain_count": 15675,
+      "baseline_count": 15675,
+      "delta_pct": 0.4,
+      "domain_count": 15613,
       "group": "scam",
       "kind": "service",
       "path": "security/lists/scam/hagezi_fake.txt",
@@ -112,8 +112,8 @@
     },
     {
       "baseline_count": 1298,
-      "delta_pct": 0.0,
-      "domain_count": 1298,
+      "delta_pct": 1.08,
+      "domain_count": 1312,
       "group": "badware_hoster",
       "kind": "category",
       "path": "security/categories/badware_hoster.txt",
@@ -122,8 +122,8 @@
     },
     {
       "baseline_count": 1022,
-      "delta_pct": 0.0,
-      "domain_count": 1022,
+      "delta_pct": 0.78,
+      "domain_count": 1030,
       "group": "dynamic_dns",
       "kind": "category",
       "path": "security/categories/dynamic_dns.txt",
@@ -131,9 +131,9 @@
       "service": null
     },
     {
-      "baseline_count": 9181,
-      "delta_pct": 0.62,
-      "domain_count": 9124,
+      "baseline_count": 9124,
+      "delta_pct": 0.43,
+      "domain_count": 9085,
       "group": "malware",
       "kind": "category",
       "path": "security/categories/malware.txt",
@@ -141,9 +141,9 @@
       "service": null
     },
     {
-      "baseline_count": 412563,
-      "delta_pct": 0.01,
-      "domain_count": 412524,
+      "baseline_count": 412524,
+      "delta_pct": 0.05,
+      "domain_count": 412711,
       "group": "phishing",
       "kind": "category",
       "path": "security/categories/phishing.txt",
@@ -151,9 +151,9 @@
       "service": null
     },
     {
-      "baseline_count": 212786,
-      "delta_pct": 0.0,
-      "domain_count": 212780,
+      "baseline_count": 212780,
+      "delta_pct": 0.03,
+      "domain_count": 212718,
       "group": "scam",
       "kind": "category",
       "path": "security/categories/scam.txt",
@@ -161,13 +161,13 @@
       "service": null
     }
   ],
-  "generated_at": "2026-05-18T06:21:37.926179+00:00",
+  "generated_at": "2026-05-19T06:16:11.846728+00:00",
   "issues": [],
   "profile": "security",
   "status": "passed",
   "summary": {
     "files_checked": 16,
     "issues": 0,
-    "total_domains": 1275890
+    "total_domains": 1275988
   }
 }
