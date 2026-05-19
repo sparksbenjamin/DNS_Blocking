@@ -1,6 +1,6 @@
 # Active Impersonation Review
 
-**Generated:** 2026-05-18T09:11:31.837040+00:00
+**Generated:** 2026-05-19T08:58:06.321999+00:00
 
 This stage scores live DNSTwist lookalike domains against the real brand sites using lightweight fingerprinting, then emits conservative blocking lists from only the highest-confidence non-canonical findings.
 
@@ -21,9 +21,9 @@ Domains that only canonical-redirect to the real brand are filtered out of the v
 ## Settings
 
 - Targets audited: `40`
-- Candidate domains audited: `5550`
-- Visible findings kept: `5192`
-- Canonical brand redirects filtered out: `358`
+- Candidate domains audited: `5564`
+- Visible findings kept: `5196`
+- Canonical brand redirects filtered out: `368`
 - Blocklist entries emitted: `0`
 - Max workers: `10`
 - Target jobs: `2`
@@ -40,7 +40,7 @@ Domains that only canonical-redirect to the real brand are filtered out of the v
 
 | HIGH | MEDIUM | LOW | INCONCLUSIVE | OFFLINE | ERROR |
 |------|--------|-----|--------------|---------|-------|
-| 0 | 9 | 2179 | 834 | 2170 | 0 |
+| 0 | 9 | 2227 | 809 | 2151 | 0 |
 
 ## Blocking Lists
 
@@ -55,45 +55,45 @@ Only `HIGH_MATCH` domains that do **not** canonical-redirect to the real brand a
 
 | Target | Seeds | Audited | Visible | Blocklist | Filtered Redirects | High | Medium | Low | Offline | Errors | Note |
 |--------|-------|---------|---------|-----------|--------------------|------|--------|-----|---------|--------|------|
-| Adobe | 2 | 184 | 184 | 0 | 0 | 0 | 0 | 92 | 78 | 0 |  |
-| Amazon | 1 | 258 | 118 | 0 | 140 | 0 | 0 | 36 | 74 | 0 |  |
-| Apple | 2 | 345 | 327 | 0 | 18 | 0 | 0 | 152 | 143 | 0 |  |
-| Atlassian | 1 | 47 | 41 | 0 | 6 | 0 | 0 | 22 | 13 | 0 |  |
+| Adobe | 2 | 184 | 184 | 0 | 0 | 0 | 0 | 91 | 80 | 0 |  |
+| Amazon | 1 | 258 | 118 | 0 | 140 | 0 | 0 | 40 | 70 | 0 |  |
+| Apple | 2 | 345 | 327 | 0 | 18 | 0 | 0 | 147 | 148 | 0 |  |
+| Atlassian | 1 | 47 | 42 | 0 | 5 | 0 | 0 | 23 | 15 | 0 |  |
 | Auth0 | 1 | 186 | 182 | 0 | 4 | 0 | 0 | 5 | 72 | 0 |  |
-| Box | 1 | 103 | 103 | 0 | 0 | 0 | 0 | 73 | 27 | 0 |  |
-| Cloudflare | 1 | 152 | 151 | 0 | 1 | 0 | 0 | 47 | 95 | 0 |  |
-| Coinbase | 1 | 254 | 253 | 0 | 1 | 0 | 0 | 27 | 42 | 0 |  |
+| Box | 1 | 102 | 102 | 0 | 0 | 0 | 0 | 73 | 25 | 0 |  |
+| Cloudflare | 1 | 153 | 151 | 0 | 2 | 0 | 0 | 47 | 98 | 0 |  |
+| Coinbase | 1 | 258 | 257 | 0 | 1 | 0 | 0 | 31 | 42 | 0 |  |
 | DHL | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| Docker | 1 | 87 | 87 | 0 | 0 | 0 | 0 | 48 | 32 | 0 |  |
-| DocuSign | 1 | 87 | 82 | 0 | 5 | 0 | 0 | 32 | 40 | 0 |  |
-| Dropbox | 2 | 130 | 129 | 0 | 1 | 0 | 1 | 57 | 66 | 0 |  |
-| Duo | 1 | 118 | 118 | 0 | 0 | 0 | 0 | 72 | 32 | 0 |  |
-| FedEx | 1 | 123 | 123 | 0 | 0 | 0 | 0 | 49 | 65 | 0 |  |
-| Figma | 1 | 81 | 81 | 0 | 0 | 0 | 0 | 47 | 23 | 0 |  |
-| GitHub | 1 | 156 | 150 | 0 | 6 | 0 | 0 | 74 | 57 | 0 |  |
-| GitLab | 1 | 81 | 80 | 0 | 1 | 0 | 0 | 35 | 39 | 0 |  |
-| Google | 2 | 566 | 555 | 0 | 11 | 0 | 8 | 173 | 314 | 0 |  |
-| Intuit | 1 | 140 | 140 | 0 | 0 | 0 | 0 | 55 | 62 | 0 |  |
-| Jira | 1 | 99 | 99 | 0 | 0 | 0 | 0 | 68 | 26 | 0 |  |
-| Microsoft | 5 | 940 | 871 | 0 | 69 | 0 | 0 | 397 | 395 | 0 |  |
-| Notion | 1 | 11 | 11 | 0 | 0 | 0 | 0 | 7 | 1 | 0 |  |
-| Okta | 1 | 109 | 109 | 0 | 0 | 0 | 0 | 60 | 33 | 0 |  |
-| OneLogin | 1 | 32 | 32 | 0 | 0 | 0 | 0 | 14 | 17 | 0 |  |
-| PayPal | 1 | 217 | 209 | 0 | 8 | 0 | 0 | 63 | 41 | 0 |  |
-| Ping Identity | 1 | 31 | 31 | 0 | 0 | 0 | 0 | 1 | 30 | 0 |  |
+| Docker | 1 | 87 | 87 | 0 | 0 | 0 | 0 | 50 | 30 | 0 |  |
+| DocuSign | 1 | 89 | 84 | 0 | 5 | 0 | 0 | 37 | 39 | 0 |  |
+| Dropbox | 2 | 131 | 130 | 0 | 1 | 0 | 1 | 62 | 63 | 0 |  |
+| Duo | 1 | 120 | 120 | 0 | 0 | 0 | 0 | 74 | 30 | 0 |  |
+| FedEx | 1 | 128 | 128 | 0 | 0 | 0 | 0 | 53 | 66 | 0 |  |
+| Figma | 1 | 83 | 83 | 0 | 0 | 0 | 0 | 48 | 27 | 0 |  |
+| GitHub | 1 | 156 | 150 | 0 | 6 | 0 | 0 | 76 | 58 | 0 |  |
+| GitLab | 1 | 83 | 82 | 0 | 1 | 0 | 0 | 37 | 41 | 0 |  |
+| Google | 2 | 566 | 555 | 0 | 11 | 0 | 8 | 182 | 306 | 0 |  |
+| Intuit | 1 | 140 | 140 | 0 | 0 | 0 | 0 | 50 | 66 | 0 |  |
+| Jira | 1 | 99 | 99 | 0 | 0 | 0 | 0 | 70 | 26 | 0 |  |
+| Microsoft | 5 | 939 | 870 | 0 | 69 | 0 | 0 | 394 | 397 | 0 |  |
+| Notion | 1 | 12 | 12 | 0 | 0 | 0 | 0 | 8 | 2 | 0 |  |
+| Okta | 1 | 111 | 111 | 0 | 0 | 0 | 0 | 61 | 33 | 0 |  |
+| OneLogin | 1 | 32 | 32 | 0 | 0 | 0 | 0 | 16 | 15 | 0 |  |
+| PayPal | 1 | 213 | 205 | 0 | 8 | 0 | 0 | 64 | 41 | 0 |  |
+| Ping Identity | 1 | 31 | 31 | 0 | 0 | 0 | 0 | 1 | 29 | 0 |  |
 | QuickBooks | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| Salesforce | 1 | 118 | 103 | 0 | 15 | 0 | 0 | 40 | 51 | 0 |  |
+| Salesforce | 1 | 117 | 102 | 0 | 15 | 0 | 0 | 39 | 52 | 0 |  |
 | ServiceNow | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| Shopify | 1 | 178 | 140 | 0 | 38 | 0 | 0 | 96 | 28 | 0 |  |
-| Slack | 1 | 92 | 92 | 0 | 0 | 0 | 0 | 54 | 26 | 0 |  |
-| Stripe | 1 | 99 | 93 | 0 | 6 | 0 | 0 | 51 | 37 | 0 |  |
-| Trello | 1 | 60 | 59 | 0 | 1 | 0 | 0 | 32 | 18 | 0 |  |
-| TurboTax | 1 | 150 | 126 | 0 | 24 | 0 | 0 | 39 | 71 | 0 |  |
+| Shopify | 1 | 178 | 130 | 0 | 48 | 0 | 0 | 86 | 27 | 0 |  |
+| Slack | 1 | 90 | 90 | 0 | 0 | 0 | 0 | 57 | 24 | 0 |  |
+| Stripe | 1 | 98 | 92 | 0 | 6 | 0 | 0 | 51 | 36 | 0 |  |
+| Trello | 1 | 60 | 59 | 0 | 1 | 0 | 0 | 32 | 19 | 0 |  |
+| TurboTax | 1 | 151 | 127 | 0 | 24 | 0 | 0 | 39 | 70 | 0 |  |
 | UPS | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| USPS | 1 | 100 | 100 | 0 | 0 | 0 | 0 | 55 | 35 | 0 |  |
-| Venmo | 1 | 75 | 74 | 0 | 1 | 0 | 0 | 38 | 21 | 0 |  |
-| Zendesk | 1 | 60 | 58 | 0 | 2 | 0 | 0 | 35 | 22 | 0 |  |
-| Zoom | 1 | 81 | 81 | 0 | 0 | 0 | 0 | 33 | 44 | 0 |  |
+| USPS | 1 | 100 | 100 | 0 | 0 | 0 | 0 | 59 | 35 | 0 |  |
+| Venmo | 1 | 73 | 72 | 0 | 1 | 0 | 0 | 37 | 22 | 0 |  |
+| Zendesk | 1 | 63 | 61 | 0 | 2 | 0 | 0 | 36 | 24 | 0 |  |
+| Zoom | 1 | 81 | 81 | 0 | 0 | 0 | 0 | 51 | 23 | 0 |  |
 | eBay | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
 
 ## Per-Target Blocking Lists
@@ -104,13 +104,13 @@ No block-worthy domains were emitted in this run.
 
 | Target | Domain | Status | Score | Baseline | Redirect | Title | Content |
 |--------|--------|--------|-------|----------|----------|-------|---------|
-| Google | `xn--gogl-jpa1d.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--gogl-jpa1d.com` | 1.00 | 0.12 |
-| Google | `xn--gogle-1ta.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--gogle-1ta.com` | 1.00 | 0.07 |
-| Google | `xn--ooge-21a88g.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--ooge-21a88g.com` | 1.00 | 0.07 |
+| Google | `xn--gogl-jpa1d.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--gogl-jpa1d.com` | 1.00 | 0.14 |
+| Google | `xn--gogle-1ta.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--gogle-1ta.com` | 1.00 | 0.10 |
+| Google | `xn--ooge-21a88g.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--ooge-21a88g.com` | 1.00 | 0.10 |
+| Google | `xn--googl-9cc.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--googl-9cc.com` | 1.00 | 0.05 |
 | Google | `xn--googl-lsa.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--googl-lsa.com` | 1.00 | 0.05 |
 | Google | `xn--gogle-g91b.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--gogle-g91b.com` | 1.00 | 0.04 |
 | Google | `xn--goog-8va9v.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--goog-8va9v.com` | 1.00 | 0.04 |
-| Google | `xn--googl-9cc.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--googl-9cc.com` | 1.00 | 0.04 |
 | Google | `xn--ooge-9wa5r.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--ooge-9wa5r.com` | 1.00 | 0.04 |
 | Dropbox | `dr.opbox.com` | MEDIUM_MATCH | 3 | `dropbox.com` | `dr.opbox.com` | 0.90 | 0.02 |
 
