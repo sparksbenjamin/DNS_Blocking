@@ -1,10 +1,10 @@
 ; Dynamic Dns Blocklist
-; Generated: 2026-05-19 06:14:46 UTC
+; Generated: 2026-05-20 06:14:59 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1030
+; Original domains (before deduplication): 1032
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026051906 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026052006 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 0000000000000000000000.com CNAME .
@@ -377,6 +377,7 @@ fearpenguins.com CNAME .
 fin-tech.com CNAME .
 fintech-llc.com CNAME .
 fivepals.com CNAME .
+flashhub.net CNAME .
 flat4free.com CNAME .
 flazzard.com CNAME .
 flnet.org CNAME .
@@ -891,6 +892,7 @@ sumibi.org CNAME .
 sundby.com CNAME .
 surak.kz CNAME .
 surfnet.ca CNAME .
+suroot.com CNAME .
 swtest.ru CNAME .
 syno-ds.de CNAME .
 synology-diskstation.de CNAME .
@@ -922,7 +924,6 @@ thenme.net CNAME .
 thesemmels.com CNAME .
 thingsnewandused.com CNAME .
 tinyrealm.com CNAME .
-tobuy.us CNAME .
 toh.info CNAME .
 topdns.com CNAME .
 topsddns.net CNAME .
@@ -969,6 +970,7 @@ venez.net CNAME .
 verymad.net CNAME .
 viamisoftware.com CNAME .
 vicp.cc CNAME .
+vicp.net CNAME .
 vietnamddns.com CNAME .
 viewdns.net CNAME .
 viiic.net CNAME .

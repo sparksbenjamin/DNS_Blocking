@@ -1,11 +1,11 @@
 ; HaGeZi Badware Hoster
 ; Category: badware_hoster
-; Generated: 2026-05-19 06:14:46 UTC
+; Generated: 2026-05-20 06:14:59 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1312
+; Original domains (before deduplication): 1320
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026051906 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026052006 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000.pe CNAME .
@@ -17,6 +17,7 @@ $TTL 300
 000webhost.com CNAME .
 000webhost.fr CNAME .
 000webhostapp.com CNAME .
+000webhotapp.com CNAME .
 000worldwide.com CNAME .
 00author.com CNAME .
 00freehost.com CNAME .
@@ -489,6 +490,7 @@ dreamstation.com CNAME .
 dreht-auf.de CNAME .
 dtiblog.com CNAME .
 duanwenzi.cn CNAME .
+durablesites.com CNAME .
 dvd.lc CNAME .
 e-docssig.com CNAME .
 e-kei.pl CNAME .
@@ -648,7 +650,6 @@ getresponsesite.com CNAME .
 gg123.vip CNAME .
 gilde.in CNAME .
 gildenseite.de CNAME .
-girlsense.com CNAME .
 glide.page CNAME .
 glitch.me CNAME .
 godaddysites.com CNAME .
@@ -838,6 +839,7 @@ majesticbank.at CNAME .
 majesticbank.de CNAME .
 mashstaffing.com CNAME .
 mdbgo.io CNAME .
+me-page.com CNAME .
 me.gp CNAME .
 me.ly CNAME .
 mediafirex.icu CNAME .
@@ -855,6 +857,7 @@ mobile.web.tr CNAME .
 mobinteg.com CNAME .
 mochahost.com CNAME .
 moneyash.top CNAME .
+moy.su CNAME .
 mp3.cr CNAME .
 mpeblog.com CNAME .
 muf.mobi CNAME .
@@ -916,6 +919,7 @@ nobody.jp CNAME .
 nofeeshost.com CNAME .
 now.lc CNAME .
 npx.de CNAME .
+nsfera.pl CNAME .
 nut.cc CNAME .
 o-f.com CNAME .
 o-r.kr CNAME .
@@ -1050,6 +1054,7 @@ shopping.hn CNAME .
 simdif.com CNAME .
 site.pro CNAME .
 site123.me CNAME .
+site44.com CNAME .
 site90.net CNAME .
 sitebeat.crazydomains.com CNAME .
 sitego.fr CNAME .
@@ -1065,7 +1070,6 @@ socialsmp.com CNAME .
 solidwebhost.com CNAME .
 somee.com CNAME .
 sophiashantidaniel.com CNAME .
-sosblog.com CNAME .
 soup.io CNAME .
 sp.gname.net CNAME .
 space.lc CNAME .
@@ -1077,6 +1081,7 @@ srv1.org CNAME .
 start.lc CNAME .
 start.page CNAME .
 startertjes.nl CNAME .
+staticrun.app CNAME .
 sth.nz CNAME .
 stormloader.com CNAME .
 stormpages.com CNAME .
@@ -1085,6 +1090,7 @@ suchtis.de CNAME .
 superweb.ws CNAME .
 surge.sh CNAME .
 sv.gp CNAME .
+sviluppo.host CNAME .
 sweb.cz CNAME .
 sxx.in CNAME .
 synergize.co CNAME .
@@ -1112,6 +1118,7 @@ th.gp CNAME .
 thamboli.co.za CNAME .
 thisistap.com CNAME .
 tiiny.host CNAME .
+tiiny.io CNAME .
 tiiny.site CNAME .
 tilda.ws CNAME .
 timeforchangecounselling.com CNAME .
@@ -1161,6 +1168,7 @@ unblog.fr CNAME .
 untergrund.net CNAME .
 uphero.com CNAME .
 uploader.eu CNAME .
+urest.org CNAME .
 urlaub.lc CNAME .
 us.nf CNAME .
 us.st CNAME .
