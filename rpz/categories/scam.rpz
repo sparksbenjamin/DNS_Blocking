@@ -1,10 +1,10 @@
 ; Scam Blocklist
-; Generated: 2026-05-20 06:14:59 UTC
+; Generated: 2026-05-21 06:16:19 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 212835
+; Original domains (before deduplication): 212822
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026052006 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026052106 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 0-0-----------------------------------------------------------0.com CNAME .
@@ -173,6 +173,7 @@ $TTL 300
 1-cloud-secure-1ockedverify.com CNAME .
 1-help.online CNAME .
 1-help.tech CNAME .
+1-rx-shop.com CNAME .
 1-tech.brussels CNAME .
 1-tech.vlaanderen CNAME .
 1-vinstaller.com CNAME .
@@ -12824,6 +12825,7 @@ autoteilepilotpluss.de CNAME .
 autoteilepreisvergleich.org CNAME .
 autoteilerabatt.com CNAME .
 autoteilewerkzeug.com CNAME .
+autoteilex.com CNAME .
 autoti.ru CNAME .
 autotoolmaster24.com CNAME .
 autotraderbot.com CNAME .
@@ -34203,7 +34205,6 @@ duaistikhara.net CNAME .
 duaistikharaforlovemarriage.wordpress.com CNAME .
 duaistikharasite.wordpress.com CNAME .
 dual-hash.com CNAME .
-dualsuns.com CNAME .
 dualtron-scooters.com CNAME .
 duanewilson.com CNAME .
 duaqnoot.wordpress.com CNAME .
@@ -60584,6 +60585,8 @@ kommodende.com CNAME .
 kommunikationprotokoll.com CNAME .
 komono-uk.com CNAME .
 kompens.de CNAME .
+kompetenzworkshops.de CNAME .
+komplettanschlussangebote.de CNAME .
 komponentende.com CNAME .
 konditorei-mohrholz.de CNAME .
 kongaskreations.com.au CNAME .
@@ -68341,7 +68344,6 @@ meet2verify.info CNAME .
 meetalmost.tk CNAME .
 meetbrideshotbikini.net CNAME .
 meetcurve.de CNAME .
-meetdo.waraid.shop CNAME .
 meetfigure.com CNAME .
 meetlocalwoman1.com CNAME .
 meetme-login.com CNAME .
@@ -89125,6 +89127,7 @@ radzubehoer24.com CNAME .
 radzubehoerde.com CNAME .
 radzyklen.de CNAME .
 raealed.club CNAME .
+raetzmodellbau.de CNAME .
 rafso.tovy.shop CNAME .
 rafters-popeyed.tk CNAME .
 ragamuffinsbarbados.com CNAME .
@@ -95091,6 +95094,7 @@ sepalsouffl.icu CNAME .
 separaten.com CNAME .
 sepcsq.org CNAME .
 sepgoal.com CNAME .
+sepkicks.com CNAME .
 seprun.com CNAME .
 septicfour.us CNAME .
 septicityten.us CNAME .
@@ -95739,6 +95743,7 @@ sexfacebookporn.com CNAME .
 sexferien.com CNAME .
 sexflirtbook.com CNAME .
 sexhosty.com CNAME .
+sexicats.com CNAME .
 sexkontakt-at.com CNAME .
 sexkontakt-au.com CNAME .
 sexkontakt-ba.com CNAME .
@@ -112648,6 +112653,7 @@ treverschmelerkris18.myshopify.com CNAME .
 trexmusclesite.com CNAME .
 trexox.com CNAME .
 treyiq.site CNAME .
+trezorsuite.ltd CNAME .
 trfreepdf.site CNAME .
 trgartenservice.de CNAME .
 triacids.stream CNAME .
@@ -117543,6 +117549,7 @@ visionfancyclothing.com CNAME .
 visionfx.me CNAME .
 visioninvesti.com CNAME .
 visit.net-ce31.stream CNAME .
+visitaserbia.com CNAME .
 visitdominicanrepublic.com CNAME .
 visitorreadjusted.tk CNAME .
 visitvegasonus.com CNAME .
@@ -117596,7 +117603,6 @@ vivaiaschuhe.de CNAME .
 vivaiaschweiz.com CNAME .
 vivaiashop.de CNAME .
 vivalikes.com CNAME .
-vivar.ch CNAME .
 vivaraisehome.com CNAME .
 vivazaim.ru CNAME .
 vivekkumarsingh.com CNAME .
@@ -117706,7 +117712,6 @@ vksupports.ru CNAME .
 vktarget.ru CNAME .
 vkvideoz.com CNAME .
 vkx.biz CNAME .
-vl-soudure.com CNAME .
 vlc-mac.com CNAME .
 vlcmediaplayersupport.com CNAME .
 vldep.lat CNAME .
@@ -117746,7 +117751,6 @@ vnsupport.blogspot.com CNAME .
 vnsupport.net CNAME .
 vnzleech.com CNAME .
 vo.cpcempower.com CNAME .
-vobishop.de CNAME .
 vocabos.com CNAME .
 vocismurrey.host CNAME .
 vod007.com CNAME .
@@ -117817,7 +117821,6 @@ volkswagen-fahrzeuge.de CNAME .
 vollebude.de CNAME .
 volleynought.online CNAME .
 vollkommen-heit.de CNAME .
-vollmer-handel.de CNAME .
 vollmer-replica.com CNAME .
 vollwertlust.de CNAME .
 vollyshop.de CNAME .
@@ -118364,10 +118367,8 @@ wapwhatsapp.com CNAME .
 war.kuronowish.com CNAME .
 warbled.stream CNAME .
 warderhadean.online CNAME .
-warehouse-deals.online CNAME .
 warenhausdeutschland.com CNAME .
 warenmax.com CNAME .
-warenwelt-eu.com CNAME .
 waresco.com CNAME .
 warevo.de CNAME .
 warez4u.info CNAME .
@@ -121573,7 +121574,6 @@ wearekinglife.com CNAME .
 weareourselves.tk CNAME .
 wearetilt.com CNAME .
 weareturbo.io CNAME .
-wearnwatt.de CNAME .
 wearoutletclub.com CNAME .
 wearsclub.com CNAME .
 wearsense.com CNAME .
@@ -122302,7 +122302,6 @@ werk-werkzeuge.com CNAME .
 werkboxpro.com CNAME .
 werke-anhangers.com CNAME .
 werkerswelt-moelln.de CNAME .
-werkgeist.com CNAME .
 werkvoorraden.com CNAME .
 werkzeug-haus.de CNAME .
 werkzeug-salesshop.com CNAME .
@@ -124138,6 +124137,7 @@ winnerfor-yourprize14.com CNAME .
 winners-space.com CNAME .
 winners-spot.com CNAME .
 winnerscart.men CNAME .
+winnerz-casino-online.de CNAME .
 winningfxalerts.com CNAME .
 winnock.stream CNAME .
 winnows.stream CNAME .
@@ -124220,7 +124220,6 @@ wipodod.stream CNAME .
 wipt.biz CNAME .
 wir-zahlen-ihre-rechnung.de CNAME .
 wirbelsanft.com CNAME .
-wirberlin.com CNAME .
 wiredodd.stream CNAME .
 wiredworldtv.triplequadturbo.com CNAME .
 wireless-support.com CNAME .
@@ -124516,7 +124515,6 @@ worksupportcenter.com CNAME .
 worksupportservice.com CNAME .
 worktidsinclude.club CNAME .
 workwearbristol.co.uk CNAME .
-workysander.shop CNAME .
 world-birds.biz CNAME .
 world-coin.eu CNAME .
 world-greaddating28.com CNAME .
@@ -210916,7 +210914,6 @@ wwwtyoutube.com CNAME .
 wwwuggsoutlet.com CNAME .
 wwwvetverify.com CNAME .
 wwwvtecsupport.com CNAME .
-wwwvvvbbb.shop CNAME .
 wwww-google.com CNAME .
 wwww.coach CNAME .
 wwww.cpcbroker.com CNAME .
@@ -211112,7 +211109,6 @@ xn--accounts-googl-e4b.com CNAME .
 xn--accounts-goole-m8b.com CNAME .
 xn--accounts-oogle-j8b.com CNAME .
 xn--aloyogamnchen-3ob.de CNAME .
-xn--asolokengt-y5a.com CNAME .
 xn--axelarigatokbenhavn-67b.com CNAME .
 xn--bapeespaa-s6a.com CNAME .
 xn--bitcoinenespaol-brb.info CNAME .
@@ -211121,7 +211117,6 @@ xn--carharttespaa-tkb.com CNAME .
 xn--clarksespaa-beb.com CNAME .
 xn--clarkszrich-zhb.com CNAME .
 xn--dcs-google-gbb.com CNAME .
-xn--drmartensshopsterreich-6hc.at CNAME .
 xn--facebook-k3a.com CNAME .
 xn--fbtecservios-tdb.com CNAME .
 xn--fortnitepc-3-7s5vg72i.com CNAME .
@@ -211142,7 +211137,6 @@ xn--hunterstvler-2jb.com CNAME .
 xn--instagram-2pb.com CNAME .
 xn--instagramtakipihilesi-f4b.com CNAME .
 xn--instgramsupport-6jb.com CNAME .
-xn--joyaespaa-s6a.com CNAME .
 xn--linkedin.com CNAME .
 xn--login-micrsoftonline-r86k.com CNAME .
 xn--mneprstinder-tcbs.com CNAME .
@@ -211163,7 +211157,6 @@ xn--youtube.com CNAME .
 xn.al CNAME .
 xnike.com CNAME .
 xnjkloyopja.s3-website-us-west-2.amazonaws.com CNAME .
-xnt-group.de CNAME .
 xnvest.com CNAME .
 xnxxwebsecurity.com CNAME .
 xo-trier.de CNAME .
@@ -211205,7 +211198,6 @@ xredtube.org CNAME .
 xredtubesex.com CNAME .
 xrisetube.com CNAME .
 xrivalfitness.com CNAME .
-xrl-today.com CNAME .
 xs2hc.tk CNAME .
 xsecuritygurusas.win CNAME .
 xshop.vn CNAME .
@@ -211666,7 +211658,6 @@ ydpi.pw CNAME .
 yeahteesmile.com CNAME .
 yearnone.website CNAME .
 yearpilrim.com CNAME .
-yebeas.shop CNAME .
 yeerolink.com CNAME .
 yeezy-450.com CNAME .
 yeezy-700.us.com CNAME .
@@ -211789,7 +211780,6 @@ yooofa.com CNAME .
 yooso.de CNAME .
 yoquierounodeesos.com CNAME .
 york-risk-services-group-ex-employee-whistle-blower-reporting.com CNAME .
-yorkbootsshop.de CNAME .
 yorkdum.stream CNAME .
 yoshikawa-pc-support.com CNAME .
 yoshkayandex.ru CNAME .
@@ -212593,7 +212583,6 @@ zevarpalace.pk CNAME .
 zeveau.com CNAME .
 zevs.icu CNAME .
 zexnow.com CNAME .
-zeylor-pacte.com CNAME .
 zezzo.de CNAME .
 zf.cpcempower.com CNAME .
 zf35g.filled.pw CNAME .
@@ -212662,7 +212651,6 @@ zitners.com CNAME .
 zitysports.com CNAME .
 ziviveo5.pro CNAME .
 zivyastore.com CNAME .
-ziyarafashion.shop CNAME .
 ziyaratelaviv.com CNAME .
 ziz-energie.com CNAME .
 ziz65.filled.pw CNAME .
@@ -212784,7 +212772,6 @@ zubehorfahrrad.com CNAME .
 zubun.com CNAME .
 zuchterheim.com CNAME .
 zuedy.de CNAME .
-zuhaushop.de CNAME .
 zuhiog.com CNAME .
 zuhitz.de CNAME .
 zukoptions.com CNAME .

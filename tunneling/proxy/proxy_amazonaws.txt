@@ -131,8 +131,6 @@ connect-prod-rev-proxy-1939600382.us-east-1.elb.amazonaws.com
 consproxy-usw2-prod-nlb-0a749017bdeedff9.elb.us-west-2.amazonaws.com
 consproxy-usw2-prod-nlb-e3e0cd6f96c4a7ad.elb.us-west-2.amazonaws.com
 cortex-boeingimages-prod-proxies.s3.amazonaws.com
-cortex-boeingimages-prod-proxies.s3.dualstack.us-east-1.amazonaws.com
-cortex-boeingimages-prod-proxies.s3.us-east-1.amazonaws.com
 ct-phoenix-proxy-it-prod-v6-44d1f2230a55cb76.elb.eu-west-3.amazonaws.com
 ddos-prod-ecs-proxy-1810540203.us-east-1.elb.amazonaws.com
 ecr-haproxy-prod-network-lb-1866656a79c6f789.elb.us-east-1.amazonaws.com
@@ -145,7 +143,6 @@ emailocto-espsecuretrackingproxy-beb33fa4a237ae52.elb.eu-west-1.amazonaws.com
 essaws-p-proxy-nlb01-ab3e806b052740fc.elb.ap-northeast-1.amazonaws.com
 eu-aws-haproxy-api-v1-nlb-b61bf8ca0c954233.elb.eu-central-1.amazonaws.com
 eu-aws-haproxy-public1-nlb-942da47f6082bbc2.elb.eu-central-1.amazonaws.com
-eum-proxy-alb-1408818008.us-west-2.elb.amazonaws.com
 external-apne1-kproxy-1-925389829.ap-northeast-1.elb.amazonaws.com
 external-euw1-kproxy-1-918085366.eu-west-1.elb.amazonaws.com
 external-use1-kproxy-1-1056718813.us-east-1.elb.amazonaws.com
@@ -180,7 +177,6 @@ mav-gyr-dmz-p-ngsiem-proxy-42df12a8eabfece8.elb.us-west-2.amazonaws.com
 miaproxyservervip-1831489572.us-east-1.elb.amazonaws.com
 miaproxyservervip-713031753.us-west-2.elb.amazonaws.com
 nlb-proxy-prod-us-east-2-v2-0775b3e35e2dc05d.elb.us-east-2.amazonaws.com
-ol-savethechildren-prod-proxies-eu.s3.eu-west-1.amazonaws.com
 outsideproxy-1-5193617dc6a409d9.elb.us-east-1.amazonaws.com
 outsideproxy-2-9f1b1809ba7c1b7a.elb.us-east-1.amazonaws.com
 outsideproxy-3-577978871fbc7864.elb.us-east-1.amazonaws.com
@@ -205,7 +201,6 @@ proxy-nlb-prod-eu-west-1-v5-8da84ce7881a88cc.elb.eu-west-1.amazonaws.com
 proxy-nlb-prod-us-west-2-v5-ac4e52c97755301b.elb.us-west-2.amazonaws.com
 proxy-uni-login-cigna-prod-1630199742.us-east-1.elb.amazonaws.com
 proxy-universal-login-prod-1779027556.us-east-1.elb.amazonaws.com
-proxy-usmed-mobconf-prod-2091391596.us-east-1.elb.amazonaws.com
 proxybox-lb-250966913.us-east-1.elb.amazonaws.com
 proxys-ecscl-fy0oi8jdxdki-295572098.us-east-2.elb.amazonaws.com
 proxyv3-public-prod-1797398447.us-east-1.elb.amazonaws.com
