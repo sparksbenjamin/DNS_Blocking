@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-19 07:53:00 UTC
+# Generated: 2026-05-21 07:58:56 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -104,7 +104,6 @@
 0.0.0.0 live6.com
 0.0.0.0 live7.com
 0.0.0.0 live8.com
-0.0.0.0 live9.com
 0.0.0.0 livea.com
 0.0.0.0 liveb.com
 0.0.0.0 livec.com
@@ -211,7 +210,6 @@
 0.0.0.0 micr0s0ftonline.com
 0.0.0.0 micr0soft.com
 0.0.0.0 micr0soft0nline.com
-0.0.0.0 micr0softonline.com
 0.0.0.0 micr4osoft.com
 0.0.0.0 micr5osoft.com
 0.0.0.0 micr9osoft.com
@@ -432,7 +430,6 @@
 0.0.0.0 microsotonline.com
 0.0.0.0 microsott.com
 0.0.0.0 microsottonline.com
-0.0.0.0 microsovft.com
 0.0.0.0 microsovt.com
 0.0.0.0 microspft.com
 0.0.0.0 microspftonline.com
@@ -815,6 +812,7 @@
 0.0.0.0 ouylook.com
 0.0.0.0 ouytlook.com
 0.0.0.0 ouzlook.com
+0.0.0.0 ovffice.com
 0.0.0.0 ovtiook.com
 0.0.0.0 ovtlook.com
 0.0.0.0 owtlook.com
@@ -857,8 +855,8 @@
 0.0.0.0 xn--lve-rma.com
 0.0.0.0 xn--lve-vma.com
 0.0.0.0 xn--mcosoft-rfb211a.com
-0.0.0.0 xn--mcrooftonline-b9b7523i.com
 0.0.0.0 xn--mcrosft-7ya2d.com
+0.0.0.0 xn--mcrosofonline-39b036a.com
 0.0.0.0 xn--mcrosoft-1ud.com
 0.0.0.0 xn--mcrosoft-21a.com
 0.0.0.0 xn--mcrosoft-6ob.com
@@ -897,7 +895,6 @@
 0.0.0.0 xn--microsof-hk0d.com
 0.0.0.0 xn--microsoftnline-tob.com
 0.0.0.0 xn--microsoftnline-y88g.com
-0.0.0.0 xn--microsofton1ne-5kc.com
 0.0.0.0 xn--microsoftonine-bkc.com
 0.0.0.0 xn--microsoftonine-vlb.com
 0.0.0.0 xn--microsoftonlie-ipc.com
@@ -915,6 +912,7 @@
 0.0.0.0 xn--mirosoft-hw7c.com
 0.0.0.0 xn--mirosoft-lbb.com
 0.0.0.0 xn--mirosoft-t0a.com
+0.0.0.0 xn--nnicosoftonline-gyg.com
 0.0.0.0 xn--offce-1sa.com
 0.0.0.0 xn--offce-7sa.com
 0.0.0.0 xn--offce-doc.com
@@ -938,9 +936,9 @@
 0.0.0.0 xn--outlok-tl8b.com
 0.0.0.0 xn--outloo-1bb.com
 0.0.0.0 xn--outloo-8bb.com
-0.0.0.0 xn--outook-5db.com
 0.0.0.0 xn--rncrosoft-64a.com
 0.0.0.0 xn--rncrosoft-h5a.com
 0.0.0.0 xn--rnicrosft-67a.com
+0.0.0.0 xn--utlok-2tar.com
 0.0.0.0 xn--utlook-9fb.com
 0.0.0.0 xn--utlook-vxa.com

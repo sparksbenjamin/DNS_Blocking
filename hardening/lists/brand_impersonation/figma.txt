@@ -1,6 +1,6 @@
 # Figma Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-19 07:53:00 UTC
+# Generated: 2026-05-21 07:58:56 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: figma.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -23,7 +23,6 @@
 0.0.0.0 fig-ma.com
 0.0.0.0 figa.com
 0.0.0.0 figam.com
-0.0.0.0 figea.com
 0.0.0.0 figgma.com
 0.0.0.0 figia.com
 0.0.0.0 figja.com
@@ -88,3 +87,5 @@
 0.0.0.0 rigma.com
 0.0.0.0 tigma.com
 0.0.0.0 vigma.com
+0.0.0.0 xn--fgna-vpa.com
+0.0.0.0 xn--igm-l5a27g.com
