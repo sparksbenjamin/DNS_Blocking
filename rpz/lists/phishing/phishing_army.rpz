@@ -1,11 +1,11 @@
 ; Phishing Army
 ; Category: phishing
-; Generated: 2026-05-21 06:16:19 UTC
+; Generated: 2026-05-22 06:14:40 UTC
 ; Format: RPZ (exact hostnames preserved)
 ; Original domains (before deduplication): 385331
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026052106 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026052206 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 0-105.com CNAME .

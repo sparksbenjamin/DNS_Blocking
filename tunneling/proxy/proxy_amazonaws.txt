@@ -1,3 +1,5 @@
+alb-n3-proxy-cache-1814190205.ap-northeast-1.elb.amazonaws.com
+alb-prod-live-proxy-api-201-1100059756.us-east-1.elb.amazonaws.com
 analytics-proxy-production-72829403.us-west-2.elb.amazonaws.com
 apiproxy-api-fast-vpc0-nlb-103017a815808492.elb.us-west-2.amazonaws.com
 apiproxy-api-fast-vpc0-nlb-41a65773b29b9841.elb.us-east-2.amazonaws.com
@@ -29,6 +31,7 @@ apiproxy-ftl-http-nlb-9ca76ece395fe934.elb.us-east-1.amazonaws.com
 apiproxy-ftl-http-nlb-cc971c97dfc340e4.elb.eu-west-1.amazonaws.com
 apiproxy-helpcenter-nlb-6cc037a5a8a90429.elb.us-east-2.amazonaws.com
 apiproxy-helpcenter-nlb-8f45ed8b6aa9cee1.elb.us-east-1.amazonaws.com
+apiproxy-island-prod-nlb-a35ba0376662b7b4.elb.us-east-2.amazonaws.com
 apiproxy-island-prod-nlb-d0597974a2822a9e.elb.us-east-1.amazonaws.com
 apiproxy-log-nlb-0dbe90394fe752bf.elb.us-west-2.amazonaws.com
 apiproxy-log-nlb-1f304af4d3ac01a4.elb.us-east-2.amazonaws.com
@@ -130,7 +133,6 @@ collector-proxy-alb-744229001.ap-southeast-2.elb.amazonaws.com
 connect-prod-rev-proxy-1939600382.us-east-1.elb.amazonaws.com
 consproxy-usw2-prod-nlb-0a749017bdeedff9.elb.us-west-2.amazonaws.com
 consproxy-usw2-prod-nlb-e3e0cd6f96c4a7ad.elb.us-west-2.amazonaws.com
-cortex-boeingimages-prod-proxies.s3.amazonaws.com
 ct-phoenix-proxy-it-prod-v6-44d1f2230a55cb76.elb.eu-west-3.amazonaws.com
 ddos-prod-ecs-proxy-1810540203.us-east-1.elb.amazonaws.com
 ecr-haproxy-prod-network-lb-1866656a79c6f789.elb.us-east-1.amazonaws.com

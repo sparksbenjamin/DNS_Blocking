@@ -1,9 +1,9 @@
 {
   "files": [
     {
-      "baseline_count": 1320,
-      "delta_pct": 10.98,
-      "domain_count": 1175,
+      "baseline_count": 1175,
+      "delta_pct": 22.98,
+      "domain_count": 905,
       "group": "badware_hoster",
       "kind": "service",
       "path": "rpz/lists/badware_hoster/hagezi_hoster.rpz",
@@ -31,9 +31,9 @@
       "service": "blp_ransomware"
     },
     {
-      "baseline_count": 284,
-      "delta_pct": 9.15,
-      "domain_count": 258,
+      "baseline_count": 258,
+      "delta_pct": 3.1,
+      "domain_count": 266,
       "group": "malware",
       "kind": "service",
       "path": "rpz/lists/malware/threatfox.rpz",
@@ -41,9 +41,9 @@
       "service": "threatfox"
     },
     {
-      "baseline_count": 6835,
-      "delta_pct": 5.78,
-      "domain_count": 6440,
+      "baseline_count": 6440,
+      "delta_pct": 3.25,
+      "domain_count": 6231,
       "group": "malware",
       "kind": "service",
       "path": "rpz/lists/malware/urlhaus.rpz",
@@ -51,9 +51,9 @@
       "service": "urlhaus"
     },
     {
-      "baseline_count": 264,
-      "delta_pct": 0.38,
-      "domain_count": 265,
+      "baseline_count": 265,
+      "delta_pct": 0.75,
+      "domain_count": 263,
       "group": "phishing",
       "kind": "service",
       "path": "rpz/lists/phishing/openphish.rpz",
@@ -61,7 +61,7 @@
       "service": "openphish"
     },
     {
-      "baseline_count": 385330,
+      "baseline_count": 385331,
       "delta_pct": 0.0,
       "domain_count": 385331,
       "group": "phishing",
@@ -71,9 +71,9 @@
       "service": "phishing_army"
     },
     {
-      "baseline_count": 29363,
-      "delta_pct": 0.46,
-      "domain_count": 29497,
+      "baseline_count": 29497,
+      "delta_pct": 1.23,
+      "domain_count": 29860,
       "group": "phishing",
       "kind": "service",
       "path": "rpz/lists/phishing/phishtank.rpz",
@@ -101,9 +101,9 @@
       "service": "blp_scam"
     },
     {
-      "baseline_count": 15730,
-      "delta_pct": 0.08,
-      "domain_count": 15717,
+      "baseline_count": 15717,
+      "delta_pct": 0.19,
+      "domain_count": 15747,
       "group": "scam",
       "kind": "service",
       "path": "rpz/lists/scam/hagezi_fake.rpz",
@@ -111,9 +111,9 @@
       "service": "hagezi_fake"
     },
     {
-      "baseline_count": 1320,
-      "delta_pct": 10.98,
-      "domain_count": 1175,
+      "baseline_count": 1175,
+      "delta_pct": 22.98,
+      "domain_count": 905,
       "group": "badware_hoster",
       "kind": "category",
       "path": "rpz/categories/badware_hoster.rpz",
@@ -131,9 +131,9 @@
       "service": null
     },
     {
-      "baseline_count": 8890,
-      "delta_pct": 4.48,
-      "domain_count": 8492,
+      "baseline_count": 8492,
+      "delta_pct": 2.34,
+      "domain_count": 8293,
       "group": "malware",
       "kind": "category",
       "path": "rpz/categories/malware.rpz",
@@ -141,9 +141,9 @@
       "service": null
     },
     {
-      "baseline_count": 412930,
-      "delta_pct": 0.03,
-      "domain_count": 413073,
+      "baseline_count": 413073,
+      "delta_pct": 0.07,
+      "domain_count": 413374,
       "group": "phishing",
       "kind": "category",
       "path": "rpz/categories/phishing.rpz",
@@ -151,9 +151,9 @@
       "service": null
     },
     {
-      "baseline_count": 212835,
+      "baseline_count": 212822,
       "delta_pct": 0.01,
-      "domain_count": 212822,
+      "domain_count": 212852,
       "group": "scam",
       "kind": "category",
       "path": "rpz/categories/scam.rpz",
@@ -161,13 +161,13 @@
       "service": null
     }
   ],
-  "generated_at": "2026-05-21T06:17:56.541881+00:00",
+  "generated_at": "2026-05-22T06:16:14.057319+00:00",
   "issues": [],
   "profile": "rpz",
   "status": "passed",
   "summary": {
     "files_checked": 16,
     "issues": 0,
-    "total_domains": 1275391
+    "total_domains": 1275173
   }
 }
