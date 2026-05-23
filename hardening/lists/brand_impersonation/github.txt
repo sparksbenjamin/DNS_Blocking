@@ -1,13 +1,12 @@
 # GitHub Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-21 07:58:56 UTC
+# Generated: 2026-05-23 06:39:08 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: github.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
 
 0.0.0.0 bgithub.com
 0.0.0.0 bithub.com
-0.0.0.0 cithub.com
 0.0.0.0 eithub.com
 0.0.0.0 fgithub.com
 0.0.0.0 fithub.com

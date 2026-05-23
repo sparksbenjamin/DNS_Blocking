@@ -1,6 +1,6 @@
 # Zendesk Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-21 07:58:56 UTC
+# Generated: 2026-05-23 06:39:08 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: zendesk.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -18,8 +18,6 @@
 0.0.0.0 tendesk.com
 0.0.0.0 xendesk.com
 0.0.0.0 xn--endesk-opb.com
-0.0.0.0 xn--endsk-tib42l.com
-0.0.0.0 xn--ndesk-suc7751c.com
 0.0.0.0 xn--zedesk-xt7b.com
 0.0.0.0 xn--zendes-1bb.com
 0.0.0.0 xn--zendes-ui8d.com
@@ -46,7 +44,6 @@
 0.0.0.0 zendesc.com
 0.0.0.0 zendesj.com
 0.0.0.0 zendesk3.com
-0.0.0.0 zendesk7.com
 0.0.0.0 zendesks.com
 0.0.0.0 zendesl.com
 0.0.0.0 zendessk.com
