@@ -1,6 +1,6 @@
 # Active Impersonation Review
 
-**Generated:** 2026-05-22T08:51:56.419431+00:00
+**Generated:** 2026-05-23T08:08:45.494087+00:00
 
 This stage scores live DNSTwist lookalike domains against the real brand sites using lightweight fingerprinting, then emits conservative blocking lists from only the highest-confidence non-canonical findings.
 
@@ -21,10 +21,10 @@ Domains that only canonical-redirect to the real brand are filtered out of the v
 ## Settings
 
 - Targets audited: `40`
-- Candidate domains audited: `5562`
-- Visible findings kept: `5241`
-- Canonical brand redirects filtered out: `321`
-- Blocklist entries emitted: `2`
+- Candidate domains audited: `5549`
+- Visible findings kept: `5178`
+- Canonical brand redirects filtered out: `371`
+- Blocklist entries emitted: `0`
 - Max workers: `10`
 - Target jobs: `2`
 - Connect timeout: `3.0` seconds
@@ -40,7 +40,7 @@ Domains that only canonical-redirect to the real brand are filtered out of the v
 
 | HIGH | MEDIUM | LOW | INCONCLUSIVE | OFFLINE | ERROR |
 |------|--------|-----|--------------|---------|-------|
-| 2 | 9 | 2171 | 883 | 2176 | 0 |
+| 0 | 9 | 2258 | 826 | 2085 | 0 |
 
 ## Blocking Lists
 
@@ -48,66 +48,62 @@ Only `HIGH_MATCH` domains that do **not** canonical-redirect to the real brand a
 
 | Output | Entries | File |
 |--------|---------|------|
-| Hosts | 2 | [categories/active_impersonation.txt](categories/active_impersonation.txt) |
-| RPZ | 2 | [categories/active_impersonation.rpz](categories/active_impersonation.rpz) |
+| Hosts | 0 | [categories/active_impersonation.txt](categories/active_impersonation.txt) |
+| RPZ | 0 | [categories/active_impersonation.rpz](categories/active_impersonation.rpz) |
 
 ## Per-Target Summary
 
 | Target | Seeds | Audited | Visible | Blocklist | Filtered Redirects | High | Medium | Low | Offline | Errors | Note |
 |--------|-------|---------|---------|-----------|--------------------|------|--------|-----|---------|--------|------|
-| Adobe | 2 | 183 | 183 | 0 | 0 | 0 | 0 | 91 | 79 | 0 |  |
-| Amazon | 1 | 258 | 118 | 0 | 140 | 0 | 0 | 37 | 73 | 0 |  |
-| Apple | 2 | 345 | 327 | 0 | 18 | 0 | 0 | 148 | 149 | 0 |  |
-| Atlassian | 1 | 47 | 42 | 0 | 5 | 0 | 0 | 25 | 14 | 0 |  |
+| Adobe | 2 | 183 | 183 | 0 | 0 | 0 | 0 | 93 | 80 | 0 |  |
+| Amazon | 1 | 258 | 118 | 0 | 140 | 0 | 0 | 39 | 71 | 0 |  |
+| Apple | 2 | 345 | 327 | 0 | 18 | 0 | 0 | 151 | 143 | 0 |  |
+| Atlassian | 1 | 47 | 42 | 0 | 5 | 0 | 0 | 23 | 15 | 0 |  |
 | Auth0 | 1 | 187 | 183 | 0 | 4 | 0 | 0 | 5 | 73 | 0 |  |
-| Box | 1 | 102 | 102 | 0 | 0 | 0 | 0 | 72 | 25 | 0 |  |
-| Cloudflare | 1 | 152 | 150 | 0 | 2 | 0 | 0 | 39 | 102 | 0 |  |
-| Coinbase | 1 | 253 | 252 | 0 | 1 | 0 | 0 | 26 | 42 | 0 |  |
+| Box | 1 | 103 | 103 | 0 | 0 | 0 | 0 | 72 | 25 | 0 |  |
+| Cloudflare | 1 | 154 | 152 | 0 | 2 | 0 | 0 | 41 | 103 | 0 |  |
+| Coinbase | 1 | 255 | 254 | 0 | 1 | 0 | 0 | 32 | 39 | 0 |  |
 | DHL | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| Docker | 1 | 88 | 88 | 0 | 0 | 0 | 0 | 48 | 32 | 0 |  |
-| DocuSign | 1 | 92 | 87 | 0 | 5 | 0 | 0 | 34 | 46 | 0 |  |
-| Dropbox | 2 | 131 | 130 | 0 | 1 | 0 | 1 | 55 | 66 | 0 |  |
-| Duo | 1 | 120 | 120 | 0 | 0 | 0 | 0 | 71 | 31 | 0 |  |
-| FedEx | 1 | 130 | 130 | 0 | 0 | 0 | 0 | 3 | 75 | 0 |  |
-| Figma | 1 | 84 | 84 | 0 | 0 | 0 | 0 | 48 | 26 | 0 |  |
-| GitHub | 1 | 157 | 151 | 0 | 6 | 0 | 0 | 73 | 60 | 0 |  |
-| GitLab | 1 | 81 | 80 | 0 | 1 | 0 | 0 | 36 | 40 | 0 |  |
-| Google | 2 | 563 | 552 | 0 | 11 | 0 | 8 | 170 | 313 | 0 |  |
-| Intuit | 1 | 140 | 140 | 0 | 0 | 0 | 0 | 52 | 53 | 0 |  |
-| Jira | 1 | 99 | 99 | 0 | 0 | 0 | 0 | 69 | 27 | 0 |  |
-| Microsoft | 5 | 937 | 868 | 0 | 69 | 0 | 0 | 400 | 386 | 0 |  |
-| Notion | 1 | 11 | 11 | 0 | 0 | 0 | 0 | 7 | 2 | 0 |  |
-| Okta | 1 | 111 | 111 | 0 | 0 | 0 | 0 | 62 | 33 | 0 |  |
-| OneLogin | 1 | 31 | 31 | 0 | 0 | 0 | 0 | 11 | 16 | 0 |  |
-| PayPal | 1 | 214 | 206 | 0 | 8 | 0 | 0 | 63 | 39 | 0 |  |
-| Ping Identity | 1 | 30 | 30 | 0 | 0 | 0 | 0 | 1 | 28 | 0 |  |
+| Docker | 1 | 88 | 88 | 0 | 0 | 0 | 0 | 50 | 30 | 0 |  |
+| DocuSign | 1 | 91 | 86 | 0 | 5 | 0 | 0 | 33 | 44 | 0 |  |
+| Dropbox | 2 | 132 | 131 | 0 | 1 | 0 | 1 | 60 | 61 | 0 |  |
+| Duo | 1 | 120 | 120 | 0 | 0 | 0 | 0 | 74 | 29 | 0 |  |
+| FedEx | 1 | 127 | 127 | 0 | 0 | 0 | 0 | 53 | 66 | 0 |  |
+| Figma | 1 | 82 | 82 | 0 | 0 | 0 | 0 | 48 | 24 | 0 |  |
+| GitHub | 1 | 156 | 150 | 0 | 6 | 0 | 0 | 73 | 58 | 0 |  |
+| GitLab | 1 | 80 | 79 | 0 | 1 | 0 | 0 | 39 | 36 | 0 |  |
+| Google | 2 | 564 | 553 | 0 | 11 | 0 | 8 | 185 | 300 | 0 |  |
+| Intuit | 1 | 140 | 140 | 0 | 0 | 0 | 0 | 67 | 49 | 0 |  |
+| Jira | 1 | 99 | 99 | 0 | 0 | 0 | 0 | 71 | 25 | 0 |  |
+| Microsoft | 5 | 928 | 859 | 0 | 69 | 0 | 0 | 402 | 377 | 0 |  |
+| Notion | 1 | 10 | 10 | 0 | 0 | 0 | 0 | 8 | 1 | 0 |  |
+| Okta | 1 | 111 | 111 | 0 | 0 | 0 | 0 | 65 | 30 | 0 |  |
+| OneLogin | 1 | 31 | 31 | 0 | 0 | 0 | 0 | 13 | 14 | 0 |  |
+| PayPal | 1 | 214 | 206 | 0 | 8 | 0 | 0 | 67 | 38 | 0 |  |
+| Ping Identity | 1 | 31 | 31 | 0 | 0 | 0 | 0 | 1 | 29 | 0 |  |
 | QuickBooks | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| Salesforce | 1 | 122 | 107 | 0 | 15 | 0 | 0 | 40 | 56 | 0 |  |
+| Salesforce | 1 | 119 | 104 | 0 | 15 | 0 | 0 | 40 | 52 | 0 |  |
 | ServiceNow | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| Shopify | 1 | 178 | 177 | 2 | 1 | 2 | 0 | 131 | 28 | 0 |  |
-| Slack | 1 | 89 | 89 | 0 | 0 | 0 | 0 | 55 | 23 | 0 |  |
-| Stripe | 1 | 99 | 93 | 0 | 6 | 0 | 0 | 49 | 38 | 0 |  |
-| Trello | 1 | 60 | 59 | 0 | 1 | 0 | 0 | 31 | 21 | 0 |  |
-| TurboTax | 1 | 151 | 127 | 0 | 24 | 0 | 0 | 36 | 73 | 0 |  |
+| Shopify | 1 | 178 | 127 | 0 | 51 | 0 | 0 | 86 | 26 | 0 |  |
+| Slack | 1 | 90 | 90 | 0 | 0 | 0 | 0 | 55 | 25 | 0 |  |
+| Stripe | 1 | 99 | 93 | 0 | 6 | 0 | 0 | 51 | 36 | 0 |  |
+| Trello | 1 | 60 | 59 | 0 | 1 | 0 | 0 | 32 | 19 | 0 |  |
+| TurboTax | 1 | 151 | 127 | 0 | 24 | 0 | 0 | 54 | 55 | 0 |  |
 | UPS | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| USPS | 1 | 100 | 100 | 0 | 0 | 0 | 0 | 59 | 35 | 0 |  |
+| USPS | 1 | 101 | 101 | 0 | 0 | 0 | 0 | 62 | 32 | 0 |  |
 | Venmo | 1 | 74 | 73 | 0 | 1 | 0 | 0 | 41 | 20 | 0 |  |
-| Zendesk | 1 | 63 | 61 | 0 | 2 | 0 | 0 | 36 | 24 | 0 |  |
-| Zoom | 1 | 80 | 80 | 0 | 0 | 0 | 0 | 47 | 28 | 0 |  |
+| Zendesk | 1 | 60 | 58 | 0 | 2 | 0 | 0 | 36 | 21 | 0 |  |
+| Zoom | 1 | 81 | 81 | 0 | 0 | 0 | 0 | 36 | 39 | 0 |  |
 | eBay | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
 
 ## Per-Target Blocking Lists
 
-| Target | Entries | Hosts | RPZ |
-|--------|---------|-------|-----|
-| Shopify | 2 | [lists/shopify.txt](lists/shopify.txt) | [lists/shopify.rpz](lists/shopify.rpz) |
+No block-worthy domains were emitted in this run.
 
 ## Top Suspicious Matches
 
 | Target | Domain | Status | Score | Baseline | Redirect | Title | Content |
 |--------|--------|--------|-------|----------|----------|-------|---------|
-| Shopify | `shopefy.com` | HIGH_MATCH | 9 | `shopify.com` | `shopefy.com` | 1.00 | 1.00 |
-| Shopify | `shopivy.com` | HIGH_MATCH | 9 | `shopify.com` | `shopivy.com` | 1.00 | 1.00 |
 | Google | `xn--gogl-jpa1d.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--gogl-jpa1d.com` | 1.00 | 0.12 |
 | Google | `xn--gogle-1ta.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--gogle-1ta.com` | 1.00 | 0.07 |
 | Google | `xn--ooge-21a88g.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--ooge-21a88g.com` | 1.00 | 0.07 |
@@ -116,7 +112,7 @@ Only `HIGH_MATCH` domains that do **not** canonical-redirect to the real brand a
 | Google | `xn--ooge-9wa5r.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--ooge-9wa5r.com` | 1.00 | 0.05 |
 | Google | `xn--gogle-g91b.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--gogle-g91b.com` | 1.00 | 0.04 |
 | Google | `xn--googl-9cc.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--googl-9cc.com` | 1.00 | 0.04 |
-| Dropbox | `dr.opbox.com` | MEDIUM_MATCH | 3 | `dropbox.com` | `dr.opbox.com` | 0.90 | 0.02 |
+| Dropbox | `dr.opbox.com` | MEDIUM_MATCH | 3 | `dropbox.com` | `dr.opbox.com` | 0.90 | 0.03 |
 
 ## Operational Notes
 
