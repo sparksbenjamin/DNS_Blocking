@@ -1,10 +1,10 @@
 ; Badware Hoster Blocklist
-; Generated: 2026-05-24 06:07:49 UTC
+; Generated: 2026-05-25 06:41:53 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1017
+; Original domains (before deduplication): 1008
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026052406 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026052506 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000.pe CNAME .
@@ -240,7 +240,6 @@ brizy.site CNAME .
 bugs3.com CNAME .
 builderall.net CNAME .
 builtfree.org CNAME .
-buoydeparturediscontent.com CNAME .
 business-minagne.com CNAME .
 bx5.de CNAME .
 byethost.com CNAME .
@@ -303,7 +302,6 @@ cs-clan.org CNAME .
 ct.ws CNAME .
 ct8.pl CNAME .
 cul.ke CNAME .
-curryfielddistribution.com CNAME .
 cut.vin CNAME .
 cwqso.net CNAME .
 cyberbree.com CNAME .
@@ -338,7 +336,6 @@ download.ac CNAME .
 download.sh CNAME .
 downloaden24.de CNAME .
 dox4.com CNAME .
-dpuplet.net CNAME .
 dr.ag CNAME .
 dreamstation.com CNAME .
 dreht-auf.de CNAME .
@@ -363,7 +360,6 @@ eg.gp CNAME .
 elementfx.com CNAME .
 emyspot.com CNAME .
 english.lc CNAME .
-enraptureminims.com CNAME .
 entekpartners.com CNAME .
 enterprisedeliveries.com CNAME .
 envy.nu CNAME .
@@ -501,7 +497,6 @@ hellokity.xyz CNAME .
 hexe.in CNAME .
 hilfe24h.de CNAME .
 hiurls.com CNAME .
-hk6vdj4z.click CNAME .
 home.lc CNAME .
 homemarker.com CNAME .
 homepage.cx CNAME .
@@ -536,6 +531,7 @@ il.gp CNAME .
 im-internet.eu CNAME .
 imagengratis.org CNAME .
 in.gp CNAME .
+in.run CNAME .
 in24.de CNAME .
 inbox24.eu CNAME .
 inbox24.net CNAME .
@@ -555,7 +551,6 @@ ink4.co CNAME .
 instantfreesite.com CNAME .
 int.ps CNAME .
 internetsite.eu CNAME .
-intrudeimpolitetortoise.com CNAME .
 invoicenotices.com CNAME .
 iptime.org CNAME .
 ir.gp CNAME .
@@ -614,6 +609,7 @@ liebe.lc CNAME .
 liftmyresume.com CNAME .
 lined.cloud CNAME .
 linkat.me CNAME .
+linkfast.me CNAME .
 linkk.ing CNAME .
 linkme.vn CNAME .
 links.lc CNAME .
@@ -782,7 +778,6 @@ q.gp CNAME .
 q77.eu CNAME .
 qipim.ru CNAME .
 ql4h.net CNAME .
-qrgen.co.uk CNAME .
 qrump.com CNAME .
 qty3e.pro CNAME .
 qu.am CNAME .
@@ -842,7 +837,6 @@ sitepalace.com CNAME .
 skul.de CNAME .
 sms.cr CNAME .
 snapurl.to CNAME .
-snifferip.com CNAME .
 solidwebhost.com CNAME .
 sophiashantidaniel.com CNAME .
 space.lc CNAME .
@@ -914,7 +908,6 @@ uk.gp CNAME .
 uk.nu CNAME .
 uk.st CNAME .
 ukit.me CNAME .
-ultimateaderaser.com CNAME .
 unaux.com CNAME .
 unl.one CNAME .
 uphero.com CNAME .
@@ -923,7 +916,6 @@ url-short.me CNAME .
 url.sumanonline.com CNAME .
 urlaub.lc CNAME .
 urllink.live CNAME .
-urlto.me CNAME .
 urlz.gr CNAME .
 us.nf CNAME .
 us.st CNAME .
@@ -949,7 +941,6 @@ vollsten.de CNAME .
 voten.in CNAME .
 vz.lc CNAME .
 w09.ru CNAME .
-w0of-woof.com CNAME .
 w3spaces.com CNAME .
 wapka.site CNAME .
 wapka.website CNAME .
