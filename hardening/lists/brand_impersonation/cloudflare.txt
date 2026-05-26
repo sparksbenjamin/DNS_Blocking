@@ -1,6 +1,6 @@
 # Cloudflare Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-24 07:25:32 UTC
+# Generated: 2026-05-26 07:56:21 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: cloudflare.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -25,6 +25,7 @@
 0.0.0.0 clmudflare.com
 0.0.0.0 clnudflare.com
 0.0.0.0 clo-udflare.com
+0.0.0.0 clo.udflare.com
 0.0.0.0 clo5dflare.com
 0.0.0.0 cloadflare.com
 0.0.0.0 clodflare.com
@@ -32,12 +33,14 @@
 0.0.0.0 cloedflare.com
 0.0.0.0 clohdflare.com
 0.0.0.0 cloidflare.com
+0.0.0.0 clojdflare.com
 0.0.0.0 cloodflare.com
 0.0.0.0 clooudflare.com
 0.0.0.0 cloqdflare.com
 0.0.0.0 clotdflare.com
 0.0.0.0 clou.dflare.com
 0.0.0.0 cloubflare.com
+0.0.0.0 cloucflare.com
 0.0.0.0 clouclflare.com
 0.0.0.0 cloud-flare.com
 0.0.0.0 cloudblare.com
@@ -52,14 +55,15 @@
 0.0.0.0 cloudfdare.com
 0.0.0.0 cloudfhare.com
 0.0.0.0 cloudfiare.com
+0.0.0.0 cloudfkare.com
 0.0.0.0 cloudfla.re.com
-0.0.0.0 cloudfla1re.com
 0.0.0.0 cloudfla2e.com
 0.0.0.0 cloudflaare.com
 0.0.0.0 cloudflabe.com
 0.0.0.0 cloudflae.com
 0.0.0.0 cloudflaee.com
 0.0.0.0 cloudflaer.com
+0.0.0.0 cloudflafe.com
 0.0.0.0 cloudflape.com
 0.0.0.0 cloudflar.com
 0.0.0.0 cloudflara.com
@@ -116,7 +120,6 @@
 0.0.0.0 cloudtflare.com
 0.0.0.0 cloudtlare.com
 0.0.0.0 cloudvflare.com
-0.0.0.0 cloudvlare.com
 0.0.0.0 cloudxflare.com
 0.0.0.0 cloueflare.com
 0.0.0.0 cloufdlare.com
@@ -135,13 +138,19 @@
 0.0.0.0 cmoudflare.com
 0.0.0.0 cnoudflare.com
 0.0.0.0 coludflare.com
+0.0.0.0 cooudflare.com
 0.0.0.0 coudflare.com
+0.0.0.0 cpoudflare.com
 0.0.0.0 dloudflare.com
 0.0.0.0 doudflare.com
 0.0.0.0 gloudflare.com
 0.0.0.0 kloudflare.com
+0.0.0.0 lcoudflare.com
 0.0.0.0 loudflare.com
 0.0.0.0 sloudflare.com
+0.0.0.0 vloudflare.com
+0.0.0.0 xloudflare.com
+0.0.0.0 xn--c1ouflare-8z5d.com
 0.0.0.0 xn--clodflare-26b.com
 0.0.0.0 xn--clodflare-i6b.com
 0.0.0.0 xn--clodflare-is7d.com
