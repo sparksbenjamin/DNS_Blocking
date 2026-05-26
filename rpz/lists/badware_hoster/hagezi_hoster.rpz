@@ -1,16 +1,17 @@
 ; HaGeZi Badware Hoster
 ; Category: badware_hoster
-; Generated: 2026-05-25 06:41:53 UTC
+; Generated: 2026-05-26 06:13:07 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1008
+; Original domains (before deduplication): 1010
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026052506 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026052606 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000.pe CNAME .
 000a.de CNAME .
 000free.us CNAME .
+000nethost.com CNAME .
 000webhost.com CNAME .
 000webhost.fr CNAME .
 000webhostapp.com CNAME .
@@ -865,6 +866,7 @@ te4m.de CNAME .
 team.cx CNAME .
 team.tl CNAME .
 teamzonesports.com CNAME .
+tehno-politen.ru CNAME .
 tempisite.com CNAME .
 temporary-demo.site CNAME .
 temporary.site CNAME .
