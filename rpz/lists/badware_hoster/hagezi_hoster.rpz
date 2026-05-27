@@ -1,11 +1,11 @@
 ; HaGeZi Badware Hoster
 ; Category: badware_hoster
-; Generated: 2026-05-26 06:13:07 UTC
+; Generated: 2026-05-27 06:26:44 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1010
+; Original domains (before deduplication): 1012
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026052606 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026052706 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000.pe CNAME .
@@ -663,6 +663,7 @@ muf.mobi CNAME .
 musik.cx CNAME .
 musik.lc CNAME .
 mx.gp CNAME .
+my-board.org CNAME .
 my-free.website CNAME .
 my-place.us CNAME .
 my.gp CNAME .
@@ -785,6 +786,7 @@ qty3e.pro CNAME .
 qu.am CNAME .
 r-e.kr CNAME .
 r.gp CNAME .
+rapidshare.se CNAME .
 rbrandly.com CNAME .
 rdrclk.com CNAME .
 re2.de CNAME .

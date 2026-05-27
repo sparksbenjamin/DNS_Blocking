@@ -1,7 +1,7 @@
 # Dns Bypass Blocklist
-# Generated: 2026-05-26 06:13:07 UTC
+# Generated: 2026-05-27 06:26:44 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
-# Original domains (before deduplication): 17299
+# Original domains (before deduplication): 17301
 
 0.0.0.0 0.6gpaactivities.pce-cihazlari.com.tr
 0.0.0.0 0.6gpaactivities.pulsaudio.ro
@@ -5340,6 +5340,7 @@
 0.0.0.0 doh-03.spectrum.com
 0.0.0.0 doh-2.seby.io
 0.0.0.0 doh-ca.naftalie.net
+0.0.0.0 doh-dilution-to-upstreams-adguardhome.nicolas-dorriere.fr
 0.0.0.0 doh-dns-apple-com.v.aaplimg.com
 0.0.0.0 doh-lb-atl.dnsflex.com
 0.0.0.0 doh-lb-br.dnsflex.com
@@ -5487,6 +5488,7 @@
 0.0.0.0 doh.us.moe.tips
 0.0.0.0 doh.valscosmos.com
 0.0.0.0 doh.viatech.com.tw
+0.0.0.0 doh.vpsdns.co.za
 0.0.0.0 doh.webnmail.de
 0.0.0.0 doh.wewitro.net
 0.0.0.0 doh.xcom.pro
