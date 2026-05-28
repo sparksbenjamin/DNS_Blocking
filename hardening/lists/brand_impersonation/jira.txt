@@ -1,6 +1,6 @@
 # Jira Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-26 07:56:21 UTC
+# Generated: 2026-05-28 08:06:22 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: jira.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -15,6 +15,7 @@
 0.0.0.0 jera.com
 0.0.0.0 jhira.com
 0.0.0.0 jhra.com
+0.0.0.0 ji2a.com
 0.0.0.0 ji4a.com
 0.0.0.0 jia.com
 0.0.0.0 jiar.com

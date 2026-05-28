@@ -1,6 +1,6 @@
 # QuickBooks Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-26 07:56:21 UTC
+# Generated: 2026-05-28 08:06:22 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: quickbooks.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -202,8 +202,10 @@
 0.0.0.0 uuickbooks.com
 0.0.0.0 wquickbooks.com
 0.0.0.0 wuickbooks.com
-0.0.0.0 xn--qickboks-q3a96t.com
-0.0.0.0 xn--quickbok-c5a5046e.com
+0.0.0.0 xn--qlckbooks-l7b.com
+0.0.0.0 xn--quckbks-u1aa908a.com
+0.0.0.0 xn--quckboks-s4a918a.com
+0.0.0.0 xn--quiekboks-m7a.com
 0.0.0.0 yuickbooks.com
 0.0.0.0 zquickbooks.com
 0.0.0.0 zuickbooks.com

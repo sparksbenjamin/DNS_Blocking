@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-26 07:56:21 UTC
+# Generated: 2026-05-28 08:06:22 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -38,7 +38,6 @@
 0.0.0.0 iivc.com
 0.0.0.0 iive.com
 0.0.0.0 ilve.com
-0.0.0.0 imcrosoft.com
 0.0.0.0 ioffice.com
 0.0.0.0 ioutlook.com
 0.0.0.0 iutlook.com
@@ -188,6 +187,7 @@
 0.0.0.0 mi9crosoft.com
 0.0.0.0 mibrosoft.com
 0.0.0.0 mic.rosoft.com
+0.0.0.0 mic.rosoftonline.com
 0.0.0.0 mic2osoft.com
 0.0.0.0 mic4osoft.com
 0.0.0.0 mic4rosoft.com
@@ -257,6 +257,7 @@
 0.0.0.0 microroftonline.com
 0.0.0.0 micros-oft.com
 0.0.0.0 micros.oft.com
+0.0.0.0 micros0ft.com
 0.0.0.0 micros0oft.com
 0.0.0.0 micros9oft.com
 0.0.0.0 microsaft.com
@@ -519,7 +520,6 @@
 0.0.0.0 muicrosoft.com
 0.0.0.0 mutlook.com
 0.0.0.0 mycrosoft.com
-0.0.0.0 mycrosoftonline.com
 0.0.0.0 nffice.com
 0.0.0.0 nicr0soft.com
 0.0.0.0 nicrosoft.com
@@ -839,6 +839,7 @@
 0.0.0.0 xn--ffice-iua.com
 0.0.0.0 xn--icrosoft-c3a.com
 0.0.0.0 xn--icrosoft-qy7c.com
+0.0.0.0 xn--icrosoftonlie-990grf.com
 0.0.0.0 xn--icrosoftonline-kk7g.com
 0.0.0.0 xn--lcrosoft-g89c.com
 0.0.0.0 xn--lie-t6x.com

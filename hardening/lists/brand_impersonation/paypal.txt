@@ -1,6 +1,6 @@
 # PayPal Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-26 07:56:21 UTC
+# Generated: 2026-05-28 08:06:22 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: paypal.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -15,7 +15,6 @@
 0.0.0.0 mpaypal.com
 0.0.0.0 oaypal.com
 0.0.0.0 opaypal.com
-0.0.0.0 p-aypal.com
 0.0.0.0 p.aypal.com
 0.0.0.0 p0aypal.com
 0.0.0.0 pa6pal.com
@@ -121,7 +120,6 @@
 0.0.0.0 payypal.com
 0.0.0.0 peypal.com
 0.0.0.0 piypal.com
-0.0.0.0 playpal.com
 0.0.0.0 poaypal.com
 0.0.0.0 poypal.com
 0.0.0.0 ppaypal.com
