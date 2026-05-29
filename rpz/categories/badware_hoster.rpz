@@ -1,10 +1,10 @@
 ; Badware Hoster Blocklist
-; Generated: 2026-05-28 06:18:42 UTC
+; Generated: 2026-05-29 06:20:29 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1024
+; Original domains (before deduplication): 1025
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026052806 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026052906 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000.pe CNAME .
@@ -208,6 +208,7 @@ blogspot.ba CNAME .
 blogspot.be CNAME .
 blogspot.ca CNAME .
 blogspot.ch CNAME .
+blogspot.com.br CNAME .
 blogspot.com.es CNAME .
 blogspot.cz CNAME .
 blogspot.de CNAME .
@@ -537,7 +538,6 @@ il.gp CNAME .
 im-internet.eu CNAME .
 imagengratis.org CNAME .
 in.gp CNAME .
-in.run CNAME .
 in24.de CNAME .
 inbox24.eu CNAME .
 inbox24.net CNAME .
@@ -564,6 +564,7 @@ iptime.org CNAME .
 ir.gp CNAME .
 is-alive.de CNAME .
 is-best.net CNAME .
+is-great.org CNAME .
 ishg.za.com CNAME .
 ispot.cc CNAME .
 ist-ok.de CNAME .
@@ -829,7 +830,6 @@ server2.eu CNAME .
 server3.eu CNAME .
 service.lc CNAME .
 share.lc CNAME .
-shareease.link CNAME .
 sharkserve.com CNAME .
 shoort.ch CNAME .
 shop.fm CNAME .
@@ -847,6 +847,7 @@ sitebeat.crazydomains.com CNAME .
 sitepalace.com CNAME .
 skul.de CNAME .
 sms.cr CNAME .
+smsu.io CNAME .
 snapurl.to CNAME .
 snifferip.com CNAME .
 solidwebhost.com CNAME .
@@ -904,6 +905,7 @@ tr.gp CNAME .
 trackfinanceworld.com CNAME .
 trend.in CNAME .
 tribalpages.com CNAME .
+trim.ac CNAME .
 tripod.com CNAME .
 tryurl.io CNAME .
 turkish.lc CNAME .
@@ -930,7 +932,6 @@ url-short.me CNAME .
 url.sumanonline.com CNAME .
 urlaub.lc CNAME .
 urllink.live CNAME .
-urlto.me CNAME .
 urlz.gr CNAME .
 us.nf CNAME .
 us.st CNAME .
