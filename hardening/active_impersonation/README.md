@@ -1,6 +1,6 @@
 # Active Impersonation Review
 
-**Generated:** 2026-05-28T09:14:27.992898+00:00
+**Generated:** 2026-05-29T09:11:52.569417+00:00
 
 This stage scores live DNSTwist lookalike domains against the real brand sites using lightweight fingerprinting, then emits conservative blocking lists from only the highest-confidence non-canonical findings.
 
@@ -40,7 +40,7 @@ Domains that only canonical-redirect to the real brand are filtered out of the v
 
 | HIGH | MEDIUM | LOW | INCONCLUSIVE | OFFLINE | ERROR |
 |------|--------|-----|--------------|---------|-------|
-| 0 | 17 | 2195 | 888 | 2091 | 0 |
+| 0 | 18 | 2188 | 892 | 2093 | 0 |
 
 ## Blocking Lists
 
@@ -55,45 +55,45 @@ Only `HIGH_MATCH` domains that do **not** canonical-redirect to the real brand a
 
 | Target | Seeds | Audited | Visible | Blocklist | Filtered Redirects | High | Medium | Low | Offline | Errors | Note |
 |--------|-------|---------|---------|-----------|--------------------|------|--------|-----|---------|--------|------|
-| Adobe | 2 | 183 | 183 | 0 | 0 | 0 | 0 | 93 | 77 | 0 |  |
-| Amazon | 1 | 259 | 119 | 0 | 140 | 0 | 0 | 38 | 70 | 0 |  |
-| Apple | 2 | 347 | 329 | 0 | 18 | 0 | 0 | 149 | 142 | 0 |  |
-| Atlassian | 1 | 47 | 42 | 0 | 5 | 0 | 0 | 27 | 12 | 0 |  |
-| Auth0 | 1 | 187 | 183 | 0 | 4 | 0 | 0 | 4 | 73 | 0 |  |
-| Box | 1 | 103 | 103 | 0 | 0 | 0 | 0 | 71 | 27 | 0 |  |
-| Cloudflare | 1 | 163 | 161 | 0 | 2 | 0 | 9 | 46 | 95 | 0 |  |
+| Adobe | 2 | 183 | 183 | 0 | 0 | 0 | 0 | 95 | 81 | 0 |  |
+| Amazon | 1 | 259 | 119 | 0 | 140 | 0 | 0 | 38 | 71 | 0 |  |
+| Apple | 2 | 347 | 329 | 0 | 18 | 0 | 0 | 152 | 145 | 0 |  |
+| Atlassian | 1 | 47 | 42 | 0 | 5 | 0 | 0 | 26 | 12 | 0 |  |
+| Auth0 | 1 | 187 | 183 | 0 | 4 | 0 | 0 | 5 | 73 | 0 |  |
+| Box | 1 | 103 | 103 | 0 | 0 | 0 | 0 | 72 | 26 | 0 |  |
+| Cloudflare | 1 | 163 | 161 | 0 | 2 | 0 | 9 | 43 | 101 | 0 |  |
 | Coinbase | 1 | 254 | 253 | 0 | 1 | 0 | 0 | 33 | 37 | 0 |  |
 | DHL | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
 | Docker | 1 | 88 | 88 | 0 | 0 | 0 | 0 | 50 | 31 | 0 |  |
-| DocuSign | 1 | 90 | 85 | 0 | 5 | 0 | 0 | 37 | 42 | 0 |  |
-| Dropbox | 2 | 133 | 132 | 0 | 1 | 0 | 1 | 64 | 63 | 0 |  |
-| Duo | 1 | 119 | 119 | 0 | 0 | 0 | 0 | 72 | 29 | 0 |  |
-| FedEx | 1 | 130 | 130 | 0 | 0 | 0 | 0 | 4 | 70 | 0 |  |
-| Figma | 1 | 82 | 82 | 0 | 0 | 0 | 0 | 48 | 24 | 0 |  |
-| GitHub | 1 | 155 | 149 | 0 | 6 | 0 | 0 | 72 | 60 | 0 |  |
-| GitLab | 1 | 81 | 80 | 0 | 1 | 0 | 0 | 36 | 39 | 0 |  |
-| Google | 2 | 562 | 551 | 0 | 11 | 0 | 7 | 180 | 307 | 0 |  |
-| Intuit | 1 | 141 | 141 | 0 | 0 | 0 | 0 | 60 | 59 | 0 |  |
-| Jira | 1 | 100 | 100 | 0 | 0 | 0 | 0 | 70 | 26 | 0 |  |
-| Microsoft | 5 | 930 | 861 | 0 | 69 | 0 | 0 | 389 | 382 | 0 |  |
+| DocuSign | 1 | 90 | 85 | 0 | 5 | 0 | 0 | 34 | 42 | 0 |  |
+| Dropbox | 2 | 133 | 132 | 0 | 1 | 0 | 1 | 63 | 62 | 0 |  |
+| Duo | 1 | 119 | 119 | 0 | 0 | 0 | 0 | 74 | 29 | 0 |  |
+| FedEx | 1 | 130 | 130 | 0 | 0 | 0 | 0 | 4 | 67 | 0 |  |
+| Figma | 1 | 82 | 82 | 0 | 0 | 0 | 0 | 46 | 25 | 0 |  |
+| GitHub | 1 | 155 | 149 | 0 | 6 | 0 | 0 | 74 | 60 | 0 |  |
+| GitLab | 1 | 81 | 80 | 0 | 1 | 0 | 0 | 36 | 41 | 0 |  |
+| Google | 2 | 562 | 551 | 0 | 11 | 0 | 8 | 185 | 305 | 0 |  |
+| Intuit | 1 | 141 | 141 | 0 | 0 | 0 | 0 | 60 | 50 | 0 |  |
+| Jira | 1 | 100 | 100 | 0 | 0 | 0 | 0 | 70 | 27 | 0 |  |
+| Microsoft | 5 | 930 | 861 | 0 | 69 | 0 | 0 | 390 | 378 | 0 |  |
 | Notion | 1 | 10 | 10 | 0 | 0 | 0 | 0 | 8 | 0 | 0 |  |
-| Okta | 1 | 110 | 109 | 0 | 1 | 0 | 0 | 62 | 32 | 0 |  |
-| OneLogin | 1 | 31 | 31 | 0 | 0 | 0 | 0 | 13 | 14 | 0 |  |
-| PayPal | 1 | 212 | 204 | 0 | 8 | 0 | 0 | 67 | 38 | 0 |  |
+| Okta | 1 | 110 | 109 | 0 | 1 | 0 | 0 | 60 | 32 | 0 |  |
+| OneLogin | 1 | 31 | 31 | 0 | 0 | 0 | 0 | 10 | 17 | 0 |  |
+| PayPal | 1 | 212 | 204 | 0 | 8 | 0 | 0 | 64 | 39 | 0 |  |
 | Ping Identity | 1 | 31 | 31 | 0 | 0 | 0 | 0 | 1 | 29 | 0 |  |
 | QuickBooks | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| Salesforce | 1 | 117 | 102 | 0 | 15 | 0 | 0 | 40 | 50 | 0 |  |
+| Salesforce | 1 | 117 | 102 | 0 | 15 | 0 | 0 | 39 | 49 | 0 |  |
 | ServiceNow | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| Shopify | 1 | 179 | 134 | 0 | 45 | 0 | 0 | 91 | 26 | 0 |  |
-| Slack | 1 | 91 | 91 | 0 | 0 | 0 | 0 | 54 | 25 | 0 |  |
-| Stripe | 1 | 100 | 94 | 0 | 6 | 0 | 0 | 53 | 34 | 0 |  |
+| Shopify | 1 | 179 | 134 | 0 | 45 | 0 | 0 | 92 | 25 | 0 |  |
+| Slack | 1 | 91 | 91 | 0 | 0 | 0 | 0 | 51 | 27 | 0 |  |
+| Stripe | 1 | 100 | 94 | 0 | 6 | 0 | 0 | 55 | 33 | 0 |  |
 | Trello | 1 | 59 | 58 | 0 | 1 | 0 | 0 | 32 | 17 | 0 |  |
-| TurboTax | 1 | 151 | 127 | 0 | 24 | 0 | 0 | 46 | 62 | 0 |  |
+| TurboTax | 1 | 151 | 127 | 0 | 24 | 0 | 0 | 48 | 58 | 0 |  |
 | UPS | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
-| USPS | 1 | 99 | 99 | 0 | 0 | 0 | 0 | 61 | 33 | 0 |  |
-| Venmo | 1 | 73 | 72 | 0 | 1 | 0 | 0 | 40 | 19 | 0 |  |
+| USPS | 1 | 99 | 99 | 0 | 0 | 0 | 0 | 62 | 32 | 0 |  |
+| Venmo | 1 | 73 | 72 | 0 | 1 | 0 | 0 | 41 | 18 | 0 |  |
 | Zendesk | 1 | 59 | 57 | 0 | 2 | 0 | 0 | 36 | 20 | 0 |  |
-| Zoom | 1 | 81 | 81 | 0 | 0 | 0 | 0 | 48 | 27 | 0 |  |
+| Zoom | 1 | 81 | 81 | 0 | 0 | 0 | 0 | 39 | 34 | 0 |  |
 | eBay | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | Skipped target because no reachable baselines were available. |
 
 ## Per-Target Blocking Lists
@@ -104,23 +104,24 @@ No block-worthy domains were emitted in this run.
 
 | Target | Domain | Status | Score | Baseline | Redirect | Title | Content |
 |--------|--------|--------|-------|----------|----------|-------|---------|
-| Cloudflare | `clojdflare.com` | MEDIUM_MATCH | 4 | `cloudflare.com` | `clojdflare.com` | 1.00 | 0.54 |
-| Cloudflare | `cloucflare.com` | MEDIUM_MATCH | 4 | `cloudflare.com` | `cloucflare.com` | 1.00 | 0.54 |
-| Cloudflare | `cloudfkare.com` | MEDIUM_MATCH | 4 | `cloudflare.com` | `cloudfkare.com` | 1.00 | 0.54 |
-| Cloudflare | `cloudflafe.com` | MEDIUM_MATCH | 4 | `cloudflare.com` | `cloudflafe.com` | 1.00 | 0.54 |
-| Cloudflare | `cooudflare.com` | MEDIUM_MATCH | 4 | `cloudflare.com` | `cooudflare.com` | 1.00 | 0.54 |
-| Cloudflare | `cpoudflare.com` | MEDIUM_MATCH | 4 | `cloudflare.com` | `cpoudflare.com` | 1.00 | 0.54 |
-| Cloudflare | `lcoudflare.com` | MEDIUM_MATCH | 4 | `cloudflare.com` | `lcoudflare.com` | 1.00 | 0.54 |
-| Cloudflare | `vloudflare.com` | MEDIUM_MATCH | 4 | `cloudflare.com` | `vloudflare.com` | 1.00 | 0.54 |
-| Cloudflare | `xloudflare.com` | MEDIUM_MATCH | 4 | `cloudflare.com` | `xloudflare.com` | 1.00 | 0.54 |
+| Cloudflare | `clojdflare.com` | MEDIUM_MATCH | 3 | `cloudflare.com` | `clojdflare.com` | 1.00 | 0.54 |
+| Cloudflare | `cloucflare.com` | MEDIUM_MATCH | 3 | `cloudflare.com` | `cloucflare.com` | 1.00 | 0.54 |
+| Cloudflare | `cloudfkare.com` | MEDIUM_MATCH | 3 | `cloudflare.com` | `cloudfkare.com` | 1.00 | 0.54 |
+| Cloudflare | `cloudflafe.com` | MEDIUM_MATCH | 3 | `cloudflare.com` | `cloudflafe.com` | 1.00 | 0.54 |
+| Cloudflare | `cooudflare.com` | MEDIUM_MATCH | 3 | `cloudflare.com` | `cooudflare.com` | 1.00 | 0.54 |
+| Cloudflare | `cpoudflare.com` | MEDIUM_MATCH | 3 | `cloudflare.com` | `cpoudflare.com` | 1.00 | 0.54 |
+| Cloudflare | `lcoudflare.com` | MEDIUM_MATCH | 3 | `cloudflare.com` | `lcoudflare.com` | 1.00 | 0.54 |
+| Cloudflare | `vloudflare.com` | MEDIUM_MATCH | 3 | `cloudflare.com` | `vloudflare.com` | 1.00 | 0.54 |
+| Cloudflare | `xloudflare.com` | MEDIUM_MATCH | 3 | `cloudflare.com` | `xloudflare.com` | 1.00 | 0.54 |
 | Google | `xn--gogl-jpa1d.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--gogl-jpa1d.com` | 1.00 | 0.12 |
 | Google | `xn--gogle-1ta.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--gogle-1ta.com` | 1.00 | 0.08 |
 | Google | `xn--ooge-21a88g.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--ooge-21a88g.com` | 1.00 | 0.08 |
 | Google | `xn--googl-lsa.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--googl-lsa.com` | 1.00 | 0.05 |
+| Google | `xn--gogle-g91b.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--gogle-g91b.com` | 1.00 | 0.04 |
 | Google | `xn--goog-8va9v.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--goog-8va9v.com` | 1.00 | 0.04 |
 | Google | `xn--googl-9cc.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--googl-9cc.com` | 1.00 | 0.04 |
 | Google | `xn--ooge-9wa5r.com` | MEDIUM_MATCH | 3 | `google.com` | `xn--ooge-9wa5r.com` | 1.00 | 0.04 |
-| Dropbox | `dr.opbox.com` | MEDIUM_MATCH | 3 | `dropbox.com` | `dr.opbox.com` | 0.90 | 0.02 |
+| Dropbox | `dr.opbox.com` | MEDIUM_MATCH | 3 | `dropbox.com` | `dr.opbox.com` | 0.90 | 0.03 |
 
 ## Operational Notes
 
