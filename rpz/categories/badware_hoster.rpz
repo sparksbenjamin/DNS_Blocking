@@ -1,10 +1,10 @@
 ; Badware Hoster Blocklist
-; Generated: 2026-05-29 06:20:29 UTC
+; Generated: 2026-05-30 05:53:17 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1025
+; Original domains (before deduplication): 1026
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026052906 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026053005 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000.pe CNAME .
@@ -674,6 +674,7 @@ my-board.org CNAME .
 my-free.website CNAME .
 my-place.us CNAME .
 my.gp CNAME .
+my5353.com CNAME .
 myartsonline.com CNAME .
 myblogvoice.com CNAME .
 mybluehost.me CNAME .
