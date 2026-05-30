@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-28 08:06:22 UTC
+# Generated: 2026-05-30 06:51:56 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -257,7 +257,6 @@
 0.0.0.0 microroftonline.com
 0.0.0.0 micros-oft.com
 0.0.0.0 micros.oft.com
-0.0.0.0 micros0ft.com
 0.0.0.0 micros0oft.com
 0.0.0.0 micros9oft.com
 0.0.0.0 microsaft.com
@@ -493,6 +492,7 @@
 0.0.0.0 mivrosoft.com
 0.0.0.0 mivrosoftonline.com
 0.0.0.0 mixrosoft.com
+0.0.0.0 mixrosoftonline.com
 0.0.0.0 mjcrosoft.com
 0.0.0.0 mjicrosoft.com
 0.0.0.0 mkcrosoft.com
@@ -520,6 +520,7 @@
 0.0.0.0 muicrosoft.com
 0.0.0.0 mutlook.com
 0.0.0.0 mycrosoft.com
+0.0.0.0 mycrosoftonline.com
 0.0.0.0 nffice.com
 0.0.0.0 nicr0soft.com
 0.0.0.0 nicrosoft.com
@@ -807,7 +808,6 @@
 0.0.0.0 ouylook.com
 0.0.0.0 ouytlook.com
 0.0.0.0 ouzlook.com
-0.0.0.0 ovffice.com
 0.0.0.0 ovtiook.com
 0.0.0.0 ovtlook.com
 0.0.0.0 owtlook.com
@@ -839,7 +839,6 @@
 0.0.0.0 xn--ffice-iua.com
 0.0.0.0 xn--icrosoft-c3a.com
 0.0.0.0 xn--icrosoft-qy7c.com
-0.0.0.0 xn--icrosoftonlie-990grf.com
 0.0.0.0 xn--icrosoftonline-kk7g.com
 0.0.0.0 xn--lcrosoft-g89c.com
 0.0.0.0 xn--lie-t6x.com
@@ -869,6 +868,7 @@
 0.0.0.0 xn--mcrosoftonline-llb.com
 0.0.0.0 xn--mcrosoftonlne-39bk.com
 0.0.0.0 xn--mcrosoftonlne-iibz.com
+0.0.0.0 xn--mcrosoftonlne-pjb497c.com
 0.0.0.0 xn--mcrosoftonlne-wibk.com
 0.0.0.0 xn--mcrsoft-7ya0d.com
 0.0.0.0 xn--micosof-emd9545d.com
@@ -879,6 +879,7 @@
 0.0.0.0 xn--microoft-l9c.com
 0.0.0.0 xn--microoft-qvb.com
 0.0.0.0 xn--microoft-rwb.com
+0.0.0.0 xn--microoftonlne-fuc590b.com
 0.0.0.0 xn--microsft-03a.com
 0.0.0.0 xn--microsft-380d.com
 0.0.0.0 xn--microsft-5rb.com
@@ -894,6 +895,7 @@
 0.0.0.0 xn--microsoftonine-vlb.com
 0.0.0.0 xn--microsoftonlie-ipc.com
 0.0.0.0 xn--microsoftonlin-okb.com
+0.0.0.0 xn--microsoftonln-1hb2a.com
 0.0.0.0 xn--microsoftonlne-hgc.com
 0.0.0.0 xn--microsoftonlne-wlb.com
 0.0.0.0 xn--microsot-ez9c.com
@@ -929,7 +931,6 @@
 0.0.0.0 xn--outlok-lxa.com
 0.0.0.0 xn--outlok-tl8b.com
 0.0.0.0 xn--outloo-1bb.com
-0.0.0.0 xn--outloo-8bb.com
 0.0.0.0 xn--rncrosoft-64a.com
 0.0.0.0 xn--rncrosoft-h5a.com
 0.0.0.0 xn--rnicrosft-67a.com

@@ -1,6 +1,6 @@
 # Duo Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-28 08:06:22 UTC
+# Generated: 2026-05-30 06:51:56 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: duo.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -30,6 +30,7 @@
 0.0.0.0 diuo.com
 0.0.0.0 djo.com
 0.0.0.0 djuo.com
+0.0.0.0 dlluo.com
 0.0.0.0 dluo.com
 0.0.0.0 dlvo.com
 0.0.0.0 do.com

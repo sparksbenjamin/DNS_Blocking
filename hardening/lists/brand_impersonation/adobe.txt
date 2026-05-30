@@ -1,6 +1,6 @@
 # Adobe Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-28 08:06:22 UTC
+# Generated: 2026-05-30 06:51:56 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: adobe.com, acrobat.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -19,7 +19,6 @@
 0.0.0.0 aclode.com
 0.0.0.0 acobat.com
 0.0.0.0 acobe.com
-0.0.0.0 acorbat.com
 0.0.0.0 acr.obat.com
 0.0.0.0 acrabat.com
 0.0.0.0 acro-bat.com
@@ -126,7 +125,6 @@
 0.0.0.0 adoje.com
 0.0.0.0 adokbe.com
 0.0.0.0 adolbe.com
-0.0.0.0 adolde.com
 0.0.0.0 adollbe.com
 0.0.0.0 adonbe.com
 0.0.0.0 adone.com
