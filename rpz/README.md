@@ -1,6 +1,6 @@
 # RPZ Security Policies
 
-**Generated:** 2026-05-30 05:53:17 UTC
+**Generated:** 2026-05-31 06:25:59 UTC
 
 **Audience:** Advanced / Unbound RPZ
 
@@ -26,7 +26,7 @@ Use these starter bundles if you want a fast, opinionated default instead of pic
 
 | Bundle | Best For | Entries | Includes | File | Raw URL |
 |--------|----------|---------|----------|------|---------|
-| **Security RPZ** | Unbound and RPZ-capable resolvers | 636,534 | Badware Hosters, Dynamic DNS, Malware & Threats, Phishing & Scam Sites, Scam & Fraud | [security.rpz](recommended/security.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/recommended/security.rpz) |
+| **Security RPZ** | Unbound and RPZ-capable resolvers | 636,328 | Badware Hosters, Dynamic DNS, Malware & Threats, Phishing & Scam Sites, Scam & Fraud | [security.rpz](recommended/security.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/recommended/security.rpz) |
 
 ## Why Trust This Layer
 
@@ -41,11 +41,11 @@ RPZ category bundles for exact-host security blocking.
 
 | Category | Entries | Sources | File | Raw URL |
 |----------|---------|---------|------|---------|
-| [🗄️ Badware Hosters](#badware-hoster) | 1,026 | 1 | [badware_hoster.rpz](categories/badware_hoster.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/badware_hoster.rpz) |
+| [🗄️ Badware Hosters](#badware-hoster) | 1,027 | 1 | [badware_hoster.rpz](categories/badware_hoster.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/badware_hoster.rpz) |
 | [🌐 Dynamic DNS](#dynamic-dns) | 1,031 | 1 | [dynamic_dns.rpz](categories/dynamic_dns.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/dynamic_dns.rpz) |
-| [🦠 Malware & Threats](#malware) | 7,085 | 3 | [malware.rpz](categories/malware.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/malware.rpz) |
-| [🎣 Phishing & Scam Sites](#phishing) | 414,581 | 3 | [phishing.rpz](categories/phishing.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/phishing.rpz) |
-| [💸 Scam & Fraud](#scam) | 212,926 | 3 | [scam.rpz](categories/scam.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/scam.rpz) |
+| [🦠 Malware & Threats](#malware) | 6,829 | 3 | [malware.rpz](categories/malware.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/malware.rpz) |
+| [🎣 Phishing & Scam Sites](#phishing) | 414,625 | 3 | [phishing.rpz](categories/phishing.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/phishing.rpz) |
+| [💸 Scam & Fraud](#scam) | 212,931 | 3 | [scam.rpz](categories/scam.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/categories/scam.rpz) |
 
 ## Individual Sources
 
@@ -55,7 +55,7 @@ Per-source RPZ files are available if you want to map individual feeds into sepa
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
-| HaGeZi Badware Hoster | 1,026 | [hagezi_hoster.rpz](lists/badware_hoster/hagezi_hoster.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/badware_hoster/hagezi_hoster.rpz) |
+| HaGeZi Badware Hoster | 1,027 | [hagezi_hoster.rpz](lists/badware_hoster/hagezi_hoster.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/badware_hoster/hagezi_hoster.rpz) |
 
 ### Dynamic DNS
 
@@ -68,16 +68,16 @@ Per-source RPZ files are available if you want to map individual feeds into sepa
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
 | Block List Project Ransomware | 1,904 | [blp_ransomware.rpz](lists/malware/blp_ransomware.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/blp_ransomware.rpz) |
-| ThreatFox | 385 | [threatfox.rpz](lists/malware/threatfox.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/threatfox.rpz) |
-| URLhaus | 4,926 | [urlhaus.rpz](lists/malware/urlhaus.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/urlhaus.rpz) |
+| ThreatFox | 278 | [threatfox.rpz](lists/malware/threatfox.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/threatfox.rpz) |
+| URLhaus | 4,761 | [urlhaus.rpz](lists/malware/urlhaus.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/malware/urlhaus.rpz) |
 
 ### Phishing & Scam Sites
 
 | Source | Entries | File | Raw URL |
 |--------|---------|------|---------|
-| OpenPhish | 285 | [openphish.rpz](lists/phishing/openphish.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/phishing/openphish.rpz) |
-| PhishTank | 30,983 | [phishtank.rpz](lists/phishing/phishtank.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/phishing/phishtank.rpz) |
-| Phishing Army | 385,338 | [phishing_army.rpz](lists/phishing/phishing_army.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/phishing/phishing_army.rpz) |
+| OpenPhish | 268 | [openphish.rpz](lists/phishing/openphish.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/phishing/openphish.rpz) |
+| PhishTank | 31,033 | [phishtank.rpz](lists/phishing/phishtank.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/phishing/phishtank.rpz) |
+| Phishing Army | 385,339 | [phishing_army.rpz](lists/phishing/phishing_army.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/phishing/phishing_army.rpz) |
 
 ### Scam & Fraud
 
@@ -85,7 +85,7 @@ Per-source RPZ files are available if you want to map individual feeds into sepa
 |--------|---------|------|---------|
 | Block List Project Fraud | 195,904 | [blp_fraud.rpz](lists/scam/blp_fraud.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/scam/blp_fraud.rpz) |
 | Block List Project Scam | 1,274 | [blp_scam.rpz](lists/scam/blp_scam.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/scam/blp_scam.rpz) |
-| HaGeZi Fake | 15,821 | [hagezi_fake.rpz](lists/scam/hagezi_fake.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/scam/hagezi_fake.rpz) |
+| HaGeZi Fake | 15,826 | [hagezi_fake.rpz](lists/scam/hagezi_fake.rpz) | [Raw](https://raw.githubusercontent.com/sparksbenjamin/DNS_Blocking/main/rpz/lists/scam/hagezi_fake.rpz) |
 
 ## Usage
 
