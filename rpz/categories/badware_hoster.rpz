@@ -1,10 +1,10 @@
 ; Badware Hoster Blocklist
-; Generated: 2026-05-31 06:25:59 UTC
+; Generated: 2026-06-01 07:07:38 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 1027
+; Original domains (before deduplication): 1029
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026053106 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026060107 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000.pe CNAME .
@@ -527,6 +527,7 @@ hyderabadadda.com CNAME .
 hyip.com CNAME .
 i.gp CNAME .
 ibiz.cc CNAME .
+iblogger.org CNAME .
 ic0.app CNAME .
 iceiy.com CNAME .
 id.gp CNAME .
@@ -564,6 +565,7 @@ iptime.org CNAME .
 ir.gp CNAME .
 is-alive.de CNAME .
 is-best.net CNAME .
+is-great.net CNAME .
 is-great.org CNAME .
 ishg.za.com CNAME .
 ispot.cc CNAME .
