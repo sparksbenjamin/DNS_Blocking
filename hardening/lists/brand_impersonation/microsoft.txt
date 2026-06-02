@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-05-31 07:49:27 UTC
+# Generated: 2026-06-02 08:41:52 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -286,7 +286,6 @@
 0.0.0.0 microsoct.com
 0.0.0.0 microsodft.com
 0.0.0.0 microsodt.com
-0.0.0.0 microsof-t.com
 0.0.0.0 microsof.com
 0.0.0.0 microsof5.com
 0.0.0.0 microsof6.com
@@ -492,7 +491,6 @@
 0.0.0.0 mivrosoft.com
 0.0.0.0 mivrosoftonline.com
 0.0.0.0 mixrosoft.com
-0.0.0.0 mixrosoftonline.com
 0.0.0.0 mjcrosoft.com
 0.0.0.0 mjicrosoft.com
 0.0.0.0 mkcrosoft.com
