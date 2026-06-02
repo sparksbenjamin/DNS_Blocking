@@ -1,11 +1,11 @@
 ; Block List Project Scam
 ; Category: scam
-; Generated: 2026-06-01 07:07:38 UTC
+; Generated: 2026-06-02 06:47:59 UTC
 ; Format: RPZ (exact hostnames preserved)
 ; Original domains (before deduplication): 1274
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026060107 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026060206 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 10tradeoption.com CNAME .
