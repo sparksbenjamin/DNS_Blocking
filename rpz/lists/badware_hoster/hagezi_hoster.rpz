@@ -1,11 +1,11 @@
 ; HaGeZi Badware Hoster
 ; Category: badware_hoster
-; Generated: 2026-06-02 06:47:59 UTC
+; Generated: 2026-06-03 06:59:49 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 907
+; Original domains (before deduplication): 902
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026060206 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026060307 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000.pe CNAME .
@@ -195,7 +195,6 @@ blogspot.ba CNAME .
 blogspot.be CNAME .
 blogspot.ca CNAME .
 blogspot.ch CNAME .
-blogspot.com.br CNAME .
 blogspot.com.es CNAME .
 blogspot.cz CNAME .
 blogspot.de CNAME .
@@ -443,7 +442,6 @@ fw.bz CNAME .
 fwh.is CNAME .
 game.lc CNAME .
 gaming.lc CNAME .
-gerentebr.com CNAME .
 getenjoyment.net CNAME .
 gg123.vip CNAME .
 gilde.in CNAME .
@@ -646,6 +644,7 @@ novamov.com CNAME .
 now.lc CNAME .
 npx.de CNAME .
 nut.cc CNAME .
+nxcli.io CNAME .
 o-f.com CNAME .
 o-r.kr CNAME .
 o.gp CNAME .
@@ -692,7 +691,6 @@ pixelt.de CNAME .
 pizzakeep.shop CNAME .
 pk.gp CNAME .
 pktriot.net CNAME .
-pl-oferta-id2387942371.top CNAME .
 pl.de CNAME .
 pl.gp CNAME .
 planet.tl CNAME .
@@ -717,8 +715,6 @@ r-e.kr CNAME .
 r.gp CNAME .
 re2.de CNAME .
 reco.ws CNAME .
-regruhosting.ru CNAME .
-reodev.com CNAME .
 rf.gd CNAME .
 ro.gp CNAME .
 royal-host.com CNAME .
@@ -752,6 +748,7 @@ shop.fm CNAME .
 shop2.de CNAME .
 shopping.cr CNAME .
 shopping.hn CNAME .
+shortenerword.com CNAME .
 site123.me CNAME .
 site90.net CNAME .
 sitebeat.crazydomains.com CNAME .
@@ -760,7 +757,6 @@ skul.de CNAME .
 sms.cr CNAME .
 smsu.io CNAME .
 solidwebhost.com CNAME .
-sophiashantidaniel.com CNAME .
 space.lc CNAME .
 sport-pro.de CNAME .
 sportsontheweb.net CNAME .
@@ -787,7 +783,6 @@ teamzonesports.com CNAME .
 tempisite.com CNAME .
 temporary-demo.site CNAME .
 temporary.site CNAME .
-tentbuildingservices.eu CNAME .
 test.lc CNAME .
 tggame.xyz CNAME .
 th.gp CNAME .
