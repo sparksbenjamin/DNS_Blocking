@@ -1,6 +1,6 @@
 # Google Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-06-02 08:41:52 UTC
+# Generated: 2026-06-04 08:24:04 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: google.com, gmail.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -67,6 +67,7 @@
 0.0.0.0 gm2il.com
 0.0.0.0 gma11.com
 0.0.0.0 gma1i.com
+0.0.0.0 gma1il.com
 0.0.0.0 gma2il.com
 0.0.0.0 gma8il.com
 0.0.0.0 gma8l.com
@@ -430,7 +431,6 @@
 0.0.0.0 xn--gmil-1na.com
 0.0.0.0 xn--gmil-1sa.com
 0.0.0.0 xn--gmil-6na.com
-0.0.0.0 xn--gmil-hoa.com
 0.0.0.0 xn--gmil-moa.com
 0.0.0.0 xn--gmil-roa.com
 0.0.0.0 xn--gmil-rsa.com
@@ -447,6 +447,7 @@
 0.0.0.0 xn--gml-fla9d.com
 0.0.0.0 xn--gml-jla4c.com
 0.0.0.0 xn--gml-jla4d.com
+0.0.0.0 xn--gml-jla99a.com
 0.0.0.0 xn--gml-jla9c.com
 0.0.0.0 xn--gml-jla9d.com
 0.0.0.0 xn--gml-jpa92h.com
@@ -454,7 +455,6 @@
 0.0.0.0 xn--gml-nla4d.com
 0.0.0.0 xn--gml-nla9c.com
 0.0.0.0 xn--gml-rla4b.com
-0.0.0.0 xn--gml-rla9b.com
 0.0.0.0 xn--gml-rla9c.com
 0.0.0.0 xn--gml-tgzvj.com
 0.0.0.0 xn--gml-vla4b.com
@@ -526,7 +526,6 @@
 0.0.0.0 xn--mail-47b.com
 0.0.0.0 xn--mail-9pb.com
 0.0.0.0 xn--mail-9wa.com
-0.0.0.0 xn--mail-kqb.com
 0.0.0.0 xn--mail-ksb.com
 0.0.0.0 xn--mail-kxa.com
 0.0.0.0 xn--mail-pwa.com

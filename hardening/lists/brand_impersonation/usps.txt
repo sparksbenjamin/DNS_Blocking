@@ -1,6 +1,6 @@
 # USPS Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-06-02 08:41:52 UTC
+# Generated: 2026-06-04 08:24:04 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: usps.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -30,7 +30,6 @@
 0.0.0.0 udsps.com
 0.0.0.0 ueps.com
 0.0.0.0 uhsps.com
-0.0.0.0 uisps.com
 0.0.0.0 ujsps.com
 0.0.0.0 ups.com
 0.0.0.0 upss.com
@@ -93,7 +92,6 @@
 0.0.0.0 uswps.com
 0.0.0.0 usxps.com
 0.0.0.0 usxs.com
-0.0.0.0 usyps.com
 0.0.0.0 uusps.com
 0.0.0.0 uwps.com
 0.0.0.0 uxps.com
