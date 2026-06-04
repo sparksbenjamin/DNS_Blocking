@@ -1,11 +1,11 @@
 ; HaGeZi Badware Hoster
 ; Category: badware_hoster
-; Generated: 2026-06-03 06:59:49 UTC
+; Generated: 2026-06-04 06:49:00 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 902
+; Original domains (before deduplication): 899
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026060307 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026060406 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000.pe CNAME .
@@ -282,6 +282,7 @@ corolain.ru CNAME .
 craftum.io CNAME .
 created.app CNAME .
 creatorlink.net CNAME .
+cryptonight.net CNAME .
 cs-clan.org CNAME .
 ct.ws CNAME .
 ct8.pl CNAME .
@@ -333,7 +334,6 @@ edgeone.app CNAME .
 edgeone.dev CNAME .
 edoctransfer.com CNAME .
 edu.eu CNAME .
-educatorpage.com CNAME .
 educatorpages.com CNAME .
 efacturas.net CNAME .
 eg.gp CNAME .
@@ -483,7 +483,6 @@ hp.lc CNAME .
 hpage.com CNAME .
 hr-organization.com CNAME .
 hst5.com CNAME .
-html-5.me CNAME .
 hu.gp CNAME .
 hu.kg CNAME .
 hund.in CNAME .
@@ -596,7 +595,6 @@ medianewsonline.com CNAME .
 members.domaindlx.com CNAME .
 merchats.com CNAME .
 mit-wenig-geld.de CNAME .
-mmm.page CNAME .
 mobi.ps CNAME .
 mobile.web.tr CNAME .
 mp3.cr CNAME .
@@ -604,7 +602,6 @@ muf.mobi CNAME .
 musik.cx CNAME .
 musik.lc CNAME .
 mx.gp CNAME .
-my-free.website CNAME .
 my-place.us CNAME .
 my.gp CNAME .
 myartsonline.com CNAME .

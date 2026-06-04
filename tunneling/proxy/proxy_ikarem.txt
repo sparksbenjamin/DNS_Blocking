@@ -3,8 +3,6 @@ envoy-megaproxy.shared-gateways.aps.production.k8s.ikarem.io
 envoy-megaproxy.shared-gateways.use.production.k8s.ikarem.io
 envoy-megaproxy.shared-gateways.usw.production.k8s.ikarem.io
 fra.proxy.k8s.ikarem.io
-ingress.ld-relay-proxy.apa.production.k8s.ikarem.io
-ld-relay-proxy.apa.production.k8s.ikarem.io
 megaproxy-ingress-nginx-controller.ingress-nginx.aps.production.k8s.ikarem.io
 megaproxy-ingress-nginx-controller.ingress-nginx.use.production.k8s.ikarem.io
 megaproxy-ingress-nginx-controller.ingress-nginx.usw.production.k8s.ikarem.io
@@ -13,7 +11,6 @@ mtunnel-node-server-byoip.nextunnel.euw.production.k8s.ikarem.io
 mtunnel-node-server-byoip.nextunnel.use.production.k8s.ikarem.io
 mun.proxy.k8s.ikarem.io
 mv-tunnel.usw.production.k8s.ikarem.io
-nextunnel-admin.use.production.k8s.ikarem.io
 nextunnel.apa.production.k8s.ikarem.io
 nextunnel.aps.production.k8s.ikarem.io
 nextunnel.euc.production.k8s.ikarem.io
