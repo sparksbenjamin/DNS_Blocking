@@ -1,10 +1,11 @@
 # Venmo Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-06-04 08:24:04 UTC
+# Generated: 2026-06-06 06:57:06 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: venmo.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
 
+0.0.0.0 benmo.com
 0.0.0.0 cenmo.com
 0.0.0.0 cvenmo.com
 0.0.0.0 enmo.com
@@ -78,4 +79,3 @@
 0.0.0.0 xn--vemo-m2a.com
 0.0.0.0 xn--venm-oqa.com
 0.0.0.0 xn--venn-jra.com
-0.0.0.0 xn--vno-3qa5548a.com

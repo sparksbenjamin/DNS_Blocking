@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-06-04 08:24:04 UTC
+# Generated: 2026-06-06 06:57:06 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -103,7 +103,6 @@
 0.0.0.0 live6.com
 0.0.0.0 live7.com
 0.0.0.0 live8.com
-0.0.0.0 live9.com
 0.0.0.0 livea.com
 0.0.0.0 liveb.com
 0.0.0.0 livec.com
@@ -157,7 +156,6 @@
 0.0.0.0 loive.com
 0.0.0.0 loutlook.com
 0.0.0.0 love.com
-0.0.0.0 lpive.com
 0.0.0.0 luive.com
 0.0.0.0 lutlook.com
 0.0.0.0 luve.com
@@ -215,7 +213,6 @@
 0.0.0.0 micr9osoft.com
 0.0.0.0 micr9soft.com
 0.0.0.0 micrasoft.com
-0.0.0.0 micreosoft.com
 0.0.0.0 micresoft.com
 0.0.0.0 micrfosoft.com
 0.0.0.0 micrgsoft.com
@@ -257,6 +254,7 @@
 0.0.0.0 microroftonline.com
 0.0.0.0 micros-oft.com
 0.0.0.0 micros.oft.com
+0.0.0.0 micros0ft.com
 0.0.0.0 micros0oft.com
 0.0.0.0 micros9oft.com
 0.0.0.0 microsaft.com
@@ -295,7 +293,6 @@
 0.0.0.0 microsoffonline.com
 0.0.0.0 microsofft.com
 0.0.0.0 microsofftonline.com
-0.0.0.0 microsofg.com
 0.0.0.0 microsofgt.com
 0.0.0.0 microsofonline.com
 0.0.0.0 microsofp.com
@@ -607,7 +604,6 @@
 0.0.0.0 officeu.com
 0.0.0.0 officev.com
 0.0.0.0 officew.com
-0.0.0.0 officex.com
 0.0.0.0 officey.com
 0.0.0.0 officez.com
 0.0.0.0 officfe.com
@@ -901,11 +897,14 @@
 0.0.0.0 xn--micrsoft-73a.com
 0.0.0.0 xn--micrsoft-84a.com
 0.0.0.0 xn--micrsoft-p3a.com
+0.0.0.0 xn--micrsoft-pec.com
 0.0.0.0 xn--micrsoft-q4a.com
 0.0.0.0 xn--mirosoft-18a.com
 0.0.0.0 xn--mirosoft-hw7c.com
 0.0.0.0 xn--mirosoft-lbb.com
 0.0.0.0 xn--mirosoft-t0a.com
+0.0.0.0 xn--mirosoftonlin-xub568b.com
+0.0.0.0 xn--mlcrosoftonlne-wdc.com
 0.0.0.0 xn--offce-1sa.com
 0.0.0.0 xn--offce-7sa.com
 0.0.0.0 xn--offce-doc.com
@@ -931,5 +930,6 @@
 0.0.0.0 xn--rncrosoft-64a.com
 0.0.0.0 xn--rncrosoft-h5a.com
 0.0.0.0 xn--rnicrosft-67a.com
+0.0.0.0 xn--tlook-7eb50b.com
 0.0.0.0 xn--utlook-9fb.com
 0.0.0.0 xn--utlook-vxa.com

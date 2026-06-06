@@ -1,6 +1,6 @@
 # Okta Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-06-04 08:24:04 UTC
+# Generated: 2026-06-06 06:57:06 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: okta.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -28,7 +28,6 @@
 0.0.0.0 okat.com
 0.0.0.0 okda.com
 0.0.0.0 okfa.com
-0.0.0.0 okfta.com
 0.0.0.0 okga.com
 0.0.0.0 okgta.com
 0.0.0.0 okita.com
@@ -87,6 +86,7 @@
 0.0.0.0 okua.com
 0.0.0.0 okva.com
 0.0.0.0 okya.com
+0.0.0.0 okyta.com
 0.0.0.0 okza.com
 0.0.0.0 olcta.com
 0.0.0.0 oleta.com
@@ -102,6 +102,7 @@
 0.0.0.0 pokta.com
 0.0.0.0 ukta.com
 0.0.0.0 xn--80atlr.com
+0.0.0.0 xn--kt-kka82l.com
 0.0.0.0 xn--kta-bna.com
 0.0.0.0 xn--kta-fna.com
 0.0.0.0 xn--kta-slz.com
