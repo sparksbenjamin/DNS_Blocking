@@ -1,10 +1,10 @@
 ; Badware Hoster Blocklist
-; Generated: 2026-06-04 06:49:00 UTC
+; Generated: 2026-06-06 05:58:34 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 899
+; Original domains (before deduplication): 903
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026060406 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026060605 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 000.pe CNAME .
@@ -603,6 +603,7 @@ musik.lc CNAME .
 mx.gp CNAME .
 my-place.us CNAME .
 my.gp CNAME .
+my5353.com CNAME .
 myartsonline.com CNAME .
 myblogvoice.com CNAME .
 mybluehost.me CNAME .
@@ -769,6 +770,8 @@ surge.sh CNAME .
 sv.gp CNAME .
 sviluppo.host CNAME .
 sxx.in CNAME .
+sylu.cc CNAME .
+sylu.net CNAME .
 synergize.co CNAME .
 t.gp CNAME .
 t35.com CNAME .
@@ -852,6 +855,7 @@ webblog24.de CNAME .
 webboss.site CNAME .
 webcindario.com CNAME .
 webgarden.com CNAME .
+webn.cc CNAME .
 webnode.com CNAME .
 webpages.one CNAME .
 webs.com CNAME .
