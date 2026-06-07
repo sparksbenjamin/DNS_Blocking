@@ -1,11 +1,11 @@
 ; Phishing Army
 ; Category: phishing
-; Generated: 2026-06-06 05:58:34 UTC
+; Generated: 2026-06-07 06:36:22 UTC
 ; Format: RPZ (exact hostnames preserved)
-; Original domains (before deduplication): 385348
+; Original domains (before deduplication): 385351
 
 $TTL 300
-@ 300 IN SOA localhost. root.localhost. 2026060605 3600 900 1209600 300
+@ 300 IN SOA localhost. root.localhost. 2026060706 3600 900 1209600 300
 @ 300 IN NS localhost.
 
 0-105.com CNAME .
@@ -324864,6 +324864,8 @@ parwindersinghbatra.github.io CNAME .
 pary.fishing-sk.shop CNAME .
 pary.sksave.sbs CNAME .
 parys.clarel.sbs CNAME .
+parys.cz-sale.top CNAME .
+parys.cz-store.shop CNAME .
 parys.evas.buzz CNAME .
 parys.fishing-akcio.shop CNAME .
 parys.fishing-sk.shop CNAME .
@@ -385041,6 +385043,7 @@ zainab814.github.io CNAME .
 zaingondal106.github.io CNAME .
 zakir2855.github.io CNAME .
 zakyprojects.github.io CNAME .
+zalandoutlets.shop CNAME .
 zalatamsalam.github.io CNAME .
 zalmanfrz.github.io CNAME .
 zaloolt.top CNAME .
