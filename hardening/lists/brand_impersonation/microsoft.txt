@@ -1,6 +1,6 @@
 # Microsoft Brand Impersonation Hardening
 # Category: brand_impersonation
-# Generated: 2026-06-06 06:57:06 UTC
+# Generated: 2026-06-07 07:58:35 UTC
 # Format: Hosts file (0.0.0.0 hostname) - exact hostnames preserved
 # Seed domains: microsoft.com, microsoftonline.com, office.com, outlook.com, live.com
 # Purpose: Optional DNSTwist-based typo-squatting and impersonation hardening
@@ -360,6 +360,7 @@
 0.0.0.0 microsoftonlinec.com
 0.0.0.0 microsoftonlinecom.com
 0.0.0.0 microsoftonlined.com
+0.0.0.0 microsoftonlinee.com
 0.0.0.0 microsoftonlinei.com
 0.0.0.0 microsoftonlines.com
 0.0.0.0 microsoftonlinme.com
@@ -887,6 +888,7 @@
 0.0.0.0 xn--microsoftnline-y88g.com
 0.0.0.0 xn--microsoftonine-bkc.com
 0.0.0.0 xn--microsoftonine-vlb.com
+0.0.0.0 xn--microsoftonle-fbc4772i.com
 0.0.0.0 xn--microsoftonlie-ipc.com
 0.0.0.0 xn--microsoftonlin-okb.com
 0.0.0.0 xn--microsoftonlne-hgc.com
@@ -903,8 +905,7 @@
 0.0.0.0 xn--mirosoft-hw7c.com
 0.0.0.0 xn--mirosoft-lbb.com
 0.0.0.0 xn--mirosoft-t0a.com
-0.0.0.0 xn--mirosoftonlin-xub568b.com
-0.0.0.0 xn--mlcrosoftonlne-wdc.com
+0.0.0.0 xn--nicrosoftonline-tv27c.com
 0.0.0.0 xn--offce-1sa.com
 0.0.0.0 xn--offce-7sa.com
 0.0.0.0 xn--offce-doc.com
@@ -913,6 +914,7 @@
 0.0.0.0 xn--offce-vsa.com
 0.0.0.0 xn--offce-ywb.com
 0.0.0.0 xn--oice-geba.com
+0.0.0.0 xn--otlok-mua34f.com
 0.0.0.0 xn--otlook-3ya.com
 0.0.0.0 xn--otlook-wnb.com
 0.0.0.0 xn--oulook-jmc.com
@@ -930,6 +932,5 @@
 0.0.0.0 xn--rncrosoft-64a.com
 0.0.0.0 xn--rncrosoft-h5a.com
 0.0.0.0 xn--rnicrosft-67a.com
-0.0.0.0 xn--tlook-7eb50b.com
 0.0.0.0 xn--utlook-9fb.com
 0.0.0.0 xn--utlook-vxa.com
