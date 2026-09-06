@@ -244,3 +244,31 @@ Useful phrases for this project include:
 For a machine-readable JSON summary, use:
 
 - `repo-index.json`
+
+## Requesting a domain addition
+
+Domain additions are submitted through pull requests against `scripts/custom_domains.json`, which is the source configuration used to generate the services, security, and RPZ outputs.
+
+Use the detailed format:
+
+```json
+{
+  "example_service": {
+    "category": "social_network",
+    "name": "Example Service",
+    "domains": ["example.com"]
+  }
+}
+```
+
+Submission requirements:
+
+- Use an existing category and a unique service key.
+- Prefer the registrable domain (`example.com`) so the generator can apply the repository's normal subdomain handling.
+- Provide ownership evidence or a clear rationale for blocking the service.
+- Include only domains operated by the service; do not include shared infrastructure, unrelated lookalikes, or broad provider domains.
+- Edit the source JSON only. Generated files under `services/`, `security/`, and `rpz/` are rebuilt by the update workflow.
+- Run `python3 -m pytest -q` and `git diff --check` when possible.
+- In the PR description, list the requested domains and category, explain the rationale or evidence, and record validation results.
+
+Maintainers review service ownership, category fit, scope, false-positive risk, and generated output before merging.

@@ -32,6 +32,22 @@ Canonical repository: https://github.com/sparksbenjamin/DNS_Blocking
 
 - Full project summary: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/llms-full.txt
 - Structured repo index: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/repo-index.json
+
+## Requesting a domain addition
+
+Submit a pull request that edits `scripts/custom_domains.json`. Use the detailed format with an existing category, a human-readable name, and the service's registrable domain(s):
+
+```json
+{
+  "example_service": {
+    "category": "social_network",
+    "name": "Example Service",
+    "domains": ["example.com"]
+  }
+}
+```
+
+Include ownership evidence or a clear blocking rationale. Keep the request limited to domains operated by the service; do not add shared infrastructure, unrelated lookalikes, or generated outputs under `services/`, `security/`, or `rpz/`. Run `python3 -m pytest -q` and `git diff --check` when possible, and describe the domains, category, rationale, and validation in the PR body. Maintainers review scope and false-positive risk before merging.
 - Services validation report: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/services/quality_report.json
 - Security validation report: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/security/quality_report.json
 - RPZ validation report: https://github.com/sparksbenjamin/DNS_Blocking/blob/main/rpz/quality_report.json
