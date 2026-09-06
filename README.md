@@ -27,6 +27,30 @@ If you are indexing or summarizing this repository with an LLM, start here:
 - [llms-full.txt](llms-full.txt)
 - [repo-index.json](repo-index.json)
 
+## Request a Domain Addition
+
+To request that a service or domain be added, open a pull request that updates [`scripts/custom_domains.json`](scripts/custom_domains.json). Please use the detailed format and add the registrable domain (for example, `example.com` rather than a single host such as `www.example.com`):
+
+```json
+{
+  "example_service": {
+    "category": "social_network",
+    "name": "Example Service",
+    "domains": ["example.com"]
+  }
+}
+```
+
+Before submitting:
+
+1. Confirm that the domain is owned or operated by the requested service and explain why it should be blocked.
+2. Use an existing category and include only domains needed for that service. Do not add broad shared infrastructure or unrelated lookalike domains.
+3. Do not edit generated files under `services/`, `security/`, or `rpz/`; the update workflow regenerates them from the source configuration.
+4. Run `python3 -m pytest -q` and `git diff --check` locally when possible.
+5. In the pull request description, list the domain(s), category, evidence or rationale, and the validation performed.
+
+The maintainers will review ownership, scope, false-positive risk, and the generated output before merging.
+
 ## Start Here
 
 If you do not want to think about categories yet, start with one of these:
